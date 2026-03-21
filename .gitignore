@@ -1,0 +1,9 @@
+_book/
+.quarto/
+*_cache/
+/.venv/
+/.env/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

@@ -1,0 +1,11 @@
+name: Build Figures
+
+on:
+  workflow_dispatch:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder
+        run: echo "Figure workflow scaffolded; implementation to follow."

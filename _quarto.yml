@@ -1,0 +1,27 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Momentum First"
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - references.qmd
+
+bibliography: bibliography.bib
+
+glossary: glossary.yml
+
+crossref:
+  chapters: true
+
+format:
+  html:
+    theme: styles/html/theme.scss
+    css: styles/html/custom.css
+    toc: true
+  pdf:
+    include-in-header:
+      - styles/pdf/preamble.tex
+      - styles/pdf/macros.tex

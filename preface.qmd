@@ -1,0 +1,5 @@
+---
+title: "Preface"
+---
+
+This preface is intentionally minimal for the initial repository scaffold.

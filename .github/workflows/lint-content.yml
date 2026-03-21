@@ -1,0 +1,11 @@
+name: Lint Content
+
+on:
+  workflow_dispatch:
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Placeholder
+        run: echo "Content lint workflow scaffolded; implementation to follow."
