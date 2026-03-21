@@ -1,2 +1,12 @@
 name: momentum-first-book
-dependencies: []
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - matplotlib
+  - pandas
+  - pyyaml
+  - jupyter
+  - nbformat
+  - pytest
+  - ruff

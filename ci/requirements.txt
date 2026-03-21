@@ -1,1 +1,8 @@
-# Python dependencies for book automation will be added here.
+numpy
+matplotlib
+pandas
+PyYAML
+jupyter
+nbformat
+pytest
+ruff

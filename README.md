@@ -12,4 +12,9 @@ Chapter development, detailed manuscript content, and figure implementations wil
 - Quarto-first book workflow
 - Reproducible figures and tables
 - External heavy scientific code kept outside the manuscript repo
+- Quarto execution should be possible across Python, R, and Julia
 - Bot contributions should land through pull requests
+
+## Dependencies
+
+See `DEPENDENCIES.md` for the current baseline dependency set and installation path.
