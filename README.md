@@ -18,3 +18,8 @@ Chapter development, detailed manuscript content, and figure implementations wil
 ## Dependencies
 
 See `DEPENDENCIES.md` for the current baseline dependency set and installation path.
+
+## Releases
+
+This repo uses **infrequent, milestone-based releases** rather than frequent publish churn.
+See `RELEASES.md` for the release policy, workflows, and tagging procedure.
