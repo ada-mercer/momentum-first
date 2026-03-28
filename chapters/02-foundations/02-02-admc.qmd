@@ -1,0 +1,7 @@
+---
+title: "2.2 ADMC"
+---
+
+# 2.2 ADMC
+
+This subsection will state Asymmetric Directional Momentum Conservation precisely and explain its foundational role.

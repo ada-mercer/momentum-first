@@ -6,7 +6,18 @@ book:
   title: "Momentum First"
   chapters:
     - index.qmd
-    - preface.qmd
+    - chapters/00-preface/index.qmd
+    - chapters/01-introduction/index.qmd
+    - chapters/01-introduction/01-01-situation.qmd
+    - chapters/01-introduction/01-02-challenge.qmd
+    - chapters/01-introduction/01-03-momentum-first-proposal.qmd
+    - chapters/01-introduction/01-04-reading-paths.qmd
+    - chapters/02-foundations/index.qmd
+    - chapters/02-foundations/02-01-core-terms-and-variables.qmd
+    - chapters/02-foundations/02-02-admc.qmd
+    - chapters/02-foundations/02-03-invertible-mapping.qmd
+    - chapters/02-foundations/02-04-foundational-stances.qmd
+    - chapters/02-foundations/02-05-scope-and-status.qmd
     - references.qmd
 
 bibliography: bibliography.bib

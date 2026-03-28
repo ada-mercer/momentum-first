@@ -1,0 +1,9 @@
+---
+title: "Introduction"
+---
+
+# Introduction
+
+This chapter frames the present situation, the central challenge, the momentum-first proposal, and the most useful ways to navigate the book.
+
+It is organized into four subsections so that each part can be drafted with enough depth to stand on its own rather than collapsing into a short general overview.

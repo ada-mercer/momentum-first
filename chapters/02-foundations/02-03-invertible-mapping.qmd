@@ -1,0 +1,7 @@
+---
+title: "2.3 Invertible Mapping"
+---
+
+# 2.3 Invertible Mapping
+
+This subsection will develop the mapping between the directional momentum variables and the more familiar quantities used later in the framework.

@@ -1,0 +1,25 @@
+---
+title: "Derivation X.YA — Title"
+---
+
+# Derivation X.YA — Title
+
+## Purpose
+
+State what this derivation supports and where it is first referenced.
+
+## Starting assumptions
+
+List the assumptions used.
+
+## Derivation
+
+Detailed derivation goes here.
+
+## Result
+
+State the final result clearly.
+
+## Notes
+
+Add scope conditions, caveats, or links back to the main text.

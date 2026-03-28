@@ -1,0 +1,7 @@
+---
+title: "1.1 Situation"
+---
+
+# 1.1 Situation
+
+This subsection will describe the present conceptual situation in physics and why a re-examination of primitives is worth attempting.
