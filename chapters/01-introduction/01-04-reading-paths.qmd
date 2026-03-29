@@ -1,7 +1,0 @@
----
-title: "1.4 Reading Paths"
----
-
-# 1.4 Reading Paths
-
-This subsection will guide readers toward different routes through the book depending on whether their interest is conceptual, formal, comparative, or critical.

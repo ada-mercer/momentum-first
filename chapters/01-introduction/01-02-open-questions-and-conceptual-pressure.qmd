@@ -1,0 +1,15 @@
+---
+title: "1.2 Open Questions and Conceptual Pressure"
+---
+
+# 1.2 Open Questions and Conceptual Pressure
+
+Once one asks not only how the standard framework works, but what role its central concepts actually play, a certain pressure begins to appear.
+
+Consider energy. Few quantities in physics are more useful. It appears everywhere, organizes dynamics, and anchors conservation laws across the full range of the subject. But once one moves beyond its mathematical and operational use and asks a more basic question—*what is energy?*—the answer becomes less obvious. One can state how it is calculated, how it is conserved, and how it transforms. But its deeper structural role is less transparent than its formal success might suggest.
+
+Time presents a similar difficulty. Physics uses time with extraordinary effectiveness, and modern theories have made that use increasingly sophisticated. Yet once the question shifts from how time is measured to what time actually is, responses begin to diverge. Is time a dimension on the same footing as the spatial ones? Is it a parameter of change? Is it something emergent, relational, or observer-bound? These questions are not philosophical decorations added from outside. They touch the way the theory is built from within.
+
+The issue, then, is not that physics lacks mathematics. Quite the opposite: physics has become so mathematically powerful that the distinction between primitive structure and successful formal packaging is not always easy to see. A concept may be indispensable in practice and still remain conceptually less transparent than the role it plays would seem to require.
+
+That is the pressure point. If some of our most central concepts are used with great success but understood less clearly in structural terms, then it becomes reasonable to ask whether the order of explanation should be reconsidered.

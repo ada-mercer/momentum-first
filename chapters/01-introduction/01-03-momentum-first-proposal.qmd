@@ -1,7 +1,0 @@
----
-title: "1.3 The Momentum-First Proposal"
----
-
-# 1.3 The Momentum-First Proposal
-
-This subsection will introduce the momentum-first posture and explain why ADMC is treated as the framework's pivotal move.

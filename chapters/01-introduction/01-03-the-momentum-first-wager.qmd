@@ -1,0 +1,17 @@
+---
+title: "1.3 The Momentum-First Wager"
+---
+
+# 1.3 The Momentum-First Wager
+
+Momentum First begins from the suspicion that some of these tensions arise not because the physics is wrong, but because the order of explanation may not be the most economical one.
+
+The central wager of M1 is that **directional momentum conservation** should be treated as the primary structural constraint. In its formal development, this takes the form of **Asymmetric Directional Momentum Conservation** (ADMC), which serves as the foundational move from which the rest of the framework is organized. The suggestion is not that familiar concepts should be discarded, but that they may become clearer when placed downstream of a simpler primitive.
+
+Within that reordering, some central concepts are given a different role. In M1, **energy** is treated not as an independent primitive, but as a measure of the total amount of momentum in a particle. **Time**, likewise, is treated not as a fundamental dimension in its own right, but as a measure of how fast we observe change. These shifts do not, by themselves, create new physics. Their value is structural: if they place the concepts closer to their actual role in the world, then they may simplify the framework enough to make deeper relationships more visible.
+
+That is the wager.
+
+But it is only a wager unless it can bear weight. A redefinition is useless unless it reorganizes the theory in a disciplined way. The value of the momentum-first move, if it has value, must lie in what it lets the framework do: how cleanly it constrains the primitives, how naturally it connects mass, energy, and momentum, and how well it resonates with the geometry and observed behavior of the physical world.
+
+The point is not novelty of language, but economy of structure. The rest of the book exists to test whether that economy is real.

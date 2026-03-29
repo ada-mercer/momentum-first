@@ -1,0 +1,15 @@
+---
+title: "1.4 What This Book Is Trying to Do"
+---
+
+# 1.4 What This Book Is Trying to Do
+
+This book is not trying to replace the whole of physics with a slogan. It is trying to stage a framework carefully enough that its strengths and weaknesses can become visible.
+
+That means beginning with primitive terms, conservation structure, and mappings, rather than jumping immediately to interpretation or applications. It means asking first whether the proposed starting point can support a coherent formal backbone. Only after that does it make sense to ask what the framework implies for more familiar domains such as relativity, gravity, quantum structure, or cosmology.
+
+The book therefore proceeds in layers. It begins with foundations, then moves outward toward broader correspondences and applications. Along the way, it tries to keep a disciplined distinction between what is genuinely derived, what is only shown to correspond in a limited regime, what is interpretive, and what remains speculative.
+
+The aim is not simply to present an alternative vocabulary. The aim is to see whether a different order of explanation produces a framework that is structurally cleaner, conceptually sharper, and more resonant with the actual geometry and behavior of physical systems.
+
+In that sense, the book is better read as a structured test than as a finished doctrine. It does not ask for early loyalty. It asks to be followed far enough that its wager can be judged.

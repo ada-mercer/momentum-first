@@ -4,6 +4,8 @@ title: "Introduction"
 
 # Introduction
 
-This chapter frames the present situation, the central challenge, the momentum-first proposal, and the most useful ways to navigate the book.
+The Preface explained where this project came from. This chapter turns from origin to structure.
 
-It is organized into four subsections so that each part can be drafted with enough depth to stand on its own rather than collapsing into a short general overview.
+Modern physics is one of humanity's greatest intellectual achievements. Its predictive success is not in doubt, nor is the depth of the mathematical frameworks it has produced. The question here is not whether that success is real. It is whether the underlying architecture is as conceptually economical and physically resonant as it could be.
+
+This Introduction is not an attack on the mainstream. It is an attempt to open a different line of inquiry: whether some of the most familiar structures in physics become clearer when the theory is organized from a simpler starting point. The chapter begins by acknowledging the success of physics, then turns to the open questions that remain, states the momentum-first wager, clarifies what this book is trying to do, and ends by making explicit the standards under which that wager should be judged.

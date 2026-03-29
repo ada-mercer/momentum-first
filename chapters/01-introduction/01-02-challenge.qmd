@@ -1,7 +1,0 @@
----
-title: "1.2 Challenge"
----
-
-# 1.2 Challenge
-
-This subsection will identify the central challenge: how to reorganize the foundations without merely renaming existing structures.

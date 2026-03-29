@@ -5,15 +5,17 @@
 The Introduction should do the conceptual framing work that the Preface should not try to carry.
 
 It should present:
-- the situation
-- the challenge
-- the momentum-first proposal
-- reading paths through the book
+- the success of physics
+- the open questions and conceptual pressure points
+- the momentum-first wager
+- what the book is trying to do
+- the standards by which the framework should be judged
 
 ## Tone
 
 - clear
 - firm
+- respectful toward mainstream physics
 - less personal than the Preface
 - more conceptually structured
 - not yet full technical derivation
@@ -22,3 +24,11 @@ It should present:
 
 The Introduction should motivate the framework sharply without pretending the case is already won.
 It should earn seriousness through structure, not through grand language.
+
+## Specific guidance
+
+- Do not frame the chapter as an attack on mainstream physics.
+- Respect the success of standard physics explicitly.
+- Use questions like "what is energy?" and "what is time?" to open conceptual space without polemic.
+- Let M1 answer those questions in restrained, structural terms.
+- Treat the Introduction as a legitimization-and-standards chapter, not as a technical chapter and not as a manifesto.
