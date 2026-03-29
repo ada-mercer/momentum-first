@@ -1,7 +1,124 @@
----
-title: "2.2 ADMC"
----
+## The Directional-Positive Postulate and Its Present Realization
 
-# 2.2 ADMC
+The deepest conservation claim in M1 is slightly more primitive than the current split equations themselves.
+What the framework wants to say at the most basic level is this:
 
-This subsection will state Asymmetric Directional Momentum Conservation precisely and explain its foundational role.
+> For an isolated system, momentum is conserved in every chosen direction as a sum of positive quantities.
+
+That is the real postulate.
+The now-standard `p_{k^+}` / `p_{k^-}` formulation should be read as the current explicit mathematical realization of that postulate, not as the postulate's only conceivable wording.
+
+This distinction matters.
+It clarifies the hierarchy of the theory:
+- first, a directional-positive conservation principle,
+- second, a concrete realized split satisfying that principle,
+- third, the familiar conservation consequences recovered from that split.
+
+## The primitive claim
+
+Take any chosen direction `k`.
+Here `k` is a directional label, not merely a coordinate-axis label; the Cartesian axes are only a convenient special basis for component work.
+
+The M1 claim is that, for an isolated system, the conserved momentum content along that direction is fundamentally organized into positive directional contributions.
+The exact representation of those positive quantities is a further mathematical step. But the postulate itself comes first:
+- conservation is **directional**,
+- it holds for **all chosen directions**,
+- and the conserved directional contributions are **positive** rather than signed-by-convention from the outset.
+
+This is the framework's primitive move.
+It is more basic than ordinary statements that begin directly with total energy and vector momentum as separate primitive conservation laws.
+
+## The present realization
+
+The current M1 realization introduces two directional quantities for each chosen direction `k`:
+
+$$
+ p_{k^+} = M + \tfrac{1}{2} p_k,
+ \qquad
+ p_{k^-} = M - \tfrac{1}{2} p_k.
+$$
+
+Here `k^+` denotes the contribution aligned with the positive sense of the chosen direction, and `k^-` the contribution aligned with the opposite sense.
+
+In this realized form, the directional-positive postulate becomes:
+
+$$
+ \sum_i p_{k^+}^{(i)} = \text{constant},
+ \qquad
+ \sum_i p_{k^-}^{(i)} = \text{constant},
+$$
+
+for every chosen direction `k`.
+
+So the present theory implements the primitive postulate by assigning two positive directional channel quantities and demanding separate conservation of their totals.
+
+## Why this realization matters
+
+The point of the `p_{k^+}` / `p_{k^-}` split is not to decorate the theory with new notation.
+Its value is that it gives a clean solved realization of the deeper postulate.
+The later invertible map then shows that this realization reproduces the familiar total `M` and `p_k` conservation structure.
+
+So the logic is not:
+- begin with a clever linear split and hope it works.
+
+The logic is:
+- begin with directional-positive conservation as the postulate,
+- then exhibit a concrete realization that is algebraically clean, invertible, and physically productive.
+
+That is a stronger and more honest presentation of what M1 is doing.
+
+## On uniqueness
+
+At the level of the present chapter, the book adopts the split above as the working realization.
+The reason is not only convenience.
+Under the intended structural assumptions, this realization appears to be uniquely natural.
+A fuller uniqueness argument belongs in an appendix rather than in the main narrative, where it would interrupt the flow.
+
+So the stance of the main text is:
+- the deeper postulate is foundational,
+- the present split is the realized form used throughout the book,
+- and a supporting uniqueness argument should be read as appendix-level justification rather than opening-chapter burden.
+
+## Fixed sign convention for the realized form
+
+Once the present realization is adopted, its sign convention must be held fixed.
+The canonical map used throughout this book is:
+
+$$
+ p_{k^+} = M + \tfrac{1}{2} p_k,
+ \qquad
+ p_{k^-} = M - \tfrac{1}{2} p_k.
+$$
+
+The inverse map is:
+
+$$
+ M = \tfrac{1}{2}(p_{k^+}+p_{k^-}),
+ \qquad
+ p_k = p_{k^+}-p_{k^-}.
+$$
+
+This is not a dispensable notational choice.
+Later interpretation, geometry, or correspondence work may elaborate the meaning of the channels, but the realized split algebra itself should remain fixed unless the framework is being revised at a foundational level.
+
+## Interpretive reading
+
+At the formal level, `p_{k^+}` and `p_{k^-}` are the two positive directional quantities of the present realization.
+At the interpretive level, they can be read as the positive directional contributions into which the momentum content of the system is resolved along the chosen direction.
+
+The important point is that these quantities are not meant as arbitrary bookkeeping inventions added after the fact.
+They are the concrete realized solution now used to implement the directional-positive conservation postulate.
+
+## Regime and status
+
+At the level of this subsection, the framework is therefore making two linked but distinct commitments:
+
+1. a **foundational postulate**: momentum in isolated systems is conserved directionally as a sum of positive quantities,
+2. a **present mathematical realization**: this is implemented through the `p_{k^+}` / `p_{k^-}` split above.
+
+So the role here is:
+- **Role:** foundational postulate + present realization
+- **Regime:** isolated systems, direction-wise decomposition
+- **Status:** adopted primitive principle with a fixed working realization
+
+The next subsection shows what follows from this realized split: the invertible mapping to the familiar `(M, p_k)` language, the conservation consequences, and the inertial SR correspondence.

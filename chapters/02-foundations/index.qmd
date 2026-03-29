@@ -1,9 +1,17 @@
 ---
-title: "Section I — Foundations"
+title: "Foundations"
 ---
 
-# Section I — Foundations
+{{< include 02-01-core-terms-and-variables.qmd >}}
 
-This section introduces the framework's formal primitives, notation, foundational postulates, and immediate structural consequences.
+{{< include 02-02-admc.qmd >}}
 
-It is deliberately split into subsection files so the framework can be developed with enough density and discipline at each step.
+{{< include 02-03-invertible-mapping.qmd >}}
+
+{{< include 02-04-time-clocks-and-the-interpretation-of-dilation.qmd >}}
+
+{{< include 02-05-kinematic-modifiers.qmd >}}
+
+{{< include 02-06-minimal-gravity-grammar.qmd >}}
+
+{{< include 02-07-scope-and-status.qmd >}}

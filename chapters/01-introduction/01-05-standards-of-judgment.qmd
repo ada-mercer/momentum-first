@@ -1,8 +1,4 @@
----
-title: "1.5 Standards of Judgment"
----
-
-# 1.5 Standards of Judgment
+## Standards of Judgment
 
 The claims of this book should be read under clear standards.
 

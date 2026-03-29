@@ -2,7 +2,6 @@
 title: "Preface"
 ---
 
-# Preface
 
 ## A Persistent Tension
 
@@ -32,17 +31,20 @@ Still, there was an obvious problem. If this picture were to make any sense at a
 
 That was the intuition. But intuition is cheap. What I did not have was a form.
 
-Much later, I found myself staring at the expression for relativistic energy written in momentum form,
-\[
+Much later, I found myself staring at the expression for relativistic energy written in momentum form:
+
+$$
 E = \sqrt{m_0^2 c^4 + p^2 c^2}.
-\]
+$$
 
 And there it was.
 
 Written instead as
-\[
+
+$$
 \frac{E}{c} = \sqrt{m_0^2 c^2 + p^2},
-\]
+$$
+
 it struck me differently. Not as a familiar formula, but as geometry. The square root was no longer just an algebraic convenience. It looked like structure: two momentum components combined into a magnitude. For the first time, the old feeling I had been carrying around seemed to meet a mathematical expression that could actually bear its weight.
 
 I still did not have the answer, though. I tried a few asymmetric constructions around that form, but nothing really held. At the time I was in the middle of doctoral work, and this remained what it had long been: a private line of thought that kept returning now and then. Not something I could fully commit to. I had a thesis to finish. I presented the basic idea to a couple of professors on campus, received little more than a shrug, and left it there.
@@ -56,11 +58,12 @@ For a while, I just kept missing. Then a thought surfaced that, in retrospect, s
 That suggested that the anisotropic contributions themselves had to come in a symmetric pair.
 
 The simplest form I found was
-\[
+
+$$
 p_+ = \sqrt{m_0^2 c^2 + p^2} + \frac{p}{2},
 \qquad
 p_- = \sqrt{m_0^2 c^2 + p^2} - \frac{p}{2}.
-\]
+$$
 
 And for the first time, the tests stopped fighting me.
 

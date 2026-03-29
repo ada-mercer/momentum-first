@@ -8,17 +8,7 @@ book:
     - index.qmd
     - chapters/00-preface/index.qmd
     - chapters/01-introduction/index.qmd
-    - chapters/01-introduction/01-01-the-success-of-physics.qmd
-    - chapters/01-introduction/01-02-open-questions-and-conceptual-pressure.qmd
-    - chapters/01-introduction/01-03-the-momentum-first-wager.qmd
-    - chapters/01-introduction/01-04-what-this-book-is-trying-to-do.qmd
-    - chapters/01-introduction/01-05-standards-of-judgment.qmd
     - chapters/02-foundations/index.qmd
-    - chapters/02-foundations/02-01-core-terms-and-variables.qmd
-    - chapters/02-foundations/02-02-admc.qmd
-    - chapters/02-foundations/02-03-invertible-mapping.qmd
-    - chapters/02-foundations/02-04-foundational-stances.qmd
-    - chapters/02-foundations/02-05-scope-and-status.qmd
     - references.qmd
 
 bibliography: bibliography.bib

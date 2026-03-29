@@ -145,37 +145,58 @@ Suggested chapter cluster:
 
 **Job:** develop the major downstream branches of M1 as structured programs rather than as disconnected application chapters.
 
+**Part IV discipline rule:** every chapter in this part should, as far as practical, answer the same five questions in the same order:
+1. what baseline Part II / Part III structure it inherits,
+2. what kinematic modification or engine move it adds,
+3. what established target structure it is trying to recover or organize,
+4. what is genuinely mainline-ready versus appendix-backed,
+5. what remains correspondence, interpretation, or speculation.
+
+That parallelism matters. Without it, Part IV will read like a pile of unrelated technical ambitions.
+
 Suggested chapter cluster:
 
 15. **Gravity as a Stationary Correspondence Program**
-    - field equations and dictionary work
-    - GR correspondence in stationary regime
-    - weak/moderate-field closure and transport structure
+    - **inherits:** Part II gravity grammar and KM-A language
+    - **adds:** stationary field equations, dictionary rules, transport packaging
+    - **target:** GR correspondence in stationary / weak-to-moderate regime
+    - **mainline keep:** field packaging logic, dictionary, transport story, regime-bounded closure claims
+    - **appendix offload:** coefficient audits, long derivations, strong-field edge cases
 
 16. **Quantum / Dirac Bridge**
-    - wave/operator structure
-    - spinorial lift
-    - regime-labeled QM/Dirac correspondence
+    - **inherits:** Part III carrier geometry plus spin-slot scaffolding
+    - **adds:** wave/operator structure and first spinorial lift
+    - **target:** QM / Dirac correspondence in clearly stated regimes
+    - **mainline keep:** conceptual bridge, operator meaning, limited key equations
+    - **appendix offload:** long operator derivations, scan grids, sign-audit overflow
 
 17. **QFT / EFT Construction**
-    - operator basis
-    - stationary EFT structure
-    - what is actually closed vs still scaffolded
+    - **inherits:** stationary operator language, gravity/Dirac bridge, core conventions
+    - **adds:** EFT operator basis, propagator / EOM discipline, closure tests
+    - **target:** stationary EFT/QFT construction rather than grand-unified rhetoric
+    - **mainline keep:** core blueprint, what is closed, what is still scaffold
+    - **appendix offload:** normalization audits, coefficient residual tables, derivation sprawl
 
 18. **Cosmology as a KM-B Program**
-    - `\chi(t)` / translation-yield modification
-    - redshift, time dilation, Tolman-style observables, observational bridge
-    - correspondence discipline and fit logic
+    - **inherits:** KM-B taxonomy from Part II
+    - **adds:** `\chi(t)` / translation-yield modification and observational bridge
+    - **target:** redshift and large-scale correspondence under regime-bounded cosmology semantics
+    - **mainline keep:** conceptual KM-B framing, redshift mapping, observational logic, fit-discipline stance
+    - **appendix offload:** ansatz menus, parameter sweeps, fit templates, alternative-history families
 
 19. **Exclusion and State-Space Constraints**
-    - KM-C
-    - occupancy/exclusion logic
-    - many-body implications
+    - **inherits:** KM-C taxonomy and internal-state language
+    - **adds:** occupancy / exclusion logic as a state-space constraint rather than force-language
+    - **target:** Pauli-style exclusion and many-body admissibility structure
+    - **mainline keep:** conceptual exclusion mechanism and minimal admissibility rules
+    - **appendix offload:** dense closure arguments, combinatorial scans, speculative generalizations
 
 20. **Composite and Strong-Sector Structure**
-    - only if mature enough for mainline placement
-    - local torus carrier vs coupled composite geometry
-    - strong/composite material must be boundary-disciplined
+    - **inherits:** Part III carrier picture and any stabilized state/connection machinery
+    - **adds:** coupled composite geometry, defect/closure completion, strong-sector boundary claims
+    - **target:** bounded strong/composite structure, not premature full-sector triumphalism
+    - **mainline keep:** only if the local-carrier vs coupled-composite distinction is genuinely clean
+    - **appendix offload:** quark-like toy closure models, baryon-specific derivations, unstable strong-sector speculation
 
 ### Part V — Origins and Deep Grounding
 
@@ -264,6 +285,8 @@ Use for:
 - resonance-width numerics
 - dense state taxonomies introduced too quickly for main narrative
 - exploratory extensions whose main role is support rather than conceptual necessity
+- executable fit workflows like `INTERNAL_GEOMETRY_FIT_TEMPLATE_V1`, with only minimal main-text references where Part VI discusses benchmark logic, degeneracy, or falsifier structure
+- exploratory cosmology ansatz menus like `INTERNAL_GEOMETRY_CHI_ANSATZ_MENU_V1`, with only light main-text reference where Part IV introduces the KM-B cosmology program and its regime-bounded correspondence posture
 
 ### Defer / treat as unstable
 - any claim requiring a reopened foundational lock
@@ -286,9 +309,9 @@ For each item, keep the fields:
 - **Why it matters:** this affects tone, philosophical load, and how early the reader meets the strongest interpretive stance.
 - **Current Ada recommendation:** keep it in Part II, but as a disciplined, clearly labeled interpretation tied to the time/dilation chapter rather than letting it dominate the opening backbone.
 - **Need from Arne:** decide whether this should be a compact subsection or a more substantial chapter-weight treatment.
-- **Arne response:**
-- **Status:** open
-- **Next action when unblocked:** tune the weight and placement of the time chapter.
+- **Arne response:** Arne's current judgment is that the M1 view on time does, in fact, force the manuscript to point toward a true frame.
+- **Status:** partially resolved
+- **Next action when unblocked:** revise the Part II time chapter so the true-frame stance is presented as a stronger internal consequence of the M1 time view, while still keeping the role/status labels explicit. Final manuscript weight can still be tuned later after further user feedback.
 
 ### CQ-02 — How much gravity should live in Part II versus Part IV?
 - **Why it matters:** this decides whether Part II stops at gravity grammar or carries a first minimal correspondence block.
@@ -325,21 +348,48 @@ For each item, keep the fields:
 ## Current Work Queue
 
 ### WQ-01 — Map remaining dev artifacts into the revised structure
-- **Status:** open
-- **Current target:** decide where `book/dev/INTERNAL_GEOMETRY_FIT_TEMPLATE_V1.md` belongs in the revised plan.
-- **Likely outcome:** Part VII appendix / technical supplement unless it proves central to Part VI test logic.
+- **Status:** in progress
+- **Current target:** continue mapping remaining dev artifacts after placing `book/dev/INTERNAL_GEOMETRY_FIT_TEMPLATE_V1.md` and `book/dev/INTERNAL_GEOMETRY_CHI_ANSATZ_MENU_V1.md`.
+- **Resolved mapping 1:** `book/dev/INTERNAL_GEOMETRY_FIT_TEMPLATE_V1.md` belongs primarily in **Part VII — Appendices / technical supplement** as an executable exploratory fit scaffold, with only a short forward reference from **Part VI — Predictions, Tests, and Failure Modes** where model-risk, degeneracy, and benchmark-evaluation logic are discussed.
+- **Why:** the file is explicitly an exploratory fitting template, parameter-scan workflow, and rule-penalty scaffold; it supports judgeability and comparison discipline, but it should not drive the book backbone or appear as mainline theory exposition.
+- **Resolved mapping 2:** `book/dev/INTERNAL_GEOMETRY_CHI_ANSATZ_MENU_V1.md` belongs primarily in **Part VII — Appendices / technical supplement** as a correspondence-level cosmology ansatz menu, with only a light forward reference from **Part IV — Cosmology as a KM-B Program** where the manuscript explains how candidate `\chi(t)` histories are compared after the main cosmology framing is in place.
+- **Why:** the file is explicitly an exploratory fitting menu and candidate-family comparison sheet, not a derivation of cosmology from first principles. It should support the cosmology chapter's regime-bounded correspondence discipline without becoming the chapter's conceptual center of gravity.
+- **Resolved mapping 3:** `book/dev/CORE_MOMENTUM_GEOMETRY_PRELIM_V1.md` belongs primarily in **Part III — Internal Geometry**, especially the transition from `Why the Framework Needs a Geometry` into `Core Momentum Geometry`, with selected baseline comparison material supporting the opening geometry-choice argument.
+- **Why:** the file cleanly separates a geometry-independent ADMC/SR bridge from a three-way candidate-geometry comparison, then makes a preliminary keep/reject/control decision (`G3` exploratory baseline, `G2` rejected for baseline, `G1` retained as control). That is exactly the kind of material Part III should use to motivate why geometry enters after Foundations without pretending the choice is already final ontology. Its later state-classification and transition-rule sections are too exploratory and dense for mainline placement, so they should remain appendix-backed or supporting notes unless later maturity justifies promotion.
+- **Resolved mapping 4:** `book/dev/INTERNAL_GEOMETRY_FORMULATION_V1.md` belongs primarily in **Part III — Internal Geometry** as the main supporting source behind `The Two-Cycle Carrier Hypothesis`, `Closure, Resonance, and Internal State Structure`, and `What the Geometry Explains — and What It Does Not`, with only carefully trimmed conceptual material promoted into the main text.
+- **Why:** the file is the first coherent synthesis of the torus/two-cycle carrier program: carrier geometry, closure logic, state taxonomy, spin-slot scaffolding, resonant-state interpretation, and first particle-class mapping. That makes it too central to ignore when shaping Part III, but also too dense and maturity-sensitive to transplant wholesale into the manuscript. The keepable mainline core is the carrier hypothesis, the closure/stability logic, the existence of a spinorial consistency slot, and the stable-vs-resonant distinction. The heavier state taxonomy, detailed particle-class mapping, connection-sector machinery, and defect/composite scaffolding should remain appendix-backed or later-engine support until the maturity of those claims is stronger.
+- **Resolved mapping 5:** `book/dev/INTERNAL_GEOMETRY_WORKED_EXAMPLES_V1.md` belongs primarily in **Part VII — Appendices / technical supplement** as worked-example support for the Part III internal-geometry program, with only selective narrative references in **Part III — Internal Geometry** where the manuscript wants one compact example of allowed/forbidden transitions or stable-vs-resonant ordering.
+- **Why:** the file is explicitly a worked-examples companion to `INTERNAL_GEOMETRY_FORMULATION_V1.md`. Its value is not in setting the conceptual architecture, but in giving concrete toy-sector checks: parity classes, allowed/forbidden transitions, closure-defect bookkeeping, and resonance-width ordering. That makes it useful for auditability and for future appendix material, but too example-heavy and toy-model-specific to sit in the mainline geometry chapters unless sharply trimmed. Mainline prose should take only the smallest illustrative example it genuinely needs; the bulk belongs in appendix-backed support.
+- **Next target:** continue the chapter-to-source map with the next unmapped dev artifact, or consolidate the accumulated mappings into a clearer chapter-to-source table if that becomes the higher-value non-blocked step.
 
 ### WQ-02 — Tighten chapter-level descriptions for Part II
-- **Status:** open
-- **Focus:** make sure time, KMs, and minimal gravity grammar are distinct but non-redundant.
+- **Status:** completed (2026-03-29)
+- **Result:** Part II now exists as a drafted seven-subsection spine covering primitives, ADMC, invertible mapping / momentum triangle / SR correspondence, time/dilation interpretation, KM taxonomy, minimal gravity grammar, and scope/status discipline.
+- **Refinement pass:** terminology is now tightened so `fermic` / `bosic` apply to momentum language while `fermionic` / `bosonic` apply to structure/geometry language; `M` is now described as representative of total momentum content; ADMC is stated as direction-general rather than axis-restricted; and rebuildable manuscript figures are now wired into the repo for Foundations.
+- **Follow-up:** future edits should be refinement-level unless a foundational lock is intentionally reopened.
 
 ### WQ-03 — Tighten chapter-level descriptions for Part IV
 - **Status:** open
 - **Focus:** keep gravity, QM/QFT, cosmology, and KM-C/composite chapters structurally parallel where possible.
 
 ### WQ-04 — Build a chapter-to-source map
-- **Status:** open
+- **Status:** in progress
 - **Focus:** connect major existing dev files to likely part/chapter destinations so future drafting does not drift.
+- **Current output:** start consolidating resolved placements into a living table instead of leaving them only as prose bullets.
+
+#### Chapter-to-source map (living table)
+
+| Source artifact | Primary destination | Mainline use | Appendix / support use | Notes |
+|---|---|---|---|---|
+| `CORE_MOMENTUM_GEOMETRY_PRELIM_V1.md` | Part III — `Why the Framework Needs a Geometry` / `Core Momentum Geometry` | geometry-entry argument, candidate comparison, keep/reject/control logic | dense classification and transition scaffolding | geometry enters after Foundations, not before |
+| `INTERNAL_GEOMETRY_FORMULATION_V1.md` | Part III — `The Two-Cycle Carrier Hypothesis` / `Closure, Resonance, and Internal State Structure` / `What the Geometry Explains — and What It Does Not` | carrier hypothesis, closure logic, spin-slot scaffolding, stable-vs-resonant distinction | state taxonomy, particle-class mapping, connection/defect machinery | central support source for Part III, but too dense to import wholesale |
+| `INTERNAL_GEOMETRY_WORKED_EXAMPLES_V1.md` | Part VII primarily; selective Part III support | at most one compact illustrative example if it truly helps readability | toy-sector transition checks, parity classes, closure-defect demos, width ordering | example-heavy companion, not conceptual backbone |
+| `INTERNAL_GEOMETRY_FIT_TEMPLATE_V1.md` | Part VII; light Part VI reference | benchmark / degeneracy forward reference only | executable fit scaffold, scan workflow, rule penalties | judgeability support, not mainline theory |
+| `INTERNAL_GEOMETRY_CHI_ANSATZ_MENU_V1.md` | Part VII; light Part IV cosmology reference | mention candidate-history comparison discipline only | ansatz families, parameter menus, exploratory cosmology fitting | correspondence support, not derivation |
+| `INTERNAL_GEOMETRY_WAVE_EQUATION_FORMULATION_V1.md` | Part IV — `Quantum / Dirac Bridge`; appendix-backed support from Part III geometry | baseline torus-wave equation, winding embedding choice, conserved functional, cautious correspondence slots | calibration ansätze, shell tables, extension menu, long derivation scaffold | strongest current bridge from carrier geometry into QM/Dirac-style program, but not ready to carry full mainline claims alone |
+| `QFT_FOUNDATION_CORE_BLUEPRINT_V1.md` | Part IV — `QFT / EFT Construction` | chapter backbone for closure discipline: conventions, action/EOM/propagator chain, overlap regime, claim-gating | execution queue details, audit workflow, residual-management logistics | strongest current structuring source for the QFT chapter; useful because it organizes what counts as foundation versus premature phenomenology |
+| `QFT_CORE_CONVENTIONS_LOCK_V1.md` | Part IV — `QFT / EFT Construction`; local support for Part II/IV notation discipline | fixed convention block, symbol semantics, KM typing lock, propagator normalization baseline | detailed convention registry and canonical reference appendix material | especially useful for preventing sign/normalization drift and keeping `M_{g,loc}` vs `H_{g,stat}` semantics stable across chapters |
+| `QFT_STATIONARY_EFT_DERIVATION_CORE_V1.md` | Part IV — `QFT / EFT Construction` | minimal stationary EFT core action, KM-A operator basis, exact-vs-closure ledger, D1 derivation spine | hand-off queue, detailed operator expansion, derivation scaffolding for D2 | best current derivation-level source for the opening mainline QFT chapter, but should stay regime-bounded and avoid pretending full covariant closure |
 
 ### WQ-05 — Identify what is ready for review versus what remains unstable
 - **Status:** open
@@ -350,6 +400,9 @@ For each item, keep the fields:
 - Part I / Part II / Part III / Part IV / Part V / Part VI / Part VII architecture at the level of major part boundaries.
 - Core judgment that Foundations must include time, KM taxonomy, and minimal gravity grammar.
 - Core judgment that cosmology currently belongs inside the Part IV downstream program cluster.
+- Drafted Part II manuscript text in `chapters/02-foundations/`, rendered successfully to HTML.
+- Foundations terminology pass completed: `fermic` / `bosic` are now momentum adjectives, `fermionic` / `bosonic` are structure/geometry adjectives.
+- Foundations figure pass completed with rebuildable figure scripts and outputs for shell language, momentum triangle, and source -> field -> observer grammar.
 
 ## Significant blockers
 

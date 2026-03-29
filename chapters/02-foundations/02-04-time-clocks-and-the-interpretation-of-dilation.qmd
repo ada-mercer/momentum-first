@@ -1,0 +1,84 @@
+## Time, Clocks, and the Interpretation of Dilation
+
+The first three subsections established the kinematic backbone of the framework.
+This subsection introduces a more interpretive layer: how M1 reads time and time dilation.
+
+The distinction is important.
+The framework's algebraic relations are one thing. The interpretation placed on them is another. The present subsection therefore belongs to the foundations because the interpretation is central to how the rest of M1 is organized, but its claims must be read with their proper status labels.
+
+## Time as an observed measure of change
+
+M1 does not treat time as a primitive substance moving on its own.
+It treats time as the way ordered change is measured and compared.
+In the framework's strongest interpretive language, there is only one actual present configuration of the world, and what we call time is a bookkeeping of rates, sequences, and correlations rather than an independently flowing medium.
+
+That is a significant stance, and it should not be smuggled in as if it were a theorem.
+Here it is stated openly as part of the project's interpretive backbone.
+
+What matters structurally is this: the theory seeks to explain time-dilation phenomena by changes in the internal rate of the particle's clock-carrying structure rather than by taking time itself as a primitive geometrical substance from the start.
+
+## The clock-carrying sector
+
+In the M1 reading, the particle's **fermionic structure** is the natural clock-carrying part of the particle, and its operative scale is tied to the fermic momentum `p_f` or to its contextualized form.
+The thought is not that `p_f` merely accompanies the particle while some separate quantity measures its internal rate. The thought is that the internal cycle rate is directly tied to the fermic momentum scale or to its contextualized form.
+
+This is why `p_f` plays a larger conceptual role in M1 than simple rest-mass notation would suggest. It is not only an inertial parameter. It is also the leading candidate for the internal cycle scale that underlies observed clock behavior.
+
+## Time dilation in the framework
+
+On this reading, time dilation is not interpreted as time itself stretching or flowing differently in some primitive sense. It is interpreted as a reduction in the rate of the relevant internal cycle.
+
+At the inertial level, the simple guiding idea is:
+- a larger share of the total packaged momentum in directed bosic expression corresponds to a reduced internal cycle rate,
+- and therefore to slower observed clock behavior.
+
+In gravitational contexts, developed later, the same idea reappears in contextualized form through `p_{f,c}`.
+The framework's stationary gravity grammar is built precisely so that the local fermic scale can play this role.
+
+This does **not** mean that the entire theory of relativistic time is already complete at this point.
+What it means is that M1 has chosen the explanatory direction it wants to test:
+- not *time first, then motion*,
+- but *structured momentum first, then observed clock behavior*.
+
+## Preferred-now and true-frame stance
+
+At this point the framework does more than merely permit a preferred-now or true-rest-frame stance. If time is read as observed bookkeeping of underlying structural change, and if time dilation is read as a change in the internal cycle rate of the particle's clock-carrying structure, then the explanatory direction of M1 pushes toward a physically meaningful reference of rest.
+
+In other words: once the framework stops treating time as the first primitive and instead treats temporal comparison as downstream of structured momentum and clock behavior, it becomes difficult to keep every inertial frame equally fundamental in the deepest ontological sense. The M1 time view therefore points toward a true frame rather than treating that possibility as a merely optional philosophical extra.
+
+This is still a high-stakes commitment and must be handled carefully.
+It is not being asserted here as a closed derivation from ADMC alone, nor as something already sufficient to overthrow the regime-success of relativistic frame symmetry in practice. It is being stated as the stronger internal interpretive consequence of the M1 time picture: relativistic phenomenology may still be recovered as correspondence, while the deeper explanatory picture points toward a privileged frame of rest.
+
+For that reason, the correct reading of the stance in this subsection is:
+- **Role:** interpretation with strong internal pressure from the M1 time view
+- **Function in the framework:** directs the explanatory order of time, dilation, and later gravity/correspondence choices
+- **Current status:** foundational stance, not yet a closed derivation
+
+This distinction is essential. The claim is not that the full preferred-frame program has already been completed. The claim is that, given M1's reading of clocks and time, the manuscript should be honest that the theory points in that direction.
+
+## Why include this here at all?
+
+One might ask why a chapter on time interpretation belongs in Foundations rather than later in the book.
+The answer is that, in M1, this stance is not ornamental. It helps determine:
+- why `p_f` is treated as more than a rest parameter,
+- why gravity is later read through contextualized fermic scale and observer bookkeeping,
+- and why kinematic modification is treated as a structural change in momentum organization rather than as an unexplained external overlay.
+
+So this material belongs early, but it must be written in a disciplined way.
+It is a declared interpretive backbone, not a rhetorical flourish and not a substitute for later correspondence work.
+
+## Open question carried forward
+
+One substantial judgment remains open at the level of presentation: how much weight this chapter should place on the preferred-now / true-frame stance relative to the cycle-based interpretation of clock behavior itself.
+
+That is not a reason to defer the subsection. The subsection can still be written cleanly now. But the final chapter weight may change later depending on how strongly the manuscript chooses to foreground that stance in the public-facing argument.
+
+## What this subsection establishes
+
+At the foundation level, M1 commits to the following interpretive posture:
+- time is read as measured change rather than as the first primitive,
+- internal clock behavior is tied to the particle's momentum structure,
+- the fermionic structure, tracked through the fermic momentum scale, is the leading clock-carrying candidate,
+- and time dilation is interpreted as reduced internal cycle rate rather than as a brute primitive.
+
+The next step is to widen the framework's language so it can talk systematically about structure changes. That is the job of kinematic modifiers.

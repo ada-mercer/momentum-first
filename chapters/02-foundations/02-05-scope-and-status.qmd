@@ -1,7 +1,0 @@
----
-title: "2.5 Scope and Status"
----
-
-# 2.5 Scope and Status
-
-This subsection will clarify what the opening framework does and does not yet establish, including scope conditions and epistemic status labels.

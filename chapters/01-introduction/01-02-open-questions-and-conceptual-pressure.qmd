@@ -1,8 +1,4 @@
----
-title: "1.2 Open Questions and Conceptual Pressure"
----
-
-# 1.2 Open Questions and Conceptual Pressure
+## Open Questions and Conceptual Pressure
 
 Once one asks not only how the standard framework works, but what role its central concepts actually play, a certain pressure begins to appear.
 

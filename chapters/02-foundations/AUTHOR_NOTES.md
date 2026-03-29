@@ -9,7 +9,9 @@ It should establish:
 - notation
 - ADMC
 - the invertible mappings
-- foundational stances
+- time / clock / dilation interpretation
+- kinematic modifier taxonomy
+- minimal gravity grammar
 - scope/status discipline
 
 ## Tone

@@ -1,1 +1,13 @@
-figures: []
+figures:
+  - id: fig-foundations-shells
+    source: figures/src/foundations/foundations_shells.py
+    output: figures/build/foundations/foundations-shells.png
+    chapter: chapters/02-foundations/02-01-core-terms-and-variables.qmd
+  - id: fig-momentum-triangle
+    source: figures/src/foundations/momentum_triangle.py
+    output: figures/build/foundations/momentum-triangle.png
+    chapter: chapters/02-foundations/02-03-invertible-mapping.qmd
+  - id: fig-source-field-observer
+    source: figures/src/foundations/source_field_observer.py
+    output: figures/build/foundations/source-field-observer.png
+    chapter: chapters/02-foundations/02-06-minimal-gravity-grammar.qmd

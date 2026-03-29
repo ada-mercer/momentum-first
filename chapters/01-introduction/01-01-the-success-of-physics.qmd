@@ -1,8 +1,4 @@
----
-title: "1.1 The Success of Physics"
----
-
-# 1.1 The Success of Physics
+## The Success of Physics
 
 Any attempt to rethink foundations should begin with respect.
 

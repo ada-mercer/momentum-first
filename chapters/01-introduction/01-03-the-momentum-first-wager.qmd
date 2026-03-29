@@ -1,8 +1,4 @@
----
-title: "1.3 The Momentum-First Wager"
----
-
-# 1.3 The Momentum-First Wager
+## The Momentum-First Wager
 
 Momentum First begins from the suspicion that some of these tensions arise not because the physics is wrong, but because the order of explanation may not be the most economical one.
 

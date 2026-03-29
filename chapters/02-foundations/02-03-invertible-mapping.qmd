@@ -1,7 +1,148 @@
----
-title: "2.3 Invertible Mapping"
----
+## Consequences of the Realized Split: Mapping, Momentum Triangle, and SR Correspondence
 
-# 2.3 Invertible Mapping
+The previous subsection stated the deeper directional-positive conservation postulate and then introduced the current realized split used throughout the book.
+This subsection asks the first decisive question: what follows from that realized split?
 
-This subsection will develop the mapping between the directional momentum variables and the more familiar quantities used later in the framework.
+If the `p_{k^+}` / `p_{k^-}` construction were merely an elegant re-labeling with no real payoff, it would not deserve foundational status in the manuscript.
+What justifies it is that the realized split leads cleanly to the familiar conservation structure while preserving the momentum-first hierarchy of the framework.
+
+## The split map and its inverse
+
+For any chosen direction `k`, the realized directional quantities are
+$$
+ p_{k^+} = M + \tfrac{1}{2} p_k,
+ \qquad
+ p_{k^-} = M - \tfrac{1}{2} p_k.
+$$
+This can be written in matrix form as
+$$
+ \begin{pmatrix}
+ p_{k^+} \\
+ p_{k^-}
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ 1 & \tfrac{1}{2} \\
+ 1 & -\tfrac{1}{2}
+ \end{pmatrix}
+ \begin{pmatrix}
+ M \\
+ p_k
+ \end{pmatrix}.
+$$
+
+The inverse relation is
+$$
+ \begin{pmatrix}
+ M \\
+ p_k
+ \end{pmatrix}
+ =
+ \begin{pmatrix}
+ \tfrac{1}{2} & \tfrac{1}{2} \\
+ 1 & -1
+ \end{pmatrix}
+ \begin{pmatrix}
+ p_{k^+} \\
+ p_{k^-}
+ \end{pmatrix},
+$$
+that is,
+$$
+ M = \tfrac{1}{2}(p_{k^+}+p_{k^-}),
+ \qquad
+ p_k = p_{k^+}-p_{k^-}.
+$$
+
+The transformation is linear and invertible.
+That fact is elementary, but it matters. It means the realized split and the familiar `(M, p_k)` language are not two disconnected theories. They are two descriptions of the same kinematic content once the working realization has been fixed.
+
+## Conservation consequences
+
+Because the map is invertible, conservation in one basis implies conservation in the other.
+Summing over particles gives
+$$
+ \sum_i M^{(i)} = \tfrac{1}{2} \sum_i p_{k^+}^{(i)} + \tfrac{1}{2} \sum_i p_{k^-}^{(i)},
+$$
+and
+$$
+ \sum_i p_k^{(i)} = \sum_i p_{k^+}^{(i)} - \sum_i p_{k^-}^{(i)}.
+$$
+
+So if the realized directional-positive conservation law holds for a chosen direction `k`, then both total `M` and total `p_k` are conserved for that direction. In a Cartesian basis this yields conservation of total three-momentum together with conservation of total `M`.
+
+Conversely, if total `M` and total `p_k` are conserved, then
+$$
+ \sum_i p_{k^\pm}^{(i)} = \sum_i M^{(i)} \pm \tfrac{1}{2} \sum_i p_k^{(i)}
+$$
+are conserved as well.
+
+So the realized split and the familiar conservation statements are equivalent at this level.
+
+This equivalence is central enough to belong in the main text.
+A more formal line-by-line proof, together with the intended uniqueness argument under stated assumptions, should live in an appendix rather than interrupt the backbone of the chapter.
+
+## Why this matters
+
+This is the first real pressure test of the momentum-first wager.
+If the realized split had not reduced cleanly to a familiar conservation structure, the framework would have burdened itself with a new primitive and gained nothing but complexity.
+Instead, the split map shows that `M` is best read as the packaged representative of total momentum content, and that conservation of total `M` follows from the underlying directional-positive momentum-conservation structure rather than standing beside it as an unrelated primitive law.
+
+That does not by itself prove that the realized split is the only viable way to implement the deeper postulate. But it does show that the current realization is algebraically coherent, physically productive, and worthy of being carried forward.
+
+## The momentum triangle as the inertial shell
+
+The second key relation in the baseline framework is the composition identity
+$$
+ M^2 = p_f^2 + p^2.
+$$
+This is the momentum triangle. Its role is different from that of the directional split, but the two fit together.
+
+The realized split tells us how the positive directional quantities relate to `M` and `p_k`.
+The momentum triangle tells us how `M` relates to the intrinsic and bosic momentum magnitudes.
+Together, these two relations form the inertial kinematic backbone of M1.
+
+![The momentum triangle states the inertial baseline composition law: fermic momentum and bosic momentum combine into the total momentum content represented by `M`.](../../figures/build/foundations/momentum-triangle.png){#fig-momentum-triangle fig-align="center" width="75%"}
+
+At this stage the framework is not claiming more than that.
+It is not yet claiming to have derived all of special relativity from a deeper first principle. It is claiming something narrower and more defensible: that, once the realized split and the momentum triangle are adopted, the standard inertial conservation structure is recovered in a clean and transparent way.
+
+## SR correspondence
+
+In the inertial baseline,
+$$
+ E = cM
+$$
+and
+$$
+ M^2 = p_f^2 + p^2 = m_0^2 c^2 + p^2.
+$$
+Multiplying by `c^2` gives
+$$
+ E^2 = m_0^2 c^4 + p^2 c^2,
+$$
+which is the familiar relativistic energy-momentum relation.
+
+This is why the present chapter speaks of **SR correspondence** rather than immediate full derivation.
+The inertial shell of special relativity is recovered in momentum-first variables once the compositional and split relations are adopted. That is an important success, but the role of the result must be stated precisely.
+
+- **Role:** correspondence / reformulation at the inertial kinematic level
+- **Regime:** inertial baseline, isolated systems
+- **What is shown:** the standard mass-shell structure is reproduced in M1 language
+- **What is not yet shown:** a full derivation of all relativistic structure from a deeper M1 dynamics
+
+That distinction matters. The framework becomes stronger by making the right claims, not by making the strongest possible ones too early.
+
+## What has now been established
+
+The opening backbone of M1 now consists of two locked ingredients:
+
+1. the realized directional-positive split,
+2. the momentum-triangle composition identity.
+
+From these, the framework obtains:
+- an invertible relation between the realized directional quantities and the familiar `(M, p_k)` variables,
+- equivalence between the realized split conservation law and ordinary total `M` / momentum conservation,
+- and a clean inertial correspondence to the familiar relativistic energy-momentum shell.
+
+That is enough to justify moving on to the first interpretive consequence: how time and time dilation are read within this framework.

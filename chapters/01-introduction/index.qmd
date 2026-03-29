@@ -2,10 +2,12 @@
 title: "Introduction"
 ---
 
-# Introduction
+{{< include 01-01-the-success-of-physics.qmd >}}
 
-The Preface explained where this project came from. This chapter turns from origin to structure.
+{{< include 01-02-open-questions-and-conceptual-pressure.qmd >}}
 
-Modern physics is one of humanity's greatest intellectual achievements. Its predictive success is not in doubt, nor is the depth of the mathematical frameworks it has produced. The question here is not whether that success is real. It is whether the underlying architecture is as conceptually economical and physically resonant as it could be.
+{{< include 01-03-the-momentum-first-wager.qmd >}}
 
-This Introduction is not an attack on the mainstream. It is an attempt to open a different line of inquiry: whether some of the most familiar structures in physics become clearer when the theory is organized from a simpler starting point. The chapter begins by acknowledging the success of physics, then turns to the open questions that remain, states the momentum-first wager, clarifies what this book is trying to do, and ends by making explicit the standards under which that wager should be judged.
+{{< include 01-04-what-this-book-is-trying-to-do.qmd >}}
+
+{{< include 01-05-standards-of-judgment.qmd >}}
