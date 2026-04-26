@@ -49,8 +49,8 @@ Suggested interpretation:
 Workflow: `.github/workflows/render-book.yml`
 
 Purpose:
-- produce a manual preview artifact before deciding to tag a release
-- verify the repo still renders cleanly in CI
+- produce a manual PDF preview artifact before deciding to tag a release
+- verify the repo still renders cleanly in CI through the same PDF-first path used by releases
 
 This workflow is **manual only** (`workflow_dispatch`).
 It does **not** create a release.
@@ -62,8 +62,8 @@ Workflow: `.github/workflows/release-book.yml`
 Purpose:
 - verify dependencies
 - verify the pushed tag matches `VERSION`
-- render the book
-- attach release artifacts to a GitHub Release
+- render the PDF book
+- attach `Momentum-First.pdf` to a GitHub Release
 
 This workflow runs only when a tag matching `v*` is pushed.
 That is the core safeguard against frequent accidental releases.
@@ -83,8 +83,8 @@ git tag -a v0.1.0 -m "Release v0.1.0"
 git push origin main --follow-tags
 ```
 
-6. GitHub Actions will create the release and attach the rendered HTML artifact.
-7. If PDF rendering succeeds, a PDF artifact may also be attached.
+6. GitHub Actions will render the book PDF.
+7. The workflow copies the rendered PDF to the stable release asset name `Momentum-First.pdf`, attaches it to the GitHub Release, and thereby updates the README's latest-PDF link target.
 
 ## After a release
 
@@ -98,4 +98,5 @@ That makes it clear the repo has moved beyond the last tagged milestone.
 
 - Releases are intended to be **deliberate and relatively rare**.
 - The default mode of the repo is ongoing work on `main`, not continuous release publishing.
+- The book PDF is a release artifact. Do not commit `_book/` or generated PDF files to the repository during ordinary development.
 - If the project later needs public release cadence, the policy can be revisited intentionally.

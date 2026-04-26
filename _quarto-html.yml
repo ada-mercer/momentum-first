@@ -1,0 +1,14 @@
+format:
+  html:
+    theme: styles/html/theme.scss
+    css: styles/html/custom.css
+    toc: true
+    toc-depth: 2
+    # number-sections: true # Automatically number headings
+    # code-fold: true       # Allows readers to collapse/expand code blocks
+    # code-tools: true      # Adds a "Copy Code" button to blocks
+    # search: true          # Enables a search bar for the HTML book
+    # comments:             # Enable commenting systems for readers
+    #   hypothesis: true    # Web annotations
+    #   giscus:             # GitHub Discussions integration
+    #     repo: yourusername/momentum-first

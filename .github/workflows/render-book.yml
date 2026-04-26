@@ -16,14 +16,26 @@ jobs:
       - name: Verify baseline dependencies
         run: python3 scripts/check_dependencies.py
 
-      - name: Render HTML preview
+      - name: Render PDF preview
         run: |
           export PATH="$HOME/.local/bin:$PATH"
-          quarto render --to html
+          quarto render --to pdf
+
+      - name: Prepare PDF preview artifact
+        run: |
+          set -euo pipefail
+          PDF_PATH="$(find _book -type f -name '*.pdf' | sort | head -n 1 || true)"
+          if [ -z "$PDF_PATH" ]; then
+            echo "No PDF was produced under _book/" >&2
+            exit 1
+          fi
+
+          cp "$PDF_PATH" Momentum-First.pdf
+          test -s Momentum-First.pdf
 
       - name: Upload preview artifact
         uses: actions/upload-artifact@v4
         with:
-          name: momentum-first-preview-${{ github.sha }}
-          path: _book/
+          name: Momentum-First-preview-${{ github.sha }}
+          path: Momentum-First.pdf
           if-no-files-found: error

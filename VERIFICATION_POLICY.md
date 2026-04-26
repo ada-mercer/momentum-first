@@ -15,6 +15,33 @@ The purpose of this policy is to let the framework evolve rapidly without forcin
 - Authorship and verification are related but distinct.
 - Stronger claims require stronger review.
 - Verification must be explicit enough to audit later.
+- Manuscript prose should not carry internal policy language unless the reader genuinely needs it.
+
+## Claim-role taxonomy for writers and reviewers
+
+Use this taxonomy as **internal writing and review guidance**, not as a requirement to foreground the labels in the manuscript.
+
+### Derivation
+A derivation claim says that, given the stated assumptions and setup, a later result follows in an inspectable way. It may still be regime-bound, but it should not depend on silent redefinitions, hidden imports, or unexplained jumps.
+
+### Correspondence
+A correspondence claim says that M1 reproduces, organizes, or maps onto a known structure in a stated regime. This is weaker than derivation and should not be written as though the target theory has thereby been explained from first principles.
+
+### Interpretation
+An interpretation claim proposes how the formalism should be read. Interpretive material may be valuable and even central, but it should not silently carry more weight than the formal structure beneath it can support.
+
+### Speculation
+A speculation claim marks a promising but unsecured direction. It may still belong in notes, planning, or carefully bounded manuscript discussion, but its provisional status should remain visible to writers and reviewers.
+
+## Regime discipline
+
+For substantial technical prose, writers and reviewers should also ask:
+- what regime is being claimed,
+- what assumptions are active,
+- what is actually established in that regime,
+- and what remains outside the present closure.
+
+Typical regime labels include inertial baseline, isolated system, stationary background, weak-field, slow-motion, quasi-stationary, or other explicitly stated approximation domains.
 
 ## Verification tiers
 

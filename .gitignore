@@ -8,5 +8,31 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-/.quarto/
+# Local scratch/backup areas
+/.local-backups/
+/.local-review/
+
+# Superseded local/reference copies are not part of the release commit path
+**/_old/
+
+# Figure scratch/review outputs that are useful locally but not release assets
+/figures/build/geometry3d/test-renders/
+/figures/build/geometry3d/_tmp-*
+/figures/build/geometry3d/*/review/
+
+# Generated figure companions are not committed by default; canonical assets are PNG
+/figures/build/**/*.pdf
+/figures/build/**/*.svg
+
+# Figure-generation prompts belong under figures/src/... alongside the figure source
+/prompts/
+
+# Obvious editor/file-manager duplicate copies
+* copy.*
+* copy
+* - Copy.*
+* - copy.*
+
 **/*.quarto_ipynb
+
+/.quarto/
