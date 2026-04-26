@@ -70,6 +70,7 @@ apt_install() {
     libxml2-dev \
     librsvg2-bin \
     libtiff-dev \
+    libuv1-dev \
     libx11-dev \
     libxt-dev \
     latexmk \
@@ -154,7 +155,7 @@ ensure_repo_renviron() {
 ensure_r_packages() {
   log "Installing minimal R packages into user library"
   export R_LIBS_USER="${R_LIBS_USER:-$R_USER_LIB_DEFAULT}"
-  Rscript -e 'dir.create(path.expand(Sys.getenv("R_LIBS_USER")), recursive=TRUE, showWarnings=FALSE); .libPaths(c(path.expand(Sys.getenv("R_LIBS_USER")), .libPaths())); pkgs <- c("knitr","rmarkdown"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) install.packages(miss, repos="https://cloud.r-project.org")'
+  Rscript -e 'dir.create(path.expand(Sys.getenv("R_LIBS_USER")), recursive=TRUE, showWarnings=FALSE); .libPaths(c(path.expand(Sys.getenv("R_LIBS_USER")), .libPaths())); pkgs <- c("knitr","rmarkdown"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) install.packages(miss, repos="https://cloud.r-project.org"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) stop(paste("R package install failed:", paste(miss, collapse=",")))'
 }
 
 summarize() {
