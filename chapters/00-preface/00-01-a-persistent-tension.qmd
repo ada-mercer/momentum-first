@@ -1,0 +1,67 @@
+## A Persistent Tension
+
+I can trace the beginning of this project back to a small moment in middle school.
+
+We were solving a scattering problem with two bodies, and I was stuck. I had been trying to get the result from conservation of momentum alone, but I could not make it work. Eventually I went to the teacher and asked for help. He looked over the problem, glanced at my attempt, and then explained—with that patience teachers learn to master—that I had to use both conservation of momentum and conservation of energy. That made it easy. The algebra did its duty, the equations closed, and the result landed.
+
+But it also planted a tension in me that never really left.
+
+Both momentum and energy were conserved? Why both? To me, they seemed to point toward the same thing. Both of them, somehow, had to do with motion. Yet here they were: two different conserved quantities, both necessary, both fundamental. I remember the feeling clearly. Not that physics had become clearer, but that something about it had become stranger. I did not know what to do with that thought at the time. I only know that I never quite got over it.
+
+The same tension resurfaced years later at university. We were studying the elastic scattering of a photon traveling along the \(z\)-axis toward a stationary electron. By then I had developed a private picture of momentum as something like the locomotive of directed motion, and mass as its wagons. It was a simple model—too simple, I suspected, to be literally true—but it helped me think about why light should travel at \(c\), and why a particle with mass should never exceed it. It was, at best, a rough fit with special relativity. Still, it made me linger over the details of that scattering problem.
+
+And once again the old unease returned.
+
+After the collision, the outgoing photon emerged at an angle. It had acquired a momentum component perpendicular to its original motion. If one changed the parameters, that perpendicular component could even dominate the outcome. The electron, in turn, acquired an equal and opposite component of its own.
+
+**Where had that perpendicular momentum come from?**
+
+That question bothered me far more than it probably should have. I found myself resisting the idea that momentum simply “turns,” as if direction were casually rewritten in flight. If a perpendicular component appeared after the collision, then perhaps it had not been created in that moment at all. Perhaps it had been there in some balanced or hidden form all along, internally locked in place. In my own mental imagery: two counter-balanced locomotives.
+
+And once that thought appears, it is difficult not to take the next step.
+
+Maybe mass is not something fundamentally separate from momentum. Maybe mass is momentum in another form—momentum caught in an internal structure, held in a loop rather than released into ordinary travel. The thought was crude, and I knew it was crude, but it had a stubbornness to it. It would not go away.
+
+Still, there was an obvious problem. If this picture were to make any sense at all, then the internal momentum of a moving particle could not remain untouched. It would have to swell as the particle’s ordinary momentum increased. And if that were true, then perhaps energy was not a second, mysterious “motion quantity” after all, but a measure of the total momentum content of the particle.
+
+That was the intuition. But intuition is cheap. What I did not have was a form.
+
+Much later, I found myself staring at the expression for relativistic energy written in momentum form:
+
+$$
+E = \sqrt{m_0^2 c^4 + p^2 c^2}.
+$$
+
+And there it was.
+
+Written instead as
+
+$$
+\frac{E}{c} = \sqrt{m_0^2 c^2 + p^2},
+$$
+
+it struck me differently. Not as a familiar formula, but as geometry. The square root was no longer just an algebraic convenience. It looked like structure: two momentum components combined into a magnitude. For the first time, the old feeling I had been carrying around seemed to meet a mathematical expression that could actually bear its weight.
+
+I still did not have the answer, though. I tried a few asymmetric constructions around that form, but nothing really held. At the time I was in the middle of doctoral work, and this remained what it had long been: a private line of thought that kept returning now and then. Not something I could fully commit to. I had a thesis to finish. I presented the basic idea to a couple of professors on campus, received little more than a shrug, and left it there.
+
+Twenty years passed before I found myself with a bit of spare time on my hands.
+
+By then, AI had arrived, and I thought I might as well give it another try—just for fun. I quickly built a numerical scattering test repository so I could start probing candidate expressions directly. Now the question could be pushed against explicit checks rather than tedious algebraic gymnastics.
+
+For a while, I just kept missing. Then a thought surfaced that, in retrospect, seems almost embarrassingly simple: if motion introduces an anisotropy in the momentum structure, then that anisotropy cannot stand alone. An asymmetry in the direction of travel must be balanced by a corresponding negative asymmetry in the opposite direction. Otherwise two particles colliding inelastically and coming to rest could not recover a fully symmetric momentum structure—a sphere.
+
+That suggested that the anisotropic contributions themselves had to come in a symmetric pair.
+
+The simplest form I found was
+
+$$
+p_+ = \sqrt{m_0^2 c^2 + p^2} + \frac{p}{2},
+\qquad
+p_- = \sqrt{m_0^2 c^2 + p^2} - \frac{p}{2}.
+$$
+
+And for the first time, the tests stopped fighting me.
+
+That was not yet a finished framework. It did not suddenly answer every question. But it was the first moment in all those years when the old tension stopped feeling like a private irritation and started to look like the beginning of an actual structure.
+
+This book grows out of that tension.

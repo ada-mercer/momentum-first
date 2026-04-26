@@ -5,14 +5,6 @@
 The subsection **A Persistent Tension** has become the emotional and conceptual anchor of the Preface.
 The remainder of the Preface still partly reflects an earlier, drier framing and should be rewritten around the new opening.
 
-## Desired tone
-
-- easy to read
-- engaging
-- intellectually serious without sounding ceremonial
-- less like institutional academic prose
-- more like a clear invitation into the project
-
 ## What the Preface should do
 
 The Preface should:
@@ -37,20 +29,27 @@ After `A Persistent Tension`, the remaining prose should likely be reorganized i
 - `On Authorship and Collaboration`
 - `How to Read This Book`
 - `Working Method`
-- `What Follows`
 
 The existing sections `Why the project exists` and `A note on philosophical stance` should probably be reduced, absorbed, or rewritten rather than kept intact.
 
-## Line-level guidance for `A Persistent Tension`
+## Preserve
 
-Still fix when editing:
-- typos and missing spaces
-- any sentence that sounds accidentally clumsy rather than intentionally conversational
-- math formatting and punctuation around display equations
-- awkward phrasing
+Still preserve:
+- the tension between momentum and energy
+- the personal origin and later recurrence
+- the shift from unease to structure
+- the sense that the framework grew from a persistent conceptual irritation, not from branding
 
-But do **not** over-sanitize it.
+## Mode references
+
+Default Preface prose should use:
+- `modes/styles/book-mainline`
+- `modes/audiences/broad-technical`
+- `modes/artifacts/manuscript`
+
+When working specifically on `A Persistent Tension`, use:
+- `modes/styles/a-persistent-tension`
 
 ## Verification/collaboration note
 
-The Preface now needs to state, plainly and without apology, that AI contributions and AI verification both count as real parts of the workflow. Do not drift back toward a human-only validation story.
+The Preface should state plainly, without apology, that AI contributions and AI verification both count as real parts of the workflow. Do not drift back toward a human-only validation story.

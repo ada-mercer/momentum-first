@@ -1,0 +1,9 @@
+## On Authorship and Collaboration
+
+This book is written by **Arne Klaveness** and **Ada Mercer**. They are its primary authors.
+
+The project is also developed in an environment where other human and AI contributors may assist through draft text, criticism, review, derivation support, editing, figures, and structural proposals. These are treated as real contributions rather than as invisible assistance. Authorship, however, is not the same thing as contribution. The manuscript keeps a stable authorship line, while broader project contributions may be acknowledged separately.
+
+Contributions do not become part of the book automatically. They enter through review and verification. That verification may be carried out by human or AI reviewers, but not every review counts equally: a verifier must meet the project’s capability threshold, and the review must be appropriate to the material under consideration.
+
+A fuller contributor record is maintained in the project repository. The book itself keeps the distinction visible between primary authorship, broader contribution, and later verification.

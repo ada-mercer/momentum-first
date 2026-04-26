@@ -14,13 +14,6 @@ The Preface should now feel:
 
 Do not rewrite the opening back into dry institutional prose.
 
-## Voice guidance
-
-- Prefer engaging, readable prose over maximal caveat density in the Preface.
-- For the Preface, "approximately right" is better than "absolutely wrong" if the choice is between stiffness and readability.
-- Preserve the difference between personal narrative voice and formal chapter voice.
-- Keep the technical chapters substantially more disciplined than the autobiographical opening.
-
 ## Structural intent
 
 Current intended Preface flow:
@@ -44,20 +37,27 @@ When editing the Preface, preserve:
 - the late computational/testing return
 - the sense that the framework grew from a persistent conceptual irritation, not from branding
 
-## Editing rule of thumb
+## Mode references
 
-For Preface prose, optimize in this order:
-1. readability
-2. honesty
-3. engagement
-4. elegance
-5. precision
+For general manuscript voice, use:
+- `modes/styles/book-mainline`
+- `modes/audiences/broad-technical`
+- `modes/artifacts/manuscript`
 
-For the technical chapters, the order reverses.
+For the rare motivation-register used in the Preface opening, use:
+- `modes/styles/a-persistent-tension`
 
-## Section-file policy
+## Chapter-file policy
 
-- Use chapter directories with `index.qmd` plus subsection files.
-- Let subsection files become substantial.
-- Avoid leaving subsection files as thin placeholders for long.
+- Use chapter directories for part/chapter clusters.
+- Keep one rendered `.qmd` file per book chapter in `_quarto.yml`.
+- Let rendered chapter files become substantial, but keep them reviewable.
+- In rendered chapter files, use `#` for the chapter title, `##` for first-level sections, and `###` for subsections.
+- Do not start rendered chapter files with `##`; PDF numbering can otherwise produce broken subsection numbers such as `III.1.0.1`.
 - Put long derivations in `appendices/derivations/` using the section-based derivation naming rule.
+
+## Verification / claim guidance
+
+- Treat `VERIFICATION_POLICY.md` as the canonical home for claim-role taxonomy and review standards.
+- Keep the full derivation / correspondence / interpretation / speculation taxonomy out of normal manuscript prose unless the reader directly needs it.
+- In manuscript chapters, prefer natural language that makes scope and strength legible without sounding like internal policy.

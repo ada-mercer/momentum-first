@@ -1,0 +1,77 @@
+# Local Gravity and Observer Bookkeeping
+
+The previous chapter built the stationary field. This chapter turns to the local question: how is that field read by matter and observers?
+
+That question matters because the field variables themselves are not yet the whole physical story. A scalar well or a shift field becomes physically meaningful only when the framework can say how local clocking, transport, and packaged magnitudes are altered in its presence. The point of observer bookkeeping is therefore not to add extra ornament to the field theory. It is to connect the stationary background to local physical reading without blurring together what is contextual, what is transported, and what remains globally conserved.
+
+## Local contextualization of the fermic scale
+
+The first local quantity is the context-dressed fermic scale
+
+$$
+p_{f,c}(x) = p_f G(x).
+$$
+
+Here $G(x) = \sqrt{1 - 2\theta_0(x)}$ is the scalar clock factor introduced in the previous chapter. This relation states the central gravity-side reading of the stationary background: the local fermic scale is dressed by context.
+
+That is the cleanest M1 expression of gravitational clock slowing in the stationary regime. The field does not first act by changing an external time parameter. It changes the local cycle-carrying scale through which clocks are read.
+
+## Mechanical transport in a background field
+
+The second local quantity is the transport momentum in the presence of shift structure,
+
+$$
+\Pi_i = p_i - p_{f,c}A_i.
+$$
+
+This expression is simple but important. It tells us that the local mechanical momentum is not just the bare momentum variable $p_i$. It is the momentum read against a structured background that already carries directional information through $A_i$.
+
+The role of $\Pi_i$ is to keep transport gravity-first. The shift background is not an afterthought. It changes the locally relevant transport bookkeeping directly.
+
+## Local magnitude versus stationary generator
+
+Once the context-dressed fermic scale and the local transport momentum are in hand, the natural packaged local magnitude is
+
+$$
+M_{g,loc} = \sqrt{p_{f,c}^2 + \gamma^{ij}\Pi_i\Pi_j}.
+$$
+
+This quantity is useful because it summarizes the local gravitationally dressed state of the particle or observer in one place. But it should not be confused with the stationary transport generator itself.
+
+That distinction matters. A locally packaged magnitude such as $M_{g,loc}$ tells us how the local state is being read. A stationary generator such as $H_{g,stat}$ tells us how stationary transport is organized. Those are related objects, but they are not interchangeable. If the distinction is dropped, the bookkeeping quickly becomes muddy.
+
+The practical rule is simple. Use $M_{g,loc}$ when the question is about local contextualized magnitude. Use $H_{g,stat}$ when the question is about stationary transport and conserved generator structure.
+
+## Local versus asymptotic reading
+
+Gravity also forces a distinction between local and asymptotic quantities.
+
+A field can look weak in one regime and still impose a meaningful local clock dressing nearby. A rotational background can look small at infinity and still matter decisively for local transport. That is why Part III insists on observer bookkeeping rather than speaking only in global terms.
+
+The local readout belongs to the background actually experienced by the observer. The asymptotic readout belongs to the bookkeeping standard imposed far away. Both can be useful, but they answer different questions.
+
+## The stationary moving-clock law
+
+The clean stationary summary is that proper time combines a gravity-side contextual factor with a motion-side local factor. In the general stationary setting this can be written schematically as
+
+$$
+d\tau = dt\,G\sqrt{1 - V_{loc}^2},
+$$
+
+where the relevant velocity is the one measured relative to the local stationary frame rather than relative to some distant asymptotic standard.
+
+This is especially sharp in Kerr. There the local clock law takes the form
+
+$$
+d\tau = dt\,G_K\sqrt{1 - V_K^2},
+$$
+
+with $V_K$ measured relative to the local dragged frame. The interpretive point is the important one: gravity-side scalar dressing and motion-side slowing remain distinct mechanisms even when they appear together in one stationary clock law.
+
+## What this chapter should carry forward
+
+The main local lesson of the stationary gravity program is therefore compact.
+
+The scalar well dresses the local fermic scale through $p_{f,c} = p_f G$. The shift field modifies transport through $\Pi_i = p_i - p_{f,c}A_i$. Local packaged magnitude is summarized by $M_{g,loc}$, but should not be identified with the stationary transport generator. And clocking depends on the local stationary frame, not only on asymptotic comparison standards.
+
+That is enough for the mainline. Longer bookkeeping derivations, stronger Kerr audits, and more detailed local transport calculations belong in Appendix III.B. The part can now move on to the nonstationary question: what survives, and what changes, once the field itself becomes time dependent.

@@ -1,0 +1,50 @@
+# What Foundations Establishes
+
+Foundations has now done its first job. It has given M1 a working inertial grammar: the primitive momentum quantities, the directional-positive conservation structure, the invertible map back to familiar relativistic variables, and the baseline relation
+$$
+M = \sqrt{p_f^2 + p^2}.
+$$
+
+That grammar is not the whole theory. It is the language in which the rest of the theory can be built.
+
+## The inertial foundation
+
+The opening sections fixed the core terms. Fermic momentum $p_f$ names the locked intrinsic momentum scale associated with rest mass and stable internal cycling. Bosic momentum $p$ names the directed momentum role associated with translational expression. The core momentum $M$ packages both into total momentum content in the inertial baseline.
+
+ADMC then gave that vocabulary its conservation structure. In its present realized form, each chosen direction $k$ carries two positive directional quantities,
+$$
+p_{k^+}=M+\tfrac12 p_k,
+\qquad
+p_{k^-}=M-\tfrac12 p_k.
+$$
+The inverse map recovers $M$ and $p_k$, so the directional-positive formulation remains exactly connected to the familiar four-momentum package in the inertial correspondence regime.
+
+The point is not that M1 has abandoned standard inertial relativity. The point is that it has reorganized the same successful structure around momentum-first primitives and a deeper directional-positive conservation statement.
+
+## Space, time, and physical change
+
+Foundations also fixed the framework's first interpretive order. Space is the stage. Momentum is the actor of physical change. Time is not introduced as a separate substance that drives evolution; it is a measure abstracted from stable physical change.
+
+That stance gives the clock discussion its meaning. A clock is a physical system with a stable cycle. In M1, clock slowing is read as changed physical cycling, not as time itself stretching. In the inertial case, the standard relation is recovered through
+$$
+d\tau = dt\,\frac{p_f}{M},
+$$
+with $p_f/M$ playing the role of the usual inverse gamma factor. The interpretation is different, but the overlap relation is the familiar one.
+
+The same stance also clarifies the true-frame language. Frame descriptions can be plural and operationally usable, but the underlying physical now is singular in the momentum/space ontology. That is an interpretive commitment of the foundation, not an additional inertial equation.
+
+## Departures from the inertial baseline
+
+The final foundational move is the idea of kinematic modifiers. Once the stage is structured or deformed, the inertial map need not exhaust the physics. The same momentum content may be repartitioned, contextualized, or expressed differently through the fermic momentum role $p_f$ and the bosic momentum role $p$; or the translational yield of directed bosic momentum may change.
+
+Kinematic modifiers provide the common language for these departures. Composition modifiers change how fermic and bosic momentum are internally related or contextualized. Yield modifiers change what directed bosic momentum produces as displacement or frequency-style expression. Admissibility modifiers change which kinematic states are available at all.
+
+This taxonomy is not a completed engine. It is a grammar for later engines.
+
+## What remains beyond Foundations
+
+Foundations has not built the gravity program, the quantum program, the cosmology program, or the later state-space and composite-structure programs. It has not derived full field dynamics, internal particle geometry, or final observational tests. Those are downstream tasks.
+
+This boundary is intentional. A foundation should make the later theory legible before it tries to make the later theory powerful. The reader now has the primitive quantities, the conservation structure, the inertial correspondence, the stage/actor interpretation, the clock and true-frame stance, and the modifier taxonomy needed to understand what comes next.
+
+The next part begins with gravity because gravity is the first major case where organized momentum deforms the stage itself and thereby modifies local kinematics.

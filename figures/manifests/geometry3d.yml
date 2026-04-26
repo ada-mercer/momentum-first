@@ -1,0 +1,115 @@
+version: 2
+phase: phase-3-backend-policy-consolidation
+
+primary_backend: pyvista3d
+fallback_backend: matplotlib3d
+inspection_backend: plotly3d
+default_backend: pyvista3d
+docs_root: figures/docs/geometry3d
+library_root: figures/lib/geometry3d
+source_root: figures/src/geometry3d
+build_root: figures/build/geometry3d
+
+notes:
+  - Phase 2 made foundations-shells the first real migrated family.
+  - Phase 3 consolidates policy around PyVista as the primary geometry-native backend while preserving matplotlib support explicitly.
+  - The manifest now records backend roles at both system and family level: canonical, fallback, and inspection.
+  - The manifest drives implemented family lookup, defaults, scene builders, and backend intent.
+
+backends:
+  - id: pyvista3d
+    status: implemented
+    purpose: Primary geometry-native backend for native 3D families, stronger camera control, richer surfaces, and long-term policy center.
+  - id: matplotlib3d
+    status: implemented
+    purpose: Preserved fallback backend, legacy continuity backend, and AI-friendly path for simpler or inherited static figures.
+  - id: plotly3d
+    status: stub-planned
+    purpose: Interactive inspection backend for camera, geometry, and exploratory scene review, not a canonical manuscript path.
+
+families:
+  - id: foundations-shells
+    status: migrated-phase-2
+    source_dir: figures/src/geometry3d/foundations-shells
+    build_dir: figures/build/geometry3d/foundations-shells
+    module: figures/src/geometry3d/foundations-shells/family.py
+    default_backend: matplotlib3d
+    canonical_backend: matplotlib3d
+    fallback_backend: matplotlib3d
+    inspection_backend: pyvista3d
+    default_camera: shell-manuscript
+    default_style: shell-dark-manuscript
+    canonical_scene: foundations-shells-split
+    manuscript_targets:
+      - chapters/02-foundations/02-01-core-terms-and-variables.qmd
+    migration_from:
+      - figures/src/foundations/foundations_shells.py
+    notes:
+      - First live migrated family proving the shared geometry3d layer.
+      - This family is an explicit continuity-first exception to the system-level PyVista-primary policy.
+      - Matplotlib remains both the canonical backend and the runtime default for this family until a later family-specific switch is justified.
+      - PyVista is the supported inspection/review backend for this family today.
+      - The manuscript-facing split scene is an explicit scene-level PyVista exception inside this still continuity-first family.
+      - Post-render mirroring only updates the legacy canonical path when the family canonical backend is used.
+    scenes:
+      - id: foundations-shells
+        function: build_foundations_shells_scene
+        output_kind: canonical_png
+        output_subdir: canonical
+        filename: foundations-shells.png
+      - id: foundations-shells-panel-a
+        function: build_foundations_shells_panel_a_scene
+        output_kind: canonical_png
+        output_subdir: canonical
+        filename: foundations-shells-panel-a.png
+      - id: foundations-shells-panel-b
+        function: build_foundations_shells_panel_b_scene
+        output_kind: canonical_png
+        output_subdir: canonical
+        filename: foundations-shells-panel-b.png
+      - id: foundations-shells-split
+        function: build_foundations_shells_split_scene
+        output_kind: canonical_png
+        output_subdir: canonical
+        filename: foundations-shells-split.png
+        default_backend: pyvista3d
+        canonical_backend: pyvista3d
+        fallback_backend: matplotlib3d
+
+  - id: torus-cycle
+    status: planned-adaptation
+    source_dir: figures/src/geometry3d/torus-cycle
+    build_dir: figures/build/geometry3d/torus-cycle
+    default_backend: pyvista3d
+    canonical_backend: pyvista3d
+    fallback_backend: matplotlib3d
+    inspection_backend: plotly3d
+    default_camera: manuscript-3q
+    default_style: light-manuscript
+    canonical_scene: torus-cycle-overview
+    manuscript_targets: []
+    migration_from:
+      - torus-cycle-renderer (architecture only)
+    notes:
+      - Keep cycle semantics local to the family.
+      - Treat this as the first likely PyVista-primary family unless a simpler continuity-first implementation clearly wins.
+    scenes: []
+
+  - id: torus-gravity-transfer
+    status: seed-planned
+    source_dir: figures/src/geometry3d/torus-gravity-transfer
+    build_dir: figures/build/geometry3d/torus-gravity-transfer
+    default_backend: pyvista3d
+    canonical_backend: pyvista3d
+    fallback_backend: matplotlib3d
+    inspection_backend: plotly3d
+    default_camera: hero-cutaway
+    default_style: light-manuscript
+    canonical_scene: gravity-transfer-sequence
+    manuscript_targets: []
+    migration_from:
+      - book/dev/figures/torus_gravity_transfer_sequence_v1.svg
+    notes:
+      - Treat as a static-storyboard family before animation work.
+      - Default to PyVista for native 3D staging, while keeping matplotlib available if the family first lands as a simpler static continuity figure.
+    scenes: []

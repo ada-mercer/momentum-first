@@ -1,0 +1,107 @@
+# Gravitational Sources
+
+If gravity is to be read through a staged source, field, and observer grammar, the first task is to say what the source actually is. In M1 that source is not introduced all at once as a single scalar. It begins in directional bookkeeping.
+
+This is a useful choice because gravity, in the present framework, is not only about how much momentum content is present. It is also about how that content is directionally organized. The source layer therefore has to carry both an even or additive aspect and an odd or directional one. Those two roles later become the scalar well channel and the shift or frame-drag channel of the field.
+
+## Directional source channels
+
+For a chosen direction $k$, the basic source-side variables are the directional channels $J_k^+$ and $J_k^-$. These are the gravitationally relevant descendants of the same directional-positive logic that already appeared in Foundations. Instead of beginning from one undifferentiated source quantity and later splitting it by hand, M1 begins with directional channels from the outset.
+
+The two operational combinations are
+
+$$
+M_k = \frac{J_k^+ + J_k^-}{2},
+\qquad
+P_k = J_k^+ - J_k^-.
+$$
+
+Equivalently,
+
+$$
+J_k^\pm = M_k \pm \tfrac{1}{2}P_k.
+$$
+
+These combinations carry distinct roles.
+
+The quantity $M_k$ is the even or additive channel. It measures the part of the source that survives when directional sign is forgotten. In the present gravity grammar, that is the channel that feeds the scalar well.
+
+The quantity $P_k$ is the odd or directional channel. It measures the net directional imbalance. In the present gravity grammar, that is the channel that feeds the shift and frame-drag structure.
+
+The distinction matters because it keeps the later field packaging legible. A stationary gravitational field is not treated as though every part of it comes from the same source role. The scalar well and the directional shift have different jobs because they arise from different parity content already at the source level.
+
+![Directional source bookkeeping split into even and odd channels before field construction. The additive sector feeds the scalar well, while the directional imbalance feeds the shift and rotation channel.](../../figures/build/gravity-and-structured-spacetime/source-side-density-maps.png){#fig-gravity-source-density-map fig-align="center"}
+
+@fig-gravity-source-density-map is not meant to be a full source model. Its job is simpler. It shows why the parity split is worth keeping visible. The source side is already structured before the field equations are written.
+
+## From directional bookkeeping to operational source variables
+
+The full directional source language is valuable because it preserves the framework's internal logic. But the field equations do not need to carry every primitive channel explicitly. For actual field construction, the source is compressed into operational variables.
+
+The scalar side is represented by an effective source density, which we can denote schematically by
+
+$$
+\rho_M := S_M[M_i],
+$$
+
+and the odd or directional side is represented by an effective current-like quantity,
+
+$$
+j_i := S_P[P_i].
+$$
+
+In a stationary overlap regime, these compressions reduce to the familiar operational pair
+
+$$
+\rho_M \approx \rho,
+\qquad
+j_i \approx \rho v_i,
+$$
+
+with the understanding that the shift sector will often use the transverse part $j_i^\perp$ when the field equations are written in Coulomb gauge.
+
+Two cautions are important here.
+
+First, this compression is operational, not ontologically final. The framework is not claiming that the primitive source story has already been reduced uniquely to ordinary mass density and current in every regime. It is claiming something narrower, namely that the stationary field layer can be built cleanly from an effective scalar source and an effective directional current.
+
+Second, the source layer should not be confused with the full dynamical layer. The source tells us what parity content is present and how that content is packaged. It does not by itself tell us how disturbances propagate. Genuine time dependence belongs primarily to the field layer, not merely to time labels attached to the source variables.
+
+A reduced source model makes the distinction visible. If the same total source amount is placed entirely in one directional channel, both scalar and odd responses appear. If the same total amount is split into a balanced coincident pair, the scalar response remains while the odd channel cancels.
+
+![Reduced primitive-source fields for an exponential axial profile. The transverse source is represented by $\delta(r)/(2\pi r)$ and the axial profile by $f(z)=\exp(-|z|/r_0)/(2r_0)$, giving midplane radial fields proportional to $K_0(r/r_0)$. Left: a single-channel source $(Q_+,0)$, where scalar and odd/shift responses are both present. Right: a balanced coincident pair $(Q_+/2,Q_+/2)$, where the scalar response remains while the odd sector cancels, so $\theta_1=A_1=0$. This is a reduced educational example, not a final physical source law.](../../figures/build/gravity-and-structured-spacetime/primitive-source-2d-k0-fields.png){#fig-primitive-source-2d-k0-fields fig-align="center" width="100%"}
+
+@fig-primitive-source-2d-k0-fields is useful because it separates two questions that are easy to blur. The scalar response follows the even amount of source content. The odd or shift response follows the directional imbalance. The reduced $K_0$ profile is only a clean way to regularize the example with a decaying radial field; the manuscript claim is the parity lesson, not a final microscopic source law.
+
+## Stationary source consistency
+
+A stationary source is not merely a source observed at one instant. It is a source whose relevant gravitational content has settled into a regime where the field can be treated as time independent.
+
+At the operational level, that means the source compression must be compatible with the stationary field equations. In particular, the current-like source used in the shift sector should satisfy the consistency condition needed by the stationary gauge choice,
+
+$$
+\partial_i j_i = 0,
+$$
+
+or, equivalently, should be projected to its transverse part before solving for the stationary shift field.
+
+This point is easy to miss, but it matters. Not every directional source description is automatically a clean stationary field input. The source chapter therefore has to do more than define symbols. It has to prepare the source so that the later field construction remains well posed.
+
+## Two canonical source pictures
+
+The present stationary backbone becomes easiest to read if one keeps two source pictures in mind.
+
+The first is the static compact source. In that case the odd or directional channel is absent or negligible at leading order. The source is carried almost entirely by the even channel, and the later field is dominated by the scalar well. This is the clean route to the Newtonian and static-spherical story.
+
+The second is the stationary rotating source. In that case the even channel still builds the scalar well, but the odd channel no longer vanishes. Directional imbalance becomes physically visible, and the field picks up a shift or frame-drag structure. This is the route by which stationary rotation enters the gravity program and the route that later makes Kerr the sharpest stationary target.
+
+These two pictures are sufficient for the mainline prose. They show what the source layer has to accomplish without turning the chapter into a full catalog of source functionals or reduced-model derivations.
+
+## What the source layer is, and what it is not
+
+The source layer is a bookkeeping and constitutive layer. It tells us how gravitationally relevant content is packaged before the field is built. That is already a substantial job, but it is not the whole gravity theory.
+
+It is not the place to overclaim microphysical completion. It is not the place to let torus-specific or deep-geometry machinery take over the chapter. And it is not the place to smuggle in the full nonstationary dynamics through the back door. Those questions belong elsewhere.
+
+What the source chapter must secure is simpler and more important. It must make clear that M1 distinguishes even and odd source roles from the start, that those roles compress cleanly into operational source variables, and that the later scalar and shift sectors are therefore not arbitrary pieces of notation but reader-facing descendants of an already structured source grammar.
+
+Once that is understood, the next chapter can do its real work. It can show how the source packages generate the achieved stationary field.

@@ -1,0 +1,5 @@
+## Working Method
+
+What follows should be read as an attempt at ordered construction rather than proclamation. The question is not whether a momentum-first language can sound appealing. The question is whether it can carry weight.
+
+That means beginning with primitive assumptions, following the structure they actually support, and resisting the temptation to claim more than the framework has earned. If the project is worth anything, it will be because the reader can see where the structure is strong, where it is incomplete, and where it may fail.

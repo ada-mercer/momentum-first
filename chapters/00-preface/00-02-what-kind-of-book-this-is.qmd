@@ -1,0 +1,5 @@
+## What Kind of Book This Is
+
+This is not a conventional textbook, and it is not a finished theory presented as settled doctrine. It is an attempt to develop a framework in public and in order: to state its primitive assumptions clearly, to see what follows from them, and to keep the difference visible between what is genuinely secured and what remains partial, suggestive, or provisional.
+
+That distinction matters here. A framework like this becomes useless if every resemblance is treated as an explanation, every interpretation as a conclusion, or every promising structure as a result. If this book is worth anything, it will be because the reader can tell where the structure is strong, where it is provisional, and where it may simply fail.

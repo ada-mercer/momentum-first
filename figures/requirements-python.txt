@@ -1,0 +1,3 @@
+matplotlib
+# geometry3d Phase 3 primary geometry-native backend
+pyvista

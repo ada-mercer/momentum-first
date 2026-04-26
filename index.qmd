@@ -1,7 +1,1 @@
----
-title: "Momentum First"
----
-
-
-This is the scaffolded landing page for the Quarto book project.
-Detailed chapter content will be added later.
+# {.unnumbered}

@@ -1,115 +1,60 @@
-## Core Terms and Variables
+# Core Terms and Variables
 
-M1 begins from a simple wager: the basic content of a particle is already momentum-structured.
-Before introducing directional conservation, geometry, or fields, the framework therefore needs a small vocabulary for three things:
-- the intrinsic locked momentum scale of the particle,
-- the bosic momentum associated with its directed expression,
-- and the total momentum content packaged from them.
+M1 begins by fixing a small momentum-first vocabulary. Before introducing directional conservation, the opening framework needs three quantities:
+- the quantity associated with rest mass,
+- the quantity associated with translation,
+- and the total momentum content built from both.
 
-Those three quantities are `p_f`, `p`, and `M`.
-Everything that follows in the opening framework depends on keeping them clear.
-
-A terminology rule matters from the start.
-In this book,
-- **fermic** and **bosic** are used for momentum quantities or momentum roles,
-- **fermionic** and **bosonic** are used for structure, geometry, winding, chirality, or state labels.
-
-So one writes **fermic momentum** and **bosic momentum**, but **fermionic structure** and **bosonic geometry**.
+These are $p_f$, $p$, and $M$.
 
 ## Fermic momentum
 
-The first primitive is **fermic momentum**, written `p_f`.
-In the inertial baseline,
+The first primitive is **fermic momentum**, written $p_f$.
+At the inertial baseline,
 $$
- p_f = m_0 c,
+p_f = m_0 c,
 $$
-so the usual rest mass appears here as a momentum scale rather than as an independent primitive concept.
+where $m_0$ is the particle's rest mass and $c$ is the speed of light.
 
-M1 treats `p_f` as the particle's intrinsic locked momentum scale.
-It is not ordinary translational motion. It is the internal scale tied to the particle's identity.
-In the broader interpretive picture developed later in the book, the associated **fermionic structure** is also the leading clock-carrying part of the particle.
-
-For now, the essential point is simpler: `p_f` is intrinsic, and it belongs to the particle's momentum content from the outset.
+This is the quantity M1 associates with mass. In M1, mass is treated not as an independent primitive, but as momentum locked into an internal particle cycle. The structure of that cycle is associated with the particle's identity.
 
 ## Bosic momentum
 
-The second primitive is **bosic momentum**, written `p`.
-This is a scalar magnitude, not a vector quantity.
-Its orientation is carried by the directional components `p_k` of the vector `\vec p`.
+The second primitive is **bosic momentum**, written $p$.
+This is the momentum associated with translation. In the opening framework, it is the part of a particle's momentum content that carries directed motion and change of position in space.
 
-That distinction is important.
-The bosic momentum `p` is the magnitude of the momentum sector associated with directional expression, while the components `p_k` tell us how that bosic momentum is oriented along a chosen direction.
-It is this oriented bosic momentum that yields translation.
+As a magnitude, $p$ is scalar. Its direction is carried by the vector $\vec p$ and by the directional components $p_k$.
 
-So the language is:
-- `p` = bosic momentum magnitude,
-- `p_k` = directional components,
-- `\vec p` = the corresponding momentum vector.
-
-In M1, bosic momentum is the momentum sector most closely associated with translational asymmetry and directed motion in space.
-It is therefore the part that most directly overlaps with what we ordinarily recognize as observable momentum.
+So the notation is:
+- $p$ = bosic momentum magnitude,
+- $p_k$ = directional components,
+- $\vec p$ = the corresponding momentum vector.
 
 ## Core momentum
 
-The third primitive quantity is **core momentum**, written `M`.
-This is the packaged representative of the particle's total momentum content in the inertial baseline.
-It satisfies the composition identity
+The third primitive quantity is **core momentum**, written $M$.
+A particle carries both fermic momentum and bosic momentum. In the inertial baseline, these are treated as orthogonal contributions, and their total momentum content is
 $$
- M^2 = p_f^2 + p^2.
+M = \sqrt{p_f^2 + p^2}.
 $$
 
-This is the simplest compositional skeleton of the framework.
-The intrinsic fermic scale and the bosic momentum magnitude combine into a total packaged momentum content.
-
-The familiar energy relation is then read downstream as
+A sharp eye will notice that this is relativistic energy in flat space, that is,
 $$
- E = cM.
+E = cM.
 $$
-So M1 does not begin from energy as a separate first primitive. It begins from momentum content, with energy read as its corresponding external translation into standard language.
 
 ## The momentum triangle
 
-The identity
+The relation
 $$
- M^2 = p_f^2 + p^2
+M = \sqrt{p_f^2 + p^2}
 $$
-is the framework's **momentum triangle**.
-The name is meant literally: it is the geometric composition of an intrinsic fermic scale and a bosic momentum magnitude into a total packaged momentum content.
+is the framework's **momentum triangle**. It states that, in the inertial baseline, fermic momentum and bosic momentum combine into a single total momentum content. @fig-momentum-triangle shows this inertial composition in its simplest form.
 
-![Momentum content in shell language: the fermic shell provides the locked intrinsic scale, the core shell packages the total momentum content `M`, and the directional shell shows how that content is expressed along a chosen direction `\hat n`.](../../figures/build/foundations/foundations-shells.png){#fig-foundations-shells fig-align="center"}
+![In the inertial baseline, bosic momentum $p$ and fermic momentum $p_f$ combine as orthogonal contributions to define the total momentum content $M$.](../../figures/build/foundations/momentum-triangle.png){#fig-momentum-triangle fig-align="center" out-width="62%"}
 
-At this stage, the momentum triangle is only the inertial baseline. It is not yet a full internal geometry of particles, and it does not by itself settle the later carrier-geometry program.
-What it does provide is the first clean structural picture of M1: intrinsic scale plus directed bosic expression gives total momentum content.
+At this stage, this is simply the inertial composition relation. The next section introduces the deeper directional-positive conservation postulate and the present split used to realize it.
 
-## Why start here?
+## Terminology note
 
-The reason for starting with `p_f`, `p`, and `M` is economy.
-If these quantities are enough to state the particle's inertial momentum content cleanly, then the framework can ask whether other familiar quantities should be treated as derived, contextual, or correspondence-level rather than primitive from the start.
-
-That is the opening wager of M1 in compact form.
-The point is not to rename familiar physics for effect. The point is to choose the smallest momentum-first vocabulary that can carry the framework without confusion.
-
-## Notation lock for the opening framework
-
-For the purposes of the opening section, the notation is:
-- **fermic momentum** = `p_f`,
-- **bosic momentum** = `p`,
-- **directional components of bosic momentum** = `p_k`,
-- **core momentum** = `M`.
-
-Two short cautions are worth fixing now.
-
-First, older notes sometimes drift between `p`, `p_k`, and `\vec p`. In this book, the lock is simple: `p` is the bosic momentum magnitude, `p_k` are the directional components, and `\vec p` is the corresponding momentum vector.
-
-Second, the words *fermic* and *bosic* are internal framework terms. They should not be read as already proven equivalent to the standard fermion/boson classification of quantum field theory. Any such bridge has to be argued later rather than assumed by naming.
-
-## What this subsection has established
-
-The framework now has its inertial baseline vocabulary:
-- `p_f` as intrinsic fermic momentum,
-- `p` as bosic momentum magnitude,
-- `p_k` as directional components,
-- `M` as the packaged total momentum content,
-- and `M^2 = p_f^2 + p^2` as the momentum-triangle composition rule.
-
-With that vocabulary in place, the next step is to state the deeper conservation principle of the framework and the present split used to realize it.
+The terms **fermic** and **bosic** are adapted from the familiar distinction between **fermionic** and **bosonic** structure. In this book, however, **fermic** and **bosic** are used specifically for momentum quantities or momentum roles, while **fermionic** and **bosonic** are reserved for structure, geometry, winding, chirality, or state labels. The terminology is meant to mark a distinction in usage, not to assume from the outset a one-to-one identification with the standard fermion/boson classification of quantum field theory.

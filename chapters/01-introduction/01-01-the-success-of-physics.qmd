@@ -1,11 +1,11 @@
-## The Success of Physics
+# The Success of Physics
 
 Any attempt to rethink foundations should begin with respect.
 
-Modern physics is not a broken enterprise waiting to be replaced. It is an extraordinary intellectual achievement: precise in prediction, deep in structure, and astonishingly successful in its ability to organize the behavior of the physical world. The mathematical frameworks developed across classical mechanics, relativity, quantum theory, and field theory have earned their authority.
+Modern physics is not a damaged structure waiting for rescue. It is one of the great intellectual achievements: mathematically precise, experimentally powerful, and remarkably successful at organizing the behavior of the physical world. Classical mechanics, relativity, quantum theory, and field theory have earned their authority.
 
-That success matters here. It sets the burden for any alternative starting point. A new framework does not earn attention by sounding simpler, more intuitive, or more philosophically satisfying. It earns attention only if it can preserve the explanatory and predictive burden carried by the framework it seeks to reorganize.
+That success sets the standard here. An alternative starting point does not earn attention by sounding cleaner, simpler, or more philosophically appealing. It earns attention only if it can carry real explanatory weight while remaining answerable to the successes already achieved.
 
-At the same time, success does not answer every kind of question. A theory may work magnificently and still leave open the question of which of its concepts are truly primitive, which are derived, and which have become central more by historical organization than by deepest necessity. Practical indispensability and foundational priority are not always the same thing.
+But success does not settle every foundational question. A theory may work magnificently while still leaving open which of its concepts are primitive, which are derived, and which sit at the center mainly because of the historical order in which the theory was built. Practical indispensability and foundational priority are not always the same thing.
 
-That is the opening space in which this book operates. It does not begin from the belief that standard physics has failed. It begins from the possibility that some of its most familiar structures may not be the most economical place to begin.
+This book begins in that gap. It does not start from the claim that standard physics has failed. It starts from the possibility that some familiar structures may stand too high in the explanatory hierarchy, and that beginning elsewhere may reveal a cleaner organization, and perhaps consequences that are otherwise harder to see.

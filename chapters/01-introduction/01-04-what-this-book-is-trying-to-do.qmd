@@ -1,11 +1,11 @@
-## What This Book Is Trying to Do
+# What This Book Is Trying to Do
 
-This book is not trying to replace the whole of physics with a slogan. It is trying to stage a framework carefully enough that its strengths and weaknesses can become visible.
+If the momentum-first wager is to be judged fairly, it must be developed in an order that makes visible what is assumed, what is built, and what the framework can actually carry. This book is not organized to protect the proposal from difficulty. It is organized to expose its strength, its limits, and, where necessary, its failure.
 
-That means beginning with primitive terms, conservation structure, and mappings, rather than jumping immediately to interpretation or applications. It means asking first whether the proposed starting point can support a coherent formal backbone. Only after that does it make sense to ask what the framework implies for more familiar domains such as relativity, gravity, quantum structure, or cosmology.
+It therefore begins with the core structure. The first task is to make the primitive terms, conservation principles, and formal mappings precise enough that the framework can stand, if it can stand at all, on its own terms. Breadth comes later. Foundations come first because without them the rest would be rhetoric.
 
-The book therefore proceeds in layers. It begins with foundations, then moves outward toward broader correspondences and applications. Along the way, it tries to keep a disciplined distinction between what is genuinely derived, what is only shown to correspond in a limited regime, what is interpretive, and what remains speculative.
+Only after that does the argument move outward toward relativity, gravity, quantum structure, and cosmology. And as it moves outward, the book does not assume in advance that every continuation will be equally secure. Some lines of development may hold firmly. Some may work only in a limited regime. Some may force a revision, or even a genuine fork, when two incompatible continuations both deserve to be seen clearly before one is chosen. That is not a defect in the method. It is part of what honest foundational work looks like when the terrain is still being opened.
 
-The aim is not simply to present an alternative vocabulary. The aim is to see whether a different order of explanation produces a framework that is structurally cleaner, conceptually sharper, and more resonant with the actual geometry and behavior of physical systems.
+The book should therefore be read neither as a finished doctrine nor as a sequence of rhetorical claims. It is a structured investigation. Its successes are not all of one kind, and it matters to distinguish what is directly built from what is only recovered, what is interpretive, and what remains exploratory.
 
-In that sense, the book is better read as a structured test than as a finished doctrine. It does not ask for early loyalty. It asks to be followed far enough that its wager can be judged.
+The standard, however, is not loose. M1 earns its place only if this momentum-first order does real work: if it reduces the genuine primitive burden, clarifies the relation among mass, energy, and momentum, recovers known physics where it claims recovery, and reveals structure that is otherwise harder to see. It fails if the simplification is cosmetic, if the framework quietly assumes what it claims to explain, or if the correspondence burden overwhelms the primitive proposal.

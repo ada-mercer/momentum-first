@@ -1,0 +1,13 @@
+## How to Read This Book
+
+This book does not have to be read in only one way.
+
+If you want the **conceptual entry point**, read the Preface, the Introduction, and the opening parts of the Foundations section. That route should make clear what question is being asked, what shift is being proposed, and why the framework is arranged as it is.
+
+If you want the **formal core**, move quickly into the foundational material: the primitive variables, ADMC, the invertible mappings, and the first structural consequences. That is where the framework begins to earn or lose its credibility.
+
+If you want to read the book **comparatively**, keep an eye on where the text is establishing something directly and where it is only showing a more limited recovery or match to familiar structures. Some parts of M1 may reproduce known patterns; that does not automatically mean they explain them from first principles.
+
+If you are reading **critically**, this is where your attention should go first: assumptions, scope conditions, regime claims, and falsifiers. Those are the pressure points. A framework like this should not be judged by whether it sounds intriguing, but by whether it makes clear claims and can survive contact with them.
+
+And if your interest lies mainly in later applications—gravity, quantum structure, or cosmology—my advice is still to begin with the foundations. The later sections depend heavily on the early locks, and without those, the downstream claims can easily appear either stronger or weaker than they really are.

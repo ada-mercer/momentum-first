@@ -4,10 +4,24 @@ figures:
     output: figures/build/foundations/foundations-shells.png
     chapter: chapters/02-foundations/02-01-core-terms-and-variables.qmd
   - id: fig-momentum-triangle
-    source: figures/src/foundations/momentum_triangle.py
+    source: figures/src/foundations/momentum_triangle.R
     output: figures/build/foundations/momentum-triangle.png
     chapter: chapters/02-foundations/02-03-invertible-mapping.qmd
-  - id: fig-source-field-observer
-    source: figures/src/foundations/source_field_observer.py
-    output: figures/build/foundations/source-field-observer.png
-    chapter: chapters/02-foundations/02-06-minimal-gravity-grammar.qmd
+  - id: fig-gravity-directional-source-field-observer
+    source: figures/src/gravity-and-structured-spacetime/gravity-directional-source-field-observer.prompt.md
+    output: figures/build/gravity-and-structured-spacetime/gravity-directional-source-field-observer.png
+    chapter: chapters/03-gravity-and-structured-spacetime/03-01-gravity-in-m1.qmd
+    generator: openai/gpt-image-2
+  - id: fig-stationary-gravity-grammar
+    source: figures/src/gravity-and-structured-spacetime/stationary-gravity-grammar.prompt.md
+    output: figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png
+    chapter: chapters/03-gravity-and-structured-spacetime/03-01-gravity-in-m1.qmd
+    generator: openai/gpt-image-2
+  - id: fig-source-side-density-maps
+    source: figures/src/gravity-and-structured-spacetime/source_side_density_maps.R
+    output: figures/build/gravity-and-structured-spacetime/source-side-density-maps.png
+    chapter: chapters/03-gravity-and-structured-spacetime/03-02-gravitational-sources.qmd
+  - id: fig-primitive-source-2d-k0-fields
+    source: figures/src/gravity-and-structured-spacetime/primitive_source_2d_k0_fields.R
+    output: figures/build/gravity-and-structured-spacetime/primitive-source-2d-k0-fields.png
+    chapter: chapters/03-gravity-and-structured-spacetime/03-02-gravitational-sources.qmd
