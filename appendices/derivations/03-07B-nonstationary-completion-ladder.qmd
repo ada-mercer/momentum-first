@@ -1,0 +1,173 @@
+---
+title: "Derivation 3.7B — Nonstationary completion ladder"
+---
+
+# Derivation 3.7B — Nonstationary completion ladder {#sec-derivation-03-07B-nonstationary-completion-ladder}
+
+## Purpose
+
+This appendix supports Chapter 3.7 by separating the locked baseline from the conditional nonlinear, tensor, radiative, and rotating-source completion layers.
+
+It is meant to prepare future completion work without allowing the main chapter to overclaim.
+
+## Role / regime / status
+
+- **Role:** completion status and promotion ladder.
+- **Regime:** nonstationary M1 gravity beyond the locked linear scalar+shift baseline.
+- **Status:** organized reference structure; several layers remain conditional or open.
+- **Non-claim:** this appendix does not complete nonlinear radiative gravity or derive Kerr natively.
+
+## Maturity ladder
+
+Use four levels:
+
+1. **Locked baseline:** linear scalar+shift field block.
+2. **Promoted conditional layer:** nonlinear scalar+shift source corrections.
+3. **Disciplined tensor/radiative slot:** first-pass TT structure with bounded source hierarchy.
+4. **Open completion work:** exact rotating-source closure, nonlinear tensor backreaction, and full waveform/radiative phenomenology.
+
+This ladder should govern manuscript language.
+
+## Promoted nonlinear scalar+shift family
+
+The promoted nonlinear scalar equation is
+
+$$
+\frac{1}{c^2}\partial_{t_*}^2\theta_0-\Delta\theta_0
+=
+\frac{4\pi G_N}{c^2}\left(\rho_M+\lambda_{MM}u_M+\lambda_{MP}u_P\right).
+$$
+
+The promoted nonlinear shift equation is
+
+$$
+\frac{1}{c^2}\partial_{t_*}^2A_i-\Delta A_i
+=
+-\frac{16\pi G_N}{c^3}(1+\mu\theta_0)j_i^\perp,
+\qquad
+\partial_iA_i=0.
+$$
+
+The promoted coefficients are
+
+$$
+\lambda_{MM},
+\qquad
+\lambda_{MP},
+\qquad
+\mu.
+$$
+
+Current reference defaults set these to unity unless a benchmark forces retuning. The first bounded calibration pass did not force a change.
+
+## Deferred scalar+shift variants
+
+The following remain deferred:
+
+- flux-driven shift-source terms,
+- operator nonlinearities in the scalar or shift wave operators,
+- split propagation speeds,
+- direct tensor backreaction into scalar+shift equations,
+- extra coefficient families not forced by benchmark pressure.
+
+The anti-bloat rule is simple: if a term does not improve closure clarity, stationary preservation, or benchmark relevance, it should not be promoted.
+
+## Tensor/spatial slot
+
+The first-pass tensor/spatial split is
+
+$$
+\gamma_{ij}=(1+2\sigma\theta_0)\delta_{ij}+h_{ij}^{TT},
+$$
+
+with
+
+$$
+\partial_i h_{ij}^{TT}=0,
+\qquad
+h_{ii}^{TT}=0.
+$$
+
+The first-pass tensor equation is
+
+$$
+\frac{1}{c^2}\partial_{t_*}^2h_{ij}^{TT}-\Delta h_{ij}^{TT}
+=\kappa_T\Pi_{ij}^{TT}.
+$$
+
+In the overlap-normalized reference packet,
+
+$$
+\kappa_T=\frac{16\pi G_N}{c^4},
+\qquad
+c_T=c.
+$$
+
+The tensor slot is real enough to carry anisotropic and radiative structure, but it remains first-pass. It is not yet full radiative completion.
+
+## Tensor source hierarchy
+
+The disciplined source hierarchy is:
+
+1. **mandatory:** odd-current anisotropy,
+2. **preferred:** scalar-gradient anisotropy and shift-flux anisotropy,
+3. **deferred:** mixed higher-order terms and tensor self-backreaction.
+
+A compact reference source may be written as
+
+$$
+\Pi_{ij}^{TT}=\mathrm{TT}\left[\Pi_{ij}^{(P)}+\Xi_{ij}^{(M)}+\Xi_{ij}^{(A)}\right].
+$$
+
+This gives the tensor sector a source home without pretending the primitive constitutive law is finished.
+
+## Radiative and backreaction status
+
+The radiative sector currently supports:
+
+- vacuum TT propagation,
+- sourced TT response,
+- correct null cases for spherical static sources,
+- bounded comparison with GR radiative expectations.
+
+It does not yet support:
+
+- detailed waveform claims,
+- full coupled scalar-shift-tensor emission balance,
+- promoted tensor backreaction,
+- or strong-source radiative phenomenology.
+
+Tensor backreaction remains deferred unless a benchmark fails without it and the correction cannot be absorbed into scalar+shift source renormalization.
+
+## Rotating-source closure ladder
+
+The rotating-source problem is now a structured open problem. The minimum source stack is:
+
+1. scalar source $\rho_M(r,\theta,t_*)$,
+2. odd/current source $j_\phi(r,\theta,t_*)$,
+3. anisotropic stress source $\Sigma_{ij}^{ani}(r,\theta,t_*)$.
+
+The closure ladder is:
+
+- **C1:** far-zone odd/current scaling,
+- **C2:** stationary scalar+shift settling,
+- **C3:** tensor activation discipline,
+- **C4:** axisymmetric strong-field hierarchy,
+- **C5:** exact Kerr-target closure.
+
+Current status: C1-C3 are bounded and useful; C4-C5 remain open.
+
+## Completion checklist
+
+A future completion pass should not reopen everything. It should target these specific gaps:
+
+1. physical calibration of the promoted nonlinear coefficients beyond current unity defaults,
+2. primitive constitutive map for anisotropic tensor sources,
+3. exact native rotating-source closure,
+4. promoted tensor backreaction if forced by benchmark pressure,
+5. full radiative/waveform comparison,
+6. odd/mixed target-response constitutive laws.
+
+## Result
+
+The nonstationary program is prepared for completion because the missing work is now localized. The current book should present the baseline as solid, the nonlinear and tensor layers as disciplined reference structures, and full nonlinear/radiative/rotating-source completion as open.

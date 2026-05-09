@@ -1,0 +1,140 @@
+---
+title: "Derivation 3.6A — Stationary correspondence calibration"
+---
+
+# Derivation 3.6A — Stationary correspondence calibration {#sec-derivation-03-06A-stationary-correspondence}
+
+## Purpose
+
+This appendix supports Chapter 3.6. It collects the calibration steps that connect the native M1 stationary source-to-field map to familiar stationary gravitational variables.
+
+The appendix is deliberately downstream of the M1 construction. It does not define the primitive source grammar. It checks how that grammar faces ordinary density, current, Newtonian potential, and metric-facing language.
+
+## Role / regime / status
+
+- **Role:** correspondence and calibration.
+- **Regime:** stationary weak-to-moderate overlap; static isotropic scalar limit and transverse shift comparison.
+- **Status:** stable comparison sheet for Part III.
+- **Non-claim:** successful correspondence is not a full native derivation of all GR dynamics.
+
+## Source-density calibration
+
+The native even source package has units
+
+$$
+[M_k]=\mathrm{kg\,s^{-1}m^{-2}}.
+$$
+
+Ordinary mass density has units
+
+$$
+[\rho]=\mathrm{kg\,m^{-3}}.
+$$
+
+The extra factor is one power of velocity. In the static isotropic scalar correspondence, the even M1 packages therefore satisfy
+
+$$
+\sum_k M_k \longleftrightarrow c\rho.
+$$
+
+For an isotropic static source, a convenient axis-wise representation is
+
+$$
+M_x=M_y=M_z=\frac{c\rho}{3},
+$$
+
+or, when the directional imbalance vanishes,
+
+$$
+J_k^+=J_k^-=\frac{c\rho}{3},
+\qquad
+P_k=0.
+$$
+
+The six positive channels are not six copies of the classical source. They are a directional-positive representation whose even packages compress to the scalar classical source in the static overlap.
+
+## Newtonian scalar limit
+
+The M1 scalar equation is
+
+$$
+\Delta\theta_0=-\frac{4\pi G_N}{c^3}\sum_kM_k.
+$$
+
+Using the static isotropic calibration gives
+
+$$
+\Delta\theta_0=-\frac{4\pi G_N}{c^2}\rho.
+$$
+
+Define the ordinary Newtonian potential by
+
+$$
+U:=-c^2\theta_0.
+$$
+
+Then
+
+$$
+\Delta U=4\pi G_N\rho.
+$$
+
+For an exterior spherical source,
+
+$$
+U(r)=-\frac{G_NM}{r},
+$$
+
+so
+
+$$
+\theta_0(r)=\frac{G_NM}{c^2r},
+\qquad
+G(r)=\sqrt{1-\frac{2G_NM}{c^2r}}.
+$$
+
+This checks that the additive/even source package produces the usual scalar weak-field face.
+
+## Shift-current comparison
+
+The directional M1 field is built from the odd package $P_k$. In a stationary gauge-fixed comparison, the familiar object is a transverse current-like source $j_i^\perp$.
+
+The comparison equation is
+
+$$
+\Delta A_i=\frac{16\pi G_N}{c^3}j_i^\perp,
+\qquad
+\partial_iA_i=0.
+$$
+
+This is a calibration statement, not a replacement of the native source grammar. It says how the M1 shift sector is recognized in the weak stationary current language.
+
+## Metric-facing dictionary
+
+At weak-field stationary order, the metric-facing dictionary can be written schematically as
+
+$$
+g_{00}=-(1+2U/c^2),
+$$
+
+and
+
+$$
+g_{0i}\sim\frac{A_i}{c}.
+$$
+
+The scalar package supplies the clock-depth or lapse-like side. The directional package supplies the mixed time-space, frame-drag or shift-like side. Signs and coefficients in the second relation depend on comparison convention; the structural split is the robust point.
+
+## Result
+
+The stationary correspondence layer establishes the classical faces
+
+$$
+\sum_kM_k\leftrightarrow c\rho,
+\qquad
+\theta_0\leftrightarrow U,
+\qquad
+A_i\leftrightarrow\text{stationary shift}.
+$$
+
+It leaves the order of explanation intact: first the native M1 source-to-field map, then the classical/GR-facing calibration.

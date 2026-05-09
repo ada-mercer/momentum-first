@@ -34,7 +34,7 @@ Here $p_k$ is the component of the bosic momentum vector along the chosen direct
 
 ![A schematic first-stage depiction in which the rest-state momentum scale $p_f$ is represented as swelling isotropically to the core momentum magnitude $M$.](../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-a.png){#fig-foundations-shells-admc-a}
 
-![A schematic second-stage depiction in which the swollen shell is represented as directionally deformed. Relative to a chosen direction, its momentum content can then be resolved into sector contributions.](../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-b.png){#fig-foundations-shells-admc-b}
+![A schematic second-stage depiction in which the swollen shell is represented as directionally deformed. Relative to a chosen direction, its momentum can then be resolved into sector contributions.](../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-b.png){#fig-foundations-shells-admc-b}
 
 A schematic two-stage depiction of the momentum configuration associated with motion. Panel (a) represents an isotropic swelling from $p_f$ to $M$. Panel (b) represents a directional deformation of the swollen shell. The stages are representational rather than sequential: physically they belong to one combined momentum configuration.
 :::

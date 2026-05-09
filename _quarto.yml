@@ -51,14 +51,20 @@ book:
   - part: "Gravity and Structured Spacetime"
     chapters:
     - chapters/03-gravity-and-structured-spacetime/03-01-gravity-in-m1.qmd
-    - chapters/03-gravity-and-structured-spacetime/03-02-gravitational-sources.qmd
-    - chapters/03-gravity-and-structured-spacetime/03-03-the-stationary-gravitational-field.qmd
-    - chapters/03-gravity-and-structured-spacetime/03-04-local-gravity-and-observer-bookkeeping.qmd
-    - chapters/03-gravity-and-structured-spacetime/03-05-nonstationary-gravity-extension-track.qmd
-    - chapters/03-gravity-and-structured-spacetime/03-06-spacetime-lessons-and-open-boundaries.qmd
+    - chapters/03-gravity-and-structured-spacetime/03-02-gravity-side-core-terms-and-variables.qmd
+    - chapters/03-gravity-and-structured-spacetime/03-03-gravitational-sources.qmd
+    - chapters/03-gravity-and-structured-spacetime/03-04-the-stationary-gravitational-field.qmd
+    - chapters/03-gravity-and-structured-spacetime/03-05-local-gravity-and-observer-bookkeeping.qmd
+    - chapters/03-gravity-and-structured-spacetime/03-06-stationary-classical-correspondence.qmd
+    - chapters/03-gravity-and-structured-spacetime/03-07-nonstationary-gravity-extension-track.qmd
+    - chapters/03-gravity-and-structured-spacetime/03-08-spacetime-lessons-and-open-boundaries.qmd
   - references.qmd
-  # appendices:
-  #   - chapters/appendix-a/index.qmd # Appendices automatically get lettered numbering (A, B, C...)
+  appendices:
+  - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
+  - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
+  - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
+  - appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
+  - appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
 
 bibliography: bibliography.bib
 # csl: styles/apa.csl # Specify a Citation Style Language file (e.g., APA, IEEE, Nature)

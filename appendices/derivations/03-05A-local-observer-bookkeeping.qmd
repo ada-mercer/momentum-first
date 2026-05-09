@@ -1,0 +1,162 @@
+---
+title: "Derivation 3.5A — Local observer bookkeeping"
+---
+
+# Derivation 3.5A — Local observer bookkeeping {#sec-derivation-03-05A-local-observer-bookkeeping}
+
+## Purpose
+
+This appendix supports Chapter 3.5. It records the local bookkeeping rules that connect the stationary field variables to the quantities read by clocks, transported particles, and local observers.
+
+The main point is separation of roles. The stationary field is established by the source-to-field map. Local observer bookkeeping says how a particle or clock reads that field at its own location.
+
+## Role / regime / status
+
+- **Role:** local readout rule for the stationary M1 gravity package.
+- **Regime:** stationary field, local observer patch, scalar+shift-led bookkeeping.
+- **Status:** working reference convention for Part III.
+- **Non-claim:** this is not a full dynamical equation of motion and not a complete nonstationary observer theory.
+
+## Local scalar dressing
+
+The scalar field enters local clocking through
+
+$$
+G(x)=\sqrt{1-2\theta_0(x)}.
+$$
+
+The local context-dressed fermic scale is
+
+$$
+p_{f,c}(x)=p_fG(x).
+$$
+
+This is the gravity-side clocking rule. The field does not first change an external time parameter. It changes the local cycle-carrying scale through which the clock is read.
+
+In the weak-field limit,
+
+$$
+G(x)=1-\theta_0(x)+O(\theta_0^2),
+$$
+
+so, where $\theta_0>0$ marks a gravitational well,
+
+$$
+p_{f,c}<p_f.
+$$
+
+The local fermic scale is reduced relative to the asymptotic value. In M1 language, this is the local form of gravitational clock slowing.
+
+## Shift-dressed transport momentum
+
+The local transport momentum is not the bare spatial momentum alone. In the stationary scalar+shift package, define
+
+$$
+\Pi_i=p_i-p_{f,c}A_i.
+$$
+
+Here $A_i$ is the directional/shift field at the observer location. The factor $p_{f,c}$ is included because the shift correction is read through the same local clock-carrying scale that the scalar well has already dressed.
+
+This ordering matters:
+
+$$
+\theta_0 \longrightarrow p_{f,c},
+\qquad
+(p_{f,c},A_i,p_i)\longrightarrow \Pi_i.
+$$
+
+The scalar dressing is not an optional correction added after transport. It sets the local scale against which shift-modified transport is read.
+
+## Local packaged magnitude
+
+With the local fermic scale and transport momentum in hand, the natural packaged local magnitude is
+
+$$
+M_{g,loc}(x,p)=\sqrt{p_{f,c}(x)^2+\gamma^{ij}(x)\Pi_i\Pi_j}.
+$$
+
+This expression is a local readout package. It says how the particle's fermic scale and transported momentum are read inside the stationary gravitational structure.
+
+It should not be confused with a global conserved quantity. The local value depends on the observer location, the local field, and the chosen local readout frame.
+
+## Stationary generator distinction
+
+A stationary transport generator, denoted schematically by
+
+$$
+H_{g,stat},
+$$
+
+plays a different role. It organizes stationary evolution or transport in a background that has a time-independent field structure. It is therefore a generator-side object, not merely the same thing as the local magnitude $M_{g,loc}$.
+
+The distinction can be summarized as
+
+$$
+M_{g,loc}:\ \text{local contextualized magnitude},
+$$
+
+$$
+H_{g,stat}:\ \text{stationary transport/generator bookkeeping}.
+$$
+
+The two objects can be related in a stationary setting, but identifying them too early erases the difference between local readout and global/stationary organization.
+
+## Local and asymptotic readings
+
+Let $x_\infty$ denote an asymptotic reference region where
+
+$$
+G(x_\infty)\to1,
+\qquad
+A_i(x_\infty)\to0,
+\qquad
+\gamma^{ij}(x_\infty)\to\delta^{ij}.
+$$
+
+Then the local package tends toward the flat expression
+
+$$
+M_{g,loc}(x_\infty,p)\to\sqrt{p_f^2+\delta^{ij}p_ip_j}.
+$$
+
+Away from that reference region, the local readout is instead
+
+$$
+M_{g,loc}(x,p)=\sqrt{p_f^2G(x)^2+\gamma^{ij}(x)(p_i-p_fG(x)A_i)(p_j-p_fG(x)A_j)}.
+$$
+
+This is why Part III keeps local and asymptotic language separate. The local observer reads the field actually present at its location. The asymptotic observer supplies a comparison standard.
+
+## Clocking and motion separation
+
+For a clock at rest relative to the local stationary frame, the scalar dressing carries the leading gravity-side clocking effect:
+
+$$
+p_f\longrightarrow p_{f,c}=p_fG.
+$$
+
+For a moving particle, motion-side effects are read after this local dressing and relative to the local stationary frame. Thus the schematic order is
+
+$$
+\text{field}\longrightarrow\text{local clock scale}\longrightarrow\text{local transport}\longrightarrow\text{observed motion/clock comparison}.
+$$
+
+This prevents a common confusion: gravitational clock slowing and motion-side slowing should not be collapsed into one undifferentiated factor. In M1, the scalar field first changes the local cycle-carrying scale; motion is then read using the locally relevant transport bookkeeping.
+
+## Result
+
+The stationary observer layer is governed by three compact rules:
+
+$$
+p_{f,c}=p_fG,
+$$
+
+$$
+\Pi_i=p_i-p_{f,c}A_i,
+$$
+
+$$
+M_{g,loc}=\sqrt{p_{f,c}^2+\gamma^{ij}\Pi_i\Pi_j}.
+$$
+
+Together they define the local readout grammar used in Chapter 3.5. The scalar well dresses the local clock-carrying scale, the shift modifies local transport, and the packaged magnitude summarizes the local gravitationally dressed state without replacing the stationary generator.

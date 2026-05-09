@@ -4,7 +4,7 @@ If the momentum-first wager is to be judged fairly, it must be developed in an o
 
 It therefore begins with the core structure. The first task is to make the primitive terms, conservation principles, and formal mappings precise enough that the framework can stand, if it can stand at all, on its own terms. Breadth comes later. Foundations come first because without them the rest would be rhetoric.
 
-Only after that does the argument move outward toward relativity, gravity, quantum structure, and cosmology. And as it moves outward, the book does not assume in advance that every continuation will be equally secure. Some lines of development may hold firmly. Some may work only in a limited regime. Some may force a revision, or even a genuine fork, when two incompatible continuations both deserve to be seen clearly before one is chosen. That is not a defect in the method. It is part of what honest foundational work looks like when the terrain is still being opened.
+Only after that does the argument move outward toward relativity, gravity, quantum structure, and cosmology. And as it moves outward, the book does not assume in advance that every continuation will be equally secure. Some lines of development may hold firmly. Some may work only in a limited regime. Some may force a revision, or even a genuine fork, when two incompatible continuations both deserve to be seen clearly before one is chosen.
 
 The book should therefore be read neither as a finished doctrine nor as a sequence of rhetorical claims. It is a structured investigation. Its successes are not all of one kind, and it matters to distinguish what is directly built from what is only recovered, what is interpretive, and what remains exploratory.
 

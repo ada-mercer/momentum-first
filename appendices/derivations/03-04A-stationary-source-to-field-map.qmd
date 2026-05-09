@@ -1,0 +1,176 @@
+---
+title: "Derivation 3.4A — Stationary primitive source-to-field map"
+---
+
+# Derivation 3.4A — Stationary primitive source-to-field map {#sec-derivation-03-04A-source-field-map}
+
+## Purpose
+
+This appendix supports Chapter 3.4. It records the technical source-to-field map that the main text uses without making the chapter carry every convention and normalization detail.
+
+The key point is that a primitive positive momentum-channel source has a clean stationary field response before any classical density, current, or metric dictionary is introduced.
+
+## Role / regime / status
+
+- **Role:** native M1 construction with stationary correspondence-ready normalization.
+- **Regime:** stationary, weak-to-moderate field, exterior Green-kernel presentation.
+- **Status:** reference derivation for the current Part III stationary field package.
+- **Non-claim:** this is not a full microscopic source law and not a final nonstationary theory.
+
+## Source channels and local arguments
+
+For a chosen direction `k`, the primitive local source-density channels are
+
+$$
+J_k^+(x),
+\qquad
+J_k^-(x).
+$$
+
+The argument `x` marks the source location at which the channel density is defined. In the field integrals, the source point is written as `r'`, while the observation point is written as `r`.
+
+In the stationary source normalization used here,
+
+$$
+[J_k^\pm]=\mathrm{kg\,s^{-1}m^{-2}}.
+$$
+
+These are units of momentum content per spatial volume. The ordinary mass-density calibration is introduced later as correspondence language, not as the primitive source definition.
+
+## Elementary directional contribution
+
+Let
+
+$$
+R:=\|r-r'\|,
+$$
+
+and let $e_{(k)}^i(r')$ be the local orthonormal basis vector associated with direction `k` at the source point. With
+
+$$
+\kappa:=\frac{G_N}{c^3},
+$$
+
+a positive channel element contributes
+
+$$
+d\theta_i(r;r')
+=
+\kappa\,\frac{J_k^+(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+The opposite channel contributes with the opposite directional sign,
+
+$$
+d\theta_i(r;r')
+=
+-\kappa\,\frac{J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+This is the elementary stationary source-to-field statement. The source is a positive directional momentum channel; the response is a directional field contribution with the same Green-kernel structure later used by the scalar package.
+
+## Even and odd source packages
+
+Define
+
+$$
+M_k(x)=\frac{J_k^+(x)+J_k^-(x)}{2},
+\qquad
+P_k(x)=J_k^+(x)-J_k^-(x).
+$$
+
+The even package $M_k$ keeps what survives under directional sign reversal. The odd package $P_k$ keeps the directional imbalance. These are local source-density packages, not integrated source totals.
+
+The inverse bookkeeping is
+
+$$
+J_k^\pm(x)=M_k(x)\pm \tfrac12 P_k(x).
+$$
+
+## Integrated stationary map
+
+The scalar well is built from the even package:
+
+$$
+\theta_0(r)
+=
+\kappa\sum_k\int_\Sigma
+\frac{M_k(r')}{\|r-r'\|}\,d^3r'.
+$$
+
+The directional field is built from the odd package:
+
+$$
+\theta_i(r)
+=
+\kappa\sum_k\int_\Sigma
+\frac{P_k(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+Equivalently, directly in the primitive channels,
+
+$$
+\theta_0(r)
+=
+\frac{G_N}{2c^3}\sum_k\int_\Sigma
+\frac{J_k^+(r')+J_k^-(r')}{\|r-r'\|}\,d^3r',
+$$
+
+and
+
+$$
+\theta_i(r)
+=
+\frac{G_N}{c^3}\sum_k\int_\Sigma
+\frac{J_k^+(r')-J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+Thus the field map preserves the source grammar: addition feeds scalar depth; directional imbalance feeds shift-like structure.
+
+## Differential form
+
+Using
+
+$$
+\Delta\left(\frac{1}{R}\right)=-4\pi\delta^{(3)}(r-r'),
+$$
+
+the integral equations imply
+
+$$
+\Delta\theta_0(r)=-4\pi\kappa\sum_kM_k(r),
+$$
+
+and
+
+$$
+\Delta\theta_i(r)=-4\pi\kappa\sum_kP_k(r)e_{(k)i}(r).
+$$
+
+In primitive-channel form,
+
+$$
+\Delta\theta_0(r)
+=-\frac{2\pi G_N}{c^3}\sum_k\left(J_k^+(r)+J_k^-(r)\right),
+$$
+
+$$
+\Delta\theta_i(r)
+=-\frac{4\pi G_N}{c^3}\sum_k\left(J_k^+(r)-J_k^-(r)\right)e_{(k)i}(r).
+$$
+
+## Result
+
+The stationary field route is
+
+$$
+J_k^\pm
+\longrightarrow
+(M_k,P_k)
+\longrightarrow
+(\theta_0,\theta_i)
+\longrightarrow
+(G,A_i,B_{ij}).
+$$
+
+The important structural result is not merely that M1 can reproduce familiar variables later. It is that the primitive momentum-channel source already maps cleanly into the scalar and directional field sectors before the GR-facing dictionary is applied.

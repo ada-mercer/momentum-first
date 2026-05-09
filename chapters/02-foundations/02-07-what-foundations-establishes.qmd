@@ -1,6 +1,6 @@
 # What Foundations Establishes
 
-Foundations has now done its first job. It has given M1 a working inertial grammar: the primitive momentum quantities, the directional-positive conservation structure, the invertible map back to familiar relativistic variables, and the baseline relation
+The foundations has given M1 a working inertial grammar: the primitive momentum quantities, the directional-positive conservation structure, the invertible map back to familiar relativistic variables, and the baseline relation
 $$
 M = \sqrt{p_f^2 + p^2}.
 $$

@@ -1,0 +1,156 @@
+---
+title: "Derivation 3.7A — Nonstationary linear baseline and benchmarks"
+---
+
+# Derivation 3.7A — Nonstationary linear baseline and benchmarks {#sec-derivation-03-07A-nonstationary-linear-baseline}
+
+## Purpose
+
+This appendix supports Chapter 3.7. It records the locked linear nonstationary scalar-and-shift field block, the retarded solution forms, the stationary recovery check, and the benchmark verdict that makes the package reusable.
+
+## Role / regime / status
+
+- **Role:** nonstationary baseline reference.
+- **Regime:** weak-to-moderate field; scalar+shift first; flat-background first pass; true-frame-facing time variable `t_*`.
+- **Status:** locked and benchmarked as a solid first-pass closure package.
+- **Non-claim:** this is not full nonlinear, tensor, radiative, or exact rotating-source completion.
+
+## Locked variables and conventions
+
+The linear baseline uses
+
+$$
+\theta_0(x,t_*),
+\qquad
+A_i(x,t_*).
+$$
+
+The scalar channel is the well/depth channel. The shift channel is the transverse odd-current channel. The baseline locks are
+
+$$
+c_M=c_P=c,
+\qquad
+\partial_iA_i=0.
+$$
+
+The field-layer source inputs are operationally compressed as
+
+$$
+\rho_M,
+\qquad
+j_i^\perp.
+$$
+
+Primitive `J_k^\pm`, `M_k`, and `P_k` detail remains upstream in the source grammar.
+
+## Exact linear field block
+
+The locked scalar equation is
+
+$$
+\frac{1}{c^2}\partial_{t_*}^2\theta_0-\Delta\theta_0
+=
+\frac{4\pi G_N}{c^2}\rho_M.
+$$
+
+The locked shift equation is
+
+$$
+\frac{1}{c^2}\partial_{t_*}^2A_i-\Delta A_i
+=
+-\frac{16\pi G_N}{c^3}j_i^\perp,
+\qquad
+\partial_iA_i=0.
+$$
+
+No nonlinear terms, tensor backreaction terms, alternate speeds, or gauge variants belong in this baseline block.
+
+## Retarded solutions
+
+The scalar retarded solution is
+
+$$
+\theta_0(x,t_*)
+=
+-\frac{G_N}{c^2}
+\int \frac{\rho_M(x',t_*-|x-x'|/c)}{|x-x'|}\,d^3x'.
+$$
+
+The shift retarded solution is
+
+$$
+A_i(x,t_*)
+=
+\frac{4G_N}{c^3}
+\int \frac{j_i^\perp(x',t_*-|x-x'|/c)}{|x-x'|}\,d^3x'.
+$$
+
+Thus both scalar and shift disturbances propagate retardedly at speed `c` in the baseline reference packet.
+
+## Stationary recovery
+
+When the time derivatives vanish, the block reduces to
+
+$$
+\Delta\theta_0=-\frac{4\pi G_N}{c^2}\rho_M,
+$$
+
+and
+
+$$
+\Delta A_i=\frac{16\pi G_N}{c^3}j_i^\perp,
+\qquad
+\partial_iA_i=0.
+$$
+
+In the stationary overlap regime, this recovers the frozen scalar-well and shift packet. Stationary gravity is therefore not replaced by the nonstationary packet; it is recovered as its settled limit.
+
+## Field-work identities
+
+The scalar field-work density and flux may be written
+
+$$
+u_M=\frac{1}{2c^2}(\partial_{t_*}\theta_0)^2+\frac12|\nabla\theta_0|^2,
+\qquad
+S_M^i=-(\partial_{t_*}\theta_0)\partial_i\theta_0.
+$$
+
+They satisfy
+
+$$
+\partial_{t_*}u_M+\partial_iS_M^i
+=
+\frac{4\pi G_N}{c^2}\rho_M\partial_{t_*}\theta_0.
+$$
+
+For the shift channel,
+
+$$
+u_P=\frac{1}{2c^2}(\partial_{t_*}A_i)^2+\frac12(\partial_kA_i)(\partial_kA_i),
+$$
+
+with a corresponding flux identity
+
+$$
+\partial_{t_*}u_P+\partial_kS_P^k
+=
+-\frac{16\pi G_N}{c^3}j_i^\perp\partial_{t_*}A_i.
+$$
+
+These identities are why the baseline is more than a formal wave equation: it has usable field-side bookkeeping.
+
+## Benchmark verdict
+
+The baseline passes the current first-pass benchmark set:
+
+1. scalar retarded pulse,
+2. transverse shift/current retarded pulse,
+3. exact stationary recovery,
+4. local and integrated field-work consistency,
+5. bounded far-zone rotating-disturbance asymptotics.
+
+The fifth check passes only at bounded asymptotic/scaling level. It does not prove exact native Kerr closure or full tensor/radiative completion.
+
+## Result
+
+The linear nonstationary scalar+shift package is stable enough to serve as the canonical nonstationary starting point. Its correct label is **solid first-pass closure**, not final gravity completion.

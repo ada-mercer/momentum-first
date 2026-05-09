@@ -2,7 +2,7 @@
 
 Status: working draft
 Created: 2026-03-28
-Last updated: 2026-04-04
+Last updated: 2026-05-01
 Purpose: establish and refine the section architecture for the book after the Preface/Introduction rewrite, while keeping the front-matter contract, current M1 maturity levels, and the tier logic aligned.
 
 ## Dynamic document note
@@ -57,16 +57,17 @@ On heartbeat or autonomous follow-up:
 
 ## Current structural judgment
 
-Best current structure:
-- **Part I** = orientation and framing
-- **Part II** = foundations, including time, KMs, and scope discipline
-- **Part III** = gravity and structured spacetime
-- **Part IV** = quantum structure and the geometry of expression
-- **Part V** = cosmology as a separate engine
-- **Part VI** = generalized state-space and composite programs
-- **Part VII** = deep structure and filtered grounding
-- **Part VIII** = predictions, tests, and failure modes
-- **Part IX** = appendices and derivations
+Best current rendered/planned structure:
+- **Front matter** = landing page plus Preface material: origin, posture, collaboration, reading guidance, and working method
+- **Part I — Introduction** = success of physics, conceptual pressure, the momentum-first wager, and the book's standards of judgment
+- **Part II — Foundations** = primitive terms, ADMC, invertible mapping/SR correspondence, stage/actor distinction, time, kinematic modifiers, and the handoff to gravity
+- **Part III — Gravity and Structured Spacetime** = first major developed engine; physical-first gravity philosophy, concept/symbol gateway, sources, stationary field, local readout, stationary correspondence, nonstationary extension, and open boundaries
+- **Part IV — Quantum Structure and the Geometry of Expression** = planned downstream state/expression structure
+- **Part V — Cosmology** = planned separate engine
+- **Part VI — Generalized State-Space and Composite Programs** = planned broader generalizations
+- **Part VII — Deep Structure and Filtered Grounding** = planned late-stage grounding material
+- **Part VIII — Predictions, Tests, and Failure Modes** = planned empirical/risk close
+- **Part IX — Appendices and Derivations** = derivation trust layer
 
 Why this is currently stronger than the previous arrangement:
 1. gravity gets promoted to the first major developed engine,
@@ -86,53 +87,66 @@ The main structural wager is now:
 
 ## Proposed book architecture
 
-### Part I — Orientation
+This section should track the rendered `_quarto.yml` structure where that structure already exists. Later parts remain planning-level until their files are created.
 
-1. **Preface**
-   - personal origin, motivation, collaboration posture, reading guidance
-2. **Introduction**
-   - success of physics, open conceptual pressure, momentum-first wager, standards of judgment
+### Front matter and Preface
+
+Rendered files:
+- `index.qmd`
+- `chapters/00-preface/index.qmd`
+
+**Job:** orient the reader before the formal argument starts.
+
+The Preface owns:
+- the persistent tension that motivates the book;
+- what kind of book this is;
+- authorship and collaboration posture;
+- how to read the book;
+- working method.
+
+The Preface should stay personal and methodological. It should not carry the technical burden of the Introduction or Foundations.
+
+### Part I — Introduction
+
+Rendered files:
+1. `chapters/01-introduction/01-01-the-success-of-physics.qmd`
+2. `chapters/01-introduction/01-02-open-questions-and-conceptual-pressure.qmd`
+3. `chapters/01-introduction/01-03-the-momentum-first-wager.qmd`
+4. `chapters/01-introduction/01-04-what-this-book-is-trying-to-do.qmd`
+
+**Job:** frame the conceptual pressure and the wager without pretending the case is already won.
+
+The Introduction owns:
+- respect for the success of existing physics;
+- the open questions and conceptual pressure points that motivate M1;
+- the momentum-first wager;
+- what the book is trying to do and how it asks to be judged.
+
+It should be conceptually sharp but nontechnical: a legitimization-and-standards part, not a derivation part and not a manifesto.
 
 ### Part II — Foundations
 
-**Job:** state the primitive framework cleanly enough that the reader understands the basic language of M1 before entering the first major engines.
+Rendered files:
+1. `chapters/02-foundations/02-01-core-terms-and-variables.qmd`
+2. `chapters/02-foundations/02-02-admc.qmd`
+3. `chapters/02-foundations/02-03-invertible-mapping.qmd`
+4. `chapters/02-foundations/02-04-space-and-momentum-stage-and-actor.qmd`
+5. `chapters/02-foundations/02-05-time.qmd`
+6. `chapters/02-foundations/02-06-kinematic-modifiers.qmd`
+7. `chapters/02-foundations/02-07-what-foundations-establishes.qmd`
 
-Suggested chapter cluster:
+**Job:** state the primitive framework cleanly enough that the reader understands the basic M1 language before entering the first major engine.
 
-3. **Primitive Quantities and Notation**
-   - fermic momentum, bosic momentum, core momentum
-   - sign locks and core symbols
+Foundations owns:
+- primitive terms and notation: fermic momentum, bosic momentum, core momentum, sign locks, and core symbols;
+- ADMC as the directional-positive conservation postulate and its realized split;
+- the invertible mapping, momentum triangle, conservation equivalence, and SR correspondence;
+- the stage/actor distinction between space and momentum;
+- time, clocks, dilation, contraction, and the true-frame stance at the currently justified interpretive level;
+- kinematic modifiers as the grammar for structured departures from the inertial baseline;
+- a clean close stating what Foundations has and has not established.
 
-4. **ADMC and the Split Conservation Principle**
-   - directional split form
-   - separate conservation of `p_{k^+}` and `p_{k^-}`
-   - why this is the framework’s primitive move
-
-5. **Invertible Mapping, Momentum Triangle, and SR Correspondence**
-   - equivalence to conservation of total `M` and `\vec p`
-   - momentum-triangle / mass-shell baseline
-   - Lorentz-compatibility language
-
-6. **Space, Momentum, and Physical Change**
-   - space as stage, momentum as actor
-   - local structure of the stage shapes how change can occur
-   - bridge from the inertial shell to clocks, contraction, and later geometry/modifier language
-
-7. **Time, Clocks, and the Interpretation of Dilation**
-   - cycle-based reading of time
-   - time dilation as reduced rate of physical evolution
-   - length contraction as directional law-change in material structure
-   - preferred-now / true-frame stance if retained, clearly labeled by role/status
-
-8. **Kinematic Modifiers**
-   - KM-A / KM-B / KM-C taxonomy
-   - what structural map each class modifies
-   - why effects are read as structured kinematic change rather than generic force-language alone
-   - keep KM foundational here, not as its own later part architecture
-
-9. **Scope, Regime, and Standards of Judgment**
-   - derivation vs correspondence vs interpretation vs speculation
-   - regime statements, falsifiers, approximation discipline
+Foundations should not develop the gravity program. Gravity belongs to Part III. Foundations may only hand off to gravity as the first major downstream case where the relational/spatial stage is altered and local kinematics must be read in context.
 
 ### Part III — Gravity and Structured Spacetime
 
@@ -142,7 +156,7 @@ Suggested chapter cluster:
 
 **Part III boundary rule:**
 - Part II should prepare gravity only at the level of general framework language and modifier taxonomy.
-- Part III should carry the real gravity machinery: stationary scope, source -> field -> observer pipeline, source construction, field construction, observer bookkeeping, and the first structured-spacetime implications.
+- Part III should carry the real gravity machinery: stationary scope, physical source -> deformation/field representation -> observer readout pipeline, source construction, field construction, observer bookkeeping, a collected stationary correspondence layer, and the first structured-spacetime implications.
 - Strong-field and dynamical extensions may be foreshadowed here, but should not be allowed to dominate the mainline stationary arc.
 
 **Working structure references:**
@@ -151,40 +165,58 @@ Suggested chapter cluster:
 
 Suggested chapter cluster:
 
-10. **Gravity in M1**
-    - lay down the gravity terminology and foundational stance for the part
-    - explain why gravity is the first place structured spacetime becomes unavoidable
-    - state the stationary-first regime discipline
-    - introduce the full grammar `source -> stationary field -> observer bookkeeping`
-    - state what this part is trying to establish, and what it is not yet claiming
+10. **Gravity in M1: Philosophical Approach**
+    - make the physical M1 gravity claim before introducing machinery
+    - explain gravity as momentum content changing the relational/spatial conditions in which other momentum is expressed
+    - present the first layer physically: stress, deformation, structuring of the relational stage, and altered local clock/path/transport conditions
+    - keep field variables and GR geometry downstream as mathematical representation and comparison language
+    - hand off to the concept/symbol chapter once the physical picture is clear
 
-11. **Gravitational Sources**
-    - directional source channels `J_k^±`
-    - even/odd packaging via `M_k` and `P_k`
-    - operational source variables such as `rho` and `j_i`
-    - stationary source consistency conditions
-    - minimal source examples and figures
+11. **Gravity-Side Core Terms and Variables**
+    - define the working route: source -> field -> observer
+    - keep physical deformation, M1 field representation, and GR comparison terms conceptually distinct without treating them as five primitive route layers
+    - introduce directional source channels `J_k^±`
+    - introduce even/odd packaging via `M_k` and `P_k`
+    - introduce scalar-well/depth and directional/shift language as mathematical representation of deformation modes
+    - prepare the source, field, observer-bookkeeping, and nonstationary chapters
 
-12. **The Stationary Gravitational Field**
-    - scalar well, shift potential, and flux-tensor packaging
-    - minimal stationary field equations and weak/moderate-field correspondence logic
-    - GR dictionary at the level currently justified
-    - source-to-field figures and the first clean field-building story
+12. **Gravitational Sources**
+    - develop directional source channels `J_k^±` after the concept gateway has made them necessary
+    - show how even/additive and odd/directional source content capture different physical deformation modes
+    - introduce operational source variables such as `rho` and `j_i`
+    - state stationary source consistency conditions
+    - use minimal source examples and figures without burying the reader in derivation sprawl
 
-13. **Local Gravity and Observer Bookkeeping**
+13. **The Stationary Gravitational Field**
+    - introduce the M1 field representation after the physical deformation picture is established
+    - develop scalar-well, shift potential, and flux-tensor packaging
+    - give the minimal stationary field map in M1 terms
+    - preserve the distinction between physical deformation and its mathematical field description
+    - keep detailed classical/GR correspondence out of this chapter except where a brief orientation note is unavoidable
+
+14. **Local Gravity and Observer Bookkeeping**
     - `p_{f,c}`, `\Pi`, `M_{g,loc}`, `H_{g,stat}` symbol discipline
     - local versus asymptotic quantities
     - what is modified, what is conserved, and how transport is read
-    - observer-facing dynamics without overpromoting QM/Dirac spillover
+    - show clocks, paths, and transported momentum as local readouts of altered relational conditions
+    - avoid overpromoting QM/Dirac spillover
+    - leave proper-time/Kerr/dictionary comparisons to the collected stationary correspondence chapter
 
-14. **Nonstationary Gravity: Extension Track**
+15. **Stationary Classical Correspondence**
+    - collect the classical comparison material in one place so chapters 3.3–3.5 can remain M1-native
+    - calibrate the source packages against ordinary density/current language
+    - show the Newtonian scalar limit and stationary shift-current comparison
+    - present the metric-facing dictionary and local clock/transport comparison only as correspondence/compression language
+    - state clearly what the stationary correspondence establishes and what remains native-derivation work
+
+16. **Nonstationary Gravity: Extension Track**
     - exact locked linear nonstationary baseline
     - retarded scalar and shift picture
     - exact stationary recovery
     - promoted nonlinear layer and tensor slot at explicit maturity labels
     - what now counts as solid first-pass closure versus still-conditional completion work
 
-15. **Spacetime Lessons and Open Boundaries**
+17. **Spacetime Lessons and Open Boundaries**
     - minimum structural lessons about spacetime from the gravity program
     - what geometry constraints are genuinely forced already
     - what the nonstationary extension track adds without overclaiming final closure
@@ -195,9 +227,11 @@ Working author-architecture note:
 - `book/dev/PART_III_GRAVITY_AUTHOR_ARCHITECTURE_V1.md`
 
 Current planning judgment:
-- the opening chapter should explicitly establish gravity terminology, scope, and stance before the part moves into source, field, and observer construction.
-- the older six-chapter split with a standalone pipeline chapter is weaker than the cleaner `Gravity in M1` opening.
-- the current best reader-facing structure is now a fresh-start six-chapter Part III: four chapters for the achieved stationary backbone, one explicit chapter for the upgraded nonstationary extension track, and one closing chapter for spacetime lessons and open boundaries.
+- the opening must be physical-first, not field-first or GR-first.
+- `Gravity in M1` should now function as a philosophical approach chapter: momentum content changes the relational/spatial conditions in which other momentum is expressed.
+- core concepts and symbols should move into a separate gateway chapter so 3.1 can sing without carrying notation, source algebra, field sectors, and roadmap duties at once.
+- the current best reader-facing Part III structure is an eight-chapter arc: philosophical approach, concept/symbol gateway, source construction, stationary field construction, local readout/bookkeeping, collected stationary correspondence, bounded nonstationary extension, and spacetime lessons/open boundaries.
+- the stationary correspondence chapter is intentional: it keeps classical density/current/metric-facing comparison from leaking into every native M1 chapter between 3.3 and 3.5.
 - appendices should carry the derivation trust layer aggressively so the new mainline chapters read like a book rather than a lab notebook.
 
 ### Part IV — Quantum Structure and the Geometry of Expression
@@ -208,26 +242,26 @@ Current planning judgment:
 
 Suggested chapter cluster:
 
-15. **Why Quantum Structure Requires More Than the Inertial Shell**
+18. **Why Quantum Structure Requires More Than the Inertial Shell**
     - what Foundations + Gravity still leave open
     - why state structure and expression now matter
 
-16. **State Presence, Expression, and `Psi`**
+19. **State Presence, Expression, and `Psi`**
     - `Psi` versus `|Psi|^2`
     - presence versus local expression
     - interference and suppression without ontological disappearance
 
-17. **Closure, Resonance, and Admissibility**
+20. **Closure, Resonance, and Admissibility**
     - stable versus resonant sectors
     - closure logic and admissibility
     - defect/mismatch beginnings at the level currently justified
 
-18. **Candidate Carriers and Toy Geometries**
+21. **Candidate Carriers and Toy Geometries**
     - torus/two-cycle as bounded visualization only
     - compact fermic core / larger bosic expression structure
     - comparison of surviving heuristic geometry families
 
-19. **Quantum / Dirac Bridge**
+22. **Quantum / Dirac Bridge**
     - wave/operator bridge
     - spinorial structure
     - limited mainline correspondence in clearly stated regimes
@@ -240,21 +274,21 @@ Suggested chapter cluster:
 
 Suggested chapter cluster:
 
-20. **Cosmology as a Separate Engine**
+23. **Cosmology as a Separate Engine**
     - why this is not just gravity scaled up
     - why KM-B deserves separate treatment here without becoming a whole part architecture elsewhere
 
-21. **Yield Modification and Redshift Structure**
+24. **Yield Modification and Redshift Structure**
     - `\chi(t)` framing
     - redshift mapping
     - observational interpretation
 
-22. **Cosmological Correspondence, Regimes, and Alternatives**
+25. **Cosmological Correspondence, Regimes, and Alternatives**
     - what is recovered
     - what is only regime-bound
     - what remains underdetermined
 
-23. **Cosmology Risks and Open Questions**
+26. **Cosmology Risks and Open Questions**
     - degeneracy
     - fit dependence
     - what could fail
@@ -265,9 +299,9 @@ Suggested chapter cluster:
 
 Suggested chapter cluster:
 
-24. **Exclusion and State-Space Constraints**
-25. **QFT / EFT Construction**
-26. **Composite and Strong-Sector Structure**
+27. **Exclusion and State-Space Constraints**
+28. **QFT / EFT Construction**
+29. **Composite and Strong-Sector Structure**
 
 ### Part VII — Deep Structure and Filtered Grounding
 
@@ -277,14 +311,14 @@ Suggested chapter cluster:
 
 Suggested chapter cluster:
 
-27. **Micro-Origin Hypotheses**
+30. **Micro-Origin Hypotheses**
     - bounded origin candidates and what each is trying to explain
     - no imported framework gets to silently set the primitive ontology
-28. **BFSS / String-Compatible Grounding Under M1 Constraints**
+31. **BFSS / String-Compatible Grounding Under M1 Constraints**
     - test which BFSS/string structures survive translation into M1 variables
     - use the extraction-template logic: candidate intrinsic sector, transport sector, aggregate scale, mismatch/closure cost, and readable source -> field -> observer projection
     - keep failures and excessive-ontology routes explicit
-29. **What Deep Grounding Explains — and What It Does Not**
+32. **What Deep Grounding Explains — and What It Does Not**
     - clear boundary between filtered support, suggestive analogy, and actual derivation
     - state plainly what remains unknown about space and deep structure
 
@@ -294,9 +328,9 @@ Suggested chapter cluster:
 
 Suggested chapter cluster:
 
-30. **Predictions and Benchmark Tests**
-31. **Degeneracy, Non-Identifiability, and Model Risk**
-32. **Failure Modes and Falsifiers**
+33. **Predictions and Benchmark Tests**
+34. **Degeneracy, Non-Identifiability, and Model Risk**
+35. **Failure Modes and Falsifiers**
 
 ### Part IX — Appendices and Derivations
 

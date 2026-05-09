@@ -32,13 +32,15 @@ Second, it recovers the frozen stationary packet exactly when the time derivativ
 
 That exact recovery is one of the reasons the package now deserves structural recognition. It means the time-dependent layer grows cleanly out of the stationary backbone instead of forcing the book to choose between two incompatible grammars.
 
-## Why the baseline now counts as real first-pass closure
+## Baseline evidence and limits
 
 The current benchmark verdict is that the linear nonstationary baseline has passed the checks needed to count as a solid first-pass closure in its intended regime.
 
 Those checks are modest but important. The scalar channel propagates retardedly. The shift channel propagates retardedly. The stationary limit is recovered exactly. The field layer supports local and integrated field-work identities. And the odd channel carries the correct bounded rotating asymptotics in the far zone.
 
-That does not amount to full completion. But it is enough to justify strong manuscript language of a limited kind. The nonstationary package is no longer a speculative appendix pile. It is a real extension track with a frozen linear baseline.
+That does not amount to full completion. But it does move the nonstationary layer beyond speculation. The linear baseline is now stable enough to carry manuscript weight, provided the stronger nonlinear and radiative claims remain explicitly bounded.
+
+The field block, retarded solutions, stationary recovery, and benchmark checks are collected in Appendix @sec-derivation-03-07A-nonstationary-linear-baseline.
 
 ## Promoted nonlinear and tensor layers
 
@@ -58,14 +60,19 @@ Several important tasks are still open.
 
 The package does not yet fix the full physical calibration of the promoted nonlinear coefficients. It does not yet provide an exact native rotating-source closure comparable to the stationary Kerr target. It does not yet deliver full nonlinear tensor backreaction, full radiative phenomenology, or a finished target-response constitutive law in every channel.
 
-Those open problems matter, but they should not be allowed to swallow the chapter's center of gravity. The purpose of Chapter 14 is not to dramatize what remains undone. Its purpose is to show that the nonstationary program is now strong enough to matter while still remaining bounded.
+Those open problems matter, but they should not be allowed to swallow the chapter's center of gravity. The purpose here is not to dramatize what remains undone. It is to show that the nonstationary program is now strong enough to matter while still remaining bounded.
 
-## The correct maturity verdict
+## The maturity ladder
 
-The right verdict is therefore simple.
+The right verdict is therefore a ladder, not a single label.
 
-M1 now has a solid first-pass nonstationary gravity closure package. It does not yet have full final gravity completion.
+- The locked linear scalar-and-shift baseline is the solid nonstationary result.
+- The promoted nonlinear family is reusable but coefficient-conditional.
+- The tensor and radiative slot is disciplined first-pass structure, not final completion.
+- Full native rotating-source closure and full nonlinear radiative gravity remain open.
 
-That wording is careful, but it is not timid. It acknowledges a genuine step forward. The gravity program now extends beyond stationarity in a structured and reusable way. At the same time, it refuses to blur the difference between a benchmarked baseline, a conditional promoted layer, and an unfinished final theory.
+That ladder is careful, but it is not timid. It acknowledges a genuine step forward without blurring the difference between a benchmarked baseline, a conditional promoted layer, and an unfinished final theory.
 
-That distinction is the right place from which to close the part and ask what gravity has actually forced M1 to say about spacetime, and where the open boundaries still remain.
+What has been established is a bounded nonstationary extension of the scalar-well and shift grammar. What has not been established is final nonlinear radiative gravity. The closing chapter can therefore ask the right question: what has gravity forced M1 to say about spacetime, and where do the boundaries still remain?
+
+The promoted nonlinear, tensor, radiative, and rotating-source completion ladder is collected in Appendix @sec-derivation-03-07B-nonstationary-completion-ladder.

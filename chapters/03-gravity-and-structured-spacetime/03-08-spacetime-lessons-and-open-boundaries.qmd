@@ -2,11 +2,11 @@
 
 Part III began with a simple claim: gravity is the first place where structured spacetime becomes unavoidable in M1. The chapters in between have now shown what that claim amounts to at the present maturity level.
 
-The result is neither trivial nor final. Gravity has already forced the framework to adopt a real source, field, and observer grammar, to distinguish scalar well from directional shift structure, to read clocking and transport against a structured background, and to admit a bounded nonstationary extension track above the stationary backbone. But those gains do not yet amount to a full derivation of spacetime from deeper first principles. They amount to a disciplined structural lesson.
+The result is neither trivial nor final. Momentum content cannot be treated only as an actor moving on an unchanged stage. Once it sources gravity, it also changes the relational conditions in which other momentum is expressed. M1 represents that change with source, field, and observer variables; GR then provides comparison and compression language in the overlap regimes. That is the disciplined spacetime lesson of the part, not a full derivation of spacetime from deeper first principles.
 
 ## What gravity has already forced M1 to say
 
-The first lesson is that spacetime cannot remain a merely passive backdrop once gravity becomes part of the story. The stage acquires real structure. Sources do not act directly on distant targets in one step. They feed a field layer, and the field layer then changes local clocking, transport, and observer readout.
+The first lesson is that spacetime cannot remain a merely passive backdrop once gravity becomes part of the story. The stage acquires real structure. Sources do not act directly on distant targets in one step. They alter the relational/spatial condition, M1 represents that alteration with field variables, and local systems read the result through clocking, transport, and observer bookkeeping.
 
 The second lesson is that this structure is not exhausted by a single scalar well. The gravity program already requires at least a scalar and a directional shift distinction. The even source channel and the odd source channel do different work, and the field they generate preserves that distinction.
 
