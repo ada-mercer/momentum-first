@@ -1,0 +1,21 @@
+## Quantum mechanics after gravity
+
+The gravity chapter ended with a local lesson: gravity is not read only as a force on a pre-existing trajectory. In the stationary regime, the background changes the local bookkeeping of momentum content. The scalar well changes the fermic scale. The shift structure changes directed transport. A particle is not read from an untouched inertial shell, but from the conditions under which its clocking and motion are actually expressed.
+
+Quantum mechanics raises the same issue at a sharper level. The object being read is now a phase-bearing state, $\Psi$, not merely a trajectory-like body with one local momentum. Its directed momentum must be represented by an operator. Its intrinsic scale must still enter the generator. Its total momentum content must be recoverable from the action of that generator on the state.
+
+The central object is therefore the core momentum operator $\hat M$. The inherited scalar relation is
+
+$$
+M^2=p_f^2+p^2,
+$$
+
+but the quantum form needs the operator language behind it. The intrinsic scale remains $p_f$. Directed bosic momentum becomes $\hat{\mathbf p}=-i\hbar\nabla$. The total momentum-content generator becomes $\hat M$.
+
+This is the momentum triangle lifted into quantum form. The state carries phase and amplitude; $\hat{\mathbf p}$ reads directed momentum content; and $\hat M$ reads the combined core momentum content associated with fermic scale and directed expression. The familiar energy-unit Hamiltonian is not discarded. It is recovered as $\hat H=c\hat M$ in the comparison with standard quantum notation.
+
+Gravity enters by changing the two slots the gravity chapter already identified. The scalar field replaces $p_f$ with the contextual fermic scale $p_{f,c}$. The shift field replaces directed momentum with a mechanical momentum $\hat{\boldsymbol\Pi}$. The gravity-dressed operator is therefore $\hat M_g$, a stationary deformation of $\hat M$, not a second quantum postulate.
+
+The order matters. The construction must first land where known physics says it should: the flat Dirac form, the Schrödinger phase law, the nonrelativistic envelope, and the stationary-gravity local readout. Only after those compatibility checks does the specifically M1 difference become clean: scalar gravity can dress the internal fermic scale inside the quantum operator itself. In strong scalar wells, that can affect phase accumulation, local envelope dynamics, and under-barrier momentum balance.
+
+The result is a bounded operator bridge. It shows how quantum mechanics can be written in momentum-first language, how the same bridge is gravity-dressed, and where M1 differs from a presentation that keeps the internal mass scale fixed while geometry acts only through transport and derivatives. Quantum field theory, measurement theory, and internal geometry remain outside this bridge.

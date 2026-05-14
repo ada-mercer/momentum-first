@@ -1,8 +1,4 @@
----
-title: "Derivation 3.6A — Stationary correspondence calibration"
----
-
-# Derivation 3.6A — Stationary correspondence calibration {#sec-derivation-03-06A-stationary-correspondence}
+# Derivation 3.6A — Stationary correspondence calibration {#sec-derivation-03-06A-stationary-correspondence .unnumbered}
 
 ## Purpose
 
@@ -14,7 +10,7 @@ The appendix is deliberately downstream of the M1 construction. It does not defi
 
 - **Role:** correspondence and calibration.
 - **Regime:** stationary weak-to-moderate overlap; static isotropic scalar limit and transverse shift comparison.
-- **Status:** stable comparison sheet for Part III.
+- **Status:** stable comparison sheet for the gravity chapter.
 - **Non-claim:** successful correspondence is not a full native derivation of all GR dynamics.
 
 ## Source-density calibration

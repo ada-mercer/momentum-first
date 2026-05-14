@@ -4,7 +4,7 @@
 - `*.prompt.md` files under `src/` are canonical sources for AI-generated static figures; the checked image artifact lives under `build/` and Quarto captions supply the manuscript title/caption.
 - Prompt files for committed manuscript figures belong under `figures/src/...`, not in a root-level `prompts/` folder.
 - `src/geometry3d/` holds family-level scene definitions and entrypoints for the native 3D geometry system.
-- `data/` holds figure inputs.
+- `data/` may be created when figure-owned inputs exist; do not keep it as an empty placeholder.
 - `build/` holds generated assets referenced by the manuscript.
 - Commit PNG manuscript assets by default. Generated PDF/SVG companions stay out of release commits unless explicitly promoted by a manifest, README, or release decision.
 - `build/geometry3d/` holds generated 3D geometry outputs and per-family render folders.

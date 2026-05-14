@@ -16,7 +16,7 @@ Current family implementation:
 - `momentum-first/figures/src/geometry3d/foundations-shells/family.py`
 
 Current manuscript insertion point:
-- `chapters/02-foundations/02-01-core-terms-and-variables.qmd`
+- `chapters/01-tier-1-foundations/02-foundations/01-core-terms-and-variables.qmd`
 
 Geometry3d entry docs:
 - `momentum-first/figures/docs/geometry3d/README.md`

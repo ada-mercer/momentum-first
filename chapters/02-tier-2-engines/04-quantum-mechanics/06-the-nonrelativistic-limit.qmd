@@ -1,0 +1,65 @@
+## The nonrelativistic limit
+
+The nonrelativistic limit is where the momentum-first reading becomes easiest to compare with familiar wave mechanics.
+
+In the flat positive branch, the scalar magnitude expands as
+
+$$
+M=\sqrt{p_f^2+p^2}
+=p_f+\frac{p^2}{2p_f}-\frac{p^4}{8p_f^3}+O\left(\frac{p^6}{p_f^5}\right).
+$$
+
+Multiplying by $c$ gives
+
+$$
+cM=m_0c^2+\frac{p^2}{2m_0}-\frac{p^4}{8m_0^3c^2}+O\left(\frac{p^6}{m_0^5c^4}\right).
+$$
+
+The first term is the rest-scale phase generator. The second term is the ordinary nonrelativistic kinetic energy. The remaining terms are relativistic corrections.
+
+This expansion also clarifies what the Schrödinger approximation keeps and discards. It does not keep the whole core momentum relation. It factors away the dominant rest phase and keeps the leading excess above $p_f$:
+
+$$
+M-p_f\approx\frac{p^2}{2p_f}.
+$$
+
+In energy units,
+
+$$
+c(M-p_f)\approx\frac{p^2}{2m_0}.
+$$
+
+After the operator replacement $\mathbf p\mapsto\hat{\mathbf p}$, this becomes the usual kinetic operator
+
+$$
+\frac{\hat{\mathbf p}^{\,2}}{2m_0}
+=-\frac{\hbar^2}{2m_0}\nabla^2.
+$$
+
+This is why the Schrödinger equation has the familiar second-order spatial operator even though the relativistic core operator is first order. The first-order Dirac/M1 operator carries the full linearized momentum relation. The low-speed scalar envelope sees the squared momentum term that appears after the rest-scale part has been separated.
+
+In the stationary gravity setting, the same expansion is read with local replacements:
+
+$$
+p_f\rightarrow p_{f,c},
+\qquad
+\mathbf p\rightarrow\boldsymbol\Pi.
+$$
+
+The leading local momentum-unit expression is therefore
+
+$$
+M_{g,loc}\approx p_{f,c}+\frac{\gamma^{ij}\Pi_i\Pi_j}{2p_{f,c}}+\text{higher-order and gradient terms}.
+$$
+
+In energy units, the local excess generator is approximately
+
+$$
+c(M_{g,loc}-p_{f,c})
+\approx
+\frac{c\,\gamma^{ij}\Pi_i\Pi_j}{2p_{f,c}}.
+$$
+
+When the gravitational field is weak and slowly varying, $p_{f,c}$ and $\Pi_i$ can be expanded further to recover the expected potential and transport corrections. When the field varies across the state, the operator version also produces gradient and spin-sensitive terms. Those belong to the controlled correction layer, not to the leading Schrödinger correspondence.
+
+The regime is therefore explicit: positive branch, slow motion, stationary background, and gradients small enough that the local-envelope approximation is meaningful. Within that regime, M1 gives the standard nonrelativistic structure while preserving the interpretation that the underlying generator is core momentum.

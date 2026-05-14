@@ -1,0 +1,41 @@
+## Strong gravity and quantum sensitivity
+
+The compatibility result is now in place. The gravity-dressed operator has the correct local stationary magnitude as its leading classical reading, reduces to the flat operator when the stationary fields vanish, and gives the ordinary nonrelativistic envelope in the slow-motion limit. Compatibility, however, does not mean that M1 is merely a relabeling of standard curved-background quantum mechanics.
+
+The controlled difference is the placement of the scalar gravitational dressing. In many standard presentations, the internal mass scale is treated as fixed while gravity enters through the metric, derivatives, connection terms, and transport structure. M1 also has transport structure, but it places the scalar well directly inside the core momentum operator through
+
+$$
+p_f\longrightarrow p_{f,c}(\mathbf x)=p_f\sqrt{-g_{00}(\mathbf x)}.
+$$
+
+That replacement is small in weak fields. In strong scalar wells it can become part of the leading quantum problem. Phase accumulation, the local envelope expansion, and barrier penetration are then governed not only by directed momentum in a background geometry, but also by a context-dressed fermic scale.
+
+The translation and the novelty can now be separated cleanly. The primary generator is core momentum $\hat M$, with the Hamiltonian recovered as $\hat H=c\hat M$. Stationary scalar gravity dresses the internal scale, $p_f\to p_{f,c}$. Strong scalar wells can therefore alter quantum-sensitive quantities such as phase accumulation and tunneling exponents.
+
+Tunneling is the clean diagnostic because a semiclassical forbidden-region amplitude is exponentially sensitive to the local momentum balance. In ordinary WKB language, the suppression has the schematic form
+
+$$
+\exp\left[-\frac{1}{\hbar}\int \kappa(x)\,dx\right],
+$$
+
+where $\kappa$ is the imaginary local momentum scale across the barrier. In M1, the local balance entering that scale is read from
+
+$$
+M_{g,loc}^2=p_{f,c}^2+\gamma^{ij}\Pi_i\Pi_j.
+$$
+
+Inside a forbidden region, the mechanical momentum contribution is effectively imaginary in the direction normal to the barrier. If the scalar well lowers $p_{f,c}$ relative to the asymptotic fermic scale, the under-barrier cost can be reduced. The leading WKB version of this statement is derived in Appendix 4.8A. Under the stated comparison conditions, the tunneling exponent is then smaller than it would be in a calculation that keeps the intrinsic mass scale fixed and lets gravity act only through external geometry or transport.
+
+The conclusion follows already at the operator level. The same replacement that makes $\hat M_g$ compatible with local stationary gravity also gives quantum amplitudes a direct scalar-well sensitivity through the internal scale.
+
+### Equivalence-principle boundary
+
+This result should be framed as a domain boundary, not as a broad rejection of the equivalence principle.
+
+Classically, a sufficiently small freely falling laboratory can often be described as if gravity has been locally transformed away, with tidal corrections left over. M1 preserves that classical free-fall correspondence in its domain. The departure is narrower: M1 does not assume that gravity can always be removed from local quantum internal-scale physics.
+
+The reason is simple. The contextual fermic scale $p_{f,c}$ is not just a coordinate acceleration. It is the local reading of the particle's intrinsic clock-carrying momentum scale. A change in that scale affects phase, rest-scale clocking, local envelope dynamics, and barrier exponents. Those are quantum internal-scale quantities, not merely the trajectory of a pointlike test body.
+
+So the careful statement is this: M1 does not primarily challenge weak universality of free fall in the classical point-particle limit. It narrows the stronger assumption that a freely falling frame removes gravity from every local quantum problem. Strong scalar gravity can leave a local imprint through $p_{f,c}$ even where the corresponding classical trajectory description remains well captured by the usual equivalence reasoning.
+
+The claim is therefore narrow. The equivalence principle remains an excellent classical correspondence rule in its domain. M1 adds a quantum internal-scale channel through which scalar gravity can affect phase and tunneling.

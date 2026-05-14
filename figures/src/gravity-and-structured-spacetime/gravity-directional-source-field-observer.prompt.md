@@ -1,15 +1,15 @@
 # Figure: Directional source -> field -> observer
 
-Status: draft-approved for Part III authoring
+Status: draft-approved for gravity-chapter authoring
 Created: 2026-04-25
 Model: openai/gpt-image-2
 Output: `figures/build/gravity-and-structured-spacetime/gravity-directional-source-field-observer.png`
-Chapter: `chapters/03-gravity-and-structured-spacetime/03-01-gravity-in-m1.qmd`
+Chapter: `chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd`
 Figure id: `fig-gravity-directional-source-field-observer`
 
 ## Purpose
 
-Conceptual, non-mathematical opener for the Part III gravity grammar. The figure should show a localized directional momentum source, the field-like deformation around it, and a separated observer reading the resulting local conditions.
+Conceptual, non-mathematical opener for the gravity-chapter grammar. The figure should show a localized directional momentum source, the field-like deformation around it, and a separated observer reading the resulting local conditions.
 
 ## Visual constraints
 

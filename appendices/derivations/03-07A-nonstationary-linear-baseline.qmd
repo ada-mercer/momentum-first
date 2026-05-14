@@ -1,8 +1,4 @@
----
-title: "Derivation 3.7A — Nonstationary linear baseline and benchmarks"
----
-
-# Derivation 3.7A — Nonstationary linear baseline and benchmarks {#sec-derivation-03-07A-nonstationary-linear-baseline}
+# Derivation 3.7A — Nonstationary linear baseline and benchmarks {#sec-derivation-03-07A-nonstationary-linear-baseline .unnumbered}
 
 ## Purpose
 

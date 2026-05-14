@@ -1,0 +1,15 @@
+# Foundations
+
+{{< include 01-core-terms-and-variables.qmd >}}
+
+{{< include 02-admc.qmd >}}
+
+{{< include 03-invertible-mapping.qmd >}}
+
+{{< include 04-space-and-momentum-stage-and-actor.qmd >}}
+
+{{< include 05-time.qmd >}}
+
+{{< include 06-kinematic-modifiers.qmd >}}
+
+{{< include 07-what-foundations-establishes.qmd >}}

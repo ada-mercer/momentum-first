@@ -1,0 +1,57 @@
+## Time, Clocks, and the Interpretation of Dilation
+
+The stage-and-actor distinction changes how M1 speaks about time. Space supplies the relational setting. Momentum carries the changing physical content. Time is not a third actor alongside them. It is the measure abstracted from physical change.
+
+This reverses the usual explanatory order. M1 does not begin with time as an arena and then ask how matter moves through it. It begins with physical systems whose momentum content is organized and expressed in structured ways, then asks how clocks, durations, and temporal order are read from those changes.
+
+### Clocks as physical cycles
+
+A clock is a physical system with a stable repeatable cycle. Its rate is therefore not explained by time itself, but by the structure that lets the system cycle.
+
+In M1, the clean primary clock-carrying sector is fermic. Fermic momentum $p_f$ is the locked intrinsic scale associated with stable internal cycling, and composite material clocks inherit their timing behavior through stable internal structure built from such cycle-carrying constituents.
+
+Bosic momentum matters differently. It is not the intrinsic clock scale, but directed bosic expression changes how the total momentum content of a system is organized. A moving clock therefore does not merely carry the same internal cycle through an external time variable. Its internal clocking is read through a different fermic-to-bosic organization of momentum content.
+
+This is the section's central distinction: clock language belongs first to systems with stable internal cycles. Pure massless or bosic transport can still exhibit redshift, phase, and arrival-rate effects, but those should not be casually identified with internal clock slowing in the same sense.
+
+### Inertial time dilation
+
+Inertial time dilation is the simplest place where the distinction becomes quantitative. A moving clock runs slow not because time itself stretches, but because more of the system's total momentum content is expressed bosically. The fermic share available to the internal cycle is reduced.
+
+The familiar relativistic clock relation is
+$$
+\Delta \tau = \Delta t\sqrt{1-\frac{v^2}{c^2}}.
+$$
+In M1 variables the same inertial relation is written
+$$
+d\tau = dt\,\frac{p_f}{M}.
+$$
+Since the inertial baseline gives
+$$
+M^2 = p_f^2 + p^2,
+$$
+and since $p_f=m_0c$ while $M$ corresponds to $E/c=\gamma m_0c$, the ratio $p_f/M$ is the usual inverse gamma factor,
+$$
+\frac{p_f}{M}=\frac{1}{\gamma}=\sqrt{1-\frac{v^2}{c^2}}.
+$$
+The formal result is the standard inertial one. What changes is the reading: the slower clock is a slower physical cycle, caused by the system's changed momentum organization.
+
+This point will matter again in gravity. Motion-induced clock slowing and gravity-induced clock slowing are not the same mechanism in M1. Motion changes the fermic-to-bosic organization of the moving system. Gravity will later dress the local fermic scale through the surrounding field. General relativity packages these effects through one proper-time geometry; M1 separates their underlying causes while preserving the standard overlap relations where those relations are recovered.
+
+### Motion and material contraction
+
+Directed motion also changes material equilibrium structure. A rod moving along one direction is not merely observed differently, and space itself is not simply compressed around it. In the M1 reading, directed bosic expression changes the effective conditions under which the system's internal structure remains stable.
+
+That is the constructive reading of length contraction. The same underlying physical laws are not replaced by new laws for moving matter. Rather, the moving system carries a different directional momentum organization, and its stable configuration is determined under those altered kinematic conditions. A moving rod is shorter along the direction of motion because its equilibrium structure is different in that state.
+
+This has clear precedent in Lorentz-type and later Lorentzian-pedagogy accounts of rods and clocks, where contraction and dilation are treated as consequences of the dynamical laws governing moving matter rather than as primitive geometric postulates [@bell1976lorentzian; @brown2005physical]. M1 adopts the same constructive instinct, but expresses it in momentum-first terms: clock slowing and contraction are read as changes in physical cycling and material equilibrium produced by directed momentum expression.
+
+### A true frame
+
+If time is a measure abstracted from physical change, then a frame is not a separate version of reality. It is a way of describing relations among physical systems. Different inertial frames may remain equally usable descriptions, and the inertial equations above do not identify a preferred frame. The mathematics of the overlap regime does not need to care.
+
+The foundational picture is different. M1 describes one physical stage populated by momentum-bearing systems. If those systems have one actual configuration of change, then there is one actual present. Two observers may assign different simultaneity slices, but those slices cannot both be equally fundamental versions of now.
+
+The true-frame claim should be read in that sense. It is not an additional equation derived in this subsection, and it is not a claim that the present formalism already tells us how to locate the frame. It is an interpretive consequence of the momentum/space ontology: frame descriptions are plural, but the underlying physical now is singular.
+
+The next question is how the inertial baseline can be modified in controlled ways. That is the role of kinematic modifiers.

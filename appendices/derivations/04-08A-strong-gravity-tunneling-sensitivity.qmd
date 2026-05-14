@@ -1,0 +1,218 @@
+# Derivation 4.8A — Strong-gravity tunneling sensitivity {#sec-derivation-04-08a-strong-gravity-tunneling .unnumbered}
+
+## Purpose
+
+This appendix supports Chapter 4.8. It makes precise the limited tunneling claim used there: in the stationary M1 quantum operator, scalar gravity enters the local under-barrier momentum balance through the contextual fermic scale
+
+$$
+p_{f,c}(x)=p_fG(x)=p_f\sqrt{-g_{00}(x)}.
+$$
+
+In a semiclassical forbidden region, lowering this scale lowers the leading WKB barrier exponent when the conserved generator and the other local terms are held fixed.
+
+The appendix is deliberately narrow. It is not a full Dirac scattering calculation in curved spacetime, not a quantum-field treatment of pair creation or horizon emission, and not a universal statement about every gravitational tunneling problem. It is the principal-symbol/WKB consequence of the operator bridge developed in Chapter 4.
+
+## Role / regime / status
+
+- **Role:** leading-order semiclassical derivation of scalar-well sensitivity in a forbidden region.
+- **Regime:** stationary background, positive branch, one barrier-normal direction, slowly varying fields, negligible reflection-phase and prefactor corrections, no pair-production channel.
+- **Status:** controlled appendix derivation for the Chapter 4.8 tunneling claim.
+- **Non-claim:** this does not replace a full curved-background Dirac analysis and does not by itself predict a specific laboratory or astrophysical rate.
+
+## Starting point: the local symbol of the gravity-dressed operator
+
+The stationary gravity-dressed core momentum operator is
+
+$$
+\hat M_g
+=
+\beta p_{f,c}(\hat x)+\alpha^a e_a{}^i\hat\Pi_i,
+$$
+
+where $e_a{}^i$ is a spatial frame and $\hat\Pi_i$ is the shift-dressed mechanical momentum operator. Ignoring gradients and ordering terms for the leading local-symbol calculation gives
+
+$$
+\sigma(\hat M_g)^2
+=
+p_{f,c}^2+\gamma^{ij}\Pi_i\Pi_j.
+$$
+
+Let $\mu$ denote the conserved stationary core-momentum generator value for the mode being scattered. In energy units this is $E=c\mu$. The local Hamilton-Jacobi relation for the leading WKB phase is therefore
+
+$$
+\mu^2=p_{f,c}(x)^2+\gamma^{ij}(x)\Pi_i\Pi_j.
+$$
+
+This is the same relation as the gravity-chapter local readout, now used as the eikonal equation for a phase-bearing state.
+
+## Reduction to a barrier-normal problem
+
+Choose a local coordinate $\ell$ along the barrier normal, preferably proper distance in the local spatial metric. Separate the mechanical momentum into normal and transverse parts:
+
+$$
+\gamma^{ij}\Pi_i\Pi_j
+=\Pi_\ell^2+\Pi_\perp^2,
+$$
+
+where $\Pi_\perp^2$ includes transverse momentum, shift contributions, and any slowly varying effective terms held fixed during the comparison. Then
+
+$$
+\Pi_\ell^2(\ell)
+=
+\mu^2-p_{f,c}(\ell)^2-\Pi_\perp(\ell)^2.
+$$
+
+A classically allowed region has $\Pi_\ell^2>0$. A forbidden region has
+
+$$
+p_{f,c}(\ell)^2+\Pi_\perp(\ell)^2>\mu^2,
+$$
+
+so the normal momentum is imaginary:
+
+$$
+\Pi_\ell=i\kappa,
+\qquad
+\kappa(\ell)=
+\sqrt{p_{f,c}(\ell)^2+\Pi_\perp(\ell)^2-\mu^2}.
+$$
+
+The leading forbidden-region WKB amplitude is then
+
+$$
+\psi(\ell)\propto
+\exp\left[-\frac{1}{\hbar}\int_{\ell_1}^{\ell}\kappa(s)\,ds\right],
+$$
+
+and the leading transmission probability through a barrier between turning points $\ell_1$ and $\ell_2$ is
+
+$$
+T\sim
+\exp\left[-\frac{2}{\hbar}\int_{\ell_1}^{\ell_2}\kappa(\ell)\,d\ell\right].
+$$
+
+Turning-point matching and spinor transport modify prefactors and phases. They do not remove the leading exponential dependence on the integral of $\kappa$ in the usual WKB regime.
+
+## Proposition: scalar-well lowering reduces the leading exponent
+
+Consider two stationary comparisons with the same $\mu$, the same transverse package $\Pi_\perp^2$, and the same barrier-normal distance element, differing only in the contextual fermic scale. Let
+
+$$
+p_{f,c}^{(2)}(\ell)<p_{f,c}^{(1)}(\ell)
+$$
+
+through a forbidden interval where both square roots remain real. Then
+
+$$
+\kappa_2(\ell)<\kappa_1(\ell)
+$$
+
+pointwise, and therefore
+
+$$
+\int_{\ell_1}^{\ell_2}\kappa_2(\ell)\,d\ell
+<
+\int_{\ell_1}^{\ell_2}\kappa_1(\ell)\,d\ell
+$$
+
+for the common forbidden interval. The leading WKB transmission is correspondingly larger in the case with lower $p_{f,c}$.
+
+### Proof
+
+For fixed $\mu$ and fixed $\Pi_\perp^2$, the forbidden-region momentum scale is the function
+
+$$
+\kappa(p)=\sqrt{p^2+\Pi_\perp^2-\mu^2}.
+$$
+
+Where the square root is real and $p>0$,
+
+$$
+\frac{d\kappa}{dp}=\frac{p}{\kappa}>0.
+$$
+
+Thus $\kappa$ is strictly increasing with the contextual fermic scale. Lowering $p_{f,c}$ lowers $\kappa$ pointwise. Since the WKB exponent is the integral of this positive pointwise quantity, the integrated exponent also decreases on any shared forbidden interval. Because
+
+$$
+T\sim\exp\left[-\frac{2}{\hbar}\int\kappa\,d\ell\right],
+$$
+
+a smaller exponent gives a larger leading transmission probability. $\square$
+
+Equivalently, for a small perturbation $\delta p_{f,c}$, the exponent
+
+$$
+S_B=\int_{\ell_1}^{\ell_2}\kappa(\ell)\,d\ell
+$$
+
+varies as
+
+$$
+\delta S_B
+=
+\int_{\ell_1}^{\ell_2}
+\frac{p_{f,c}(\ell)}{\kappa(\ell)}\,
+\delta p_{f,c}(\ell)\,d\ell
++
+\text{turning-point terms}.
+$$
+
+Away from moving turning-point subtleties, $\delta p_{f,c}<0$ gives $\delta S_B<0$. This is the differential form of the same sensitivity.
+
+## Comparison with a fixed-mass calculation
+
+In the simplified static case with no transverse term and no shift, the fixed-mass comparison would use
+
+$$
+\kappa_{\mathrm{fixed}}
+=
+\sqrt{p_f^2-\mu^2}.
+$$
+
+The M1 scalar-dressed calculation uses
+
+$$
+\kappa_{\mathrm{M1}}
+=
+\sqrt{p_f^2G(\ell)^2-\mu^2}.
+$$
+
+In a gravitational well with $0<G<1$, and where both expressions remain forbidden,
+
+$$
+\kappa_{\mathrm{M1}}<\kappa_{\mathrm{fixed}}.
+$$
+
+So the M1 operator predicts a smaller leading under-barrier cost than a calculation that keeps the intrinsic mass scale fixed while all other comparison terms are held equal. If $G$ is low enough that
+
+$$
+p_f^2G^2<\mu^2,
+$$
+
+the local region is no longer forbidden in this simplified balance. In a full problem other potential, transverse, metric, or field terms may preserve the barrier, but the direction of the scalar contribution is unambiguous: lowering $p_{f,c}$ lowers the fermic-scale part of the forbidden-region cost.
+
+## Where gradient and spin terms enter
+
+The derivation used the principal symbol. Squaring the full operator produces additional terms when $p_{f,c}(x)$, the spatial frame, or the shift potential varies across the state. Schematically these include
+
+$$
+O(\hbar\,\partial p_{f,c}),
+\qquad
+O(\hbar\,\partial A_g),
+$$
+
+and spin/frame transport terms. These corrections are expected and physically meaningful. In a WKB expansion they are subleading relative to the leading $\kappa^2$ balance when the background varies slowly on the local de Broglie/decay length scale:
+
+$$
+\left|\frac{d\kappa}{d\ell}\right|\ll \frac{\kappa^2}{\hbar}.
+$$
+
+Near turning points, the WKB approximation must be replaced by the usual local matching analysis. That affects the prefactor and the connection formula; the leading exponential sensitivity to the barrier integral remains the controlling quantity when the barrier is broad compared with the decay length.
+
+## Result
+
+The Chapter 4.8 tunneling statement can therefore be stated precisely:
+
+> In the stationary, positive-branch, leading-WKB regime, the M1 replacement $p_f\to p_{f,c}=p_f\sqrt{-g_{00}}$ enters directly into the forbidden-region momentum scale. Holding the conserved generator, transverse package, and geometry fixed, lowering $p_{f,c}$ lowers the WKB decay constant $\kappa$, lowers the barrier exponent $\int\kappa\,d\ell$, and increases the leading transmission probability.
+
+This is the rigorous content of the tunneling claim. It is a semiclassical sensitivity result, not yet a full phenomenological prediction.

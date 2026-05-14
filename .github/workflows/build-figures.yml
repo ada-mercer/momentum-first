@@ -4,8 +4,17 @@ on:
   workflow_dispatch:
 
 jobs:
-  placeholder:
+  build-figures:
     runs-on: ubuntu-latest
     steps:
-      - name: Placeholder
-        run: echo "Figure workflow scaffolded; implementation to follow."
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Bootstrap environment
+        run: bash ci/install-ubuntu.sh
+
+      - name: Verify baseline dependencies
+        run: python3 scripts/check_dependencies.py
+
+      - name: Build registered figures
+        run: python3 scripts/build_figures.py

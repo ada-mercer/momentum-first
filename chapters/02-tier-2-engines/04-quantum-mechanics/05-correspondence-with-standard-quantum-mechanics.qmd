@@ -1,0 +1,88 @@
+## Why the Schrödinger form appears
+
+The Schrödinger equation is often introduced as a postulate. In momentum language, its form can be read more directly: it is the statement that phase evolves under a generator.
+
+Start with a stationary component of a quantum state. If the component has angular frequency $\omega$, its phase evolves as
+
+$$
+\Psi(t)=e^{-i\omega t}\psi.
+$$
+
+Acting with $i\hbar\partial_t$ gives
+
+$$
+i\hbar\frac{\partial\Psi}{\partial t}=\hbar\omega\Psi.
+$$
+
+The operator on the left extracts the phase rate in energy units. Standard quantum mechanics identifies the generator eigenvalue as
+
+$$
+H=\hbar\omega.
+$$
+
+M1 keeps this phase rule. It only changes the primary reading of the generator. Since the energy-unit generator is $H=cM$, a stationary M1 component satisfies
+
+$$
+i\hbar\frac{\partial\Psi}{\partial t}=cM\Psi.
+$$
+
+Promoting the scalar generator to an operator gives the M1 evolution equation:
+
+$$
+i\hbar\frac{\partial\Psi}{\partial t}=\hat H\Psi
+=c\hat M\Psi.
+$$
+
+Equivalently,
+
+$$
+\frac{i\hbar}{c}\frac{\partial\Psi}{\partial t}=\hat M\Psi.
+$$
+
+This explains why the equation is first order in the evolution parameter. The state carries phase, and the generator gives the rate at which that phase turns. The equation is linear because amplitudes superpose: if two components evolve by the same generator rule, their coherent sum must also evolve by that rule.
+
+In this reading, the Schrödinger form is not an energy-first assumption. It is the standard quantum phase law written with the M1 generator underneath it. The Hamiltonian $\hat H$ remains the correct energy-unit generator. The framework's own object is $\hat M$.
+
+### Correspondence with standard quantum mechanics and Dirac theory
+
+The flat correspondence follows immediately. When gravity is absent,
+
+$$
+p_{f,c}\rightarrow p_f,
+\qquad
+\mathbf A_g\rightarrow0,
+\qquad
+\hat M_g\rightarrow\hat M.
+$$
+
+The energy-unit operator reduces to
+
+$$
+\hat H=c\hat M
+=\beta m_0c^2+c\boldsymbol\alpha\cdot\hat{\mathbf p},
+$$
+
+which is the ordinary free Dirac Hamiltonian. In the stationary gravity setting the same unit translation is
+
+$$
+\hat H_g=c\hat M_g,
+$$
+
+with the local momentum-unit content still carried by $\hat M_g$.
+
+The nonrelativistic Schrödinger equation appears when the large rest phase is separated from the slower envelope. Write schematically
+
+$$
+\Psi(t)=e^{-im_0c^2t/\hbar}\psi(t).
+$$
+
+The rapid factor carries the rest-scale phase from $cp_f=m_0c^2$. The remaining envelope $\psi$ evolves under the excess generator above the rest scale. In flat space, that excess is
+
+$$
+c(M-p_f)
+=\frac{p^2}{2m_0}+O\left(\frac{p^4}{m_0^3c^2}\right).
+$$
+
+Promoting $p$ to $\hat{\mathbf p}$ gives the ordinary leading Schrödinger kinetic operator. Thus the familiar nonrelativistic equation is not foreign to M1. It is the low-speed envelope equation obtained after the core momentum generator has been translated into energy units and the rest-scale phase has been factored out.
+
+The empirical grammar of ordinary quantum mechanics remains intact: $\Psi$ carries phase, $\hbar$ relates phase rate to generator value, and $\hat{\mathbf p}=-i\hbar\nabla$ generates spatial translations. M1's contribution is to identify the generator beneath the Hamiltonian as core momentum and to show how the same object can be gravity-dressed without leaving the stationary bookkeeping developed in the gravity chapter.

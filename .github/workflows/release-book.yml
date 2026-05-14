@@ -35,7 +35,7 @@ jobs:
       - name: Render PDF
         run: |
           export PATH="$HOME/.local/bin:$PATH"
-          quarto render --to pdf
+          quarto render --profile pdf
 
       - name: Prepare PDF release artifact
         run: |

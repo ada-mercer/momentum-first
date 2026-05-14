@@ -19,3 +19,6 @@ jobs:
 
       - name: Run dependency smoke test through pytest
         run: pytest tests/test_dependencies.py
+
+      - name: Check manuscript includes, assets, and explicit cross-references
+        run: python3 scripts/check_crossrefs.py

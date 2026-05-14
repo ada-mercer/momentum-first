@@ -1,0 +1,87 @@
+## Core Terms and Variables
+
+The earlier parts have already fixed the basic momentum vocabulary. Fermic momentum $p_f$ is the intrinsic momentum scale, bosic momentum $p$ is the translational magnitude, and core momentum $M$ is the total momentum-content scalar in the inertial baseline:
+
+$$
+p_f=m_0c,
+\qquad
+M=\sqrt{p_f^2+p^2}.
+$$
+
+Those definitions remain in force. In the quantum setting, the same quantities must be read once the state is phase-bearing and the relevant quantities become operators. The new vocabulary is therefore not a replacement for the Foundations vocabulary. It is the operator layer built on top of it.
+
+### Quantum state
+
+The quantum state is denoted by $\Psi$.
+
+Here $\Psi$ is the amplitude-level state object used by ordinary quantum mechanics. It carries phase, can be superposed, and gives detection probabilities through the usual setup-dependent expression measures. No new measurement theory is assumed. The only interpretive caution needed here is narrower: a phase-bearing state is not exhausted by a single local value of $|\Psi|^2$.
+
+The distinction is small but useful. Local expression is what a specified detector, channel, or projection reads. The state may carry phase relations that affect later expression even when a local probability-density description is the correct operational summary for a given setup.
+
+### Operators and scalar readings
+
+A hat denotes an operator. The same symbol without a hat denotes the corresponding scalar value, eigenvalue, local magnitude, or classical quantity when the context is clear.
+
+Thus $\hat{\mathbf p}$ is the momentum operator, while $\mathbf p$, $p_i$, or $p_k$ denotes a momentum value or component. The bosic momentum magnitude remains $p=|\mathbf p|$; the components $p_i$ or $p_k$ carry direction.
+
+The canonical momentum operator is the usual one,
+
+$$
+\hat{\mathbf p}=-i\hbar\nabla.
+$$
+
+M1 reads this as the quantum operator for directed bosic momentum. It is not the total momentum content of the particle. It is the operator form of the translational part that enters the flat composition relation.
+
+### Core momentum operator
+
+The central new object is the **core momentum operator**, written $\hat M$.
+
+The scalar $M$ names the core momentum magnitude. The operator $\hat M$ is the quantum generator whose eigenvalue or local scalar reading is $M$ in the relevant regime. In stationary or eigenstate language,
+
+$$
+\hat M\Psi=M\Psi.
+$$
+
+This is the main notation shift from standard energy-first language. M1 treats $\hat M$ as the primary generator in momentum units. The corresponding energy-unit translation appears when the same object is compared directly with standard quantum notation.
+
+### Phase evolution
+
+Quantum evolution is written in generator form. If $t$ denotes the chosen evolution time for the flat or stationary background, the M-first form is
+
+$$
+\frac{i\hbar}{c}\frac{\partial\Psi}{\partial t}=\hat M\Psi.
+$$
+
+The role of $\hbar$ is standard: it sets the scale relating generator action to phase evolution. The M1 difference is not that phase evolution is abandoned or replaced. It is that the generator is read first as core momentum, with energy language treated as a unit translation.
+
+### Gravity-side operator terms
+
+The stationary gravity construction introduced local readout variables such as the contextual fermic scale $p_{f,c}$ and the transport momentum $\Pi_i$. Their operator counterparts enter through the gravity-dressed core momentum operator.
+
+The contextual fermic scale is the gravity-dressed version of $p_f$:
+
+$$
+p_{f,c}(\mathbf x)=p_f\sqrt{-g_{00}(\mathbf x)}.
+$$
+
+The mechanical momentum operator is written
+
+$$
+\hat{\boldsymbol\Pi}=\hat{\mathbf p}-\mathbf A_g(\hat{\mathbf x}),
+$$
+
+in the simplified momentum-potential convention used for the quantum operator discussion. These two quantities lead to the stationary gravity-dressed core momentum operator $\hat M_g$.
+
+### Working convention
+
+The working convention is therefore compact:
+
+- $\Psi$ is the phase-bearing quantum state.
+- $\hat{\mathbf p}$ is the canonical momentum operator for directed bosic momentum.
+- $p_f$ is the inherited fermic scale.
+- $M$ is the scalar core momentum magnitude.
+- $\hat M$ is the core momentum operator.
+- Energy-unit notation appears only when comparing with standard quantum notation.
+- $p_{f,c}$ and $\hat{\boldsymbol\Pi}$ are the stationary gravity-side replacements used in $\hat M_g$.
+
+The inherited variables keep their earlier meanings. The new layer is the operator vocabulary: state, phase, canonical momentum, core momentum operator, and the gravity-dressed terms used below.

@@ -1,0 +1,17 @@
+# Gravity and Structured Spacetime
+
+{{< include 01-gravity-in-m1.qmd >}}
+
+{{< include 02-core-terms-and-variables.qmd >}}
+
+{{< include 03-gravitational-sources.qmd >}}
+
+{{< include 04-the-stationary-gravitational-field.qmd >}}
+
+{{< include 05-local-gravity-and-observer-bookkeeping.qmd >}}
+
+{{< include 06-stationary-classical-correspondence.qmd >}}
+
+{{< include 07-nonstationary-gravity-extension-track.qmd >}}
+
+{{< include 08-spacetime-lessons-and-open-boundaries.qmd >}}

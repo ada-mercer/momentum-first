@@ -1,0 +1,11 @@
+## The Momentum-First Wager
+
+M1 begins from a simple but consequential question. If some of the deepest conceptual pressure in physics comes from the place assigned to its central quantities, what happens if one starts from momentum instead? Not momentum as one useful conserved quantity among others, but directional momentum conservation as the primary structural demand.
+
+In the formal development of the framework, that move takes the form of **Additive Directional Momentum Conservation** (ADMC). The claim is that if directional momentum conservation is required first, a specific momentum structure for particles is forced, and what standard physics treats as separate conservation laws for energy and momentum can be read as expressions of one underlying conservation structure. On this view, energy is not a second independent conserved primitive, but a measure of total momentum content. The foundational chapters make that structure precise.
+
+The same reordering changes the status of **time**. In M1, time is not introduced as an independent primitive dimension. It is read instead as a measure of the observed rate of change. That proposal matters only if the framework can earn it, not as a verbal reinterpretation, but as part of a structure that becomes clearer when the momentum-first move is taken seriously.
+
+That is the wager. If the move is sound, the primitive set should tighten, the relation among mass, energy, and momentum should become clearer, and structures that often appear separately should begin to fall into a more intelligible order. If it does not deliver those gains, M1 has not earned its departure.
+
+The book therefore treats M1 neither as a slogan nor as a finished doctrine. It treats it as a disciplined attempt to put directional momentum conservation first and then follow the consequences wherever that choice genuinely leads.

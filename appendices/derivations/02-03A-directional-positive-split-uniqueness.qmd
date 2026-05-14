@@ -1,8 +1,4 @@
----
-title: "Derivation 2.3A — Structural uniqueness of the directional-positive split"
----
-
-# Derivation 2.3A — Structural uniqueness of the directional-positive split {#sec-directional-positive-split-uniqueness}
+# Derivation 2.3A — Structural uniqueness of the directional-positive split {#sec-directional-positive-split-uniqueness .unnumbered}
 
 ## Purpose
 

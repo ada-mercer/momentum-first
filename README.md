@@ -19,6 +19,17 @@ Chapter development, detailed manuscript content, and figure implementations wil
 
 See `DEPENDENCIES.md` for the current baseline dependency set and installation path.
 
+## Render locally
+
+The shared book structure lives in `_quarto.yml`. Format-specific settings live in Quarto profiles:
+
+```bash
+quarto render --profile html
+quarto render --profile pdf
+```
+
+Use the HTML profile for fast reading/review and the PDF profile for release checks.
+
 ## Read the book
 
 - [Download the latest PDF](https://github.com/ada-mercer/momentum-first/releases/latest/download/Momentum-First.pdf)
@@ -29,3 +40,7 @@ The PDF is published as a release artifact, not committed to the repository. Unt
 
 This repo uses **infrequent, milestone-based releases** rather than frequent publish churn.
 See `RELEASES.md` for the release policy, workflows, and tagging procedure.
+
+## License
+
+This repository uses a split license. Manuscript text, figures, and rendered outputs are licensed under **CC BY-NC-SA 4.0**; code, scripts, tests, and CI configuration are licensed under **MIT**. See `LICENSE.md`.

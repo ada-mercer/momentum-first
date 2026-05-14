@@ -1,0 +1,39 @@
+## What has been established
+
+The result is a specific bridge, not a completed quantum ontology.
+
+The bridge begins with ordinary quantum mechanics. The state $\Psi$ remains the phase-bearing amplitude object. The operator $\hat{\mathbf p}=-i\hbar\nabla$ remains the generator of spatial translations and the quantum representation of directed momentum. The Schrödinger form remains the phase-evolution law: $i\hbar\partial_t$ reads the energy-unit generator of the state's phase change.
+
+The M1 shift is the interpretation of the generator beneath that familiar form. The primary object is not energy as a primitive scalar. It is core momentum. The flat first-order operator
+
+$$
+\hat M=\beta p_f+\boldsymbol\alpha\cdot\hat{\mathbf p}
+$$
+
+is the linear quantum package of the inertial relation
+
+$$
+M^2=p_f^2+p^2.
+$$
+
+This explains why the Dirac form belongs naturally in M1. It is the first-order operator form that keeps fermic scale and directed bosic momentum visible while preserving the scalar magnitude relation. The ordinary nonrelativistic Schrödinger equation then appears as the low-speed envelope equation after the rest-scale phase has been factored out.
+
+The gravity extension is equally important. The stationary operator
+
+$$
+\hat M_g=\beta p_{f,c}+\boldsymbol\alpha\cdot\hat{\boldsymbol\Pi}
+$$
+
+with energy-unit companion $\hat H_g=c\hat M_g$ is compatible with the gravity-chapter bookkeeping because its local principal scalar reading is
+
+$$
+M_{g,loc}=\sqrt{p_{f,c}^2+\gamma^{ij}\Pi_i\Pi_j}.
+$$
+
+That is the same local magnitude used in stationary observer bookkeeping. The operator does not bypass gravity; it lands on the gravity-side local readout in the classical limit and reduces to the flat operator when the gravitational fields vanish.
+
+The controlled difference is equally clear. M1 uses core momentum as the primary generator, lets stationary scalar gravity dress the internal scale $p_f\to p_{f,c}$, and therefore gives strong scalar wells a direct channel into phase evolution, local envelope dynamics, and tunneling exponents. This does not discard classical free-fall correspondence. It narrows the assumption that gravity can always be removed from local quantum internal-scale physics by choosing a freely falling frame.
+
+Several boundaries remain. The bridge above is not yet a full quantum field theory. It is not a complete measurement theory. It does not require torus geometry, electromagnetic projectors, or source-specific phenomenology as part of the mainline argument.
+
+What has been earned is narrower and cleaner: M1 can speak ordinary quantum mechanics in momentum-first language; it can identify $\hat M$ as the core momentum operator; it can explain the linear and Schrödinger forms as phase-generator structure; it can deform the same operator in a way that is compatible with the stationary gravity machinery already developed in the gravity chapter; and it can state why strong gravity may enhance quantum tunneling through the contextual fermic scale.

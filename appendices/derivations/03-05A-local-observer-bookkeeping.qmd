@@ -1,8 +1,4 @@
----
-title: "Derivation 3.5A — Local observer bookkeeping"
----
-
-# Derivation 3.5A — Local observer bookkeeping {#sec-derivation-03-05A-local-observer-bookkeeping}
+# Derivation 3.5A — Local observer bookkeeping {#sec-derivation-03-05A-local-observer-bookkeeping .unnumbered}
 
 ## Purpose
 
@@ -14,7 +10,7 @@ The main point is separation of roles. The stationary field is established by th
 
 - **Role:** local readout rule for the stationary M1 gravity package.
 - **Regime:** stationary field, local observer patch, scalar+shift-led bookkeeping.
-- **Status:** working reference convention for Part III.
+- **Status:** working reference convention for the gravity chapter.
 - **Non-claim:** this is not a full dynamical equation of motion and not a complete nonstationary observer theory.
 
 ## Local scalar dressing
@@ -125,7 +121,7 @@ $$
 M_{g,loc}(x,p)=\sqrt{p_f^2G(x)^2+\gamma^{ij}(x)(p_i-p_fG(x)A_i)(p_j-p_fG(x)A_j)}.
 $$
 
-This is why Part III keeps local and asymptotic language separate. The local observer reads the field actually present at its location. The asymptotic observer supplies a comparison standard.
+This is why the gravity chapter keeps local and asymptotic language separate. The local observer reads the field actually present at its location. The asymptotic observer supplies a comparison standard.
 
 ## Clocking and motion separation
 

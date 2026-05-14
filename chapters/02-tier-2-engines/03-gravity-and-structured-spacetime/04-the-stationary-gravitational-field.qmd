@@ -1,0 +1,276 @@
+## The Stationary Gravitational Field
+
+The previous chapter prepared the source layer. This chapter gives the stationary field map that follows from it.
+
+The central result is the direct map from positive directional source channels to field deformation. M1 treats momentum as the primary physical content, so the first field question is not how to rename a classical density or metric component. It is whether a primitive momentum-channel source has a clean field response.
+
+In the stationary map, it does. A channel $J_k^+$ contributes directly to the directional field $\theta_i$ along direction $k$; a matching channel $J_k^-$ contributes with the opposite directional sign. Their symmetric and antisymmetric combinations then reveal the scalar and directional parts of the stationary field. The packaging into $G$, $A_i$, and $B_{ij}$ comes only after that source-to-field map has been built.
+
+### Primitive source-to-field map
+
+For each direction $k$, write the primitive momentum-density source channels as
+
+$$
+J_k^+(x),
+\qquad
+J_k^-(x).
+$$
+
+Here $x$ marks the source location at which the channel density is defined. In the integral formulas below, the source point is written as $r'$ and the observation point as $r$. The units of $J_k^\pm$ are kg/(s m$^2$): momentum content per spatial volume in the stationary source normalization.
+
+Let
+
+$$
+R:=\|r-r'\|,
+$$
+
+and let $e_{(k)}^i(r')$ be the local orthonormal basis vector associated with the direction label $k\in\{x,y,z\}$ at the source point. With the stationary coupling
+
+$$
+\kappa:=\frac{G_N}{c^3},
+$$
+
+a positive channel element at $r'$ contributes
+
+$$
+d\theta_i(r;r')
+=
+\kappa\,\frac{J_k^+(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'
+$$
+
+to the directional field. The opposite channel contributes with the opposite directional sign,
+
+$$
+d\theta_i(r;r')
+=
+-\kappa\,\frac{J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+This is the primitive stationary statement. A positive momentum-channel source has a direct directional field response with the same Green kernel that will also build the scalar sector. The scalar and directional fields are then obtained by taking the two symmetry combinations of the source channels,
+
+$$
+M_k(x)
+=
+\frac{J_k^+(x)+J_k^-(x)}{2},
+\qquad
+P_k(x)
+=
+J_k^+(x)-J_k^-(x).
+$$
+
+The subscript $k$ still labels the chosen source direction; the argument $x$ says that these are local source-density packages, not integrated amounts. The even package $M_k$ keeps what survives when the two senses of direction are added. The odd package $P_k$ keeps what changes sign.
+
+In the simplest stationary exterior presentation, the Green kernel is $1/R$. The scalar field is
+
+$$
+\theta_0(r)
+=
+\kappa\sum_k\int_\Sigma
+\frac{M_k(r')}{\|r-r'\|}\,d^3r'.
+$$
+
+The directional field is
+
+$$
+\theta_i(r)
+=
+\kappa\sum_k\int_\Sigma
+\frac{P_k(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+Written directly in the primitive channels, the same stationary map is
+
+$$
+\theta_0(r)
+=
+\frac{G_N}{2c^3}\sum_k\int_\Sigma
+\frac{J_k^+(r')+J_k^-(r')}{\|r-r'\|}\,d^3r',
+$$
+
+and
+
+$$
+\theta_i(r)
+=
+\frac{G_N}{c^3}\sum_k\int_\Sigma
+\frac{J_k^+(r')-J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+These equations are the stationary source-to-field map in M1 variables. The elementary $J_k^+\to\theta_i$ relation is the directional deformation statement; the even and odd combinations expose the scalar and directional symmetry sectors. The route is therefore
+
+$$
+J_k^\pm
+\longrightarrow
+(\theta_0,\theta_i)
+\longrightarrow
+(G,A_i,B_{ij}),
+$$
+
+with $(M_k,P_k)$ used as the even/odd bookkeeping of the same primitive channel map. Classical density and current notation enter only later, as correspondence language.
+
+The supporting derivation and convention sheet for this source-to-field map is collected in Appendix 3.4A.
+
+For the stationary shift sector, the odd directional source input should be read as the stationary-admissible part of the odd package. In a gauge-fixed comparison presentation, this corresponds to taking the transverse part of the directional source.
+
+### Packaged field variables
+
+The scalar well is packaged into the local gravitational clock factor
+
+$$
+G(r):=\sqrt{1-2\theta_0(r)}.
+$$
+
+Substituting the field map gives
+
+$$
+G(r)
+=
+\sqrt{
+1-
+\frac{G_N}{c^3}\sum_k\int_\Sigma
+\frac{J_k^+(r')+J_k^-(r')}{\|r-r'\|}\,d^3r'
+}.
+$$
+
+This is the direct stationary expression for the clock-depth package in terms of $J_k^\pm$.
+
+The shift potential is defined, in the main stationary convention, by
+
+$$
+A_i(r):=-\theta_i(r).
+$$
+
+Therefore
+
+$$
+A_i(r)
+=
+-\frac{G_N}{c^3}\sum_k\int_\Sigma
+\frac{J_k^+(r')-J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+$$
+
+The shift field also has circulation-like or rotational content,
+
+$$
+B_{ij}=D_iA_j-D_jA_i,
+$$
+
+where $D_i$ is the spatial covariant derivative. In a flat exterior chart this reduces to
+
+$$
+B_{ij}=\partial_iA_j-\partial_jA_i.
+$$
+
+The scalar package $G$ and the shift circulation $B_{ij}$ are the two most direct field-side objects needed by the observer layer. The first controls clock-depth behavior. The second marks directional and frame-drag-like structure.
+
+### Differential form
+
+The integral map is the clearest statement. In a flat stationary exterior, the same map may be written as Poisson-type equations. Since
+
+$$
+\Delta\left(\frac{1}{R}\right)
+=
+-4\pi\delta^{(3)}(r-r'),
+$$
+
+the equations imply
+
+$$
+\Delta\theta_0(r)
+=
+-4\pi\kappa\sum_k M_k(r),
+$$
+
+and
+
+$$
+\Delta\theta_i(r)
+=
+-4\pi\kappa\sum_k P_k(r)e_{(k)i}(r).
+$$
+
+Equivalently,
+
+$$
+\Delta\theta_0(r)
+=
+-\frac{2\pi G_N}{c^3}\sum_k\left(J_k^+(r)+J_k^-(r)\right),
+$$
+
+and
+
+$$
+\Delta\theta_i(r)
+=
+-\frac{4\pi G_N}{c^3}\sum_k\left(J_k^+(r)-J_k^-(r)\right)e_{(k)i}(r).
+$$
+
+This is the field-equation version of the M1 source split.
+
+### What the map says physically
+
+The map makes the source grammar visible at the field level.
+
+A single positive channel already produces a directional deformation. If the two directional senses of a source channel are balanced, their directional contributions cancel while their scalar contribution remains. Such a source contributes to the scalar well but not to the directional shift along that channel.
+
+If the two directional senses are imbalanced, the directional part survives. That imbalance contributes to $\theta_i$ and therefore to $A_i$. This is the stationary origin of rotational and frame-drag-like structure in the M1 gravity package.
+
+Thus the scalar and shift sectors are not unrelated additions. They are symmetry projections of the same positive-channel source grammar:
+
+$$
+J_k^\pm
+\longrightarrow
+\theta_i
+\longrightarrow
+A_i
+\longrightarrow
+B_{ij},
+$$
+
+with the even projection
+
+$$
+J_k^+ + J_k^-
+\longrightarrow
+M_k
+\longrightarrow
+\theta_0
+\longrightarrow
+G,
+$$
+
+and the odd projection
+
+$$
+J_k^+ - J_k^-
+\longrightarrow
+P_k
+\longrightarrow
+\theta_i.
+$$
+
+![Reduced primitive-source field map. Left: a single positive directional channel $J_k^+$ contributes to both the scalar response and the odd directional response. Right: a balanced coincident pair has the same additive scalar content, but the odd sector cancels, so the directional shift response vanishes. This is a reduced educational source-to-field example, not a final microscopic source law.](../../../figures/build/gravity-and-structured-spacetime/primitive-source-2d-k0-fields.png){#fig-primitive-source-2d-k0-fields fig-align="center" width="100%"}
+
+@fig-primitive-source-2d-k0-fields shows the same point in a reduced field solve. The scalar response follows the even amount of source content. The shift response follows the directional imbalance. A single $J_k^+$ channel therefore excites both sides, while a balanced $J_k^+$/$J_k^-$ pair keeps the scalar side and cancels the odd side.
+
+The classical normalization and metric-facing dictionary are collected later in the stationary correspondence section.
+
+### What the stationary field establishes
+
+This section establishes the stationary field map for the gravity chapter.
+
+The primitive source channels $J_k^\pm$ produce even and odd packages. The even package $M_k$ builds $\theta_0$. The odd package $P_k$ builds $\theta_i$. The scalar field packages into
+
+$$
+G=\sqrt{1-2\theta_0},
+$$
+
+and the directional field packages into
+
+$$
+A_i=-\theta_i,
+\qquad
+B_{ij}=D_iA_j-D_jA_i.
+$$
+
+Classical density, current, and metric notation enter as correspondence checks only. The next section asks how the resulting stationary field is read locally by matter and observers.

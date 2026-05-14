@@ -37,4 +37,4 @@ So the plotted radial dependence uses `K_0(r/r_0)` rather than the strict 2D log
 - Balanced pair `(Q_+/2,Q_+/2)`: scalar response remains matched by total source amount, but the odd/shift sector cancels, so `theta_1=A_1=0`.
 - Dashed circle marks `r=r_0`, the axial profile scale.
 
-The exact derivation is mirrored in `book/tiers/T1_foundations/GR_PRIMITIVE_SOURCE_AXIAL_K0_REDUCTION_V1.md`.
+The exact derivation is mirrored in `figures/docs/gravity-and-structured-spacetime/primitive-source-axial-k0-reduction.md`.

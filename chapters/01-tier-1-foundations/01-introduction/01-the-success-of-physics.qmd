@@ -1,0 +1,11 @@
+## The Success of Physics
+
+Any attempt to rethink foundations should begin with respect.
+
+Modern physics is not a damaged structure waiting for rescue. It is one of the great intellectual achievements: mathematically precise, experimentally powerful, and remarkably successful at organizing the behavior of the physical world. Classical mechanics, relativity, quantum theory, and field theory have earned their authority.
+
+That success sets the standard here. An alternative starting point does not earn attention by sounding cleaner, simpler, or more philosophically appealing. It earns attention only if it can carry real explanatory weight while remaining answerable to the successes already achieved.
+
+But success does not settle every foundational question. A theory may work magnificently while still leaving open which of its concepts are primitive, which are derived, and which sit at the center mainly because of the historical order in which the theory was built. Practical indispensability and foundational priority are not always the same thing.
+
+This book begins in that gap. It does not start from the claim that standard physics has failed. It starts from the possibility that some familiar structures may stand too high in the explanatory hierarchy, and that beginning elsewhere may reveal a cleaner organization, and perhaps consequences that are otherwise harder to see.

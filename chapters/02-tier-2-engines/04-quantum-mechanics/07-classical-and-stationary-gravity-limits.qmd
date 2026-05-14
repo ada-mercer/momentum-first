@@ -1,0 +1,53 @@
+## Classical and stationary-gravity limits
+
+The classical limit is obtained by replacing operator action with the corresponding local symbol. In ordinary WKB language, a state with rapidly varying phase can be written schematically as
+
+$$
+\Psi\sim a(x)e^{iS(x)/\hbar},
+$$
+
+so the canonical momentum operator reads the phase gradient:
+
+$$
+\hat p_i\Psi\sim (\partial_iS)\Psi.
+$$
+
+In that limit,
+
+$$
+p_i=\partial_iS
+$$
+
+is the classical momentum component associated with the local phase. This is the standard bridge from wave mechanics to Hamilton-Jacobi mechanics. M1 keeps the bridge but reads the scalar generator as core momentum.
+
+For the flat operator, the classical symbol of $\hat M$ gives
+
+$$
+M=\sqrt{p_f^2+p^2}.
+$$
+
+For the stationary gravity operator, the corresponding local symbol gives
+
+$$
+M_{g,loc}=\sqrt{p_{f,c}^2+\gamma^{ij}\Pi_i\Pi_j}.
+$$
+
+This is the same local packaged magnitude introduced in the gravity chapter. The quantum operator is therefore not inventing a separate gravity object. Its local classical reading lands on the already-defined stationary gravity magnitude.
+
+The distinction between local magnitude and stationary transport generator still matters. $M_{g,loc}$ is the local scalar package built from contextual fermic scale and local transport momentum. A stationary background may also support a conserved transport generator in the gravity-chapter bookkeeping. In a lapse-shift comparison language this has the schematic role of combining local magnitude with the stationary frame structure.
+
+The quantum notation must not erase that distinction. The local operator $\hat M_g$ is not automatically identical to every conserved stationary transport quantity one can define in a chosen classical slicing. The local operator, the local magnitude, and the stationary conserved generator are related, but they answer different questions.
+
+The compatibility chain is therefore:
+
+$$
+\hat M_g
+\longrightarrow
+M_{g,loc}
+\longrightarrow
+\text{stationary transport generator, when one is constructed}.
+$$
+
+The first arrow is the quantum-to-classical local-symbol limit. The second arrow belongs to the stationary classical bookkeeping of the gravity chapter. Keeping the arrows separate prevents a common overload of $M_g$ and avoids claiming more than the operator construction has shown.
+
+In the flat limit the chain collapses back to the ordinary inertial reading. The contextual scale becomes $p_f$, the shift correction vanishes, the spatial metric becomes Euclidean, and the local magnitude becomes $M$. The standard classical relation is recovered, but now it sits inside a larger operator grammar that can also talk about stationary gravitational backgrounds.

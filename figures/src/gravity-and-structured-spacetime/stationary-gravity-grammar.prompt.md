@@ -1,15 +1,15 @@
 # Figure: Stationary gravity grammar
 
-Status: draft-approved for Part III authoring
+Status: draft-approved for gravity-chapter authoring
 Created: 2026-04-25
 Model: openai/gpt-image-2
 Output: `figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png`
-Chapter: `chapters/03-gravity-and-structured-spacetime/03-01-gravity-in-m1.qmd`
+Chapter: `chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd`
 Figure id: `fig-stationary-gravity-grammar`
 
 ## Purpose
 
-Formal companion to the conceptual directional-source figure. The figure shows the Part III stationary gravity grammar as a reader-facing source -> field -> observer pipeline with the minimal variables the chapter introduces.
+Formal companion to the conceptual directional-source figure. The figure shows the gravity-chapter stationary grammar as a reader-facing source -> field -> observer pipeline with the minimal variables the chapter introduces.
 
 ## Visual constraints
 
@@ -216,4 +216,4 @@ Hard constraints: exactly three panels, no top title/subtitle, no extra equation
 
 ## Current review note
 
-This is the current adopted formal Part III stationary gravity grammar figure. It is authoring-grade and visually improved over the previous version. As with all prompt-backed figures, formula text should still receive final publication review before locking a print-ready edition.
+This is the current adopted formal gravity-chapter stationary grammar figure. It is authoring-grade and visually improved over the previous version. As with all prompt-backed figures, formula text should still receive final publication review before locking a print-ready edition.

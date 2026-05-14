@@ -1,0 +1,3 @@
+# Example R library path for local Quarto/R support.
+# Copy to .Renviron if you want the repo installer/checks to use this path locally.
+R_LIBS_USER=~/.local/share/R/%p-library/%v

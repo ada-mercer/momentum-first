@@ -1,8 +1,4 @@
----
-title: "Derivation 3.4A — Stationary primitive source-to-field map"
----
-
-# Derivation 3.4A — Stationary primitive source-to-field map {#sec-derivation-03-04A-source-field-map}
+# Derivation 3.4A — Stationary primitive source-to-field map {#sec-derivation-03-04A-source-field-map .unnumbered}
 
 ## Purpose
 
@@ -14,7 +10,7 @@ The key point is that a primitive positive momentum-channel source has a clean s
 
 - **Role:** native M1 construction with stationary correspondence-ready normalization.
 - **Regime:** stationary, weak-to-moderate field, exterior Green-kernel presentation.
-- **Status:** reference derivation for the current Part III stationary field package.
+- **Status:** reference derivation for the current gravity-chapter stationary field package.
 - **Non-claim:** this is not a full microscopic source law and not a final nonstationary theory.
 
 ## Source channels and local arguments

@@ -1,0 +1,309 @@
+# Worked Quantum Examples in M1 Language {.unnumbered}
+
+> **Status:** draft appendix/support note.
+> **Purpose:** give a small educational taste of how familiar quantum-mechanical examples look when translated into M1 momentum language.
+> **Scope:** illustrative worked examples, not a replacement for standard quantum mechanics and not a measurement theory.
+
+Chapter 04 presents the formal bridge: the core momentum operator $\hat M$, its relation to the usual Hamiltonian $\hat H=c\hat M$, the nonrelativistic expansion, and the stationary-gravity-dressed operator $\hat M_g$. This appendix is deliberately lighter. It takes a few familiar textbook examples and asks a practical question:
+
+> If M1 treats core momentum as primary, what does the usual quantum math look like?
+
+The examples below are not meant to prove M1. They are meant to make the notation less abstract. The guiding translation is simple:
+
+\[
+M = \sqrt{p_f^2+p^2},
+\qquad
+p_f=m_0c,
+\]
+
+and, in the nonrelativistic regime,
+
+\[
+M
+= p_f\sqrt{1+\frac{p^2}{p_f^2}}
+\approx p_f + \frac{p^2}{2p_f}.
+\]
+
+Multiplying by $c$ gives the usual energy form:
+
+\[
+E=cM
+\approx m_0c^2+\frac{p^2}{2m_0}.
+\]
+
+So ordinary low-speed quantum mechanics can be read as the envelope theory of the excess core momentum above the rest-scale term $p_f$.
+
+## A.1 Particle in a box: standing waves still carry momentum content
+
+Consider a particle in a one-dimensional box of length $L$. The usual stationary states are
+
+\[
+\psi_n(x)=\sqrt{\frac{2}{L}}\sin\!\left(\frac{n\pi x}{L}\right),
+\qquad n=1,2,3,\ldots
+\]
+
+with allowed wave numbers
+
+\[
+k_n=\frac{n\pi}{L},
+\]
+
+and momentum magnitude
+
+\[
+p_n=\hbar k_n=\frac{n\pi\hbar}{L}.
+\]
+
+The wavefunction can be written as a superposition of opposite travelling waves:
+
+\[
+\sin(k_nx)=\frac{e^{ik_nx}-e^{-ik_nx}}{2i}.
+\]
+
+This is why the state has no net probability current: the $+p_n$ and $-p_n$ travelling components are balanced.
+
+In standard nonrelativistic quantum mechanics, the kinetic energy is
+
+\[
+K_n=\frac{p_n^2}{2m_0}
+=\frac{n^2\pi^2\hbar^2}{2m_0L^2}.
+\]
+
+In M1 language the same calculation begins from the core momentum magnitude
+
+\[
+M_n=\sqrt{p_f^2+p_n^2}.
+\]
+
+For $p_n\ll p_f$, this becomes
+
+\[
+M_n\approx p_f+\frac{p_n^2}{2p_f}.
+\]
+
+Multiplying by $c$ gives
+
+\[
+E_n=cM_n
+\approx m_0c^2+\frac{p_n^2}{2m_0}.
+\]
+
+The educational point is small but important:
+
+> zero net current does not mean zero momentum content.
+
+The standing wave has balanced signed momentum expression, but the magnitude $p_n$ still contributes to the core momentum and therefore to the energy above rest.
+
+If ADMC language is useful here, it enters only as bookkeeping: opposite directional channels are balanced. The worked calculation itself does not require ADMC to be the main actor.
+
+## A.2 Harmonic oscillator: the usual spectrum as excess core momentum
+
+The one-dimensional harmonic oscillator has standard energy levels
+
+\[
+E_n = \hbar\omega\left(n+\frac12\right),
+\qquad n=0,1,2,\ldots
+\]
+
+when the rest energy is not being written explicitly. In M1 language, the corresponding excess core momentum is
+
+\[
+\Delta M_n = \frac{E_n}{c}
+=\frac{\hbar\omega}{c}\left(n+\frac12\right).
+\]
+
+This is not a new derivation of the oscillator spectrum. It is a translation of what the spectrum measures: the stationary oscillator levels are discrete increments in the phase-generating core momentum above the inertial rest scale.
+
+If the rest contribution is included, the full core momentum level is written schematically as
+
+\[
+M_n = p_f + \Delta M_n
+= m_0c + \frac{\hbar\omega}{c}\left(n+\frac12\right)
+\]
+
+in the nonrelativistic oscillator regime.
+
+The useful lesson is that M1 does not need to replace the usual oscillator algebra. Creation and annihilation operators still do the ordinary Hilbert-space work. M1 changes the interpretation of what the energy ladder is tracking:
+
+> the oscillator spectrum is a ladder of allowed excess core-momentum/phase-generator values.
+
+This example is therefore mainly pedagogical. It shows how familiar spectra can be read without immediately changing the calculation.
+
+## A.3 Spherical bound states: symmetry as balanced directional structure
+
+For a central potential, bound states are separated into radial and angular parts:
+
+\[
+\psi_{nlm}(r,\theta,\phi)=R_{nl}(r)Y_l^m(\theta,\phi).
+\]
+
+The simplest angular case is an $s$-state, with $l=0$ and $m=0$. Its angular part is constant:
+
+\[
+Y_0^0=\frac{1}{\sqrt{4\pi}}.
+\]
+
+So the probability distribution is spherically symmetric. There is no preferred spatial direction and no angular current.
+
+In M1 language, the important statement is not that the state has no momentum structure. A bound state has kinetic content and a nontrivial phase-generator value. The safer statement is:
+
+> the momentum/channel distribution is isotropically balanced.
+
+For every chosen direction, signed directional expectation cancels by symmetry. But confinement and radial variation still imply nonzero kinetic contribution in the standard Hamiltonian, and therefore nonzero excess core momentum in the M1 translation.
+
+This is the same lesson as the box, now in spherical form:
+
+> symmetry can cancel signed directional expression without erasing the momentum content carried by the state.
+
+No local hidden path is being assumed. This is a state-level translation of the standard symmetric bound-state structure.
+
+## A.4 Angular modes: complex currents and real standing patterns
+
+Cylindrical or spherical systems often contain angular factors of the form
+
+\[
+e^{im\phi}.
+\]
+
+For $m>0$ and $m<0$, the two modes carry opposite angular phase winding. In a ring-like system, for example,
+
+\[
+\psi_m(\phi)=\frac{1}{\sqrt{2\pi}}e^{im\phi}
+\]
+
+has angular momentum
+
+\[
+L_z=m\hbar.
+\]
+
+A real standing angular pattern can be made by combining opposite modes:
+
+\[
+\frac{1}{\sqrt2}\left(\psi_{+|m|}+\psi_{-|m|}\right)
+\propto \cos(|m|\phi),
+\]
+
+or
+
+\[
+\frac{1}{i\sqrt2}\left(\psi_{+|m|}-\psi_{-|m|}\right)
+\propto \sin(|m|\phi).
+\]
+
+The complex modes have definite signed angular momentum. The real combinations have zero net angular current, but they are not structurally empty. They are coherent combinations of opposite angular phase-winding branches.
+
+M1's useful vocabulary here is again modest:
+
+> a real standing angular pattern can be read as balanced angular expression, not as absence of angular structure.
+
+This is especially helpful for understanding why real orbital pictures can have nodes and lobes while still being built from angular-momentum machinery.
+
+## A.5 Real p-orbitals: a familiar branch-combination example
+
+The real $p$-orbitals are a useful illustration. In standard hydrogenic notation, the complex angular states are spherical harmonics $Y_1^m$. The real $p_x$ and $p_y$ orbitals are built from coherent combinations of the $m=+1$ and $m=-1$ states, while $p_z$ is associated with $m=0$.
+
+Up to conventional phases and normalization,
+
+\[
+p_x \sim \frac{1}{\sqrt2}\left(Y_1^{-1}-Y_1^{+1}\right),
+\]
+
+and
+
+\[
+p_y \sim \frac{i}{\sqrt2}\left(Y_1^{-1}+Y_1^{+1}\right).
+\]
+
+The educational point is not that the electron secretly travels on two classical paths. The point is that a real orbital shape can be made by combining complex angular branches whose signed angular expressions oppose or recombine.
+
+This gives a careful way to talk about nodes. At a nodal plane, the projected local wavefunction amplitude vanishes. The safe M1 wording is:
+
+> branch-resolved state content remains part of the global state, while the local projected expression in that channel cancels.
+
+Do not read this as a claim of hidden local material sitting at a node. It is a statement about how the global state decomposes and how a local expression channel can cancel.
+
+## A.6 Interference: cancellation of expression, not cancellation of the whole state
+
+A two-path interference state can be written schematically as
+
+\[
+\Psi = \Psi_1 + \Psi_2.
+\]
+
+At a destructive-interference point,
+
+\[
+\Psi_1(x)+\Psi_2(x)=0.
+\]
+
+Standard quantum mechanics says the detection probability at that point is zero:
+
+\[
+|\Psi(x)|^2=0.
+\]
+
+M1 should not change that statement. The useful interpretive distinction is simply this:
+
+> a local projected expression can vanish even though the global phase-bearing state remains coherent.
+
+This is why interference is a good educational companion to the previous examples. It reinforces the difference between the full state and one local expression/readout of that state.
+
+Again, no Born-rule replacement is being proposed here. The ordinary probability rule is left intact.
+
+## A.7 Optional gravity-sensitive example: tunneling with a dressed internal scale
+
+The previous examples are ordinary flat-space quantum mechanics translated into M1 language. A more distinctive M1 application appears when stationary gravity dresses the internal momentum scale.
+
+Chapter 04 gives the local/principal scalar form
+
+\[
+M_{g,loc}^2=p_{f,c}^2+\gamma^{ij}\Pi_i\Pi_j.
+\]
+
+For a one-dimensional barrier estimate, the ordinary WKB tunneling factor has the schematic form
+
+\[
+T\sim \exp\!\left[-2\int \kappa(x)\,dx\right],
+\]
+
+where $\kappa$ is the under-barrier decay scale. In the simplest nonrelativistic presentation,
+
+\[
+\kappa(x)=\frac{1}{\hbar}\sqrt{2m_0\left(V(x)-E\right)}.
+\]
+
+M1 suggests that in a strong stationary scalar well, the effective internal scale entering the local quantum balance is not merely the fixed inertial $p_f=m_0c$, but the dressed scale $p_{f,c}$. In a local approximation, that changes the under-barrier balance and therefore can change the exponent.
+
+This example is intentionally only schematic. A real application must state its assumptions:
+
+- the WKB approximation is valid;
+- the gravitational dressing varies slowly across the barrier or is locally approximated;
+- the comparison baseline is fixed;
+- medium and many-body effects are not being silently folded into the same symbol.
+
+The educational lesson is:
+
+> M1 matches ordinary quantum examples where it should, but in strong scalar gravity the same operator language gives a specific place where quantum-sensitive quantities can shift.
+
+## A.8 What these examples do and do not show
+
+These examples show how to translate familiar quantum structures into M1 language:
+
+- standing waves: zero current, nonzero momentum/core content;
+- oscillator levels: discrete excess core momentum / phase-generator values;
+- symmetric bound states: balanced directional structure;
+- angular modes and real orbitals: coherent recombination of signed angular branches;
+- interference: cancellation of local expression without erasing the global state;
+- strong-gravity tunneling: a possible sensitivity channel through $p_f\to p_{f,c}$.
+
+They do not show:
+
+- a derivation of the Born rule;
+- a solution to the measurement problem;
+- a hidden-variable model;
+- a replacement for Hilbert-space quantum mechanics;
+- a full derivation of atomic selection rules;
+- a complete compact-object tunneling calculation.
+
+The appendix should therefore be read as a mathematical orientation aid. Its job is to make M1's quantum notation feel usable before heavier derivations or applications are attempted.

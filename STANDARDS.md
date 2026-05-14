@@ -54,7 +54,7 @@ Never commit:
 - accidental large files,
 - machine-specific state.
 
-Narrow exception: the repo-owned `.Renviron` may be committed only while it remains a documented, non-secret dependency configuration file. Do not treat arbitrary local environment files as covered by this exception.
+Narrow exception: commit `.Renviron.example` as documented non-secret dependency guidance, but keep local `.Renviron` files ignored because they are machine-specific configuration.
 
 Prefer `.gitignore` updates for recurring disposable artifacts.
 
@@ -65,17 +65,17 @@ The repository should distinguish source, build output, reference material, and 
 Canonical manuscript source:
 - `index.qmd`
 - `_quarto.yml`
-- format-specific Quarto config files such as `_quarto-pdf.yml` and `_quarto-html.yml`
+- shared Quarto config in `_quarto.yml` plus format profiles such as `_quarto-pdf.yml` and `_quarto-html.yml`
 - `chapters/**/*.qmd`
 - `appendices/**/*.qmd`
 - `bibliography.bib`
 - `glossary.yml`
-- manuscript-owned style/filter/config files
-- documented repo-level dependency configuration such as the current non-secret `.Renviron`
+- manuscript-owned style/config files; custom filters only when actually configured
+- documented dependency examples such as `.Renviron.example`, not local environment files
 
 Canonical figure source:
 - `figures/src/`
-- `figures/data/`
+- `figures/data/` when figure-owned data exists
 - `figures/lib/`
 - `figures/scripts/`
 - `figures/figures.yml`
@@ -113,25 +113,25 @@ The manuscript is Quarto-first. `_quarto.yml` is the canonical rendered-structur
 
 Current rendered structure:
 - `index.qmd` is the unnumbered book opener/front stub.
-- `chapters/00-preface/index.qmd` is the unnumbered Preface wrapper.
-- Preface body sections live in separate included files under `chapters/00-preface/`.
-- Numbered parts are declared explicitly in `_quarto.yml` using Quarto `part:` entries.
-- Within numbered parts, the listed `.qmd` files are rendered book chapters.
+- `chapters/00-front-matter/00-preface/index.qmd` is the unnumbered Preface wrapper.
+- `chapters/01-tier-1-foundations/01-introduction/index.qmd` is Chapter 1, Introduction.
+- `chapters/01-tier-1-foundations/02-foundations/index.qmd` is Chapter 2, Foundations.
+- `chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd` is Chapter 3, Gravity and Structured Spacetime.
+- `chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd` is Chapter 4, Quantum Mechanics in Momentum Language.
+- Appendices are declared after the rendered body in `_quarto.yml`.
 - `references.qmd` sits after the rendered manuscript body.
 
-Default chapter-file pattern:
-- Files listed directly in `_quarto.yml` are rendered chapters and must start with `#`.
-- Use `##` for first-level in-chapter sections and `###` for subsections.
-- Do not start rendered chapter files with `##`; this can break PDF numbering.
-- Keep numbered chapter filenames aligned with visible order when practical.
+Default chapter-folder pattern:
+- top-level chapter folders are grouped by front matter or rendered tier/part;
+- each chapter folder keeps the global chapter number and chapter slug;
+- files inside a chapter use local section numbers only, e.g. `01-core-terms-and-variables.qmd`;
+- each rendered chapter uses an `index.qmd` wrapper listed in `_quarto.yml`.
 
-Approved wrapper exception:
-- Wrapper chapters are not a general pattern.
-- The only approved wrapper chapter is `chapters/00-preface/index.qmd`.
-- This exception keeps the Preface as one unnumbered front-matter chapter while allowing section-level files for editing.
-- The Preface wrapper starts with `# Preface {.unnumbered}`.
-- Included Preface section files start with `##`.
-- Do not introduce additional wrapper chapters unless there is a deliberate structure decision and this standard is updated.
+Default chapter-file pattern:
+- `index.qmd` wrappers listed directly in `_quarto.yml` are rendered chapters and must start with `#`.
+- Included section files normally start with `##`, because they are sections inside the wrapper chapter.
+- Use `###` for subsections.
+- Do not list individual section files directly in `_quarto.yml` unless there is a deliberate structure decision.
 
 Part policy:
 - A Quarto `part:` is a major reader-facing division, not merely a folder.
@@ -327,7 +327,7 @@ Pipeline rules:
 - Do not make ordinary pushes create releases.
 - Do not commit `_book/` or release PDFs as a substitute for release artifacts.
 - Keep heavyweight rendering separate from lightweight validation unless there is a clear reason to combine them.
-- Prefer explicit commands such as `quarto render --to pdf` when a workflow's purpose is format-specific.
+- Prefer explicit profile commands such as `quarto render --profile pdf` or `quarto render --profile html` when a workflow's purpose is format-specific.
 - CI changes should be small, inspectable, and verified locally where practical.
 - If a workflow is only a scaffold, label it as such rather than implying active coverage.
 

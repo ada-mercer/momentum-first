@@ -1,0 +1,50 @@
+## Kinematic Modifiers
+
+Up to this point, Foundations has described the inertial baseline. The stage has been treated as unmodified, so fermic momentum, bosic momentum, and total momentum content obey the fixed relation
+$$
+M = \sqrt{p_f^2 + p^2}.
+$$
+
+When the stage is deformed, that inertial relation need not be the whole story. The same core momentum content may be repartitioned, contextualized, or expressed differently through the fermic momentum role $p_f$ and the bosic momentum role $p$. Clock rates, material equilibrium, and local transport can then change. In broader cases, the internal composition may remain largely intact while the translational yield of directed bosic momentum changes.
+
+M1 calls such effects **Kinematic Modifiers**. A KM is a structured change in how momentum content becomes physical evolution. It can act internally, by changing the fermic-bosic organization of a particle or material system; externally, by changing what bosic momentum yields as translation; or at the level of state-space, by changing which kinematic configurations are available.
+
+Three kinds of modifier will matter in the present book:
+
+1. **composition modifiers**, which change how fermic and bosic momentum are internally related or contextualized;
+2. **yield modifiers**, which change what directed bosic momentum produces as displacement or frequency-style expression;
+3. **admissibility modifiers**, which change which kinematic states are available at all.
+
+These names are more important than the labels. The point is to say what kind of structural claim a later chapter is making.
+
+### Composition modifiers
+
+A composition modifier changes the internal relation between fermic momentum, bosic momentum, and total momentum content. In the inertial baseline, that relation is
+$$
+M = \sqrt{p_f^2 + p^2}.
+$$
+A composition modifier does not abandon this vocabulary. It changes how the terms are packaged, contextualized, or read in a non-inertial setting.
+
+Most KMs belong closest to this class. They act on the internal structure of a particle or material system, changing the relation between the cycle-carrying fermic sector and the directed bosic sector. Gravity-like clock dressing is the main later example: the intrinsic fermic scale is not replaced, but it is read through a local context.
+
+Composition modifiers are therefore the natural place for effects that alter clocking, local transport bookkeeping, or equilibrium structure by changing how the system's momentum content is organized.
+
+### Yield modifiers
+
+A yield modifier does not primarily change the internal composition of fermic and bosic momentum. It changes what directed bosic momentum yields as physical expression.
+
+The edge case is cosmology. In the current M1 reading, large-scale expansion-like behavior is not introduced first as space itself stretching in the usual sense. It is treated as a change in the translational yield of bosic momentum: the same bosic momentum content supports a different amount of large-scale displacement or frequency-shift behavior.
+
+The current prototype is a yield factor such as
+$$
+\chi(t),
+$$
+which modifies how directional bosic momentum contributes to cosmological redshift and large-scale propagation. This is still a kinematic modification, but it sits farther from the internal particle-structure cases. It changes what bosic expression accomplishes, not primarily how a particle's fermic and bosic sectors compose into $M$.
+
+### Admissibility modifiers
+
+An admissibility modifier changes the available state-space. Its primary job is not to alter the composition map or the displacement yield, but to constrain which configurations can exist as allowed kinematic states.
+
+This matters because not every physical effect should be described as an added force or a changed trajectory. Some effects are better read as restrictions on the space of possible configurations. Exclusion language belongs here. On this reading, an exclusion effect is not first a force pushing otherwise available states apart. It is a statement that certain joint states are not available in the first place.
+
+Admissibility modifiers complete the taxonomy because they affect physical evolution at the level of possibility rather than at the level of composition or yield.

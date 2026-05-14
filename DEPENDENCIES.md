@@ -46,13 +46,13 @@ Those can be added once the manuscript or figure pipeline actually needs them.
 
 ## R library path
 
-This repo uses a user-local R package library via `.Renviron`:
+Local R package installs use `R_LIBS_USER` when available. The repo provides `.Renviron.example` with the recommended user-local path:
 
 ```text
 ~/.local/share/R/%p-library/%v
 ```
 
-That avoids requiring sudo for basic Quarto-related R packages.
+Copy it to `.Renviron` for local work if needed. `.Renviron` itself is ignored because it is machine-local configuration; `ci/install-ubuntu.sh` creates it automatically when absent.
 
 ## Install
 

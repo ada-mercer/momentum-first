@@ -1,0 +1,56 @@
+## The core momentum operator
+
+The inertial baseline gives the scalar relation
+
+$$
+M^2=p_f^2+p^2.
+$$
+
+As a scalar equation this is already familiar. It is the momentum-first form of the relativistic energy relation. The quantum question is sharper: what operator has $M$ as its scalar reading while still acting locally and linearly on a state?
+
+A naive answer would be to write a square-root operator,
+
+$$
+\hat M=\sqrt{p_f^2+\hat{\mathbf p}^{\,2}}.
+$$
+
+That expression has the right eigenvalues in the simplest free case, but it is not the most useful quantum object. It hides the directional momentum inside a square root, makes locality harder to see, and does not expose the internal algebra needed for spinorial structure. M1 needs an operator that keeps the two ingredients visible: the intrinsic fermic scale and the directed bosic momentum.
+
+The linear form does that:
+
+$$
+\hat M = \beta p_f + \boldsymbol\alpha\cdot\hat{\mathbf p}.
+$$
+
+Here $\beta$ and $\alpha_i$ are matrix operators acting on the spinor components of $\Psi$. In standard Dirac notation one may take $\beta=\gamma^0$ and $\alpha_i=\gamma^0\gamma^i$. They are not new M1 fields or additional momenta; they are the algebraic coefficients that distinguish the fermic-scale term from the directed-momentum terms while letting both act in one linear operator.
+
+Their required algebra is
+
+$$
+\beta^2=1,
+\qquad
+\{\beta,\alpha_i\}=0,
+\qquad
+\{\alpha_i,\alpha_j\}=2\delta_{ij}.
+$$
+
+With these relations, and in the free case where the momentum components commute,
+
+$$
+\hat M^2
+=p_f^2+\hat{\mathbf p}^{\,2}.
+$$
+
+The cross terms cancel because $\beta$ anticommutes with the $\alpha_i$, and the directed momentum terms combine to the ordinary squared momentum because the $\alpha_i$ anticommute in the right way. The linear operator therefore has the correct scalar magnitude relation without burying the momentum content inside a square root.
+
+This is the first reason the Dirac form is natural in M1. The framework begins from two momentum roles: an intrinsic scale $p_f$ and a directed momentum $\mathbf p$. A first-order quantum operator has to place those roles into a common algebra. The Dirac matrices supply the minimal known package that does this while keeping the resulting magnitude tied to
+
+$$
+M=\sqrt{p_f^2+p^2}.
+$$
+
+The same algebraic structure also matches the free Dirac operator after translating into energy units. In the native M1 construction, however, the object is simply $\hat M$: the core momentum operator.
+
+This interpretation also explains why the operator is linear in the state. Quantum amplitudes superpose. If two state components are separately admissible, their coherent sum must still be a state on which the generator can act. A nonlinear evolution rule would generally make the evolution of a superposition depend on the decomposition chosen to describe it. The linear operator form protects the ordinary superposition structure while letting the eigenvalue relation recover the nonlinear scalar magnitude after the operator has been diagonalized or squared.
+
+This gives a limited but important result. The standard first-order Dirac package is the right operator language for the flat M1 composition relation because it is the linear quantum form of a theory whose scalar magnitude is built from fermic scale plus directed momentum. A full representation theory of spinors is not required for that identification.

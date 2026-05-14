@@ -1,8 +1,4 @@
----
-title: "Derivation 3.7B — Nonstationary completion ladder"
----
-
-# Derivation 3.7B — Nonstationary completion ladder {#sec-derivation-03-07B-nonstationary-completion-ladder}
+# Derivation 3.7B — Nonstationary completion ladder {#sec-derivation-03-07B-nonstationary-completion-ladder .unnumbered}
 
 ## Purpose
 

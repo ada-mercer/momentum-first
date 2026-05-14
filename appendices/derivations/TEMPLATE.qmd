@@ -1,8 +1,4 @@
----
-title: "Derivation X.YA — Title"
----
-
-# Derivation X.YA — Title
+# Derivation X.YA — Title {#sec-appendix-id .unnumbered}
 
 ## Purpose
 

@@ -1,8 +1,10 @@
 _book/
+dist/
 .quarto/
 *_cache/
 /.venv/
 /.env/
+/.Renviron
 __pycache__/
 *.pyc
 .DS_Store

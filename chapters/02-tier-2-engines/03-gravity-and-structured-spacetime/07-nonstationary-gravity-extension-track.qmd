@@ -1,0 +1,78 @@
+## Nonstationary Gravity: Extension Track
+
+Up to this point the gravity chapter has stayed inside the achieved stationary backbone. That was the right place to begin, but it is no longer the whole story. The nonstationary gravity program has now matured enough that it deserves explicit structural room.
+
+The right way to present that room is as an extension track, not as a replacement for the stationary package. The stationary backbone remains the main achieved package. The nonstationary layer now adds a real first-pass closure package above it, with explicit maturity labels attached to each further step.
+
+### The locked linear baseline
+
+The exact minimal nonstationary baseline is a retarded two-channel system for the scalar well and the shift field:
+
+$$
+\frac{1}{c^2}\partial_{t_*}^2\theta_0 - \Delta\theta_0 = \frac{4\pi G_N}{c^2}\rho_M,
+$$
+
+$$
+\frac{1}{c^2}\partial_{t_*}^2 A_i - \Delta A_i = -\frac{16\pi G_N}{c^3}j_i^\perp,
+\qquad
+\partial_i A_i = 0.
+$$
+
+This block freezes the conservative choices that matter most at baseline: one time variable $t_*$, one scalar channel, one transverse shift channel, propagation speed $c$ in both channels, and a fixed gauge condition for the shift field.
+
+The architectural importance of this result is easy to state. Genuine time dependence now lives in the field layer itself. The nonstationary program is therefore no longer just a matter of attaching changing labels to the source. It has a real dynamical field block of its own.
+
+### Retarded propagation and exact stationary recovery
+
+The linear baseline matters for two reasons.
+
+First, it gives both scalar and shift disturbances genuinely retarded propagation. That removes the earlier pressure to speak as though gravity were only a settled stationary structure.
+
+Second, it recovers the frozen stationary packet exactly when the time derivatives vanish. The nonstationary field block is not a rival to the stationary one. It settles back into it.
+
+That exact recovery is one of the reasons the package now deserves structural recognition. It means the time-dependent layer grows cleanly out of the stationary backbone instead of forcing the book to choose between two incompatible grammars.
+
+### Baseline evidence and limits
+
+The current benchmark verdict is that the linear nonstationary baseline has passed the checks needed to count as a solid first-pass closure in its intended regime.
+
+Those checks are modest but important. The scalar channel propagates retardedly. The shift channel propagates retardedly. The stationary limit is recovered exactly. The field layer supports local and integrated field-work identities. And the odd channel carries the correct bounded rotating asymptotics in the far zone.
+
+That does not amount to full completion. But it does move the nonstationary layer beyond speculation. The linear baseline is now stable enough to carry manuscript weight, provided the stronger nonlinear and radiative claims remain explicitly bounded.
+
+The field block, retarded solutions, stationary recovery, and benchmark checks are collected in Appendix 3.7A.
+
+### Promoted nonlinear and tensor layers
+
+Above the linear baseline sit two additional layers, both real, both bounded.
+
+The first is a promoted nonlinear scalar and shift closure family. Its role is to let the scalar channel self-source, let shift-field energy feed back into the scalar well, and allow the scalar background to dress the odd-current coupling. This family is organized enough to cite and compare, but it remains coefficient-conditional.
+
+The second is a disciplined tensor slot. In its current form the spatial structure is written as an isotropic scalar-led piece together with a transverse traceless anisotropic piece. That gives the nonstationary program a real home for anisotropic and radiative structure without pretending that a full radiative gravity theory has already been completed.
+
+These layers should be described with explicit maturity labels.
+
+The linear baseline is locked and benchmarked strongly enough to reuse. The promoted nonlinear family is reusable but still conditional. The tensor slot is a disciplined first-pass reference layer, not a final completion claim.
+
+### What remains unfinished
+
+Several important tasks are still open.
+
+The package does not yet fix the full physical calibration of the promoted nonlinear coefficients. It does not yet provide an exact native rotating-source closure comparable to the stationary Kerr target. It does not yet deliver full nonlinear tensor backreaction, full radiative phenomenology, or a finished target-response constitutive law in every channel.
+
+Those open problems matter, but they should not be allowed to swallow the chapter's center of gravity. The purpose here is not to dramatize what remains undone. It is to show that the nonstationary program is now strong enough to matter while still remaining bounded.
+
+### The maturity ladder
+
+The right verdict is therefore a ladder, not a single label.
+
+- The locked linear scalar-and-shift baseline is the solid nonstationary result.
+- The promoted nonlinear family is reusable but coefficient-conditional.
+- The tensor and radiative slot is disciplined first-pass structure, not final completion.
+- Full native rotating-source closure and full nonlinear radiative gravity remain open.
+
+That ladder is careful, but it is not timid. It acknowledges a genuine step forward without blurring the difference between a benchmarked baseline, a conditional promoted layer, and an unfinished final theory.
+
+What has been established is a bounded nonstationary extension of the scalar-well and shift grammar. What has not been established is final nonlinear radiative gravity. The closing chapter can therefore ask the right question: what has gravity forced M1 to say about spacetime, and where do the boundaries still remain?
+
+The promoted nonlinear, tensor, radiative, and rotating-source completion ladder is collected in Appendix 3.7B.
