@@ -34,4 +34,30 @@ Derivations, calibration notes, and technical support for the main text.
 :::
 :::
 
+::: {.mf-path-grid .mf-action-grid}
+::: {.mf-path-card}
+[**Latest PDF**]{.mf-card-title}
+
+Download the current release snapshot as a PDF.
+
+[Download PDF](https://github.com/ada-mercer/momentum-first/releases/latest/download/Momentum-First.pdf){.mf-card-link}
+:::
+
+::: {.mf-path-card}
+[**Status and citation**]{.mf-card-title}
+
+Pre-1.0 working manuscript. Cite the latest GitHub Release unless a more formal edition is provided.
+
+[View releases](https://github.com/ada-mercer/momentum-first/releases){.mf-card-link}
+:::
+
+::: {.mf-path-card}
+[**Source repository**]{.mf-card-title}
+
+Open Quarto manuscript repository with source, figures, validation scripts, and release workflow.
+
+[Open on GitHub](https://github.com/ada-mercer/momentum-first){.mf-card-link}
+:::
+:::
+
 :::

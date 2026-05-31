@@ -1,0 +1,71 @@
+name: Deploy Book Site
+
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+  push:
+    branches:
+      - main
+    paths:
+      - '_quarto.yml'
+      - '_quarto-html.yml'
+      - 'index.qmd'
+      - 'chapters/**'
+      - 'appendices/**'
+      - 'assets/**'
+      - 'bibliography.bib'
+      - 'glossary.yml'
+      - 'styles/html/**'
+      - 'filters/**'
+      - '.github/workflows/deploy-book-site.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Bootstrap environment
+        run: bash ci/install-ubuntu.sh --ci
+
+      - name: Verify full render dependencies
+        run: python3 scripts/check_dependencies.py --mode full
+
+      - name: Render HTML book
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          quarto render --profile html
+
+      - name: Add latest release PDF to site artifact
+        run: |
+          curl --fail --location \
+            https://github.com/ada-mercer/momentum-first/releases/latest/download/Momentum-First.pdf \
+            --output _book/Momentum-First.pdf
+          test -s _book/Momentum-First.pdf
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _book
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

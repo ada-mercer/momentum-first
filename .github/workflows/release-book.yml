@@ -18,10 +18,10 @@ jobs:
           fetch-depth: 0
 
       - name: Bootstrap environment
-        run: bash ci/install-ubuntu.sh
+        run: bash ci/install-ubuntu.sh --ci
 
       - name: Verify baseline dependencies
-        run: python3 scripts/check_dependencies.py
+        run: python3 scripts/check_dependencies.py --mode full
 
       - name: Verify tag matches VERSION
         run: |

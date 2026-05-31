@@ -44,7 +44,18 @@ Suggested interpretation:
 
 ## Workflows
 
-### 1. Manual preview render
+### 1. GitHub Pages site deploy
+
+Workflow: `.github/workflows/deploy-book-site.yml`
+
+Purpose:
+- render the HTML book with `quarto render --profile html`
+- publish the site to GitHub Pages
+- include the latest release PDF in the site artifact so Quarto's PDF download link resolves
+
+This workflow runs on relevant pushes to `main`, manual dispatch, and published releases.
+
+### 2. Manual preview render
 
 Workflow: `.github/workflows/render-book.yml`
 
@@ -55,7 +66,7 @@ Purpose:
 This workflow is **manual only** (`workflow_dispatch`).
 It does **not** create a release.
 
-### 2. Tag-triggered release
+### 3. Tag-triggered release
 
 Workflow: `.github/workflows/release-book.yml`
 

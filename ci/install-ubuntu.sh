@@ -10,6 +10,7 @@ LOCAL_OPT="$HOME/.local/opt"
 R_USER_LIB_DEFAULT='$HOME/.local/share/R/%p-library/%v'
 JULIA_VERSION="1.12.5"
 JULIA_SERIES="1.12"
+EDIT_PROFILE=1
 
 log() {
   printf '\n==> %s\n' "$*"
@@ -39,7 +40,10 @@ ensure_local_bin_on_path_now() {
 }
 
 ensure_local_bin_on_path_future() {
-  local shell_rc
+  if [[ "$EDIT_PROFILE" -eq 0 ]]; then
+    log "Skipping ~/.profile update (--ci/--no-profile-edit)"
+    return 0
+  fi
   if grep -Fqs 'export PATH="$HOME/.local/bin:$PATH"' "$HOME/.profile" 2>/dev/null; then
     return 0
   fi
@@ -180,7 +184,43 @@ If a new shell still cannot find 'quarto' or 'julia', reload your shell or run:
 EOF
 }
 
+usage() {
+  cat <<'EOF'
+Usage: bash ci/install-ubuntu.sh [--ci] [--no-profile-edit]
+
+Options:
+  --ci               CI-friendly mode; do not edit ~/.profile.
+  --no-profile-edit  Do not edit ~/.profile.
+  -h, --help         Show this help.
+EOF
+}
+
+parse_args() {
+  for arg in "$@"; do
+    case "$arg" in
+      --ci|--no-profile-edit)
+        EDIT_PROFILE=0
+        ;;
+      -h|--help)
+        usage
+        exit 0
+        ;;
+      *)
+        echo "[error] unknown option: $arg" >&2
+        usage >&2
+        exit 2
+        ;;
+    esac
+  done
+
+  if [[ "${CI:-}" == "true" ]]; then
+    EDIT_PROFILE=0
+  fi
+}
+
 main() {
+  parse_args "$@"
+
   if [[ -f /etc/os-release ]]; then
     . /etc/os-release
     if [[ "${ID:-}" != "ubuntu" && "${ID_LIKE:-}" != *debian* ]]; then

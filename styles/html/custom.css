@@ -105,6 +105,17 @@ body.mf-home main.content {
   line-height: 1.45;
 }
 
+.mf-action-grid .mf-path-card {
+  min-height: 10rem;
+}
+
+.mf-card-link {
+  color: #254f69;
+  font-weight: 620;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
 @media (max-width: 900px) {
   .mf-path-grid {
     grid-template-columns: 1fr;

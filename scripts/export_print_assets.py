@@ -26,16 +26,7 @@ def main() -> int:
     target_pdf = OUT_DIR / "Momentum-First.pdf"
     shutil.copy2(pdf, target_pdf)
 
-    exported = [target_pdf]
-    for ext in ("epub",):
-        asset = newest(list(BOOK_DIR.glob(f"*.{ext}")))
-        if asset is not None:
-            target = OUT_DIR / asset.name
-            shutil.copy2(asset, target)
-            exported.append(target)
-
-    for path in exported:
-        print(f"[ok] exported {path.relative_to(ROOT)}")
+    print(f"[ok] exported {target_pdf.relative_to(ROOT)}")
     return 0
 
 
