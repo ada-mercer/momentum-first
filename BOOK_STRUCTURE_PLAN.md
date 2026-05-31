@@ -2,7 +2,7 @@
 
 Status: working draft
 Created: 2026-03-28
-Last updated: 2026-05-11
+Last updated: 2026-05-14
 Purpose: establish and refine the book architecture while keeping the rendered Quarto hierarchy, M1 maturity levels, and tier logic aligned.
 
 ## Dynamic document note
@@ -10,7 +10,7 @@ Purpose: establish and refine the book architecture while keeping the rendered Q
 This is a **dynamic working document**, not a frozen outline.
 
 It should be updated whenever:
-- a boundary between parts becomes clearer,
+- a boundary between tiers, rendered parts, or chapters becomes clearer,
 - a topic is promoted, deferred, or demoted,
 - a clarification from Arne resolves an open structural question,
 - a technical area proves mature enough for mainline placement,
@@ -25,8 +25,8 @@ This plan should be **slow to change**.
 Use it as a stabilizing element:
 - change wording lightly and structure conservatively,
 - prefer harmonizing the plan with already-earned internal notes over rewriting the backbone impulsively,
-- only change part boundaries, chapter roles, or mainline/promoted status when a real structural gain has been established,
-- let exploratory note churn happen in `book/dev/` rather than in this file.
+- only change tier boundaries, rendered part boundaries, chapter roles, or mainline/promoted status when a real structural gain has been established,
+- let exploratory note churn happen in workspace-level `../book/dev/` rather than in this file.
 
 ## Operating mode
 
@@ -62,12 +62,12 @@ Best current rendered/planned structure:
 
 - **Front matter** = landing page plus Preface material: origin, posture, collaboration, reading guidance, and working method.
 - **Tier 1 — Foundations** = rendered chapters `Introduction` and `Foundations`.
-- **Tier 2 — Engines** = achieved or near-achieved M1 effective engines. Currently rendered chapters: `Gravity and Structured Spacetime` and `Quantum Mechanics in Momentum Language`. Next likely engine: `Cosmology in Momentum Language`. QFT/EFT remains a candidate Tier 2 engine if it can be kept as a bounded stationary/effective foundation rather than a broad completion claim.
+- **Tier 2 — Engines** = achieved or near-achieved M1 effective engines. Currently rendered chapters: `Gravity and Structured Spacetime` and `Quantum Mechanics in Momentum Language`. Next likely engine: `Space Expansion as Translation Yield`. QFT/EFT remains a candidate Tier 2 engine if it can be kept as a bounded stationary/effective foundation rather than a broad completion claim.
 - **Tier 3 — Tests, Predictions, and Failure Modes** = empirical/risk close. Near-term candidate: neutron-star shallow-heating / strong-gravity quantum-sensitivity test channel.
 - **Tier 0 — Deep Structure and Sub-Particle Models** = provisional downstream-in-reading-order treatment of underlying space/sub-particle carrier models: BFSS/string-compatible structures, torus/two-cycle models, closure/resonance, and internal geometry under M1 constraints.
 - **Appendices and Derivations** = derivation trust layer and technical support.
 
-Why this is stronger than the preliminary Tier 2A/Tier 2B arrangement:
+Why this is stronger than the retired preliminary mature-engine / speculative-deep-structure split:
 
 1. Tier 2 is no longer split into a mature-engine half and a speculative-deep-structure half.
 2. Gravity and QM remain the first achieved engines; cosmology and possibly bounded QFT/EFT can join them as engines when mature.
@@ -142,7 +142,7 @@ Rendered files:
 2. `chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd` — **Quantum Mechanics in Momentum Language**
 
 Planned later candidates:
-3. **Cosmology in Momentum Language** — next likely Tier 2 chapter.
+3. **Space Expansion as Translation Yield** — next likely Tier 2 chapter.
 4. **QFT / EFT Foundations** — only if mature enough as a bounded stationary/effective engine.
 
 **Job:** develop M1's achieved or near-achieved effective engines in reader-facing form.
@@ -182,7 +182,7 @@ Current rendered chapter arc:
 
 This chapter has now taken over the mature `QM / Dirac bridge` burden from the old planned quantum-geometry part. Presence-vs-expression remains a light supporting stance around `\Psi`, phase, and expression/detection. Torus/internal geometry, EM projectors, full QFT, measurement theory, and compact-object phenomenology remain outside this chapter unless later maturity demands a carefully bounded cross-reference.
 
-#### Planned Tier 2 chapter — Cosmology in Momentum Language
+#### Planned Tier 2 chapter — Space Expansion as Translation Yield
 
 **Job:** treat cosmology as a separate M1 engine, not as gravity scaled up and not merely as a fit exercise.
 
@@ -277,12 +277,12 @@ Provisional chapter cluster, intentionally light for now:
    - strict maturity labels and dev-only boundaries for fit-heavy material.
 
 Recommended support notes:
-- `book/dev/M1_GEOMETRY_CONSTRAINTS_ON_BFSS_SOLUTION_SPACE_V1.md`
-- `book/dev/BFSS_TO_M1_EXTRACTION_TEMPLATE_V1.md`
-- `book/dev/M1_AS_A_PRUNING_AND_EFFECTIVE_VARIABLE_DISCIPLINE_FOR_BFSS_V1.md`
-- `book/dev/INTERNAL_GEOMETRY_BFSS_STRING_MATH_BRIDGE_V1.md`
-- `book/dev/CORE_MOMENTUM_GEOMETRY_PRELIM_V1.md`
-- `book/dev/INTERNAL_GEOMETRY_CONSOLIDATED_REVIEW_V2.md`
+- `../book/dev/M1_GEOMETRY_CONSTRAINTS_ON_BFSS_SOLUTION_SPACE_V1.md`
+- `../book/dev/BFSS_TO_M1_EXTRACTION_TEMPLATE_V1.md`
+- `../book/dev/M1_AS_A_PRUNING_AND_EFFECTIVE_VARIABLE_DISCIPLINE_FOR_BFSS_V1.md`
+- `../book/dev/INTERNAL_GEOMETRY_BFSS_STRING_MATH_BRIDGE_V1.md`
+- `../book/dev/CORE_MOMENTUM_GEOMETRY_PRELIM_V1.md`
+- `../book/dev/INTERNAL_GEOMETRY_CONSOLIDATED_REVIEW_V2.md`
 - torus wave/scan notes only as supporting/dev evidence unless a later pass promotes them.
 
 ### Appendices and derivations
@@ -305,7 +305,7 @@ Use for:
 - dense taxonomies and tables;
 - alternate derivation paths worth preserving.
 
-Immature material should remain in `book/dev/`, not appendices, until stable enough to support the reader-facing argument.
+Immature material should remain in `../book/dev/`, not appendices, until stable enough to support the reader-facing argument.
 
 ## Topic placement table
 
@@ -328,7 +328,7 @@ Immature material should remain in `book/dev/`, not appendices, until stable eno
 | Closure / resonance / admissibility | Tier 0 / support | Helps constrain sub-particle/internal state models. |
 | BFSS / string-compatible grounding | Tier 0 | M1 filters BFSS/string; not the reverse. |
 | Internal geometry / composite sectors | Tier 0, with dev-only guardrails | Promote only when maturity supports it. |
-| Fit scans / dense tables | Appendices or `book/dev/` | Not mainline unless stable. |
+| Fit scans / dense tables | Appendices or workspace-level `../book/dev/` | Not mainline unless stable. |
 | Predictions/tests/falsifiers | Tier 3 | Empirical/risk close. |
 
 ## Keep / move / defer decisions
@@ -379,7 +379,7 @@ Immature material should remain in `book/dev/`, not appendices, until stable eno
 - fit templates and scan machinery;
 - dense state taxonomies and alternate derivation paths.
 
-### Keep in `book/dev/` for now
+### Keep in workspace-level `../book/dev/` for now
 - immature torus/two-cycle ontology claims;
 - speculative state taxonomies, particle mappings, or closure classes not yet needed by the manuscript backbone;
 - exploratory scans, ansatz menus, and patch-sensitive geometry extensions;
@@ -414,7 +414,7 @@ Use this section to capture comments, unresolved structural choices, and explici
 
 ### CQ-04 — How much torus/two-cycle material belongs in Tier 0 mainline?
 - **Why it matters:** the torus model is useful, but can easily overclaim as ontology.
-- **Current Ada recommendation:** yes, keep one bounded candidate-model treatment in Tier 0, with explicit non-ontology guardrails. Keep fit-heavy and speculative extensions in `book/dev/` unless matured.
+- **Current Ada recommendation:** yes, keep one bounded candidate-model treatment in Tier 0, with explicit non-ontology guardrails. Keep fit-heavy and speculative extensions in `../book/dev/` unless matured.
 - **Arne response:** keep the torus only as a bounded symbolic / visualization layer for something real but simplified, not as the framework's core explanatory backbone.
 - **Status:** resolved enough for current structure.
 - **Next action:** when drafting Tier 0, separate mainline candidate-carrier explanation from dev-only scans and speculative particle mappings.
@@ -442,7 +442,7 @@ Use this section to capture comments, unresolved structural choices, and explici
 
 ### WQ-01 — Synchronize the plan after tier-as-part restructure
 - **Status:** updated 2026-05-11.
-- **Result:** `BOOK_STRUCTURE_PLAN.md` now reflects Tier 1 Foundations, Tier 2 Engines, Tier 3 Tests/Predictions/Failure Modes, and later-reading-order Tier 0 Deep Structure / Sub-Particle Models. The previous Tier 2A/Tier 2B split has been removed.
+- **Result:** `BOOK_STRUCTURE_PLAN.md` now reflects Tier 1 Foundations, Tier 2 Engines, Tier 3 Tests/Predictions/Failure Modes, and later-reading-order Tier 0 Deep Structure / Sub-Particle Models. The previous mature-engine / speculative-deep-structure split has been removed.
 - **Next action:** wait to update `_quarto.yml` with future placeholder parts until actual chapter files are created.
 
 ### WQ-02 — Detail the Cosmology Tier 2 chapter
@@ -457,7 +457,7 @@ Use this section to capture comments, unresolved structural choices, and explici
 
 ### WQ-04 — Rebuild the chapter-to-source map under the new tiers
 - **Status:** open.
-- **Reason:** the old source map used obsolete old rendered-part labels and the preliminary Tier 2A/Tier 2B split is now retired. A backup of the pre-update plan was saved at `book/dev/BOOK_STRUCTURE_PLAN_PRE_TIER_PARTS_BACKUP_2026-05-10.md` so useful mappings can be migrated without keeping stale architecture in the live plan.
+- **Reason:** the old source map used obsolete old rendered-part labels and the preliminary mature-engine / speculative-deep-structure split is now retired. A backup of the pre-update plan was saved at `../book/dev/BOOK_STRUCTURE_PLAN_PRE_TIER_PARTS_BACKUP_2026-05-10.md` so useful mappings can be migrated without keeping stale architecture in the live plan.
 - **Next action:** migrate only stable mappings into a new tier-based source map, starting with Cosmology / NS shallow heating, then later Tier 0 support notes.
 
 ### WQ-05 — Identify what is ready for review versus what remains unstable
@@ -471,8 +471,8 @@ Use this section to capture comments, unresolved structural choices, and explici
 - Tier 2 containing Gravity and Quantum Mechanics as rendered chapters, with Cosmology as the next likely engine target.
 - Tier 3 containing predictions/tests/failure modes, with neutron-star shallow heating as the next likely test-channel target.
 - Core judgment that the old broad `Quantum Structure and the Geometry of Expression` plan is obsolete because Chapter 04 now handles the mature QM/operator bridge.
-- Core judgment that BFSS/string/torus/internal-geometry material belongs in Tier 0 / Deep Structure and Sub-Particle Models, not in a Tier 2B engine-adjacent part.
-- Core judgment that immature fit-heavy or ontology-heavy material remains in `book/dev/` until mature enough for appendices or mainline reference.
+- Core judgment that BFSS/string/torus/internal-geometry material belongs in Tier 0 / Deep Structure and Sub-Particle Models, not in an engine-adjacent speculative sub-tier.
+- Core judgment that immature fit-heavy or ontology-heavy material remains in `../book/dev/` until mature enough for appendices or mainline reference.
 
 ## Significant blockers
 

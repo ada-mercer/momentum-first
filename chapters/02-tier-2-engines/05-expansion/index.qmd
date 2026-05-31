@@ -1,0 +1,19 @@
+# Space Expansion as Translation Yield
+
+{{< include 01-space-expansion-and-the-conservation-problem.qmd >}}
+
+{{< include 02-core-terms-and-variables.qmd >}}
+
+{{< include 03-translation-yield-and-directional-displacement.qmd >}}
+
+{{< include 04-redshift-as-comparison-between-yield-states.qmd >}}
+
+{{< include 05-duration-dilation-and-signal-stretching.qmd >}}
+
+{{< include 06-bound-systems-and-local-screening.qmd >}}
+
+{{< include 07-yield-histories-and-distance-kernels.qmd >}}
+
+{{< include 08-interfaces-to-observational-cosmology.qmd >}}
+
+{{< include 09-what-the-expansion-chapter-establishes.qmd >}}

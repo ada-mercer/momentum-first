@@ -2,8 +2,8 @@
 
 Status: working guide
 Created: 2026-03-30
-Revised: 2026-04-26
-Purpose: support readable, disciplined manuscript prose across the current book structure without forcing one rhythm onto every part.
+Revised: 2026-05-14
+Purpose: support readable, disciplined manuscript prose across the current tiered book structure without forcing one rhythm onto every rendered division or chapter.
 
 This guide is for drafting and review. It is not a mechanical lint standard, and cleanup/commit sessions should not enforce it by rewriting prose unless explicitly asked. Cleanup sessions may flag clear drift from the guide as a comment or follow-up item.
 
@@ -32,11 +32,11 @@ That means:
 
 ---
 
-## I. Current part-level style contracts
+## I. Current tier/chapter style contracts
 
 ### Front matter / Preface
 
-The Preface may use a more personal and reflective register than the numbered parts.
+The Preface may use a more personal and reflective register than the numbered tiers and chapters.
 
 It should:
 - preserve the personal origin and long-lived conceptual tension,
@@ -46,7 +46,7 @@ It should:
 
 The Preface may include narrative pacing, short dramatic questions, and reflective transitions that would be too loose for Foundations.
 
-### Part I — Introduction
+### Tier 1 / Chapter 1 — Introduction
 
 The Introduction should be respectful, pressure-building, and non-overclaiming.
 
@@ -59,7 +59,7 @@ It should:
 
 The Introduction can be more rhetorical than Foundations, but its rhetoric should build the reader's problem, not market the framework.
 
-### Part II — Foundations
+### Tier 1 / Chapter 2 — Foundations
 
 Foundations should sound firmer, leaner, and more declarative.
 
@@ -71,6 +71,27 @@ It should:
 - make downstream engines legible without trying to build them yet.
 
 Foundations may use explicit signposting where dependency order matters. A line such as “the next section” or “this will matter later” is acceptable when it marks a real conceptual dependency.
+
+### Tier 2 engine chapters — Gravity, Quantum Mechanics, Cosmology
+
+Tier 2 engine chapters should sound constructive rather than apologetic. Their job is to show how an established M1 backbone becomes a working engine in a particular domain, while keeping empirical closure and later fits in their proper place.
+
+They should:
+- begin from the domain pressure that makes the engine necessary;
+- rely on Foundations instead of re-deriving all Tier 1 material;
+- lock only the notation needed for the local engine;
+- introduce equations after the reader knows what job they do;
+- distinguish native M1 construction from correspondence or observational interfaces;
+- use caveats as boundaries, not as repeated self-defense;
+- close by stating what the engine establishes and what the next test/falsifier layer must still do.
+
+For cosmology specifically, the flow should be:
+
+```text
+expansion/conservation pressure -> translation-yield engine -> notation lock -> redshift/duration mappings -> preservation/locality boundaries -> observational interfaces -> Tier 3 handoff
+```
+
+The cosmology chapter should be rewritten as a clean engine chapter, not patched around older discarded mechanisms.
 
 ---
 
@@ -117,6 +138,38 @@ Watch endings such as:
 - `context`.
 
 They are sometimes right. They should not become the default resting place for important claims.
+
+### 4b. Cash out theory-shell words
+
+Dense theoretical prose often fails by sounding precise while hiding the operation. This usually happens when an important sentence ends on a shell word or a technical-sounding compound that does not tell the reader what changes.
+
+Watch especially:
+- `readout`,
+- `relation`,
+- `response`,
+- `structure`,
+- `expression`,
+- `measure`,
+- scope cushions such as `large-scale`, `effective`, or `style` when they are not doing real theoretical work.
+
+These words are not banned. They are useful when they name real framework concepts or provide cohesion. But they must be cashed out quickly:
+- what is being read, related, responding, structured, expressed, or measured?
+- what object, process, quantity, or comparison is actually changing?
+- does the sentence ending name the result, or merely gesture toward it?
+
+Prefer:
+- `Signal wavelength and duration change because the signal pattern is laid down under one translation yield and later compared under another.`
+
+Avoid:
+- `The signal receives a frequency-style readout from large-scale displacement.`
+
+The first version names the objects and operation: signal pattern, wavelength, duration, translation yield, comparison. The second version sounds technical but leaves the reader asking: readout of what, by whom, and how?
+
+Source rationale:
+- **Reader-expectation theory / Gopen & Swan:** readers expect the action of a sentence to live in the verb, and they give special weight to the end of a sentence or clause. If the stress position contains a vague abstraction, the reader naturally treats that abstraction as the important claim.
+- **Plain-language practice:** use the familiar precise word unless the technical word buys something. Technical language earns its place by defining an operation, not by sounding more formal.
+- **Nominalization guidance:** abstract nouns are useful when they name real concepts or compress already-established material. Overuse makes prose dense, circular, and agentless.
+- **Academic cohesion guidance:** phrases such as `this measure`, `that response`, or `this relation` work only when the previous sentence gives a clear referent. Otherwise they create false continuity.
 
 ---
 

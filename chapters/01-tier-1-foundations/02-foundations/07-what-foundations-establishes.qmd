@@ -35,11 +35,20 @@ The same stance also clarifies the true-frame language. Frame descriptions can b
 
 ### Departures from the inertial baseline
 
-The final foundational move is the idea of kinematic modifiers. Once the stage is structured or deformed, the inertial map need not exhaust the physics. The same momentum content may be repartitioned, contextualized, or expressed differently through the fermic momentum role $p_f$ and the bosic momentum role $p$; or the translational yield of directed bosic momentum may change.
+The final foundational move is to make room for controlled departures from the inertial case. The baseline map remains
 
-Kinematic modifiers provide the common language for these departures. Composition modifiers change how fermic and bosic momentum are internally related or contextualized. Yield modifiers change what directed bosic momentum produces as displacement or frequency-style expression. Admissibility modifiers change which kinematic states are available at all.
+$$
+M = \sqrt{p_f^2 + p^2},
+$$
 
-This taxonomy is not a completed engine. It is a grammar for later engines.
+but it is not assumed to exhaust every physical setting. Once the stage is structured, constrained, or deformed, the same momentum content may be repartitioned, contextualized, or expressed differently through the fermic momentum role $p_f$ and the bosic momentum role $p$. In other cases, the internal composition may remain largely intact while the translational yield of directed bosic momentum changes.
+
+Space-mediated momentum coupling gives the interaction side of this picture. It states that momentum-bearing systems become dynamically related through space, and that familiar forces are different mechanisms by which such coupling is realized. Kinematic modifiers give the structural side. They name the form taken by the departure from the inertial baseline.
+
+Three modifier types are used in the later engines. **Composition modifiers** change how fermic and bosic momentum are internally related or contextualized. **Yield modifiers** change what directed bosic momentum produces as displacement or frequency-style expression. **Admissibility modifiers** change which kinematic states are available at all.
+
+This is added structure, not a completed engine. ADMC remains the conservation grammar. SMC gives the Foundations-level interaction principle. KMs classify the structural form of departures that later chapters will make explicit.
+
 
 ### What remains beyond Foundations
 

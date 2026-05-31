@@ -1,8 +1,12 @@
 ## Quantum mechanics after gravity
 
+### From gravitational readout to quantum state
+
 The gravity chapter ended with a local lesson: gravity is not read only as a force on a pre-existing trajectory. In the stationary regime, the background changes the local bookkeeping of momentum content. The scalar well changes the fermic scale. The shift structure changes directed transport. A particle is not read from an untouched inertial shell, but from the conditions under which its clocking and motion are actually expressed.
 
 Quantum mechanics raises the same issue at a sharper level. The object being read is now a phase-bearing state, $\Psi$, not merely a trajectory-like body with one local momentum. Its directed momentum must be represented by an operator. Its intrinsic scale must still enter the generator. Its total momentum content must be recoverable from the action of that generator on the state.
+
+### The core momentum operator
 
 The central object is therefore the core momentum operator $\hat M$. The inherited scalar relation is
 
@@ -13,6 +17,12 @@ $$
 but the quantum form needs the operator language behind it. The intrinsic scale remains $p_f$. Directed bosic momentum becomes $\hat{\mathbf p}=-i\hbar\nabla$. The total momentum-content generator becomes $\hat M$.
 
 This is the momentum triangle lifted into quantum form. The state carries phase and amplitude; $\hat{\mathbf p}$ reads directed momentum content; and $\hat M$ reads the combined core momentum content associated with fermic scale and directed expression. The familiar energy-unit Hamiltonian is not discarded. It is recovered as $\hat H=c\hat M$ in the comparison with standard quantum notation.
+
+### Quantum states as representatives of momentum content
+
+In the classical localized limit, momentum content can be represented by a trajectory-like source with definite local momentum readings. Quantum mechanics does not begin from that representation. It begins from a phase-bearing state, $\Psi$, which can carry delocalized and superposed momentum organization, read through operators such as $\hat{\mathbf p}$ and $\hat M$.
+
+That matters for the gravity bridge. In quantum regimes, the source channels $J_k^\pm$ should not be treated primarily as if they came from a collapsed point-particle substitute. Where a quantum source treatment is needed, they are better read as state-dependent readings of the momentum organization represented by the non-collapsed phase-bearing state itself: schematically, $\Psi \mapsto J_k^\pm[\Psi]$. Collapse, if used as an effective measurement description, is not the gravitational source rule in M1. This is a bridge principle, not a measurement theory, full QFT source law, or completed self-gravity equation.
 
 Gravity enters by changing the two slots the gravity chapter already identified. The scalar field replaces $p_f$ with the contextual fermic scale $p_{f,c}$. The shift field replaces directed momentum with a mechanical momentum $\hat{\boldsymbol\Pi}$. The gravity-dressed operator is therefore $\hat M_g$, a stationary deformation of $\hat M$, not a second quantum postulate.
 

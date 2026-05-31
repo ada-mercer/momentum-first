@@ -1,0 +1,31 @@
+## Yield histories and distance kernels
+
+The mappings above do not yet define a complete cosmology. They define the kinematic role of $\chi(t)$. A model still has to choose or derive a yield history and then compute the propagation kernels built from it.
+
+The first local descriptor of a yield history is
+
+$$
+H_\chi(t)=-\frac{\dot\chi(t)}{\chi(t)}.
+$$
+
+This quantity can play a Hubble-like role in a low-redshift limit, but it is not automatically the full observational Hubble function. Observed distances depend on how the signal accumulates propagation through the whole $\chi(t)$ history.
+
+The basic propagation integral has the form
+
+$$
+D\sim\int \chi(t)c\,dt,
+$$
+
+with the exact distance measure depending on the model's geometry, source-observer setup, and flux rules. Redshift supplies the endpoint ratio $\chi_e/\chi_o$; distance requires the accumulated path.
+
+This distinction matters at high redshift. A large redshift does not by itself fix the same lookback time or causal distance that it would have in a standard FLRW model. Those quantities depend on the chosen $\chi(t)$ kernel.
+
+The same observation applies to causal reach. A useful schematic measure is
+
+$$
+D_{causal}\sim\int \chi(t)c\,dt.
+$$
+
+If earlier epochs had higher translation yield, causal influence may cover more distance per unit local time than a low-yield extrapolation would suggest. That can soften age, horizon, or early-structure pressure, but it does not solve those problems by itself. Cooling, binding, recombination, perturbation growth, merger histories, and high-redshift galaxy statistics all require additional dynamics.
+
+The chapter therefore separates three things: the endpoint redshift ratio, the duration mapping, and the full propagation kernel. The first two are internal consequences of translation yield. The third is where model-building begins.

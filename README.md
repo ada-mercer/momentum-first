@@ -21,14 +21,19 @@ See `DEPENDENCIES.md` for the current baseline dependency set and installation p
 
 ## Render locally
 
-The shared book structure lives in `_quarto.yml`. Format-specific settings live in Quarto profiles:
+The shared book structure lives in `_quarto.yml`. The default Quarto profile is PDF, so a plain render produces the PDF book:
+
+```bash
+quarto render
+```
+
+HTML remains available as an explicit optional profile:
 
 ```bash
 quarto render --profile html
-quarto render --profile pdf
 ```
 
-Use the HTML profile for fast reading/review and the PDF profile for release checks.
+Use the default PDF render for release checks and the HTML profile for fast reading/review.
 
 ## Read the book
 

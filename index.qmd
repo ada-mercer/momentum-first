@@ -1,1 +1,37 @@
-# {.unnumbered}
+---
+format:
+  html:
+    body-classes: mf-home
+---
+
+::: {.content-visible when-format="html"}
+
+::: {.mf-home-hero}
+[Momentum First]{.mf-home-title}
+
+A momentum-first framework for foundations, gravity, quantum structure, and cosmology.
+
+[Start with the Preface](chapters/00-front-matter/00-preface/){.mf-primary-link}
+:::
+
+::: {.mf-path-grid}
+::: {.mf-path-card}
+[**Tier 1 — Foundations**]{.mf-card-title}
+
+Postulates, notation, and the momentum-first backbone.
+:::
+
+::: {.mf-path-card}
+[**Tier 2 — Engines**]{.mf-card-title}
+
+Gravity, quantum mechanics, and expansion as working framework engines.
+:::
+
+::: {.mf-path-card}
+[**Appendices**]{.mf-card-title}
+
+Derivations, calibration notes, and technical support for the main text.
+:::
+:::
+
+:::

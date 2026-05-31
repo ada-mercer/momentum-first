@@ -1,0 +1,393 @@
+# Derivation 5.6B — Sector consistency under universal yield {#sec-derivation-05-06b-sector-consistency .unnumbered}
+
+## Purpose
+
+Derivation 5.6A established the local-screening transform for a single global true-frame expression-yield rule. This appendix is the formal ledger for Universal Yield Covariance of closed local sectors, or UYC. It asks what the electromagnetic, gravitational, strong, and weak sectors must satisfy if rods, clocks, lightlike expression, and bound stationary lengths are all to preserve fixed dimensionless states under that one yield environment.
+
+UYC is adopted here as the SMC-derived covariance principle for the universal-yield branch. Space-mediated momentum coupling says that forces are different modes by which momentum content becomes dynamically relevant through spatial relation. In an adiabatic yield environment, that shared spatial mediation does not allow stable closed sectors to choose unrelated yield exponents while still claiming fixed local dimensionless states.
+
+The answer is therefore a set of covariance targets. These targets do not derive the electron sector, quantum action scale, source-mass scaling, gravitational kernel, strong confinement law, or weak transition law from deeper M1 microphysics. They state what those sector realizations must satisfy now that UYC has been adopted at the covariance-principle level.
+
+## Role / regime / status
+
+- **Role:** UYC closure ledger following the kinematic transform of Derivation 5.6A.
+- **Regime:** homogeneous yield history, adiabatic local standards, stable closed local sectors, fixed dimensionless local states, electromagnetic dimensional scaling, and weak-field stationary gravitational balance.
+- **Status:** UYC-adopted closure at covariance-principle level; sector realization pending.
+- **Non-claim:** this is not exact local indistinguishability, not a microphysical completion of EM, gravity, strong, or weak dynamics, and not empirical closure for the Expansion chapter.
+
+## Inherited setup
+
+Use the normalized yield ratio
+
+$$
+X\equiv \frac{\chi}{\chi_o}.
+$$
+
+Derivation 5.6A writes the true-frame local expression factor explicitly as
+
+$$
+c\,X^u=c\left(\frac{\chi}{\chi_o}\right)^u,
+$$
+
+with local length standards and clock frequencies scaling as
+
+$$
+\ell_T=\ell_oX^\rho,
+\qquad
+\nu_T=\nu_oX^f.
+$$
+
+The bound-frame transform is obtained by measuring true-frame intervals in the local standards:
+
+$$
+x_B=x_TX^{-\rho},
+\qquad
+a_B=X^{-\rho}.
+$$
+
+Local light-speed and radar-ranging consistency require
+
+$$
+\boxed{f=u-\rho.}
+$$
+
+This appendix keeps that result fixed and interprets it under UYC. It does not introduce a second local rule. The electromagnetic, gravitational, strong, and weak sectors must realize fixed-state covariance under the same $(u,\rho)$ map or else predict dimensionless residuals.
+
+The bridge from SMC to UYC is the following. If interaction is space-mediated momentum coupling, and if one adiabatic yield environment supplies the local expression state, then stable closed sectors may have different mechanisms but not unrelated local-yield clocks. Their dimensional quantities may carry different bookkeeping powers, but the fixed dimensionless states they define must remain covariant with the shared local standards.
+
+The equations below are therefore UYC sector-covariance targets, not completed sector dynamics. They say what each sector must do now that the universal-yield branch is adopted at principle level.
+
+## Electromagnetic consistency conditions
+
+Start with the minimal hydrogenic dimensional bookkeeping needed for the EM check. Let the true-frame proxy quantities carry powers
+
+$$
+\hbar\propto X^h,
+\qquad
+e^2\propto X^q,
+\qquad
+m_e\propto X^s.
+$$
+
+The true-frame expression factor is written explicitly as $c\,X^u$, so the lightlike expression scale carries exponent $u$.
+
+Here $e^2$ denotes the Coulomb coupling in a unit convention where the fine-structure constant is
+
+$$
+\alpha=\frac{e^2}{\hbar\,c\,X^u}.
+$$
+
+The first UYC demand on the EM proxy is only a necessary dimensionless condition: the fine-structure constant must not drift for fixed EM states. Holding $\alpha$ fixed protects this one condition; it does not by itself guarantee all EM spectra, molecular standards, hyperfine splittings, nuclear scales, or material clocks. It requires
+
+$$
+\alpha=\text{constant}
+\quad\Rightarrow\quad
+\boxed{q=h+u.}
+$$
+
+With fixed $\alpha$ imposed as a necessary condition, the next question is whether simple hydrogenic proxy rods and clocks can supply the standards assumed in Derivation 5.6A. The Bohr scale and a representative electronic transition-frequency scale behave as
+
+$$
+a_0\sim\frac{\hbar^2}{m_ee^2}
+\propto X^{h-s-u},
+$$
+
+and
+
+$$
+\nu_{atom}\sim\frac{m_ee^4}{\hbar^3}
+\propto X^{s-h+2u}.
+$$
+
+For this hydrogenic proxy to match the local standards, the Bohr length must scale as the rod exponent $\rho$ and the representative electronic frequency must scale as the tick exponent $f=u-\rho$:
+
+$$
+\boxed{a_0\propto X^\rho,}
+\qquad
+\boxed{\nu_{atom}\propto X^{u-\rho}.}
+$$
+
+Within this proxy model, the rod condition fixes the electron-sector mass exponent relative to $h$ and $u$:
+
+$$
+h-s-u=\rho
+\quad\Rightarrow\quad
+\boxed{s=h-u-\rho.}
+$$
+
+The fixed-$\alpha$ condition already gave $q=h+u$. Once those two requirements hold, the atomic frequency exponent follows automatically:
+
+$$
+s-h+2u=(h-u-\rho)-h+2u=u-\rho.
+$$
+
+Thus the minimal EM proxy target is compact:
+
+$$
+\boxed{q=h+u,
+\qquad
+s=h-u-\rho.}
+$$
+
+These two equations are UYC sector-covariance targets for the hydrogenic proxy. They say which true-frame scalings would make Bohr-scale rods and representative electronic clocks participate in the same bound-frame transform. They do not yet explain why $m_e$, $\hbar$, or $e^2$ should have those powers in M1, and they do not cover the full hierarchy of atomic, molecular, hyperfine, nuclear, or material standards.
+
+The exponents $h$, $q$, and $s$ should also be read as true-frame dimensional bookkeeping. Local observations constrain dimensionless quantities and ratios. A drift in $\hbar$, $e^2$, or $m_e$ stated by itself is not yet an observable claim until it is tied to dimensionless spectra, clock ratios, recoil measurements, or other local comparisons.
+
+## Electromagnetic realization audit
+
+The realization choice matters because UYC constrains a family of bookkeeping possibilities, not a unique microphysical derivation. The audit below separates three common routes and checks whether each one actually gives true-frame rod shrink.
+
+### Old fixed local momentum branch
+
+One tempting branch treats the local expression coefficient as if it automatically enters the electron's intrinsic fermic relation:
+
+$$
+p_{f,e}=m_e(c\,X^u)=\text{constant},
+\qquad
+\hbar=\text{constant}.
+$$
+
+Together with fixed $\alpha$, this gives
+
+$$
+m_e\propto X^{-u},
+\qquad
+e^2\propto X^u,
+$$
+
+and the Bohr exponent is
+
+$$
+a_0\propto X^{0-(-u)-u}=X^0.
+$$
+
+This branch can screen some local tick comparisons, but it leaves the Bohr length fixed in true-frame units. For $\rho>0$, it therefore fails the hidden-shrink condition established by Derivation 5.6A.
+
+### Fixed local momentum with variable action scale
+
+If fixed local $p_{f,e}=m_e(c\,X^u)$ is retained, then $s=-u$. To obtain $a_0\propto X^\rho$, the action exponent must be
+
+$$
+h=\rho.
+$$
+
+The branch becomes
+
+$$
+\boxed{\hbar\propto X^\rho,
+\qquad
+e^2\propto X^{\rho+u},
+\qquad
+m_e\propto X^{-u}.}
+$$
+
+This branch can realize EM rod shrink in the hydrogenic proxy, but only by assigning the required scaling to the quantum/action sector. The symbol $\hbar\propto X^h$ is true-frame bookkeeping until it is cashed out in dimensionless action or phase comparisons. Phases, de Broglie relations, QED corrections, recoil observables, and clock ratios would all have to cohere with the same scaling before the branch could be read physically.
+
+### Fixed action with electron-sector mass scaling
+
+If $\hbar$ is fixed, $h=0$. The EM rod condition gives
+
+$$
+s=-(u+\rho),
+\qquad
+q=u,
+$$
+
+so
+
+$$
+\boxed{\hbar=\text{constant},
+\qquad
+e^2\propto X^u,
+\qquad
+m_e\propto X^{-(u+\rho)}.}
+$$
+
+This branch also realizes $a_0\propto X^\rho$ in the hydrogenic proxy, but only by changing the electron-sector mass or fermic bookkeeping strongly. It is a possible consistency route, not a derived result.
+
+### Baseline fermic relation caution
+
+The branch audit should not be read as permission to change the baseline fermic relation. The canonical M1 relation
+
+$$
+p_f=m_0c
+$$
+
+uses the fixed baseline constant $c$. The factor $c\,X^u$ is a true-frame expression yield. It should not be automatically substituted into every intrinsic fermic relation. In this appendix, the electron-sector scaling is branch data to be derived later, not an assumption hidden inside the notation.
+
+## Gravitational consistency conditions
+
+For the gravity side, use the weakest check that still fixes the exponent: circular or stationary weak-field balance plus a scaling assumption for fixed dimensionless gravitational states. The assumption is that the true-frame orbital speed of such a state tracks the local expression yield,
+
+$$
+v_T\propto X^u,
+$$
+
+while the characteristic length of the state is to match the local rod exponent $\rho$. Write the gravitational turning coefficient as
+
+$$
+\mu_{g,T}\propto X^m.
+$$
+
+Here
+
+$$
+\mu_g=G_{\mathrm{eff}}M_s
+$$
+
+is the robust weak-field object. Until the source-mass scaling is derived, the appendix should not assign the whole exponent to a bare $G$.
+
+Circular balance gives
+
+$$
+\frac{v_T^2}{r_T}=\frac{\mu_{g,T}}{r_T^2},
+$$
+
+hence
+
+$$
+r_T=\frac{\mu_{g,T}}{v_T^2}
+\propto X^{m-2u}.
+$$
+
+To match the local-standard scaling from Derivation 5.6A, gravitational lengths must satisfy
+
+$$
+r_T\propto X^\rho.
+$$
+
+Therefore, given fixed dimensionless gravitational states, local speeds scaling as $X^u$, and lengths scaling as $X^\rho$, weak-field balance requires
+
+$$
+\boxed{m=2u+\rho,}
+\qquad
+\boxed{\mu_{g,T}=G_{\mathrm{eff},T}M_{s,T}\propto X^{2u+\rho}.}
+$$
+
+The commonly appearing law $\mu_g\propto X^{2u}$ is not the hidden-shrink branch. It is the fixed-true-radius case $\rho=0$. If $\rho>0$, the turning coefficient needs the extra $X^\rho$ factor so that stationary gravitational lengths shrink with the local rods.
+
+The word ``range'' should also be read carefully. This appendix has not introduced a finite force cutoff or Yukawa screening. Here gravity-range shrink means shrinkage of characteristic stationary lengths in true-frame bookkeeping: circular radii, impact or turning radii, gravitational radii, and other lengths selected by fixed dimensionless gravitational states.
+
+The dimensionless gravitational well depth stays invariant under the matched branch. If $R_g\propto X^\rho$ and $\mu_g\propto X^{2u+\rho}$, then
+
+$$
+\frac{\mu_g}{(c\,X^u)^2R_g}
+\propto
+\frac{X^{2u+\rho}}{X^{2u}X^\rho}
+=X^0.
+$$
+
+This is the gravity-side analogue of the EM statement: local ratios can remain fixed because the numerator, denominator, rods, and clocks co-scale. The scaling itself remains a sector law to derive.
+
+The same condition screens orbital timing. For a fixed dimensionless circular state,
+
+$$
+T_T\sim\frac{r_T}{v_T}
+\propto
+X^{\rho-u}.
+$$
+
+The number of local atomic ticks in one orbit is therefore
+
+$$
+N_{orb}
+\propto
+\nu_TT_T
+\propto
+X^{f+\rho-u}.
+$$
+
+Using the inherited local-ranging condition $f=u-\rho$ gives
+
+$$
+\boxed{N_{orb}\propto X^0.}
+$$
+
+Thus the same matched scaling that keeps radar ranging fixed also keeps orbital periods fixed in local tick units. If either exponent relation fails, local ephemeris residuals appear.
+
+## Reference bookkeeping branch
+
+The branch most directly aligned with the current Expansion redshift dictionary is
+
+$$
+\boxed{u=1,
+\qquad
+\rho=1,
+\qquad
+f=0,
+\qquad
+m=3.}
+$$
+
+It gives
+
+$$
+c\,X^u\propto X,
+\qquad
+\ell_T,r_T\propto X,
+\qquad
+\nu_T\propto X^0,
+\qquad
+\mu_{g,T}\propto X^3.
+$$
+
+On this reference branch, local true-frame rods and stationary gravitational lengths shrink as $\chi$ falls, while local tick frequencies remain fixed in the true-frame time parameter. Bound-frame observers divide by the same shrinking standards, so co-scaled local systems remain fixed in local units and fixed true-frame separations appear to expand.
+
+This branch is clean as algebraic bookkeeping and as an expansion-dictionary match. Under UYC it is the reference dictionary alignment, not a completed theory of EM microphysics, gravitational source scaling, strong confinement, weak transitions, or observational cosmology.
+
+## Strong and weak sector audit targets
+
+UYC also constrains sectors that are not used as the main rod-clock proxy in this appendix. For closed confinement or stability states, the strong sector must preserve fixed dimensionless internal labels while characteristic true-frame lengths follow the same local-standard exponent,
+
+$$
+L_{strong,T}\propto X^\rho.
+$$
+
+This is a covariance target for a later M1/QCD-like realization, not a derivation of confinement microphysics. If a proposed strong-sector realization gives a different exponent for a fixed closed state, it predicts a dimensionless residual rather than an independent exemption from UYC.
+
+Weak processes are less like stationary rods and more like transition bookkeeping between allowed states. UYC therefore constrains them through fixed before/after state labels, local action or phase units, and the local clocks used to compare rates. The co-scaled local target is
+
+$$
+\Gamma_T\propto X^{u-\rho},
+$$
+
+when a transition rate is compared in the same local tick units. This is only an audit target until the weak transition operator and its action bookkeeping are specified.
+
+## Falsifiers and open burdens
+
+The matched branch is vulnerable exactly where exponent bookkeeping must become sector physics.
+
+- **Clock ratios:** optical, hyperfine, molecular, nuclear, and mechanical clocks must share compatible exponents or predict allowed residual drifts.
+- **Dimensionless EM constants:** $\alpha$ and spectral ratios must remain invariant, or any drift must survive existing bounds.
+- **QCD and nuclear scales:** proton masses, nuclear radii, magnetic moments, hyperfine structure, chemistry, BBN, and recombination cannot be assumed to follow the electron-sector branch.
+- **Electron-sector microphysics:** M1 still has to derive or reject the required $m_e$, $\hbar$, and $e^2$ powers.
+- **Gravity source scaling:** Part III must derive or reject $\mu_g\propto X^{2u+\rho}$ from source $\to$ field $\to$ observer grammar, rather than relying on circular-orbit exponent matching.
+- **Strong and weak realization:** confinement/stability scales and transition rates must be checked against the same fixed-state covariance, not granted independent yield rules.
+- **Weak-equivalence and composition tests:** if $M_s$ or local material standards scale composition-dependently, local screening leaves WEP-like signatures.
+- **Solar-system ranging residuals:** if $f+\rho-u\ne0$ or $m-2u-\rho\ne0$, radar ranging, orbital periods, Shapiro timing, perihelion dynamics, and spacecraft tracking acquire secular residuals.
+- **Non-adiabatic systems:** the comparison assumes $H_\chi\tau_{dyn}\ll1$. Rapidly changing or poorly relaxed systems are outside this appendix.
+- **Observational cosmology:** nothing here supplies FLRW dynamics, Tolman flux behavior, CMB blackbody preservation, BBN, recombination, structure growth, dark-energy closure, or a Hubble-tension solution.
+
+## Result / handoff
+
+Under UYC, the universal true-frame expression-yield rule of Derivation 5.6A becomes a shared covariance target for stable closed local sectors. The compact ledger is
+
+$$
+\boxed{f=u-\rho,}
+\qquad
+\boxed{q=h+u,}
+\qquad
+\boxed{s=h-u-\rho,}
+\qquad
+\boxed{m=2u+\rho.}
+$$
+
+The first relation is the local light and ranging condition inherited from the transform. The next two are the hydrogenic EM proxy targets under fixed $\alpha$, $a_0\propto X^\rho$, and $\nu_{atom}\propto X^{u-\rho}$. The last is the weak-field gravity product target,
+
+$$
+\boxed{\mu_{g,T}=G_{\mathrm{eff},T}M_{s,T}\propto X^{2u+\rho}},
+$$
+
+for fixed dimensionless gravitational lengths to scale as $r_T\propto X^\rho$.
+
+This closes the universal-yield branch at covariance-principle level. It does not close the sector realizations. Later EM/QM work must derive or reject the electron, action, and Coulomb-coupling exponents; later gravity work must derive or reject the source-to-field scaling of $\mu_g$ or show why only the product is physical; later strong and weak work must test confinement/stability and transition bookkeeping against the same fixed-state covariance. Those are sector-realization burdens under UYC, not reasons to treat UYC itself as an optional branch in the Expansion chapter.

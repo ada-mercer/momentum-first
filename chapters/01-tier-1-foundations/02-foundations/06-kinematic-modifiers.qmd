@@ -1,13 +1,14 @@
 ## Kinematic Modifiers
 
 Up to this point, Foundations has described the inertial baseline. The stage has been treated as unmodified, so fermic momentum, bosic momentum, and total momentum content obey the fixed relation
+
 $$
 M = \sqrt{p_f^2 + p^2}.
 $$
 
 When the stage is deformed, that inertial relation need not be the whole story. The same core momentum content may be repartitioned, contextualized, or expressed differently through the fermic momentum role $p_f$ and the bosic momentum role $p$. Clock rates, material equilibrium, and local transport can then change. In broader cases, the internal composition may remain largely intact while the translational yield of directed bosic momentum changes.
 
-M1 calls such effects **Kinematic Modifiers**. A KM is a structured change in how momentum content becomes physical evolution. It can act internally, by changing the fermic-bosic organization of a particle or material system; externally, by changing what bosic momentum yields as translation; or at the level of state-space, by changing which kinematic configurations are available.
+M1 calls such effects **Kinematic Modifiers**.[^km-smc] A KM is a structured change in how momentum content becomes physical evolution. It can act internally, by changing the fermic-bosic organization of a particle or material system; externally, by changing what bosic momentum yields as translation; or at the level of state-space, by changing which kinematic configurations are available.
 
 Three kinds of modifier will matter in the present book:
 
@@ -16,6 +17,8 @@ Three kinds of modifier will matter in the present book:
 3. **admissibility modifiers**, which change which kinematic states are available at all.
 
 These names are more important than the labels. The point is to say what kind of structural claim a later chapter is making.
+
+[^km-smc]: Kinematic Modifiers should not be confused with space-mediated momentum coupling. SMC names the general principle that momentum-bearing systems can become dynamically related through space. KMs name the structural form of a kinematic alteration: a change in composition, yield, or admissibility. SMC is therefore not a fourth modifier class, and KMs are not force categories.
 
 ### Composition modifiers
 

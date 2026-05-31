@@ -1,10 +1,16 @@
 format:
   pdf:
+    filters:
+      - filters/remove-empty-pdf-index.lua
     toc: true
     toc-depth: 1
+    colorlinks: true
+    linkcolor: black
+    urlcolor: black
+    citecolor: black
+    toccolor: black
     # documentclass: scrbook # KOMA-script book class, often provides better typography for books
     # number-sections: true
-    # colorlinks: true       # Makes internal and external links colored rather than boxed
     # keep-tex: true         # Keeps the intermediate .tex file (highly useful for debugging LaTeX errors)
     # geometry:              # Easily adjust margins
     #   - top=30mm
@@ -15,9 +21,5 @@ format:
       - styles/pdf/preamble.tex
       - styles/pdf/macros.tex
       - text: |
-          % Reset chapter counter at each part
-          \counterwithin*{chapter}{part}
-          % Prefix the chapter number with the Part numeral (e.g., I.1, I.2, II.1)
-          \renewcommand{\thechapter}{\Roman{part}.\arabic{chapter}}
-          % Widen the invisible box in the TOC to fit the longer chapter numbers
-          \RedeclareSectionCommand[tocnumwidth=3.5em]{chapter}
+          % Add leaders so page targets scan clearly in print/PDF.
+          \RedeclareSectionCommand[toclinefill=\TOCLineLeaderFill]{chapter}

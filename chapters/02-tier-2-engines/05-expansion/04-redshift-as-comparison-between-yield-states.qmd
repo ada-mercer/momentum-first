@@ -1,0 +1,31 @@
+## Redshift as comparison between yield states
+
+Once displacement depends on $\chi(t)$, redshift is read as a comparison between the yield state at emission and the yield state at observation. Let
+
+$$
+\chi_e=\chi(t_e),
+\qquad
+\chi_o=\chi(t_o),
+$$
+
+where $t_e$ is the emission epoch and $t_o$ is the observation epoch. The internal M1 redshift mapping is
+
+$$
+1+z=\frac{\chi_e}{\chi_o}.
+$$
+
+Under the default normalization $\chi_o=1$, this becomes $1+z=\chi_e$. The normalization is conventional. The physical content is the ratio between the two yield states.
+
+The comparison is close in form to the standard scale-factor relation. If standard notation writes
+
+$$
+1+z=\frac{a_o}{a_e},
+$$
+
+then an M1 translation-yield history plays the corresponding ratio role when $\chi\sim1/a$. The interpretation is different: $\chi(t)$ is not introduced as primitive metric expansion. It is the yield by which directed lightlike momentum becomes accumulated displacement and signal interval.
+
+The wavelength reading is then direct. A signal emitted under yield $\chi_e$ and observed under yield $\chi_o$ is compared by the ratio $\chi_e/\chi_o$. If the earlier yield is larger, the same emitted feature is observed with a longer wavelength scale by that factor.
+
+This is not photon momentum cooling. The redshift does not come from draining the signal's conserved bosic momentum during flight. It comes from comparing a signal laid down under one translation yield with observation under another.
+
+The mapping is therefore useful but limited. It gives the chapter its kinematic redshift rule. A full cosmology still has to specify a viable $\chi(t)$ history and derive the associated distances, fluxes, thermal history, and structure tests.

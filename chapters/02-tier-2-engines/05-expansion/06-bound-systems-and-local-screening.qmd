@@ -1,0 +1,31 @@
+## Bound systems and local screening
+
+The translation-yield history governs propagation across cosmological scales. It does not mean that every local system passively expands with the background yield.
+
+A gravitationally bound object is already organized by local core-momentum conservation and local gravitational bookkeeping. Its internal distances are maintained by the equilibrium of the bound system: fermic scales, directed momenta, internal cycles, and the gravitational well that coordinates them. Such a system is not merely a sample of the background translation map.
+
+This gives M1 a natural screening distinction. Light propagating between systems samples the large-scale translation-yield history. A bound system maintains its local organization and therefore need not rescale its rods, clocks, orbital distances, or atomic structure with the raw cosmological $\chi(t)$ value.
+
+The point is not that local physics is exempt by declaration. It is that the first object to analyze is the local bound configuration, not the background propagation rule alone. If a system is held together by a gravitational well or by stable internal momentum organization, its distances follow that local equilibrium unless an additional coupling to $\chi(t)$ is introduced and justified.
+
+A useful compatibility condition is supplied by the fractional yield-change rate
+
+$$
+H_\chi=-\frac{\dot\chi}{\chi}.
+$$
+
+For a bound system with characteristic dynamical time $\tau_{dyn}$,
+
+$$
+H_\chi\tau_{dyn}\ll1
+$$
+
+means that the cosmological yield changes negligibly over one internal cycle. In that regime the background variation is adiabatic relative to the local dynamics, which supports the separation between cosmological propagation and local bound structure.
+
+This condition is not the whole screening mechanism. The deeper reason is local core-momentum organization inside a bound system. The inequality only states when the background change is slow enough that the local system should not be forced to track it cycle by cycle.
+
+The boundary remains testable. Atomic spectra, clock comparisons, local recoil, orbital drift, weak-equivalence behavior, and bounds on dimensionless constants constrain any model that lets $\chi(t)$ couple directly into local systems. The chapter's main claim is therefore limited: translation yield governs large-scale propagation, while bound systems require a separate local-equilibrium analysis.
+
+A stronger version of this separation is possible. A bound local system need not be treated as exempt from translation yield. Its rods, clocks, lightlike ranging, and stationary bound lengths may instead be built from standards that change together under the same local yield state. In that case, a local observer made from those standards continues to measure the same dimensionless local system, even though the true-frame bookkeeping has changed.
+
+M1 calls this stronger case **Universal Yield Covariance**. It says that stable closed local sectors share one local-yield map for fixed dimensionless states. The sectors may realize that covariance through different mechanisms, but they do not receive independent yield rules. The true-frame/bound-frame transform is developed in Derivation 5.6A, and the corresponding sector targets are recorded in Derivation 5.6B.

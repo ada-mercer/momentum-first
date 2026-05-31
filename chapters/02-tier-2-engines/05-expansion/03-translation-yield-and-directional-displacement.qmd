@@ -1,0 +1,39 @@
+## Translation yield and directional displacement
+
+Translation yield is the expansion-side rule that tells how much displacement directed bosic momentum produces. It does not define a new momentum variable. It acts after the directional momentum content has already been identified.
+
+For a chosen direction $k$, ADMC gives two positive directional channels,
+
+$$
+p_{k^+}=M(p)+\frac12p_k,
+$$
+
+and
+
+$$
+p_{k^-}=M(p)-\frac12p_k.
+$$
+
+Their difference recovers the directed bosic component:
+
+$$
+p_k=p_{k^+}-p_{k^-}.
+$$
+
+That component is the directional actor. The cosmological question is how much displacement it produces when the background translation yield has the value $\chi(t)$. The map is
+
+$$
+\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)}.
+$$
+
+The factor $p_k/M(p)$ carries the directed momentum fraction. The factor $c$ keeps the local translation scale explicit. The factor $\chi(t)$ supplies the epoch-dependent yield of space. Larger $\chi$ means more displacement per unit directed momentum fraction; smaller $\chi$ means less.
+
+For lightlike propagation along the chosen direction, $p_k/M(p)=1$, so
+
+$$
+\dot x=\chi(t)c.
+$$
+
+This is the useful operational reading of translation yield. A light signal does not need to lose bosic momentum in order for its observed wavelength and duration to differ across epochs. The same lightlike momentum expression accumulates displacement according to the yield history through which it propagates.
+
+This also explains why the channel equations remain unchanged. They state the momentum content. The translation map states how that content becomes displacement. Space expansion belongs to the second statement.

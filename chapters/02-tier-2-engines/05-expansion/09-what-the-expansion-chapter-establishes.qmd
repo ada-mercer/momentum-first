@@ -1,0 +1,35 @@
+## What the expansion chapter establishes
+
+The chapter establishes a Tier 2 expansion engine, not a closed observational cosmology.
+
+The engine is simple. ADMC keeps the directional momentum channels intact. Translation yield controls how the directed component becomes displacement:
+
+$$
+\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)}.
+$$
+
+For lightlike propagation this becomes $\dot x=\chi(t)c$. The varying quantity is not the local light scale $c$ and not the signal's conserved bosic momentum. It is the yield by which lightlike momentum accumulates displacement across the cosmological background.
+
+From that engine the chapter derives two internal signal mappings:
+
+$$
+1+z=\frac{\chi_e}{\chi_o},
+\qquad
+\Delta t_o=(1+z)\Delta t_e.
+$$
+
+Redshift and duration stretching are therefore paired consequences of comparing emission and observation yield states. This is the central result of the chapter.
+
+The chapter also separates cosmological propagation from local bound structure. Bound systems maintain local core-momentum organization and gravitational equilibrium; they are not assumed to expand passively with the raw background yield. The scale condition
+
+$$
+H_\chi\tau_{dyn}\ll1
+$$
+
+marks the regime where background yield variation is slow relative to local dynamics, but it is a compatibility condition rather than a proof of exact local invisibility.
+
+The chapter also identifies a stronger local-screening route: **Universal Yield Covariance**, where closed local sectors preserve fixed dimensionless states under one shared yield map. The transform is developed in Derivation 5.6A, and the sector targets are recorded in Derivation 5.6B. The remaining work is to realize those targets in the detailed electromagnetic, gravitational, strong, and weak mechanisms.
+
+What remains open is equally important. The chapter does not provide a fitted distance-redshift model. It does not derive flux laws, CMB physics, BBN, recombination, Tolman behavior, redshift drift, or matter growth. It does not solve dark energy, the Hubble tension, the horizon problem, or early-galaxy formation. And it does not explain redshift by photon momentum cooling.
+
+The handoff is to Tier 3. A future observational-cosmology program must choose or derive candidate $\chi(t)$ histories, build distance and flux kernels, audit local and early-universe constraints, and state falsifiers. The engine established here is the structure those tests would judge.

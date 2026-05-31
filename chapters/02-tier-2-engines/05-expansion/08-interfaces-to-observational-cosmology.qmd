@@ -1,0 +1,35 @@
+## Interfaces to observational cosmology
+
+A translation-yield engine becomes serious only where observation can break it. The chapter has built the internal grammar for redshift, duration, local screening, and propagation kernels. Observational cosmology asks for the additional physics needed to confront data.
+
+### Flux, surface brightness, and reciprocity
+
+A viable model must account for observed photon wavelength, arrival rates, angular area, source evolution, and the observer's distance definitions. Tolman-style surface-brightness behavior is not automatic. It is a required test of the flux and distance kernel built on top of the yield history.
+
+The redshift mapping gives one factor. Duration dilation gives another. A luminosity-distance law still has to specify how area, arrival rate, photon counting, and source evolution enter the observation.
+
+### Redshift drift
+
+Redshift drift is a future discriminator. Since redshift is the ratio $\chi_e/\chi_o$, drift must be derived from the chosen yield history and propagation kernel. It should not be imported from FLRW by analogy.
+
+### CMB and thermal history
+
+The cosmic microwave background is a hard interface, not a solved consequence. A translation-yield cosmology must explain blackbody integrity, the observed temperature-redshift law, acoustic scale, peak phases and heights, damping tail, and perturbation correlations.
+
+It must also handle BBN, recombination, the visibility function, and baryon/photon bookkeeping. Older arguments that depend on photon momentum cooling or discarded density-of-states premises cannot be imported into this chapter.
+
+### Local metrology
+
+Bound-system screening does not remove local tests. It only says that local rods, clocks, atoms, and orbits are governed first by local core-momentum organization and gravitational equilibrium. Any direct coupling between $\chi(t)$ and local systems must still survive atomic spectra, clock comparisons, local recoil, orbital drift, weak-equivalence behavior, and dimensionless-constant bounds.
+
+### Matter growth
+
+Matter growth should remain separate from universal signal yield. If later structure-formation work needs screened or environment-dependent massive-tracer mobility, use a separate symbol such as
+
+$$
+\mu_m(a,k,\mathrm{env}).
+$$
+
+Candidate tests would include redshift-space distortions, kSZ, BAO damping or sharpening, lensing-clustering splits, and environment slicing. That is a later extension, not the universal translation-yield engine.
+
+These interfaces are not decorative caveats. They are the routes by which a proposed $\chi(t)$ cosmology would be judged.

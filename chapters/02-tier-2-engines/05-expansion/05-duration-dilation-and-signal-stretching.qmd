@@ -1,0 +1,63 @@
+## Duration dilation and signal stretching
+
+A redshift mechanism must also account for time-stretched signals. The observations do not present only shifted wavelengths. They present supernova light curves, pulse trains, and other extended emissions whose observed durations scale with redshift.
+
+The translation-yield map pairs these effects. If redshift is
+
+$$
+1+z=\frac{\chi_e}{\chi_o},
+$$
+
+then the corresponding duration mapping is
+
+$$
+\Delta t_o=(1+z)\Delta t_e.
+$$
+
+The compact derivation tracks the interval associated with an emitted feature. Suppose an emitter produces that feature over an emitted duration $\Delta t_e$. During emission, the translation yield is $\chi_e$, so the feature corresponds to a propagation interval
+
+$$
+L=\chi_e c\Delta t_e.
+$$
+
+At observation, the same interval is read under the later yield value $\chi_o$. The observed duration is therefore
+
+$$
+\Delta t_o=\frac{L}{\chi_o c}.
+$$
+
+Substitution gives
+
+$$
+\Delta t_o
+=\frac{\chi_e}{\chi_o}\Delta t_e
+=(1+z)\Delta t_e.
+$$
+
+The same result can be stated through neighboring pulses. If two nearby pulses traverse the same propagation path, then schematically
+
+$$
+\int_{t_e}^{t_o}\chi(t)c\,dt=D,
+$$
+
+and
+
+$$
+\int_{t_e+\Delta t_e}^{t_o+\Delta t_o}\chi(t)c\,dt=D.
+$$
+
+Subtracting the two path conditions gives the endpoint comparison. In the slowly varying endpoint approximation,
+
+$$
+\chi_o\Delta t_o=\chi_e\Delta t_e,
+$$
+
+and again
+
+$$
+\Delta t_o=(1+z)\Delta t_e.
+$$
+
+This is the main reason the yield reading is stronger than a redshift slogan. Wavelength stretching and duration stretching are two consequences of the same comparison between emission and observation yield states.
+
+Actual transient data still require source physics, selection effects, lensing, propagation effects, and distance kernels. The claim here is narrower: at the kinematic level, translation yield couples spectral stretching and signal-duration stretching.

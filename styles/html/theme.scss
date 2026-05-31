@@ -1,5 +1,19 @@
 /*-- scss:defaults --*/
 
-/* HTML theme placeholder for Momentum First */
+/* Momentum First: quiet technical-book baseline over Quarto/Bootstrap defaults. */
+$body-color: #20242a !default;
+$link-color: #315f7c !default;
+$font-size-root: 17px !default;
+$headings-font-weight: 520 !default;
+$toc-font-size: 0.86rem !default;
+$sidebar-bg: #f8f7f3 !default;
+$sidebar-fg: #30343a !default;
+$sidebar-hl: #315f7c !default;
 
 /*-- scss:rules --*/
+
+main.content h1,
+main.content h2,
+main.content h3 {
+  letter-spacing: -0.01em;
+}

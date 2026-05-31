@@ -14,8 +14,20 @@ Momentum is the actor of change. Translational motion is momentum expression. Ma
 
 This is the force of the momentum-first claim. What changes in a physical system changes through momentum expressed within spatial relations, not because time acts as an independent driver.
 
-### Why the distinction matters
+### Space-mediated momentum coupling - SMC
 
-The stage and the actor are not separate worlds. Momentum is always expressed in space, and space matters because it conditions expression. But the role difference keeps the explanatory order clear: space supplies the relational setting; momentum carries the changing physical content.
+The stage and the actor are not separate worlds. Momentum is always expressed in space, and space matters because it conditions that expression.
 
-A clock is a physical system undergoing regular change. If clock rates differ, the first place to look is not a changing time medium, but a difference in how the clock's momentum content is organized and expressed. The next section turns to time and dilation from that standpoint.
+Physical systems also do not exchange momentum across nothing. In M1, every force is understood as a mode of **space-mediated momentum coupling**: momentum content in one system becomes dynamically relevant to momentum content elsewhere through spatial relation.
+
+This principle is deliberately general. It does not say that electromagnetism, gravity, the strong interaction, and the weak interaction are mechanically identical. They are not. It says that beneath their different mechanisms is a shared form: interaction means that momentum is communicated, constrained, redistributed, or reorganized through space.
+
+The detailed mechanisms differ. For now, the foundation is only this: forces are not external additions to momentum-first physics. They are the ways momentum becomes coupled through space.
+
+### Toward clocks and dilation
+
+This distinction now gives us the right starting point for time.
+
+A clock is not driven by time as an independent medium. A clock is a physical system whose momentum content undergoes regular, repeatable change. Its rate depends on how that momentum is organized, coupled, and expressed within the spatial conditions available to it.
+
+If clock rates differ, the first place to look is therefore not a changing time-substance, but a difference in the physical conditions under which the clock’s momentum content can complete its cycle. The next section turns to time and dilation from that standpoint.

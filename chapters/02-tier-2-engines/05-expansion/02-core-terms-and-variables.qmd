@@ -1,0 +1,99 @@
+## Core terms and variables
+
+The space-expansion chapter inherits the momentum vocabulary of Foundations. It does not reopen it.
+
+The bosic momentum magnitude is $p$. Its directional components are $p_k$, where $k$ labels a chosen spatial direction. The vector notation $\vec p$ may be used when the full directed momentum is meant, but the channel equations use components. The core momentum package is
+
+$$
+M(p)=\sqrt{p_f^2+p^2},
+$$
+
+with $p_f$ the inherited fermic momentum scale. The notation $M(p)$ emphasizes that the baseline total momentum content is being read as a function of the bosic magnitude already established in the inertial relation.
+
+The directional-positive split remains the ADMC split:
+
+$$
+p_{k^+}=M(p)+\frac12p_k,
+$$
+
+$$
+p_{k^-}=M(p)-\frac12p_k.
+$$
+
+The inverse identities remain:
+
+$$
+M(p)=\frac{p_{k^+}+p_{k^-}}{2},
+$$
+
+and
+
+$$
+p_k=p_{k^+}-p_{k^-}.
+$$
+
+The expansion object is
+
+$$
+\chi(t),
+$$
+
+called **translation yield**. It gives the amount of displacement produced by directed bosic momentum at epoch $t$. It multiplies the translation map; it does not scale the momentum variables. The observation epoch is normally used as the normalization point, so
+
+$$
+\chi(t_o)=1
+$$
+
+unless a different normalization is explicitly stated.
+
+The basic yield map is
+
+$$
+\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)}.
+$$
+
+Here $c$ is kept explicit. It is the local translation scale used to convert the dimensionless ratio $p_k/M(p)$ into a displacement rate. The epoch dependence belongs to $\chi(t)$, not to a variable-speed-of-light ontology.
+
+For lightlike propagation, $p_k/M(p)=1$ along the propagation direction, so the map gives
+
+$$
+\dot x=\chi(t)c.
+$$
+
+The varying object is not the local light scale $c$, but the translation yield by which lightlike momentum becomes accumulated displacement and signal interval across cosmological propagation.
+
+Two event labels will appear throughout the chapter:
+
+$$
+\chi_e=\chi(t_e),
+\qquad
+\chi_o=\chi(t_o),
+$$
+
+where $t_e$ is the emission epoch and $t_o$ is the observation epoch. The internal redshift mapping is written
+
+$$
+1+z=\frac{\chi_e}{\chi_o}.
+$$
+
+A useful yield-change scalar is
+
+$$
+H_\chi(t)=-\frac{\dot\chi(t)}{\chi(t)}.
+$$
+
+It plays a Hubble-like interface role for a translation-yield history. It is not automatically the full observational Hubble function, because a complete model still needs a propagation kernel, distance definitions, flux rules, and matter-sector dynamics.
+
+The notation inventory for this chapter is therefore compact:
+
+- $p$ — bosic momentum magnitude;
+- $p_k$ — directional component of $\vec p$;
+- $p_f$ — inherited fermic momentum scale;
+- $M(p)$ — core momentum package in the baseline being read;
+- $p_{k^+}$ and $p_{k^-}$ — positive directional ADMC channels;
+- $\chi(t)$ — translation yield;
+- $\chi_e$ and $\chi_o$ — yield values at emission and observation;
+- $H_\chi$ — fractional yield-change rate;
+- $c$ — local translation scale kept explicit in the map.
+
+Matter mobility is a separate object from signal yield. If a later matter-growth extension needs screened or environment-dependent massive-tracer mobility, a candidate notation is $\mu_m(a,k,\mathrm{env})$. The universal signal yield $\chi(t)$ remains reserved for displacement, wavelength, and duration comparisons.

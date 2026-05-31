@@ -1,0 +1,377 @@
+# Derivation 5.6A — Universal true-frame yield and the bound-frame transform {#sec-derivation-05-06a-true-frame-bound-frame .unnumbered}
+
+## Purpose
+
+This appendix supports the local-screening discussion in Chapter 5.6 and supplies the kinematic leg of Universal Yield Covariance, or UYC. Bound systems are not exempt from translation yield. Instead, one true-frame yield rule applies everywhere, while locally bound observers measure with rods, clocks, and equilibrium lengths built from standards that may co-scale with that same yield state.
+
+The result is a two-description map. In true-frame bookkeeping, local force ranges, lightlike distances per cycle, rods, clocks, and equilibrium lengths may scale with the cosmological yield state. In the bound-frame description used by observers made from those standards, co-scaled local systems remain fixed, while separations that do not share the local standard's scaling appear to expand.
+
+The appendix is deliberately kinematic. It derives the coordinate transform between true-frame and bound-frame descriptions, then derives the local light/ranging condition required by the UYC branch. It does not derive the electromagnetic, gravitational, strong, or weak sector laws that would realize the needed exponents. It also does not supply FLRW dynamics, flux laws, CMB physics, BBN, recombination, or empirical closure.
+
+## Role / regime / status
+
+- **Role:** kinematic transform supporting UYC and local screening.
+- **Regime:** homogeneous yield history; adiabatic local standards; local experiments short compared with the yield-change time; bound systems whose rods, clocks, and equilibrium lengths co-scale.
+- **Status:** UYC kinematic leg; sector realization pending.
+- **Non-claim:** not a proof of exact local indistinguishability, not a derivation of sector microphysics, and not a completed cosmological model.
+
+## Notation ledger
+
+The paired derivations use the following compact notation:
+
+- $X\equiv \chi/\chi_o$ — normalized yield ratio;
+- $u$ — expression-yield exponent; the local distance-per-cycle factor is written explicitly as $cX^u$;
+- $\rho$ — local length/equilibrium exponent, $\ell_T\propto X^\rho$;
+- $f$ — local frequency exponent, $\nu_T\propto X^f$;
+- $c$ — fixed intrinsic M1 constant, as in $p_f=m_0c$;
+- $h,q,s,m$ — sector exponents used in Derivation 5.6B for $\hbar$, $e^2$, $m_e$, and $\mu_g$.
+
+## UYC framing
+
+The appendix assumes one local-and-global yield environment. Local screening does not mean that bound systems ignore $\chi$. It means that local rods, clocks, bound lengths, and measurement units can co-scale with the same yield environment as the systems they measure. A bound observer then divides by standards that carry the same scaling.
+
+In UYC language, this appendix proves the transform that stable closed local sectors must fit. It does not prove the sector laws that make atomic, gravitational, strong, or weak standards realize the transform. That realization burden belongs to Derivation 5.6B and later sector work.
+
+## One global expression-yield rule
+
+The expansion chapter introduces translation yield through the propagation map
+
+$$
+\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)},
+$$
+
+with the directional momentum decomposition left unchanged. The local-screening version should not replace this with two separate rules: one for cosmological propagation and another exemption for bound systems. The cleaner branch uses one global true-frame rule for displacement or expression yield.
+
+Write the local true-frame expression factor as
+
+$$
+\boxed{
+c\left(\frac{\chi(t)}{\chi_o}\right)^u
+}
+$$
+
+or, with $X=\chi/\chi_o$,
+
+$$
+cX^u.
+$$
+
+For a channel with true-frame cycle scale $\tau_T$, the distance laid down per cycle scales as
+
+$$
+\ell_{\mathrm{expr},T}
+\sim
+cX^u\tau_T.
+$$
+
+Here $c$ remains the fixed intrinsic M1 constant appearing in relations such as
+
+$$
+p_f=m_0c.
+$$
+
+The scaled factor $cX^u$ is not a second fundamental light constant. It is the true-frame distance over which a bosic, field, or measurement expression is laid down per relevant cycle or unit of bookkeeping. This distinction keeps local screening from being purchased by changing the intrinsic fermic scale.
+
+In particular, $cX^u$ should not be substituted into intrinsic relations such as $p_f=m_0c$ unless a later sector derivation earns that replacement. In this appendix, $cX^u$ is expression yield, not a replacement for the baseline $c$ that defines $p_f$.
+
+## True-frame local standards
+
+Let a local length standard in true-frame units scale as
+
+$$
+\boxed{
+\ell_T(\chi)
+=
+\ell_o\left(\frac{\chi}{\chi_o}\right)^\rho
+}
+$$
+
+and let a local clock frequency in true-frame bookkeeping scale as
+
+$$
+\nu_T(\chi)
+=
+\nu_o\left(\frac{\chi}{\chi_o}\right)^f.
+$$
+
+The exponent $\rho$ describes the true-frame scaling of local rods, force ranges, or equilibrium lengths. The exponent $u$ describes local expression yield. The exponent $f$ describes the true-frame scaling of the local tick frequency.
+
+The branch of interest has $\rho>0$. If $\chi$ decreases forward in cosmic time, then local true-frame lengths shrink forward on this branch. The bound system is not isolated from $\chi$; its local standards are built from the same expression environment whose ranges scale with $\chi$.
+
+## Bound-frame spatial coordinates
+
+A bound observer reports distance by comparing a true-frame interval with the local length standard. Define the bound-frame spatial coordinate by
+
+$$
+\boxed{
+x_B
+=
+x_T\left(\frac{\chi}{\chi_o}\right)^{-\rho}
+}
+$$
+
+or, equivalently, by dividing true-frame intervals by $\ell_T/\ell_o$. The inverse local-standard scale then acts as the bound-frame scale factor:
+
+$$
+\boxed{
+a_B(\chi)
+=
+\left(\frac{\chi}{\chi_o}\right)^{-\rho}
+}.
+$$
+
+This is the central transform. A co-scaled bound separation,
+
+$$
+R_T(\chi)=R_o\left(\frac{\chi}{\chi_o}\right)^\rho,
+$$
+
+has bound-frame size
+
+$$
+R_B
+=
+R_T\left(\frac{\chi}{\chi_o}\right)^{-\rho}
+=
+R_o.
+$$
+
+The local system may therefore shrink in true-frame units while remaining constant when measured by its own co-scaled standards. By contrast, a separation that is fixed in true-frame units has
+
+$$
+D_B
+=
+D_T\left(\frac{\chi}{\chi_o}\right)^{-\rho}
+=
+a_BD_T.
+$$
+
+If $\chi$ decreases forward and $\rho>0$, that fixed true-frame separation grows in bound-frame coordinates. Apparent expansion is therefore the bound-frame description of local-standard shrink in the true frame, not a separate rule for distant space.
+
+More generally, if an interval scales as $D_T\propto\chi^s$, then
+
+$$
+D_B\propto\chi^{s-\rho}.
+$$
+
+The cases separate cleanly. The case $s=\rho$ describes co-scaled local structure. The case $s=0$ describes a fixed true-frame separation. Intermediate values of $s$ describe partial coupling.
+
+A fixed true-frame separation means a separation that does not participate in the local standard's shrink: for example, an idealized inertial coordinate separation, a separation between systems not bound into the same local standard, or a sector whose scale has not co-scaled with $\ell_T$. It is a contrast case, not a claim that every physical distance is fixed in the true frame.
+
+## Bound-frame time and tick units
+
+The spatial transform must be paired with the clock standard. A local observer reports durations by counting ticks, so for a true-frame interval $\Delta t_T$ define
+
+$$
+N=\nu_T\Delta t_T.
+$$
+
+Using the observation-epoch tick frequency $\nu_o$ as the reference unit, the corresponding bound-frame time interval is
+
+$$
+\Delta t_B\equiv\frac{N}{\nu_o}
+=\frac{\nu_T}{\nu_o}\Delta t_T
+\propto X^f\Delta t_T.
+$$
+
+This does not introduce a second physical time. It states how a bound observer converts true-frame intervals into local tick units when the clock frequency may carry the same global yield scaling.
+
+## Local light and ranging condition
+
+Local light-speed constancy is not assumed. It follows only when the true-frame light yield, rod scale, and clock scale satisfy the same exponent relation.
+
+The true-frame local lightlike expression yield scales as
+
+$$
+cX^u\propto\chi^u.
+$$
+
+The true-frame distance expressed in one local tick is
+
+$$
+\ell_{\mathrm{tick},T}
+\sim
+\frac{cX^u}{\nu_T}
+\propto
+\chi^{u-f}.
+$$
+
+For a local observer to measure the same light speed with rods whose true-frame length scales as $\chi^\rho$, the one-tick light length must co-scale with the rod:
+
+$$
+\chi^{u-f}=\chi^\rho.
+$$
+
+Thus
+
+$$
+\boxed{
+f=u-\rho
+}.
+$$
+
+Radar ranging gives the same condition from an operational measurement. Let a local bound radius scale as
+
+$$
+r_T\propto\chi^\rho.
+$$
+
+The true-frame round-trip light time scales as
+
+$$
+\Delta t_T
+\propto
+\frac{r_T}{cX^u}
+\propto
+\chi^{\rho-u}.
+$$
+
+The number of local ticks in the round trip scales as
+
+$$
+N
+\propto
+\nu_T\Delta t_T
+\propto
+\chi^{f+\rho-u}.
+$$
+
+Local ranging is screened when this tick count is constant, so again
+
+$$
+\boxed{
+f+\rho-u=0
+}
+\qquad\Longleftrightarrow\qquad
+\boxed{
+f=u-\rho
+}.
+$$
+
+This is a matched-standards condition. It is not a claim that every possible local probe is automatically indistinguishable under every sector model.
+
+## Clean branch and redshift dictionary
+
+The branch that links most directly to the current expansion-chapter dictionary is
+
+$$
+\boxed{u=1,\qquad\rho=1,\qquad f=0.}
+$$
+
+Equivalently,
+
+$$
+cX^u\propto\chi,
+\qquad
+\ell_T\propto\chi,
+\qquad
+\nu_T\propto\chi^0.
+$$
+
+On this branch, local rods and local lightlike expression lengths shrink together in true-frame units as $\chi$ falls, while local tick frequencies remain fixed in true-frame bookkeeping. The bound-frame scale factor becomes
+
+$$
+\boxed{
+a_B
+=
+\frac{\chi_o}{\chi}
+}.
+$$
+
+At emission and observation,
+
+$$
+\frac{a_{B,o}}{a_{B,e}}
+=
+\frac{\chi_e}{\chi_o}.
+$$
+
+The current M1 redshift lock is therefore recovered as the bound-frame scale-factor ratio:
+
+$$
+\boxed{
+1+z
+=
+\frac{\chi_e}{\chi_o}
+}.
+$$
+
+This is the economical UYC dictionary branch because the apparent expansion factor, the local light/ranging condition, and the redshift dictionary use the same exponent. Branches with $\rho\ne1$ are algebraically possible, but then the bound-frame scale-factor ratio gives only
+
+$$
+1+z_{\mathrm{geom}}
+=
+\left(\frac{\chi_e}{\chi_o}\right)^\rho,
+$$
+
+so the remaining redshift exponent must come from a separate frequency-mapping mechanism. That is a larger model-building burden.
+
+The clean branch is therefore not chosen merely for simplicity. The local lightlike version of the chapter map selects $u=1$ because lightlike expression follows $\dot x=\chi c$. Recovering the chapter redshift relation from the bound-frame scale factor alone selects $\rho=1$. The local light/ranging condition $f=u-\rho$ then gives $f=0$. This is a dictionary alignment for the UYC branch, not a proof that every sector has already supplied the required microphysics.
+
+## What this proves
+
+This appendix proves the following kinematic statements.
+
+1. If local true-frame standards scale as $\ell_T\propto\chi^\rho$, then bound-frame spatial coordinates scale as
+   $$
+   x_B=x_T\left(\frac{\chi}{\chi_o}\right)^{-\rho}.
+   $$
+2. The corresponding bound-frame scale factor is
+   $$
+   a_B=\left(\frac{\chi}{\chi_o}\right)^{-\rho}.
+   $$
+3. A local co-scaled bound system with $r_T\propto\chi^\rho$ remains constant in bound-frame units.
+4. A fixed true-frame unbound separation appears to expand in the bound frame.
+5. Local light-speed and radar-ranging constancy require
+   $$
+   f=u-\rho.
+   $$
+6. Direct recovery of the current redshift dictionary from the bound-frame scale factor selects $\rho=1$; with $u=1$, the matched-standards condition gives $f=0$.
+
+## What this does not prove
+
+The derivation does not prove the sector laws that would make the branch true. In particular, it does not derive:
+
+- the electromagnetic scaling that makes atomic lengths or light-clock lengths realize $\ell_T\propto\chi^\rho$ while preserving dimensionless spectra;
+- the gravitational source-to-field scaling needed for bound orbital radii to satisfy $r_T\propto\chi^\rho$;
+- the QCD, nuclear, hyperfine, chemistry, or clock-ratio scaling needed for full local metrology;
+- exact local indistinguishability across all possible probes;
+- Friedmann dynamics, stress-energy closure, luminosity-distance laws, Tolman scaling, CMB physics, BBN, recombination, or structure growth.
+
+The appendix therefore supplies a coordinate transform and a matched-standards consistency condition, not empirical closure.
+
+## Preview of Derivation 5.6B
+
+The next derivation keeps the same global-rule framing and records the sector targets required by UYC. On the electromagnetic side, the task is to identify which dimensional quantities must co-scale so that local lengths and clock ratios satisfy $\rho$, $u$, and $f=u-\rho$ while dimensionless observables such as $\alpha$ remain unchanged. On the gravity side, weak-field circular balance gives the required turning-coefficient exponent. Strong and weak sectors remain later realization audits under the same fixed-state covariance.
+
+If
+
+$$
+v_T\propto\chi^u,
+\qquad
+r_T\propto\chi^\rho,
+\qquad
+\mu_{g,T}\propto\chi^m,
+$$
+
+then
+
+$$
+\frac{v_T^2}{r_T}=\frac{\mu_{g,T}}{r_T^2}
+$$
+
+implies
+
+$$
+\boxed{
+m=2u+\rho
+}.
+$$
+
+For the clean branch $u=1$ and $\rho=1$, this gives $m=3$. That is a UYC sector-covariance target, not yet a derived source law. Until source-mass scaling is fixed, the gravitational coefficient should be written as
+
+$$
+\mu_{g,T}=G_{\mathrm{eff},T}M_{s,T},
+$$
+
+rather than as a bare $G$ law.

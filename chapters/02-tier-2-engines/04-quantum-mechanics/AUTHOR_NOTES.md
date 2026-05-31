@@ -22,6 +22,7 @@ Presence-vs-expression is allowed only as a light support note around `\Psi`, ph
 
 ### 01 — Quantum mechanics after gravity
 - Job: open from the gravity-chapter handoff and define the chapter's burden; mention early that M1 naturally supports strong-gravity quantum effects because scalar wells modify the local fermic scale inside the operator.
+- Add a bounded quantum-source bridge near the opening: in quantum regimes, $J_k^\pm$ are read as state-dependent readings/functionals of the momentum organization carried by the phase-bearing state $\Psi$, with point-particle source densities recovered only as classical/localized compressions. Boundary: no measurement theory, full QFT source law, or complete self-gravity equation.
 - Source links: `book/dev/QM_CHAPTER_AUTHOR_HANDOVER_2026-05-10.md`; `book/dev/QM_CHAPTER_HIGH_LEVEL_AUTHOR_PLAN_V1.md`; gravity chapter close in `chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/08-spacetime-lessons-and-open-boundaries.qmd`.
 - Writing theory: begin from the conceptual pressure, not from a roadmap; keep the reader's path clear.
 

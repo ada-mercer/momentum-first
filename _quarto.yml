@@ -8,12 +8,15 @@ project:
   - chapters/01-tier-1-foundations/02-foundations/index.qmd
   - chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
   - chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
+  - chapters/02-tier-2-engines/05-expansion/index.qmd
   - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
   - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
   - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
   - appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
   - appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
   - appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
+  - appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
+  - appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
   - references.qmd
 book:
   title: Momentum First
@@ -38,7 +41,8 @@ book:
     chapters:
     - chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
     - chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
-  - part: Appendices {.unnumbered}
+    - chapters/02-tier-2-engines/05-expansion/index.qmd
+  - part: Appendices
     chapters:
     - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
     - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
@@ -46,7 +50,11 @@ book:
     - appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
     - appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
     - appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
+    - appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
+    - appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
 bibliography: bibliography.bib
 glossary: glossary.yml
+profile:
+  default: pdf
 crossref:
   chapters: true
