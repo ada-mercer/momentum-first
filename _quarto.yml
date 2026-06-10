@@ -9,6 +9,7 @@ project:
   - chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
   - chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
   - chapters/02-tier-2-engines/05-expansion/index.qmd
+  - appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
   - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
   - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
   - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
@@ -43,6 +44,7 @@ book:
     - chapters/02-tier-2-engines/05-expansion/index.qmd
   - part: Appendices
     chapters:
+    - appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
     - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
     - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
     - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd

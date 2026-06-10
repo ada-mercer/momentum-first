@@ -18,7 +18,7 @@ The HTML book is published with GitHub Pages. The PDF is published as a GitHub R
 
 ## Current scope
 
-As of `v0.3.1`, this is an active early manuscript rather than an empty scaffold. The repository contains:
+As of `v0.3.2`, this is an active early manuscript rather than an empty scaffold. The repository contains:
 
 - front matter and Preface
 - Tier 1 foundations material
@@ -109,7 +109,7 @@ Use the default PDF render for release checks and the HTML profile for fast read
 
 ## Citation / status
 
-This is a pre-1.0 working manuscript. For now, cite the latest GitHub Release unless a more formal edition is provided.
+This is a pre-1.0 working manuscript. For now, cite the latest GitHub Release unless a more formal edition is provided. Repository citation metadata lives in `CITATION.cff`; DOI metadata planning lives in `docs/doi/`.
 
 ## Releases
 

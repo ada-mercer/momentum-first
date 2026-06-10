@@ -61,9 +61,22 @@ def test_figure_registry_paths_and_ids_are_valid() -> None:
 
 def test_readme_reflects_current_release_posture() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    assert "As of `v0.3.1`" in readme
+    assert "As of `v0.3.2`" in readme
     assert "will be added later" not in readme
     assert "https://ada-mercer.github.io/momentum-first/" in readme
     assert "releases/latest/download/Momentum-First.pdf" in readme
     assert "actions/workflows/deploy-book-site.yml" in readme
+    assert "CITATION.cff" in readme
+    assert "docs/doi/" in readme
     assert "--mode minimal" in readme
+
+
+def test_citation_metadata_is_present_for_doi_workflow() -> None:
+    citation = yaml.safe_load((ROOT / "CITATION.cff").read_text(encoding="utf-8"))
+    assert citation["cff-version"] == "1.2.0"
+    assert citation["title"] == "Momentum First"
+    assert citation["version"] == "0.3.2"
+    assert citation["authors"] == [{"family-names": "Klaveness", "given-names": "Arne"}]
+    assert citation["repository-code"] == "https://github.com/ada-mercer/momentum-first"
+    assert "AI-assisted" in citation["message"]
+    assert (ROOT / "docs" / "doi" / "zenodo-v0.3.2.md").exists()

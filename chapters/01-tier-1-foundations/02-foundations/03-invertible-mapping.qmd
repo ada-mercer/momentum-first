@@ -1,6 +1,6 @@
 ## ADMC in Four-Component Form
 
-The realized split introduced in the previous section earns its place only if it maps back to familiar and useful kinematics. It does. Once the directional-positive variables are fixed, the relation between $p_{k^+}$, $p_{k^-}$ and the usual $(M, p_k)$ variables is linear and exactly invertible. As shown in the derivation appendix on the structural uniqueness of the directional-positive split, this realized form is not arbitrary within the natural additive, symmetry-compatible, axis-wise class of two-channel encodings.
+The realized split introduced in the previous section earns its place only if it maps back to familiar and useful kinematics. It does. Once the directional-positive variables are fixed, the relation between $p_{k^+}$, $p_{k^-}$ and the usual $(M, p_k)$ variables is linear and exactly invertible. Derivation 2.3A gives the supporting uniqueness argument: within the natural additive, symmetry-compatible, axis-wise class of two-channel encodings, this realized form is not arbitrary.
 
 ### Forward and inverse map
 

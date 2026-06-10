@@ -39,7 +39,7 @@ Here $p_k$ is the component of the bosic momentum vector along the chosen direct
 A schematic two-stage depiction of the momentum configuration associated with motion. Panel (a) represents an isotropic swelling from $p_f$ to $M$. Panel (b) represents a directional deformation of the swollen shell. The stages are representational rather than sequential: physically they belong to one combined momentum configuration.
 :::
 
-This is the fixed working form used throughout the book. As shown in the derivation appendix on the structural uniqueness of the directional-positive split, this realized split is not arbitrary: within the natural additive, symmetry-compatible, axis-wise class of two-channel encodings, canonical normalization uniquely fixes the realized form
+Derivation 2.3A, "Structural uniqueness of the directional-positive split," shows why this realized split is not arbitrary: within the natural additive, symmetry-compatible, axis-wise class of two-channel encodings, canonical normalization uniquely fixes the realized form
 
 $$
 p_{k^+} = M + \tfrac{1}{2}p_k,
