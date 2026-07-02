@@ -1,6 +1,6 @@
 ## The Stationary Gravitational Field
 
-The previous chapter prepared the source layer. This chapter gives the stationary field map that follows from it.
+The previous section prepared the source layer. This section gives the stationary field map that follows from it.
 
 The central result is the direct map from positive directional source channels to field deformation. M1 treats momentum as the primary physical content, so the first field question is not how to rename a classical density or metric component. It is whether a primitive momentum-channel source has a clean field response.
 

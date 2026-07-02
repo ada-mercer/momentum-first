@@ -16,7 +16,7 @@ J_k^+(x),
 J_k^-(x).
 $$
 
-They represent positive source content associated with the two senses of direction $k$ at position $x$. In the stationary gravity normalization used here, $J_k^\pm$ are local source-density channels with units of kg/(s m$^2$). They are not integrated source amounts. They describe how much momentum-source content is locally presented per area and per time in each directional sense.
+They represent positive source content associated with the two senses of direction $k$ at position $x$. In the stationary gravity normalization used here, $J_k^\pm$ are local source-density channels with units of kg/(s m$^2$). They are not integrated source amounts. They describe how much momentum content is locally presented per spatial volume in each directional sense.
 
 These channels are the source-side form of the directional-positive logic used in Foundations. Instead of beginning from a signed directional source alone, M1 begins from two positive directional channels and then forms the combinations needed for gravity.
 
@@ -40,7 +40,7 @@ $$
 
 The quantity $M_k$ measures the part of the source that remains when directional sign is forgotten. It is the source role that feeds the scalar-well side of the field. The quantity $P_k$ measures directional imbalance. It is the source role that feeds the shift, rotation, and frame-drag-like side of the field.
 
-This is the main conceptual lock of the source chapter. The later scalar and shift sectors are not arbitrary pieces of notation. They descend from a source split already present in the momentum bookkeeping.
+This is the main conceptual lock of the source layer. The later scalar and shift sectors are not arbitrary pieces of notation. They descend from a source split already present in the momentum bookkeeping.
 
 The subscript $k$ labels the chosen direction used in this source split. It should not be confused with the core momentum $M$ introduced in Foundations. Here $M_k$ is a source package, not a component of a particle's core momentum.
 

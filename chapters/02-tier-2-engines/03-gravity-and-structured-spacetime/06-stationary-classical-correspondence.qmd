@@ -1,6 +1,6 @@
 ## Stationary Classical Correspondence
 
-The previous chapters built the stationary gravity pipeline in M1 language:
+The previous sections built the stationary gravity pipeline in M1 language:
 
 $$
 J_k^\pm
@@ -12,9 +12,9 @@ J_k^\pm
 \text{local observer bookkeeping}.
 $$
 
-This chapter collects the classical comparison material in one place. Its purpose is not to replace the M1 variables with classical density, current, or metric notation. Its purpose is to show how the M1 stationary field package is calibrated against the familiar stationary limits of gravity.
+This section collects the classical comparison material in one place. Its purpose is not to replace the M1 variables with classical density, current, or metric notation. Its purpose is to show how the M1 stationary field package is calibrated against the familiar stationary limits of gravity.
 
-That ordering matters. The previous chapters did not start from classical density, current, or metric variables and then rename them. They first built a native map from positive momentum-source channels into scalar-well and directional field structure. The correspondence task is to check how that native map faces the familiar stationary language once the M1 construction is already on the table.
+That ordering matters. The previous sections did not start from classical density, current, or metric variables and then rename them. They first built a native map from positive momentum-source channels into scalar-well and directional field structure. The correspondence task is to check how that native map faces the familiar stationary language once the M1 construction is already on the table.
 
 ### Source-density calibration
 
@@ -178,8 +178,8 @@ $$
 A_i \leftrightarrow \text{stationary shift}.
 $$
 
-It also keeps the status of those faces clear. Classical density, current, and metric notation are calibration and comparison tools. The main M1 route remains the directional-positive source-to-field map built in the previous chapters.
+It also keeps the status of those faces clear. Classical density, current, and metric notation are calibration and comparison tools. The main M1 route remains the directional-positive source-to-field map built in the previous sections.
 
-The supporting calibration sheet for this chapter is collected in Appendix 3.6A.
+The supporting calibration sheet for this section is collected in Appendix 3.6A.
 
 What has been established here is stationary correspondence, not primitive ontology. What has not been established is a complete time-dependent gravity theory. The next section therefore changes scope carefully: it asks which pieces of the scalar-well and shift grammar survive when the field representation itself becomes nonstationary.

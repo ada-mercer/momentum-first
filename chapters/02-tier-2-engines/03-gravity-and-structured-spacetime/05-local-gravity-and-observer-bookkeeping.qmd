@@ -1,10 +1,10 @@
 ## Local Gravity and Observer Bookkeeping
 
-The previous chapter built the stationary field. This chapter turns to the local question: how is that field read by matter and observers?
+The previous section built the stationary field. This section turns to the local question: how is that field read by matter and observers?
 
 That question matters because the field variables themselves are not yet the whole physical story. A scalar well or a shift field becomes physically meaningful only when the framework can say how local clocking, transport, and packaged magnitudes are altered in its presence. The point of observer bookkeeping is therefore not to add extra ornament to the field theory. It is to connect the structured stationary condition to local physical reading without blurring together what is contextual, what is transported, and what remains globally conserved.
 
-The local observer is not reading gravity from a distant source in one step. It is reading the structured stage at its own location. A clock samples that structure through its cycle-carrying fermic scale. A moving particle samples it through transported momentum. A rotating or directional background samples it through the shift side of the bookkeeping. The variables in this chapter are the minimal grammar for those local readings.
+The local observer is not reading gravity from a distant source in one step. It is reading the structured stage at its own location. A clock samples that structure through its cycle-carrying fermic scale. A moving particle samples it through transported momentum. A rotating or directional background samples it through the shift side of the bookkeeping. The variables in this section are the minimal grammar for those local readings.
 
 ### Local contextualization of the fermic scale
 
@@ -14,7 +14,7 @@ $$
 p_{f,c}(x) = p_f G(x).
 $$
 
-Here $G(x) = \sqrt{1 - 2\theta_0(x)}$ is the scalar clock factor introduced in the previous chapter. This relation states the central gravity-side reading of the stationary background: the local fermic scale is dressed by context.
+Here $G(x) = \sqrt{1 - 2\theta_0(x)}$ is the scalar clock factor introduced in the previous section. This relation states the central gravity-side reading of the stationary background: the local fermic scale is dressed by context.
 
 That is the cleanest M1 expression of gravitational clock slowing in the stationary regime. The field does not first act by changing an external time parameter. It changes the local cycle-carrying scale through which clocks are read.
 
