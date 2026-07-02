@@ -42,6 +42,17 @@ Suggested interpretation:
 - **minor** = substantial manuscript milestone
 - **patch** = corrective cleanup to an already meaningful release
 
+## Milestone notes
+
+### 0.4.0-dev — Gravity shift calibration branch
+
+Planned next milestone shape after `v0.3.2`:
+
+- audited the stationary gravitomagnetic coefficient end to end and fixed the current-convention shift calibration at `kappa_A = 4`;
+- kept the factor out of the primitive source grammar and placed it in the GR-facing shift packaging `A_i = -kappa_A theta_i^perp`;
+- added the frame-drag coefficient audit and null-channel source diagnostic appendices;
+- recorded the remaining derivation debt: the null-channel route and a future boost-consistency derivation must independently force the audited value before `kappa_A` graduates from calibration to derived structure.
+
 ## Workflows
 
 ### 1. GitHub Pages site deploy
