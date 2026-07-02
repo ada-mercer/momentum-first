@@ -44,7 +44,7 @@ Suggested interpretation:
 
 ## Milestone notes
 
-### 0.4.0-dev — Gravity shift calibration branch
+### 0.3.3-dev — Gravity shift calibration branch
 
 Planned next milestone shape after `v0.3.2`:
 
