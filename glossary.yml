@@ -1,1 +1,24 @@
-[]
+kappa_A:
+  term: "$\\kappa_A$"
+  definition: >
+    Dimensionless shift-calibration constant in the stationary gravity packaging
+    $A_i=-\\kappa_A\\theta_i^\\perp$. In the current conventions the frame-drag
+    coefficient audit fixes $\\kappa_A=4$; it remains a calibrated constant until
+    the derivation track independently forces that value.
+
+null_source_channels:
+  term: "null source channels"
+  definition: >
+    Conditional derivation-track reading in which the positive directional
+    source channels are compared with stress-tensor contractions
+    $T(l_k^\\pm,l_k^\\pm)$ along the null probes $l_k^\\pm=(1,\\pm e_k)$.
+    This diagnostic explains the native factor-four counting without replacing
+    the primitive $J_k^\\pm$ source grammar.
+
+momentum_presentation_tensor:
+  term: "momentum-presentation tensor"
+  definition: >
+    Interpretive reading of the stress tensor as an object that reports how much
+    momentum content a system presents to a chosen probe direction. In the
+    null-channel diagnostic, this reading motivates evaluating $T_{\\mu\\nu}$
+    on paired null probes attached to each spatial axis.
