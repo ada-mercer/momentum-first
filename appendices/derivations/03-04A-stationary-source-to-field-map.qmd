@@ -169,4 +169,6 @@ J_k^\pm
 (G,A_i,B_{ij}).
 $$
 
+In the packaging step, the scalar sector enters through $G=\sqrt{1-2\theta_0}$ and the directional sector through $A_i=-\kappa_A\,\theta_i^\perp$, where $\kappa_A$ is a dimensionless calibration constant of the GR-facing packaging. Its value ($\kappa_A=4$ in current conventions) is fixed by the correspondence audit recorded in Derivation 3.6B; nothing in the source-to-field map itself depends on it.
+
 The important structural result is not merely that M1 can reproduce familiar variables later. It is that the primitive momentum-channel source already maps cleanly into the scalar and directional field sectors before the GR-facing dictionary is applied.

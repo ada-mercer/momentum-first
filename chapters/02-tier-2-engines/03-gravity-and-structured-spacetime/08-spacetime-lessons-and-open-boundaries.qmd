@@ -34,7 +34,7 @@ This chapter has repeatedly used correspondence language, and that is appropriat
 
 That pattern should be stated plainly. A successful correspondence result is not nothing, but it is also not automatically a full derivation. The gravity chapter therefore earns the right to speak confidently about some stationary structures while still keeping visible where the derivational burden remains.
 
-The main unfinished boundaries are now also clear enough to name. Exact native rotating-source closure remains open. Full nonlinear closure remains open. The tensor and radiative sectors remain first-pass rather than final. And the deeper ontological question of what spacetime ultimately is in M1 remains downstream of the gravity results rather than fully settled by them.
+The main unfinished boundaries are now also clear enough to name. Exact native rotating-source closure remains open. Full nonlinear closure remains open. The tensor and radiative sectors remain first-pass rather than final. The shift calibration $\kappa_A=4$ remains a calibrated constant rather than a derived one: the null-channel diagnostic and the planned boost-consistency derivation must independently force the audited value before it graduates. The spatial-sector construction — the $\gamma_{ij}$ deformation built from the even source channel — remains unbuilt, together with its expected absorption of one factor of $2$ out of $\kappa_A$. And the deeper ontological question of what spacetime ultimately is in M1 remains downstream of the gravity results rather than fully settled by them.
 
 ### The honest closing posture
 

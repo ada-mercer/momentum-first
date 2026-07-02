@@ -30,6 +30,8 @@ This expression is simple but important. It tells us that the local mechanical m
 
 The role of $\Pi_i$ is to keep transport gravity-first. The shift structure is not an afterthought. It changes the locally relevant transport bookkeeping directly.
 
+The shift potential entering this bookkeeping is the packaged object of the previous section, $A_i=-\kappa_A\,\theta_i^\perp$, with its calibration constant already included. The observer layer therefore reads a single shift object and carries no calibration freedom of its own: the coefficient question is settled once, at the packaging step. That this transport rule itself hides no additional coefficient is confirmed by the audit in Appendix 3.6B, which checks the linear response of the local energy to $A_i$ directly.
+
 This is where directional gravity becomes local. In a rotating stationary situation, for example, the observer does not merely add a later correction to a scalar clock factor. The local transport frame is already structured by $A_i$. Frame-drag-like behavior belongs here because it is a readout of directional deformation, not a decorative GR comparison added after the fact.
 
 ### Local magnitude versus stationary generator

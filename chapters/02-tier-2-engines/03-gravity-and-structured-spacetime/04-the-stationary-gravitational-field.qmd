@@ -137,17 +137,21 @@ This is the direct stationary expression for the clock-depth package in terms of
 The shift potential is defined, in the main stationary convention, by
 
 $$
-A_i(r):=-\theta_i(r).
+A_i(r):=-\kappa_A\,\theta_i^\perp(r).
 $$
 
-Therefore
+Here $\theta_i^\perp$ is the stationary-admissible, transverse part of the directional field discussed above, and $\kappa_A$ is a dimensionless calibration constant belonging to this packaging step. Its value is not chosen in this section. It is fixed in the stationary correspondence section, where the shift sector is calibrated against the classical frame-drag readout; the audit that determines it is recorded in Appendix 3.6B. What matters here is the status of the constant: $\kappa_A$ lives in the GR-facing packaging of the field, not in the source grammar. The channels $J_k^\pm$ and their even and odd packages are not rescaled by it.
+
+Written out, the shift potential is
 
 $$
 A_i(r)
 =
--\frac{G_N}{c^3}\sum_k\int_\Sigma
-\frac{J_k^+(r')-J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+-\kappa_A\,\frac{G_N}{c^3}\sum_k\int_\Sigma
+\frac{J_k^+(r')-J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r',
 $$
+
+with the odd source read through its transverse part.
 
 The shift field also has circulation-like or rotational content,
 
@@ -268,9 +272,11 @@ $$
 and the directional field packages into
 
 $$
-A_i=-\theta_i,
+A_i=-\kappa_A\,\theta_i^\perp,
 \qquad
-B_{ij}=D_iA_j-D_jA_i.
+B_{ij}=D_iA_j-D_jA_i,
 $$
+
+with $\kappa_A$ the packaging calibration constant fixed in the stationary correspondence section.
 
 Classical density, current, and metric notation enter as correspondence checks only. The next section asks how the resulting stationary field is read locally by matter and observers.

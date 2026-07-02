@@ -105,6 +105,8 @@ $$
 
 This is a calibration statement, not a replacement of the native source grammar. It says how the M1 shift sector is recognized in the weak stationary current language.
 
+In packaged form, the M1 side composes as $A_i=-\kappa_A\,\theta_i^\perp$ with $\Delta\theta_i=-(4\pi G_N/c^3)\sum_kP_k\,e_{(k)i}$ and $\sum_kP_k\,e_{(k)i}\leftrightarrow j_i$, giving $\Delta A_i=\kappa_A\,(4\pi G_N/c^3)\,j_i^\perp$. Matching the comparison equation therefore fixes the packaging constant to $\kappa_A=4$. The end-to-end audit that determines this value, including the check that the observer cross term contributes no additional coefficient, is Derivation 3.6B.
+
 ## Metric-facing dictionary
 
 At weak-field stationary order, the metric-facing dictionary can be written schematically as

@@ -116,6 +116,46 @@ This equation should be read as a calibration and comparison statement. It does 
 
 The transverse condition is also a useful reminder. Not every raw directional source distribution is automatically a clean stationary shift input. In the stationary comparison problem, the directional source is read through its admissible or transverse part.
 
+On the M1 side, the ingredients of this comparison are already fixed. The native odd-sector field equation is
+
+$$
+\Delta\theta_i=-\frac{4\pi G_N}{c^3}\sum_kP_k\,e_{(k)i},
+$$
+
+the odd package is calibrated by $\sum_kP_k\,e_{(k)i}\leftrightarrow j_i$, with the same units bookkeeping as the even sector, and the shift potential is packaged as $A_i=-\kappa_A\,\theta_i^\perp$. Composing these gives
+
+$$
+\Delta A_i=\kappa_A\,\frac{4\pi G_N}{c^3}\,j_i^\perp.
+$$
+
+Matching this against the classical comparison equation above therefore fixes the packaging constant:
+
+$$
+\kappa_A=4.
+$$
+
+That single number deserves more than a silent substitution. The next subsection makes it explicit.
+
+### Shift calibration and the factor 4
+
+The scalar sector matched the classical limit with no leftover coefficient: the even calibration $\sum_kM_k\leftrightarrow c\rho$ fed straight into the Newtonian equation $\Delta U=4\pi G_N\rho$. The shift sector does not repeat that luxury. The M1 field map gives the scalar and directional fields with *equal* coefficients — both sectors ride the same $1/R$ kernel with the same $4\pi\kappa$ in the field equation — yet the classical gravitomagnetic equation demands $16\pi G_N/c^3$. A factor of $4$ separates the native odd-sector coefficient from the empirically anchored target, and that target is not negotiable: the Lense–Thirring readout behind it has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B.
+
+This chapter refuses to absorb that factor silently. It is not moved into the source channels, whose grammar is fixed by the directional-positive construction, and it is not smeared into the current calibration, which is pinned by the same units bookkeeping as the even sector. It is placed in one explicitly labeled constant, $\kappa_A$, in the packaging step $A_i=-\kappa_A\,\theta_i^\perp$ — and its value is determined by audit rather than assumed. Appendix 3.6B runs the full stationary pipeline end to end, from a rotating source through $P_k$, $\theta_i$, and $A_i$ into the observer cross term and the precession readout, against the general-relativistic result. Two findings matter.
+
+First, the observer layer is innocent. One could suspect that the transport bookkeeping $\Pi_i=p_i-p_{f,c}A_i$, entering the local magnitude quadratically, supplies a factor of $2$ through its cross term. The audit checks this directly: the linear response of the local energy to $A_i$ carries unit coefficient, exactly as the corresponding GR energy responds to its shift. No part of the factor hides in the observer readout.
+
+Second, the whole factor therefore lands in the packaging, and its audited value is
+
+$$
+\kappa_A=4.
+$$
+
+Physically, this $4$ is not one mystery but two familiar factors of $2$. One factor of $2$ is the even-source sharing effect: in the classical description, the source that builds the scalar well also curves the spatial sector, and the shift readout of a moving body feels both. M1 currently matches the scalar sector through the clock factor $G$ alone and has not yet built the spatial-sector counterpart, so the shift calibration must carry that share on its behalf. The other factor of $2$ is the velocity cross-term structure of the test-body response — the same doubling that separates magnetic-type forces from naive scalar analogy in the classical gravitomagnetic equations.
+
+This reading comes with a bookkeeping obligation. The spatial-sector construction — a $\gamma_{ij}$ deformation built from the even source channel — is named future work in this book. When it lands, it is expected to absorb one of the two factors of $2$ out of $\kappa_A$: the calibration constant of the shift packaging should then be re-audited and is expected to come out as $2$, with the other factor carried by the spatial sector where it physically belongs. Stating this now prevents the same factor from ever being counted twice.
+
+Finally, the status of the number should be said plainly. $\kappa_A=4$ is a calibration, not a derivation. The framework has measured what its own conventions require in the frame-drag regime; it has not yet explained why. A derivation-track route exists — the null-channel source diagnostic of Appendix 3.3A already produces the factor $4$ natively under a further identification — and a boost-consistency derivation is planned. The lock criterion is fixed in advance: $\kappa_A$ graduates from calibration to derived structure only when those two independent routes force the audited value. Until then, the factor $4$ stands in the ledger as an honest debt, visible and priced.
+
 ### Metric-facing dictionary
 
 For comparison with familiar stationary geometry, the weak-field dictionary may be written schematically as
@@ -175,7 +215,9 @@ $$
 \qquad
 \theta_0 \leftrightarrow U,
 \qquad
-A_i \leftrightarrow \text{stationary shift}.
+A_i \leftrightarrow \text{stationary shift},
+\qquad
+\kappa_A=4.
 $$
 
 It also keeps the status of those faces clear. Classical density, current, and metric notation are calibration and comparison tools. The main M1 route remains the directional-positive source-to-field map built in the previous sections.
