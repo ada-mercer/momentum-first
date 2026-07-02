@@ -1,0 +1,194 @@
+# Derivation 3.6B — Frame-drag coefficient audit {#sec-derivation-03-06B-frame-drag-audit .unnumbered}
+
+## Purpose
+
+This appendix supports the shift-calibration subsection of Chapter 3.6. It determines the value of the shift-calibration constant $\kappa_A$ in the packaging
+
+$$
+A_i := -\kappa_A\,\theta_i^\perp
+$$
+
+by running the stationary pipeline end to end in the current manuscript conventions:
+
+$$
+\text{rotating source}
+\longrightarrow
+P_k
+\longrightarrow
+\theta_i
+\longrightarrow
+A_i
+\longrightarrow
+\Pi_i \text{ cross term}
+\longrightarrow
+\text{precession readout},
+$$
+
+and comparing the result against the general-relativistic Lense–Thirring readout that carries the empirical frame-drag record.
+
+The audit was performed before any mainline prose fixed the value. In particular, it was not assumed in advance that the observer-side cross term is inert: the transport bookkeeping $\Pi_i = p_i - p_{f,c}A_i$ enters the local magnitude quadratically, and its cross term could in principle have supplied a factor of $2$ on its own. Whether it does is one of the questions the audit answers.
+
+## Role / regime / status
+
+- **Role:** correspondence and calibration audit. This is not a derivation of $\kappa_A$ from M1 first principles; it is the measurement of what value the current conventions require in the regime where frame drag is tested.
+- **Regime:** stationary, weak field, slow-motion source and test body (the Lense–Thirring regime; LAGEOS and Gravity Probe B live here).
+- **Status:** audited; the numeric check is recorded in `scripts/audit_frame_drag_coefficient.py` and its output is reproduced below.
+- **Non-claim:** the audit does not explain why the audited value arises from deeper structure. The derivation-track discussion of that question lives in Derivation 3.3A and in the planned boost-consistency appendix.
+
+## Conventions under audit
+
+The audit uses the stationary conventions exactly as built in Chapters 3.3–3.6:
+
+$$
+\Delta\theta_i=-4\pi\kappa\sum_kP_k\,e_{(k)i},
+\qquad
+\kappa=\frac{G_N}{c^3},
+$$
+
+with the odd-package calibration from the correspondence section,
+
+$$
+\sum_kP_k\,e_{(k)i}\longleftrightarrow j_i,
+$$
+
+where $j_i$ is the transverse mass-current density, and the observer bookkeeping
+
+$$
+p_{f,c}=p_fG,
+\qquad
+\Pi_i=p_i-p_{f,c}A_i,
+\qquad
+M_{g,loc}=\sqrt{p_{f,c}^2+\gamma^{ij}\Pi_i\Pi_j}.
+$$
+
+The one deliberately open element is the packaging coefficient: $A_i=-\kappa_A\theta_i^\perp$ with $\kappa_A$ symbolic throughout the audit.
+
+## Step 1 — Rotating source to directional field
+
+Take a rigidly rotating homogeneous ball of radius $a$, density $\rho$, and angular velocity $\omega$, so that the calibrated odd source is the mass current $j_i=\rho\,(\omega\times r')_i$ with total angular momentum $J=\tfrac{2}{5}Ma^2\omega$.
+
+For any stationary compact current distribution, the exterior field integral obeys the dipole identity
+
+$$
+\int_\Sigma\frac{j_i(r')}{\|r-r'\|}\,d^3r'
+=\frac{(J\times r)_i}{2r^3},
+$$
+
+so the M1 directional field outside the source is
+
+$$
+\theta_i(r)
+=\frac{G_N}{c^3}\,\frac{(J\times r)_i}{2r^3}.
+$$
+
+The dipole identity is verified numerically in the recorded script (check 1) rather than assumed.
+
+## Step 2 — GR target field
+
+In the same regime, the harmonic-gauge Lense–Thirring metric perturbation is
+
+$$
+h_{0i}(r)
+=-\frac{4G_N}{c^3}\int_\Sigma\frac{j_i(r')}{\|r-r'\|}\,d^3r'
+=-\frac{2G_N}{c^3}\,\frac{(J\times r)_i}{r^3},
+$$
+
+the weak-field limit of the Kerr shift. This is the field whose readout has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B. It is the empirically non-negotiable side of the comparison.
+
+## Step 3 — Observer response on both sides
+
+The comparison must happen at the level of what a test body actually reads, not at the level of raw field symbols, because the two formalisms package the shift differently.
+
+On the M1 side, expanding the local energy $cM_{g,loc}$ to first order in $A_i$ gives
+
+$$
+cM_{g,loc}
+\approx cM_0-\frac{p_{f,c}}{M_0}\,c\,A_ip^i,
+\qquad
+M_0=\sqrt{p_{f,c}^2+p^2},
+$$
+
+so the shift-sensitive interaction term is $-c\,A_ip^i$ at slow motion, where $p_{f,c}/M_0\to1$.
+
+On the GR side, solving the stationary weak-field mass shell for the energy gives the cross term
+
+$$
+\delta E=-c\,h_{0i}\,p^i,
+$$
+
+again with unit coefficient. This is the decisive intermediate finding of the audit: **the $\Pi_i$ cross term supplies no factor of $2$.** Although the M1 shift enters quadratically inside $M_{g,loc}$ while the GR shift enters linearly in the ADM-form energy, their linear responses to the respective shift fields are identical at leading order (check 2 in the recorded script confirms both coefficients numerically). The two observer layers therefore match exactly when the fields themselves match,
+
+$$
+A_i=h_{0i}.
+$$
+
+## Step 4 — Coefficient extraction
+
+Substituting the fields from Steps 1 and 2 into $A_i=-\kappa_A\theta_i$ and $A_i=h_{0i}$:
+
+$$
+-\kappa_A\,\frac{G_N}{c^3}\,\frac{(J\times r)_i}{2r^3}
+=-\frac{2G_N}{c^3}\,\frac{(J\times r)_i}{r^3}
+\quad\Longrightarrow\quad
+\boxed{\kappa_A=4.}
+$$
+
+The recorded script extracts the same value numerically across sampled exterior points (check 3), with zero spread: the coefficient is position independent, as a calibration constant must be.
+
+The coefficient ledger, stated so nothing is absorbed silently:
+
+- the Green kernel of $\theta_i$ is the same $1/R$ kernel as the scalar sector — no factor hides there;
+- the calibration $\sum_kP_ke_{(k)i}\leftrightarrow j_i$ is fixed by the units bookkeeping already used for the even sector — no factor hides there;
+- the observer cross term carries unit coefficient on both sides — no factor hides there;
+- therefore the entire factor of $4$ lands in the packaging constant $\kappa_A$, which is exactly where the mainline text now declares it.
+
+## Step 5 — Precession endpoint
+
+With $\kappa_A=4$, the M1 interaction term becomes
+
+$$
+-c\,A_ip^i
+=\frac{2G_N}{c^2}\,\frac{J\cdot L}{r^3},
+\qquad
+L=r\times p,
+$$
+
+which is the standard Lense–Thirring interaction Hamiltonian (check 4 in the recorded script verifies the identity to machine precision). From this point the observable consequences follow identically on both sides, because the effective Hamiltonians coincide: the nodal precession of an orbiting body,
+
+$$
+\Omega_{\text{node}}
+=\frac{2G_NJ}{c^2a^3(1-e^2)^{3/2}},
+$$
+
+tested by the LAGEOS satellites, and the gyroscope frame-dragging precession tested by Gravity Probe B. No further coefficient choice remains downstream of $\kappa_A$.
+
+## Auditable check
+
+The full numeric audit is `scripts/audit_frame_drag_coefficient.py` (Python, NumPy only, consistent with the project CI environment). It exits nonzero if any check fails. Recorded output:
+
+```text
+[1] exterior dipole identity   worst rel. error = 4.28e-04
+[2] cross-term coefficient     M1 = 1.000000   GR = 1.000000
+[3] extracted kappa_A          4.000000000000   spread = 0.00e+00
+[4] Lense-Thirring endpoint    worst rel. error = 3.69e-14
+AUDIT PASSED: kappa_A = 4 in current conventions; Pi cross term
+contributes no additional factor.
+```
+
+## Result
+
+In the current manuscript conventions, the shift-calibration constant is
+
+$$
+\kappa_A=4,
+$$
+
+and the observer-side cross term contributes no additional factor: the full gravitomagnetic factor of $4$ lives in the field-packaging step and nowhere else.
+
+## Notes
+
+Two boundary remarks keep the audit honest.
+
+First, the audited value holds at leading order in $v/c$. At higher velocity orders the two packagings genuinely differ in structure: the M1 shift enters the local magnitude quadratically (minimal-coupling-like), while the GR shift enters the stationary energy linearly (ADM-like), so their responses separate at $O(v^2/c^2)$ relative corrections. That regime is outside the present stationary weak-field audit and outside the current frame-drag experimental record; it is flagged as future derivation-track territory, not as an ambiguity in the stationary calibration.
+
+Second, this appendix fixes the number but does not upgrade its status. $\kappa_A=4$ remains a calibration constant until the derivation track earns it independently; the lock criterion is stated in Chapter 3.6 and Derivation 3.3A.

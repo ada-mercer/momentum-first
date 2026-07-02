@@ -13,6 +13,7 @@ project:
   - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
   - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
   - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
+  - appendices/derivations/03-06B-frame-drag-coefficient-audit.qmd
   - appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
   - appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
   - appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
@@ -48,6 +49,7 @@ book:
     - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
     - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
     - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
+    - appendices/derivations/03-06B-frame-drag-coefficient-audit.qmd
     - appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
     - appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
     - appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
