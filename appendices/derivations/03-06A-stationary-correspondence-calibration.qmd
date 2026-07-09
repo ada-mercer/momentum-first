@@ -27,34 +27,34 @@ $$
 [\rho]=\mathrm{kg\,m^{-3}}.
 $$
 
-The extra factor is one power of velocity. In the static isotropic scalar correspondence, the even M1 packages therefore satisfy
+The extra factor is one power of velocity. Under the carrier map, the even package is the same direction-blind core-momentum density on every axis,
 
 $$
-\sum_k \mathcal{M}_k \longleftrightarrow c\rho.
+\mathcal{M}_k=\mathcal{M}=\varrho .
 $$
 
-For an isotropic static source, a convenient axis-wise representation is
+In the static scalar correspondence this single even source calibrates as
 
 $$
-\mathcal{M}_x=\mathcal{M}_y=\mathcal{M}_z=\frac{c\rho}{3},
+\mathcal{M}\longleftrightarrow c\rho.
 $$
 
-or, when the directional imbalance vanishes,
+For a static source with no directional imbalance,
 
 $$
-\mathcal{J}_k^+=\mathcal{J}_k^-=\frac{c\rho}{3},
+\mathcal{J}_k^+=\mathcal{J}_k^-=c\rho,
 \qquad
 \mathcal{P}_k=0.
 $$
 
-The six positive channels are not six copies of the classical source. They are a directional-positive representation whose even packages compress to the scalar classical source in the static overlap.
+The six positive channels are not six independent classical sources. They are three directional-positive readings of the same direction-blind even package; the scalar field reads that common package once, not as an axis sum.
 
 ## Newtonian scalar limit
 
 The M1 scalar equation is
 
 $$
-\Delta\theta_0=-\frac{4\pi G_N}{c^3}\sum_k\mathcal{M}_k.
+\Delta\theta_0=-\frac{4\pi G_N}{c^3}\mathcal{M}.
 $$
 
 Using the static isotropic calibration gives
@@ -128,7 +128,7 @@ The scalar package supplies the clock-depth or lapse-like side. The directional 
 The stationary correspondence layer establishes the classical faces
 
 $$
-\sum_k\mathcal{M}_k\leftrightarrow c\rho,
+\mathcal{M}\leftrightarrow c\rho,
 \qquad
 \theta_0\leftrightarrow U,
 \qquad

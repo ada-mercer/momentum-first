@@ -89,12 +89,20 @@ $$
 
 outward stress somewhere is balanced by tension elsewhere. In the box-of-photons case, the classical accounting gives the gas weight $2\varepsilon/c^2$-per-volume and the tense walls a matching negative stress contribution; summed, the extra weights cancel and the isolated total is the content — which is what the carrier map assigns directly, with nothing to cancel.
 
-This identity controls the zeroth moment: it fixes the total source weight. It does not, by itself, remove pressure or stress second moments such as $\int T_{kk}x_ix_j\,d^3r$, so it does not guarantee equality of exterior multipoles for aspherical bodies.
+This identity controls the zeroth moment. In the stationary weak-field correspondence problem, that means the total source weight and monopole agree for isolated stationary systems. For a spherically symmetric source, the exterior field is fixed by that monopole, so the full exterior agrees in the spherical case.
+
+The identity does not remove higher moments. Pressure or stress second moments such as
+
+$$
+\int T_{kk}x_ix_j\,d^3r
+$$
+
+need not vanish for an aspherical body. Thus the same cancellation that protects the total weight does not guarantee equality of exterior quadrupoles or higher multipoles. The regime statement is part of the claim: this reconciliation is a stationary, isolated-system, weak-field correspondence result, not a proof that local stress apportioning is physically identical in all source geometries.
 
 Consequences, stated with their status:
 
 - **Agreement (theorem-level, weak field):** total source weight agrees for all isolated stationary systems. The full exterior field also agrees for spherically symmetric sources, where the exterior is fixed by the monopole.
-- **Divergence (prediction, registered in Chapter 3.8):** local apportioning differs. Interior field profiles of pressurized bodies differ at fractional order $p/\rho c^2$; aspherical pressurized bodies can also differ in exterior multipoles at the same order, because the pressure/stress quadrupole need not cancel. Strong-field dense-star structure differs qualitatively, since the classical interior equations lean on local pressure gravitation and M1's do not; radiation-dominated cosmological dynamics belongs, in M1, to the translation-yield engine $\chi(t)$ rather than to this source layer.
+- **Divergence (prediction, registered in Chapter 3.8):** local apportioning differs. Interior field profiles of pressurized bodies differ at fractional order $p/\rho c^2$; aspherical pressurized bodies can also differ in exterior multipoles at the same order, because the pressure/stress quadrupole need not cancel. Strong-field dense-star structure becomes a Tier 3 target for a derived M1 hydrostatic-equilibrium equation, since the classical interior equations lean on local pressure gravitation and M1's do not; radiation-dominated cosmological dynamics belongs, in M1, to the translation-yield engine $\chi(t)$ rather than to this source layer.
 
 ## Relation to the superseded presentation rule
 

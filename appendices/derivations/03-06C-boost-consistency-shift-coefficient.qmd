@@ -53,8 +53,8 @@ The relation is a two-parameter family, and stating it as a family is the honest
 
 | $\sigma$ | $\eta=1$ (carrier map) | $\eta=4$ (null route, static-calibrated) |
 |---:|---:|---:|
-| $0$ | $\kappa_A=2$ | $\kappa_A=3/2$ |
-| $1$ | $\kappa_A=4$ | $\kappa_A=3$ |
+| $0$ | $\kappa_A=2$ | $\kappa_A=1/2$ |
+| $1$ | $\kappa_A=4$ | $\kappa_A=1$ |
 
 With the derived inputs $\eta=1$ and $\sigma=1$,
 

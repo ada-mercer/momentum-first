@@ -44,19 +44,7 @@ Suggested interpretation:
 
 ## Milestone notes
 
-### 0.3.3-dev — Gravity shift calibration branch
-
-Planned next milestone shape after `v0.3.2`:
-
-- audited the stationary gravitomagnetic coefficient end to end and fixed the current-convention shift calibration at `kappa_A = 4`;
-- kept the factor out of the primitive source grammar and placed it in the GR-facing shift packaging `A_i = -kappa_A theta_i^perp`;
-- added the frame-drag coefficient audit and null-channel source diagnostic appendices;
-- recorded the remaining derivation debt: the null-channel route and a future boost-consistency derivation must independently force the audited value before `kappa_A` graduates from calibration to derived structure.
-
-### Draft — Gravity derived-pipeline milestone (target: v0.4.0)
-
-Working-tree draft entry for the next milestone; the commit/release session decides
-the final version number.
+### 0.3.3 — Gravity derived-pipeline and appendix restructure
 
 - promoted the stationary gravity source layer to a native carrier source map:
   `mathcal J_k^pm` is the density of `M pm p_k/2`, giving
@@ -78,6 +66,10 @@ the final version number.
   (null-probe diagnostic and no-go), Appendix 3.3C (momentum-manifestation
   dictionary, no vacuum row), Appendix 3.4B (depth = stretch), and Appendix 3.6C
   (boost consistency);
+- strengthened the Chapter 3 source-to-field pipeline: the six ADMC source
+  channels now explicitly reduce by even/odd projection to the four-component
+  stationary deformation package `(theta_0, theta_i)`, with Appendix 3.4A
+  carrying the compact projection lemma while preserving SI/P2 boundaries;
 - recorded the two named premises (SI source identification, P2 comoving-cycle
   readout) with their independent checks as the remaining hardening targets;
 - promoted the derivation-check scripts `check_carrier_source_map.py` and
