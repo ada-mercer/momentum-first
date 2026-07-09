@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _book
+  pre-render:
+  - scripts/build_manuscript_status.py
   render:
   - index.qmd
   - chapters/00-front-matter/00-preface/index.qmd
@@ -10,22 +12,26 @@ project:
   - chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
   - chapters/02-tier-2-engines/05-expansion/index.qmd
   - appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
-  - appendices/derivations/03-03A-null-channel-source-diagnostic.qmd
+  - appendices/derivations/03-03A-carrier-source-map.qmd
+  - appendices/derivations/03-03B-null-probe-diagnostic.qmd
+  - appendices/derivations/03-03C-momentum-manifestations.qmd
   - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
+  - appendices/derivations/03-04B-depth-equals-stretch.qmd
   - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
   - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
   - appendices/derivations/03-06B-frame-drag-coefficient-audit.qmd
+  - appendices/derivations/03-06C-boost-consistency-shift-coefficient.qmd
   - appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
   - appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
   - appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
   - appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
   - appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
+  - backmatter/manuscript-status.qmd
   - references.qmd
 book:
   title: Momentum First
   author:
   - Arne Klaveness
-  - Ada Mercer
   downloads:
   - pdf
   sharing:
@@ -47,16 +53,21 @@ book:
   - part: Appendices
     chapters:
     - appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
-    - appendices/derivations/03-03A-null-channel-source-diagnostic.qmd
+    - appendices/derivations/03-03A-carrier-source-map.qmd
+    - appendices/derivations/03-03B-null-probe-diagnostic.qmd
+    - appendices/derivations/03-03C-momentum-manifestations.qmd
     - appendices/derivations/03-04A-stationary-source-to-field-map.qmd
+    - appendices/derivations/03-04B-depth-equals-stretch.qmd
     - appendices/derivations/03-05A-local-observer-bookkeeping.qmd
     - appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
     - appendices/derivations/03-06B-frame-drag-coefficient-audit.qmd
+    - appendices/derivations/03-06C-boost-consistency-shift-coefficient.qmd
     - appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
     - appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
     - appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
     - appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
     - appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
+  - backmatter/manuscript-status.qmd
 bibliography: bibliography.bib
 glossary: glossary.yml
 profile:

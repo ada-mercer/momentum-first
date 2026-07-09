@@ -37,7 +37,7 @@ $$
 j_i^\perp.
 $$
 
-Primitive `J_k^\pm`, `M_k`, and `P_k` detail remains upstream in the source grammar.
+Primitive `\mathcal{J}_k^\pm`, `\mathcal{M}_k`, and `\mathcal{P}_k` detail remains upstream in the source grammar.
 
 ## Exact linear field block
 

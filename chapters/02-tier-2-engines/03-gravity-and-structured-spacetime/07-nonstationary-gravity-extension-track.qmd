@@ -2,7 +2,7 @@
 
 Up to this point the gravity chapter has stayed inside the achieved stationary backbone. That was the right place to begin, but it is no longer the whole story. The nonstationary gravity program has now matured enough that it deserves explicit structural room.
 
-The right way to present that room is as an extension track, not as a replacement for the stationary package. The stationary backbone remains the main achieved package. The nonstationary layer now adds a real first-pass closure package above it, with explicit maturity labels attached to each further step.
+The right way to present that room is as an extension track, not as a replacement for the stationary package. The stationary backbone remains the main achieved package — now with its weak-field coefficients derived rather than calibrated, so the extension track below inherits a pipeline with no tuned constants in it. The nonstationary layer now adds a real first-pass closure package above it, with explicit maturity labels attached to each further step.
 
 ### The locked linear baseline
 
@@ -46,7 +46,7 @@ The field block, retarded solutions, stationary recovery, and benchmark checks a
 
 Above the linear baseline sit two additional layers, both real, both bounded.
 
-The first is a promoted nonlinear scalar and shift closure family. Its role is to let the scalar channel self-source, let shift-field energy feed back into the scalar well, and allow the scalar background to dress the odd-current coupling. This family is organized enough to cite and compare, but it remains coefficient-conditional.
+The first is a promoted nonlinear scalar and shift closure family. Its role is to let the scalar channel self-source, let shift-sector field content feed back into the scalar well, and allow the scalar background to dress the odd-current coupling. This family is organized enough to cite and compare, but it remains coefficient-conditional.
 
 The second is a disciplined tensor slot. In its current form the spatial structure is written as an isotropic scalar-led piece together with a transverse traceless anisotropic piece. That gives the nonstationary program a real home for anisotropic and radiative structure without pretending that a full radiative gravity theory has already been completed.
 

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This appendix supports the shift-calibration subsection of Chapter 3.6. It determines the value of the shift-calibration constant $\kappa_A$ in the packaging
+This appendix supports the derived-coefficient subsection of Chapter 3.6. It is the endpoint correspondence check of the shift coefficient $\kappa_A$ in the packaging
 
 $$
 A_i := -\kappa_A\,\theta_i^\perp
@@ -13,7 +13,7 @@ by running the stationary pipeline end to end in the current manuscript conventi
 $$
 \text{rotating source}
 \longrightarrow
-P_k
+\mathcal{P}_k
 \longrightarrow
 \theta_i
 \longrightarrow
@@ -30,25 +30,25 @@ The audit was performed before any mainline prose fixed the value. In particular
 
 ## Role / regime / status
 
-- **Role:** correspondence and calibration audit. This is not a derivation of $\kappa_A$ from M1 first principles; it is the measurement of what value the current conventions require in the regime where frame drag is tested.
+- **Role:** correspondence check of the derived coefficient. The value $\kappa_A=4$ is derived by the chain of Derivations 3.3A, 3.4B, and 3.6C; this audit independently measures what value the conventions require in the regime where frame drag is tested, and confirms that the derived and required values coincide.
 - **Regime:** stationary, weak field, slow-motion source and test body (the Lense–Thirring regime; LAGEOS and Gravity Probe B live here).
 - **Status:** audited; the numeric check is recorded in `scripts/audit_frame_drag_coefficient.py` and its output is reproduced below.
-- **Non-claim:** the audit does not explain why the audited value arises from deeper structure. The derivation-track discussion of that question lives in Derivation 3.3A and in the planned boost-consistency appendix.
+- **Non-claim:** the audit is the endpoint validation of the derived value, not its source. The derivation chain lives in Derivations 3.3A, 3.4B, and 3.6C.
 
 ## Conventions under audit
 
 The audit uses the stationary conventions exactly as built in Chapters 3.3–3.6:
 
 $$
-\Delta\theta_i=-4\pi\kappa\sum_kP_k\,e_{(k)i},
+\Delta\theta_i=-4\pi\kappa\sum_k\mathcal{P}_k\,e_{(k)i},
 \qquad
 \kappa=\frac{G_N}{c^3},
 $$
 
-with the odd-package calibration from the correspondence section,
+with the odd-package convention (now derived from the carrier source map as the net bosic component, Derivation 3.3A),
 
 $$
-\sum_kP_k\,e_{(k)i}\longleftrightarrow j_i,
+\sum_k\mathcal{P}_k\,e_{(k)i}\longleftrightarrow j_i,
 $$
 
 where $j_i$ is the transverse mass-current density, and the observer bookkeeping
@@ -133,12 +133,12 @@ $$
 \boxed{\kappa_A=4.}
 $$
 
-The recorded script extracts the same value numerically across sampled exterior points (check 3), with zero spread: the coefficient is position independent, as a calibration constant must be.
+The recorded script extracts the same value numerically across sampled exterior points (check 3), with zero spread: the coefficient is position independent, as a packaging coefficient must be.
 
 The coefficient ledger, stated so nothing is absorbed silently:
 
 - the Green kernel of $\theta_i$ is the same $1/R$ kernel as the scalar sector — no factor hides there;
-- the calibration $\sum_kP_ke_{(k)i}\leftrightarrow j_i$ is fixed by the units bookkeeping already used for the even sector — no factor hides there;
+- the calibration $\sum_k\mathcal{P}_ke_{(k)i}\leftrightarrow j_i$ is fixed by the units bookkeeping already used for the even sector — no factor hides there;
 - the observer cross term carries unit coefficient on both sides — no factor hides there;
 - therefore the entire factor of $4$ lands in the packaging constant $\kappa_A$, which is exactly where the mainline text now declares it.
 
@@ -177,7 +177,7 @@ contributes no additional factor.
 
 ## Result
 
-In the current manuscript conventions, the shift-calibration constant is
+In the current manuscript conventions, the shift coefficient required by the frame-drag endpoint is
 
 $$
 \kappa_A=4,
@@ -191,4 +191,4 @@ Two boundary remarks keep the audit honest.
 
 First, the audited value holds at leading order in $v/c$. At higher velocity orders the two packagings genuinely differ in structure: the M1 shift enters the local magnitude quadratically (minimal-coupling-like), while the GR shift enters the stationary energy linearly (ADM-like), so their responses separate at $O(v^2/c^2)$ relative corrections. That regime is outside the present stationary weak-field audit and outside the current frame-drag experimental record; it is flagged as future derivation-track territory, not as an ambiguity in the stationary calibration.
 
-Second, this appendix fixes the number but does not upgrade its status. $\kappa_A=4$ remains a calibration constant until the derivation track earns it independently; the lock criterion is stated in Chapter 3.6 and Derivation 3.3A.
+Second, the division of labor should be kept sharp. The derivation chain (carrier map → depth=stretch → boost consistency; Derivations 3.3A, 3.4B, 3.6C) supplies the value; this audit supplies the empirical endpoint against which the assembled package is validated. The audit's independent force is that it was performed before the derivation chain closed, with $\kappa_A$ symbolic throughout — the chain had a fixed target it could not adjust to.

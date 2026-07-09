@@ -18,9 +18,9 @@ The key point is that a primitive positive momentum-channel source has a clean s
 For a chosen direction `k`, the primitive local source-density channels are
 
 $$
-J_k^+(x),
+\mathcal{J}_k^+(x),
 \qquad
-J_k^-(x).
+\mathcal{J}_k^-(x).
 $$
 
 The argument `x` marks the source location at which the channel density is defined. In the field integrals, the source point is written as `r'`, while the observation point is written as `r`.
@@ -28,7 +28,7 @@ The argument `x` marks the source location at which the channel density is defin
 In the stationary source normalization used here,
 
 $$
-[J_k^\pm]=\mathrm{kg\,s^{-1}m^{-2}}.
+[\mathcal{J}_k^\pm]=\mathrm{kg\,s^{-1}m^{-2}}.
 $$
 
 These are units of momentum content per spatial volume. The ordinary mass-density calibration is introduced later as correspondence language, not as the primitive source definition.
@@ -52,7 +52,7 @@ a positive channel element contributes
 $$
 d\theta_i(r;r')
 =
-\kappa\,\frac{J_k^+(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+\kappa\,\frac{\mathcal{J}_k^+(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
 $$
 
 The opposite channel contributes with the opposite directional sign,
@@ -60,7 +60,7 @@ The opposite channel contributes with the opposite directional sign,
 $$
 d\theta_i(r;r')
 =
--\kappa\,\frac{J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+-\kappa\,\frac{\mathcal{J}_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
 $$
 
 This is the elementary stationary source-to-field statement. The source is a positive directional momentum channel; the response is a directional field contribution with the same Green-kernel structure later used by the scalar package.
@@ -70,18 +70,20 @@ This is the elementary stationary source-to-field statement. The source is a pos
 Define
 
 $$
-M_k(x)=\frac{J_k^+(x)+J_k^-(x)}{2},
+\mathcal{M}_k(x)=\frac{\mathcal{J}_k^+(x)+\mathcal{J}_k^-(x)}{2},
 \qquad
-P_k(x)=J_k^+(x)-J_k^-(x).
+\mathcal{P}_k(x)=\mathcal{J}_k^+(x)-\mathcal{J}_k^-(x).
 $$
 
-The even package $M_k$ keeps what survives under directional sign reversal. The odd package $P_k$ keeps the directional imbalance. These are local source-density packages, not integrated source totals.
+The even package $\mathcal{M}_k$ keeps what survives under directional sign reversal. The odd package $\mathcal{P}_k$ keeps the directional imbalance. These are local source-density packages, not integrated source totals.
 
 The inverse bookkeeping is
 
 $$
-J_k^\pm(x)=M_k(x)\pm \tfrac12 P_k(x).
+\mathcal{J}_k^\pm(x)=\mathcal{M}_k(x)\pm \tfrac12 \mathcal{P}_k(x).
 $$
+
+Under the carrier source map (Derivation 3.3A) the even package is axis-independent, $\mathcal{M}_k(x)=\mathcal{M}(x)=\varrho(x)$, the local core-momentum density; the scalar sector therefore has a single source field and no axis sum appears in the scalar map below.
 
 ## Integrated stationary map
 
@@ -90,8 +92,8 @@ The scalar well is built from the even package:
 $$
 \theta_0(r)
 =
-\kappa\sum_k\int_\Sigma
-\frac{M_k(r')}{\|r-r'\|}\,d^3r'.
+\kappa\int_\Sigma
+\frac{\mathcal{M}(r')}{\|r-r'\|}\,d^3r'.
 $$
 
 The directional field is built from the odd package:
@@ -100,7 +102,7 @@ $$
 \theta_i(r)
 =
 \kappa\sum_k\int_\Sigma
-\frac{P_k(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+\frac{\mathcal{P}_k(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
 $$
 
 Equivalently, directly in the primitive channels,
@@ -108,8 +110,9 @@ Equivalently, directly in the primitive channels,
 $$
 \theta_0(r)
 =
-\frac{G_N}{2c^3}\sum_k\int_\Sigma
-\frac{J_k^+(r')+J_k^-(r')}{\|r-r'\|}\,d^3r',
+\frac{G_N}{2c^3}\int_\Sigma
+\frac{\mathcal{J}_k^+(r')+\mathcal{J}_k^-(r')}{\|r-r'\|}\,d^3r'
+\quad\text{(any fixed }k\text{)},
 $$
 
 and
@@ -118,7 +121,7 @@ $$
 \theta_i(r)
 =
 \frac{G_N}{c^3}\sum_k\int_\Sigma
-\frac{J_k^+(r')-J_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
+\frac{\mathcal{J}_k^+(r')-\mathcal{J}_k^-(r')}{\|r-r'\|}\,e_{(k)i}(r')\,d^3r'.
 $$
 
 Thus the field map preserves the source grammar: addition feeds scalar depth; directional imbalance feeds shift-like structure.
@@ -134,25 +137,26 @@ $$
 the integral equations imply
 
 $$
-\Delta\theta_0(r)=-4\pi\kappa\sum_kM_k(r),
+\Delta\theta_0(r)=-4\pi\kappa\,\mathcal{M}(r),
 $$
 
 and
 
 $$
-\Delta\theta_i(r)=-4\pi\kappa\sum_kP_k(r)e_{(k)i}(r).
+\Delta\theta_i(r)=-4\pi\kappa\sum_k\mathcal{P}_k(r)e_{(k)i}(r).
 $$
 
 In primitive-channel form,
 
 $$
 \Delta\theta_0(r)
-=-\frac{2\pi G_N}{c^3}\sum_k\left(J_k^+(r)+J_k^-(r)\right),
+=-\frac{2\pi G_N}{c^3}\left(\mathcal{J}_k^+(r)+\mathcal{J}_k^-(r)\right)
+\quad\text{(any fixed }k\text{)},
 $$
 
 $$
 \Delta\theta_i(r)
-=-\frac{4\pi G_N}{c^3}\sum_k\left(J_k^+(r)-J_k^-(r)\right)e_{(k)i}(r).
+=-\frac{4\pi G_N}{c^3}\sum_k\left(\mathcal{J}_k^+(r)-\mathcal{J}_k^-(r)\right)e_{(k)i}(r).
 $$
 
 ## Result
@@ -160,15 +164,15 @@ $$
 The stationary field route is
 
 $$
-J_k^\pm
+\mathcal{J}_k^\pm
 \longrightarrow
-(M_k,P_k)
+(\mathcal{M}_k,\mathcal{P}_k)
 \longrightarrow
 (\theta_0,\theta_i)
 \longrightarrow
 (G,A_i,B_{ij}).
 $$
 
-In the packaging step, the scalar sector enters through $G=\sqrt{1-2\theta_0}$ and the directional sector through $A_i=-\kappa_A\,\theta_i^\perp$, where $\kappa_A$ is a dimensionless calibration constant of the GR-facing packaging. Its value ($\kappa_A=4$ in current conventions) is fixed by the correspondence audit recorded in Derivation 3.6B; nothing in the source-to-field map itself depends on it.
+In the packaging step, the scalar sector enters through $G=\sqrt{1-2\theta_0}$ and the directional sector through $A_i=-\kappa_A\,\theta_i^\perp$, where $\kappa_A$ is the dimensionless coefficient of the GR-facing packaging. Its value ($\kappa_A=4$ in current conventions) is derived by the chain summarized in Chapter 3.6 (Derivations 3.3A, 3.4B, 3.6C) and validated against the frame-drag endpoint in Derivation 3.6B; nothing in the source-to-field map itself depends on it.
 
 The important structural result is not merely that M1 can reproduce familiar variables later. It is that the primitive momentum-channel source already maps cleanly into the scalar and directional field sectors before the GR-facing dictionary is applied.

@@ -12,27 +12,29 @@ The source layer names the momentum content that acts gravitationally. The field
 
 ### Source-side variables
 
-The source layer begins from the same directional-positive logic used in Foundations. For a chosen direction $k$, M1 does not begin with a signed directional quantity alone. It begins with two positive directional channels.
+The source layer begins from the same directional-positive logic used in Foundations. For a chosen direction $k$, M1 does not begin with a signed directional quantity alone. It begins with two positive directional channels: the local density of momentum content at a point, resolved into the two opposite senses of direction $k$.
 
 For gravitational sourcing, write these channels as
 
 $$
-J_k^+,
+\mathcal{J}_k^+,
 \qquad
-J_k^-.
+\mathcal{J}_k^-.
 $$
+
+Each is a local source-density field with units of kg/(s m$^2$) — momentum content per unit volume, sorted by directional sense. They are the field image of the directional-positive pair $M \pm \tfrac{1}{2}p_k$ that Foundations assigns to a single carrier, accumulated as a density over the carriers present at a point. Each channel is a positive directional total in its own right, never a signed component; the precise identification is developed in the next chapter.
 
 From these, two combinations are extracted
 
 $$
-M_k = \frac{J_k^+ + J_k^-}{2},
+\mathcal{M}_k = \frac{\mathcal{J}_k^+ + \mathcal{J}_k^-}{2},
 \qquad
-P_k = J_k^+ - J_k^-.
+\mathcal{P}_k = \mathcal{J}_k^+ - \mathcal{J}_k^-.
 $$
 
-The quantity $M_k$ is the even or additive source channel. It captures the source role that feeds the scalar-well side of gravity. The quantity $P_k$ is the odd or directional source channel. It captures the imbalance that feeds shift, rotation, and frame-drag-like structure.
+The quantity $\mathcal{M}_k$ is the even or additive source channel. It captures the source role that feeds the scalar-well side of gravity. The quantity $\mathcal{P}_k$ is the odd or directional source channel. It captures the imbalance that feeds shift, rotation, and frame-drag-like structure.
 
-Here the subscript $k$ labels the chosen direction used in the source split. It should not be confused with the core momentum $M$ introduced in Foundations. The point of $M_k$ is source bookkeeping: it names the even gravitational source package associated with direction $k$.
+Here the subscript $k$ labels the chosen direction used in the source split. It should not be confused with the core momentum $M$ introduced in Foundations. The point of $\mathcal{M}_k$ is source bookkeeping: it names the even gravitational source package associated with direction $k$.
 
 This is the source-side reason gravity is not introduced from a single undifferentiated scalar. A scalar density can be the right operational compression in a stationary overlap regime, but the primitive source story retains a directional split. The next section develops that split and shows how it is compressed into usable density and current variables.
 
@@ -103,9 +105,9 @@ Keeping them separate prevents a common confusion: local bookkeeping and station
 The stationary grammar can now be written compactly:
 
 $$
-(J_k^\pm)
+(\mathcal{J}_k^\pm)
 \to
-(M_k,P_k)
+(\mathcal{M}_k,\mathcal{P}_k)
 \to
 \text{scalar/directional deformation}
 \to

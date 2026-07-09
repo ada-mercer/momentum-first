@@ -1,0 +1,56 @@
+# Derivation 3.3B — Null-probe diagnostic and no-go {#sec-derivation-03-03B-null-probe-diagnostic .unnumbered}
+
+## Purpose
+
+This appendix records the literal null-contraction reading of the source channels: what it delivers, what it grounds, and why it is rejected as the source law. It is kept because the route is the natural first guess for anyone reading the channels as directional probes, and because its failure sharpens what the carrier map of Derivation 3.3A gets right.
+
+## Role / regime / status
+
+- **Role:** diagnostic and no-go record. The identification studied here is an interpretation; the counting under it is exact; the promotion of the identification to the source law is rejected.
+- **Regime:** weak-field stationary sources, slow-motion calibration checks.
+- **Status:** closed as a candidate source rule. The carrier source map of Derivation 3.3A is the accepted source law.
+- **Non-claim:** nothing here redefines the primitive source grammar of Chapter 3.3 or competes with the accepted map.
+
+## The identification
+
+The diagnostic reads the classical stress tensor as a directional-presentation object — $T(u,u)$ answers how much content the system presents to a probe direction — and attaches to each spatial axis the two null probes
+
+$$
+l_k^\pm:=(1,\pm e_k).
+$$
+
+The candidate identification is
+
+$$
+\mathcal{J}_k^\pm(x)\;\sim\;\lambda\,T_{\mu\nu}(x)\,l_k^{\pm\,\mu}\,l_k^{\pm\,\nu},
+$$
+
+with $\lambda$ one dimensional normalization constant. Expanding the contraction, $T(l_k^\pm,l_k^\pm)=T_{00}\pm2T_{0k}+T_{kk}$, so
+
+$$
+\mathcal{M}_k=\lambda\left(T_{00}+T_{kk}\right),
+\qquad
+\mathcal{P}_k=4\lambda\,T_{0k}.
+$$
+
+## What the identification delivers
+
+- **Positivity from the null energy condition.** For any null $l$, the NEC asserts $T_{\mu\nu}l^\mu l^\nu\ge0$ for classical matter; under the identification every channel is non-negative. Under the accepted carrier map this grounding is no longer needed — positivity is inherited from the carrier split itself, $M\pm\tfrac12 p_k\ge M/2$ — but the correspondence remark stands: the channel grammar is at least as safe as the weakest classical energy condition.
+- **Exact chirality for null sources.** For a beam along $+x$, $T_{00}=T_{0x}=T_{xx}=\varepsilon$, so $\mathcal{J}_x^+=4\lambda\varepsilon$ and $\mathcal{J}_x^-=0$: fully directed content populates its forward channel exclusively. Sharp — but structurally impossible for a densitized ADMC split, whose tilt is $\pm\tfrac12 p_k$, never $\pm p_k$. Exact chirality is a property of null probing, not of carrier bookkeeping.
+
+## Why the route fails as the source law
+
+Two independent grounds, one structural and one empirical:
+
+- **It is not the carrier split.** The channels of Foundations are the conserved pair $M\pm\tfrac12 p_k$, densitized. The null contraction is a quadratic flux object with a different even part — $T_{00}+T_{kk}$, importing classical stress apportioning into the well — and a doubled tilt. Adopting it would sever the source layer from the directional-positive structure the rest of the framework conserves.
+- **The odd current overshoots the frame-drag endpoint.** Calibrating the even sector against the static target $\mathcal{M}\leftrightarrow c\rho$ fixes $\lambda=1/c$, and the odd package becomes $\mathcal{P}_k=4T_{0k}/c=4\,j_k$. With boost consistency $\kappa_A\,\eta=2(1+\sigma)$ (Derivation 3.6C) and $\eta=4$, the packaging coefficient would be driven to $\kappa_A=1$, and the assembled pipeline misses the audited Lense–Thirring endpoint unless a compensating coefficient is inserted by hand. The carrier map gives $\eta=1$ with nothing to insert.
+
+One further structural remark: for a stress tensor proportional to the metric, $T(l,l)=0$, so a cosmological-constant-like sector would present zero channel content under this reading. In M1 the point is moot — the source dictionary carries no vacuum row at all (Derivation 3.3C) — but it illustrates how differently the two readings treat non-transport stress.
+
+## Result
+
+The literal null-contraction identification is a no-go as the source law: it is structurally foreign to the densitized carrier split and empirically overshoots the frame-drag current. Its durable contributions are the NEC-correspondence remark on channel positivity and the demonstration that exact forward-channel chirality characterizes null probing rather than carrier bookkeeping.
+
+## Notes
+
+The scope relation to Derivation 2.3A stands: the null contractions are quadratic flux-like objects, outside the linear charge-like split covered by the uniqueness result there. The carrier map of Derivation 3.3A, by contrast, sits squarely inside the linear split structure: it is the Foundations pair itself, accumulated over carriers.

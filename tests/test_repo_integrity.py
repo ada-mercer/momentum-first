@@ -73,9 +73,11 @@ def test_readme_reflects_current_release_posture() -> None:
 
 def test_citation_metadata_is_present_for_doi_workflow() -> None:
     citation = yaml.safe_load((ROOT / "CITATION.cff").read_text(encoding="utf-8"))
+    version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
     assert citation["cff-version"] == "1.2.0"
     assert citation["title"] == "Momentum First"
-    assert citation["version"] == "0.3.2"
+    # CITATION version must track VERSION (the release workflow enforces tag == VERSION).
+    assert citation["version"] == version
     assert citation["authors"] == [{"family-names": "Klaveness", "given-names": "Arne"}]
     assert citation["repository-code"] == "https://github.com/ada-mercer/momentum-first"
     assert "AI-assisted" in citation["message"]

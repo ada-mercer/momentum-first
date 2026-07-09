@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """End-to-end frame-drag coefficient audit for the stationary shift sector.
 
-Supports Appendix 3.6B (frame-drag coefficient audit). Determines the
-shift-calibration constant kappa_A in the packaging
+Supports Appendix 3.6B (frame-drag coefficient audit). Audits the
+dimensionless shift coefficient kappa_A in the packaging
 
     A_i := -kappa_A * theta_i^perp
 

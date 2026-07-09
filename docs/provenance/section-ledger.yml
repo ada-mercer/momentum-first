@@ -1,0 +1,188 @@
+schema: momentum-first.section-contribution-ledger.v1
+purpose: Public-facing section contribution and human-verification ledger for Momentum
+  First.
+contributor_label_policy:
+  AI-assisted: Category label for non-human AI assistance. It is not a formal author
+    name or DOI creator.
+verification_status_values:
+- verified
+- partially_verified
+- not_yet_verified
+- not_yet_recorded
+sections:
+- id: index
+  title: index
+  path: index.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: preface
+  title: Preface
+  path: chapters/00-front-matter/00-preface/index.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: introduction
+  title: Introduction
+  path: chapters/01-tier-1-foundations/01-introduction/index.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: foundations
+  title: Foundations
+  path: chapters/01-tier-1-foundations/02-foundations/index.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: gravity-and-structured-spacetime
+  title: Gravity and Structured Spacetime
+  path: chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: quantum-mechanics-in-momentum-language
+  title: Quantum Mechanics in Momentum Language
+  path: chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: space-expansion-as-translation-yield
+  title: Space Expansion as Translation Yield
+  path: chapters/02-tier-2-engines/05-expansion/index.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
+  title: Derivation 2.3A — Structural uniqueness of the directional-positive split
+  path: appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-3-4a-stationary-primitive-source-to-field-map
+  title: Derivation 3.4A — Stationary primitive source-to-field map
+  path: appendices/derivations/03-04A-stationary-source-to-field-map.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-3-5a-local-observer-bookkeeping
+  title: Derivation 3.5A — Local observer bookkeeping
+  path: appendices/derivations/03-05A-local-observer-bookkeeping.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-3-6a-stationary-correspondence-calibration
+  title: Derivation 3.6A — Stationary correspondence calibration
+  path: appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-3-7a-nonstationary-linear-baseline-and-benchmarks
+  title: Derivation 3.7A — Nonstationary linear baseline and benchmarks
+  path: appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-3-7b-nonstationary-completion-ladder
+  title: Derivation 3.7B — Nonstationary completion ladder
+  path: appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-4-8a-strong-gravity-tunneling-sensitivity
+  title: Derivation 4.8A — Strong-gravity tunneling sensitivity
+  path: appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-5-6a-universal-true-frame-yield-and-the-bound-frame-transform
+  title: Derivation 5.6A — Universal true-frame yield and the bound-frame transform
+  path: appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.
+- id: derivation-5-6b-sector-consistency-under-universal-yield
+  title: Derivation 5.6B — Sector consistency under universal yield
+  path: appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
+  contributors:
+  - Arne Klaveness
+  - AI-assisted
+  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
+    be reviewed section-by-section before DOI publication.'
+  human_verification: not_yet_recorded
+  verification_note: No section-specific human verification entry has been recorded
+    in this ledger yet.

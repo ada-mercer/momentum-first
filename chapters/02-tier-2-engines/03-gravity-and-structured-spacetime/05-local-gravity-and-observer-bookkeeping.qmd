@@ -18,6 +18,8 @@ Here $G(x) = \sqrt{1 - 2\theta_0(x)}$ is the scalar clock factor introduced in t
 
 That is the cleanest M1 expression of gravitational clock slowing in the stationary regime. The field does not first act by changing an external time parameter. It changes the local cycle-carrying scale through which clocks are read.
 
+The two-aspect result of the previous section says what this dressing physically is. A clock is a confined cycle circulating at local $c$, and the even source stretches the stage that cycle lives on; the dressed scale $p_{f,c}=p_fG$ is the cycle readout of that stretched stage, with $G$ the reciprocal of the local spatial stretch. Gravitational clock slowing is therefore not a separate temporal effect layered on top of a spatial one. It is the same deformation, read through cycles. The bookkeeping below is unchanged by this interpretation; what changes is that its central dressing rule now has a stated physical origin (Appendix 3.4B).
+
 ### Mechanical transport in a structured stage
 
 The second local quantity is the transport momentum in the presence of shift structure,
@@ -30,7 +32,7 @@ This expression is simple but important. It tells us that the local mechanical m
 
 The role of $\Pi_i$ is to keep transport gravity-first. The shift structure is not an afterthought. It changes the locally relevant transport bookkeeping directly.
 
-The shift potential entering this bookkeeping is the packaged object of the previous section, $A_i=-\kappa_A\,\theta_i^\perp$, with its calibration constant already included. The observer layer therefore reads a single shift object and carries no calibration freedom of its own: the coefficient question is settled once, at the packaging step. That this transport rule itself hides no additional coefficient is confirmed by the audit in Appendix 3.6B, which checks the linear response of the local energy to $A_i$ directly.
+The shift potential entering this bookkeeping is the packaged object of the previous section, $A_i=-\kappa_A\,\theta_i^\perp$, with its derived coefficient already included. The observer layer therefore reads a single shift object and carries no coefficient freedom of its own: the question is settled once, at the packaging step. That this transport rule itself hides no additional coefficient is confirmed by the audit in Appendix 3.6B, which checks the linear response of the packaged local magnitude $M_{g,loc}$ to $A_i$ directly.
 
 This is where directional gravity becomes local. In a rotating stationary situation, for example, the observer does not merely add a later correction to a scalar clock factor. The local transport frame is already structured by $A_i$. Frame-drag-like behavior belongs here because it is a readout of directional deformation, not a decorative GR comparison added after the fact.
 

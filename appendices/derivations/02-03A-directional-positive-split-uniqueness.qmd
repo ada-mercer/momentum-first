@@ -22,7 +22,7 @@ and that the canonical M1 split is obtained by the normalization that identifies
 
 This is therefore an **affine uniqueness theorem**. It does **not** prove that every imaginable nonlinear realization of the directional-positive postulate is impossible.
 
-It also does not cover quadratic, flux-like source-channel constructions such as null contractions of a rank-two stress tensor. Those live in a different mathematical class: this appendix constrains linear charge-like splits of conserved vector content, while the null-channel diagnostic in Derivation 3.3A studies a conditional stress-tensor interpretation of gravitational source channels.
+It also does not cover quadratic, flux-like source-channel constructions such as null contractions of a rank-two stress tensor. Those live in a different mathematical class: this appendix constrains linear charge-like splits of conserved vector content — a class that the gravitational carrier source map of Derivation 3.3A sits squarely inside, being the Foundations pair itself densitized — while the rejected null-probe diagnostic of Derivation 3.3B works with quadratic stress-tensor contractions.
 
 ## Role / regime / status
 

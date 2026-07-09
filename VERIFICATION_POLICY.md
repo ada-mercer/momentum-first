@@ -144,7 +144,7 @@ These are not the same question and should not be conflated.
 
 ## Current project posture
 
-- Named authors: **Arne Klaveness** and **Ada Mercer**
-- Other AI systems may contribute through reviewable proposal workflows.
+- Named author: **Arne Klaveness**
+- AI systems may contribute through reviewable proposal workflows and may be credited under the category label **AI-assisted** where appropriate.
 - Human review is welcome, but not mandatory in every case.
 - Capability-qualified AI review is sufficient when it meets the standards above.

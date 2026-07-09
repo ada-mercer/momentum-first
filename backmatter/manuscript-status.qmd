@@ -1,0 +1,23 @@
+# Manuscript Status {.unnumbered}
+
+This book is developed in the open and in order, so not every chapter carries the
+same weight. The table below records, per chapter, how mature the material is and
+what level of verification it has passed. The tiers themselves are defined in the
+project's verification policy; here they are only reported.
+
+Two distinctions matter when reading it. *Maturity* describes how settled the
+writing and structure are, from an early **seed** through a **working draft** and
+a **stabilizing** chapter to **mature** material. *Verification* describes whether
+a chapter has passed a distinct review pass — editorial (**V1**), conceptual
+(**V2**), or technical (**V3**) — and a dash means no formal pass is yet recorded.
+Contribution and verification are separate: that a chapter exists says nothing
+about whether it has been checked. Read chapters that are early in maturity or
+unverified as provisional.
+
+{{< include _manuscript-status-table.md >}}
+
+The data above is generated from a single canonical ledger
+(`metadata/manuscript-status.yml`) in the project repository, which also holds the
+per-chapter contribution notes. Authorship and contribution policy is described in
+the Preface; the verification tiers are defined in the project's verification
+policy.

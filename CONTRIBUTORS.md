@@ -1,11 +1,10 @@
 # Contributors
 
-This file records contributors to the *Momentum First* book project beyond the primary authorship line shown in the manuscript metadata.
+This file records authorship and broader contributors to the *Momentum First* book project.
 
 ## Authors
 
 - Arne Klaveness
-- Ada Mercer
 
 ## Contribution model
 
@@ -14,11 +13,11 @@ The project distinguishes between:
 - **contribution** — who materially assists through drafting, critique, review, derivation support, editing, figure work, structural revision, or other meaningful project work,
 - **verification** — who or what performs review strong enough to count toward project acceptance standards.
 
-These categories may overlap, but they are not identical.
+These categories may overlap, but they are not identical. Human contributors may be credited by name. AI contribution is credited through the category label **AI-assisted**, not through a named AI persona, and is not listed as formal manuscript authorship or DOI creatorship.
 
 ## Contributors
 
-Add named human or AI contributors here as they become stable enough to credit explicitly.
+Add named human contributors here as they become stable enough to credit explicitly. Use **AI-assisted** for non-human assistance.
 
 Suggested fields:
 - name
@@ -28,9 +27,13 @@ Suggested fields:
 - status (ongoing | historical)
 - notes
 
-### Current named contributors
+### Current contributors
 
-_None listed yet beyond the primary authorship line._
+- **AI-assisted**
+  - role(s): drafting support, review, editing, derivation support, repository automation, release preparation
+  - scope of contribution: ongoing assistance to the manuscript and repository workflow
+  - status: ongoing
+  - notes: category label for non-human AI assistance; not formal authorship or DOI creatorship; all claims, interpretations, and release decisions remain the responsibility of the human author.
 
 ## Maintenance note
 
