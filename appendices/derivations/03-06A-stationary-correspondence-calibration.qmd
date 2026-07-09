@@ -18,7 +18,7 @@ The appendix is deliberately downstream of the M1 construction. It does not defi
 The native even source package has units
 
 $$
-[M_k]=\mathrm{kg\,s^{-1}m^{-2}}.
+[\mathcal{M}_k]=\mathrm{kg\,s^{-1}m^{-2}}.
 $$
 
 Ordinary mass density has units
@@ -30,21 +30,21 @@ $$
 The extra factor is one power of velocity. In the static isotropic scalar correspondence, the even M1 packages therefore satisfy
 
 $$
-\sum_k M_k \longleftrightarrow c\rho.
+\sum_k \mathcal{M}_k \longleftrightarrow c\rho.
 $$
 
 For an isotropic static source, a convenient axis-wise representation is
 
 $$
-M_x=M_y=M_z=\frac{c\rho}{3},
+\mathcal{M}_x=\mathcal{M}_y=\mathcal{M}_z=\frac{c\rho}{3},
 $$
 
 or, when the directional imbalance vanishes,
 
 $$
-J_k^+=J_k^-=\frac{c\rho}{3},
+\mathcal{J}_k^+=\mathcal{J}_k^-=\frac{c\rho}{3},
 \qquad
-P_k=0.
+\mathcal{P}_k=0.
 $$
 
 The six positive channels are not six copies of the classical source. They are a directional-positive representation whose even packages compress to the scalar classical source in the static overlap.
@@ -54,7 +54,7 @@ The six positive channels are not six copies of the classical source. They are a
 The M1 scalar equation is
 
 $$
-\Delta\theta_0=-\frac{4\pi G_N}{c^3}\sum_kM_k.
+\Delta\theta_0=-\frac{4\pi G_N}{c^3}\sum_k\mathcal{M}_k.
 $$
 
 Using the static isotropic calibration gives
@@ -93,7 +93,7 @@ This checks that the additive/even source package produces the usual scalar weak
 
 ## Shift-current comparison
 
-The directional M1 field is built from the odd package $P_k$. In a stationary gauge-fixed comparison, the familiar object is a transverse current-like source $j_i^\perp$.
+The directional M1 field is built from the odd package $\mathcal{P}_k$. In a stationary gauge-fixed comparison, the familiar object is a transverse current-like source $j_i^\perp$.
 
 The comparison equation is
 
@@ -104,6 +104,8 @@ $$
 $$
 
 This is a calibration statement, not a replacement of the native source grammar. It says how the M1 shift sector is recognized in the weak stationary current language.
+
+In packaged form, the M1 side composes as $A_i=-\kappa_A\,\theta_i^\perp$ with $\Delta\theta_i=-(4\pi G_N/c^3)\sum_k\mathcal{P}_k\,e_{(k)i}$ and the derived odd convention $\sum_k\mathcal{P}_k\,e_{(k)i}\leftrightarrow j_i$ (Derivation 3.3A), giving $\Delta A_i=\kappa_A\,(4\pi G_N/c^3)\,j_i^\perp$. With the derived value $\kappa_A=4$ (chain in Chapter 3.6; Derivations 3.3A, 3.4B, 3.6C), this reproduces the comparison equation exactly. The end-to-end audit of the same coefficient against the frame-drag endpoint, including the check that the observer cross term contributes no additional coefficient, is Derivation 3.6B.
 
 ## Metric-facing dictionary
 
@@ -126,7 +128,7 @@ The scalar package supplies the clock-depth or lapse-like side. The directional 
 The stationary correspondence layer establishes the classical faces
 
 $$
-\sum_kM_k\leftrightarrow c\rho,
+\sum_k\mathcal{M}_k\leftrightarrow c\rho,
 \qquad
 \theta_0\leftrightarrow U,
 \qquad

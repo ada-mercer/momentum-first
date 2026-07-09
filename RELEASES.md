@@ -42,6 +42,47 @@ Suggested interpretation:
 - **minor** = substantial manuscript milestone
 - **patch** = corrective cleanup to an already meaningful release
 
+## Milestone notes
+
+### 0.3.3-dev — Gravity shift calibration branch
+
+Planned next milestone shape after `v0.3.2`:
+
+- audited the stationary gravitomagnetic coefficient end to end and fixed the current-convention shift calibration at `kappa_A = 4`;
+- kept the factor out of the primitive source grammar and placed it in the GR-facing shift packaging `A_i = -kappa_A theta_i^perp`;
+- added the frame-drag coefficient audit and null-channel source diagnostic appendices;
+- recorded the remaining derivation debt: the null-channel route and a future boost-consistency derivation must independently force the audited value before `kappa_A` graduates from calibration to derived structure.
+
+### Draft — Gravity derived-pipeline milestone (target: v0.4.0)
+
+Working-tree draft entry for the next milestone; the commit/release session decides
+the final version number.
+
+- promoted the stationary gravity source layer to a native carrier source map:
+  `mathcal J_k^pm` is the density of `M pm p_k/2`, giving
+  `mathcal M_k = varrho` on every axis and `mathcal P_i = j_i` with no imported
+  pressure, stress, or radiation apportioning term;
+- scoped the pressure/radiation divergence honestly: total source weight agrees
+  for isolated stationary systems and the full exterior agrees for spherical
+  sources, while aspherical pressure/stress multipoles become a Tier 3
+  discriminator at fractional order `p/rho c^2`;
+- derived the two-aspect deformation: clock depth and isotropic spatial stretch as
+  one deformation, with weak-field trace coefficient `sigma = 1` from the
+  comoving-cycle readout of the M1 time stance;
+- derived the shift coefficient `kappa_A = 2(1+sigma) = 4` by boost consistency,
+  retiring the calibration posture; the frame-drag audit is re-statused as the
+  endpoint validation of the derived value;
+- added weak-field stationary claims: PPN `gamma = 1`, standard light bending,
+  standard Shapiro delay;
+- rewrote Appendix 3.3A as the carrier-map derivation; added Appendix 3.3B
+  (null-probe diagnostic and no-go), Appendix 3.3C (momentum-manifestation
+  dictionary, no vacuum row), Appendix 3.4B (depth = stretch), and Appendix 3.6C
+  (boost consistency);
+- recorded the two named premises (SI source identification, P2 comoving-cycle
+  readout) with their independent checks as the remaining hardening targets;
+- promoted the derivation-check scripts `check_carrier_source_map.py` and
+  `check_depth_stretch_pipeline.py` into `scripts/`.
+
 ## Workflows
 
 ### 1. GitHub Pages site deploy
@@ -53,7 +94,9 @@ Purpose:
 - publish the site to GitHub Pages
 - include the latest release PDF in the site artifact so Quarto's PDF download link resolves
 
-This workflow runs on relevant pushes to `main`, manual dispatch, and published releases.
+This workflow runs on relevant pushes to `main` and manual dispatch.
+
+Because GitHub Pages environment protection may reject tag/release-triggered deployments, release publication should be followed by a manual **Deploy Book Site** dispatch when the site must pick up a newly published release PDF.
 
 ### 2. Manual preview render
 
@@ -96,6 +139,7 @@ git push origin main --follow-tags
 
 6. GitHub Actions will render the book PDF.
 7. The workflow copies the rendered PDF to the stable release asset name `Momentum-First.pdf`, attaches it to the GitHub Release, and thereby updates the README's latest-PDF link target.
+8. Manually dispatch **Deploy Book Site** if the Pages-hosted PDF should immediately mirror the newly published release PDF.
 
 ## After a release
 

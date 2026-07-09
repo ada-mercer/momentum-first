@@ -15,7 +15,7 @@ Recommended metadata:
 - **Title:** Momentum First
 - **Version:** 0.3.2
 - **Creator:** Arne Klaveness
-- **Contributor / acknowledgement note:** Developed with AI-assisted drafting, review, editing, and repository automation support from Ada Mercer, an OpenClaw assistant. All claims, interpretations, and release decisions remain the responsibility of the human author.
+- **Contributor / acknowledgement note:** Developed with AI-assisted drafting, review, editing, and repository automation support. All claims, interpretations, and release decisions remain the responsibility of the human author.
 - **Description:** Momentum First is a pre-1.0 theoretical manuscript exploring a momentum-centered framework for foundations, gravity, quantum mechanics, and cosmology. It develops Additive Directional Momentum Conservation, positive directional momentum channels, gravity and quantum bridge structures, and a translation-yield account of cosmological expansion.
 - **Keywords:** physics; theoretical physics; momentum; gravity; quantum mechanics; cosmology; quarto book
 - **Language:** English

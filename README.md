@@ -109,7 +109,7 @@ Use the default PDF render for release checks and the HTML profile for fast read
 
 ## Citation / status
 
-This is a pre-1.0 working manuscript. For now, cite the latest GitHub Release unless a more formal edition is provided. Repository citation metadata lives in `CITATION.cff`; DOI metadata planning lives in `docs/doi/`.
+This is a pre-1.0 working manuscript. For now, cite the latest GitHub Release unless a more formal edition is provided. Repository citation metadata lives in `CITATION.cff`; DOI metadata planning lives in `docs/doi/`. Section-level contribution and human-verification provenance lives in `docs/provenance/`.
 
 ## Releases
 

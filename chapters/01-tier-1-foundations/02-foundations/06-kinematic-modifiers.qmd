@@ -30,6 +30,8 @@ A composition modifier does not abandon this vocabulary. It changes how the term
 
 Most KMs belong closest to this class. They act on the internal structure of a particle or material system, changing the relation between the cycle-carrying fermic sector and the directed bosic sector. Gravity-like clock dressing is the main later example: the intrinsic fermic scale is not replaced, but it is read through a local context.
 
+The gravity chapter gives that dressing a definite physical origin. The fermic sector carries a confined cycle circulating at local $c$, and a gravitational source deforms the stage the cycle lives on; the dressed reading of the fermic scale is then the cycle readout of that deformed stage — a stretched cycle path completes more slowly, and the clock is read accordingly. This sharpens the interpretation without changing the bookkeeping: gravitational clock dressing remains a composition modifier, read through the same contextual relation, but its origin is a deformation of the stage rather than an unexplained contextual factor.
+
 Composition modifiers are therefore the natural place for effects that alter clocking, local transport bookkeeping, or equilibrium structure by changing how the system's momentum content is organized.
 
 ### Yield modifiers

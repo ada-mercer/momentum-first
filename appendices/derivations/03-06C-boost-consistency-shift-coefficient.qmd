@@ -1,0 +1,86 @@
+# Derivation 3.6C — Boost consistency and the shift coefficient {#sec-derivation-03-06C-boost-consistency .unnumbered}
+
+## Purpose
+
+This appendix supports the derived-coefficient subsection of Chapter 3.6. It derives the boost-consistency relation
+
+$$
+\kappa_A=2(1+\sigma)
+$$
+
+for the shift packaging $A_i=-\kappa_A\theta_i^\perp$ in the current source-current convention, so that the shift coefficient is fixed by the two static responses of the field — clock depth and spatial stretch — rather than by an independent calibration.
+
+## Role / regime / status
+
+- **Role:** derivation of a conditional family. The relation itself is exact at the stated order; the specific value $\kappa_A=4$ follows only when the inputs $\mathcal{P}_i=j_i$ (Derivation 3.3A) and $\sigma=1$ (Derivation 3.4B) are supplied.
+- **Regime:** weak field, first order in $\beta_i=v_i/c$, stationary source boosted rigidly.
+- **Status:** accepted V1 link in the derivation chain; numeric family recorded in `scripts/check_depth_stretch_pipeline.py` and the endpoint in Derivation 3.6B.
+- **Non-claim:** boost consistency alone does not force the value $4$; it locates exactly which static responses the value depends on.
+
+## Starting assumptions
+
+- A static weak-field source with exterior scalar field $\theta_0=G_NM/(c^2r)$.
+- The static metric-facing responses established by the stationary package: clock depth $h_{00}=2\theta_0$ and isotropic spatial stretch $h_{ij}=2\sigma\theta_0\,\delta_{ij}$, with $\sigma$ carried symbolically.
+- The odd source convention $\sum_k\mathcal{P}_k\,e_{(k)i}\leftrightarrow\eta\,j_i$ with ratio $\eta$ carried symbolically; the current convention is $\eta=1$.
+
+## Derivation
+
+Boost the static configuration to first order in $\beta_i$. The boost mixes the static responses into the mixed component with coefficient
+
+$$
+h_{0i}^{\text{boost}}=-2(1+\sigma)\,\beta_i\,\theta_0 ,
+$$
+
+up to the sign convention of the shift variable: one part from the clock-depth response and $\sigma$ parts from the spatial stretch. This is a kinematic statement about the same physical configuration viewed from a moving frame; no field equation beyond the static package is used.
+
+On the M1 side, the moving source carries current $j_i$, so the directional field in convention $\eta$ is
+
+$$
+\theta_i=\eta\,\beta_i\,\theta_0 ,
+$$
+
+and the packaged shift is $A_i=-\kappa_A\theta_i$. Consistency — the boosted static field and the current-sourced field must be the same field — requires
+
+$$
+\kappa_A\,\eta=2(1+\sigma),
+\qquad\text{i.e.}\qquad
+\kappa_A=\frac{2(1+\sigma)}{\eta}.
+$$
+
+## The coefficient family
+
+The relation is a two-parameter family, and stating it as a family is the honest form:
+
+| $\sigma$ | $\eta=1$ (carrier map) | $\eta=4$ (null route, static-calibrated) |
+|---:|---:|---:|
+| $0$ | $\kappa_A=2$ | $\kappa_A=3/2$ |
+| $1$ | $\kappa_A=4$ | $\kappa_A=3$ |
+
+With the derived inputs $\eta=1$ and $\sigma=1$,
+
+$$
+\kappa_A=4,
+$$
+
+matching the audited Lense–Thirring endpoint (Derivation 3.6B). The table also records why the literal null-promoted source of Derivation 3.3B cannot reach the endpoint: with its static-calibrated $\eta=4$ it lands on $\kappa_A=1$ even after $\sigma=1$ is supplied, and the assembled pipeline misses the audited endpoint.
+
+## Why no factor migrates to the spatial sector
+
+An earlier reading expected a future spatial-sector construction to absorb one factor of $2$ out of the shift packaging, re-auditing $\kappa_A$ to $2$. The boost relation shows the opposite: the spatial trace response is not a competing home for part of the coefficient — it is one of the two inputs that *produce* the coefficient. With $\sigma=1$ present, the boosted target is $4$; only if the spatial response were absent ($\sigma=0$) would the target be $2$. The observer transport cross term, separately, is audited to unit coefficient (Derivation 3.6B), so no factor hides there either. There is no double counting to prevent and no re-audit to expect.
+
+## Result
+
+In the current convention,
+
+$$
+\kappa_A=2(1+\sigma)
+\qquad\Longrightarrow\qquad
+\kappa_A=4
+\quad\text{for }\mathcal{P}_i=j_i,\ \sigma=1,
+$$
+
+completing the derivation chain: carrier map → odd normalization; depth=stretch → spatial trace; boost consistency → shift coefficient. The Lense–Thirring audit remains the endpoint validation of the assembled package, not the source of the value.
+
+## Notes
+
+The derivation holds at first order in $\beta$ and weak field; at higher orders the M1 and GR packagings genuinely differ in structure (see the boundary note of Derivation 3.6B). The result is conditional on the two named premises through its inputs: SI (the source identification: channels as the densitized carrier split) enters through $\eta=1$, and P2 (comoving-cycle readout) enters through $\sigma=1$. Their independent checks and hardening targets are listed in Chapter 3.8.

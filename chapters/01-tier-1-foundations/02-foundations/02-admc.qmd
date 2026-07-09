@@ -4,7 +4,7 @@ Momentum conservation lies at the core of M1. Its foundational postulate is the 
 
 **For any isolated system and any chosen direction (k), momentum is conserved directionally as a sum of positive quantities.**
 
-We coin this principle **Additive Diretional Momentum Concervation**, or ADMC for short. **Directional** means that the conservation statement is made relative to an arbitrary chosen unit vector. **Additive** means that the conserved quantity is composed of a set of positive quantities, one per particle.
+We coin this principle **Additive Directional Momentum Conservation**, or ADMC for short. **Directional** means that the conservation statement is made relative to an arbitrary chosen unit vector. **Additive** means that the conserved quantity is composed of a set of positive quantities, one per particle.
 
 For a chosen direction $k$ in a system, every particle contributes two positive quantities associated with the forwards and backwards directions, respectively. The conservation law is then
 
@@ -26,7 +26,7 @@ p_{k^+} = M + \tfrac{1}{2}p_k,
 p_{k^-} = M - \tfrac{1}{2}p_k.
 $$
 
-Here $p_k$ is the component of the bosic momentum vector along the chosen direction, while $M$ is the core momentum magnitude introduced in the previous section. The labels $k^+$ and $k^-$ denote the two positive directional quantities associated with the two senses of that direction.
+Here $p_k$ is the component of the bosic momentum vector along the chosen direction, while $M$ is the core momentum magnitude introduced in the previous section. The labels $k^+$ and $k^-$ denote the two positive directional quantities associated with the two senses of that direction. Positivity is immediate: since $M=\sqrt{p_f^2+p^2}\ge p\ge|p_k|$, both channels satisfy $p_{k^\pm}\ge M-\tfrac12|p_k|>0$ whenever $p_f>0$.
 
 @fig-foundations-shells-admc gives a schematic two-stage depiction of the momentum configuration associated with motion. For exposition, the configuration is shown first as an isotropic swelling from $p_f$ to $M$, and then as a directional deformation of the swollen shell. The stages are representational rather than sequential: physically they belong to one combined momentum configuration.
 

@@ -1,1 +1,60 @@
-[]
+kappa_A:
+  term: "$\\kappa_A$"
+  definition: >
+    Dimensionless shift coefficient in the stationary gravity packaging
+    $A_i=-\\kappa_A\\theta_i^\\perp$. Derived as $\\kappa_A=2(1+\\sigma)=4$ by
+    boost consistency from the carrier source map ($\\mathcal{P}_i=j_i$) and
+    the two-aspect deformation ($\\sigma=1$), conditional on the source
+    identification (SI) and comoving-cycle readout (P2); validated against the
+    Lense-Thirring endpoint by the frame-drag audit.
+
+carrier_source_map:
+  term: "carrier source map"
+  definition: >
+    Native stationary source law that fills the directional source channels
+    with the densitized carrier split:
+    $\\mathcal{J}_k^\\pm=$ density of $(M\\pm p_k/2)$. It gives
+    $\\mathcal{M}_k=(\\mathcal{J}_k^+ + \\mathcal{J}_k^-)/2=\\varrho$ on every
+    axis and $\\mathcal{P}_k=\\mathcal{J}_k^+-\\mathcal{J}_k^-=j_k$. No pressure,
+    stress, radiation, or subsystem apportioning term is inserted into the M1
+    source layer.
+
+source_identification:
+  term: "source identification (SI)"
+  definition: >
+    Named hardening premise of the gravity chapter: gravity reads the same
+    directional-positive carrier split that Foundations conserves. Given SI,
+    the even source is the local core-momentum density and the odd source is
+    the net bosic component. What remains open is the deeper micro-model for
+    why stage deformation couples to this split.
+
+momentum_content_density:
+  term: "$\\varrho$"
+  definition: >
+    Local core-momentum density: the per-volume sum of carrier core momentum
+    $M=\\sqrt{p_f^2+p^2}$ in the stationary source frame. Under the carrier
+    source map, $\\varrho$ is the direction-blind even source
+    $\\mathcal{M}_k$ on every axis. For matter at rest it is $\\rho c$; for
+    moving, hot, or radiative content it counts the carriers' own core
+    momenta, without separate pressure or stress weight.
+
+null_source_channels:
+  term: "null source channels"
+  definition: >
+    Rejected diagnostic reading in which the directional source channels are
+    identified with stress-tensor contractions $T(l_k^\\pm,l_k^\\pm)$ along the
+    null probes $l_k^\\pm=(1,\\pm e_k)$. The route grounds channel positivity in
+    the null energy condition and displays exact null-beam chirality, but fails
+    the fixed pressure/radiation targets and overshoots the frame-drag current;
+    it is a no-go as the primary source rule.
+
+momentum_presentation_tensor:
+  term: "classical subsystem apportioning"
+  definition: >
+    Correspondence-layer accounting that assigns extra local well weight to
+    pressure, stress, and radiation subsystems. M1 does not import this
+    apportioning into its source law. In isolated stationary systems those
+    extra classical weights cancel in total against confinement stresses,
+    leaving the same total source weight as the carrier source map, and the
+    same full exterior field for spherical sources. Aspherical pressure or
+    stress multipoles can remain as a discriminator.

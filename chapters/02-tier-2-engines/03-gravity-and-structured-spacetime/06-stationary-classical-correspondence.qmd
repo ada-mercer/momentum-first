@@ -1,9 +1,9 @@
 ## Stationary Classical Correspondence
 
-The previous chapters built the stationary gravity pipeline in M1 language:
+The previous sections built the stationary gravity pipeline in M1 language:
 
 $$
-J_k^\pm
+\mathcal{J}_k^\pm
 \longrightarrow
 (\theta_0,\theta_i)
 \longrightarrow
@@ -12,16 +12,16 @@ J_k^\pm
 \text{local observer bookkeeping}.
 $$
 
-This chapter collects the classical comparison material in one place. Its purpose is not to replace the M1 variables with classical density, current, or metric notation. Its purpose is to show how the M1 stationary field package is calibrated against the familiar stationary limits of gravity.
+This section collects the classical comparison material in one place. Its purpose is not to replace the M1 variables with classical density, current, or metric notation. Its purpose is to show how the M1 stationary field package is calibrated against the familiar stationary limits of gravity.
 
-That ordering matters. The previous chapters did not start from classical density, current, or metric variables and then rename them. They first built a native map from positive momentum-source channels into scalar-well and directional field structure. The correspondence task is to check how that native map faces the familiar stationary language once the M1 construction is already on the table.
+That ordering matters. The previous sections did not start from classical density, current, or metric variables and then rename them. They first built a native map from positive momentum-source channels into scalar-well and directional field structure. The correspondence task is to check how that native map faces the familiar stationary language once the M1 construction is already on the table.
 
 ### Source-density calibration
 
-The primitive source channels $J_k^\pm$ and their even packages $M_k$ have units
+The primitive source channels $\mathcal{J}_k^\pm$ and their even packages $\mathcal{M}_k$ have units
 
 $$
-[M_k]=\mathrm{kg\,s^{-1}m^{-2}}.
+[\mathcal{M}_k]=\mathrm{kg\,s^{-1}m^{-2}}.
 $$
 
 Ordinary mass density has units
@@ -30,27 +30,21 @@ $$
 [\rho]=\mathrm{kg\,m^{-3}}.
 $$
 
-The extra factor is one power of velocity. In the static isotropic scalar correspondence, the even M1 source packages are therefore calibrated by
+The extra factor is one power of velocity. Under the carrier map the even package is the core-momentum density on every axis, so the static calibration is
 
 $$
-\sum_k M_k \longleftrightarrow c\rho.
+\mathcal{M} \longleftrightarrow c\rho,
 $$
 
-For an isotropic static source, this may be represented axis-wise as
+the same on each of the three axes — the axis label on $\mathcal{M}_k$ is dropped because the carrier map makes the even package direction-blind. For a static source with no directional imbalance,
 
 $$
-M_x=M_y=M_z=\frac{c\rho}{3}.
-$$
-
-Equivalently, if there is no directional imbalance,
-
-$$
-J_k^+=J_k^-=\frac{c\rho}{3},
+\mathcal{J}_k^+=\mathcal{J}_k^-=c\rho,
 \qquad
-P_k=0.
+\mathcal{P}_k=0.
 $$
 
-The six positive channels are therefore not six copies of the classical source. They are a directional-positive representation whose even axis packages sum to the scalar source $c\rho$ in the static isotropic overlap.
+The six positive channels are therefore not six copies of the classical source. They are a directional-positive representation whose common even package reads the scalar source $c\rho$ in the static overlap.
 
 ### Newtonian scalar limit
 
@@ -59,7 +53,7 @@ The M1 scalar field equation can be written as
 $$
 \Delta\theta_0
 =
--\frac{4\pi G_N}{c^3}\sum_k M_k.
+-\frac{4\pi G_N}{c^3}\,\mathcal{M}.
 $$
 
 Using the static isotropic calibration gives
@@ -112,9 +106,107 @@ $$
 \partial_iA_i=0.
 $$
 
-This equation should be read as a calibration and comparison statement. It does not replace $P_k$ as the M1 source of the directional field. It says how the stationary shift sector is recognized in the familiar current language used for weak stationary gravity.
+This equation should be read as a calibration and comparison statement. It does not replace $\mathcal{P}_k$ as the M1 source of the directional field. It says how the stationary shift sector is recognized in the familiar current language used for weak stationary gravity.
 
 The transverse condition is also a useful reminder. Not every raw directional source distribution is automatically a clean stationary shift input. In the stationary comparison problem, the directional source is read through its admissible or transverse part.
+
+On the M1 side, the ingredients of this comparison are already fixed. The native odd-sector field equation is
+
+$$
+\Delta\theta_i=-\frac{4\pi G_N}{c^3}\sum_k\mathcal{P}_k\,e_{(k)i},
+$$
+
+the odd package satisfies $\sum_k\mathcal{P}_k\,e_{(k)i}\leftrightarrow j_i$ — derived in the source layer from the carrier map — and the shift potential is packaged as $A_i=-\kappa_A\,\theta_i^\perp$ with the derived value $\kappa_A=4$. Composing these gives
+
+$$
+\Delta A_i=\kappa_A\,\frac{4\pi G_N}{c^3}\,j_i^\perp
+=\frac{16\pi G_N}{c^3}\,j_i^\perp,
+$$
+
+in exact agreement with the classical comparison equation. That agreement is no longer a definition of $\kappa_A$; it is a check the derived package passes. Where the value comes from deserves its own subsection.
+
+### The shift coefficient derived
+
+The scalar sector matched the classical limit with no leftover coefficient. The shift sector appears at first not to repeat that luxury: the M1 field map gives the scalar and directional fields with *equal* coefficients — both sectors ride the same $1/R$ kernel with the same $4\pi\kappa$ in the field equation — yet the classical gravitomagnetic equation demands $16\pi G_N/c^3$, and the Lense–Thirring readout behind that demand has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B. A factor of $4$ has to come from somewhere, and it must not be smuggled into the source channels or the current bookkeeping.
+
+It does not have to be smuggled anywhere. The factor is derived, in three steps that the chapter has already assembled.
+
+The first step is the source law. The carrier map of the source layer fixes the odd package as the net bosic component, $\mathcal{P}_k=j_k$ — exactly, including the relativistic factors, for matter in bulk motion (Appendix 3.3A). In classical variables the translation is simply $\mathcal{M}\leftrightarrow T_{00}/c$ and $\mathcal{P}_k\leftrightarrow T_{0k}/c$, with no stress term anywhere in the source layer: where the classical accounting adds pressure weight to the well, M1 deliberately does not, and the reconciliation is the apportioning argument later in this section. There is no odd-sector coupling left to tune: the current convention used in the comparison above is read straight off the carrier split.
+
+The second step is the two-aspect deformation. The even source produces clock depth and isotropic spatial stretch as two readouts of one deformation, with the weak-field trace coefficient forced to $\sigma=1$ by the cycle-readout argument (Appendix 3.4B).
+
+The third step is boost consistency. A static well, viewed from a frame in which the source moves, must present the same physics as a moving source building its own directional field. Carrying out that comparison at first order in $v/c$ forces the packaging coefficient to
+
+$$
+\kappa_A=2(1+\sigma),
+$$
+
+one part from the depth response and $\sigma$ parts from the stretch response (Appendix 3.6C). With $\sigma=1$,
+
+$$
+\kappa_A=4.
+$$
+
+The factor of $4$ is therefore not one mystery, and not two mysteries either: it is the sum of the two static responses of the deformed stage, doubled by the boost kinematics. Nothing about frame drag was used to obtain it.
+
+The Lense–Thirring audit of Appendix 3.6B remains in force, with its status sharpened rather than retired. It runs the full stationary pipeline end to end — rotating source through $\mathcal{P}_k$, $\theta_i$, $A_i$, into the observer cross term and the precession readout — with $\kappa_A$ symbolic, and finds that the empirical endpoint requires $\kappa_A=4$ and that the observer transport term contributes unit coefficient, hiding nothing. The audit was performed before the derivation chain closed; the chain therefore had a fixed target it could not adjust to, and it hit that target. The audit is the endpoint validation of the derived value, not its source.
+
+The status of the number should still be said plainly, because "derived" has a precise scope here. The value $\kappa_A=4$ is derived conditional on two named premises, each independently checked and neither yet grounded in a micro-model:
+
+- **SI — the source identification.** The gravitational source channels are the densitized carrier split, $\mathcal{J}_k^\pm=$ density of $M\pm\tfrac12 p_k$, with nothing added or reweighted. Checked through the Newtonian limit, the derived $\mathcal{P}_i=j_i$ feeding the Lense–Thirring endpoint, manifest channel positivity, and the isolated-system agreement of the apportioning argument below.
+- **P2 — comoving-cycle readout.** The clock rate is the reciprocal of the local spatial stretch, because a clock is a confined cycle read out in the deformed stage. Checked through PPN $\gamma=1$, light bending, Shapiro delay, and recovery of the existing scalar clock dictionary.
+
+Both premises are carried as explicit hardening targets in the closing section of this chapter. One structural point is worth fixing against a natural misreading: the spatial sector is not a competing home for part of the coefficient, waiting to absorb a factor of $2$ out of the packaging. It is one of the two inputs that produce the $4$. The coefficient is what it is *because* the stretch response is as strong as the depth response, and no re-partitioning between packaging and spatial sector is pending (Appendix 3.6C).
+
+<!--
+P2-failure fallback wording for this subsection (do not render; see AUTHOR_NOTES
+2026-07-04 open-decisions note). If the equilibrium-size defense of P2 fails in a
+later derivation session, replace the derivation-chain framing above with:
+
+  "The shift coefficient is fixed by boost consistency as kappa_A = 2(1+sigma),
+  with the odd normalization \mathcal{P}_i = j_i derived from the carrier map. The
+  spatial trace coefficient sigma is not yet derived natively; its value sigma = 1
+  is validated empirically through the PPN channel (gamma = 1, standard light
+  bending, standard Shapiro delay) and the Lense-Thirring endpoint. The package is
+  therefore boost-consistent with one empirically anchored coefficient, rather
+  than zero."
+
+and re-list sigma (not kappa_A) as the open item in 3.8; the SI side and the
+carrier-map source law are unaffected.
+-->
+
+### The classical weak-field tests
+
+The derived package settles more than frame drag. Because the spatial stretch carries coefficient $\sigma=1$, the PPN spatial-curvature parameter of the stationary weak-field package is
+
+$$
+\gamma_{\mathrm{PPN}}=1,
+$$
+
+and the two classical light-propagation tests follow at their standard values. The leading deflection of light grazing a mass $M$ at impact parameter $b$ is
+
+$$
+\delta\phi=\frac{4G_NM}{b\,c^2},
+$$
+
+and the Shapiro time delay carries its standard coefficient $2G_NM/c^3$ in front of the usual logarithmic path factor. Both scale with $1+\gamma_{\mathrm{PPN}}$; a depth-only package ($\sigma=0$) would predict half of each, and is excluded by the same derivation that closes the shift coefficient. Together with the Newtonian limit, the clock-depth dictionary, and the Lense–Thirring endpoint, this places the stationary weak-field package in agreement with the classical tests it can currently address — as consequences of the derived pipeline, not as separately calibrated facts.
+
+### Where the two accountings part ways
+
+One correspondence question remains, and it deserves to be answered rather than blurred: the classical source assigns extra well weight to pressure and stress — a gas of photons is classically said to gravitate at twice the weight of equal-content cold matter — while the M1 source layer weighs everything at its content. These cannot both describe the local apportioning of a source. They can, and do, agree on the total source weight of any isolated stationary system, and on the full exterior field in the spherical case that carries the standard weak-field tests.
+
+The reconciliation is a classical identity. For any isolated stationary system, the classical stresses obey
+
+$$
+\int T_{kk}\,d^3r = 0
+\qquad\text{(each axis)},
+$$
+
+because whatever pushes outward somewhere is held in by tension somewhere else. A box of photon gas is the canonical case: the classical accounting gives the gas the extra pressure weight, and gives the box walls a matching *negative* stress contribution from their tension. Summed over the whole system, the extra weights cancel identically, and the total gravitating content is just the content — exactly what the carrier map assigns directly, gas at content weight, walls at content weight, nothing to cancel. The famous factor of two is a statement about a *subsystem inside a confining structure*, never about anything isolated; the "second half" of the photon gas's classical weight lives in the walls, as wall tension, with opposite sign.
+
+The consequence is sharp, but its scope is important. For every isolated stationary system, the two accountings produce the same total source weight. For spherical sources this also fixes the whole exterior field, so the standard exterior tests — orbits, clocks, deflection, and frame drag in the usual spherical or near-spherical regimes — are blind to the difference at the order considered here. For aspherical pressurized sources, however, the cancellation need not remove the pressure or stress quadrupole and higher moments. The accountings can therefore differ not only inside a bound system, but also in exterior multipoles at fractional order $\sim p/\rho c^2$.
+
+That difference is a prediction, not an embarrassment, and it is registered as such in the closing section. Its exposures are the regimes where apportioning matters: interior field profiles of pressurized bodies at fractional precision $\sim p/\rho c^2$, exterior multipoles of aspherical pressurized bodies at the same order, the strong-field structure of dense stars, where the classical equations lean on local pressure gravitation and M1 does not — divergent maximum-mass predictions follow — and radiation-dominated cosmological dynamics, which M1 assigns to the translation-yield engine $\chi(t)$ rather than to the stationary source layer.
 
 ### Metric-facing dictionary
 
@@ -171,15 +263,17 @@ with $V_K$ measured relative to the local dragged frame. The interpretive point 
 The correspondence layer establishes that the M1 stationary pipeline has the right classical faces:
 
 $$
-\sum_k M_k \leftrightarrow c\rho,
+\mathcal{M} \leftrightarrow c\rho,
 \qquad
 \theta_0 \leftrightarrow U,
 \qquad
-A_i \leftrightarrow \text{stationary shift}.
+A_i \leftrightarrow \text{stationary shift},
+\qquad
+\gamma_{\mathrm{PPN}}=1,
 $$
 
-It also keeps the status of those faces clear. Classical density, current, and metric notation are calibration and comparison tools. The main M1 route remains the directional-positive source-to-field map built in the previous chapters.
+with the shift coefficient $\kappa_A=4$ derived from the carrier map, the two-aspect deformation, and boost consistency, and validated against the frame-drag endpoint. It also establishes where the correspondence deliberately ends: the classical pressure and radiation weights are subsystem apportioning whose total contribution cancels over isolated systems, but whose higher moments can matter for aspherical sources; M1 does not import those weights. It also keeps the status of those faces clear. Classical density, current, and metric notation are comparison tools. The main M1 route remains the directional-positive source-to-field map built in the previous sections.
 
-The supporting calibration sheet for this chapter is collected in Appendix 3.6A.
+The supporting calibration sheet for this section is collected in Appendix 3.6A.
 
 What has been established here is stationary correspondence, not primitive ontology. What has not been established is a complete time-dependent gravity theory. The next section therefore changes scope carefully: it asks which pieces of the scalar-well and shift grammar survive when the field representation itself becomes nonstationary.
