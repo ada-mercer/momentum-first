@@ -18,7 +18,7 @@ jobs:
         run: python3 scripts/check_dependencies.py --mode full
 
       - name: Run dependency smoke test through pytest
-        run: python3 -m pytest tests/test_dependencies.py
+        run: .venv/bin/python -m pytest tests/test_dependencies.py
 
       - name: Check manuscript includes, assets, and explicit cross-references
         run: python3 scripts/check_crossrefs.py
