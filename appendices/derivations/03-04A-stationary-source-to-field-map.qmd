@@ -85,6 +85,38 @@ $$
 
 Under the carrier source map (Derivation 3.3A) the even package is axis-independent, $\mathcal{M}_k(x)=\mathcal{M}(x)=\varrho(x)$, the local core-momentum density; the scalar sector therefore has a single source field and no axis sum appears in the scalar map below.
 
+## Projection lemma
+
+Assume stationary linear response, opposite directional signs for the two senses of a channel, and the same Green kernel for the minimal scalar and directional response. With the stationary kernel
+
+$$
+\mathcal{K}[f](r):=\int_\Sigma\frac{f(r')}{\|r-r'\|}\,d^3r',
+$$
+
+linearity and the sign convention above imply that each channel pair can enter the field map only through
+
+$$
+\frac{\mathcal{J}_k^+(x)+\mathcal{J}_k^-(x)}{2},
+\qquad
+\mathcal{J}_k^+(x)-\mathcal{J}_k^-(x).
+$$
+
+The first combination is even under reversal of the channel sense. The second is odd. The carrier source map then identifies the even projection as axis-independent,
+
+$$
+\mathcal{M}_k(x)=\mathcal{M}(x),
+$$
+
+so the even response is one scalar field, not three independent scalar fields. The odd projections retain their directional labels and assemble into the vector-valued field:
+
+$$
+\theta_0(r)=\kappa\,\mathcal{K}[\mathcal{M}](r),
+\qquad
+\theta_i(r)=\kappa\sum_k\mathcal{K}[\mathcal{P}_k](r)e_{(k)i}.
+$$
+
+Thus the six ADMC source channels are not promoted to six deformation fields. In this stationary minimal-response map, they reduce by symmetry projection to one scalar depth $\theta_0$ plus three directional components $\theta_i$. This lemma records the projection structure assumed by the field map; it is not a microscopic derivation of the carrier source identification or of the depth-equals-stretch premise used later.
+
 ## Integrated stationary map
 
 The scalar well is built from the even package:

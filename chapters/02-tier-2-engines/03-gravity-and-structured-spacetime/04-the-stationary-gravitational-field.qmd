@@ -62,6 +62,8 @@ The subscript $k$ still labels the chosen source direction; the argument $x$ say
 
 The carrier map makes the even package axis-independent — $\mathcal{M}_k(x)=\mathcal{M}(x)$, the local core-momentum density, whichever axis is read — so the scalar sector has a single source field and no axis sum to perform.
 
+This is a projection step, not a multiplication of field species. The source layer still has the six ADMC channels $\mathcal{J}_k^\pm$. The stationary field layer reads their symmetry projections: the even projection gives the scalar depth $\theta_0$, while the three odd projections give the directional components $\theta_i$. The resulting deformation package is therefore four-component, $(\theta_0,\theta_i)$, before any later packaging into $G$, $A_i$, or $B_{ij}$.
+
 In the simplest stationary exterior presentation, the Green kernel is $1/R$. The scalar field is
 
 $$
@@ -180,7 +182,7 @@ $$
 \gamma_{ij}=(1+2\theta_0)\,\delta_{ij},
 $$
 
-with the *same* field $\theta_0$ that builds the clock factor and with spatial trace coefficient $\sigma=1$ — that is, the stretch is exactly as strong as the depth. This is not an extra postulate riding beside the scalar well. It follows from the M1 time stance: a clock is a confined cycle of momentum content circulating at local $c$, and time is the readout of that cycle. If the local stage is stretched, the cycle path lengthens and the clock slows by the reciprocal factor. Clock depth and spatial stretch are therefore two readouts of one deformation, and matching the stretch readout to the already-normalized clock package $G=\sqrt{1-2\theta_0}$ forces $\sigma=1$ at weak-field order. The derivation, its named premise, and its boundary are recorded in Appendix 3.4B.
+with the *same* field $\theta_0$ that builds the clock factor and with spatial trace coefficient $\sigma=1$ — that is, the stretch is exactly as strong as the depth. This is not introduced here as an independent field postulate beside the scalar well. It is the Chapter 3 use of the M1 time stance: a clock is a confined cycle of momentum content circulating at local $c$, and time is the readout of that cycle. If the local stage is stretched, the cycle path lengthens and the clock slows by the reciprocal factor. Clock depth and spatial stretch are therefore two readouts of one deformation, and matching the stretch readout to the already-normalized clock package $G=\sqrt{1-2\theta_0}$ forces $\sigma=1$ at weak-field order. The derivation, its named premise, and its boundary are recorded in Appendix 3.4B.
 
 Two consequences matter downstream. First, the spatial metric $\gamma_{ij}$ that the observer bookkeeping of the next section reads is now supplied by the even sector itself, not left as an unspecified flat placeholder. Second, the strength of the stretch aspect is one of the two inputs from which the shift coefficient $\kappa_A$ is derived in the correspondence section.
 
