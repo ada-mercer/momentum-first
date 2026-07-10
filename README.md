@@ -18,7 +18,7 @@ The HTML book is published with GitHub Pages. The PDF is published as a GitHub R
 
 ## Current scope
 
-As of `v0.3.2`, this is an active early manuscript rather than an empty scaffold. The repository contains:
+As of `v0.3.3`, this is an active early manuscript rather than an empty scaffold. The repository contains:
 
 - front matter and Preface
 - Tier 1 foundations material

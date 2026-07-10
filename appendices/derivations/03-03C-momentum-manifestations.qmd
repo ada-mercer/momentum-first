@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This appendix is the reference dictionary for the carrier source map of Derivation 3.3A. For each physically distinct manifestation of momentum content, it records the carrier description, the resulting source packages, and the status of the entry. Chapter 3.3 carries only a summary table; translation questions about pressure, stress, radiation, and rotation should be settled here once rather than re-argued per chapter.
+This appendix is the reference dictionary for the carrier source map of Derivation 3.3A. For each physically distinct manifestation of momentum content, it records the carrier description, the active field-facing source packages $\mathcal{M}$ and $\mathcal{P}_k$, and the bracketed transport-completion package $\mathcal{C}_{ij}$. Chapter 3.3 carries only a summary table; translation questions about pressure, stress, radiation, and rotation should be settled here once rather than re-argued per chapter.
 
 Throughout, the map is
 
@@ -16,6 +16,28 @@ $$
 
 with $\varrho$ the local core-momentum density, evaluated in the stationary frame.
 
+For full carrier-level momentum-transport accounting, the same coarse-graining also defines
+
+$$
+\mathcal{C}_{ij}(x)
+:=
+\left\langle
+\sum_a\frac{p_{i,a}p_{j,a}}{M_a}
+\right\rangle_x .
+$$
+
+This second transport moment is part of the source accounting, but it is not used as an independent input in the achieved stationary scalar-and-shift field map. The entries below therefore list the active scalar and shift sources first, and then say what the transport moment contributes, or why it is absent, negligible, or bracketed in the idealized entry.
+
+## Moment hierarchy
+
+The three packages are moments of one local momentum content, not three primitive source substances.
+
+- $\mathcal{M}$ is the zeroth or content moment: the local core-momentum density after directional sign is forgotten.
+- $\mathcal{P}_i$ is the first or net directional moment: the surviving bosic imbalance.
+- $\mathcal{C}_{ij}$ is the second transport or correlation moment: the part that records how momentum component $i$ is carried through direction $j$.
+
+For a coherent stream with little internal dispersion, $\mathcal{C}_{ij}$ reduces schematically to the directed transport already implied by the first moment, of the form $\mathcal{P}_i\mathcal{P}_j/\mathcal{M}$. For a gas, counterflow, stressed medium, radiation bath, or field configuration, an internal covariance remains. That covariance is exactly the pressure, stress, shear, or radiation-transport information lost if the source dictionary keeps only $\mathcal{M}$ and $\mathcal{P}_i$. The achieved stationary field map still uses only $\mathcal{M}$ and $\mathcal{P}_i$ as independent scalar-plus-shift inputs; $\mathcal{C}_{ij}$ is retained for full transport accounting and for the later stress-energy correspondence.
+
 ## Role / regime / status
 
 - **Role:** reference application sheet of the carrier map; per-entry status lines mark what is derived, what is convention, and where the entry deliberately differs from the classical apportioning.
@@ -27,48 +49,56 @@ with $\varrho$ the local core-momentum density, evaluated in the stationary fram
 
 - **Manifestation:** locked internal (fermic) circulation at $c$; per carrier $M=p_f=m_0c$, $p_k=0$.
 - **Packages:** $\mathcal{M}=\varrho=\rho c$; $\mathcal{P}_k=0$; $\mathcal{J}_k^\pm=\rho c$ on every axis.
+- **Transport moment:** no bosic transport appears at this level; $\mathcal{C}_{ij}$ is absent or negligible in the ideal static rest model.
 - **Status:** derived; identical to the classical accounting.
 
 ## 2. Dust in bulk motion
 
 - **Manifestation:** common carrier velocity $v$; per carrier $M=\gamma m_0c$, $p_k=\gamma m_0v_k$.
 - **Packages:** $\mathcal{M}=\rho_0\gamma^2 c$ (carrier density $\rho_0\gamma/m_0$ times $\gamma m_0c$); $\mathcal{P}_k=\rho_0\gamma^2v_k=j_k$ exactly.
-- **Status:** derived; the odd entry is the frame-drag current convention, including relativistic factors. Even entry matches the classical $T_{00}/c$; the classical ram-stress apportioning ($T_{kk}$) has no counterpart here, by design.
+- **Transport moment:** coherent bulk motion gives directional transport, schematically $\mathcal{C}_{ij}\sim\mathcal{P}_i\mathcal{P}_j/\mathcal{M}$ when internal dispersion is negligible. This ram-stress information is bracketed from the scalar-plus-shift source map.
+- **Status:** derived; the odd entry is the frame-drag current convention, including relativistic factors. Even entry matches the classical $T^{00}/c$ in the weak stationary component convention; the classical ram-stress apportioning ($T^{kk}$) is retained only in the bracketed transport/correspondence accounting, not as an active scalar-plus-shift source.
 
 ## 3. Warm gas at rest
 
 - **Manifestation:** isotropically agitated carriers, zero net flow.
 - **Packages:** $\mathcal{M}=\varrho=\langle\gamma\rangle\rho_0 c$ — agitation enters the well only through the carriers' core momenta; $\mathcal{P}_k=0$ by pairwise cancellation.
+- **Transport moment:** $\mathcal{C}_{ij}$ is isotropic for an isotropic gas and records the pressure-like internal momentum transport; it is not added as an independent scalar-well source in the stationary map.
 - **Status:** derived. Deliberate divergence from the classical subsystem weight $c(\rho+3p/c^2)$: the pressure term is classical apportioning that cancels against confinement over any isolated system (Derivation 3.3A, reconciliation section).
 
 ## 4. Isotropic photon gas
 
 - **Manifestation:** null carriers, $p_f=0$, $M=p$, isotropic directions.
 - **Packages:** $\mathcal{M}=\varepsilon/c$; $\mathcal{P}_k=0$.
+- **Transport moment:** $\mathcal{C}_{ij}$ is isotropic and nonzero; it is the momentum-form home of the photon gas pressure in the later stress-energy correspondence.
 - **Status:** derived. Deliberate divergence from the classical subsystem weight $2\varepsilon/c$: light sources the well at content weight; the classical factor of two is subsystem bookkeeping cancelled by container tension (Tolman), not an isolated-system observable.
 
 ## 5. Directed null beam
 
 - **Manifestation:** aligned null carriers along $+x$; per carrier $p_x=p=M$.
 - **Packages:** $\mathcal{M}=\varepsilon/c$; $\mathcal{P}_x=j_x=\varepsilon/c$; channels $\mathcal{J}_x^+=\tfrac32\varepsilon/c$, $\mathcal{J}_x^-=\tfrac12\varepsilon/c$, transverse channels untilted at $\varepsilon/c$.
+- **Transport moment:** $\mathcal{C}_{xx}=\varepsilon/c$ for an ideal $+x$ beam, with transverse components absent in the idealized beam limit.
 - **Status:** derived. Forward-loaded but not exactly chiral: the ADMC tilt is $\pm\tfrac12p_k$, never $\pm p_k$. Exact chirality belongs to the rejected null-contraction reading (Derivation 3.3B).
 
 ## 6. Rotating body
 
 - **Manifestation:** matter carriers with organized azimuthal bosic components.
 - **Packages:** $\mathcal{M}=$ matter content entries above; $\mathcal{P}_\phi(r)$ a ring pattern following the mass-current profile.
+- **Transport moment:** coherent azimuthal transport or correlation can appear according to the rotation profile. It is not an extra coefficient in the frame-drag source; the shift source remains the odd package $\mathcal{P}_\phi(r)$.
 - **Status:** derived; feeds the Lense–Thirring pipeline (Derivation 3.6B) with no extra coefficient.
 
 ## 7. Stressed solid
 
 - **Manifestation:** carriers held in a strained lattice; internal stress reorganizes carriers without net flow.
 - **Packages:** $\mathcal{M}=\rho c$; $\mathcal{P}_k=0$.
+- **Transport moment:** stress and anisotropic internal transport live in $\mathcal{C}_{ij}$; the achieved scalar-and-shift map does not add those entries as separate well or shift weights.
 - **Status:** derived. Deliberate divergence from the classical anisotropic apportioning $\sigma_{kk}$: static stress adds no source weight of its own. Over any isolated stressed body, the classical stress entries integrate to zero.
 
 ## 8. Static field content
 
 - **Manifestation:** field momentum content held in a static configuration (for example a static EM field), counted at its content density $u/c$.
 - **Packages:** $\mathcal{M}=u/c$; $\mathcal{P}_k=0$ for a static configuration.
+- **Transport moment:** the field's internal stress pattern belongs to $\mathcal{C}_{ij}$ and is restored as spatial stress in the correspondence matrix.
 - **Status:** derived at content weight. Deliberate divergence from the classical trace-free weight $2u/c$ for the field subsystem; the compensating stresses sit in the sources holding the configuration static, and cancel over the isolated system.
 
 ## No vacuum row
@@ -77,4 +107,4 @@ The channels accumulate the carrier split of actual momentum content; empty spac
 
 ## Summary
 
-Every even entry is the same entry — content at core-momentum weight — and every odd entry is the net bosic component. Where the classical accounting shows pressure, stress, or radiation enhancements, this dictionary records a deliberate, Tolman-reconciled divergence rather than a target missed. The total source weight agrees for isolated stationary systems, and the full exterior agrees in the spherical case; aspherical pressure or stress multipoles remain a possible discriminator (Derivation 3.3A).
+Every even entry is the same entry — content at core-momentum weight — and every odd entry is the net bosic component. These two packages are the active inputs to the achieved stationary scalar-plus-shift map. The second transport moment $\mathcal{C}_{ij}$ records the coherent transport, pressure, shear, radiation, and anisotropic-stress information needed for full carrier accounting and for the stress-energy correspondence, but its independent field response remains bracketed in the current map. Where the classical accounting shows pressure, stress, or radiation enhancements, this dictionary records a deliberate, Tolman-reconciled divergence rather than a target missed. The total source weight agrees for isolated stationary systems, and the full exterior agrees in the spherical case; aspherical pressure or stress multipoles remain a possible discriminator (Derivation 3.3A).

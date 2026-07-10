@@ -64,6 +64,8 @@ The carrier map makes the even package axis-independent — $\mathcal{M}_k(x)=\m
 
 This is a projection step, not a multiplication of field species. The source layer still has the six ADMC channels $\mathcal{J}_k^\pm$. The stationary field layer reads their symmetry projections: the even projection gives the scalar depth $\theta_0$, while the three odd projections give the directional components $\theta_i$. The resulting deformation package is therefore four-component, $(\theta_0,\theta_i)$, before any later packaging into $G$, $A_i$, or $B_{ij}$.
 
+In the source-to-field map developed here, independent $\mathcal{C}_{ij}$ contributions are neglected in order to keep the achieved stationary scalar-and-shift construction minimal. This is a boundary of the present construction, not a claim that the directional momentum-coupling density has no role in fuller momentum-transport accounting.
+
 In the simplest stationary exterior presentation, the Green kernel is $1/R$. The scalar field is
 
 $$

@@ -61,7 +61,7 @@ def test_figure_registry_paths_and_ids_are_valid() -> None:
 
 def test_readme_reflects_current_release_posture() -> None:
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    assert "As of `v0.3.2`" in readme
+    assert "As of `v0.3.3`" in readme
     assert "will be added later" not in readme
     assert "https://ada-mercer.github.io/momentum-first/" in readme
     assert "releases/latest/download/Momentum-First.pdf" in readme

@@ -80,10 +80,10 @@ There is no vacuum row: the channels accumulate the carrier split of actual mome
 
 ## Reconciliation with the classical accounting
 
-In classical variables the translation of the surviving objects is $\varrho\leftrightarrow T_{00}/c$ and $j_k\leftrightarrow T_{0k}/c$; deliberately, no stress components appear anywhere in the source layer. The classical accounting instead assigns extra well weight to pressure ($\rho+3p/c^2$ for a static fluid) and doubles the weight of radiation. The reconciliation is the classical identity
+In the weak stationary component convention used for correspondence, the translation of the surviving objects is $\varrho\leftrightarrow T^{00}/c$ and $j_k\leftrightarrow T^{0k}/c$; deliberately, no stress components appear anywhere in the active scalar-plus-shift source layer. The classical accounting instead assigns extra well weight to pressure ($\rho+3p/c^2$ for a static fluid) and doubles the weight of radiation. The reconciliation is the classical identity
 
 $$
-\int T_{kk}\,d^3r=0
+\int T^{kk}\,d^3r=0
 \qquad\text{for any isolated stationary system:}
 $$
 
@@ -94,7 +94,7 @@ This identity controls the zeroth moment. In the stationary weak-field correspon
 The identity does not remove higher moments. Pressure or stress second moments such as
 
 $$
-\int T_{kk}x_ix_j\,d^3r
+\int T^{kk}x_ix_j\,d^3r
 $$
 
 need not vanish for an aspherical body. Thus the same cancellation that protects the total weight does not guarantee equality of exterior quadrupoles or higher multipoles. The regime statement is part of the claim: this reconciliation is a stationary, isolated-system, weak-field correspondence result, not a proof that local stress apportioning is physically identical in all source geometries.

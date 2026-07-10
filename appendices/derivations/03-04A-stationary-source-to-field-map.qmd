@@ -191,6 +191,32 @@ $$
 =-\frac{4\pi G_N}{c^3}\sum_k\left(\mathcal{J}_k^+(r)-\mathcal{J}_k^-(r)\right)e_{(k)i}(r).
 $$
 
+## Momentum-transport note
+
+The minimal stationary map above uses the zeroth and first source moments, $\mathcal{M}$ and $\mathcal{P}_i$, as independent field inputs. Full carrier-level momentum accounting also contains the second transport moment
+
+$$
+\mathcal{C}_{ij}(x)
+:=
+\left\langle
+\sum_a \frac{p_{i,a}p_{j,a}}{M_a}
+\right\rangle_x,
+\qquad
+M_a=\frac{E_a}{c}.
+$$
+
+This object appears natively once one asks for local conservation of the directional momentum package. Schematically, in a local flat bookkeeping frame and with $t_*$ the bookkeeping time used for the local transport balance,
+
+$$
+\partial_{t_*}\mathcal{P}_i
++ c\,\partial_j\mathcal{C}_{ij}
+= f_i .
+$$
+
+The factor $c\,\mathcal{C}_{ij}$ is the flux of $\mathcal{P}_i$: it records how momentum component $i$ is transported through direction $j$. Thus $\mathcal{C}_{ij}$ is not imported from the GR stress tensor. It is the second moment required by the same carrier bookkeeping whenever pressure, counterflow, shear, anisotropic dispersion, radiation, or internal transport must be represented. The present appendix neglects independent $\mathcal{C}_{ij}$ field contributions only to keep the stationary scalar-and-shift construction minimal.
+
+Here $f_i$ denotes whatever external force-density or source-sink term is present in that local balance. The equation is a transport-accounting schematic, not a completed field-response law for $\mathcal{C}_{ij}$.
+
 ## Result
 
 The stationary field route is

@@ -68,7 +68,7 @@ $$
 
 Nothing is added, rescaled, or reweighted. The source channels are the carrier split, accumulated over the carriers present. We call this the *carrier map*, and its adoption as the gravitational source law is the source identification of the gravity chapter — a named postulate, with its checks collected in Appendix 3.3A and its remaining obligations listed in the closing section.
 
-Three consequences follow immediately, and together they are the structure of the whole source layer.
+Two field-facing consequences follow immediately.
 
 First, the even package is the core-momentum density, on every axis. Forming $\mathcal{M}_k$ cancels the tilt identically:
 
@@ -89,9 +89,23 @@ $$
 
 the density of $p_k$ summed over carriers — for slow matter, the ordinary mass-current density. Where opposite-directed carriers balance, the odd package vanishes; where they do not, their surplus is the odd source. The odd channel *is* the bosic sector's net component, read straight off the momentum bookkeeping. The convention used by the frame-drag analysis later in the chapter is therefore derived from the carrier split, not chosen for classical convenience.
 
-Third, positivity is manifest. Since $p_k\le p\le M$ carrier by carrier, every channel satisfies $\mathcal{J}_k^\pm\ge\varrho/2>0$ wherever content is present. The directional-positive grammar of Foundations survives densitization without any auxiliary condition.
+A third package belongs to the full carrier-level accounting of momentum transport. Define the directional momentum-coupling density by
 
-This is the entire source law. One map, no couplings, and the two field-facing roles fall out as the two halves of the carrier split: core momentum builds the well, net bosic momentum builds the shift.
+$$
+\mathcal{C}_{ij}(x)
+:=
+\left\langle
+\sum_a \frac{p_{i,a}p_{j,a}}{M_a}
+\right\rangle_x,
+\qquad
+M_a=\frac{E_a}{c}.
+$$
+
+It records how momentum component $i$ is carried through spatial direction $j$. This makes $\mathcal{C}_{ij}$ the second transport moment of the same local momentum content, not a new source substance. It is needed for complete momentum-transport accounting in general matter — pressure, counterflow, shear, anisotropic stress, radiation, and internal dispersion — even though the minimal stationary field map developed next uses only the scalar package $\mathcal{M}$ and the net directional package $\mathcal{P}_i$ as independent field inputs.
+
+Finally, positivity is manifest. Since $p_k\le p\le M$ carrier by carrier, every channel satisfies $\mathcal{J}_k^\pm\ge\varrho/2>0$ wherever content is present. The directional-positive grammar of Foundations survives densitization without any auxiliary condition.
+
+This is the entire source law. One carrier map fills the accounting packages: core momentum builds the well, net bosic momentum builds the shift, and the second transport moment records how momentum is internally carried through matter.
 
 ### From carriers to continuous sources
 
@@ -104,6 +118,8 @@ $$
 $$
 
 with the angle bracket denoting the per-volume average over that region. For statistically described matter the same statement reads through the carrier distribution: the even source is the distribution's core-momentum content, the odd source its first bosic moment.
+
+The same coarse-graining also defines the second transport moment $\mathcal{C}_{ij}$. It does not change the scalar or shift source just identified; it completes the momentum-accounting description when internal transport, pressure, shear, or anisotropic dispersion cannot be represented by the zeroth and first moments alone.
 
 Two familiar situations show the mechanics. In a warm gas at rest, carriers move in all directions: every $p_k$ appears alongside its opposite, the odd package cancels, and the gas sources gravity through $\varrho$ alone — temperature enters only insofar as agitation raises the carriers' core momenta. In a rotating body, the bosic components are organized rather than random: ring by ring, $\mathcal{P}_\phi(r)$ survives, and the body sources directional field structure that a static body of the same content cannot.
 
@@ -147,5 +163,7 @@ These examples are deliberately modest. They are not a full catalog of possible 
 ### What the source layer establishes
 
 The source layer establishes that gravity needs no source law of its own. The carrier map fills the directional-positive channels with the same split Foundations conserves — $\mathcal{J}_k^\pm$ as the density of $M\pm\tfrac12 p_k$ — and everything the field layer needs follows by algebra: one direction-blind well source $\mathcal{M}=\varrho$, one derived odd convention $\mathcal{P}_k=j_k$, and channel positivity carrier by carrier. The even and odd packages that feed the scalar-well and shift sides of the stationary field system are the two halves of the carrier split, densitized.
+
+The fuller momentum-accounting layer also contains $\mathcal{C}_{ij}$, the directional coupling or second transport moment. Its role is not to weaken the one-source claim. M1 has one source: momentum content. The symbols $\mathcal{M}$, $\mathcal{P}_i$, and $\mathcal{C}_{ij}$ are packages, projections, or moments of how that content is locally organized.
 
 Once this is in place, the next section can ask the field question directly: given the even and odd source packages, what stationary deformation do they produce, and how is that deformation represented by scalar-well and shift variables? The later correspondence section then checks how these source roles face ordinary density and current language — including where M1's accounting deliberately differs from the classical one.

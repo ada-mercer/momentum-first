@@ -70,6 +70,11 @@ Suggested interpretation:
   channels now explicitly reduce by even/odd projection to the four-component
   stationary deformation package `(theta_0, theta_i)`, with Appendix 3.4A
   carrying the compact projection lemma while preserving SI/P2 boundaries;
+- added directional momentum-coupling density `C_ij` as the second transport
+  moment in Chapter 3 source accounting. The achieved stationary
+  scalar-plus-shift map remains driven by `M` and `P_i`, with independent
+  `C_ij` field effects bracketed; `C_ij` is restored in the stress-energy
+  correspondence as `T^{ij}=c C_ij`;
 - recorded the two named premises (SI source identification, P2 comoving-cycle
   readout) with their independent checks as the remaining hardening targets;
 - promoted the derivation-check scripts `check_carrier_source_map.py` and

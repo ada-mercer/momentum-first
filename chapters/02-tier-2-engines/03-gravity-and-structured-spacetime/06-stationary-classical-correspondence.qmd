@@ -46,6 +46,35 @@ $$
 
 The six positive channels are therefore not six copies of the classical source. They are a directional-positive representation whose common even package reads the scalar source $c\rho$ in the static overlap.
 
+For the broader stress-energy comparison, the M1 source packages can be assembled into a momentum-form source matrix,
+
+$$
+P^{\mu\nu}
+=
+\begin{pmatrix}
+\mathcal{M} & \mathcal{P}_j \\
+\mathcal{P}_i & \mathcal{C}_{ij}
+\end{pmatrix}.
+$$
+
+Here $\mathcal{C}_{ij}$ is the directional momentum-coupling density, the second transport moment introduced in the source layer. In classical language it supplies the spatial stress components. The corresponding stress-energy matrix is
+
+$$
+T^{\mu\nu}=c\,P^{\mu\nu},
+$$
+
+so componentwise
+
+$$
+T^{00}=c\,\mathcal{M},
+\qquad
+T^{0i}=c\,\mathcal{P}_i,
+\qquad
+T^{ij}=c\,\mathcal{C}_{ij}.
+$$
+
+This is a correspondence matrix, not a new source ontology. The matrix entries are moments of one local momentum content: scalar/even content, net directional imbalance, and directional transport coupling. The stationary scalar-and-shift construction of the previous sections used only $\mathcal{M}$ and $\mathcal{P}_i$ as independent field inputs; $\mathcal{C}_{ij}$ restores the spatial stress side of the classical comparison without turning pressure or stress into primitive source substances.
+
 ### Newtonian scalar limit
 
 The M1 scalar field equation can be written as
@@ -131,7 +160,7 @@ The scalar sector matched the classical limit with no leftover coefficient. The 
 
 It does not have to be smuggled anywhere. The factor is derived, in three steps that the chapter has already assembled.
 
-The first step is the source law. The carrier map of the source layer fixes the odd package as the net bosic component, $\mathcal{P}_k=j_k$ — exactly, including the relativistic factors, for matter in bulk motion (Appendix 3.3A). In classical variables the translation is simply $\mathcal{M}\leftrightarrow T_{00}/c$ and $\mathcal{P}_k\leftrightarrow T_{0k}/c$, with no stress term anywhere in the source layer: where the classical accounting adds pressure weight to the well, M1 deliberately does not, and the reconciliation is the apportioning argument later in this section. There is no odd-sector coupling left to tune: the current convention used in the comparison above is read straight off the carrier split.
+The first step is the source law. The carrier map of the source layer fixes the odd package as the net bosic component, $\mathcal{P}_k=j_k$ — exactly, including the relativistic factors, for matter in bulk motion (Appendix 3.3A). In the weak stationary component convention used for the correspondence matrix above, the field-facing translation is $\mathcal{M}\leftrightarrow T^{00}/c$ and $\mathcal{P}_k\leftrightarrow T^{0k}/c$, with no independent stress term added to the scalar well or shift source: where the classical accounting adds pressure weight to the well, M1 deliberately does not, and the reconciliation is the apportioning argument later in this section. The full correspondence matrix also contains $\mathcal{C}_{ij}\leftrightarrow T^{ij}/c$ as the spatial stress side of momentum transport, but that moment is not used here to tune the odd-sector coupling. The current convention used in the comparison above is read straight off the carrier split.
 
 The second step is the two-aspect deformation. The even source produces clock depth and isotropic spatial stretch as two readouts of one deformation, with the weak-field trace coefficient forced to $\sigma=1$ by the cycle-readout argument (Appendix 3.4B).
 
@@ -198,7 +227,7 @@ One correspondence question remains, and it deserves to be answered rather than 
 The reconciliation is a classical identity. For any isolated stationary system, the classical stresses obey
 
 $$
-\int T_{kk}\,d^3r = 0
+\int T^{kk}\,d^3r = 0
 \qquad\text{(each axis)},
 $$
 

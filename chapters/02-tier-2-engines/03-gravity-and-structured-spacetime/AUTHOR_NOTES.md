@@ -80,6 +80,7 @@ mathcal P_k = j_k
 Keep central:
 - the source identification (SI) is a named postulate;
 - full `M` appears on every axis, with no `M/3` or axis-share source law;
+- `C_ij` is the second transport moment for full momentum accounting, not a third active scalar/shift field source;
 - pressure, stress, and radiation do not add separate M1 well weight;
 - classical pressure/radiation weights are subsystem apportioning handled in 3.6 and Appendix 3.3A.
 
@@ -95,6 +96,7 @@ Job: build the stationary field representation from the already-earned source pa
 Keep central:
 - scalar well from the direction-blind even package;
 - directional/shift field from the odd package;
+- independent `C_ij` contributions are neglected in the achieved minimal stationary scalar-plus-shift construction;
 - two aspects of deformation: clock depth and weak-field spatial stretch;
 - `kappa_A=4` as a derived packaging value whose chain is summarized later in 3.6.
 
@@ -122,6 +124,7 @@ Job: collect downstream classical and GR-facing comparison.
 
 Keep central:
 - static density calibration `mathcal M <-> c rho`;
+- momentum-form correspondence matrix `P^{mu nu} = [[M, P_j], [P_i, C_ij]]` with `T^{mu nu}=c P^{mu nu}`;
 - Newtonian scalar limit;
 - shift-current comparison;
 - derived `kappa_A=4` chain: SI -> `P_i=j_i`, P2 -> `sigma=1`, boost consistency -> `kappa_A=4`;
@@ -191,6 +194,7 @@ Status:
 - P2 is comoving-cycle readout / depth=stretch, giving weak-field `sigma=1`.
 - `kappa_A=4` is derived conditional on SI and P2, with frame drag as endpoint audit.
 - Pressure, stress, and radiation enhancements are not M1 source weights. They are classical subsystem apportioning that cancels in total over isolated stationary systems.
+- The full momentum-transport accounting includes `C_ij` as a second transport moment; Chapter 3.4 neglects independent `C_ij` field contributions to preserve the minimal stationary scalar-plus-shift construction.
 - The deliberate divergence remains in local apportioning, aspherical stress multipoles, compact-star structure, and cosmology handoff.
 
 ## Appendix Support Map
