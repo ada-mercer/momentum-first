@@ -12,9 +12,9 @@ The source layer names the momentum content that acts gravitationally. The field
 
 ### Source-side variables
 
-The source layer begins from the same directional-positive logic used in Foundations. For a chosen direction $k$, M1 does not begin with a signed directional quantity alone. It begins with two positive directional channels: the local density of momentum content at a point, resolved into the two opposite senses of direction $k$.
+The source layer begins from the same positive oriented momentum used in Foundations. For a chosen oriented unit direction $\hat{k}$, the carrier contributes $p_{\hat{k}}^\oplus=M+p_k/2$; reversing the orientation gives $p_{-\hat{k}}^\oplus=M-p_k/2$.
 
-For gravitational sourcing, write these channels as
+For gravitational sourcing, write the densities of these opposite-orientation readings as
 
 $$
 \mathcal{J}_k^+,
@@ -22,7 +22,7 @@ $$
 \mathcal{J}_k^-.
 $$
 
-Each is a local source-density field with units of kg/(s m$^2$) — momentum content per unit volume, sorted by directional sense. They are the field image of the directional-positive pair $M \pm \tfrac{1}{2}p_k$ that Foundations assigns to a single carrier, accumulated as a density over the carriers present at a point. Each channel is a positive directional total in its own right, never a signed component; the precise identification is developed in the next chapter.
+Each is a local source-density field with units of kg/(s m$^2$) — momentum content per unit volume, sorted by directional sense. They are the field image of the two opposite-orientation readings accumulated over the carriers present at a point. Each channel is a positive directional total in its own right, never a signed component; the precise identification is developed in the next section.
 
 From these, two combinations are extracted
 

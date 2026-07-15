@@ -41,7 +41,7 @@ families:
     default_style: shell-dark-manuscript
     canonical_scene: foundations-shells-split
     manuscript_targets:
-      - chapters/01-tier-1-foundations/02-foundations/01-core-terms-and-variables.qmd
+      - chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
     migration_from:
       - figures/src/foundations/foundations_shells.py
     notes:

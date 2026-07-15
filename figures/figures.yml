@@ -2,11 +2,11 @@ figures:
   - id: fig-foundations-shells
     source: figures/src/foundations/foundations_shells.py
     output: figures/build/foundations/foundations-shells.png
-    chapter: chapters/01-tier-1-foundations/02-foundations/01-core-terms-and-variables.qmd
+    chapter: chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
   - id: fig-momentum-triangle
     source: figures/src/foundations/momentum_triangle.R
     output: figures/build/foundations/momentum-triangle.png
-    chapter: chapters/01-tier-1-foundations/02-foundations/03-invertible-mapping.qmd
+    chapter: chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
   - id: fig-gravity-directional-source-field-observer
     source: figures/src/gravity-and-structured-spacetime/gravity-directional-source-field-observer.prompt.md
     output: figures/build/gravity-and-structured-spacetime/gravity-directional-source-field-observer.png

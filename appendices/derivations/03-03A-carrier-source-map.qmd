@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This appendix supports the source law stated in Chapter 3.3: the gravitational source channels are the densitized carrier split,
+This appendix supports the source law stated in Chapter 3.3: the gravitational source channels are the densitized opposite-orientation readings,
 
 $$
 \mathcal{J}_k^\pm
@@ -17,21 +17,25 @@ It states the source identification precisely, derives its structural consequenc
 - **Role:** named postulate (the source identification, SI) plus exact consequences. Given SI, everything below follows by inspectable counting; SI itself is checked against fixed structural and empirical anchors but not yet grounded in a micro-model of the deformation coupling.
 - **Regime:** stationary weak-field sources presented in the stationary frame; the counting statements are regime-free algebra.
 - **Status:** accepted V1 source law for the stationary gravity package. The reproducible check is `scripts/check_carrier_source_map.py`.
-- **Non-claim:** this appendix does not derive *why* stage deformation couples to the carrier split rather than to some other positive pairing; that grounding is the named hardening target for SI (Chapter 3.8).
+- **Non-claim:** this appendix does not derive *why* stage deformation couples to the opposite-orientation reading pair rather than to some other positive pairing; that grounding is the named hardening target for SI (Chapter 3.8).
 
 ## The source identification
 
-Foundations assigns every carrier, per axis $k$, the directional-positive pair
+For each oriented axis $\hat{k}$, Foundations gives every carrier the positive reading
 
 $$
-p_{k^+}=M+\tfrac12 p_k,
-\qquad
-p_{k^-}=M-\tfrac12 p_k,
-\qquad
-M=\sqrt{p_f^2+p^2},
+p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
 $$
 
-whose separate conservation realizes the directional-positive postulate. The source identification is the statement that gravity reads exactly this split: over a mesoscale region, the channels accumulate the split entries of the carriers present,
+while the opposite orientation gives
+
+$$
+p_{-\hat{k}}^\oplus=M-\tfrac12 p_k,
+\qquad
+M=\sqrt{p_f^2+p^2}.
+$$
+
+Each orientation supplies its own ADMC conservation statement. The source identification is the statement that gravity reads the two opposite-orientation evaluations together: over a mesoscale region, the channels accumulate the corresponding entries of the carriers present,
 
 $$
 \mathcal{J}_k^\pm(x)
@@ -60,7 +64,7 @@ $$
 
 exactly, including the relativistic factors — the same current that the classical accounting assigns. The convention $\sum_k\mathcal{P}_k\,e_{(k)i}\leftrightarrow j_i$ used by the frame-drag audit (Derivation 3.6B) is therefore derived, not inserted, and the boost-consistency input $\eta=1$ (Derivation 3.6C) is supplied with no residual coefficient.
 
-**Manifest positivity.** Carrier by carrier, $p_k\le p\le M$, so $M\pm\tfrac12 p_k\ge M/2>0$. Every channel satisfies $\mathcal{J}_k^\pm\ge\varrho/2$ wherever content is present. The directional-positive grammar survives densitization with no auxiliary energy condition: positivity is inherited from the carrier split itself.
+**Manifest positivity.** Carrier by carrier, $|p_k|\le p\le M$, so $M\pm\tfrac12 p_k\ge M/2>0$. Every channel satisfies $\mathcal{J}_k^\pm\ge\varrho/2$ wherever content is present. The directional-positive grammar survives densitization with no auxiliary energy condition: positivity is inherited from the opposite-orientation readings themselves.
 
 **The well source for standard matter.** For matter at rest, $\varrho=\rho c$ (each carrier at $p_f=m_0c$). For moving or agitated matter, $\varrho=\langle\gamma\rangle\rho_0 c\,\gamma_{\text{bulk}}$-type expressions follow directly from $M=\gamma m_0 c$; agitation and bulk motion enter the well only through the carriers' core momenta. For light, $\varrho$ is the beam or bath content itself, $\varepsilon/c$.
 
@@ -72,11 +76,11 @@ With $\varepsilon$ the local radiation content density and $\rho$ the mass densi
 - **Slow dust in bulk motion:** $\mathcal{M}=\rho c\,(1+O(v^2/c^2))$, $\mathcal{P}_k=j_k$.
 - **Warm gas at rest:** opposite bosic components cancel pairwise; $\mathcal{P}_k=0$ and $\mathcal{M}=\varrho$ with agitation included through the carriers' $\gamma$ factors. Temperature raises the well only by raising content.
 - **Isotropic photon gas:** $\mathcal{M}=\varepsilon/c$, $\mathcal{P}_k=0$. Light sources the well at its content weight, the same weight as equal-content matter.
-- **Directed null beam along $+x$:** per carrier $p_x=p=M$, so $\mathcal{M}=\varepsilon/c$ and $\mathcal{P}_x=j_x=\varepsilon/c$. The channels are $\mathcal{J}_x^+=\tfrac32\varepsilon/c$ and $\mathcal{J}_x^-=\tfrac12\varepsilon/c$: forward-loaded but not exactly chiral, since the ADMC tilt is $\pm\tfrac12 p_k$, never $\pm p_k$. Transverse axes carry $\mathcal{J}_y^\pm=\mathcal{J}_z^\pm=\varepsilon/c$ with no tilt.
+- **Directed null beam along $+x$:** per carrier $p_x=p=M$, so $\mathcal{M}=\varepsilon/c$ and $\mathcal{P}_x=j_x=\varepsilon/c$. The channels are $\mathcal{J}_x^+=\tfrac32\varepsilon/c$ and $\mathcal{J}_x^-=\tfrac12\varepsilon/c$: forward-loaded but not exactly chiral, since the oriented-reading tilt is $\pm\tfrac12 p_k$, never $\pm p_k$. Transverse axes carry $\mathcal{J}_y^\pm=\mathcal{J}_z^\pm=\varepsilon/c$ with no tilt.
 - **Rotating body:** matter entries for $\mathcal{M}$; organized ring pattern $\mathcal{P}_\phi(r)$.
 - **Stressed solid:** $\mathcal{M}=\rho c$; internal stress reorganizes carriers but adds no source weight of its own; $\mathcal{P}_k=0$ for a static solid.
 
-There is no vacuum row: the channels accumulate the carrier split of actual momentum content, and empty space has none.
+There is no vacuum row: the channels accumulate the opposite-orientation readings of actual momentum content, and empty space has none.
 
 ## Reconciliation with the classical accounting
 
@@ -122,4 +126,4 @@ Recorded in `scripts/check_carrier_source_map.py` (Python, NumPy only, exits non
 
 ## Result
 
-The gravitational source layer needs no source law of its own. The channels are the carrier split, densitized; the well source is the core-momentum density on any axis; the shift source is the net bosic component; positivity is inherited; and the classical pressure and radiation weights are recognized as subsystem apportioning that cancels over isolated systems rather than as targets the source layer must reproduce.
+The gravitational source layer needs no source law of its own. The channels are the opposite-orientation readings, densitized; the well source is the core-momentum density on any axis; the shift source is the net bosic component; positivity is inherited; and the classical pressure and radiation weights are recognized as subsystem apportioning that cancels over isolated systems rather than as targets the source layer must reproduce.
