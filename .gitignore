@@ -17,6 +17,9 @@ Thumbs.db
 # Superseded local/reference copies are not part of the release commit path
 **/_old/
 
+# Chapter-local manuscript candidates awaiting comparison or adoption
+**/_candidates/
+
 # Figure scratch/review outputs that are useful locally but not release assets
 /figures/build/geometry3d/test-renders/
 /figures/build/geometry3d/_tmp-*

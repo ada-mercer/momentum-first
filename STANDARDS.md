@@ -89,7 +89,7 @@ Disposable/generated output:
 - `.quarto/`
 - caches
 - ad hoc render/test output
-- temporary comparison files unless explicitly preserved under an approved review path.
+- chapter-local `_candidates/` files used for temporary manuscript comparison.
 
 Reference and planning material:
 - `AUTHOR_NOTES.md`
@@ -146,6 +146,29 @@ Before committing manuscript-structure changes:
 - update `chapters/README.md` if the live structure changed,
 - run targeted or full Quarto render when rendered structure changed,
 - preserve reader-facing rendered content unless the task explicitly includes prose revision.
+
+### Manuscript candidate workflow
+
+For ordinary passage and section revision, keep candidate files close to the
+working manuscript:
+
+- place candidates in a chapter-local `_candidates/` directory beside `_old/`;
+- preserve the current working file as a clearly named baseline when comparison
+  requires it;
+- use complete `.qmd` files with recognizable source-derived names so VS Code
+  can compare them directly;
+- treat everything in `_candidates/` as temporary and noncanonical;
+- after Arne selects a candidate, move the displaced working file into `_old/`
+  with a descriptive dated name and place the selected candidate at the proper
+  canonical path and filename;
+- retain or delete unselected candidates according to their remaining review
+  value.
+
+Both `_candidates/` and `_old/` are local, Git-ignored working areas. Git history
+and the publishing workflow remain the durable version record. Ordinary
+single-file adoption does not require a branch, worktree, or separate
+integration gate. Publishing sessions remain responsible for resolving
+outstanding issues, committing, pushing, and releasing.
 
 ## 5. Claim and verification standards
 
