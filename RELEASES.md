@@ -44,6 +44,34 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.3.4 — Foundations restructure and oriented-reading ADMC formulation
+
+- restructured Chapter 2, Foundations, from seven to eight sections, adding a
+  dedicated momentum-configuration section (§2.2) that develops fermionic
+  structure, perpendicular bosonic geometry, the momentum triangle as an M1
+  commitment, the shell figures, and the branch machinery before the
+  conservation postulate;
+- adopted the oriented-reading formulation of ADMC: each particle contributes
+  one positive oriented momentum `p_k̂⊕ = M + ½ p_k` per oriented direction,
+  with the reversed orientation supplying `M − ½ p_k`; this is
+  equation-identical to the former simultaneous two-channel form under
+  `k ↔ −k` relabeling, so no prior algebraic result changes;
+- reframed Derivation 2.3A as an affine uniqueness theorem for the positive
+  oriented reading (additivity, parity exchange, axis-independence, local
+  invertibility, and mild regularity imply `αM ± βp`; canonical normalization
+  fixes `α = 1, β = ½`), with explicit proved/not-proved scope fencing, and
+  restored a correctly scoped uniqueness pointer in §2.3;
+- rebuilt §2.4 around the opposite-orientation map, adding the explicit 4×4
+  `T`/`T⁻¹` four-component correspondence and the invariant check
+  `PᵘP_µ = M² − p² = p_f²`;
+- aligned downstream glosses (gravity core terms, Derivations 3.3A/3.3B, and
+  the QM bridge) to opposite-orientation-reading language with zero equation
+  changes;
+- documented the chapter-local `_candidates/` manuscript-candidate workflow in
+  `STANDARDS.md`;
+- verified the package through the independent review sequence recorded under
+  `exchange/reviews/manuscript/` on 2026-07-14 and 2026-07-15.
+
 ### 0.3.3 — Gravity derived-pipeline and appendix restructure
 
 - promoted the stationary gravity source layer to a native carrier source map:

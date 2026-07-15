@@ -7,8 +7,8 @@ authors:
     given-names: Arne
 repository-code: "https://github.com/ada-mercer/momentum-first"
 url: "https://ada-mercer.github.io/momentum-first/"
-version: "0.3.3"
-date-released: "2026-07-09"
+version: "0.3.4"
+date-released: "2026-07-15"
 abstract: "Momentum First is a pre-1.0 theoretical manuscript exploring a momentum-centered framework for foundations, gravity, quantum mechanics, and cosmology. It develops Additive Directional Momentum Conservation, positive directional momentum channels, gravity and quantum bridge structures, and a translation-yield account of cosmological expansion."
 keywords:
   - physics
