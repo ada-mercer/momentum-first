@@ -1,6 +1,6 @@
 ## What Foundations Establishes
 
-The foundations has given M1 a working inertial grammar: the primitive momentum quantities, the directional-positive conservation structure, the invertible map back to familiar relativistic variables, and the baseline relation
+Foundations has given M1 a working inertial grammar: the primitive momentum quantities, the directional-positive conservation structure, the exact correspondence back to familiar relativistic variables, and the baseline relation
 $$
 M = \sqrt{p_f^2 + p^2}.
 $$
@@ -9,17 +9,23 @@ That grammar is not the whole theory. It is the language in which the rest of th
 
 ### The inertial foundation
 
-The opening sections fixed the core terms. Fermic momentum $p_f$ names the locked intrinsic momentum scale associated with rest mass and stable internal cycling. Bosic momentum $p$ names the directed momentum role associated with translational expression. The core momentum $M$ packages both into total momentum content in the inertial baseline.
+The opening sections fixed the core terms and assembled them into a physical momentum configuration. Fermic momentum $p_f$ names the locked intrinsic scale of the particle's internal cycle. Bosic momentum $p$ belongs to that same spherical cycle. It has a spherical contribution and carries an asymmetry with a net direction; its signed component along a chosen orientation $\hat{k}$ is $p_k$. In flat space the fermic and bosic roles are perpendicular contributions to one configuration, and the core momentum $M$ measures its complete momentum content.
 
-ADMC then gave that vocabulary its conservation structure. In its present realized form, each chosen direction $k$ carries two positive directional quantities,
-$$
-p_{k^+}=M+\tfrac12 p_k,
-\qquad
-p_{k^-}=M-\tfrac12 p_k.
-$$
-The inverse map recovers $M$ and $p_k$, so the directional-positive formulation remains exactly connected to the familiar four-momentum package in the inertial correspondence regime.
+ADMC then gave that vocabulary its conservation structure. For an oriented unit direction $\hat{k}$, the particle's positive oriented momentum is
 
-The point is not that M1 has abandoned standard inertial relativity. The point is that it has reorganized the same successful structure around momentum-first primitives and a deeper directional-positive conservation statement.
+$$
+p_{\hat{k}}^\oplus=M+\tfrac12p_k.
+$$
+
+The two branch magnitudes $M+|p_k|/2$ and $M-|p_k|/2$ provide the conditional expressions for this contribution, but the conditions are mathematical sorting rather than a separate physical selection. ADMC conserves
+
+$$
+\sum_i p_{\hat{k}}^{\oplus,(i)}
+$$
+
+for every orientation. Reversing the orientation gives $p_{-\hat{k}}^\oplus=M-p_k/2$. The average of the two opposite-orientation readings recovers $M$, while their difference recovers signed $p_k$. Along three independent spatial directions, the resulting four quantities are exactly and invertibly related to the familiar special-relativistic four-momentum package.
+
+The point is not that M1 has abandoned standard inertial relativity. The point is that it has reorganized the same successful structure around momentum-first primitives and a foundational directional-positive conservation statement.
 
 ### Space, time, and physical change
 
@@ -48,7 +54,6 @@ Space-mediated momentum coupling gives the interaction side of this picture. It 
 Three modifier types are used in the later engines. **Composition modifiers** change how fermic and bosic momentum are internally related or contextualized. **Yield modifiers** change what directed bosic momentum produces as displacement or frequency-style expression. **Admissibility modifiers** change which kinematic states are available at all.
 
 This is added structure, not a completed engine. ADMC remains the conservation grammar. SMC gives the Foundations-level interaction principle. KMs classify the structural form of departures that later chapters will make explicit.
-
 
 ### What remains beyond Foundations
 

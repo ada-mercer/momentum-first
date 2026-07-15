@@ -1,0 +1,222 @@
+## ADMC Mapping and Inertial Correspondence
+
+The positive oriented momentum introduced above preserves the complete inertial information carried by $M$ and signed $p_k$. The relation is linear and exactly invertible. Applied along three independent directions, it connects the M1 formulation directly to special-relativistic four-momentum.
+
+### Opposite-orientation map
+
+For any oriented unit direction $\hat{k}$,
+
+$$
+p_{\hat{k}}^\oplus=M+\tfrac12p_k.
+$$
+
+Reversing the orientation changes $p_k$ to $-p_k$ while leaving $M$ unchanged:
+
+$$
+p_{-\hat{k}}^\oplus=M-\tfrac12p_k.
+$$
+
+The two readings form the linear map
+
+$$
+\begin{pmatrix}
+p_{\hat{k}}^\oplus\\
+p_{-\hat{k}}^\oplus
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & \tfrac12\\
+1 & -\tfrac12
+\end{pmatrix}
+\begin{pmatrix}
+M\\
+p_k
+\end{pmatrix}.
+$$
+
+Its inverse is
+
+$$
+\begin{pmatrix}
+M\\
+p_k
+\end{pmatrix}
+=
+\begin{pmatrix}
+\tfrac12 & \tfrac12\\
+1 & -1
+\end{pmatrix}
+\begin{pmatrix}
+p_{\hat{k}}^\oplus\\
+p_{-\hat{k}}^\oplus
+\end{pmatrix},
+$$
+
+or equivalently,
+
+$$
+M=\tfrac12\left(p_{\hat{k}}^\oplus+p_{-\hat{k}}^\oplus\right),
+\qquad
+p_k=p_{\hat{k}}^\oplus-p_{-\hat{k}}^\oplus.
+$$
+
+The average recovers the positive core momentum. The difference recovers the signed component. The opposite-orientation readings and the pair $(M,p_k)$ are therefore two exactly equivalent representations of the same directional kinematic content.
+
+### Conservation consequences
+
+For an isolated system, ADMC conserves
+
+$$
+\mathcal P_{\hat{k}}^\oplus
+=
+\sum_i p_{\hat{k}}^{\oplus,(i)}
+$$
+
+for every oriented unit direction $\hat{k}$. It therefore also conserves the reading for $-\hat{k}$. Applying the inverse map to the two system readings gives
+
+$$
+\sum_i M^{(i)}
+=
+\tfrac12\left(
+\mathcal P_{\hat{k}}^\oplus
++
+\mathcal P_{-\hat{k}}^\oplus
+\right),
+$$
+
+and
+
+$$
+\sum_i p_k^{(i)}
+=
+\mathcal P_{\hat{k}}^\oplus
+-
+\mathcal P_{-\hat{k}}^\oplus.
+$$
+
+Thus ADMC implies conservation of total $M$ and total signed momentum along $k$. Applied along three independent spatial directions, it recovers conservation of total three-momentum together with total $M$. Conversely, conservation of total $M$ and the signed components preserves the positive oriented readings. At the inertial level, the two conservation formulations are equivalent.
+
+### Four-component form
+
+Choose a Cartesian basis with oriented unit directions $\hat{x}$, $\hat{y}$, and $\hat{z}$. The M1 quantities can be assembled into the four-component package
+
+$$
+P_\oplus
+=
+\begin{pmatrix}
+M\\
+p_{\hat{x}}^\oplus\\
+p_{\hat{y}}^\oplus\\
+p_{\hat{z}}^\oplus
+\end{pmatrix}.
+$$
+
+The corresponding signed package is
+
+$$
+P_M
+=
+\begin{pmatrix}
+M\\
+p_x\\
+p_y\\
+p_z
+\end{pmatrix}.
+$$
+
+They are related by the invertible transformation
+
+$$
+P_\oplus=TP_M,
+\qquad
+T=
+\begin{pmatrix}
+1 & 0 & 0 & 0\\
+1 & \tfrac12 & 0 & 0\\
+1 & 0 & \tfrac12 & 0\\
+1 & 0 & 0 & \tfrac12
+\end{pmatrix},
+$$
+
+with
+
+$$
+P_M=T^{-1}P_\oplus,
+\qquad
+T^{-1}=
+\begin{pmatrix}
+1 & 0 & 0 & 0\\
+-2 & 2 & 0 & 0\\
+-2 & 0 & 2 & 0\\
+-2 & 0 & 0 & 2
+\end{pmatrix}.
+$$
+
+In component form,
+
+$$
+p_x=2\left(p_{\hat{x}}^\oplus-M\right),
+\qquad
+p_y=2\left(p_{\hat{y}}^\oplus-M\right),
+\qquad
+p_z=2\left(p_{\hat{z}}^\oplus-M\right).
+$$
+
+The four entries of $P_\oplus$ are a coordinate package for one momentum configuration, not four contributions to a single directional ADMC sum. Exact invertibility means that $P_\oplus$ and $P_M$ contain the same four degrees of inertial kinematic information.
+
+### Correspondence with special relativity
+
+Standard relativistic energy is introduced through
+
+$$
+E=cM.
+$$
+
+The signed package then becomes
+
+$$
+P_M
+=
+\begin{pmatrix}
+E/c\\
+p_x\\
+p_y\\
+p_z
+\end{pmatrix}
+=P^\mu,
+$$
+
+which is the standard special-relativistic four-momentum in a Cartesian inertial frame. The full correspondence is therefore
+
+$$
+P_\oplus=TP^\mu,
+\qquad
+P^\mu=T^{-1}P_\oplus.
+$$
+
+The M1 directional-positive package and special-relativistic four-momentum are related by an exact change of representation. The transformation does not discard a sign or introduce an additional degree of freedom; it reorganizes the same inertial momentum content.
+
+The invariant relation agrees as well. M1's inertial composition rule gives
+
+$$
+M^2=p_f^2+p^2,
+$$
+
+and $p_f=m_0c$. With metric signature $(+,-,-,-)$,
+
+$$
+P^\mu P_\mu
+=M^2-p^2
+=p_f^2
+=m_0^2c^2.
+$$
+
+Equivalently,
+
+$$
+E^2=m_0^2c^4+p^2c^2,
+$$
+
+the familiar special-relativistic energy-momentum relation.
+
+The correspondence is exact at the inertial level. Opposite positive-oriented readings recover $M$ and each signed component $p_k$; three independent components assemble into four-momentum; and the M1 composition rule reproduces the special-relativistic invariant. M1 differs in its foundational ordering: it begins with positive momentum contributions in oriented directions and reaches the familiar four-component formulation through the invertible map.

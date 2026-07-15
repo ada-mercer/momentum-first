@@ -1,0 +1,29 @@
+## Additive Directional Momentum Conservation (ADMC)
+
+The momentum configuration developed above supplies, for every oriented unit direction $\hat{k}$, one positive oriented momentum contribution $p_{\hat{k}}^\oplus$ from each particle. M1 places conservation of momentum at the core through the following definition:
+
+**For any isolated system and any chosen direction $\hat{k}$, momentum is conserved directionally as a sum of positive quantities.**
+
+We call this principle **Additive Directional Momentum Conservation**, or **ADMC** for short. **Directional** means that the conservation statement is made relative to an arbitrarily chosen direction. **Additive** means that the conserved quantity contains one positive contribution from every particle in the system.
+
+The conservation rule can be written as:
+
+$$
+\sum_i p_{\hat{k}}^{\oplus,(i)}
+=
+\text{constant}
+$$
+
+for any direction $\hat{k}$. Using the algebraic form established in the preceding section, the same statement is
+
+$$
+\sum_i\left(M^{(i)}+\tfrac12p_k^{(i)}\right)
+=
+\text{constant}.
+$$
+
+The first expression keeps the positive directional quantity explicit. The second exposes the core momentum and signed directional component contained within it. ADMC applies equally to the reversed orientation $-\hat{k}$, for which each contribution is $p_{-\hat{k}}^\oplus=M-p_k/2$.
+
+Within the regular additive and symmetry-compatible axis-wise class, Derivation 2.3A shows that canonical normalization uniquely fixes this realized form.
+
+The next section compares these opposite-orientation conservation statements. Their invertible relation recovers total $M$ and signed $p_k$, and three independent directional components establish correspondence with special-relativistic four-momentum.

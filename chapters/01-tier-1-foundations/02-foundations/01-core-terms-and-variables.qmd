@@ -1,60 +1,53 @@
 ## Core Terms and Variables
 
-M1 begins by fixing a small momentum-first vocabulary. Before introducing directional conservation, the opening framework needs three quantities:
-- the quantity associated with rest mass,
-- the quantity associated with translation,
-- and the total momentum content built from both.
-
-These are $p_f$, $p$, and $M$.
+This section fixes the notation used throughout M1. It is meant to serve as a compact reference. The physical organization represented by these variables is developed in the next section.
 
 ### Fermic momentum
 
-The first primitive is **fermic momentum**, written $p_f$.
-At the inertial baseline,
+**Fermic momentum**, written $p_f$, is the nonnegative intrinsic momentum scale associated with stable internal cycling. At the inertial baseline,
 $$
 p_f = m_0 c,
 $$
-where $m_0$ is the particle's rest mass and $c$ is the speed of light.
-
-This is the quantity M1 associates with mass. In M1, mass is treated not as an independent primitive, but as momentum locked into an internal particle cycle. The structure of that cycle is associated with the particle's identity.
+where $m_0$ labels the particle's rest-state mass and $c$ is the invariant local propagation scale. M1 reads the corresponding mass content as momentum locked into the internal cycle associated with the particle's identity.
 
 ### Bosic momentum
 
-The second primitive is **bosic momentum**, written $p$.
-This is the momentum associated with translation. In the opening framework, it is the part of a particle's momentum content that carries directed motion and change of position in space.
+**Bosic momentum**, written $p$, is the nonnegative momentum quantity through which the particle's internal cycle carries translational expression. It belongs to the same internal particle cycle as fermic momentum. When $p$ is present, its organization includes both a spherical contribution and an asymmetry with a net direction.
 
-As a magnitude, $p$ is scalar. Its direction is carried by the vector $\vec p$ and by the directional components $p_k$.
+The associated notation distinguishes the bosic quantity from its directional descriptions:
 
-So the notation is:
 - $p$ = bosic momentum magnitude,
-- $p_k$ = directional components,
-- $\vec p$ = the corresponding momentum vector.
+- $\vec p$ = the corresponding momentum vector,
+- $\hat{k}$ = an arbitrarily chosen oriented unit direction,
+- $p_k=\vec p\mathbin{\cdot}\hat{k}$ = the signed component along that direction.
+
+The quantity $p$ remains the bosic momentum. The components $p_k$ and the vector $\vec p$ formalize its directional asymmetry; they do not replace $p$ as the foundational quantity.
 
 ### Core momentum
 
-The third primitive quantity is **core momentum**, written $M$.
-A particle carries both fermic momentum and bosic momentum. In the inertial baseline, these are treated as orthogonal contributions, and their total momentum content is
+**Core momentum**, written $M$, is the nonnegative scalar measure of the particle's total momentum content. In the inertial baseline,
 $$
 M = \sqrt{p_f^2 + p^2}.
 $$
 
-A sharp eye will notice that this is relativistic energy in flat space, that is,
+The relation is the inertial composition rule for fermic and bosic momentum. Its physical meaning is developed next.
+
+### Positive oriented momentum
+
+For an oriented unit direction $\hat{k}$, **positive oriented momentum**, written $p_{\hat{k}}^\oplus$, is the particle's positive momentum contribution in that orientation. In the inertial realization used in this chapter,
+
 $$
-E = cM.
+p_{\hat{k}}^\oplus=M+\tfrac12p_k.
 $$
 
-### The momentum triangle
+Reversing the orientation gives
 
-The relation
 $$
-M = \sqrt{p_f^2 + p^2}
+p_{-\hat{k}}^\oplus=M-\tfrac12p_k.
 $$
-is the framework's **momentum triangle**. It states that, in the inertial baseline, fermic momentum and bosic momentum combine into a single total momentum content. @fig-momentum-triangle shows this inertial composition in its simplest form.
 
-![In the inertial baseline, bosic momentum $p$ and fermic momentum $p_f$ combine as orthogonal contributions to define the total momentum content $M$.](../../../figures/build/foundations/momentum-triangle.png){#fig-momentum-triangle fig-align="center" out-width="62%"}
-
-At this stage, this is simply the inertial composition relation. The next section introduces the deeper directional-positive conservation postulate and the present split used to realize it.
+The $\oplus$ marks the positive additive quantity used by ADMC. When several particles appear, $p_{\hat{k}}^{\oplus,(i)}$ denotes the contribution of particle $i$; the particle label is omitted when only one particle is under discussion.
 
 ### Terminology note
 
-The terms **fermic** and **bosic** are adapted from the familiar distinction between **fermionic** and **bosonic** structure. In this book, however, **fermic** and **bosic** are used specifically for momentum quantities or momentum roles, while **fermionic** and **bosonic** are reserved for structure, geometry, winding, chirality, or state labels. The terminology is meant to mark a distinction in usage, not to assume from the outset a one-to-one identification with the standard fermion/boson classification of quantum field theory.
+The terms **fermic** and **bosic** name momentum roles in M1. **Fermionic** and **bosonic** are reserved for structure, geometry, winding, chirality, or state labels. No one-to-one identification between these momentum roles and a later particle classification is assumed here.

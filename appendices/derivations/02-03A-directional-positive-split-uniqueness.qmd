@@ -1,137 +1,123 @@
-# Derivation 2.3A — Structural uniqueness of the directional-positive split {#sec-directional-positive-split-uniqueness .unnumbered}
+# Derivation 2.3A — Structural uniqueness of the positive oriented reading {#sec-directional-positive-split-uniqueness .unnumbered}
 
 ## Purpose
 
-This derivation supports the claim, first referenced from Foundations §2.3, that the realized directional-positive split
+This derivation supports the claim, referenced from Foundations §2.3, that the realized opposite-orientation readings
 
 $$
-p_{k^+}=M+\tfrac12 p_k,
+p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
 \qquad
-p_{k^-}=M-\tfrac12 p_k,
+p_{-\hat{k}}^\oplus=M-\tfrac12 p_k,
 $$
 
-is not an arbitrary choice within the natural class of additive, symmetry-compatible axis-wise two-channel encodings.
+are not an arbitrary choice within the natural class of additive, symmetry-compatible axis-wise two-reading encodings.
 
-The result proved here is deliberately precise in scope. We show that, under mild regularity, additivity and directional-reflection symmetry force the channel variables to take an affine form
+The result proved here is deliberately precise in scope. We show that, under mild regularity, additivity and directional-reflection symmetry force the two readings to take an affine form
 
 $$
-\Pi_\pm(M,p)=\alpha M \pm \beta p,
+F_\pm(M,p)=\alpha M \pm \beta p,
 $$
 
-and that the canonical M1 split is obtained by the normalization that identifies the recovered conserved quantities with the already named `M` and `p_k`.
+and that the canonical M1 realization is obtained by the normalization that identifies the recovered conserved quantities with the already named $M$ and $p_k$. Here $F_+$ and $F_-$ are proof labels for evaluations in opposite orientations, not new physical momentum variables.
 
-This is therefore an **affine uniqueness theorem**. It does **not** prove that every imaginable nonlinear realization of the directional-positive postulate is impossible.
+This is therefore an **affine uniqueness theorem**. It does **not** prove that every imaginable nonlinear realization of the positive oriented momentum postulate is impossible.
 
-It also does not cover quadratic, flux-like source-channel constructions such as null contractions of a rank-two stress tensor. Those live in a different mathematical class: this appendix constrains linear charge-like splits of conserved vector content — a class that the gravitational carrier source map of Derivation 3.3A sits squarely inside, being the Foundations pair itself densitized — while the rejected null-probe diagnostic of Derivation 3.3B works with quadratic stress-tensor contractions.
+It also does not cover quadratic, flux-like source-channel constructions such as null contractions of a rank-two stress tensor. Those live in a different mathematical class: this appendix constrains linear charge-like readings of conserved vector content — a class that the gravitational carrier source map of Derivation 3.3A sits squarely inside, being the opposite-orientation readings themselves densitized — while the rejected null-probe diagnostic of Derivation 3.3B works with quadratic stress-tensor contractions.
 
 ## Role / regime / status
 
 - **Role:** derivation
-- **Regime:** isolated systems, inertial kinematic level, one fixed chosen direction `k`
+- **Regime:** isolated systems, inertial kinematic level, one fixed chosen orientation $\hat{k}$
 - **Status:** proved within the additive, symmetry-compatible, regular axis-wise class stated below
 - **Unresolved stronger claim:** global uniqueness beyond the affine/additive class remains open
 
 ## Setup
 
-Fix a direction `k`. For readability write
+Fix an oriented unit direction $\hat{k}$. For readability write
 
 $$
 p:=p_k.
 $$
 
-Consider an axis-wise two-channel encoding that assigns to each pair `(M,p)` two real numbers
+Consider an axis-wise two-reading encoding that assigns to each pair $(M,p)$ two real numbers
 
 $$
-\Pi_{k^+}(M,p),
+F_+(M,p),
 \qquad
-\Pi_{k^-}(M,p),
+F_-(M,p),
 $$
 
-interpreted as the positive directional quantities in the `+k` and `-k` channels.
+interpreted as candidate evaluations in the orientations $\hat{k}$ and $-\hat{k}$. They are placed side by side here to test invertibility; they are not two simultaneous particle contributions within one ADMC reading.
 
 Define the sum and difference combinations
 
 $$
-\Sigma_k(M,p):=\Pi_{k^+}(M,p)+\Pi_{k^-}(M,p),
+\Sigma(M,p):=F_+(M,p)+F_-(M,p),
 $$
 
 $$
-\Delta_k(M,p):=\Pi_{k^+}(M,p)-\Pi_{k^-}(M,p).
+\Delta(M,p):=F_+(M,p)-F_-(M,p).
 $$
 
-For the canonical M1 split these become
+For the canonical M1 realization these become
 
 $$
-\Sigma_k=2M,
+\Sigma=2M,
 \qquad
-\Delta_k=p.
+\Delta=p.
 $$
 
-The aim is to determine how much freedom is left if one demands that the encoding behave like a genuine additive directional bookkeeping map rather than an arbitrary relabeling.
+The aim is to determine how much freedom is left if the encoding behaves like a genuine additive directional bookkeeping map rather than an arbitrary relabeling.
 
 ## Assumptions
 
 ### Assumption A1: axis-wise additivity
 
-For each fixed direction `k` and each sign choice,
+For each fixed orientation and each sign label,
 
 $$
-\Pi_{k^\pm}(M_1+M_2,\,p_1+p_2)
+F_\pm(M_1+M_2,\,p_1+p_2)
 =
-\Pi_{k^\pm}(M_1,p_1)+\Pi_{k^\pm}(M_2,p_2)
+F_\pm(M_1,p_1)+F_\pm(M_2,p_2)
 $$
 
-for all pairs `(M_1,p_1)` and `(M_2,p_2)` in the domain.
+for all pairs $(M_1,p_1)$ and $(M_2,p_2)$ in the domain.
 
-Equivalently, `\Sigma_k` and `\Delta_k` are additive.
+Equivalently, $\Sigma$ and $\Delta$ are additive.
 
-This is the structural assumption that the channel variables are true additive bookkeeping variables for isolated-system composition.
+This is the structural assumption that the oriented readings are true additive bookkeeping variables for isolated-system composition.
 
 ### Assumption A2: parity exchange
 
-Reversing the sign of the directional component exchanges the two channels:
+Reversing the sign of the directional component exchanges the two orientation labels:
 
 $$
-\Pi_{k^+}(M,-p)=\Pi_{k^-}(M,p),
+F_+(M,-p)=F_-(M,p),
 \qquad
-\Pi_{k^-}(M,-p)=\Pi_{k^+}(M,p).
+F_-(M,-p)=F_+(M,p).
 $$
 
-Equivalently, `\Sigma_k(M,p)` is even in `p` and `\Delta_k(M,p)` is odd in `p`.
+Equivalently, $\Sigma(M,p)$ is even in $p$ and $\Delta(M,p)$ is odd in $p$.
 
 ### Assumption A3: axis-independence
 
-The functional form of the encoding does not depend on which axis is chosen. Thus there exist functions `\Pi_\pm : \mathbb R^2 \to \mathbb R` such that
-
-$$
-\Pi_{k^\pm}(M,p_k)=\Pi_\pm(M,p_k)
-$$
-
-for every axis `k`.
-
-Under this assumption we may drop the axis label and write simply
-
-$$
-\Sigma(M,p)=\Pi_+(M,p)+\Pi_-(M,p),
-\qquad
-\Delta(M,p)=\Pi_+(M,p)-\Pi_-(M,p).
-$$
+The functional form of the encoding does not depend on which axis is chosen. Thus the same functions $F_\pm:\mathbb R^2\to\mathbb R$ apply for every oriented axis.
 
 ### Assumption A4: local invertibility
 
-There exists at least one point `(M_0,p_0)` with `M_0>0` such that the map
+There exists at least one point $(M_0,p_0)$ with $M_0>0$ such that the map
 
 $$
-(M,p) \mapsto (\Pi_+(M,p),\Pi_-(M,p))
+(M,p) \mapsto (F_+(M,p),F_-(M,p))
 $$
 
-is locally one-to-one in a neighborhood of `(M_0,p_0)`.
+is locally one-to-one in a neighborhood of $(M_0,p_0)$.
 
 This assumption excludes degenerate encodings that collapse two degrees of freedom into one.
 
 ### Assumption A5: mild regularity
 
-At least one of the additive functions `\Pi_+`, `\Pi_-` (equivalently `\Sigma` or `\Delta`) is measurable on a set of positive measure, or continuous at one point.
+At least one of the additive functions $F_+$, $F_-$ — equivalently $\Sigma$ or $\Delta$ — is measurable on a set of positive measure, or continuous at one point.
 
 This is a standard regularity hypothesis used to exclude pathological solutions to the Cauchy functional equation.
 
@@ -139,13 +125,13 @@ This is a standard regularity hypothesis used to exclude pathological solutions 
 
 ## Theorem 1 (affine form is forced)
 
-Under Assumptions A1–A5, there exist constants `\alpha,\beta \in \mathbb R` such that
+Under Assumptions A1–A5, there exist constants $\alpha,\beta\in\mathbb R$ such that
 
 $$
-\Pi_\pm(M,p)=\alpha M \pm \beta p
+F_\pm(M,p)=\alpha M \pm \beta p
 $$
 
-for all `(M,p)` in the domain.
+for all $(M,p)$ in the domain.
 
 Moreover, Assumption A4 implies
 
@@ -157,33 +143,33 @@ $$
 
 ### Proof
 
-By Assumption A1, each of `\Pi_+` and `\Pi_-` satisfies the additive functional equation on `\mathbb R^2`:
+By Assumption A1, each of $F_+$ and $F_-$ satisfies the additive functional equation on $\mathbb R^2$:
 
 $$
-\Pi_\pm\big((M_1,p_1)+(M_2,p_2)\big)
+F_\pm\big((M_1,p_1)+(M_2,p_2)\big)
 =
-\Pi_\pm(M_1,p_1)+\Pi_\pm(M_2,p_2).
+F_\pm(M_1,p_1)+F_\pm(M_2,p_2).
 $$
 
-By Assumption A5, additive functions on `\mathbb R^2` with this mild regularity are linear. Therefore there exist constants `a_\pm,b_\pm \in \mathbb R` such that
+By Assumption A5, additive functions on $\mathbb R^2$ with this mild regularity are linear. Therefore there exist constants $a_\pm,b_\pm\in\mathbb R$ such that
 
 $$
-\Pi_\pm(M,p)=a_\pm M + b_\pm p.
+F_\pm(M,p)=a_\pm M + b_\pm p.
 $$
 
 Now impose Assumption A2. From parity exchange,
 
 $$
-\Pi_+(M,-p)=\Pi_-(M,p)
+F_+(M,-p)=F_-(M,p)
 $$
 
-for all `(M,p)`. Substituting the linear forms gives
+for all $(M,p)$. Substituting the linear forms gives
 
 $$
 a_+ M - b_+ p = a_- M + b_- p.
 $$
 
-Because this identity holds for all `M` and `p`, coefficient comparison yields
+Because this identity holds for all $M$ and $p$, coefficient comparison yields
 
 $$
 a_+=a_-=:\alpha,
@@ -194,22 +180,22 @@ $$
 Hence
 
 $$
-\Pi_\pm(M,p)=\alpha M \pm \beta p.
+F_\pm(M,p)=\alpha M \pm \beta p.
 $$
 
-It remains to use local invertibility. If `\alpha=0`, then
+It remains to use local invertibility. If $\alpha=0$, then
 
 $$
-\Pi_+(M,p)+\Pi_-(M,p) \equiv 0,
+F_+(M,p)+F_-(M,p) \equiv 0,
 $$
 
-so the channel pair cannot recover any variation in `M`; the map cannot be locally one-to-one. If `\beta=0`, then
+so the reading pair cannot recover any variation in $M$; the map cannot be locally one-to-one. If $\beta=0$, then
 
 $$
-\Pi_+(M,p)-\Pi_-(M,p) \equiv 0,
+F_+(M,p)-F_-(M,p) \equiv 0,
 $$
 
-so the channel pair cannot recover any variation in `p`; again local invertibility fails. Therefore `\alpha\neq 0` and `\beta\neq 0`. ∎
+so the pair cannot recover any variation in $p$; again local invertibility fails. Therefore $\alpha\neq0$ and $\beta\neq0$. ∎
 
 ## Interpretation of Theorem 1
 
@@ -221,10 +207,10 @@ Theorem 1 is the core structural result. It says that once the encoding is requi
 - locally invertible,
 - and regular enough to exclude pathological additive functions,
 
-then no nonlinear or asymmetrically mixed dependence on `(M,p)` survives. The entire admissible class collapses to the two-parameter affine family
+then no nonlinear or asymmetrically mixed dependence on $(M,p)$ survives. The entire admissible class collapses to the two-parameter affine family
 
 $$
-\Pi_\pm(M,p)=\alpha M \pm \beta p.
+F_\pm(M,p)=\alpha M \pm \beta p.
 $$
 
 At this stage the coefficients are still undetermined. That remaining freedom is normalization freedom, not structural freedom.
@@ -234,20 +220,20 @@ At this stage the coefficients are still undetermined. That remaining freedom is
 Under the assumptions of Theorem 1, every admissible encoding is of the form
 
 $$
-\Pi_\pm(M,p)=\alpha M \pm \beta p
+F_\pm(M,p)=\alpha M \pm \beta p
 $$
 
-with `\alpha\neq 0` and `\beta\neq 0`.
+with $\alpha\neq0$ and $\beta\neq0$.
 
 Consequently,
 
 $$
-\tfrac12(\Pi_+ + \Pi_-) = \alpha M,
+\tfrac12(F_+ + F_-) = \alpha M,
 \qquad
-\Pi_+ - \Pi_- = 2\beta p.
+F_+ - F_- = 2\beta p.
 $$
 
-So the affine family contains a global scaling freedom for the sum channel and an independent relative scaling for the difference channel.
+So the affine family contains a global scaling freedom for the sum combination and an independent relative scaling for the difference combination.
 
 ### Proof
 
@@ -258,9 +244,9 @@ Substitute the form from Theorem 1 directly into the sum and difference combinat
 To recover the canonical M1 variables without rescaling, one imposes the normalization
 
 $$
-M = \tfrac12(\Pi_+ + \Pi_-),
+M = \tfrac12(F_+ + F_-),
 \qquad
-p = \Pi_+ - \Pi_-.
+p = F_+ - F_-.
 $$
 
 Substituting the affine family into these identities gives
@@ -279,30 +265,30 @@ $$
 \beta = \tfrac12.
 $$
 
-This yields the canonical directional-positive split.
+This yields the canonical opposite-orientation readings.
 
-## Corollary 2 (canonical split)
+## Corollary 2 (canonical realization)
 
-If, in addition to Assumptions A1–A5, one requires that the recovered additive quantities are exactly the already named variables `M` and `p`, namely
+If, in addition to Assumptions A1–A5, one requires that the recovered additive quantities are exactly the already named variables $M$ and $p$, namely
 
 $$
-M = \tfrac12(\Pi_+ + \Pi_-),
+M = \tfrac12(F_+ + F_-),
 \qquad
-p = \Pi_+ - \Pi_-,
+p = F_+ - F_-,
 $$
 
 then the encoding is uniquely fixed as
 
 $$
-\Pi_\pm(M,p)=M\pm\tfrac12 p.
+F_\pm(M,p)=M\pm\tfrac12 p.
 $$
 
-Equivalently, reinstating the direction label,
+Equivalently, reinstating the orientation label,
 
 $$
-p_{k^+}=M+\tfrac12 p_k,
+p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
 \qquad
-p_{k^-}=M-\tfrac12 p_k.
+p_{-\hat{k}}^\oplus=M-\tfrac12 p_k.
 $$
 
 ### Proof
@@ -314,7 +300,7 @@ This is the canonical normalization just derived, written as a uniqueness statem
 If one additionally requires
 
 $$
-\Pi_\pm(M,p) \ge 0
+F_\pm(M,p) \ge 0
 $$
 
 on the physical domain, then positivity does not determine the coefficients by itself, but it does select the physical sign convention.
@@ -322,16 +308,10 @@ on the physical domain, then positivity does not determine the coefficients by i
 For the canonical normalization,
 
 $$
-\Pi_\pm(M,p)=M\pm\tfrac12 p,
+F_\pm(M,p)=M\pm\tfrac12 p,
 $$
 
-so positivity becomes the domain condition
-
-$$
-M \ge \tfrac12 |p|.
-$$
-
-The sign of the `+` channel is fixed by the convention that increasing `p` along the chosen axis increases `\Pi_+` and decreases `\Pi_-`.
+so positivity is automatic on the physical domain $M\ge|p|$. The sign of the $+$ reading is fixed by the convention that increasing $p$ along the chosen orientation increases $F_+$ and decreases $F_-$.
 
 ## What has and has not been proved
 
@@ -341,37 +321,36 @@ The status of the result should be stated carefully.
 
 Within the additive, symmetry-compatible, axis-wise class defined by Assumptions A1–A5,
 
-1. the channel encoding must be affine,
-2. local invertibility removes the degenerate cases `\alpha=0` and `\beta=0`,
-3. canonical normalization uniquely fixes the coefficients to
-   `\alpha=1` and `\beta=1/2`.
+1. the reading encoding must be affine,
+2. local invertibility removes the degenerate cases $\alpha=0$ and $\beta=0$,
+3. canonical normalization uniquely fixes the coefficients to $\alpha=1$ and $\beta=1/2$.
 
 ### Not proved here
 
-This derivation does **not** establish that every sufficiently reasonable realization of the directional-positive postulate must satisfy Assumption A1 from first principles. It also does **not** exclude every conceivable nonlinear encoding outside the additive class.
+This derivation does **not** establish that every sufficiently reasonable realization of the positive oriented momentum postulate must satisfy Assumption A1 from first principles. It also does **not** exclude every conceivable nonlinear encoding outside the additive class.
 
 So the honest conclusion is:
 
-> the canonical split is structurally unique within the natural additive and symmetry-compatible axis-wise encoding class.
+> the canonical opposite-orientation readings are structurally unique within the natural additive and symmetry-compatible axis-wise encoding class.
 
 That is already a strong result, but it is weaker than a global no-alternative theorem.
 
 ## Result
 
-The directional-positive split used in M1,
+The positive oriented readings used in M1,
 
 $$
-p_{k^+}=M+\tfrac12 p_k,
+p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
 \qquad
-p_{k^-}=M-\tfrac12 p_k,
+p_{-\hat{k}}^\oplus=M-\tfrac12 p_k,
 $$
 
-is the unique canonically normalized member of the affine family forced by axis-wise additivity, parity exchange, axis-independence, local invertibility, and mild regularity.
+are the unique canonically normalized members of the affine family forced by axis-wise additivity, parity exchange, axis-independence, local invertibility, and mild regularity.
 
-For a technically strong reader outside the project, the correct interpretation is therefore not that the split was guessed and then merely preferred, but that its form is tightly constrained once one decides that the directional-positive channels are genuine additive conserved quantities attached to a chosen direction.
+For a technically strong reader outside the project, the correct interpretation is therefore not that the form was guessed and then merely preferred, but that it is tightly constrained once one decides that positive oriented readings are genuine additive conserved quantities attached to a chosen orientation.
 
 ## Notes for citation in the main text
 
 If Foundations §2.3 cites this appendix, the safest summary sentence is:
 
-> Within the natural additive and symmetry-compatible class of axis-wise two-channel encodings, the directional-positive split is forced to the affine family `\Pi_\pm=\alpha M \pm \beta p`, and canonical normalization fixes uniquely the realized form `p_{k^\pm}=M\pm \tfrac12 p_k`.
+> Within the natural additive and symmetry-compatible class of axis-wise opposite-orientation encodings, the positive oriented reading is forced to the affine family $F_\pm=\alpha M\pm\beta p$, and canonical normalization fixes uniquely the realized form $p_{\hat{k}}^\oplus=M+\tfrac12p_k$ and $p_{-\hat{k}}^\oplus=M-\tfrac12p_k$.

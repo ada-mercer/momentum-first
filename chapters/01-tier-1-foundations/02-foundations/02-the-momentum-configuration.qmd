@@ -1,0 +1,125 @@
+## The Momentum Configuration
+
+A particle can translate only because it already has an organized internal momentum structure. M1 begins with that structure and distinguishes two perpendicular geometrical aspects within it: fermionic structure, which carries the particle's intrinsic organization, and bosonic geometry, on which translational momentum is expressed. Fermic and bosic momentum name the corresponding momentum roles.
+
+### Fermionic structure and fermic momentum
+
+A stable particle contains a closed fermionic momentum cycle. This is the persistent structure through which the particle retains its identity while its state of motion changes. Fermic momentum, written $p_f$, is the momentum locked into that cycle. It supplies the particle's intrinsic symmetric momentum scale,
+
+$$
+p_f=m_0c.
+$$
+
+The relation ties fermic momentum directly to rest mass: $m_0$ is the mass reading of momentum confined in the fermionic cycle. Other intrinsic properties, including charge, belong to the organization of that structure rather than to translational motion. Charge is not determined by the magnitude of $p_f$; it characterizes how the fermionic structure is organized. The detailed geometrical account of those identity properties lies beyond the present foundation.
+
+With no translation, the fermic cycle has no preferred external direction. Its momentum organization is symmetric, and the particle's core momentum is entirely fermic.
+
+### Perpendicular bosonic geometry
+
+In flat space, the fermionic structure supports a bosonic geometry perpendicular to the fermionic cycle. Bosic momentum $p$ resides on this geometry. The word *perpendicular* describes the internal geometrical relation between the two momentum roles; it does not place $p_f$ along one ordinary spatial axis and $p$ along another.
+
+The fermionic and bosonic aspects are therefore not separate particles or detachable layers. They are perpendicular aspects of one internal particle cycle. The fermionic aspect carries the locked intrinsic scale. The bosonic aspect provides the geometry on which momentum can acquire translational expression. Together these aspects form the spherical internal particle cycle referred to throughout this chapter.
+
+The whole configuration is measured by its core momentum $M$. In the flat inertial baseline, M1 takes the total core momentum to follow the composition rule
+
+$$
+M=\sqrt{p_f^2+p^2}.
+$$
+
+The perpendicular geometry gives this rule its **momentum-triangle** interpretation. Fermic momentum and bosic momentum form perpendicular contributions to one momentum configuration and together determine its total core momentum.
+
+![In the flat inertial baseline, bosic momentum $p$ resides on the bosonic geometry perpendicular to the fermionic cycle carrying $p_f$. Together they define the total core momentum $M$ of one particle configuration.](../../../figures/build/foundations/momentum-triangle.png){#fig-momentum-triangle fig-align="center" out-width="62%"}
+
+### Swelling, asymmetry, and translation
+
+When a particle gains bosic momentum, the whole momentum configuration swells from the fermic scale $p_f$ to the core scale $M$. The swelling is the spherical contribution of $p$ to the combined cycle. It does not yet select a direction: a larger symmetric shell alone would contain no information about which way the particle translates.
+
+Translation appears because the bosonic structure also carries an asymmetry. Its organization over the spherical cycle is no longer directionally balanced. The shell represents that asymmetry by extending one side relative to $M$ while contracting the opposite side, producing a net direction. Bosic momentum yields translation through this asymmetry. It is therefore neither an external straight-line component nor a quantity detached from the particle's internal cycle: its spherical contribution swells the configuration, and its directional imbalance gives that momentum translational expression.
+
+The swelling and asymmetry belong to one changed momentum configuration. They are not successive physical mechanisms. @fig-foundations-shells-admc separates them only so that each can be seen. Panel (a) compares the symmetric fermic scale $p_f$ with the swollen core scale $M$. Panel (b) keeps the spherical core shell $M$ visible as a reference while encoding the bosic asymmetry over the same structure. Along the net asymmetry direction, one side extends to $M+p/2$ while the opposite side contracts to $M-p/2$. These are the two positive branch magnitudes on the two sides of that axis. The deformation represents their organization, not a measured spatial distribution of momentum density. The local arrows describe the deformation across the spherical cycle; they do not represent momentum leaving the particle or flowing along external straight lines.
+
+::: {#fig-foundations-shells-admc layout-ncol=2}
+
+![The rest-state fermic scale $p_f$ and the swollen spherical core scale $M$. The radial arrows compare the two shell descriptions; they do not depict a separate temporal step.](../../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-a.png){#fig-foundations-shells-admc-a}
+
+![The spherical core shell $M$ remains as the reference geometry while bosic momentum $p$ carries a directional asymmetry over the same structure. Along the net asymmetry direction, where $p_k=p$, the two extremes differ from $M$ by $+p/2$ and $-p/2$.](../../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-b.png){#fig-foundations-shells-admc-b}
+
+Two representational views of one internal momentum configuration. Panel (a) shows the isotropic swelling from $p_f$ to $M$. Panel (b) shows the directional asymmetry carried by bosic momentum $p$ on that swollen spherical cycle. The panels separate two simultaneous features for explanation; they do not describe successive physical stages.
+:::
+
+The limiting configurations make the roles clear. When no momentum is expressed as translation,
+
+$$
+p=0,
+\qquad
+M=p_f.
+$$
+
+The core momentum is then entirely fermic. At the purely bosic boundary of the inertial composition rule,
+
+$$
+p_f=0,
+\qquad
+M=p.
+$$
+
+The full structural realization of this boundary lies beyond the particle construction developed here. When both roles are present, $p_f>0$ and $p>0$, and the core momentum measures the complete configuration rather than either contribution alone.
+
+### Choosing a direction
+
+Core momentum $M$ belongs to the configuration as a whole and does not depend on which spatial direction is chosen. The bosic asymmetry has a net direction. For any chosen oriented unit direction $\hat{k}$, its signed component is written $p_k$.
+
+The component $p_k$ records the asymmetry relative to $\hat{k}$; it does not mean that bosic momentum exists only along a line through the particle. Reversing the orientation from $\hat{k}$ to $-\hat{k}$ leaves $M$ unchanged and reverses the sign of $p_k$. The pair $(M,p_k)$ therefore contains two different kinds of information: a positive total that is common to every directional choice, and a signed asymmetry carried by the spherical cycle along that direction.
+
+For a particle $i$, the two positive branch magnitudes along this axis are
+
+$$
+p_{k^+}^{(i)}
+=
+M^{(i)}+\tfrac12\left|p_k^{(i)}\right|,
+\qquad
+p_{k^-}^{(i)}
+=
+M^{(i)}-\tfrac12\left|p_k^{(i)}\right|.
+$$
+
+The particle's positive oriented momentum in direction $\hat{k}$ is
+
+$$
+p_{\hat{k}}^{\oplus,(i)}
+=
+\begin{cases}
+p_{k^+}^{(i)}, & p_k^{(i)}\ge0,\\
+p_{k^-}^{(i)}, & p_k^{(i)}<0.
+\end{cases}
+$$
+
+These conditions are a mathematical partition. They identify which branch expression equals the momentum contribution already carried by the shell in orientation $\hat{k}$; they do not describe a separate physical selection mechanism. Substituting the branch magnitudes gives
+
+$$
+p_{\hat{k}}^{\oplus,(i)}
+=
+M^{(i)}+\tfrac12p_k^{(i)}.
+$$
+
+The contribution is always positive. Since
+
+$$
+\frac{\left|p_k^{(i)}\right|}{2}
+\le
+\frac{p^{(i)}}{2}
+\le
+\frac{M^{(i)}}{2},
+$$
+
+its lower branch satisfies
+
+$$
+p_{k^-}^{(i)}
+\ge
+\tfrac12M^{(i)}>0
+$$
+
+for every nonempty particle configuration. Panel (b) shows the special axis aligned with the net asymmetry. Read along that asymmetry, the shell contributes $p_{\hat{k}}^\oplus=M+p/2$; read in the opposite orientation, it contributes $p_{-\hat{k}}^\oplus=M-p/2$.
+
+The momentum configuration has now supplied the positive directional quantity that M1 conserves. The next section states that conservation principle.

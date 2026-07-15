@@ -2,14 +2,16 @@
 
 {{< include 01-core-terms-and-variables.qmd >}}
 
-{{< include 02-admc.qmd >}}
+{{< include 02-the-momentum-configuration.qmd >}}
 
-{{< include 03-invertible-mapping.qmd >}}
+{{< include 03-admc.qmd >}}
 
-{{< include 04-space-and-momentum-stage-and-actor.qmd >}}
+{{< include 04-invertible-mapping.qmd >}}
 
-{{< include 05-time.qmd >}}
+{{< include 05-space-and-momentum-stage-and-actor.qmd >}}
 
-{{< include 06-kinematic-modifiers.qmd >}}
+{{< include 06-time.qmd >}}
 
-{{< include 07-what-foundations-establishes.qmd >}}
+{{< include 07-kinematic-modifiers.qmd >}}
+
+{{< include 08-what-foundations-establishes.qmd >}}
