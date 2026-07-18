@@ -21,7 +21,7 @@ Commands:
 
 ```bash
 python3 tooling/scripts/check_dependencies.py --mode minimal
-python3 tooling/scripts/check_crossrefs.py
+.venv/bin/python tooling/scripts/check_crossrefs.py
 python3 -m py_compile tooling/scripts/*.py tooling/tests/*.py
 pytest tooling/tests/test_repo_integrity.py
 ```
@@ -44,7 +44,7 @@ Commands:
 
 ```bash
 python3 tooling/scripts/check_dependencies.py --mode figures
-python3 tooling/scripts/build_figures.py
+.venv/bin/python tooling/scripts/build_figures.py
 ```
 
 ### 3. Full render / release

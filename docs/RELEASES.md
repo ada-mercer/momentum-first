@@ -177,8 +177,8 @@ That is the core safeguard against frequent accidental releases.
 .venv/bin/python tooling/scripts/build_manuscript_status.py
 python3 tooling/scripts/check_dependencies.py --mode full
 .venv/bin/python -m pytest tooling/tests
-python3 tooling/scripts/check_crossrefs.py
-python3 tooling/scripts/build_figures.py
+.venv/bin/python tooling/scripts/check_crossrefs.py
+.venv/bin/python tooling/scripts/build_figures.py
 quarto render
 ```
 

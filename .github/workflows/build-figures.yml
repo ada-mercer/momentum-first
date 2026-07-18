@@ -22,7 +22,7 @@ jobs:
         run: python3 tooling/scripts/check_dependencies.py --mode figures
 
       - name: Build registered figures
-        run: python3 tooling/scripts/build_figures.py
+        run: .venv/bin/python tooling/scripts/build_figures.py
 
       - name: Verify canonical figure outputs are current
         run: git diff --exit-code -- figures/build

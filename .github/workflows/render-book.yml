@@ -24,10 +24,10 @@ jobs:
       - name: Run release validation
         run: |
           .venv/bin/python -m pytest tooling/tests
-          python3 tooling/scripts/check_crossrefs.py
+          .venv/bin/python tooling/scripts/check_crossrefs.py
           .venv/bin/python tooling/scripts/build_manuscript_status.py
           git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md
-          python3 tooling/scripts/build_figures.py
+          .venv/bin/python tooling/scripts/build_figures.py
           git diff --exit-code -- figures/build
 
       - name: Render PDF preview
