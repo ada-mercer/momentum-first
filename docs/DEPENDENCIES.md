@@ -37,8 +37,8 @@ Typical requirements:
 - **numpy** — numerical support
 - **matplotlib** — plotting
 - **pandas** — table/data handling
-- **Rscript** with `ggplot2` and `svglite` — required by registered `.R`
-  figures
+- **Rscript** with `ggplot2`, `svglite`, and `ragg` — required by registered
+  `.R` figures and their canonical raster/vector devices
 
 Commands:
 
@@ -57,7 +57,7 @@ Purpose:
 Typical requirements:
 - figure/dev dependencies
 - **Quarto CLI** — book rendering and project management
-- **R** with `knitr`, `rmarkdown`, `ggplot2`, and `svglite` — Quarto R
+- **R** with `knitr`, `rmarkdown`, `ggplot2`, `svglite`, and `ragg` — Quarto R
   execution and registered-figure support
 - **Julia** — Quarto Julia execution support
 - **TeX/LaTeX toolchain** (`latexmk`, `biber`, `texlive`, `texlive-latex-extra`, `texlive-fonts-recommended`, `texlive-science`, `texlive-luatex`) — PDF/book output
@@ -112,14 +112,20 @@ GitHub workflows use `--ci`.
 ## Python dependencies
 
 Defined in `tooling/ci/requirements.txt` and `tooling/ci/environment.yml`:
+- Python `3.14` is the canonical CI figure-rendering runtime;
 - `numpy`
 - `matplotlib`
 - `pandas`
+- `Pillow`
 - `PyYAML`
 - `jupyter`
 - `nbformat`
 - `pytest`
 - `ruff`
+
+Raster-sensitive Python packages and their Matplotlib dependency chain are
+pinned in `tooling/ci/requirements.txt` so clean-runner figure regeneration is
+byte-stable with the committed canonical PNGs.
 
 A smaller lint-only set is documented in `tooling/ci/requirements-minimal.txt`.
 
@@ -128,7 +134,7 @@ A smaller lint-only set is documented in `tooling/ci/requirements-minimal.txt`.
 These are **not** baseline dependencies yet:
 - the heavy external simulation/rendering library
 - the broader R package stack beyond the current Quarto/figure baseline
-  (`knitr`, `rmarkdown`, `ggplot2`, `svglite`)
+  (`knitr`, `rmarkdown`, `ggplot2`, `svglite`, `ragg`)
 - Julia package environment setup beyond installing Julia itself
 - browser automation dependencies
 
