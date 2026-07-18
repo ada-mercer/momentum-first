@@ -7,7 +7,7 @@ cd "$ROOT_DIR"
 export DEBIAN_FRONTEND=noninteractive
 LOCAL_BIN="$HOME/.local/bin"
 LOCAL_OPT="$HOME/.local/opt"
-R_USER_LIB_DEFAULT='$HOME/.local/share/R/%p-library/%v'
+R_USER_LIB_DEFAULT="${HOME}/.local/share/R/%p-library/%v"
 JULIA_VERSION="1.12.5"
 JULIA_SERIES="1.12"
 EDIT_PROFILE=1

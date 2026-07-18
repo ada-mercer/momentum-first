@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 from datetime import date
 from pathlib import Path
 from urllib.parse import unquote
@@ -108,11 +109,14 @@ def test_root_readme_routes_readers_and_contributors() -> None:
 
 
 def test_readme_internal_links_resolve() -> None:
-    excluded_parts = {".git", ".local-review", ".pytest_cache", ".quarto", ".venv", "_book"}
+    tracked_paths = subprocess.run(
+        ["git", "ls-files", "-z"],
+        cwd=ROOT,
+        check=True,
+        capture_output=True,
+    ).stdout.decode("utf-8").split("\0")
     readmes = [
-        path
-        for path in ROOT.rglob("README.md")
-        if excluded_parts.isdisjoint(path.relative_to(ROOT).parts)
+        ROOT / path for path in tracked_paths if path.endswith("README.md")
     ]
     link_pattern = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
     broken: list[str] = []
