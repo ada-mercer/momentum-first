@@ -45,6 +45,7 @@ Commands:
 ```bash
 python3 tooling/scripts/check_dependencies.py --mode figures
 .venv/bin/python tooling/scripts/build_figures.py
+.venv/bin/python tooling/scripts/check_figure_reproducibility.py
 ```
 
 ### 3. Full render / release

@@ -35,7 +35,7 @@ jobs:
           .venv/bin/python tooling/scripts/build_manuscript_status.py
           git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md
           .venv/bin/python tooling/scripts/build_figures.py
-          git diff --exit-code -- figures/build
+          .venv/bin/python tooling/scripts/check_figure_reproducibility.py
 
       - name: Verify tag matches VERSION
         run: |

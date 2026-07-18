@@ -179,6 +179,7 @@ python3 tooling/scripts/check_dependencies.py --mode full
 .venv/bin/python -m pytest tooling/tests
 .venv/bin/python tooling/scripts/check_crossrefs.py
 .venv/bin/python tooling/scripts/build_figures.py
+.venv/bin/python tooling/scripts/check_figure_reproducibility.py
 quarto render
 ```
 
