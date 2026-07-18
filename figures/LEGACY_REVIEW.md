@@ -1,16 +1,22 @@
 # Legacy figure review
 
-Purpose: decide what to do with older figure assets under `book/dev/figures` now that `momentum-first/figures/` is the canonical stack.
+Purpose: record how older figure assets retained in the wider M1 project archive
+should be treated now that `figures/` is the canonical manuscript figure stack.
+
+The archived source set now lives outside this repository under
+`theory/archive/legacy-book-2026-07/dev/figures/`. Paths below name files from
+that retained historical set; they are not active manuscript dependencies.
 
 ## Current canonical state
 Canonical figure assets now live under:
-- `momentum-first/figures/src/`
-- `momentum-first/figures/build/`
-- `momentum-first/figures/lib/`
-- `momentum-first/figures/scripts/`
-- `momentum-first/figures/figures.yml`
+- `figures/src/`
+- `figures/build/`
+- `figures/lib/`
+- `figures/scripts/`
+- `figures/figures.yml`
 
-The current canonical registry covers four Foundations figures.
+The current canonical set is defined by `figures/figures.yml`, active manuscript
+references, and `figures/manifests/geometry3d.yml`.
 
 ## Legacy files reviewed
 - `core_geometry_torus_3d_v3.svg`
@@ -42,7 +48,7 @@ These look like plausible future canonical figures once tied to stable chapter u
 - `internal_fit_errors_v1.svg`
 - `internal_geometry_transition_graph_v1.svg`
   - reason: these read more like internal diagnostics or exploratory support than reader-facing canonical figures
-  - recommendation: leave in `book/dev/figures` unless a chapter or validation appendix clearly adopts them
+  - recommendation: leave in the shared legacy archive unless a chapter or validation appendix clearly adopts them
 
 ## Practical policy
 - Do not bulk-migrate legacy figures just because they exist.
@@ -61,4 +67,5 @@ Why:
 - it could become either:
   - a static transfer storyboard, or
   - the seed of a later animation family
-- it is exactly the kind of asset worth redoing canonically rather than leaving stranded in `book/dev/figures`
+- it is exactly the kind of asset worth redoing canonically rather than leaving
+  only in the shared legacy archive

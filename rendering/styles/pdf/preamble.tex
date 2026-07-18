@@ -1,0 +1,43 @@
+% Momentum First PDF polish.
+% Link colors are configured in _quarto-pdf.yml so Pandoc/Quarto
+% applies them after hyperref is loaded.
+
+% Low-contrast generated backgrounds for structural pages.
+% These are intentionally limited to title, ToC, and part separator pages;
+% body pages stay clean for technical reading.
+\usepackage{eso-pic}
+\usepackage{etoolbox}
+\usepackage{xparse}
+
+\newcommand{\mfPageBackground}[1]{%
+  \AddToShipoutPictureBG*{%
+    \AtPageLowerLeft{%
+      \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+    }%
+  }%
+}
+
+\newcommand{\mfTitleBackground}{rendering/assets/backgrounds/pdf/title-background.png}
+\newcommand{\mfTocBackground}{rendering/assets/backgrounds/pdf/toc-background.png}
+\newcommand{\mfPartBackground}{rendering/assets/backgrounds/pdf/part-separator-background.png}
+\newcommand{\mfAppendixBackground}{rendering/assets/backgrounds/pdf/appendix-background.png}
+
+\AddToHook{cmd/maketitle/before}{\mfPageBackground{\mfTitleBackground}}
+\AddToHook{cmd/tableofcontents/before}{\mfPageBackground{\mfTocBackground}}
+
+\newcommand{\mfCurrentPartBackground}{\mfPartBackground}
+\AddtoDoHook{heading/postinit/part}{\mfPageBackground{\mfCurrentPartBackground}}
+
+\let\mfOriginalPart\part
+\RenewDocumentCommand{\part}{s o m}{%
+  \ifstrequal{#3}{Appendices}{%
+    \gdef\mfCurrentPartBackground{\mfAppendixBackground}%
+  }{%
+    \gdef\mfCurrentPartBackground{\mfPartBackground}%
+  }%
+  \IfBooleanTF{#1}{%
+    \mfOriginalPart*{#3}%
+  }{%
+    \IfNoValueTF{#2}{\mfOriginalPart{#3}}{\mfOriginalPart[#2]{#3}}%
+  }%
+}

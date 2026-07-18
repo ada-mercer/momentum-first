@@ -1,0 +1,129 @@
+# Derivation 3.3A — The carrier source map {#sec-derivation-03-03A-carrier-source-map .unnumbered}
+
+## Purpose
+
+This appendix supports the source law stated in Chapter 3.3: the gravitational source channels are the densitized opposite-orientation readings,
+
+$$
+\mathcal{J}_k^\pm
+=
+\text{density of }\bigl(M\pm\tfrac12 p_k\bigr).
+$$
+
+It states the source identification precisely, derives its structural consequences (axis-independent even package, odd package equal to the net bosic component, manifest positivity), works the standard manifestations, and records the reconciliation with the classical accounting — including where the two accountings genuinely part ways.
+
+## Role / regime / status
+
+- **Role:** named postulate (the source identification, SI) plus exact consequences. Given SI, everything below follows by inspectable counting; SI itself is checked against fixed structural and empirical anchors but not yet grounded in a micro-model of the deformation coupling.
+- **Regime:** stationary weak-field sources presented in the stationary frame; the counting statements are regime-free algebra.
+- **Status:** accepted V1 source law for the stationary gravity package. The reproducible check is `tooling/scripts/check_carrier_source_map.py`.
+- **Non-claim:** this appendix does not derive *why* stage deformation couples to the opposite-orientation reading pair rather than to some other positive pairing; that grounding is the named hardening target for SI (Chapter 3.8).
+
+## The source identification
+
+For each oriented axis $\hat{k}$, Foundations gives every carrier the positive reading
+
+$$
+p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
+$$
+
+while the opposite orientation gives
+
+$$
+p_{-\hat{k}}^\oplus=M-\tfrac12 p_k,
+\qquad
+M=\sqrt{p_f^2+p^2}.
+$$
+
+Each orientation supplies its own ADMC conservation statement. The source identification is the statement that gravity reads the two opposite-orientation evaluations together: over a mesoscale region, the channels accumulate the corresponding entries of the carriers present,
+
+$$
+\mathcal{J}_k^\pm(x)
+=
+\Bigl\langle \textstyle\sum_a \bigl(M_a\pm\tfrac12 p_{k,a}\bigr)\Bigr\rangle_x ,
+$$
+
+with $\langle\cdot\rangle_x$ the per-volume average. Nothing is added, rescaled, or reweighted; there is no free coefficient anywhere in the map. For statistically described matter the same statement reads through the carrier distribution $f(x,p)$: the even source is the distribution's core-momentum content, the odd source its first bosic moment.
+
+## Structural consequences
+
+**Axis-independence of the even package.** Forming $\mathcal{M}_k=(\mathcal{J}_k^++\mathcal{J}_k^-)/2$ cancels the tilt identically, leaving
+
+$$
+\mathcal{M}_k(x)=\varrho(x):=\Bigl\langle\textstyle\sum_a M_a\Bigr\rangle_x
+\qquad\text{for every }k .
+$$
+
+The scalar well has one source field, the core-momentum density, and it is direction-blind by algebra, not by an isotropy assumption. No axis share, no $1/3$, and no distribution question arises: the former "isotropic share" premise of earlier drafts is dissolved, not defended.
+
+**The odd package is the net bosic component.** $\mathcal{P}_k=\mathcal{J}_k^+-\mathcal{J}_k^-=\langle\sum_a p_{k,a}\rangle_x=j_k$, the bosic momentum density along $k$. For matter in bulk motion with proper density $\rho_0$ and velocity $v$, the carrier count per volume is $\rho_0\gamma/m_0$ and each carrier contributes $p_k=\gamma m_0 v_k$, so
+
+$$
+\mathcal{P}_k=\rho_0\gamma^2 v_k=j_k
+$$
+
+exactly, including the relativistic factors — the same current that the classical accounting assigns. The convention $\sum_k\mathcal{P}_k\,e_{(k)i}\leftrightarrow j_i$ used by the frame-drag audit (Derivation 3.6B) is therefore derived, not inserted, and the boost-consistency input $\eta=1$ (Derivation 3.6C) is supplied with no residual coefficient.
+
+**Manifest positivity.** Carrier by carrier, $|p_k|\le p\le M$, so $M\pm\tfrac12 p_k\ge M/2>0$. Every channel satisfies $\mathcal{J}_k^\pm\ge\varrho/2$ wherever content is present. The directional-positive grammar survives densitization with no auxiliary energy condition: positivity is inherited from the opposite-orientation readings themselves.
+
+**The well source for standard matter.** For matter at rest, $\varrho=\rho c$ (each carrier at $p_f=m_0c$). For moving or agitated matter, $\varrho=\langle\gamma\rangle\rho_0 c\,\gamma_{\text{bulk}}$-type expressions follow directly from $M=\gamma m_0 c$; agitation and bulk motion enter the well only through the carriers' core momenta. For light, $\varrho$ is the beam or bath content itself, $\varepsilon/c$.
+
+## Worked manifestations
+
+With $\varepsilon$ the local radiation content density and $\rho$ the mass density:
+
+- **Cold matter at rest:** $\mathcal{M}=\rho c$, $\mathcal{P}_k=0$, $\mathcal{J}_k^\pm=\rho c$.
+- **Slow dust in bulk motion:** $\mathcal{M}=\rho c\,(1+O(v^2/c^2))$, $\mathcal{P}_k=j_k$.
+- **Warm gas at rest:** opposite bosic components cancel pairwise; $\mathcal{P}_k=0$ and $\mathcal{M}=\varrho$ with agitation included through the carriers' $\gamma$ factors. Temperature raises the well only by raising content.
+- **Isotropic photon gas:** $\mathcal{M}=\varepsilon/c$, $\mathcal{P}_k=0$. Light sources the well at its content weight, the same weight as equal-content matter.
+- **Directed null beam along $+x$:** per carrier $p_x=p=M$, so $\mathcal{M}=\varepsilon/c$ and $\mathcal{P}_x=j_x=\varepsilon/c$. The channels are $\mathcal{J}_x^+=\tfrac32\varepsilon/c$ and $\mathcal{J}_x^-=\tfrac12\varepsilon/c$: forward-loaded but not exactly chiral, since the oriented-reading tilt is $\pm\tfrac12 p_k$, never $\pm p_k$. Transverse axes carry $\mathcal{J}_y^\pm=\mathcal{J}_z^\pm=\varepsilon/c$ with no tilt.
+- **Rotating body:** matter entries for $\mathcal{M}$; organized ring pattern $\mathcal{P}_\phi(r)$.
+- **Stressed solid:** $\mathcal{M}=\rho c$; internal stress reorganizes carriers but adds no source weight of its own; $\mathcal{P}_k=0$ for a static solid.
+
+There is no vacuum row: the channels accumulate the opposite-orientation readings of actual momentum content, and empty space has none.
+
+## Reconciliation with the classical accounting
+
+In the weak stationary component convention used for correspondence, the translation of the surviving objects is $\varrho\leftrightarrow T^{00}/c$ and $j_k\leftrightarrow T^{0k}/c$; deliberately, no stress components appear anywhere in the active scalar-plus-shift source layer. The classical accounting instead assigns extra well weight to pressure ($\rho+3p/c^2$ for a static fluid) and doubles the weight of radiation. The reconciliation is the classical identity
+
+$$
+\int T^{kk}\,d^3r=0
+\qquad\text{for any isolated stationary system:}
+$$
+
+outward stress somewhere is balanced by tension elsewhere. In the box-of-photons case, the classical accounting gives the gas weight $2\varepsilon/c^2$-per-volume and the tense walls a matching negative stress contribution; summed, the extra weights cancel and the isolated total is the content — which is what the carrier map assigns directly, with nothing to cancel.
+
+This identity controls the zeroth moment. In the stationary weak-field correspondence problem, that means the total source weight and monopole agree for isolated stationary systems. For a spherically symmetric source, the exterior field is fixed by that monopole, so the full exterior agrees in the spherical case.
+
+The identity does not remove higher moments. Pressure or stress second moments such as
+
+$$
+\int T^{kk}x_ix_j\,d^3r
+$$
+
+need not vanish for an aspherical body. Thus the same cancellation that protects the total weight does not guarantee equality of exterior quadrupoles or higher multipoles. The regime statement is part of the claim: this reconciliation is a stationary, isolated-system, weak-field correspondence result, not a proof that local stress apportioning is physically identical in all source geometries.
+
+Consequences, stated with their status:
+
+- **Agreement (theorem-level, weak field):** total source weight agrees for all isolated stationary systems. The full exterior field also agrees for spherically symmetric sources, where the exterior is fixed by the monopole.
+- **Divergence (prediction, registered in Chapter 3.8):** local apportioning differs. Interior field profiles of pressurized bodies differ at fractional order $p/\rho c^2$; aspherical pressurized bodies can also differ in exterior multipoles at the same order, because the pressure/stress quadrupole need not cancel. Strong-field dense-star structure becomes a Tier 3 target for a derived M1 hydrostatic-equilibrium equation, since the classical interior equations lean on local pressure gravitation and M1's do not; radiation-dominated cosmological dynamics belongs, in M1, to the translation-yield engine $\chi(t)$ rather than to this source layer.
+
+## Relation to the superseded presentation rule
+
+Earlier drafts filled the channels with a three-role "presentation rule" calibrated against the classical subsystem weights (Komar pressure combination, radiation factor $2$), importing a $1/3$ content share and a stress-transport load from the classical decomposition. That rule reproduced the classical *subsystem* apportioning by construction; the carrier map replaces it after the recognition that those subsystem weights cancel over isolated systems and are therefore not empirical anchors for the source layer. What the old rule got right — the Newtonian calibration, $\mathcal{P}_i=j_i$, and the rejection of exact beam chirality — survives unchanged under the carrier map, with shorter derivations.
+
+## Checks
+
+Recorded in `tooling/scripts/check_carrier_source_map.py` (Python, NumPy only, exits nonzero on failure):
+
+- channel positivity across the full carrier kinematic range, including null carriers;
+- $\mathcal{M}_k$ axis-independence and $\mathcal{M}=\varrho$ for randomized carrier ensembles;
+- $\mathcal{P}_k=j_k$ exactly for relativistic bulk motion;
+- the Newtonian static calibration $\mathcal{M}\leftrightarrow c\rho$;
+- the Tolman cancellation in a worked box-of-photons model: classical subsystem weights sum to the M1 total; exterior monopoles agree;
+- beam channels $\tfrac32/\tfrac12$ with no exact chirality;
+- $\eta=1$ feeding $\kappa_A=2(1+\sigma)=4$ with $\sigma=1$ supplied by Derivation 3.4B.
+
+## Result
+
+The gravitational source layer needs no source law of its own. The channels are the opposite-orientation readings, densitized; the well source is the core-momentum density on any axis; the shift source is the net bosic component; positivity is inherited; and the classical pressure and radiation weights are recognized as subsystem apportioning that cancels over isolated systems rather than as targets the source layer must reproduce.

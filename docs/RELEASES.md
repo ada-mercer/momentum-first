@@ -1,0 +1,205 @@
+# Release Policy
+
+This repository uses **infrequent, milestone-based releases**.
+Releases are for meaningful manuscript states, not routine development churn.
+
+## Policy
+
+- Do **not** create a release for ordinary merges, typo fixes, or minor housekeeping.
+- Create a release only when the manuscript reaches a durable milestone worth preserving, sharing, or citing.
+- Releases are created from **annotated git tags** on `main`.
+- GitHub Releases are produced by CI only when a tag matching `v*` is pushed.
+- The tag must match the version in the `VERSION` file exactly, minus the leading `v`.
+
+Examples:
+- `VERSION` = `0.2.0`
+- release tag = `v0.2.0`
+
+## When to release
+
+Good release triggers:
+- a new part/chapter cluster reaches a stable draft
+- a major notation or structure lock is complete
+- a figure pipeline milestone becomes reproducible
+- a manuscript snapshot is worth archiving or sharing with others
+- a pre-public milestone should be frozen before larger refactors
+
+Bad release triggers:
+- routine maintenance commits
+- isolated typo fixes
+- dependency bumps without manuscript significance
+- unfinished exploratory states
+
+## Versioning approach
+
+Use milestone-oriented semantic-style versions:
+
+- `v0.x.y` — private, evolving manuscript
+- `v1.0.0` — first public/citable edition-level release
+
+Suggested interpretation:
+- **major** = major edition or major structural/conceptual milestone
+- **minor** = substantial manuscript milestone
+- **patch** = corrective cleanup to an already meaningful release
+
+## Milestone notes
+
+### 0.3.4 — Foundations restructure and oriented-reading ADMC formulation
+
+- restructured Chapter 2, Foundations, from seven to eight sections, adding a
+  dedicated momentum-configuration section (§2.2) that develops fermionic
+  structure, perpendicular bosonic geometry, the momentum triangle as an M1
+  commitment, the shell figures, and the branch machinery before the
+  conservation postulate;
+- adopted the oriented-reading formulation of ADMC: each particle contributes
+  one positive oriented momentum `p_k̂⊕ = M + ½ p_k` per oriented direction,
+  with the reversed orientation supplying `M − ½ p_k`; this is
+  equation-identical to the former simultaneous two-channel form under
+  `k ↔ −k` relabeling, so no prior algebraic result changes;
+- reframed Derivation 2.3A as an affine uniqueness theorem for the positive
+  oriented reading (additivity, parity exchange, axis-independence, local
+  invertibility, and mild regularity imply `αM ± βp`; canonical normalization
+  fixes `α = 1, β = ½`), with explicit proved/not-proved scope fencing, and
+  restored a correctly scoped uniqueness pointer in §2.3;
+- rebuilt §2.4 around the opposite-orientation map, adding the explicit 4×4
+  `T`/`T⁻¹` four-component correspondence and the invariant check
+  `PᵘP_µ = M² − p² = p_f²`;
+- aligned downstream glosses (gravity core terms, Derivations 3.3A/3.3B, and
+  the QM bridge) to opposite-orientation-reading language with zero equation
+  changes;
+- documented the chapter-local `_candidates/` manuscript-candidate workflow in
+  `docs/STANDARDS.md`;
+- verified the package through the independent review sequence recorded under
+  `exchange/reviews/manuscript/` on 2026-07-14 and 2026-07-15.
+
+### 0.3.3 — Gravity derived-pipeline and appendix restructure
+
+- promoted the stationary gravity source layer to a native carrier source map:
+  `mathcal J_k^pm` is the density of `M pm p_k/2`, giving
+  `mathcal M_k = varrho` on every axis and `mathcal P_i = j_i` with no imported
+  pressure, stress, or radiation apportioning term;
+- scoped the pressure/radiation divergence honestly: total source weight agrees
+  for isolated stationary systems and the full exterior agrees for spherical
+  sources, while aspherical pressure/stress multipoles become a Tier 3
+  discriminator at fractional order `p/rho c^2`;
+- derived the two-aspect deformation: clock depth and isotropic spatial stretch as
+  one deformation, with weak-field trace coefficient `sigma = 1` from the
+  comoving-cycle readout of the M1 time stance;
+- derived the shift coefficient `kappa_A = 2(1+sigma) = 4` by boost consistency,
+  retiring the calibration posture; the frame-drag audit is re-statused as the
+  endpoint validation of the derived value;
+- added weak-field stationary claims: PPN `gamma = 1`, standard light bending,
+  standard Shapiro delay;
+- rewrote Appendix 3.3A as the carrier-map derivation; added Appendix 3.3B
+  (null-probe diagnostic and no-go), Appendix 3.3C (momentum-manifestation
+  dictionary, no vacuum row), Appendix 3.4B (depth = stretch), and Appendix 3.6C
+  (boost consistency);
+- strengthened the Chapter 3 source-to-field pipeline: the six ADMC source
+  channels now explicitly reduce by even/odd projection to the four-component
+  stationary deformation package `(theta_0, theta_i)`, with Appendix 3.4A
+  carrying the compact projection lemma while preserving SI/P2 boundaries;
+- added directional momentum-coupling density `C_ij` as the second transport
+  moment in Chapter 3 source accounting. The achieved stationary
+  scalar-plus-shift map remains driven by `M` and `P_i`, with independent
+  `C_ij` field effects bracketed; `C_ij` is restored in the stress-energy
+  correspondence as `T^{ij}=c C_ij`;
+- recorded the two named premises (SI source identification, P2 comoving-cycle
+  readout) with their independent checks as the remaining hardening targets;
+- promoted the derivation-check scripts `check_carrier_source_map.py` and
+  `check_depth_stretch_pipeline.py` into `tooling/scripts/`.
+
+## Workflows
+
+### 1. GitHub Pages site deploy
+
+Workflow: `.github/workflows/deploy-book-site.yml`
+
+Purpose:
+- render the HTML book with `quarto render --profile html`
+- publish the site to GitHub Pages
+- include the latest release PDF in the site artifact so Quarto's PDF download link resolves
+
+This workflow runs on relevant pushes to `main` and manual dispatch.
+
+Because GitHub Pages environment protection may reject tag/release-triggered deployments, release publication should be followed by a manual **Deploy Book Site** dispatch when the site must pick up a newly published release PDF.
+
+### 2. Manual preview render
+
+Workflow: `.github/workflows/render-book.yml`
+
+Purpose:
+- produce a manual PDF preview artifact before deciding to tag a release
+- run repository tests, cross-reference checks, and generated-status checks
+- rebuild registered figures and reject canonical-output drift
+- verify the repo still renders cleanly in CI through the same PDF-first path used by releases
+
+This workflow is **manual only** (`workflow_dispatch`).
+It does **not** create a release.
+
+### 3. Tag-triggered release
+
+Workflow: `.github/workflows/release-book.yml`
+
+Purpose:
+- verify dependencies
+- run repository tests, cross-reference checks, and generated-status checks
+- rebuild registered figures and reject canonical-output drift
+- verify the pushed tag matches `VERSION`
+- render the PDF book
+- attach `Momentum-First.pdf` to a GitHub Release
+
+This workflow runs only when a tag matching `v*` is pushed.
+That is the core safeguard against frequent accidental releases.
+
+## Release procedure
+
+1. Ensure the working tree contains only the intended milestone state; exclude
+   `_book/`, local environments, caches, review folders, and generated PDF/SVG
+   companions that are not explicitly canonical.
+2. Choose the milestone version and update all release metadata together:
+   `VERSION`, the `version` and `date-released` fields in `CITATION.cff`, and
+   the milestone notes in this file.
+3. Regenerate derived status and run the local release gate:
+
+```bash
+.venv/bin/python tooling/scripts/build_manuscript_status.py
+python3 tooling/scripts/check_dependencies.py --mode full
+.venv/bin/python -m pytest tooling/tests
+python3 tooling/scripts/check_crossrefs.py
+python3 tooling/scripts/build_figures.py
+quarto render
+```
+
+4. Inspect the final diff, confirm `VERSION` and `CITATION.cff` agree, and commit
+   the release state. Do not commit `_book/` or a local `Momentum-First.pdf`.
+5. Optionally run a manual preview via the **Render Book Preview** workflow.
+6. Create and push an annotated tag matching `VERSION`:
+
+```bash
+git checkout main
+git pull --ff-only
+git tag -a v0.1.0 -m "Release v0.1.0"
+git push origin main --follow-tags
+```
+
+7. GitHub Actions will rerun the release gate and render the book PDF.
+8. The workflow copies the rendered PDF to the stable release asset name
+   `Momentum-First.pdf`, attaches it to the GitHub Release, and thereby updates
+   the README's latest-PDF link target.
+9. Manually dispatch **Deploy Book Site** if the Pages-hosted PDF should
+   immediately mirror the newly published release PDF.
+
+## After a release
+
+Move `VERSION` forward to the next development value if desired, for example:
+- `0.1.1-dev`
+- `0.2.0-dev`
+
+That makes it clear the repo has moved beyond the last tagged milestone.
+
+## Notes
+
+- Releases are intended to be **deliberate and relatively rare**.
+- The default mode of the repo is ongoing work on `main`, not continuous release publishing.
+- The book PDF is a release artifact. Do not commit `_book/` or generated PDF files to the repository during ordinary development.
+- If the project later needs public release cadence, the policy can be revisited intentionally.

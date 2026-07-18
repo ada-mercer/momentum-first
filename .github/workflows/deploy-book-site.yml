@@ -8,14 +8,12 @@ on:
     paths:
       - '_quarto.yml'
       - '_quarto-html.yml'
+      - '_variables.yml'
       - 'index.qmd'
-      - 'chapters/**'
-      - 'appendices/**'
-      - 'assets/**'
-      - 'bibliography.bib'
-      - 'glossary.yml'
-      - 'styles/html/**'
-      - 'filters/**'
+      - 'manuscript/**'
+      - 'rendering/**'
+      - 'figures/build/**'
+      - 'tooling/scripts/build_manuscript_status.py'
       - '.github/workflows/deploy-book-site.yml'
 
 permissions:
@@ -38,10 +36,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Bootstrap environment
-        run: bash ci/install-ubuntu.sh --ci
+        run: bash tooling/ci/install-ubuntu.sh --ci
 
       - name: Verify full render dependencies
-        run: python3 scripts/check_dependencies.py --mode full
+        run: python3 tooling/scripts/check_dependencies.py --mode full
 
       - name: Render HTML book
         run: |

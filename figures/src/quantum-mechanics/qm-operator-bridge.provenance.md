@@ -2,7 +2,7 @@
 
 Status: included provisional figure source note
 Output: `figures/build/quantum-mechanics/qm-operator-bridge.png`
-Included in: `chapters/02-tier-2-engines/04-quantum-mechanics/04-stationary-gravity-and-the-operator-mg.qmd`
+Included in: `manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/04-stationary-gravity-and-the-operator-mg.qmd`
 
 The included PNG was copied from:
 

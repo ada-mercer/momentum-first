@@ -12,13 +12,18 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Bootstrap environment
-        run: bash ci/install-ubuntu.sh --ci
+        run: bash tooling/ci/install-ubuntu.sh --ci
 
       - name: Verify baseline dependencies
-        run: python3 scripts/check_dependencies.py --mode full
+        run: python3 tooling/scripts/check_dependencies.py --mode full
 
-      - name: Run dependency smoke test through pytest
-        run: .venv/bin/python -m pytest tests/test_dependencies.py
+      - name: Run repository test suite
+        run: .venv/bin/python -m pytest tooling/tests
 
       - name: Check manuscript includes, assets, and explicit cross-references
-        run: python3 scripts/check_crossrefs.py
+        run: python3 tooling/scripts/check_crossrefs.py
+
+      - name: Verify generated manuscript status is current
+        run: |
+          .venv/bin/python tooling/scripts/build_manuscript_status.py
+          git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md

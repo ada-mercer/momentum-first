@@ -8,7 +8,12 @@ Rules:
 - Add a new family as `src/geometry3d/<family>/` with a short README, canonical scene names, and clear manuscript/dev-note targets.
 - Prefer one family per conceptual cluster, not one folder per one-off render.
 
-Current planned families:
-- `foundations-shells/` — first migration target from the existing canonical shell figure
-- `torus-cycle/` — shared torus family adapted from the separate renderer architecture
-- `torus-gravity-transfer/` — future gravity-transfer/static-storyboard seed family
+Current families:
+- `foundations-shells/` — implemented continuity-first family and current
+  manuscript figure source
+- `torus-cycle/` — planned adaptation from the separate renderer architecture
+- `torus-gravity-transfer/` — planned gravity-transfer/static-storyboard seed
+  family
+
+[`../../manifests/geometry3d.yml`](../../manifests/geometry3d.yml) is the
+authority for family status, scenes, outputs, and backend policy.

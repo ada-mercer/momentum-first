@@ -29,7 +29,8 @@ Migrate only when all three are true:
 - reason: strong reusable architecture ideas exist, but they should be adapted rather than imported wholesale
 
 ### Legacy high-value seed
-- `book/dev/figures/torus_gravity_transfer_sequence_v1.svg`
+- `theory/archive/legacy-book-2026-07/dev/figures/torus_gravity_transfer_sequence_v1.svg`
+  in the wider M1 project archive
 - reason: likely future gravity-transfer/static-storyboard family and possible animation bridge
 
 ## Backend migration stance for legacy matplotlib families
@@ -57,8 +58,9 @@ Use for diagnostic or exploratory figures that do not yet deserve canonical stat
 ### Deprecate
 Use when the figure no longer matches the framework, notation, or architecture.
 
-## Practical rule for `book/dev/figures`
-Do not bulk migrate. Migrate only when a live figure family needs it.
+## Practical rule for archived legacy figures
+Do not bulk migrate from `theory/archive/legacy-book-2026-07/dev/figures/`.
+Migrate only when a live figure family needs an asset.
 
 ## What not to do
 - do not force a PyVista rewrite just because PyVista is the new system-level policy center

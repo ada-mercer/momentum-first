@@ -11,7 +11,7 @@ format:
 
 A momentum-first framework for foundations, gravity, quantum structure, and cosmology.
 
-[Start with the Preface](chapters/00-front-matter/00-preface/){.mf-primary-link}
+[Start with the Preface](manuscript/chapters/00-front-matter/00-preface/){.mf-primary-link}
 :::
 
 ::: {.mf-path-grid}

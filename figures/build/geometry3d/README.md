@@ -1,13 +1,17 @@
-# geometry3d build outputs
+# Geometry3d build outputs
 
-This folder is the canonical build root for generated native 3D geometry assets.
+This is the generated-output root for native 3D geometry families.
 
-Intended layout:
-- `build/geometry3d/<family>/preview/` for fast review renders
-- `build/geometry3d/<family>/canonical/` for manuscript-facing outputs
-- `build/geometry3d/<family>/interactive/` for HTML inspection assets when enabled
-- `build/geometry3d/<family>/frames/` for animation-ready frame sequences when later phases need them
+- `<family>/canonical/` contains manuscript-facing outputs declared by the
+  geometry3d manifest.
+- `<family>/preview/` contains fast review renders.
+- `<family>/interactive/` contains inspection assets when enabled.
+- `<family>/frames/` contains animation frame sequences when a family supports
+  them.
+- `<family>/review/` contains explicitly preserved comparisons.
+- `test-renders/` contains disposable demonstrations and smoke output.
 
-Phase 1 note:
-The build tree is scaffolded now so future sessions have a fixed destination before renderer internals land.
-Subdirectories should be created on first real render rather than guessed too early.
+The authority for families, scene names, canonical outputs, and backend policy
+is [`../../manifests/geometry3d.yml`](../../manifests/geometry3d.yml). Do not
+promote a preview, comparison, or test render merely by moving it into this
+tree; update the manifest or retain an explicit review record.

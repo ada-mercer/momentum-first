@@ -1,7 +1,7 @@
 format:
   pdf:
     filters:
-      - filters/remove-empty-pdf-index.lua
+      - rendering/filters/remove-empty-pdf-index.lua
     toc: true
     toc-depth: 1
     colorlinks: true
@@ -18,8 +18,8 @@ format:
     #   - right=20mm
     #   - bottom=30mm
     include-in-header:
-      - styles/pdf/preamble.tex
-      - styles/pdf/macros.tex
+      - rendering/styles/pdf/preamble.tex
+      - rendering/styles/pdf/macros.tex
       - text: |
           % Add leaders so page targets scan clearly in print/PDF.
           \RedeclareSectionCommand[toclinefill=\TOCLineLeaderFill]{chapter}

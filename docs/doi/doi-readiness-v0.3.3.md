@@ -72,7 +72,7 @@ whether the 0.3.3 content freeze includes the new manuscript-status ledger.
 5. **If strategy A:** manual Zenodo PDF deposit → mint DOI.
    **If B/C:** enable Zenodo↔GitHub *before* step 4, let it archive `v0.3.3`.
 6. Follow-up commit: DOI badge in `README.md`, `doi:`/`identifiers` in
-   `CITATION.cff`, DOI on the landing page, note in `RELEASES.md`.
+   `CITATION.cff`, DOI on the landing page, note in `docs/RELEASES.md`.
 
 ## 5. Critical path
 

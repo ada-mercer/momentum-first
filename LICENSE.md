@@ -13,8 +13,8 @@ SPDX: `CC-BY-NC-SA-4.0`
 This includes, without limitation:
 
 - `index.qmd`
-- `chapters/`
-- `appendices/`
+- `manuscript/chapters/`
+- `manuscript/appendices/`
 - `figures/build/`
 - `figures/src/` prompt/provenance/documentation files
 - rendered HTML, PDF, EPUB, or print assets produced from the manuscript

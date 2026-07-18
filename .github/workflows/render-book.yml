@@ -11,10 +11,19 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Bootstrap environment
-        run: bash ci/install-ubuntu.sh --ci
+        run: bash tooling/ci/install-ubuntu.sh --ci
 
       - name: Verify baseline dependencies
-        run: python3 scripts/check_dependencies.py --mode full
+        run: python3 tooling/scripts/check_dependencies.py --mode full
+
+      - name: Run release validation
+        run: |
+          .venv/bin/python -m pytest tooling/tests
+          python3 tooling/scripts/check_crossrefs.py
+          .venv/bin/python tooling/scripts/build_manuscript_status.py
+          git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md
+          python3 tooling/scripts/build_figures.py
+          git diff --exit-code -- figures/build
 
       - name: Render PDF preview
         run: |

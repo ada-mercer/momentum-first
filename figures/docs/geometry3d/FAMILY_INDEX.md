@@ -16,7 +16,7 @@
 - default style: `shell-dark-manuscript`
 - canonical geometry3d output: `figures/build/geometry3d/foundations-shells/canonical/foundations-shells-split.png`
 - legacy canonical mirror: `figures/build/foundations/foundations-shells.png`
-- manuscript target: `chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd`
+- manuscript target: `manuscript/chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd`
 - note: this family remains the explicit continuity-first exception to the PyVista-primary system policy, but its manuscript split scene is now a deliberate scene-level PyVista exception
 
 ### comparison/demo work now available

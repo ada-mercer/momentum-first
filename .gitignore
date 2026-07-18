@@ -3,12 +3,38 @@ dist/
 .quarto/
 *_cache/
 /.venv/
-/.env/
+/.env
+/.env.*
+!/.env.example
+/.direnv/
 /.Renviron
 __pycache__/
 *.pyc
+/.ruff_cache/
+/.mypy_cache/
+/.coverage
+/.coverage.*
+/htmlcov/
+**/.ipynb_checkpoints/
 .DS_Store
 Thumbs.db
+/.idea/
+
+# Local release and LaTeX byproducts
+/Momentum-First.pdf
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.run.xml
+*.synctex.gz
+*.toc
+*.tmp
+*.swp
+*~
 
 # Local scratch/backup areas
 /.local-backups/
@@ -40,5 +66,6 @@ Thumbs.db
 
 **/*.quarto_ipynb
 
-/.quarto/
 /.vscode/
+
+/.quarto/

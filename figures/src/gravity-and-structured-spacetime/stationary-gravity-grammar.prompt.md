@@ -4,7 +4,7 @@ Status: draft-approved for gravity-chapter authoring
 Created: 2026-04-25
 Model: openai/gpt-image-2
 Output: `figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png`
-Chapter: `chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd`
+Chapter: `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd`
 Figure id: `fig-stationary-gravity-grammar`
 
 ## Purpose

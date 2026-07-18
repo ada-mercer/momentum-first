@@ -1,5 +1,12 @@
 # Native 3D Geometry Support — Construction Plan
 
+> Historical construction plan. The implemented system is governed by
+> [`figures/README.md`](README.md),
+> [`figures/manifests/geometry3d.yml`](manifests/geometry3d.yml), and
+> [`figures/docs/geometry3d/`](docs/geometry3d/README.md). References below to
+> `book/dev/figures` describe the former location of assets now retained in the
+> wider M1 project archive.
+
 Purpose: define the full build plan for native 3D geometry support inside `momentum-first/figures/`, adapted from the strongest architectural ideas in `torus-cycle-renderer` while fitting the canonical figure system already in use for the manuscript.
 
 This plan is written as a **handoff-ready execution artifact** for future sessions.

@@ -14,7 +14,7 @@ The section ledger is `section-ledger.yml`. Each entry should stay simple:
 
 ```yaml
 - title: Example section
-  path: chapters/example.qmd
+  path: manuscript/chapters/example.qmd
   contributors:
     - Arne Klaveness
     - AI-assisted

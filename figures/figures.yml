@@ -2,31 +2,31 @@ figures:
   - id: fig-foundations-shells
     source: figures/src/foundations/foundations_shells.py
     output: figures/build/foundations/foundations-shells.png
-    chapter: chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
+    chapter: manuscript/chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
   - id: fig-momentum-triangle
     source: figures/src/foundations/momentum_triangle.R
     output: figures/build/foundations/momentum-triangle.png
-    chapter: chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
+    chapter: manuscript/chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
   - id: fig-gravity-directional-source-field-observer
     source: figures/src/gravity-and-structured-spacetime/gravity-directional-source-field-observer.prompt.md
     output: figures/build/gravity-and-structured-spacetime/gravity-directional-source-field-observer.png
-    chapter: chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd
     generator: openai/gpt-image-2
   - id: fig-stationary-gravity-grammar
     source: figures/src/gravity-and-structured-spacetime/stationary-gravity-grammar.prompt.md
     output: figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png
-    chapter: chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd
     generator: openai/gpt-image-2
   - id: fig-source-side-density-maps
     source: figures/src/gravity-and-structured-spacetime/source_side_density_maps.R
     output: figures/build/gravity-and-structured-spacetime/source-side-density-maps.png
-    chapter: chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/03-gravitational-sources.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/03-gravitational-sources.qmd
   - id: fig-primitive-source-2d-k0-fields
     source: figures/src/gravity-and-structured-spacetime/primitive_source_2d_k0_fields.R
     output: figures/build/gravity-and-structured-spacetime/primitive-source-2d-k0-fields.png
-    chapter: chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/04-the-stationary-gravitational-field.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/04-the-stationary-gravitational-field.qmd
   - id: fig-qm-operator-bridge
     source: figures/src/quantum-mechanics/qm-operator-bridge.provenance.md
     output: figures/build/quantum-mechanics/qm-operator-bridge.png
-    chapter: chapters/02-tier-2-engines/04-quantum-mechanics/04-stationary-gravity-and-the-operator-mg.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/04-stationary-gravity-and-the-operator-mg.qmd
     generator: image-generation draft
