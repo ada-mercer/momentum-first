@@ -95,13 +95,14 @@ def test_documentation_entrypoints_exist() -> None:
         "figures/README.md",
         "rendering/README.md",
         "tooling/README.md",
-        ".github/README.md",
+        ".github/WORKFLOWS.md",
     ]
     missing = [path for path in entrypoints if not (ROOT / path).is_file()]
     assert not missing
 
 
 def test_root_readme_routes_readers_and_contributors() -> None:
+    assert not (ROOT / ".github/README.md").exists()
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     assert "https://ada-mercer.github.io/momentum-first/" in readme
     assert "releases/latest/download/Momentum-First.pdf" in readme
@@ -116,8 +117,11 @@ def test_readme_internal_links_resolve() -> None:
         capture_output=True,
     ).stdout.decode("utf-8").split("\0")
     readmes = [
-        ROOT / path for path in tracked_paths if path.endswith("README.md")
+        ROOT / path
+        for path in tracked_paths
+        if path.endswith("README.md") and (ROOT / path).is_file()
     ]
+    readmes.append(ROOT / ".github/WORKFLOWS.md")
     link_pattern = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
     broken: list[str] = []
 

@@ -54,7 +54,7 @@ The repository is organized by responsibility:
 - [`docs/`](docs/README.md) — contributor navigation, standards, policy, and
   project reference material
 - [`tooling/`](tooling/README.md) — validation, generation, and environment tools
-- [`.github/`](.github/README.md) — continuous integration, previews,
+- [`.github/`](.github/WORKFLOWS.md) — continuous integration, previews,
   publishing, and release automation
 
 The root [`index.qmd`](index.qmd) is intentionally retained as the Quarto book

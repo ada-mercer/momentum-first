@@ -14,7 +14,7 @@ their work.
 | Create, rebuild, or review figures | [`figures/README.md`](../figures/README.md) |
 | Change HTML or PDF presentation | [`rendering/README.md`](../rendering/README.md) |
 | Run checks, generators, or local automation | [`tooling/README.md`](../tooling/README.md) |
-| Understand GitHub automation | [`.github/README.md`](../.github/README.md) |
+| Understand GitHub automation | [`.github/WORKFLOWS.md`](../.github/WORKFLOWS.md) |
 | Prepare a milestone release | [`RELEASES.md`](RELEASES.md) |
 
 ## Documentation authority

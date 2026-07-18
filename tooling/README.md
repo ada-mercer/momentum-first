@@ -53,5 +53,5 @@ README to repeat a current version string or an incidental command merely to
 pass.
 
 GitHub workflow roles and triggers are summarized in
-[`../.github/README.md`](../.github/README.md). Project-wide automation and
+[`../.github/WORKFLOWS.md`](../.github/WORKFLOWS.md). Project-wide automation and
 generated-output policy lives in [`../docs/STANDARDS.md`](../docs/STANDARDS.md).
