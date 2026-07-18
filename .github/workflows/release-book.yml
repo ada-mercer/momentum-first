@@ -20,7 +20,7 @@ jobs:
       - name: Set up canonical Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.14'
+          python-version: '3.14.3'
 
       - name: Bootstrap environment
         run: bash tooling/ci/install-ubuntu.sh --ci

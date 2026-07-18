@@ -112,7 +112,7 @@ GitHub workflows use `--ci`.
 ## Python dependencies
 
 Defined in `tooling/ci/requirements.txt` and `tooling/ci/environment.yml`:
-- Python `3.14` is the canonical CI figure-rendering runtime;
+- Python `3.14.3` is the canonical CI figure-rendering runtime;
 - `numpy`
 - `matplotlib`
 - `pandas`
