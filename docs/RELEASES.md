@@ -44,6 +44,18 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.3.5 — Repository architecture and publishing hardening
+
+- reorganized the repository around `.github/`, `docs/`, `figures/`,
+  `manuscript/`, `rendering/`, and `tooling/` while retaining root `index.qmd`
+  as the Quarto book homepage;
+- replaced the setup-heavy root README with a public landing page and added a
+  progressive documentation map for contributors, authors, and maintainers;
+- made plain `quarto render` the verified local PDF path and bound the
+  pre-render status generator to the repository Python environment;
+- strengthened documentation invariants, cross-reference checks, preview and
+  release validation, generated-status checks, and local-artifact ignore rules.
+
 ### 0.3.4 — Foundations restructure and oriented-reading ADMC formulation
 
 - restructured Chapter 2, Foundations, from seven to eight sections, adding a
