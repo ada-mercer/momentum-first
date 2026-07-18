@@ -85,7 +85,7 @@ def check_r_packages() -> None:
         [
             "Rscript",
             "-e",
-            'dir.create(path.expand(Sys.getenv("R_LIBS_USER")), recursive=TRUE, showWarnings=FALSE); .libPaths(c(path.expand(Sys.getenv("R_LIBS_USER")), .libPaths())); pkgs <- c("knitr","rmarkdown"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) { message(paste(miss, collapse=",")); quit(status=1) } else { cat("knitr,rmarkdown\n") }',
+            'dir.create(path.expand(Sys.getenv("R_LIBS_USER")), recursive=TRUE, showWarnings=FALSE); .libPaths(c(path.expand(Sys.getenv("R_LIBS_USER")), .libPaths())); pkgs <- c("knitr","rmarkdown","ggplot2","svglite"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) { message(paste(miss, collapse=",")); quit(status=1) } else { cat(paste(pkgs, collapse=","), "\n") }',
         ],
         capture_output=True,
         text=True,

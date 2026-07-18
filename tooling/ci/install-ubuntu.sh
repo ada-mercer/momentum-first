@@ -157,9 +157,9 @@ ensure_repo_renviron() {
 }
 
 ensure_r_packages() {
-  log "Installing minimal R packages into user library"
+  log "Installing required R packages into user library"
   export R_LIBS_USER="${R_LIBS_USER:-$R_USER_LIB_DEFAULT}"
-  Rscript -e 'dir.create(path.expand(Sys.getenv("R_LIBS_USER")), recursive=TRUE, showWarnings=FALSE); .libPaths(c(path.expand(Sys.getenv("R_LIBS_USER")), .libPaths())); pkgs <- c("knitr","rmarkdown"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) install.packages(miss, repos="https://cloud.r-project.org"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) stop(paste("R package install failed:", paste(miss, collapse=",")))'
+  Rscript -e 'dir.create(path.expand(Sys.getenv("R_LIBS_USER")), recursive=TRUE, showWarnings=FALSE); .libPaths(c(path.expand(Sys.getenv("R_LIBS_USER")), .libPaths())); pkgs <- c("knitr","rmarkdown","ggplot2","svglite"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) install.packages(miss, repos="https://cloud.r-project.org"); miss <- pkgs[!vapply(pkgs, requireNamespace, logical(1), quietly=TRUE)]; if (length(miss)) stop(paste("R package install failed:", paste(miss, collapse=",")))'
 }
 
 summarize() {

@@ -37,7 +37,8 @@ Typical requirements:
 - **numpy** — numerical support
 - **matplotlib** — plotting
 - **pandas** — table/data handling
-- **Rscript** — required when registered figures use `.R` sources
+- **Rscript** with `ggplot2` and `svglite` — required by registered `.R`
+  figures
 
 Commands:
 
@@ -56,7 +57,8 @@ Purpose:
 Typical requirements:
 - figure/dev dependencies
 - **Quarto CLI** — book rendering and project management
-- **R** with `knitr` and `rmarkdown` — Quarto R execution support
+- **R** with `knitr`, `rmarkdown`, `ggplot2`, and `svglite` — Quarto R
+  execution and registered-figure support
 - **Julia** — Quarto Julia execution support
 - **TeX/LaTeX toolchain** (`latexmk`, `biber`, `texlive`, `texlive-latex-extra`, `texlive-fonts-recommended`, `texlive-science`, `texlive-luatex`) — PDF/book output
 - **graphviz** — diagrams if needed later
@@ -125,7 +127,8 @@ A smaller lint-only set is documented in `tooling/ci/requirements-minimal.txt`.
 
 These are **not** baseline dependencies yet:
 - the heavy external simulation/rendering library
-- the broader R package stack beyond minimal Quarto support (`knitr`, `rmarkdown`)
+- the broader R package stack beyond the current Quarto/figure baseline
+  (`knitr`, `rmarkdown`, `ggplot2`, `svglite`)
 - Julia package environment setup beyond installing Julia itself
 - browser automation dependencies
 
