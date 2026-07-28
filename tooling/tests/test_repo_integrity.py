@@ -175,8 +175,17 @@ def test_citation_metadata_is_present_for_doi_workflow() -> None:
     assert citation["title"] == "Momentum First"
     # CITATION version must track VERSION (the release workflow enforces tag == VERSION).
     assert citation["version"] == version
+    assert citation["type"] == "software"
+    assert citation["license"] == "MIT"
     assert citation["authors"] == [{"family-names": "Klaveness", "given-names": "Arne"}]
     assert citation["repository-code"] == "https://github.com/ada-mercer/momentum-first"
     assert date.fromisoformat(str(citation["date-released"]))
     assert "AI-assisted" in citation["message"]
-    assert (ROOT / "docs" / "doi" / "zenodo-v0.3.2.md").exists()
+    preferred = citation["preferred-citation"]
+    assert preferred["type"] == "book"
+    assert preferred["title"] == citation["title"]
+    assert preferred["version"] == version
+    assert preferred["license"] == "CC-BY-NC-SA-4.0"
+    assert preferred["authors"] == citation["authors"]
+    assert preferred["date-released"] == citation["date-released"]
+    assert (ROOT / "docs" / "doi" / "zenodo-v0.3.6.md").exists()

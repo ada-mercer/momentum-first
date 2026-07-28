@@ -44,6 +44,25 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.3.6 — Directional shell readings and release evidence
+
+- adopted directional shell readings and `p_k^\pm = M \pm p_k/2` consistently
+  across the rendered manuscript, derivation support, glossary, and canonical
+  Foundations figure;
+- added two captionless Preface illustrations with prompt/provenance records,
+  responsive HTML floats, and PDF wrapfigure integration;
+- completed a manuscript-wide conceptual review, targeted technical review of
+  the load-bearing Foundations/ADMC and gravity source-map chains, and a bounded
+  citation audit;
+- corrected the retarded shift sign and one rendered source-notation defect in
+  Derivation 3.7A, and added primary or canonical sources at the reviewed
+  mathematical, empirical, historical, and correspondence claims;
+- completed public contribution and human-verification provenance for all 24
+  rendered units, while preserving conservative working-draft status for
+  Quantum Mechanics, Space Expansion, and the derivation appendices;
+- added a repository invariant requiring the provenance ledger to cover the
+  complete Quarto render list without duplicate or placeholder entries.
+
 ### 0.3.5 — Repository architecture and publishing hardening
 
 - reorganized the repository around `.github/`, `docs/`, `figures/`,

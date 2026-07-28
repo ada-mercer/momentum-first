@@ -1,15 +1,15 @@
 cff-version: 1.2.0
 title: "Momentum First"
 message: "If you use or discuss this work, please cite the relevant release. The manuscript was developed with AI-assisted drafting, review, editing, and repository automation support; all claims and release decisions remain the responsibility of the human author."
-type: book
+type: software
 authors:
   - family-names: Klaveness
     given-names: Arne
 repository-code: "https://github.com/ada-mercer/momentum-first"
 url: "https://ada-mercer.github.io/momentum-first/"
-version: "0.3.5"
-date-released: "2026-07-18"
-abstract: "Momentum First is a pre-1.0 theoretical manuscript exploring a momentum-centered framework for foundations, gravity, quantum mechanics, and cosmology. It develops Additive Directional Momentum Conservation, positive directional momentum channels, gravity and quantum bridge structures, and a translation-yield account of cosmological expansion."
+version: "0.3.6"
+date-released: "2026-07-28"
+abstract: "Momentum First is a pre-1.0 theoretical manuscript exploring a momentum-centered framework for foundations, gravity, quantum mechanics, and cosmology. It develops Additive Directional Momentum Conservation, directional shell readings, gravity and quantum bridge structures, and a translation-yield account of cosmological expansion."
 keywords:
   - physics
   - theoretical physics
@@ -18,4 +18,14 @@ keywords:
   - quantum mechanics
   - cosmology
   - quarto book
-license: "CC-BY-NC-SA-4.0 AND MIT"
+license: MIT
+preferred-citation:
+  type: book
+  title: "Momentum First"
+  authors:
+    - family-names: Klaveness
+      given-names: Arne
+  version: "0.3.6"
+  date-released: "2026-07-28"
+  url: "https://ada-mercer.github.io/momentum-first/"
+  license: CC-BY-NC-SA-4.0
