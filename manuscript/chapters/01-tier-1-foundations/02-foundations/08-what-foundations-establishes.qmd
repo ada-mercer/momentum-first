@@ -1,6 +1,6 @@
 ## What Foundations Establishes
 
-Foundations has given M1 a working inertial grammar: the primitive momentum quantities, the directional-positive conservation structure, the exact correspondence back to familiar relativistic variables, and the baseline relation
+Foundations has given M1 a working inertial grammar: the primitive momentum quantities, the directional shell-reading conservation structure, the exact correspondence back to familiar relativistic variables, and the baseline relation
 $$
 M = \sqrt{p_f^2 + p^2}.
 $$
@@ -11,21 +11,21 @@ That grammar is not the whole theory. It is the language in which the rest of th
 
 The opening sections fixed the core terms and assembled them into a physical momentum configuration. Fermic momentum $p_f$ names the locked intrinsic scale of the particle's internal cycle. Bosic momentum $p$ belongs to that same spherical cycle. It has a spherical contribution and carries an asymmetry with a net direction; its signed component along a chosen orientation $\hat{k}$ is $p_k$. In flat space the fermic and bosic roles are perpendicular contributions to one configuration, and the core momentum $M$ measures its complete momentum content.
 
-ADMC then gave that vocabulary its conservation structure. For an oriented unit direction $\hat{k}$, the particle's positive oriented momentum is
+ADMC then gave that vocabulary its conservation structure. For an oriented unit direction $\hat{k}$, the particle's two positive shell readings are
 
 $$
-p_{\hat{k}}^\oplus=M+\tfrac12p_k.
+p_k^\pm=M\pm\tfrac12p_k.
 $$
 
-The two branch magnitudes $M+|p_k|/2$ and $M-|p_k|/2$ provide the conditional expressions for this contribution, but the conditions are mathematical sorting rather than a separate physical selection. ADMC conserves
+ADMC conserves
 
 $$
-\sum_i p_{\hat{k}}^{\oplus,(i)}
+\sum_i \bigl(p_k^+\bigr)^{(i)}
 $$
 
-for every orientation. Reversing the orientation gives $p_{-\hat{k}}^\oplus=M-p_k/2$. The average of the two opposite-orientation readings recovers $M$, while their difference recovers signed $p_k$. Along three independent spatial directions, the resulting four quantities are exactly and invertibly related to the familiar special-relativistic four-momentum package.
+for every chosen orientation. Reversing $\hat{k}$ exchanges $p_k^+$ and $p_k^-$. Their average recovers $M$, while their difference recovers signed $p_k$. Along three independent spatial directions, the resulting four quantities are exactly and invertibly related to the familiar special-relativistic four-momentum package.
 
-The point is not that M1 has abandoned standard inertial relativity. The point is that it has reorganized the same successful structure around momentum-first primitives and a foundational directional-positive conservation statement.
+The point is not that M1 has abandoned standard inertial relativity. The point is that it has reorganized the same successful structure around momentum-first primitives and a foundational shell-reading conservation statement.
 
 ### Space, time, and physical change
 

@@ -12,7 +12,7 @@ carrier_source_map:
   term: "carrier source map"
   definition: >
     Native stationary source law that fills the directional source channels
-    with the densitized carrier split:
+    with the densitized opposed shell readings:
     $\\mathcal{J}_k^\\pm=$ density of $(M\\pm p_k/2)$. It gives
     $\\mathcal{M}_k=(\\mathcal{J}_k^+ + \\mathcal{J}_k^-)/2=\\varrho$ on every
     axis and $\\mathcal{P}_k=\\mathcal{J}_k^+-\\mathcal{J}_k^-=j_k$. No pressure,
@@ -23,10 +23,11 @@ source_identification:
   term: "source identification (SI)"
   definition: >
     Named hardening premise of the gravity chapter: gravity reads the same
-    directional-positive carrier split that Foundations conserves. Given SI,
-    the even source is the local core-momentum density and the odd source is
-    the net bosic component. What remains open is the deeper micro-model for
-    why stage deformation couples to this split.
+    opposed shell readings established in Foundations, densitized together as
+    source channels. Given SI, the even source is the local core-momentum
+    density and the odd source is the net bosic component. What remains open
+    is the deeper micro-model for why stage deformation couples to this
+    shell-reading source map.
 
 momentum_content_density:
   term: "$\\varrho$"

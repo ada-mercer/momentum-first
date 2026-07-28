@@ -18,6 +18,8 @@ Here $\Psi$ is the amplitude-level state object used by ordinary quantum mechani
 
 The distinction is small but useful. Local expression is what a specified detector, channel, or projection reads. The state may carry phase relations that affect later expression even when a local probability-density description is the correct operational summary for a given setup.
 
+Where the chapter touches the gravity-source bridge, $J_k^\pm[\Psi]$ denotes a schematic quantum source-readout functional of the state. It is distinct from the particle shell readings $p_k^\pm$ and from the gravity-side density fields $\mathcal J_k^\pm$. In a classical localized limit, the functional readout must recover those density fields; no full quantum source law is assumed here.
+
 ### Operators and scalar readings
 
 A hat denotes an operator. The same symbol without a hat denotes the corresponding scalar value, eigenvalue, local magnitude, or classical quantity when the context is clear.

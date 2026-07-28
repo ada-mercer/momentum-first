@@ -36,15 +36,15 @@ When a particle gains bosic momentum, the whole momentum configuration swells fr
 
 Translation appears because the bosonic structure also carries an asymmetry. Its organization over the spherical cycle is no longer directionally balanced. The shell represents that asymmetry by extending one side relative to $M$ while contracting the opposite side, producing a net direction. Bosic momentum yields translation through this asymmetry. It is therefore neither an external straight-line component nor a quantity detached from the particle's internal cycle: its spherical contribution swells the configuration, and its directional imbalance gives that momentum translational expression.
 
-The swelling and asymmetry belong to one changed momentum configuration. They are not successive physical mechanisms. @fig-foundations-shells-admc separates them only so that each can be seen. Panel (a) compares the symmetric fermic scale $p_f$ with the swollen core scale $M$. Panel (b) keeps the spherical core shell $M$ visible as a reference while encoding the bosic asymmetry over the same structure. Along the net asymmetry direction, one side extends to $M+p/2$ while the opposite side contracts to $M-p/2$. These are the two positive branch magnitudes on the two sides of that axis. The deformation represents their organization, not a measured spatial distribution of momentum density. The local arrows describe the deformation across the spherical cycle; they do not represent momentum leaving the particle or flowing along external straight lines.
+The swelling and asymmetry belong to one changed momentum configuration. They are not successive physical mechanisms. @fig-foundations-shells-admc separates them only so that each can be seen. Panel (a) compares the symmetric fermic scale $p_f$ with the swollen core scale $M$. Panel (b) keeps the spherical core shell $M$ visible as a reference while encoding the bosic asymmetry over the same structure. Along the net asymmetry direction, one side is displaced outward from $M$ by $p/2$, while the opposite side is displaced inward by $p/2$, giving the complete readings $M+p/2$ and $M-p/2$. The deformation represents their organization, not a measured spatial distribution of momentum density. The local arrows describe the deformation across the spherical cycle; they do not represent momentum leaving the particle or flowing along external straight lines.
 
 ::: {#fig-foundations-shells-admc layout-ncol=2}
 
 ![The rest-state fermic scale $p_f$ and the swollen spherical core scale $M$. The radial arrows compare the two shell descriptions; they do not depict a separate temporal step.](../../../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-a.png){#fig-foundations-shells-admc-a}
 
-![The spherical core shell $M$ remains as the reference geometry while bosic momentum $p$ carries a directional asymmetry over the same structure. Along the net asymmetry direction, where $p_k=p$, the two extremes differ from $M$ by $+p/2$ and $-p/2$.](../../../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-b.png){#fig-foundations-shells-admc-b}
+![The spherical core shell $M$ remains as the reference geometry while bosic momentum $p$ carries a directional asymmetry over the same structure. Along the net asymmetry direction, the two extremes are displaced from $M$ by $+p/2$ and $-p/2$.](../../../../figures/build/geometry3d/foundations-shells/canonical/foundations-shells-panel-b.png){#fig-foundations-shells-admc-b}
 
-Two representational views of one internal momentum configuration. Panel (a) shows the isotropic swelling from $p_f$ to $M$. Panel (b) shows the directional asymmetry carried by bosic momentum $p$ on that swollen spherical cycle. The panels separate two simultaneous features for explanation; they do not describe successive physical stages.
+Two three-dimensional views of one internal momentum configuration. Panel (a) shows the isotropic swelling from the fermic scale $p_f$ to the core scale $M$. Panel (b) shows the directional deformation carried by bosic momentum $p$ on that swollen spherical cycle. The panels separate two simultaneous features for explanation; they do not describe successive physical stages.
 :::
 
 The limiting configurations make the roles clear. When no momentum is expressed as translation,
@@ -67,59 +67,58 @@ The full structural realization of this boundary lies beyond the particle constr
 
 ### Choosing a direction
 
-Core momentum $M$ belongs to the configuration as a whole and does not depend on which spatial direction is chosen. The bosic asymmetry has a net direction. For any chosen oriented unit direction $\hat{k}$, its signed component is written $p_k$.
-
-The component $p_k$ records the asymmetry relative to $\hat{k}$; it does not mean that bosic momentum exists only along a line through the particle. Reversing the orientation from $\hat{k}$ to $-\hat{k}$ leaves $M$ unchanged and reverses the sign of $p_k$. The pair $(M,p_k)$ therefore contains two different kinds of information: a positive total that is common to every directional choice, and a signed asymmetry carried by the spherical cycle along that direction.
-
-For a particle $i$, the two positive branch magnitudes along this axis are
+Core momentum $M$ belongs to the configuration as a whole and does not depend on which spatial direction is chosen. The bosic asymmetry has a net direction represented by the vector $\vec p$, with magnitude
 
 $$
-p_{k^+}^{(i)}
-=
-M^{(i)}+\tfrac12\left|p_k^{(i)}\right|,
-\qquad
-p_{k^-}^{(i)}
-=
-M^{(i)}-\tfrac12\left|p_k^{(i)}\right|.
+p=|\vec p|.
 $$
 
-The particle's positive oriented momentum in direction $\hat{k}$ is
+For any chosen oriented unit direction $\hat{k}$, the signed component along that direction is
 
 $$
-p_{\hat{k}}^{\oplus,(i)}
-=
-\begin{cases}
-p_{k^+}^{(i)}, & p_k^{(i)}\ge0,\\
-p_{k^-}^{(i)}, & p_k^{(i)}<0.
-\end{cases}
+p_k=\vec p\mathbin{\cdot}\hat{k}=p\cos\alpha,
 $$
 
-These conditions are a mathematical partition. They identify which branch expression equals the momentum contribution already carried by the shell in orientation $\hat{k}$; they do not describe a separate physical selection mechanism. Substituting the branch magnitudes gives
+where $\alpha$ is the angle from $\hat{k}$ to $\vec p$. The component $p_k$ records the asymmetry relative to $\hat{k}$; it does not mean that bosic momentum exists only along a line through the particle. Reversing the orientation from $\hat{k}$ to $-\hat{k}$ leaves $M$ unchanged and reverses the sign of $p_k$.
+
+Along the net asymmetry axis, the two opposed shell readings are
 
 $$
-p_{\hat{k}}^{\oplus,(i)}
-=
-M^{(i)}+\tfrac12p_k^{(i)}.
+p^\pm=M\pm\tfrac12p.
 $$
 
-The contribution is always positive. Since
+For the chosen $k$-axis, the corresponding readings are
 
 $$
-\frac{\left|p_k^{(i)}\right|}{2}
-\le
-\frac{p^{(i)}}{2}
-\le
-\frac{M^{(i)}}{2},
+p_k^\pm=M\pm\tfrac12p_k.
 $$
 
-its lower branch satisfies
+@fig-directional-momentum-readings connects the ordinary vector projection to these readings on the directional shell.
+
+![Vector decomposition and directional shell readings. Panel (a) separates bosic momentum magnitude $p=|\vec p|$, its represented vector $\vec p$, and the signed projection $p_k=\vec p\cdot\hat{k}=p\cos\alpha$. Panel (b) shows the net-axis readings $p^{\pm}=M\pm p/2$, the perpendicular reading $p^\perp=M$, and the chosen-axis readings $p_k^{\pm}=M\pm p_k/2$ on one directional shell. The dashed circle marks the undeformed core scale $M$; capped spokes are positive scalar readings, not additional momentum vectors.](../../../../figures/build/foundations/directional-momentum-readings.png){#fig-directional-momentum-readings fig-align="center" width="100%" fig-pos="H"}
+
+Superscripts $+$ and $-$ label the two opposed shell readings; they are not arithmetic signs. The quantities $p^\pm$, $p_k^\pm$, $p_f$, $p$, and $M$ all denote nonnegative scalar momentum quantities. By contrast, $\vec p$ denotes the momentum vector and $p_k$ its signed component along $\hat{k}$.
 
 $$
-p_{k^-}^{(i)}
-\ge
-\tfrac12M^{(i)}>0
+p_k^+=p_k^-=p^\perp=M.
 $$
 
-for every nonempty particle configuration. Panel (b) shows the special axis aligned with the net asymmetry. Read along that asymmetry, the shell contributes $p_{\hat{k}}^\oplus=M+p/2$; read in the opposite orientation, it contributes $p_{-\hat{k}}^\oplus=M-p/2$.
+Replacing $\hat{k}$ by $-\hat{k}$ changes $p_k$ to $-p_k$ and exchanges the two readings. The pair $(p_k^+,p_k^-)$ therefore preserves both kinds of directional information: its common center records the positive core momentum, while its asymmetry records the signed component.
 
-The momentum configuration has now supplied the positive directional quantity that M1 conserves. The next section states that conservation principle.
+Positivity follows directly from the inertial composition rule. Since
+
+$$
+|p_k|\le p\le M,
+$$
+
+the smaller of the two readings satisfies
+
+$$
+\min\!\left(p_k^+,p_k^-\right)
+=M-\tfrac12|p_k|
+\ge\tfrac12M>0
+$$
+
+for every nonempty particle configuration.
+
+The momentum configuration has now supplied the positive directional readings that M1 conserves. The next section states that conservation principle.

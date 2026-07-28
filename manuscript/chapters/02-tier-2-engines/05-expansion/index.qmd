@@ -1,4 +1,4 @@
-# Space Expansion as Translation Yield
+# Space Expansion
 
 {{< include 01-space-expansion-and-the-conservation-problem.qmd >}}
 

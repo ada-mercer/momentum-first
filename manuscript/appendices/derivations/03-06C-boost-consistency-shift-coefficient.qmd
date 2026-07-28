@@ -83,4 +83,4 @@ completing the derivation chain: carrier map → odd normalization; depth=stretc
 
 ## Notes
 
-The derivation holds at first order in $\beta$ and weak field; at higher orders the M1 and GR packagings genuinely differ in structure (see the boundary note of Derivation 3.6B). The result is conditional on the two named premises through its inputs: SI (the source identification: channels as the densitized carrier split) enters through $\eta=1$, and P2 (comoving-cycle readout) enters through $\sigma=1$. Their independent checks and hardening targets are listed in Chapter 3.8.
+The derivation holds at first order in $\beta$ and weak field; at higher orders the M1 and GR packagings genuinely differ in structure (see the boundary note of Derivation 3.6B). The result is conditional on the two named premises through its inputs: SI (the source identification: channels as the densitized opposed shell readings) enters through $\eta=1$, and P2 (comoving-cycle readout) enters through $\sigma=1$. Their independent checks and hardening targets are listed in Chapter 3.8.

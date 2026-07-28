@@ -7,8 +7,8 @@ Foundations is where the book begins to cash out its claims.
 It should establish:
 - primitive momentum terms and notation
 - the physical momentum configuration joining fermic and bosic roles
-- ADMC as the directional-positive conservation postulate
-- the positive branch magnitudes, positive oriented reading, and exact correspondence map
+- ADMC as the directional shell-reading conservation postulate
+- the opposed shell readings, orientation reversal, and exact correspondence map
 - the inertial SR correspondence in momentum-first variables
 - the stage/actor distinction between space and momentum
 - the time / clock / dilation interpretation
@@ -58,25 +58,25 @@ Use these as the default stack when writing or revising Foundations prose:
 
 If a derivation grows long enough to interrupt the flow, move it to `manuscript/appendices/derivations/` and reference it by the section-based derivation label.
 
-Derivation 2.3A belongs to the ADMC section under the eight-section structure. No renumbering is required while ADMC remains §2.3. The derivation was reframed around the additive positive oriented reading and its reflected counterpart on 2026-07-15, and §2.3 now carries the restored uniqueness pointer. Preserve the appendix's suggested citation sentence as the scope-safe template: the result is uniqueness within the natural additive and symmetry-compatible axis-wise class, not a global no-alternative theorem.
+Derivation 2.3A belongs to the ADMC section under the eight-section structure. No renumbering is required while ADMC remains §2.3. Its pending candidate reframe treats $p_k^+$ and $p_k^-$ as opposed shell readings and preserves the additive, reflection-symmetric proof structure. Preserve the appendix's suggested citation sentence as the scope-safe template: the result is uniqueness within the natural additive and symmetry-compatible axis-wise class, not a global no-alternative theorem.
 
 ## Current chapter state
 
 The chapter has a four-step opening dependency order followed by the interpretive and modifier sections:
 
-1. notation
-2. physical momentum configuration, branch magnitudes, and positive oriented reading
-3. ADMC postulate and conserved positive sum
-4. opposite-orientation inversion and inertial correspondence
+1. core momentum terms and directional notation
+2. physical momentum configuration and directional shell readings
+3. ADMC postulate and conserved shell-reading sum
+4. opposite-reading inversion and inertial correspondence
 
 Preserve this order. It keeps familiar energy and four-momentum language out of the foundational construction until the correspondence section.
 
 ### Section ownership
 
-- `01-core-terms-and-variables.qmd` owns the compact primitive vocabulary and terminology note. It defers the physical organization to §2.2.
-- `02-the-momentum-configuration.qmd` owns fermionic structure and fermic momentum, perpendicular bosonic geometry, the spherical internal particle cycle, the momentum triangle, swelling and directional asymmetry, the shell figures, limiting configurations, the arbitrary-direction bridge, positive branch magnitudes, the conditional partition, positivity, orientation reversal, and the zero-component convention.
-- `03-admc.qmd` owns the ADMC postulate, the conserved $p_{\hat{k}}^\oplus$ sum, its compact algebraic form, the opposite-orientation conservation statement, and the scoped uniqueness pointer to Derivation 2.3A.
-- `04-invertible-mapping.qmd` owns inversion of the opposite-orientation readings to `(M, p_k)`, conservation equivalence, four-component alignment, and SR correspondence review.
+- `01-core-terms-and-variables.qmd` owns the three core momentum terms, the compact directional notation reference, and the terminology note. It defers the physical organization to §2.2.
+- `02-the-momentum-configuration.qmd` owns fermionic structure and fermic momentum, perpendicular bosonic geometry, the spherical internal particle cycle, the momentum triangle, swelling and directional asymmetry, the shell figures, limiting configurations, the arbitrary-direction bridge, $p^\pm$, $p_k^\pm$, $p^\perp$, positivity, and orientation reversal.
+- `03-admc.qmd` owns the ADMC postulate, the conserved $p_k^+$ sum, its compact algebraic form, the reversed-orientation $p_k^-$ statement, and the scoped uniqueness pointer to Derivation 2.3A.
+- `04-invertible-mapping.qmd` owns inversion of $(p_k^+,p_k^-)$ to $(M,p_k)$, conservation equivalence, the $P_+$ four-component package, and SR correspondence review.
 - `05-space-and-momentum-stage-and-actor.qmd` owns the stage/actor distinction: space as the rule-bearing stage that conditions available kinematic relations, momentum as the actor carrying changing physical content.
 - `06-time.qmd` owns the interpretation of time, clocks, inertial dilation, material contraction, and true-frame language.
 - `07-kinematic-modifiers.qmd` owns the KM definition and taxonomy: composition modifiers, yield modifiers, and admissibility modifiers.
@@ -96,14 +96,15 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 - In Foundations, use `M = \sqrt{p_f^2 + p^2}` for the inertial composition rule. Present it as an M1 baseline commitment with a momentum-triangle interpretation, not as a result derived from perpendicularity alone.
 - Keep `p` as bosic momentum. It has a spherical contribution and an asymmetry with a net direction. Use `p_k` for its directional components. Do not replace `p` with vector notation in the foundational definition; the vector representation is downstream.
 - Treat `M` as representative of total momentum content, not as an independent primitive conservation law alongside ADMC.
-- The shell extrema `M \pm p/2` belong to the net asymmetry direction, where `|p_k|=p`.
-- For an arbitrary chosen direction, the positive branch magnitudes are `M \pm |p_k|/2`.
-- For orientation `\hat{k}`, the conditional partition identifies the branch expression equal to `p_{\hat{k}}^\oplus=M+p_k/2`; reversing the orientation gives `p_{-\hat{k}}^\oplus=M-p_k/2`.
-- ADMC uses one positive contribution per particle for each oriented direction. Do not say that one particle contributes both branches simultaneously.
-- The readings for `\hat{k}` and `-\hat{k}` are complementary applications of ADMC to opposite orientations, not two simultaneous contributions for one orientation.
-- At `p_k=0`, the branch magnitudes coincide at `M`; assigning the zero case to the `p_{k^+}` case of the partition is a bookkeeping convention only.
-- Treat the `p_f=0` case as the purely bosic boundary of the inertial composition rule unless later reviewed theory supplies its full structural realization.
-- M1 may take the directional-positive structure as foundational. Exact invertibility by itself establishes equivalence of the realized bookkeeping; it does not mathematically prove which description is deeper.
+- Along the net asymmetry direction, the opposed shell readings are $p^\pm=M\pm p/2$.
+- For an arbitrary oriented unit direction $\hat{k}$, the signed component is $p_k=\vec p\cdot\hat{k}$ and the opposed shell readings are $p_k^\pm=M\pm p_k/2$.
+- A perpendicular reading has $p_k=0$ and is written $p^\perp=M$.
+- Superscripts $+$ and $-$ label opposed positive readings; they are not arithmetic signs attached to the scalar values.
+- Reversing $\hat{k}$ exchanges $p_k^+$ and $p_k^-$.
+- ADMC uses one positive shell reading per particle for each oriented direction: $p_k^+$ for $\hat{k}$, and equivalently $p_k^-$ when the orientation is reversed. Do not say that one particle contributes both readings simultaneously to one ADMC sum.
+- Side-by-side use of $(p_k^+,p_k^-)$ belongs to inversion, structural comparison, and gravity-source densitization, not to a single oriented ADMC sum.
+- Treat the $p_f=0$ case as the purely bosic boundary of the inertial composition rule unless later reviewed theory supplies its full structural realization.
+- M1 may take the directional shell-reading structure as foundational. Exact invertibility by itself establishes equivalence of the realized bookkeeping; it does not mathematically prove which description is deeper.
 
 ### Time / frame locks
 
@@ -128,7 +129,7 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 
 - The minimal momentum triangle belongs in §2.2 only.
 - The shell panels belong in §2.2 only.
-- §2.3 should not repeat the branch definitions or either figure.
+- §2.3 should not repeat the shell-reading definitions or either figure.
 - §2.4 should not repeat the triangle or shell figures unless a genuinely new visual argument is added.
 - No gravity pipeline figure belongs in rendered Foundations under the current architecture; that visual grammar belongs in the gravity chapter.
 
@@ -138,15 +139,15 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 - Panel (a) represents isotropic swelling from `p_f` to `M`.
 - Panel (b) represents directional deformation of the swollen shell along the net asymmetry direction.
 - The two views are representational rather than sequential; physically they belong to one combined momentum configuration.
-- The shell deformation encodes the two positive branch magnitudes available along the net asymmetry axis. Do not present it as two simultaneous conserved contributions or as a measured spatial distribution of momentum density.
+- The shell deformation encodes the opposed positive shell readings along the net asymmetry axis. Do not present it as two simultaneous conserved contributions or as a measured spatial distribution of momentum density.
 - Avoid caption or prose language that implies literal temporal evolution or momentum flowing out of the particle.
 
 ### Prose and structure guidance
 
 - In §2.1, anchor terms in familiar physics, keep the section compact, and defer physical organization to §2.2.
-- In §2.2, develop the physical configuration before choosing a direction, then define the branch magnitudes, conditional partition, positive oriented reading, and positivity bound. Preserve the distinction between bosic momentum `p`, its net asymmetry direction, and an arbitrary component `p_k`.
-- In §2.3, state the ADMC postulate and lead with the conserved $p_{\hat{k}}^\oplus$ sum; give `M+p_k/2` second as its compact algebraic form.
-- In §2.4, invert the opposite-orientation readings to recover signed `(M,p_k)`. Introduce energy and standard four-momentum here, not earlier.
+- In §2.2, develop the physical configuration before choosing a direction, then define $p^\pm$, $p_k^\pm$, $p^\perp$, orientation reversal, and the positivity bound. Preserve the distinction between bosic momentum $p$, its net asymmetry direction, and an arbitrary signed component $p_k$.
+- In §2.3, state the ADMC postulate and lead with the conserved $p_k^+$ sum; give $M+p_k/2$ second as its compact algebraic form.
+- In §2.4, invert $(p_k^+,p_k^-)$ to recover signed $(M,p_k)$. Introduce energy and standard four-momentum here, not earlier.
 - In §2.5, keep the stage/actor metaphor; do not replace it with abstract terminology. Make clear that the stage is not empty, rigid, or structureless: space already conditions closure, stability, motion, and local kinematic relations.
 - In §2.6, keep the section centered on time, clocks, dilation, contraction, and true-frame status. Do not let it become a full philosophy-of-time essay.
 - In §2.7, keep the KM definition lean and grounded in stage deformation modifying kinematics. Do not let the taxonomy become a glossary detached from the inertial baseline.

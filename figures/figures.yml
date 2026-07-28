@@ -7,6 +7,10 @@ figures:
     source: figures/src/foundations/momentum_triangle.R
     output: figures/build/foundations/momentum-triangle.png
     chapter: manuscript/chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
+  - id: fig-directional-momentum-readings
+    source: figures/src/foundations/directional_momentum_readings.py
+    output: figures/build/foundations/directional-momentum-readings.png
+    chapter: manuscript/chapters/01-tier-1-foundations/02-foundations/02-the-momentum-configuration.qmd
   - id: fig-gravity-directional-source-field-observer
     source: figures/src/gravity-and-structured-spacetime/gravity-directional-source-field-observer.prompt.md
     output: figures/build/gravity-and-structured-spacetime/gravity-directional-source-field-observer.png

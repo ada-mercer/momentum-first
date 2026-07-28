@@ -222,7 +222,7 @@ Short active queue:
 1. Relabel or de-tautologize `check_carrier_source_map.py` and `check_depth_stretch_pipeline.py` so they are not overread as independent proof of SI.
 2. Align Appendix 3.6B wording: "local energy" -> "packaged local magnitude" if still present.
 3. Derive the M1 hydrostatic-equilibrium / TOV-analogue before making dense-star maximum-mass, radius, or tidal-deformability predictions.
-4. Harden SI with a micro-model of why stage deformation couples to the carrier split.
+4. Harden SI with a micro-model of why stage deformation couples to the shell-reading source map.
 5. Harden P2 with an equilibrium-size defense for comoving-cycle readout.
 6. Continue longer-range gravity work: nonlinear `gamma_ij` dynamics, exact native rotating-source closure, tensor/radiative completion.
 

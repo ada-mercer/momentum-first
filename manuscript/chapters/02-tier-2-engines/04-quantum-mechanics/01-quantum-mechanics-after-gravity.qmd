@@ -22,7 +22,13 @@ This is the momentum triangle lifted into quantum form. The state carries phase 
 
 In the classical localized limit, momentum content can be represented by a trajectory-like source with definite local momentum readings. Quantum mechanics does not begin from that representation. It begins from a phase-bearing state, $\Psi$, which can carry delocalized and superposed momentum organization, read through operators such as $\hat{\mathbf p}$ and $\hat M$.
 
-That matters for the gravity bridge. In quantum regimes, the opposite-orientation source readings $J_k^\pm$ should not be treated primarily as if they came from a collapsed point-particle substitute. Where a quantum source treatment is needed, they are better read as state-dependent evaluations of the momentum organization represented by the non-collapsed phase-bearing state itself: schematically, $\Psi \mapsto J_k^\pm[\Psi]$. Collapse, if used as an effective measurement description, is not the gravitational source rule in M1. This is a bridge principle, not a measurement theory, full QFT source law, or completed self-gravity equation.
+That matters for the gravity bridge. At particle level, Foundations writes the opposed shell readings as $p_k^\pm=M\pm\tfrac12p_k$; in the classical localized source map, gravity densitizes them into $\mathcal J_k^\pm$. A quantum source treatment should not begin by replacing the phase-bearing state with a collapsed point-particle substitute carrying definite local readings. Instead, write the corresponding quantum source readouts schematically as state-dependent functionals of the momentum organization represented by the non-collapsed state,
+
+$$
+\Psi\longmapsto J_k^\pm[\Psi].
+$$
+
+Here $J_k^\pm[\Psi]$ names a quantum source functional, not a new particle momentum variable and not a claim that both $p_k^+$ and $p_k^-$ enter one ADMC sum. Its classical localized limit must recover the source-density fields $\mathcal J_k^\pm$. Collapse, if used as an effective measurement description, is not the gravitational source rule in M1. This is a bridge principle, not a measurement theory, full QFT source law, or completed self-gravity equation.
 
 Gravity enters by changing the two slots the gravity chapter already identified. The scalar field replaces $p_f$ with the contextual fermic scale $p_{f,c}$. The shift field replaces directed momentum with a mechanical momentum $\hat{\boldsymbol\Pi}$. The gravity-dressed operator is therefore $\hat M_g$, a stationary deformation of $\hat M$, not a second quantum postulate.
 

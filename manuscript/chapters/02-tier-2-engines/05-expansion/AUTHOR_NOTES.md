@@ -1,102 +1,102 @@
 # Author notes — Chapter 05 Space Expansion as Translation Yield
 
-Status: fresh rewrite in place under corrected translation-yield lock
-Updated: 2026-05-16
+Status: adopted chapter under bounded second-pass refinement
+Updated: 2026-07-28
 Mode stack: roles/book-prose + topics/m1/cosmology + artifacts/manuscript + styles/book-mainline + audiences/broad-technical
-
-Active rewrite plan: `book/dev/author-plans/COSMOLOGY_CHAPTER_REWRITE_PLAN_V1.md`.
-
-## Preflight completed for this rewrite
-
-This pass used the rewrite plan plus the required preceding manuscript context:
-
-- Introduction: momentum-first wager, fair standard of judgment, and non-doctrinal posture.
-- Foundations: `p_f`, `p`, `p_k`, `M`, ADMC, inverse map, stage/actor distinction, time/clock stance, and Kinematic Modifier taxonomy.
-- Gravity and Structured Spacetime: source -> field -> local readout grammar; gravity as local momentum-sourced deformation of the relational stage; local clock and transport bookkeeping.
-- Quantum Mechanics: Tier 2 engine style: build a grammar, show compatibility/correspondence where earned, and leave empirical or ontological completion visibly bounded.
-- `momentum-first/docs/STYLE_FLOW_GUIDE.md` and `book/m1/TERMINOLOGY.md`.
-
-Comprehension gate for the chapter:
-
-- ADMC is stated without `\chi`: `p_{k^+}=M(p)+\frac12p_k`, `p_{k^-}=M(p)-\frac12p_k`.
-- `p` is bosic momentum magnitude; `p_k` is a directional component of `\vec p`; `M(p)` is the core momentum package; `\chi(t)` is translation yield.
-- Gravity remains the local source -> field -> observer engine. Space expansion is treated as a background translation-yield engine comparing emission, propagation, and reception across epochs.
-- This chapter is Tier 2: it establishes the space-expansion engine grammar, conditional signal mappings, compatibility guardrails, and test interfaces. Tier 3 must supply fitted histories, kernels, and falsifiers.
 
 ## Chapter burden
 
-Build the first reader-facing M1 account of space expansion as a translation-yield chapter.
+Build a reader-facing M1 account of space expansion as a translation-yield engine. Apparent expansion must remain legible in momentum language without placing the expansion factor inside the conserved momentum variables.
 
-The chapter should make apparent expansion legible in momentum language without putting expansion into the momentum variables. The large-scale stage may change how much translation directed bosic momentum expression yields across epochs. That change is represented by `\chi(t)`.
-
-Corrected lock:
+The governing placement is
 
 ```tex
 \chi(t)=\text{translation yield},
 \qquad
-\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)},
-\qquad
-1+z=\frac{\chi_e}{\chi_o}.
+\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)}.
 ```
 
-with `\chi_e=\chi(t_e)`, `\chi_o=\chi(t_o)`, and `\chi(t_o)=1` by default normalization.
-
-ADMC remains unscaled:
+ADMC and the shell readings remain unscaled:
 
 ```tex
-p_{k^+}=M(p)+\frac12p_k,
-\qquad
-p_{k^-}=M(p)-\frac12p_k.
+p_k^\pm=M(p)\pm\frac12p_k.
 ```
 
-The inverse identities remain:
+The conditional signal dictionary is
 
 ```tex
-M(p)=\frac{p_{k^+}+p_{k^-}}2,
-\qquad
-p_k=p_{k^+}-p_{k^-}.
+1+z=\frac{\chi_e}{\chi_o},
 ```
 
-Keep `c` explicit in mainline prose. It is the inherited local light/momentum scale in the map, not a variable-`c` cosmology. For lightlike propagation the map gives `\dot x=\chi(t)c`; describe this as a variable translation-yield propagation rate, not as a second fundamental speed of light.
+with `\chi_e=\chi(t_e)`, `\chi_o=\chi(t_o)`, and `\chi_o=1` by default normalization.
+
+## Bookkeeping distinction
+
+- `t` is the common homogeneous background-history parameter used in `\chi(t)` and the propagation integral.
+- `x_k` is the associated background translation coordinate.
+- `\delta t_e` and `\delta t_o` are neighboring-feature endpoint separations in that background parameter.
+- `\Delta t_e` and `\Delta t_o` are durations reported against emitter and observer clock standards.
+- The common-path derivation relates the background endpoint separations. The duration law additionally uses the matched endpoint-clock condition supported by the clean UYC branch.
+- `\mathcal D_\chi=c\int\chi(t)dt` is a propagation kernel, not by itself an observational distance.
+
+## UYC status lock
+
+Universal Yield Covariance is adopted at the covariance-principle level for the universal-yield construction. Its kinematic transform and sector targets are established in Derivations 5.6A and 5.6B. Electromagnetic, gravitational, strong, and weak realization, exact local residuals, and empirical closure remain pending.
+
+UYC should not be described as merely an optional stronger route. Preserve the three levels:
+
+1. adopted covariance principle;
+2. established kinematic transform and covariance targets;
+3. pending sector realization and empirical closure.
 
 ## Boundary lock
 
 Keep central:
 
 - expansion/conservation pressure as the opening problem;
-- no separate dark-energy substance in the M1 primitive expansion account; acceleration-like behavior, if modeled later, must come through the yield history or another explicit mechanism;
-- space expansion as the main yield-modifier example;
-- `\chi(t)` as translation yield, outside ADMC;
-- `\chi\sim1/a` as the formal scale-factor comparison, while preserving the M1 interpretation as translation yield rather than primitive metric expansion;
-- redshift as a yield-ratio mapping;
-- duration dilation as the paired signal-stretching mapping;
-- local-physics preservation as bound-system/core-momentum organization plus compatibility scales, not a proof of exact invariance;
-- observational interfaces as falsifier and model-building burdens;
-- Tier 3 handoff for fitted `\chi(t)` histories, distance kernels, flux laws, CMB/BBN/recombination, and matter growth.
+- actor change versus stage change;
+- translation yield outside ADMC;
+- no photon momentum cooling or bosic-momentum decay;
+- fixed intrinsic `c`, with `\chi c` as the lightlike translation expression;
+- `\chi\propto1/a` as the broad formal correspondence;
+- `a_B=\chi_o/\chi` as the normalized clean UYC branch;
+- redshift as a conditional matched-standard endpoint dictionary;
+- duration stretching from the neighboring-feature path comparison plus the endpoint-clock condition;
+- UYC as the adopted covariance principle, with sector realization pending;
+- observational tests as discriminators among completed histories and realizations.
 
-Keep out of mainline equations and active claims:
+Keep out of active claims:
 
-- `p_can`, `p_phys`, `p_b`, dual-momentum ontology;
-- `\chi` multiplying `p_k` inside ADMC;
-- photon momentum-cooling or momentum-decay explanations of redshift;
-- variable-`c` ontology;
-- global co-scaling of constants as proof;
+- `\chi` multiplying momentum inside ADMC;
+- photon momentum cooling or momentum decay;
+- variable intrinsic-`c` ontology;
 - exact local indistinguishability;
-- solved CMB, Tolman, horizon, dark-energy, Hubble-tension, BBN, recombination, or early-galaxy claims;
-- reuse of `\chi` for screened matter mobility. If needed later, reserve `\mu_m(a,k,\mathrm{env})`.
+- completed electromagnetic, gravitational, strong, or weak UYC realization;
+- solved distance, flux, Tolman, CMB, BBN, recombination, growth, lensing, horizon, dark-energy, Hubble-tension, or early-galaxy claims;
+- reuse of `\chi` as an unexplained matter-mobility factor.
 
-## Revised section map
+## Active section map
 
-1. `01-space-expansion-and-the-conservation-problem.qmd` — opens from the expansion/conservation pressure and frames the chapter as a Tier 2 translation-yield engine.
-2. `02-core-terms-and-variables.qmd` — locks ADMC, `p`, `p_k`, `M(p)`, `\chi(t)`, `c`, event notation, `H_\chi`, and reserved `\mu_m`.
-3. `03-translation-yield-as-the-m1-expansion-engine.qmd` — places space expansion inside the KM taxonomy while contrasting it cleanly with local gravity.
-4. `04-directional-channels-and-translation-yield.qmd` — formal core: unchanged momentum grammar, then the yield-modified translation map.
-5. `05-redshift-as-a-yield-ratio-mapping.qmd` — conditional internal mapping `1+z=\chi_e/\chi_o`, with anti-tired-light guardrail subordinate to the positive mechanism.
-6. `06-duration-dilation-and-signal-stretching.qmd` — paired pulse-length and endpoint-integral derivations of `\Delta t_o=(1+z)\Delta t_e`.
-7. `07-what-changes-and-what-is-preserved.qmd` — changes/preserved split, explicit bound-system/core-momentum screening language, plus `H_\chi\tau_{dyn}\ll1` locality heuristic.
-8. `08-interfaces-to-observational-cosmology.qmd` — ordered burden map: history, distances, duration/drift, causal reach, flux/Tolman, CMB/thermal history, local metrology, deferred matter growth.
-9. `09-what-the-expansion-chapter-establishes.qmd` — closes with exactly what Tier 2 earns and what remains unearned.
+1. `01-space-expansion-and-the-conservation-problem.qmd` — conservation pressure, actor and stage, and effective-pitch intuition.
+2. `02-core-terms-and-variables.qmd` — inherited momentum notation, translation yield, propagation coordinates, and signal labels.
+3. `03-translation-yield-and-directional-displacement.qmd` — downstream translation map and limiting checks.
+4. `04-redshift-as-comparison-between-yield-states.qmd` — lightlike propagation, history kernel, and neighboring-feature path comparison.
+5. `05-duration-dilation-and-signal-stretching.qmd` — conditional spectral dictionary and matched-clock duration relation.
+6. `06-bound-systems-and-local-screening.qmd` — adiabatic local equilibrium, SMC-to-UYC route, transform, and sector boundary.
+7. `07-yield-histories-and-distance-kernels.qmd` — endpoint ratio, history kernel, observable distance, and causal reach.
+8. `08-interfaces-to-observational-cosmology.qmd` — discriminating observational program.
+9. `09-what-the-expansion-chapter-establishes.qmd` — earned hierarchy and Tier 3 handoff.
 
 ## Verification priorities
 
-Run targeted checks for quarantined notation and overclaiming after edits. Expected result: forbidden terms appear only as guardrails in these notes or explicit quarantine language, not as active manuscript mechanisms.
+After adoption, check:
+
+- every display-math delimiter is paired;
+- the index includes all nine files in order;
+- no superseded shell-reading notation has returned;
+- `\chi` never appears inside ADMC or intrinsic `p_f=m_0c`;
+- UYC is not described as optional;
+- the redshift dictionary remains conditional;
+- the duration relation retains both its path and endpoint-clock assumptions;
+- `\mathcal D_\chi` is not called a luminosity or angular-diameter distance;
+- terminology uses **translation yield** as the chapter's governing term.

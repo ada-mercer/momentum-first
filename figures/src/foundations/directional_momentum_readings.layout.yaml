@@ -1,0 +1,50 @@
+# Text layout for the canonical Foundations directional-momentum figure.
+#
+# Three position conventions are used below:
+#   line_relative: along/normal are measured from an anchor on a geometry line.
+#   data: x/y are absolute coordinates in the panel's plotted data system.
+#   axes_fraction: x/y run from 0 (left/bottom) to 1 (right/top) of the panel.
+#
+shell_panel:
+  # All shell labels use line_relative coordinates in panel data units.
+  # `along` is parallel to the relevant line and positive away from the origin.
+  # `normal` is perpendicular: positive is counterclockwise from that line.
+  # Half-offset labels are anchored at the midpoint of their dimension lines.
+  half_offset_labels:
+    p_plus: { along: 0.0, normal: -0.12, ha: center, va: center }
+    p_minus: { along: 0.0, normal: 0.12, ha: center, va: center }
+    pk_plus: { along: 0.0, normal: -0.12, ha: center, va: center }
+    pk_minus: { along: 0.01, normal: -0.12, ha: center, va: center }
+
+  # Reading labels are anchored at the endpoint of their respective spoke.
+  reading_labels:
+    p_plus: { along: 0.18, normal: -0.12, ha: center, va: center }
+    p_minus: { along: -0.08, normal: 0.0751313972081441, ha: left, va: center }
+    p_perp: { along: 0.0576313972081441, normal: 0.04, ha: right, va: center }
+    pk_plus: { along: 0.03, normal: -0.12, ha: left, va: center }
+    pk_minus: { along: -0.04, normal: -0.06, ha: left, va: bottom }
+
+  # Equation positions use axes_fraction coordinates, so they remain stable if
+  # the shell panel's numerical x/y limits change.
+  equations:
+    p_pm: { x: 0.25, y: 0.15, ha: center, va: top }
+    pk_pm: { x: 0.75, y: 0.15, ha: center, va: top }
+
+  # Panel-title position also uses axes_fraction coordinates. Values above 1
+  # place the title above the plotting rectangle.
+  title: { x: 0.02, y: 1.155, ha: left, va: top }
+
+vector_panel:
+  # The vector label is anchored at the arrow tip; dx/dy are data-unit offsets.
+  vector_label: { dx: 0.04, dy: 0.04, ha: left, va: bottom }
+
+  # These labels use absolute panel data coordinates.
+  magnitude_label: { x: 0.3, y: 0.25, ha: left, va: bottom }
+  alpha_label: { x: 0.4, y: 0.06, ha: center, va: bottom }
+
+  # The projection equation's x coordinate is a fraction of the projected
+  # segment length: 0 is its origin and 1 is its endpoint. y is in data units.
+  projection_equation: { x_fraction: 0.5, y: -0.075, ha: center, va: top }
+
+  # Panel-title position uses axes_fraction coordinates.
+  title: { x: 0.02, y: 1.155, ha: left, va: top }

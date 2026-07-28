@@ -126,7 +126,7 @@ It should be conceptually sharp but nontechnical: a legitimization-and-standards
 
 Foundations owns:
 - primitive terms and notation: fermic momentum, bosic momentum, core momentum, sign locks, and core symbols;
-- ADMC as the directional-positive conservation postulate and its realized split;
+- ADMC as conservation of one positive shell reading per selected orientation;
 - the invertible mapping, momentum triangle, conservation equivalence, and SR correspondence;
 - the stage/actor distinction between space and momentum;
 - time, clocks, dilation, contraction, and the true-frame stance at the currently justified interpretive level;
@@ -253,9 +253,9 @@ Provisional chapter cluster, intentionally light for now:
    - why deep structure is constrained by the engines rather than allowed to rewrite them.
 
 2. **M1 Constraints on Admissible Underlying Structure**
-   - ADMC split intact;
-   - invertible `(M,p_k) <-> (p_{k+},p_{k-})` map;
-   - positive directional conservation legible;
+   - ADMC shell-reading conservation intact;
+   - invertible `(M,p_k) <-> (p_k^+,p_k^-)` map;
+   - selected-orientation conservation legible;
    - `M^2=p_f^2+p^2` readable in baseline regime;
    - source -> field -> observer pipeline compatible;
    - imported ontology cannot redefine M1 primitives.

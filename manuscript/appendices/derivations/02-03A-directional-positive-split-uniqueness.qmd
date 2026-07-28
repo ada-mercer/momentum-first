@@ -1,13 +1,13 @@
-# Derivation 2.3A — Structural uniqueness of the positive oriented reading {#sec-directional-positive-split-uniqueness .unnumbered}
+# Derivation 2.3A — Structural uniqueness of the directional shell readings {#sec-directional-positive-split-uniqueness .unnumbered}
 
 ## Purpose
 
-This derivation supports the claim, referenced from Foundations §2.3, that the realized opposite-orientation readings
+This derivation supports the claim, referenced from Foundations §2.3, that the realized directional shell readings
 
 $$
-p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
+p_k^+=M+\tfrac12 p_k,
 \qquad
-p_{-\hat{k}}^\oplus=M-\tfrac12 p_k,
+p_k^-=M-\tfrac12 p_k,
 $$
 
 are not an arbitrary choice within the natural class of additive, symmetry-compatible axis-wise two-reading encodings.
@@ -18,11 +18,11 @@ $$
 F_\pm(M,p)=\alpha M \pm \beta p,
 $$
 
-and that the canonical M1 realization is obtained by the normalization that identifies the recovered conserved quantities with the already named $M$ and $p_k$. Here $F_+$ and $F_-$ are proof labels for evaluations in opposite orientations, not new physical momentum variables.
+and that the canonical M1 realization is obtained by the normalization that identifies the recovered conserved quantities with the already named $M$ and $p_k$. Here $F_+$ and $F_-$ are proof labels for evaluations in opposed orientations, not new physical momentum variables.
 
-This is therefore an **affine uniqueness theorem**. It does **not** prove that every imaginable nonlinear realization of the positive oriented momentum postulate is impossible.
+This is therefore an **affine uniqueness theorem**. It does **not** prove that every imaginable nonlinear realization of the directional shell-reading structure is impossible.
 
-It also does not cover quadratic, flux-like source-channel constructions such as null contractions of a rank-two stress tensor. Those live in a different mathematical class: this appendix constrains linear charge-like readings of conserved vector content — a class that the gravitational carrier source map of Derivation 3.3A sits squarely inside, being the opposite-orientation readings themselves densitized — while the rejected null-probe diagnostic of Derivation 3.3B works with quadratic stress-tensor contractions.
+It also does not cover quadratic, flux-like source-channel constructions such as null contractions of a rank-two stress tensor. Those live in a different mathematical class: this appendix constrains linear charge-like readings of conserved vector content — a class that the gravitational carrier source map of Derivation 3.3A sits squarely inside, being the shell readings themselves densitized — while the rejected null-probe diagnostic of Derivation 3.3B works with quadratic stress-tensor contractions.
 
 ## Role / regime / status
 
@@ -85,7 +85,7 @@ for all pairs $(M_1,p_1)$ and $(M_2,p_2)$ in the domain.
 
 Equivalently, $\Sigma$ and $\Delta$ are additive.
 
-This is the structural assumption that the oriented readings are true additive bookkeeping variables for isolated-system composition.
+This is the structural assumption that the shell readings are true additive bookkeeping variables for isolated-system composition.
 
 ### Assumption A2: parity exchange
 
@@ -265,7 +265,7 @@ $$
 \beta = \tfrac12.
 $$
 
-This yields the canonical opposite-orientation readings.
+This yields the canonical directional shell readings.
 
 ## Corollary 2 (canonical realization)
 
@@ -283,12 +283,12 @@ $$
 F_\pm(M,p)=M\pm\tfrac12 p.
 $$
 
-Equivalently, reinstating the orientation label,
+Equivalently, reinstating the directional component and physical reading labels,
 
 $$
-p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
+p_k^+=M+\tfrac12 p_k,
 \qquad
-p_{-\hat{k}}^\oplus=M-\tfrac12 p_k.
+p_k^-=M-\tfrac12 p_k.
 $$
 
 ### Proof
@@ -327,30 +327,30 @@ Within the additive, symmetry-compatible, axis-wise class defined by Assumptions
 
 ### Not proved here
 
-This derivation does **not** establish that every sufficiently reasonable realization of the positive oriented momentum postulate must satisfy Assumption A1 from first principles. It also does **not** exclude every conceivable nonlinear encoding outside the additive class.
+This derivation does **not** establish that every sufficiently reasonable realization of the directional shell-reading structure must satisfy Assumption A1 from first principles. It also does **not** exclude every conceivable nonlinear encoding outside the additive class.
 
 So the honest conclusion is:
 
-> the canonical opposite-orientation readings are structurally unique within the natural additive and symmetry-compatible axis-wise encoding class.
+> the canonical directional shell readings are structurally unique within the natural additive and symmetry-compatible axis-wise encoding class.
 
 That is already a strong result, but it is weaker than a global no-alternative theorem.
 
 ## Result
 
-The positive oriented readings used in M1,
+The directional shell readings used in M1,
 
 $$
-p_{\hat{k}}^\oplus=M+\tfrac12 p_k,
+p_k^+=M+\tfrac12 p_k,
 \qquad
-p_{-\hat{k}}^\oplus=M-\tfrac12 p_k,
+p_k^-=M-\tfrac12 p_k,
 $$
 
 are the unique canonically normalized members of the affine family forced by axis-wise additivity, parity exchange, axis-independence, local invertibility, and mild regularity.
 
-For a technically strong reader outside the project, the correct interpretation is therefore not that the form was guessed and then merely preferred, but that it is tightly constrained once one decides that positive oriented readings are genuine additive conserved quantities attached to a chosen orientation.
+For a technically strong reader outside the project, the correct interpretation is therefore not that the form was guessed and then merely preferred, but that it is tightly constrained once one decides that directional shell readings are genuine additive conserved quantities attached to a chosen orientation.
 
 ## Notes for citation in the main text
 
 If Foundations §2.3 cites this appendix, the safest summary sentence is:
 
-> Within the natural additive and symmetry-compatible class of axis-wise opposite-orientation encodings, the positive oriented reading is forced to the affine family $F_\pm=\alpha M\pm\beta p$, and canonical normalization fixes uniquely the realized form $p_{\hat{k}}^\oplus=M+\tfrac12p_k$ and $p_{-\hat{k}}^\oplus=M-\tfrac12p_k$.
+> Within the natural additive and symmetry-compatible class of axis-wise opposed-reading encodings, the shell readings are forced to the affine family $F_\pm=\alpha M\pm\beta p$, and canonical normalization fixes uniquely the realized form $p_k^+=M+\tfrac12p_k$ and $p_k^-=M-\tfrac12p_k$.

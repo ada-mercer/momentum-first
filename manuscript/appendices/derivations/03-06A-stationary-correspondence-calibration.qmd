@@ -47,7 +47,7 @@ $$
 \mathcal{P}_k=0.
 $$
 
-The six positive channels are not six independent classical sources. They are three directional-positive readings of the same direction-blind even package; the scalar field reads that common package once, not as an axis sum.
+The six positive channels are not six independent classical sources. They are three opposed shell-reading pairs with the same direction-blind even package; the scalar field reads that common package once, not as an axis sum.
 
 ## Newtonian scalar limit
 

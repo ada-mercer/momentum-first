@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[2]
 # rendered pixels are materially identical. Keep this exception explicit and
 # narrow; all other canonical figure outputs remain byte-exact.
 TOLERANT_PNGS = {
+    "figures/build/foundations/directional-momentum-readings.png",
     "figures/build/foundations/foundations-shells.png",
     "figures/build/geometry3d/foundations-shells/canonical/foundations-shells.png",
 }

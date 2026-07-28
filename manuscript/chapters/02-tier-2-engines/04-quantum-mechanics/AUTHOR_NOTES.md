@@ -2,7 +2,7 @@
 
 Status: first manuscript skeleton + opening/notation draft
 Created: 2026-05-10
-Updated: 2026-05-10 — renamed section 02 to continue the `Core Terms and Variables` chapter pattern.
+Updated: 2026-07-19 — aligned the quantum source bridge with the adopted directional shell-reading notation and distinguished $p_k^\pm$, $J_k^\pm[\Psi]$, and $\mathcal J_k^\pm$.
 Mode stack: roles/book-prose + topics/m1 + artifacts/manuscript + styles/book-mainline + audiences/broad-technical
 
 ## Chapter burden
@@ -22,7 +22,7 @@ Presence-vs-expression is allowed only as a light support note around `\Psi`, ph
 
 ### 01 — Quantum mechanics after gravity
 - Job: open from the gravity-chapter handoff and define the chapter's burden; mention early that M1 naturally supports strong-gravity quantum effects because scalar wells modify the local fermic scale inside the operator.
-- Add a bounded quantum-source bridge near the opening: in quantum regimes, $J_k^\pm$ are read as state-dependent readings/functionals of the momentum organization carried by the phase-bearing state $\Psi$, with point-particle source densities recovered only as classical/localized compressions. Boundary: no measurement theory, full QFT source law, or complete self-gravity equation.
+- Add a bounded quantum-source bridge near the opening. Begin from the particle shell readings $p_k^\pm=M\pm\tfrac12p_k$, distinguish them from the gravity-side density fields $\mathcal J_k^\pm$, and write the schematic quantum source readouts as state-dependent functionals $J_k^\pm[\Psi]$ of the momentum organization carried by the phase-bearing state. Point-particle source densities are recovered only as classical/localized compressions. Boundary: no simultaneous-pair claim about ADMC, measurement theory, full QFT source law, or complete self-gravity equation.
 - Source links: `book/dev/QM_CHAPTER_AUTHOR_HANDOVER_2026-05-10.md`; `book/dev/QM_CHAPTER_HIGH_LEVEL_AUTHOR_PLAN_V1.md`; gravity chapter close in `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/08-spacetime-lessons-and-open-boundaries.qmd`.
 - Writing theory: begin from the conceptual pressure, not from a roadmap; keep the reader's path clear.
 

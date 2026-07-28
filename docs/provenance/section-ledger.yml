@@ -88,7 +88,7 @@ sections:
   verification_note: No section-specific human verification entry has been recorded
     in this ledger yet.
 - id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
-  title: Derivation 2.3A — Structural uniqueness of the directional-positive split
+  title: Derivation 2.3A — Structural uniqueness of the directional shell readings
   path: manuscript/appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
   contributors:
   - Arne Klaveness

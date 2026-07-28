@@ -44,7 +44,7 @@ $$
 \mathcal{P}_k=0.
 $$
 
-The six positive channels are therefore not six copies of the classical source. They are a directional-positive representation whose common even package reads the scalar source $c\rho$ in the static overlap.
+The six positive channels are therefore not six copies of the classical source. They are three opposed shell-reading pairs whose common even package reads the scalar source $c\rho$ in the static overlap.
 
 For the broader stress-energy comparison, the M1 source packages can be assembled into a momentum-form source matrix,
 
@@ -160,7 +160,7 @@ The scalar sector matched the classical limit with no leftover coefficient. The 
 
 It does not have to be smuggled anywhere. The factor is derived, in three steps that the chapter has already assembled.
 
-The first step is the source law. The carrier map of the source layer fixes the odd package as the net bosic component, $\mathcal{P}_k=j_k$ — exactly, including the relativistic factors, for matter in bulk motion (Appendix 3.3A). In the weak stationary component convention used for the correspondence matrix above, the field-facing translation is $\mathcal{M}\leftrightarrow T^{00}/c$ and $\mathcal{P}_k\leftrightarrow T^{0k}/c$, with no independent stress term added to the scalar well or shift source: where the classical accounting adds pressure weight to the well, M1 deliberately does not, and the reconciliation is the apportioning argument later in this section. The full correspondence matrix also contains $\mathcal{C}_{ij}\leftrightarrow T^{ij}/c$ as the spatial stress side of momentum transport, but that moment is not used here to tune the odd-sector coupling. The current convention used in the comparison above is read straight off the carrier split.
+The first step is the source law. The carrier map of the source layer fixes the odd package as the net bosic component, $\mathcal{P}_k=j_k$ — exactly, including the relativistic factors, for matter in bulk motion (Appendix 3.3A). In the weak stationary component convention used for the correspondence matrix above, the field-facing translation is $\mathcal{M}\leftrightarrow T^{00}/c$ and $\mathcal{P}_k\leftrightarrow T^{0k}/c$, with no independent stress term added to the scalar well or shift source: where the classical accounting adds pressure weight to the well, M1 deliberately does not, and the reconciliation is the apportioning argument later in this section. The full correspondence matrix also contains $\mathcal{C}_{ij}\leftrightarrow T^{ij}/c$ as the spatial stress side of momentum transport, but that moment is not used here to tune the odd-sector coupling. The current convention used in the comparison above is read straight off the opposed shell readings.
 
 The second step is the two-aspect deformation. The even source produces clock depth and isotropic spatial stretch as two readouts of one deformation, with the weak-field trace coefficient forced to $\sigma=1$ by the cycle-readout argument (Appendix 3.4B).
 
@@ -182,7 +182,7 @@ The Lense–Thirring audit of Appendix 3.6B remains in force, with its status sh
 
 The status of the number should still be said plainly, because "derived" has a precise scope here. The value $\kappa_A=4$ is derived conditional on two named premises, each independently checked and neither yet grounded in a micro-model:
 
-- **SI — the source identification.** The gravitational source channels are the densitized carrier split, $\mathcal{J}_k^\pm=$ density of $M\pm\tfrac12 p_k$, with nothing added or reweighted. Checked through the Newtonian limit, the derived $\mathcal{P}_i=j_i$ feeding the Lense–Thirring endpoint, manifest channel positivity, and the isolated-system agreement of the apportioning argument below.
+- **SI — the source identification.** The gravitational source channels are the densitized opposed shell readings, $\mathcal{J}_k^\pm=$ density of $M\pm\tfrac12 p_k$, with nothing added or reweighted. Checked through the Newtonian limit, the derived $\mathcal{P}_i=j_i$ feeding the Lense–Thirring endpoint, manifest channel positivity, and the isolated-system agreement of the apportioning argument below.
 - **P2 — comoving-cycle readout.** The clock rate is the reciprocal of the local spatial stretch, because a clock is a confined cycle read out in the deformed stage. Checked through PPN $\gamma=1$, light bending, Shapiro delay, and recovery of the existing scalar clock dictionary.
 
 Both premises are carried as explicit hardening targets in the closing section of this chapter. One structural point is worth fixing against a natural misreading: the spatial sector is not a competing home for part of the coefficient, waiting to absorb a factor of $2$ out of the packaging. It is one of the two inputs that produce the $4$. The coefficient is what it is *because* the stretch response is as strong as the depth response, and no re-partitioning between packaging and spatial sector is pending (Appendix 3.6C).
@@ -301,7 +301,7 @@ A_i \leftrightarrow \text{stationary shift},
 \gamma_{\mathrm{PPN}}=1,
 $$
 
-with the shift coefficient $\kappa_A=4$ derived from the carrier map, the two-aspect deformation, and boost consistency, and validated against the frame-drag endpoint. It also establishes where the correspondence deliberately ends: the classical pressure and radiation weights are subsystem apportioning whose total contribution cancels over isolated systems, but whose higher moments can matter for aspherical sources; M1 does not import those weights. It also keeps the status of those faces clear. Classical density, current, and metric notation are comparison tools. The main M1 route remains the directional-positive source-to-field map built in the previous sections.
+with the shift coefficient $\kappa_A=4$ derived from the carrier map, the two-aspect deformation, and boost consistency, and validated against the frame-drag endpoint. It also establishes where the correspondence deliberately ends: the classical pressure and radiation weights are subsystem apportioning whose total contribution cancels over isolated systems, but whose higher moments can matter for aspherical sources; M1 does not import those weights. It also keeps the status of those faces clear. Classical density, current, and metric notation are comparison tools. The main M1 route remains the shell-reading source-to-field map built in the previous sections.
 
 The supporting calibration sheet for this section is collected in Appendix 3.6A.
 

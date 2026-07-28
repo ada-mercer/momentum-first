@@ -1,52 +1,68 @@
-## Core Terms and Variables
+## Core Momentum Terms and Directional Notation
 
-This section fixes the notation used throughout M1. It is meant to serve as a compact reference. The physical organization represented by these variables is developed in the next section.
+This section introduces M1's three core momentum terms and fixes the directional notation built from them. It serves as a compact reference for what follows; the next section develops the physical configuration these symbols describe.
 
 ### Fermic momentum
 
 **Fermic momentum**, written $p_f$, is the nonnegative intrinsic momentum scale associated with stable internal cycling. At the inertial baseline,
+
 $$
-p_f = m_0 c,
+p_f=m_0c,
 $$
+
 where $m_0$ labels the particle's rest-state mass and $c$ is the invariant local propagation scale. M1 reads the corresponding mass content as momentum locked into the internal cycle associated with the particle's identity.
 
 ### Bosic momentum
 
-**Bosic momentum**, written $p$, is the nonnegative momentum quantity through which the particle's internal cycle carries translational expression. It belongs to the same internal particle cycle as fermic momentum. When $p$ is present, its organization includes both a spherical contribution and an asymmetry with a net direction.
+**Bosic momentum**, written $p$, is the nonnegative momentum quantity through which the particle's internal cycle carries translational expression. Its organization includes both a spherical contribution and an asymmetry with a net direction.
 
-The associated notation distinguishes the bosic quantity from its directional descriptions:
-
-- $p$ = bosic momentum magnitude,
-- $\vec p$ = the corresponding momentum vector,
-- $\hat{k}$ = an arbitrarily chosen oriented unit direction,
-- $p_k=\vec p\mathbin{\cdot}\hat{k}$ = the signed component along that direction.
-
-The quantity $p$ remains the bosic momentum. The components $p_k$ and the vector $\vec p$ formalize its directional asymmetry; they do not replace $p$ as the foundational quantity.
+The quantity $p$ remains the bosic momentum throughout M1. Its vector and component forms describe its directional asymmetry; they do not replace it as the foundational quantity.
 
 ### Core momentum
 
 **Core momentum**, written $M$, is the nonnegative scalar measure of the particle's total momentum content. In the inertial baseline,
-$$
-M = \sqrt{p_f^2 + p^2}.
-$$
-
-The relation is the inertial composition rule for fermic and bosic momentum. Its physical meaning is developed next.
-
-### Positive oriented momentum
-
-For an oriented unit direction $\hat{k}$, **positive oriented momentum**, written $p_{\hat{k}}^\oplus$, is the particle's positive momentum contribution in that orientation. In the inertial realization used in this chapter,
 
 $$
-p_{\hat{k}}^\oplus=M+\tfrac12p_k.
+M=\sqrt{p_f^2+p^2}.
 $$
 
-Reversing the orientation gives
+This is the inertial composition rule for fermic and bosic momentum. Its physical meaning is developed in the next section.
+
+### Direction and projection
+
+The net direction of the bosic asymmetry is represented by the vector $\vec p$, whose magnitude is
 
 $$
-p_{-\hat{k}}^\oplus=M-\tfrac12p_k.
+p=|\vec p|.
 $$
 
-The $\oplus$ marks the positive additive quantity used by ADMC. When several particles appear, $p_{\hat{k}}^{\oplus,(i)}$ denotes the contribution of particle $i$; the particle label is omitted when only one particle is under discussion.
+For an arbitrarily chosen oriented unit direction $\hat{k}$, the signed component along that direction is
+
+$$
+p_k=\vec p\mathbin{\cdot}\hat{k}.
+$$
+
+### Directional shell readings
+
+Along the net asymmetry axis, the two opposed shell readings are
+
+$$
+p^\pm=M\pm\tfrac12p.
+$$
+
+For the chosen $k$-axis, the corresponding readings are
+
+$$
+p_k^\pm=M\pm\tfrac12p_k.
+$$
+
+A direction perpendicular to the net asymmetry has the reading
+
+$$
+p^\perp=M.
+$$
+
+Superscripts $+$ and $-$ label opposed positive readings, not arithmetic signs. The quantities $p_f$, $p$, $M$, $p^\pm$, $p_k^\pm$, and $p^\perp$ are nonnegative scalars; $\vec p$ is a vector, and $p_k$ is its signed component along $\hat{k}$. When several particles appear, $\bigl(p_k^\pm\bigr)^{(i)}$ denotes the readings of particle $i$.
 
 ### Terminology note
 
