@@ -1,4 +1,14 @@
 figures:
+  - id: ill-preface-scattering
+    source: figures/src/preface/scattering-equal-mass-problem-v3.provenance.md
+    output: figures/build/preface/scattering-equal-mass-problem-v3.png
+    chapter: manuscript/chapters/00-front-matter/00-preface/01-a-persistent-tension.qmd
+    generator: openai/gpt-image-2 + Paint.NET
+  - id: ill-preface-momentum-mass-train
+    source: figures/src/preface/train-momentum-mass-speed-v4.provenance.md
+    output: figures/build/preface/train-momentum-mass-speed-v4.png
+    chapter: manuscript/chapters/00-front-matter/00-preface/01-a-persistent-tension.qmd
+    generator: openai/gpt-image-2 + Paint.NET
   - id: fig-foundations-shells
     source: figures/src/foundations/foundations_shells.py
     output: figures/build/foundations/foundations-shells.png

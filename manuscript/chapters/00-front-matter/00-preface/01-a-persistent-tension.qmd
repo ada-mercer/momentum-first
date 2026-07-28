@@ -4,11 +4,43 @@ I can trace the beginning of this project back to a small moment in middle schoo
 
 We were solving a scattering problem with two bodies, and I was stuck. I had been trying to get the result from conservation of momentum alone, but I could not make it work. Eventually I went to the teacher and asked for help. He looked over the problem, glanced at my attempt, and then explained—with that patience teachers learn to master—that I had to use both conservation of momentum and conservation of energy. That made it easy. The algebra did its duty, the equations closed, and the result landed.
 
+::: {.content-visible when-format="html"}
+::: {.mf-preface-float-right}
+![](../../../../figures/build/preface/scattering-equal-mass-problem-v3.png){alt="A stylized notebook sheet showing an equal-mass scattering problem before and after collision. Body A initially moves toward body B at rest; afterward the bodies leave along two angled paths, with one angle marked 30 degrees and the other left as an unknown."}
+:::
+:::
+
+```{=latex}
+\begin{wrapfigure}[13]{r}{0.50\textwidth}
+  \vspace{-1.5\baselineskip}
+  \centering
+  \includegraphics[width=\linewidth]{figures/build/preface/scattering-equal-mass-problem-v3.png}
+  \vspace{-0.8\baselineskip}
+\end{wrapfigure}
+```
+
 But it also planted a tension in me that never really left.
 
 Both momentum and energy were conserved? Why both? To me, they seemed to point toward the same thing. Both of them, somehow, had to do with motion. Yet here they were: two different conserved quantities, both necessary, both fundamental. I remember the feeling clearly. Not that physics had become clearer, but that something about it had become stranger. I did not know what to do with that thought at the time. I only know that I never quite got over it.
 
-The same tension resurfaced years later at university. We were studying the elastic scattering of a photon traveling along the \(z\)-axis toward a stationary electron. By then I had developed a private picture of momentum as something like the locomotive of directed motion, and mass as its wagons. It was a simple model—too simple, I suspected, to be literally true—but it helped me think about why light should travel at \(c\), and why a particle with mass should never exceed it. It was, at best, a rough fit with special relativity. Still, it made me linger over the details of that scattering problem.
+The same tension resurfaced years later at university. We were studying the elastic scattering of a photon traveling along the \(z\)-axis toward a stationary electron.
+
+::: {.content-visible when-format="html"}
+::: {.mf-preface-float-left}
+![](../../../../figures/build/preface/train-momentum-mass-speed-v4.png){alt="A two-tier black-and-white railway vignette. Above, a large steam locomotive labelled momentum moves right with an arrow marked c. Below, a smaller locomotive labelled momentum pulls five wagons bracketed and labelled mass, moving right with an arrow marked v less than c."}
+:::
+:::
+
+```{=latex}
+\begin{wrapfigure}[8]{l}{0.40\textwidth}
+  \vspace{-0.4\baselineskip}
+  \centering
+  \includegraphics[width=\linewidth]{figures/build/preface/train-momentum-mass-speed-v4.png}
+  \vspace{-0.6\baselineskip}
+\end{wrapfigure}
+```
+
+By then I had developed a private picture of momentum as something like the locomotive of directed motion, and mass as its wagons. It was a simple model—too simple, I suspected, to be literally true—but it helped me think about why light should travel at \(c\), and why a particle with mass should never exceed it. It was, at best, a rough fit with special relativity. Still, it made me linger over the details of that scattering problem.
 
 And once again the old unease returned.
 
