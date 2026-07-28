@@ -1,188 +1,381 @@
 schema: momentum-first.section-contribution-ledger.v1
-purpose: Public-facing section contribution and human-verification ledger for Momentum
-  First.
+purpose: Public-facing section contribution and human-verification ledger for Momentum First.
+coverage:
+  source: _quarto.yml project.render
+  release_candidate: v0.3.6
+  rendered_units: 24
+human_verification_decision:
+  decided_by: Arne Klaveness
+  decided_on: 2026-07-28
+  scope_note: >
+    Substantive chapters carry the explicit statuses below. Appendix
+    human-verification entries remain deliberately not_yet_recorded because
+    most have not been verified by Arne; their qualified AI review is recorded
+    separately in the manuscript-status ledger.
 contributor_label_policy:
-  AI-assisted: Category label for non-human AI assistance. It is not a formal author
-    name or DOI creator.
+  AI-assisted: >
+    Category label for non-human AI assistance. It is not a formal author name
+    or DOI creator.
 verification_status_values:
-- verified
-- partially_verified
-- not_yet_verified
-- not_yet_recorded
+  - verified
+  - partially_verified
+  - not_yet_verified
+  - not_yet_recorded
 sections:
-- id: index
-  title: index
-  path: index.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: preface
-  title: Preface
-  path: manuscript/chapters/00-front-matter/00-preface/index.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: introduction
-  title: Introduction
-  path: manuscript/chapters/01-tier-1-foundations/01-introduction/index.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: foundations
-  title: Foundations
-  path: manuscript/chapters/01-tier-1-foundations/02-foundations/index.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: gravity-and-structured-spacetime
-  title: Gravity and Structured Spacetime
-  path: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: quantum-mechanics-in-momentum-language
-  title: Quantum Mechanics in Momentum Language
-  path: manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: space-expansion-as-translation-yield
-  title: Space Expansion as Translation Yield
-  path: manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
-  title: Derivation 2.3A — Structural uniqueness of the directional shell readings
-  path: manuscript/appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-3-4a-stationary-primitive-source-to-field-map
-  title: Derivation 3.4A — Stationary primitive source-to-field map
-  path: manuscript/appendices/derivations/03-04A-stationary-source-to-field-map.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-3-5a-local-observer-bookkeeping
-  title: Derivation 3.5A — Local observer bookkeeping
-  path: manuscript/appendices/derivations/03-05A-local-observer-bookkeeping.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-3-6a-stationary-correspondence-calibration
-  title: Derivation 3.6A — Stationary correspondence calibration
-  path: manuscript/appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-3-7a-nonstationary-linear-baseline-and-benchmarks
-  title: Derivation 3.7A — Nonstationary linear baseline and benchmarks
-  path: manuscript/appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-3-7b-nonstationary-completion-ladder
-  title: Derivation 3.7B — Nonstationary completion ladder
-  path: manuscript/appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-4-8a-strong-gravity-tunneling-sensitivity
-  title: Derivation 4.8A — Strong-gravity tunneling sensitivity
-  path: manuscript/appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-5-6a-universal-true-frame-yield-and-the-bound-frame-transform
-  title: Derivation 5.6A — Universal true-frame yield and the bound-frame transform
-  path: manuscript/appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
-- id: derivation-5-6b-sector-consistency-under-universal-yield
-  title: Derivation 5.6B — Sector consistency under universal yield
-  path: manuscript/appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
-  contributors:
-  - Arne Klaveness
-  - AI-assisted
-  contribution_note: 'Initial ledger placeholder: contribution degree and roles to
-    be reviewed section-by-section before DOI publication.'
-  human_verification: not_yet_recorded
-  verification_note: No section-specific human verification entry has been recorded
-    in this ledger yet.
+  - id: index
+    title: Momentum First
+    path: index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne Klaveness is the manuscript author and controls final acceptance;
+      AI-assisted contribution included editorial and repository preparation.
+    human_verification: not_yet_recorded
+    verification_note: >
+      No separate human-verification claim is recorded for this administrative
+      rendered unit.
+
+  - id: preface
+    title: Preface
+    path: manuscript/chapters/00-front-matter/00-preface/index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the personal account, conceptual framing, and acceptance
+      direction; AI-assisted contribution included drafting, editing,
+      illustration preparation, integration, and review.
+    human_verification: verified
+    verification_note: >
+      Arne Klaveness explicitly confirmed human verification for the v0.3.6
+      candidate on 2026-07-28.
+
+  - id: introduction
+    title: Introduction
+    path: manuscript/chapters/01-tier-1-foundations/01-introduction/index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the framework, argument direction, and acceptance
+      decisions; AI-assisted contribution included drafting, structure,
+      editing, and review.
+    human_verification: verified
+    verification_note: >
+      Arne Klaveness explicitly confirmed human verification for the v0.3.6
+      candidate on 2026-07-28.
+
+  - id: foundations
+    title: Foundations
+    path: manuscript/chapters/01-tier-1-foundations/02-foundations/index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the framework, primitive concepts, and acceptance
+      decisions; AI-assisted contribution included formalization, drafting,
+      figure preparation, consistency work, and review.
+    human_verification: verified
+    verification_note: >
+      Arne Klaveness explicitly confirmed human verification for the v0.3.6
+      candidate on 2026-07-28.
+
+  - id: gravity-and-structured-spacetime
+    title: Gravity and Structured Spacetime
+    path: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the framework, physical premises, and acceptance
+      direction; AI-assisted contribution included derivation support,
+      drafting, structure, editing, source work, and review.
+    human_verification: partially_verified
+    verification_note: >
+      Arne Klaveness explicitly confirmed partial human verification for the
+      v0.3.6 candidate on 2026-07-28; no broader human verification is claimed.
+
+  - id: quantum-mechanics-in-momentum-language
+    title: Quantum Mechanics in Momentum Language
+    path: manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the framework, reconstruction program, and acceptance
+      direction; AI-assisted contribution included derivation support,
+      drafting, structure, editing, source work, and review.
+    human_verification: partially_verified
+    verification_note: >
+      Arne Klaveness explicitly confirmed partial human verification for the
+      v0.3.6 candidate on 2026-07-28; no broader human verification is claimed.
+
+  - id: space-expansion-as-translation-yield
+    title: Space Expansion as Translation Yield
+    path: manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the translation-yield concept, physical direction, and
+      acceptance decisions; AI-assisted contribution included formalization,
+      drafting, structure, editing, source work, and review.
+    human_verification: partially_verified
+    verification_note: >
+      Arne Klaveness explicitly confirmed partial human verification for the
+      v0.3.6 candidate on 2026-07-28; no broader human verification is claimed.
+
+  - id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
+    title: Derivation 2.3A — Structural uniqueness of the directional shell readings
+    path: manuscript/appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-3a-the-carrier-source-map
+    title: Derivation 3.3A — The carrier source map
+    path: manuscript/appendices/derivations/03-03A-carrier-source-map.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-3b-null-probe-diagnostic-and-no-go
+    title: Derivation 3.3B — Null-probe diagnostic and no-go
+    path: manuscript/appendices/derivations/03-03B-null-probe-diagnostic.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-3c-momentum-manifestations-and-source-channels
+    title: Derivation 3.3C — Momentum manifestations and source channels
+    path: manuscript/appendices/derivations/03-03C-momentum-manifestations.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-4a-stationary-primitive-source-to-field-map
+    title: Derivation 3.4A — Stationary primitive source-to-field map
+    path: manuscript/appendices/derivations/03-04A-stationary-source-to-field-map.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-4b-depth-equals-stretch
+    title: Derivation 3.4B — Depth equals stretch
+    path: manuscript/appendices/derivations/03-04B-depth-equals-stretch.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-5a-local-observer-bookkeeping
+    title: Derivation 3.5A — Local observer bookkeeping
+    path: manuscript/appendices/derivations/03-05A-local-observer-bookkeeping.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-6a-stationary-correspondence-calibration
+    title: Derivation 3.6A — Stationary correspondence calibration
+    path: manuscript/appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-6b-frame-drag-coefficient-audit
+    title: Derivation 3.6B — Frame-drag coefficient audit
+    path: manuscript/appendices/derivations/03-06B-frame-drag-coefficient-audit.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-6c-boost-consistency-and-the-shift-coefficient
+    title: Derivation 3.6C — Boost consistency and the shift coefficient
+    path: manuscript/appendices/derivations/03-06C-boost-consistency-shift-coefficient.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-7a-nonstationary-linear-baseline-and-benchmarks
+    title: Derivation 3.7A — Nonstationary linear baseline and benchmarks
+    path: manuscript/appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-7b-nonstationary-completion-ladder
+    title: Derivation 3.7B — Nonstationary completion ladder
+    path: manuscript/appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-4-8a-strong-gravity-tunneling-sensitivity
+    title: Derivation 4.8A — Strong-gravity tunneling sensitivity
+    path: manuscript/appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-5-6a-universal-true-frame-yield-and-the-bound-frame-transform
+    title: Derivation 5.6A — Universal true-frame yield and the bound-frame transform
+    path: manuscript/appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-5-6b-sector-consistency-under-universal-yield
+    title: Derivation 5.6B — Sector consistency under universal yield
+    path: manuscript/appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: manuscript-status
+    title: Manuscript Status
+    path: manuscript/backmatter/manuscript-status.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne controls the manuscript's public maturity and acceptance decisions;
+      AI-assisted contribution included ledger preparation, consistency
+      checking, generation tooling, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      No separate human-verification claim is recorded for this administrative
+      rendered unit.
+
+  - id: references
+    title: References
+    path: manuscript/references.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne controls source acceptance; AI-assisted contribution included source
+      identification, bibliography preparation, citation placement, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      No separate human-verification claim is recorded for this administrative
+      rendered unit.

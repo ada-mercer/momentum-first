@@ -57,6 +57,34 @@ def test_quarto_downloads_match_supported_release_assets() -> None:
     assert config["book"].get("downloads") == ["pdf"]
 
 
+def test_provenance_ledger_covers_every_rendered_unit() -> None:
+    config = _load_quarto_config()
+    ledger = yaml.safe_load(
+        (ROOT / "docs" / "provenance" / "section-ledger.yml").read_text(
+            encoding="utf-8"
+        )
+    )
+    sections = ledger["sections"]
+    paths = [section["path"] for section in sections]
+    assert paths == config["project"]["render"]
+    assert len(paths) == len(set(paths))
+    assert ledger["coverage"]["rendered_units"] == len(paths)
+
+    allowed_statuses = set(ledger["verification_status_values"])
+    assert allowed_statuses == {
+        "verified",
+        "partially_verified",
+        "not_yet_verified",
+        "not_yet_recorded",
+    }
+    for section in sections:
+        assert section["contributors"] == ["Arne Klaveness", "AI-assisted"]
+        assert section["contribution_note"].strip()
+        assert "placeholder" not in section["contribution_note"].lower()
+        assert section["human_verification"] in allowed_statuses
+        assert section["verification_note"].strip()
+
+
 def test_pages_workflow_watches_root_book_homepage() -> None:
     workflow = yaml.load(
         (ROOT / ".github" / "workflows" / "deploy-book-site.yml").read_text(

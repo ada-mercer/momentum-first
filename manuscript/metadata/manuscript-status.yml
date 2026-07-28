@@ -22,40 +22,43 @@ defaults:
     Arne supplied the core framing and acceptance direction; AI-assisted
     contribution shaped drafting, structure, and review.
 
-# Initial statuses are conservative placeholders: nothing is marked as formally
-# verified until a review pass is recorded under docs/VERIFICATION_POLICY.md. Bump
-# maturity/verification here as chapters harden.
+# Verification below records the distinct WP2 review pass for the v0.3.6
+# candidate. It is independent of section-level human verification in
+# docs/provenance/section-ledger.yml.
 chapters:
   - id: introduction
     title: Introduction
     maturity: stabilizing
-    verification: none
-    note: Framing and motivation; conceptual, not load-bearing for later derivations.
+    verification: V2
+    verified_by: AI-assisted review
+    note: Framing and motivation; conceptually reviewed, but not load-bearing for later derivations.
 
   - id: foundations
     title: Foundations
     maturity: stabilizing
     verification: V3
-    verified_by: author (human)
-    note: Primitive variables, ADMC, and the invertible mappings — the load-bearing locks; verified by the author.
+    verified_by: AI-assisted review
+    note: Primitive variables, ADMC, and the invertible mappings — the load-bearing locks.
 
   - id: gravity
     title: Gravity and Structured Spacetime
     maturity: stabilizing
     verification: V2
-    verified_by: author (human)
-    note: Source-to-field-to-observer pipeline; structure and much of the content verified by the author, but several technical points remain unchecked (technical/V3 verification partial).
+    verified_by: AI-assisted review
+    note: Source-to-field-to-observer pipeline; conceptually reviewed, with targeted V3 review of load-bearing source-map chains.
 
   - id: quantum
     title: Quantum Mechanics in Momentum Language
     maturity: working_draft
-    verification: none
+    verification: V2
+    verified_by: AI-assisted review
     note: Momentum-language reconstruction; correspondence-heavy, read provisionally.
 
   - id: expansion
     title: Space Expansion as Translation Yield
     maturity: working_draft
-    verification: none
+    verification: V2
+    verified_by: AI-assisted review
     note: The χ(t) translation-yield picture; a regime-bound cosmological mapping.
 
 # Derivation appendices are tracked collectively for now. Promote an individual
@@ -64,5 +67,6 @@ chapters:
 appendices:
   title: Derivation appendices
   maturity: working_draft
-  verification: none
-  note: Formal derivation support for the chapters; individual entries added as statuses diverge.
+  verification: V2
+  verified_by: AI-assisted review
+  note: All appendices passed at least conceptual review; load-bearing formal chains received targeted V3 review.

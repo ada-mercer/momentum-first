@@ -10,7 +10,9 @@ AI assistance may be credited as contribution, but the public ledger uses the ca
 
 ## Ledger model
 
-The section ledger is `section-ledger.yml`. Each entry should stay simple:
+The section ledger is `section-ledger.yml`. Its coverage is the explicit
+`project.render` list in `_quarto.yml`, including administrative rendered units
+such as manuscript status and references. Each entry should stay simple:
 
 ```yaml
 - title: Example section
@@ -34,3 +36,8 @@ The section ledger is `section-ledger.yml`. Each entry should stay simple:
 - `not_yet_recorded` — no ledger decision has been made yet.
 
 Contribution and verification are separate. A section may have substantial AI-assisted contribution and still be human-verified; it may also be AI-assisted and not yet human-verified. The ledger exists to make that distinction explicit before DOI publication.
+
+Before release, every `not_yet_recorded` entry must be deliberate rather than a
+generic placeholder. Its note should state why no section-specific human claim
+is recorded and, where applicable, distinguish that absence from qualified AI
+review recorded elsewhere.

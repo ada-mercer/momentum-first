@@ -3,9 +3,9 @@
 
 | Chapter | Maturity | Verification | Notes |
 |---|---|---|---|
-| Introduction | Stabilizing | — | Framing and motivation; conceptual, not load-bearing for later derivations. |
-| Foundations | Stabilizing | V3 (technical) · author (human) | Primitive variables, ADMC, and the invertible mappings — the load-bearing locks; verified by the author. |
-| Gravity and Structured Spacetime | Stabilizing | V2 (conceptual) · author (human) | Source-to-field-to-observer pipeline; structure and much of the content verified by the author, but several technical points remain unchecked (technical/V3 verification partial). |
-| Quantum Mechanics in Momentum Language | Working draft | — | Momentum-language reconstruction; correspondence-heavy, read provisionally. |
-| Space Expansion as Translation Yield | Working draft | — | The χ(t) translation-yield picture; a regime-bound cosmological mapping. |
-| Derivation appendices | Working draft | — | Formal derivation support for the chapters; individual entries added as statuses diverge. |
+| Introduction | Stabilizing | V2 (conceptual) · AI-assisted review | Framing and motivation; conceptually reviewed, but not load-bearing for later derivations. |
+| Foundations | Stabilizing | V3 (technical) · AI-assisted review | Primitive variables, ADMC, and the invertible mappings — the load-bearing locks. |
+| Gravity and Structured Spacetime | Stabilizing | V2 (conceptual) · AI-assisted review | Source-to-field-to-observer pipeline; conceptually reviewed, with targeted V3 review of load-bearing source-map chains. |
+| Quantum Mechanics in Momentum Language | Working draft | V2 (conceptual) · AI-assisted review | Momentum-language reconstruction; correspondence-heavy, read provisionally. |
+| Space Expansion as Translation Yield | Working draft | V2 (conceptual) · AI-assisted review | The χ(t) translation-yield picture; a regime-bound cosmological mapping. |
+| Derivation appendices | Working draft | V2 (conceptual) · AI-assisted review | All appendices passed at least conceptual review; load-bearing formal chains received targeted V3 review. |
