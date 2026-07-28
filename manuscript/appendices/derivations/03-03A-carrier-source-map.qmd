@@ -80,7 +80,7 @@ There is no vacuum row: the channels accumulate the shell readings of actual mom
 
 ## Reconciliation with the classical accounting
 
-In the weak stationary component convention used for correspondence, the translation of the surviving objects is $\varrho\leftrightarrow T^{00}/c$ and $j_k\leftrightarrow T^{0k}/c$; deliberately, no stress components appear anywhere in the active scalar-plus-shift source layer. The classical accounting instead assigns extra well weight to pressure ($\rho+3p/c^2$ for a static fluid) and doubles the weight of radiation. The reconciliation is the classical identity
+In the weak stationary component convention used for correspondence, the translation of the surviving objects is $\varrho\leftrightarrow T^{00}/c$ and $j_k\leftrightarrow T^{0k}/c$; deliberately, no stress components appear anywhere in the active scalar-plus-shift source layer. The classical accounting instead assigns extra well weight to pressure ($\rho+3p/c^2$ for a static fluid) and doubles the weight of radiation. The reconciliation is the classical identity [@misner1959active]
 
 $$
 \int T^{kk}\,d^3r=0

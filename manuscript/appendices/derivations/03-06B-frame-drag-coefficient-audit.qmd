@@ -93,7 +93,7 @@ h_{0i}(r)
 =-\frac{2G_N}{c^3}\,\frac{(J\times r)_i}{r^3},
 $$
 
-the weak-field limit of the Kerr shift. This is the field whose readout has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B. It is the empirically non-negotiable side of the comparison.
+the weak-field limit of the Kerr shift. This is the field whose readout has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B [@ciufolini2004confirmation; @everitt2011gravity]. It is the empirically non-negotiable side of the comparison.
 
 ## Step 3 — Observer response on both sides
 

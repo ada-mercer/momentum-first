@@ -119,7 +119,7 @@ This assumption excludes degenerate encodings that collapse two degrees of freed
 
 At least one of the additive functions $F_+$, $F_-$ — equivalently $\Sigma$ or $\Delta$ — is measurable on a set of positive measure, or continuous at one point.
 
-This is a standard regularity hypothesis used to exclude pathological solutions to the Cauchy functional equation.
+This is a standard regularity hypothesis used to exclude pathological solutions to the Cauchy functional equation [@kuczma2009functional].
 
 ## Main theorem
 

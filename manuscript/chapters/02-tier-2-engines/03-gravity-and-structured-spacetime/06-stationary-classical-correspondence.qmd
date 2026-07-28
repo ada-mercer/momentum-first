@@ -156,7 +156,7 @@ in exact agreement with the classical comparison equation. That agreement is no 
 
 ### The shift coefficient derived
 
-The scalar sector matched the classical limit with no leftover coefficient. The shift sector appears at first not to repeat that luxury: the M1 field map gives the scalar and directional fields with *equal* coefficients — both sectors ride the same $1/R$ kernel with the same $4\pi\kappa$ in the field equation — yet the classical gravitomagnetic equation demands $16\pi G_N/c^3$, and the Lense–Thirring readout behind that demand has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B. A factor of $4$ has to come from somewhere, and it must not be smuggled into the source channels or the current bookkeeping.
+The scalar sector matched the classical limit with no leftover coefficient. The shift sector appears at first not to repeat that luxury: the M1 field map gives the scalar and directional fields with *equal* coefficients — both sectors ride the same $1/R$ kernel with the same $4\pi\kappa$ in the field equation — yet the classical gravitomagnetic equation demands $16\pi G_N/c^3$, and the Lense–Thirring readout behind that demand has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B [@ciufolini2004confirmation; @everitt2011gravity]. A factor of $4$ has to come from somewhere, and it must not be smuggled into the source channels or the current bookkeeping.
 
 It does not have to be smuggled anywhere. The factor is derived, in three steps that the chapter has already assembled.
 
@@ -218,7 +218,7 @@ $$
 \delta\phi=\frac{4G_NM}{b\,c^2},
 $$
 
-and the Shapiro time delay carries its standard coefficient $2G_NM/c^3$ in front of the usual logarithmic path factor. Both scale with $1+\gamma_{\mathrm{PPN}}$; a depth-only package ($\sigma=0$) would predict half of each, and is excluded by the same derivation that closes the shift coefficient. Together with the Newtonian limit, the clock-depth dictionary, and the Lense–Thirring endpoint, this places the stationary weak-field package in agreement with the classical tests it can currently address — as consequences of the derived pipeline, not as separately calibrated facts.
+and the Shapiro time delay carries its standard coefficient $2G_NM/c^3$ in front of the usual logarithmic path factor. Both scale with $1+\gamma_{\mathrm{PPN}}$ [@will2014confrontation]; a depth-only package ($\sigma=0$) would predict half of each, and is excluded by the same derivation that closes the shift coefficient. Together with the Newtonian limit, the clock-depth dictionary, and the Lense–Thirring endpoint, this places the stationary weak-field package in agreement with the classical tests it can currently address — as consequences of the derived pipeline, not as separately calibrated facts.
 
 ### Where the two accountings part ways
 
@@ -231,7 +231,7 @@ $$
 \qquad\text{(each axis)},
 $$
 
-because whatever pushes outward somewhere is held in by tension somewhere else. A box of photon gas is the canonical case: the classical accounting gives the gas the extra pressure weight, and gives the box walls a matching *negative* stress contribution from their tension. Summed over the whole system, the extra weights cancel identically, and the total gravitating content is just the content — exactly what the carrier map assigns directly, gas at content weight, walls at content weight, nothing to cancel. The famous factor of two is a statement about a *subsystem inside a confining structure*, never about anything isolated; the "second half" of the photon gas's classical weight lives in the walls, as wall tension, with opposite sign.
+because whatever pushes outward somewhere is held in by tension somewhere else [@misner1959active]. A box of photon gas is the canonical case: the classical accounting gives the gas the extra pressure weight, and gives the box walls a matching *negative* stress contribution from their tension. Summed over the whole system, the extra weights cancel identically, and the total gravitating content is just the content — exactly what the carrier map assigns directly, gas at content weight, walls at content weight, nothing to cancel. The famous factor of two is a statement about a *subsystem inside a confining structure*, never about anything isolated; the "second half" of the photon gas's classical weight lives in the walls, as wall tension, with opposite sign.
 
 The consequence is sharp, but its scope is important. For every isolated stationary system, the two accountings produce the same total source weight. For spherical sources this also fixes the whole exterior field, so the standard exterior tests — orbits, clocks, deflection, and frame drag in the usual spherical or near-spherical regimes — are blind to the difference at the order considered here. For aspherical pressurized sources, however, the cancellation need not remove the pressure or stress quadrupole and higher moments. The accountings can therefore differ not only inside a bound system, but also in exterior multipoles at fractional order $\sim p/\rho c^2$.
 

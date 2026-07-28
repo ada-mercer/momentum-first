@@ -10,7 +10,7 @@ $$
 1+z=\frac{\chi_e}{\chi_o}
 $$
 
-constrains the yield values at two events, but different histories can share the same endpoint ratio. Redshift drift tests how that ratio changes while a source remains under observation. Its prediction must be derived by evolving the emission event, observation event, and intervening propagation kernel together. Importing the standard FLRW drift formula without that derivation would assume the correspondence that the test is meant to examine.
+constrains the yield values at two events, but different histories can share the same endpoint ratio. Redshift drift tests how that ratio changes while a source remains under observation [@sandage1962redshift]. Its prediction must be derived by evolving the emission event, observation event, and intervening propagation kernel together. Importing the standard FLRW drift formula without that derivation would assume the correspondence that the test is meant to examine.
 
 Redshift drift is therefore a particularly clean discriminator among candidate $\chi(t)$ histories.
 
@@ -30,7 +30,7 @@ A completion that reproduces spectral redshift but not the corresponding duratio
 
 A candidate history must be turned into observable distances. Radial propagation interval, angular-diameter distance, luminosity distance, and lookback interval are not interchangeable. Their relations depend on the geometry, observer standards, and transport rules of the completed model.
 
-Brightness sharpens the test. Observed flux depends on signal arrival rate, emitting area, angular spreading, photon counting, source evolution, and any lensing or attenuation along the path. The duration relation supplies an arrival-interval factor, but a luminosity-distance law must show how all factors combine. Tolman-style surface-brightness behavior and distance reciprocity then test whether the proposed geometry and transport form one coherent system.
+Brightness sharpens the test. Observed flux depends on signal arrival rate, emitting area, angular spreading, photon counting, source evolution, and any lensing or attenuation along the path. The duration relation supplies an arrival-interval factor, but a luminosity-distance law must show how all factors combine [@hogg1999distance]. Tolman-style surface-brightness behavior and distance reciprocity then test whether the proposed geometry and transport form one coherent system [@tolman1934relativity; @etherington1933distance].
 
 ### Local metrology tests UYC realization
 

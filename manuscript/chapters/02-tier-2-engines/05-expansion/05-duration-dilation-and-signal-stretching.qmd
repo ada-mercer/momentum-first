@@ -32,7 +32,7 @@ The clean UYC branch therefore realizes the conditional redshift dictionary with
 
 If $\chi_e>\chi_o$, the observed interval is larger than the emitted interval and the feature is redshifted. The signal need not surrender momentum as it propagates. Its shell reading, $M(p)$, and directed component remain governed by the same momentum structure; the changed observation comes from comparing the transported pattern across two yield-conditioned standards.
 
-The mapping has the same ratio form as the standard scale-factor relation
+The mapping has the same ratio form as the standard scale-factor relation [@hogg1999distance]
 
 $$
 1+z=\frac{a_o}{a_e}.

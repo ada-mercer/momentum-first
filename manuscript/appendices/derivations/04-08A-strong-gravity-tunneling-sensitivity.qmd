@@ -8,7 +8,7 @@ $$
 p_{f,c}(x)=p_fG(x)=p_f\sqrt{-g_{00}(x)}.
 $$
 
-In a semiclassical forbidden region, lowering this scale lowers the leading WKB barrier exponent when the conserved generator and the other local terms are held fixed.
+In a semiclassical forbidden region, lowering this scale lowers the leading WKB barrier exponent when the conserved generator and the other local terms are held fixed [@berry1972semiclassical].
 
 The appendix is deliberately narrow. It is not a full Dirac scattering calculation in curved spacetime, not a quantum-field treatment of pair creation or horizon emission, and not a universal statement about every gravitational tunneling problem. It is the principal-symbol/WKB consequence of the operator bridge developed in Chapter 4.
 

@@ -37,7 +37,7 @@ $$
 j_i^\perp.
 $$
 
-Primitive `\mathcal{J}_k^\pm`, `\mathcal{M}_k`, and `\mathcal{P}_k` detail remains upstream in the source grammar.
+Primitive $\mathcal{J}_k^\pm$, $\mathcal{M}_k$, and $\mathcal{P}_k$ detail remains upstream in the source grammar.
 
 ## Exact linear field block
 
@@ -77,7 +77,7 @@ The shift retarded solution is
 $$
 A_i(x,t_*)
 =
-\frac{4G_N}{c^3}
+-\frac{4G_N}{c^3}
 \int \frac{j_i^\perp(x',t_*-|x-x'|/c)}{|x-x'|}\,d^3x'.
 $$
 
