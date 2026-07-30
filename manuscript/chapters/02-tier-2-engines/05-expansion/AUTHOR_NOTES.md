@@ -1,102 +1,111 @@
-# Author notes — Chapter 05 Space Expansion as Translation Yield
+# Author notes — Chapter 05 Space Expansion and Stage Dressing
 
-Status: adopted chapter under bounded second-pass refinement
-Updated: 2026-07-28
+Status: adopted working chapter; χ² package integrated for v0.3.7
+Updated: 2026-07-30
 Mode stack: roles/book-prose + topics/m1/cosmology + artifacts/manuscript + styles/book-mainline + audiences/broad-technical
 
 ## Chapter burden
 
-Build a reader-facing M1 account of space expansion as a translation-yield engine. Apparent expansion must remain legible in momentum language without placing the expansion factor inside the conserved momentum variables.
-
-The governing placement is
+Build a reader-facing Tier 2 expansion engine that keeps conserved spatial
+momentum content separate from the stage-conditioned generator value and
+translation rate. The governing bosic-slot construction is
 
 ```tex
-\chi(t)=\text{translation yield},
+\hat M_\chi
+=
+\beta p_f+\chi\,\boldsymbol{\alpha}\!\cdot\!\hat{\mathbf p},
 \qquad
-\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)}.
+M_\chi
+=
+\sqrt{p_f^2+\chi^2p^2},
 ```
 
-ADMC and the shell readings remain unscaled:
+with true-frame and clean bound-frame velocities
 
 ```tex
-p_k^\pm=M(p)\pm\frac12p_k.
+\dot x_T
+=
+\chi^2c\frac{p}{M_\chi},
+\qquad
+v_B
+=
+\frac{1}{\chi}\dot x_T
+=
+\chi c\frac{p}{M_\chi}.
 ```
 
-The conditional signal dictionary is
+The second power of `\chi` is supplied by differentiating the dressed
+eigenvalue; it is not an independently attached cosmological factor.
 
-```tex
-1+z=\frac{\chi_e}{\chi_o},
-```
+## Stable distinctions
 
-with `\chi_e=\chi(t_e)`, `\chi_o=\chi(t_o)`, and `\chi_o=1` by default normalization.
+- `p_f` and `\mathbf p` are conserved carrier labels in the homogeneous free
+  problem.
+- `\hat M_\chi` is the dressed generator; `M_\chi` is its positive
+  eigenvalue.
+- `\chi` is the stage factor; `X=\chi/\chi_o` is the
+  observation-normalized ratio, with `\chi_o=1` used only when stated.
+- `x_T` is the true-frame translation coordinate; `x_B=x_T/X` is the clean
+  bound-frame coordinate.
+- `\delta t` labels neighboring-feature intervals in the common history
+  parameter; `\Delta t` denotes locally reported durations.
+- `\mathcal D_\chi=c\int\chi(t)\,dt` is a propagation kernel, not by itself an
+  observational distance.
+- Bound-frame kinematics and gravitational source weight are separate
+  questions.
 
-## Bookkeeping distinction
+## Claim lock
 
-- `t` is the common homogeneous background-history parameter used in `\chi(t)` and the propagation integral.
-- `x_k` is the associated background translation coordinate.
-- `\delta t_e` and `\delta t_o` are neighboring-feature endpoint separations in that background parameter.
-- `\Delta t_e` and `\Delta t_o` are durations reported against emitter and observer clock standards.
-- The common-path derivation relates the background endpoint separations. The duration law additionally uses the matched endpoint-clock condition supported by the clean UYC branch.
-- `\mathcal D_\chi=c\int\chi(t)dt` is a propagation kernel, not by itself an observational distance.
+Established within the stated homogeneous two-slot architecture:
 
-## UYC status lock
+- bosic-slot dressing produces the `\chi^2` true-frame group velocity;
+- the lightlike limit remains `\dot x_T=\chi c`;
+- the clean bound-frame map reproduces the exact special-relativistic FLRW
+  free-carrier velocity and drag law when `p` is identified with comoving
+  momentum;
+- lightlike propagation maps to the usual conformal path and does not enlarge
+  causal reach;
+- matched endpoint standards give the scoped wavelength and duration ratios.
 
-Universal Yield Covariance is adopted at the covariance-principle level for the universal-yield construction. Its kinematic transform and sector targets are established in Derivations 5.6A and 5.6B. Electromagnetic, gravitational, strong, and weak realization, exact local residuals, and empirical closure remain pending.
+Conditional realizations:
 
-UYC should not be described as merely an optional stronger route. Preserve the three levels:
+- hydrogenic covariance under `e^2(X)=e_o^2X`;
+- Newtonian bound-orbit covariance and fixed-background linear growth under
+  `G_{\mathrm{eff}}(X)=G_NX`;
+- first-power coupling selection only within those proxy Hamiltonians and the
+  clean local-standard target.
 
-1. adopted covariance principle;
-2. established kinematic transform and covariance targets;
-3. pending sector realization and empirical closure.
+Keep open:
 
-## Boundary lock
-
-Keep central:
-
-- expansion/conservation pressure as the opening problem;
-- actor change versus stage change;
-- translation yield outside ADMC;
-- no photon momentum cooling or bosic-momentum decay;
-- fixed intrinsic `c`, with `\chi c` as the lightlike translation expression;
-- `\chi\propto1/a` as the broad formal correspondence;
-- `a_B=\chi_o/\chi` as the normalized clean UYC branch;
-- redshift as a conditional matched-standard endpoint dictionary;
-- duration stretching from the neighboring-feature path comparison plus the endpoint-clock condition;
-- UYC as the adopted covariance principle, with sector realization pending;
-- observational tests as discriminators among completed histories and realizations.
-
-Keep out of active claims:
-
-- `\chi` multiplying momentum inside ADMC;
-- photon momentum cooling or momentum decay;
-- variable intrinsic-`c` ontology;
-- exact local indistinguishability;
-- completed electromagnetic, gravitational, strong, or weak UYC realization;
-- solved distance, flux, Tolman, CMB, BBN, recombination, growth, lensing, horizon, dark-energy, Hubble-tension, or early-galaxy claims;
-- reuse of `\chi` as an unexplained matter-mobility factor.
+- the dynamical law for `\chi(t)` or `H(t)`;
+- a closed stage action or Friedmann/Λ sector;
+- dressed gravitational source weighting or any ADMC amendment;
+- strong, weak, radiation, nonlinear, horizon-scale, and lensing closure;
+- detailed torus, winding, radius, or modulus ontology;
+- observational anomaly explanations.
 
 ## Active section map
 
-1. `01-space-expansion-and-the-conservation-problem.qmd` — conservation pressure, actor and stage, and effective-pitch intuition.
-2. `02-core-terms-and-variables.qmd` — inherited momentum notation, translation yield, propagation coordinates, and signal labels.
-3. `03-translation-yield-and-directional-displacement.qmd` — downstream translation map and limiting checks.
-4. `04-redshift-as-comparison-between-yield-states.qmd` — lightlike propagation, history kernel, and neighboring-feature path comparison.
-5. `05-duration-dilation-and-signal-stretching.qmd` — conditional spectral dictionary and matched-clock duration relation.
-6. `06-bound-systems-and-local-screening.qmd` — adiabatic local equilibrium, SMC-to-UYC route, transform, and sector boundary.
-7. `07-yield-histories-and-distance-kernels.qmd` — endpoint ratio, history kernel, observable distance, and causal reach.
-8. `08-interfaces-to-observational-cosmology.qmd` — discriminating observational program.
-9. `09-what-the-expansion-chapter-establishes.qmd` — earned hierarchy and Tier 3 handoff.
+1. `01-space-expansion-and-the-conservation-problem.qmd` — conservation
+   pressure and the simplified physical preview.
+2. `02-core-terms-and-variables.qmd` — stable notation and frame dictionary.
+3. `03-stage-dressing-and-massive-motion.qmd` — bosic-slot construction,
+   `\chi^2` law, FLRW correspondence, and placement diagnostic.
+4. `04-light-propagation-and-endpoint-comparison.qmd` — lightlike kernel,
+   conformal reach, and endpoint relations.
+5. `05-bound-frames-and-local-standards.qmd` — clean transform, radar check,
+   and adiabatic scope.
+6. `06-scoped-realizations-and-correspondence-checks.qmd` — hydrogenic,
+   Newtonian, and fixed-history growth proxies.
+7. `07-what-the-expansion-engine-establishes.qmd` — maturity ladder and Tier 3
+   handoff.
 
-## Verification priorities
+## Appendix trust layer
 
-After adoption, check:
+- `05-02A` — bosic-slot placement and χ² group-velocity theorem.
+- `05-03A` — free-carrier FLRW correspondence and drag.
+- `05-04A` — lightlike propagation and matched endpoint standards.
+- `05-06A` — local covariance and scoped sector realizations.
 
-- every display-math delimiter is paired;
-- the index includes all nine files in order;
-- no superseded shell-reading notation has returned;
-- `\chi` never appears inside ADMC or intrinsic `p_f=m_0c`;
-- UYC is not described as optional;
-- the redshift dictionary remains conditional;
-- the duration relation retains both its path and endpoint-clock assumptions;
-- `\mathcal D_\chi` is not called a luminosity or angular-diameter distance;
-- terminology uses **translation yield** as the chapter's governing term.
+These appendices remain working-draft trust material. Their qualified AI review
+is recorded separately; no new human-verification claim is implied by v0.3.7.

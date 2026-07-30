@@ -1,0 +1,39 @@
+## What the Expansion Engine Establishes
+
+The expansion problem began with a conservation seam. Distant signals arrive stretched, yet directed momentum cannot simply vanish into an unnamed reservoir. Bosic-slot stage dressing resolves the homogeneous free-carrier kinematic seam by separating conserved spatial content from the generator that turns that content into phase evolution and motion. It does not yet close the full conservation ledger of stage and carrier together.
+
+### The established engine
+
+In a homogeneous background, spatial translation symmetry preserves the carrier label $\mathbf p$. Expansion leaves the intrinsic fermic scale $p_f=m_0c$ fixed and dresses the directed bosic slot of the core-momentum generator. For the resulting magnitude $M_\chi=\sqrt{p_f^2+\chi^2p^2}$, group velocity gives the chapter's anchor law:
+
+$$
+\boxed{
+\dot x_k
+=
+\chi^2c\frac{p_k}{M_\chi}
+}.
+$$
+
+Given the bosic-slot ansatz, no second multiplier is attached downstream: the second power follows when the dressed generator is differentiated with respect to conserved momentum. The law recovers inertial motion at $\chi=1$, respects directional reversal and zero projected momentum, and reduces to true-frame lightlike motion at speed $\chi c$.
+
+On the clean bound-frame branch, the same law reproduces the exact special-relativistic FLRW velocity and drag relations when M1's conserved spatial content is identified with comoving momentum. Massive motion also distinguishes the placement: whole-generator dressing would leave peculiar velocity constant, while bosic-slot dressing produces the required drag.
+
+Light follows the same engine. Its external wavevector remains fixed while its generator frequency changes with $\chi$. The signal accumulates the standard conformal propagation interval, and neighboring features inherit the corresponding endpoint timing ratio. The causal reach is unchanged for a supplied history.
+
+### Conditional local realization
+
+Turning propagation into measurements requires a local-standard dictionary. On the clean branch, true-frame rods co-scale with $X=\chi/\chi_o$, bound-frame lengths are reported through $x_B=x_T/X$, and matched clocks retain a fixed rate against the common history parameter. These premises give the endpoint relations $1+z=\chi_e/\chi_o$ and $\Delta t_o=(1+z)\Delta t_e$.
+
+The same local target selects the interaction powers in two controlled bound-system checks. The hydrogenic proxy requires $e^2(X)=e_o^2X$ to produce co-scaling atomic lengths and fixed electronic transition frequencies. The Newtonian orbit independently requires $G_{\mathrm{eff}}(X)=G_NX$ to produce co-scaling orbital radii and fixed local timing. With that Newtonian power, the $X^2$ kinetic response and the $X$ coupling combine into the $X^3$ density conversion that yields standard linear pressureless growth.
+
+These are coherent realizations in their stated regimes. Full electromagnetic, material, relativistic-gravity, strong, and weak closure remains to be built.
+
+### Open dynamics and handoff
+
+Once $H(t)$ is supplied, the homogeneous scale history $a_B(t)$, free-carrier motion, light paths, endpoint ratios, and—under the scoped Newtonian realization—linear matter growth are fixed. The load-bearing cosmological problem is therefore the law that determines $H(t)$ itself.
+
+This chapter derives no stage action or evolution equation for $\chi(t)$, and it does not settle the gravitational source weight of the dressed generator. Conserved spatial content, instantaneous generator value, gravitational source weight, and any future stage-plus-carrier constraint remain distinct ledger questions; ADMC is unchanged here.
+
+Radiation-era perturbations, nonlinear growth, lensing, complete signal transport, thermal history, and observational fits belong to the later cosmological layer. The deeper theory must first produce a stage history; Tier 3 can then turn that history and completed sector laws into distances, brightness, growth, lensing, degeneracy tests, and falsifiers.
+
+The Tier 2 gain is concrete: one generator now governs massive and lightlike motion while preserving homogeneous spatial momentum content, its placement passes the massive-motion diagnostic, and its clean local branch selects a common first-power scaling in two distinct bound-system proxies. The remaining center of gravity has moved from kinematics to dynamics—from how a given history is expressed to why that history occurs.

@@ -1,0 +1,159 @@
+## Stage Dressing and Massive Motion
+
+Expansion acts on the part of the core-momentum generator that carries translation. The fermic scale $p_f=m_0c$ continues to sustain the carrier's intrinsic cycle, while the directed bosic term is expressed through the changing stage:
+
+$$
+\hat M_\chi
+=
+\beta p_f+
+\chi(t)\,\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}.
+$$
+
+Because $\chi(t)$ is homogeneous, it changes no spatial direction and introduces no spatial gradient. The carrier therefore keeps its momentum label $\mathbf p$. What changes is the magnitude generated from that content. Squaring the operator gives
+
+$$
+M_\chi
+=
+\sqrt{p_f^2+\chi^2p^2}.
+$$
+
+The bosic contribution now enters through $\chi p$. As the internal bosic cycle elongates, the same directed content turns through that cycle at a different rate, and the generator magnitude changes with it.
+
+### From the dressed generator to motion
+
+For a narrow positive-branch packet, motion along the selected direction $k$ is determined by how the energy-unit generator $cM_\chi$ changes with the signed momentum component $p_k$:
+
+$$
+\begin{aligned}
+\dot x_k
+&=
+\frac{\partial(cM_\chi)}{\partial p_k}
+\\
+&=
+c\frac{\partial}{\partial p_k}
+\sqrt{p_f^2+\chi^2p^2}
+\\
+&=
+\chi^2c\,\frac{p_k}{M_\chi}.
+\end{aligned}
+$$
+
+Thus
+
+$$
+\boxed{
+\dot x_k
+=
+\chi^2c\,\frac{p_k}{M_\chi}
+}.
+$$
+
+The two powers of $\chi$ belong to one operation. Stage dressing places $\chi$ on the bosic term, so that term contributes $\chi^2p^2$ to the core-momentum magnitude. Differentiating that magnitude with respect to directed momentum brings the full factor into translation. The dressed generator itself therefore yields the $\chi^2$ law.
+
+The law immediately retains the expected directional behavior. At $\chi=1$, it returns to inertial motion, $\dot x_k=cp_k/M$. If $p_k=0$, the carrier has no motion along $\hat{k}$. Reversing the chosen orientation reverses both $p_k$ and $\dot x_k$, while $M_\chi$ remains unchanged.
+
+For light, $p_f=0$ and $M_\chi=\chi|p|$. One power then cancels from the ratio, leaving forward propagation at
+
+$$
+\dot x_T=\chi c.
+$$
+
+Massive and lightlike motion are therefore two limits of the same stage-dressed generator.
+
+### Why the bosic slot carries the dressing
+
+The two operator slots have different physical jobs. The fermic term carries the intrinsic scale tied to the carrier's identity. The bosic term carries the directional asymmetry through which that carrier translates. Expansion changes the resonating length through which the bosic cycle is expressed, so its factor belongs on the bosic term.
+
+This placement also joins the chapter's two kinematic requirements. Keeping $p_f$ fixed preserves the intrinsic fermic scale. Dressing the bosic term by one power of $\chi$ gives the lightlike true-frame speed $\chi c$. The first-order two-slot construction is therefore
+
+$$
+\hat M_\chi
+=
+\beta p_f+
+\chi\,\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}.
+$$
+
+The massive law then follows from the same operator rather than from a separate rule for material particles.
+
+### Free massive motion in bound-frame units
+
+The observation epoch now sets the normalization $\chi_o=1$, so $X=\chi$ and
+
+$$
+a_B=\frac1\chi.
+$$
+
+A local observer uses rods that co-scale with $X$. After the common recession of the bound-frame coordinate grid is removed, the carrier's peculiar velocity is the local-motion term
+
+$$
+v_B=a_B\dot x_T.
+$$
+
+Substituting the stage-dressed translation law gives
+
+$$
+\begin{aligned}
+v_B
+&=
+a_B\chi^2c\,
+\frac{p}{\sqrt{p_f^2+\chi^2p^2}}
+\\
+&=
+c\frac{p/a_B}
+{\sqrt{p_f^2+(p/a_B)^2}}.
+\end{aligned}
+$$
+
+Hence
+
+$$
+\boxed{
+v_B
+=
+c\frac{p/a_B}
+{\sqrt{p_f^2+(p/a_B)^2}}
+}.
+$$
+
+The conserved content $p$ has not decayed. Local rods express it through the epoch-dependent quantity $p/a_B$, so the measured velocity changes while the underlying spatial momentum label remains fixed.
+
+This is exactly the special-relativistic free-particle velocity in a spatially flat FLRW description when
+
+$$
+\boxed{p\equiv q},
+$$
+
+where $q$ is conserved comoving momentum. The correspondence identifies two descriptions of the same homogeneous free-carrier history: M1 keeps the spatial momentum content $p$, while the bound frame reports its changing expression $p/a_B$.
+
+Differentiating the velocity gives
+
+$$
+\boxed{
+\dot v_B
+=
+-Hv_B
+\left(1-\frac{v_B^2}{c^2}\right)
+}.
+$$
+
+Slow massive motion therefore falls as $a_B^{-1}$, while light remains at the local speed $c$.
+
+### A massive-motion placement diagnostic
+
+Massive motion also tests where the stage factor belongs. If one factor of $\chi$ dresses the complete inertial magnitude instead of the bosic slot, the true-frame law is $\dot x_T=\chi cp/M$. Bound-frame conversion then cancels the stage dependence:
+
+$$
+\boxed{
+v_B^{\mathrm{whole}}
+=
+a_B\chi c\frac{p}{M}
+=
+c\frac{p}{M},
+\qquad
+\dot v_B^{\mathrm{whole}}=0
+}.
+$$
+
+Both placements retain the lightlike speed, but only bosic-slot dressing produces the massive FLRW drag law. Together with the fixed fermic scale, this selects the bosic-slot form within the first-order two-slot multiplicative architecture.
+
+The expansion engine therefore reaches the exact free-carrier history for every speed once the stage history is supplied. [Derivation 5.2A](../../../appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd) carries the operator algebra and scoped placement result, and [Derivation 5.3A](../../../appendices/derivations/05-03A-free-carrier-correspondence-under-yield-history.qmd) gives the full bound-frame conversion and drag relation.

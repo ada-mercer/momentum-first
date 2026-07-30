@@ -6,22 +6,20 @@ The question becomes especially sharp across cosmological distances. A photon ma
 
 M1 separates two physical roles. Momentum is the actor of change; space is the stage on which that change becomes motion and distance. If a distant photon arrives stretched, there are therefore two places to look. The actor may have changed, or the stage may have changed how the actor's momentum is expressed.
 
-Suppose first that the actor changes. The photon might gradually give up momentum to space itself. Nothing in logic rules out such an exchange, but the word *loss* conceals a difficult problem. Momentum is directed. It cannot simply fade away: its direction must be absorbed by something, transmitted onward, or cancelled by an equal and opposite change. A momentum drain into space would therefore need a physical account of what receives that momentum, what becomes of its directedness, and how the full conservation ledger closes. Without such an account, the proposed loss only moves the problem elsewhere. The expansion engine developed here does not require it.
+Suppose first that the actor changes. A photon might gradually surrender momentum to space itself. Nothing in logic forbids an exchange, but the word *loss* hides the hard part. Momentum is directed. It cannot simply fade away: something must receive its direction, transmit it onward, or balance it with an equal and opposite change. A drain into space would therefore require a physical receiver and a closed conservation ledger. Without them, the proposed loss only moves the problem elsewhere.
 
-There is a simpler possibility: the actor remains intact while the structure of the stage changes. As Foundations showed, a moving particle carries directional momentum as an asymmetry in its bosonic structure,
+The expansion engine developed here takes the other route. In a homogeneous stage, spatial translation symmetry protects the carrier's spatial momentum content. The directed momentum does not disappear, and the intrinsic scale $p_f=m_0c$ remains fixed. What changes is how the stage turns those quantities into translation.
 
-$$
-p^\pm=M\pm\tfrac12p.
-$$
+A simplified physical picture begins with an elongation of the particle's internal bosic cycle. The carrier retains the same bosic momentum content, but that momentum is expressed through a longer cycle, shifting its frequency.
 
-The difference between the opposed readings is the directional momentum $p$. The expansion picture keeps that difference intact. Nothing drains momentum from the particle or reduces its directional asymmetry. What weakens is the amount of displacement space yields from it. The same actor remains, but its momentum produces less translation as the stage changes.
+Picture a violin string resonating with a note. Now imagine the violinist slowly sliding her finger toward the scroll, lengthening the part of the string that is free to resonate. The pitch falls. In the same way, elongating the internal bosic cycle shifts its frequency without taking momentum from the carrier.
 
-Picture a bolt turning through a rigid surrounding medium. Its angular speed tells us how quickly it turns. How far it advances, however, depends on the effective pitch with which its threads engage the medium. If the angular speed represents bosic momentum,
+The directional asymmetry still belongs to the cycle as a whole. But as the internal cycle elongates, the same asymmetry completes fewer cycles in a given interval. Its *translation yield* in real space is therefore reduced: the carrier has not lost directed momentum, but the altered cycle produces less translation from it.
 
-$$
-\omega\propto p,
-$$
+The quantum chapter prepared the mathematical form of this distinction. Its first-order core-momentum operator contains a fermic slot and a directed bosic slot. Expansion leaves the fermic slot fixed while dressing the bosic one. The carrier can therefore retain the same spatial momentum label even as the generator frequency and the motion produced from that label change with cosmic epoch.
 
-then changing the effective pitch changes the bolt's forward travel without changing its rotation. Translation yield plays this role in M1: it determines how much displacement follows from the same directed momentum at a given epoch.
+The analogy gives the physical picture; the operator supplies the law. The second power of the stage factor in the massive translation equation is neither inferred from the string nor added by hand. It follows when the stage-dressed generator is differentiated with respect to directed momentum.
 
-The idea is simple, but it has work to do. One translation rule must connect redshift with duration stretching, remain compatible with local clocks and bound systems, and lead to distance relations that can be tested against observation. This chapter develops that rule while keeping the boundary clear: translation yield is a kinematic expansion engine, not yet a complete cosmological model.
+Light provides the cleanest first signal of the construction, but not its only test. One engine must preserve the lightlike propagation law, recover the correct history of freely moving massive bodies, connect wavelength redshift with duration stretching, and remain compatible with stable local rods, clocks, atoms, and bound orbits. It must also say clearly what it has not yet supplied.
+
+This chapter builds that engine. It establishes homogeneous stage-dressed kinematics and several scoped local realizations. It does not derive the history of the stage, a cosmological field equation, or a complete observational model. Those are later burdens. The task here is narrower: to show how a changing stage can alter the expression of conserved momentum across epochs without turning momentum conservation into a metaphor.

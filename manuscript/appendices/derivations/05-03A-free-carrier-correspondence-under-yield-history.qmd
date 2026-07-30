@@ -1,0 +1,318 @@
+# Derivation 5.3A — Free-carrier correspondence under a yield history {#sec-derivation-05-03a-free-carrier-correspondence .unnumbered}
+
+## Purpose
+
+This appendix supports Chapter 5.3. It converts the bosic-slot group velocity into the clean bound frame and proves that a free massive M1 carrier follows the exact special-relativistic FLRW peculiar-velocity law when its conserved spatial content is identified with comoving momentum.
+
+The theorem is conditional on a prescribed homogeneous yield history. It checks the kinematics produced by that history; it does not derive $H(t)$ or a Friedmann equation.
+
+## Role, regime, premises, and status
+
+- **Role:** exact kinematic correspondence theorem and placement diagnostic.
+- **Regime:** free carrier, homogeneous yield history, no local gravitational field, clean bound-frame branch.
+- **Premises:** Derivation 5.2A, normalized yield, co-scaling rods, matched clocks, and subtraction of the common background recession term when peculiar velocity is defined.
+- **Status:** candidate derivation for independent V3 review.
+
+## Notation ledger
+
+- $\chi(t)>0$ — normalized yield entering the dressed generator.
+- $\chi_e,\chi_o$ — unnormalized endpoint values when a ratio must be displayed.
+- $X\equiv\chi/\chi_o$ — normalized yield ratio if $\chi_o\ne1$.
+- $a_B\equiv\chi_o/\chi=1/X$ — clean-branch bound-frame scale factor.
+- $H\equiv\dot a_B/a_B=-\dot X/X$ — prescribed fractional history rate.
+- $p_f=m_0c$ — fixed fermic momentum scale.
+- $\mathbf p$ — conserved M1 spatial momentum content; $p=|\mathbf p|$.
+- $M_X\equiv\sqrt{p_f^2+X^2p^2}$ — normalized dressed generator magnitude.
+- $v_B$ — peculiar velocity measured in the bound frame.
+- $q$ — standard FLRW comoving momentum used only in the correspondence comparison.
+
+For compactness, the derivation first keeps $X=\chi/\chi_o$ explicit. Setting $\chi_o=1$ gives $X=\chi$ and recovers the notation of Derivation 5.2A.
+
+## Clean bound-frame conversion
+
+On the clean branch, local true-frame rods scale with the normalized yield:
+
+$$
+\ell_T=\ell_oX.
+$$
+
+A true-frame coordinate interval is therefore reported in bound-frame length units as
+
+$$
+x_B=\frac{x_T}{X}=a_Bx_T,
+\qquad
+a_B=\frac{1}{X}=\frac{\chi_o}{\chi}.
+$$
+
+Differentiating $x_B=a_Bx_T$ gives a background term $\dot a_Bx_T$ and a local-motion term $a_B\dot x_T$. Peculiar velocity is the local-motion term after the common recession of the bound-frame coordinate grid is subtracted:
+
+$$
+\boxed{
+v_B=a_B\dot x_T
+}.
+$$
+
+The clean branch uses matched clocks, so no additional time conversion appears.
+
+## Bosic-slot free-carrier velocity
+
+With the normalized yield $X$, Derivation 5.2A gives
+
+$$
+M_X=\sqrt{p_f^2+X^2p^2},
+$$
+
+and, along the direction of motion,
+
+$$
+\dot x_T
+=
+X^2c\,\frac{p}{M_X}.
+$$
+
+The bound-frame peculiar velocity is therefore
+
+$$
+\begin{aligned}
+v_B
+&=
+a_BX^2c\,\frac{p}{M_X}
+\\
+&=
+Xc\,\frac{p}{\sqrt{p_f^2+X^2p^2}}
+\\
+&=
+c\,\frac{p/a_B}
+{\sqrt{p_f^2+(p/a_B)^2}}.
+\end{aligned}
+$$
+
+Thus
+
+$$
+\boxed{
+v_B
+=
+c\,\frac{p/a_B}
+{\sqrt{p_f^2+(p/a_B)^2}}
+}.
+$$
+
+The numerator contains the bound-frame momentum expression $p/a_B$, while the M1 content label $p$ itself remains conserved.
+
+## Exact FLRW correspondence
+
+For a freely moving particle in a spatially flat FLRW description, spatial homogeneity conserves comoving momentum $q$. The physical momentum measured by a comoving observer is $q/a$, and special-relativistic velocity is
+
+$$
+v_{\mathrm{FLRW}}
+=
+c\,\frac{q/a}
+{\sqrt{m_0^2c^2+(q/a)^2}}.
+$$
+
+Using
+
+$$
+p_f=m_0c,
+\qquad
+a=a_B,
+\qquad
+\boxed{q\equiv p},
+$$
+
+gives
+
+$$
+v_{\mathrm{FLRW}}=v_B
+$$
+
+at every speed. M1's conserved spatial content is therefore the variable that standard FLRW kinematics calls comoving momentum in this homogeneous correspondence regime.
+
+This equality is an overlap theorem. It demonstrates that the M1 stage-dressing variables reproduce known free-particle kinematics under a prescribed history. It is not an independent observational prediction and does not explain why the history has any particular form.
+
+## Exact drag law
+
+Define the bound-frame expressed momentum
+
+$$
+y\equiv\frac{p}{a_B}=Xp.
+$$
+
+Since $p$ is conserved,
+
+$$
+\dot y
+=
+-\frac{\dot a_B}{a_B}y
+=
+-Hy.
+$$
+
+Write the velocity as
+
+$$
+v_B(y)
+=
+c\,\frac{y}{\sqrt{p_f^2+y^2}}.
+$$
+
+Its derivative is
+
+$$
+\frac{dv_B}{dy}
+=
+c\,\frac{p_f^2}{(p_f^2+y^2)^{3/2}}.
+$$
+
+Therefore
+
+$$
+\dot v_B
+=
+-Hc\,\frac{yp_f^2}{(p_f^2+y^2)^{3/2}}.
+$$
+
+The velocity itself satisfies
+
+$$
+1-\frac{v_B^2}{c^2}
+=
+\frac{p_f^2}{p_f^2+y^2},
+$$
+
+so the previous expression becomes
+
+$$
+\boxed{
+\dot v_B
+=
+-Hv_B
+\left(
+1-\frac{v_B^2}{c^2}
+\right)
+}.
+$$
+
+This is the exact relativistic FLRW geodesic drag law in velocity form. The history enters only through the supplied function $H(t)=-\dot X/X$.
+
+## Limiting checks
+
+### Inertial history
+
+If $X=1$ is constant, then $a_B=1$, $H=0$, and
+
+$$
+v_B=c\,\frac{p}{\sqrt{p_f^2+p^2}},
+\qquad
+\dot v_B=0.
+$$
+
+The inertial free-particle result is recovered.
+
+### Nonrelativistic massive carrier
+
+For $p/a_B\ll p_f$,
+
+$$
+v_B
+\simeq
+c\,\frac{p}{a_Bp_f}
+=
+\frac{p}{m_0a_B}.
+$$
+
+Hence
+
+$$
+v_B\propto a_B^{-1},
+\qquad
+\dot v_B\simeq-Hv_B.
+$$
+
+The standard nonrelativistic peculiar-momentum decay is recovered.
+
+### Lightlike carrier
+
+For $p_f=0$,
+
+$$
+v_B=c
+$$
+
+for forward propagation, independent of $a_B$. The true-frame speed is still $\dot x_T=Xc$, while the bound-frame rod conversion supplies the compensating factor $a_B=1/X$.
+
+## Diagnostic for the old placement
+
+The old Chapter 5 map used
+
+$$
+\dot x_T^{(A)}
+=
+Xc\,\frac{p}{M},
+\qquad
+M=\sqrt{p_f^2+p^2}.
+$$
+
+Its bound-frame peculiar velocity is
+
+$$
+\begin{aligned}
+v_B^{(A)}
+&=
+a_B\dot x_T^{(A)}
+\\
+&=
+\frac{1}{X}
+Xc\,\frac{p}{M}
+\\
+&=
+c\,\frac{p}{\sqrt{p_f^2+p^2}}.
+\end{aligned}
+$$
+
+Therefore
+
+$$
+\boxed{
+\dot v_B^{(A)}=0
+}
+$$
+
+for every freely moving massive carrier, regardless of $H(t)$. Placement A agrees with the photon limit because $v_B=c$ there, but it fails the massive FLRW overlap already in the nonrelativistic limit.
+
+As shown in Derivation 5.2A, this old velocity can be generated by the whole-generator Hamiltonian $H_A=cXM$. Its failure here is empirical and structural: whole-generator dressing plus the clean bound-frame conversion gives constant massive peculiar velocity.
+
+## Result and boundaries
+
+Given
+
+$$
+a_B=\frac{\chi_o}{\chi},
+\qquad
+\hat M_X
+=
+\beta p_f+X\boldsymbol\alpha\!\cdot\!\hat{\mathbf p},
+$$
+
+the bosic-slot group velocity yields
+
+$$
+v_B
+=
+c\,\frac{p/a_B}
+{\sqrt{p_f^2+(p/a_B)^2}}
+$$
+
+and
+
+$$
+\dot v_B
+=
+-Hv_B
+\left(1-\frac{v_B^2}{c^2}\right).
+$$
+
+These are exactly the relativistic FLRW free-carrier relations under $p\equiv q$. The result establishes the homogeneous kinematic overlap and excludes the old placement on the same clean branch.
+
+It does not derive $a_B(t)$, $H(t)$, a Friedmann constraint, a gravitational source law, structure growth, or any observational fit. Chapter 5.3 may cite it only as a free-carrier correspondence under a prescribed yield history.

@@ -1,19 +1,15 @@
-# Space Expansion
+# Space Expansion and Stage Dressing
 
 {{< include 01-space-expansion-and-the-conservation-problem.qmd >}}
 
 {{< include 02-core-terms-and-variables.qmd >}}
 
-{{< include 03-translation-yield-and-directional-displacement.qmd >}}
+{{< include 03-stage-dressing-and-massive-motion.qmd >}}
 
-{{< include 04-redshift-as-comparison-between-yield-states.qmd >}}
+{{< include 04-light-propagation-and-endpoint-comparison.qmd >}}
 
-{{< include 05-duration-dilation-and-signal-stretching.qmd >}}
+{{< include 05-bound-frames-and-local-standards.qmd >}}
 
-{{< include 06-bound-systems-and-local-screening.qmd >}}
+{{< include 06-scoped-realizations-and-correspondence-checks.qmd >}}
 
-{{< include 07-yield-histories-and-distance-kernels.qmd >}}
-
-{{< include 08-interfaces-to-observational-cosmology.qmd >}}
-
-{{< include 09-what-the-expansion-chapter-establishes.qmd >}}
+{{< include 07-what-the-expansion-engine-establishes.qmd >}}

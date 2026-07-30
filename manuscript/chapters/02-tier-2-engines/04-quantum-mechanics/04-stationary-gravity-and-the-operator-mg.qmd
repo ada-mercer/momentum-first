@@ -87,3 +87,24 @@ The bridge is summarized in @fig-qm-operator-bridge. The flat operator packages 
 The omitted terms are also meaningful. When $p_{f,c}(\mathbf x)$ or $\mathbf A_g(\mathbf x)$ varies across the wavefunction, the operator pieces no longer commute. Squaring $\hat M_g$ then produces gradient, circulation, and spin-coupled terms. Those terms are not a sign that the operator is incompatible with gravity. They are the quantum corrections one should expect when a phase-bearing state samples a structured stationary background.
 
 Before those corrections are used as novelty claims, the correspondence limits must be fixed. In the slow-motion and slowly varying limit, the extra terms reduce to the ordinary local readout. In more sensitive quantum regimes, the same structure becomes the channel through which gravity can affect phase evolution, local envelope dynamics, spin transport, interference, and tunneling exponents. The strong-gravity consequence is sharper once the standard limits are in place.
+
+### From gravity dressing to stage dressing
+
+The flat and stationary operators expose a reusable grammar. The first-order generator has a fermic slot, carried by the $\beta$ term, and a bosic slot, carried by the $\boldsymbol\alpha$ term. A physical stage need not act on those slots in the same way. Stationary gravity uses the contextual scale $p_{f,c}$ together with the mechanical momentum $\hat{\boldsymbol\Pi}$ and the local spatial frame. A homogeneous expanding stage supplies a different, slot-asymmetric case: it leaves the fermic scale fixed while dressing the directed bosic operator by a dimensionless state $\chi(t)$.
+
+The corresponding expansion-dressed operator is
+
+$$
+\boxed{
+\hat M_\chi
+=\beta p_f+\chi(t)\,\boldsymbol\alpha\cdot\hat{\mathbf p}
+}.
+$$
+
+On the positive branch, its instantaneous scalar eigenvalue—or, for a local wave packet, its principal-symbol reading—is
+
+$$
+M_\chi=\sqrt{p_f^2+\chi^2p^2}.
+$$
+
+At $\chi=1$, both expressions return to the flat operator and flat scalar magnitude. The new factor belongs to the dynamical generator: spatial homogeneity can preserve the momentum label $\mathbf p$ while the generator value $M_\chi$ changes with the stage. This distinction does not redefine the conserved-content ledger or settle which dressed quantities enter a complete cosmological source law. It gives the expansion chapter the operator it needs without importing cosmological dynamics into the quantum construction.

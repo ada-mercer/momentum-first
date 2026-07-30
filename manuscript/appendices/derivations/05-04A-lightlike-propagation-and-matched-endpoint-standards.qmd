@@ -1,0 +1,381 @@
+# Derivation 5.4A — Lightlike propagation and matched endpoint standards {#sec-derivation-05-04a-lightlike-endpoint-standards .unnumbered}
+
+## Purpose
+
+This appendix supports Chapter 5.4. It derives the lightlike propagation kernel, proves the neighboring-feature endpoint relation, and states the rod and clock assumptions needed to read that relation as wavelength redshift and duration stretching.
+
+The derivation keeps three objects distinct: the conserved external spatial wavenumber, the drifting generator frequency, and the wavelength reported relative to local rods.
+
+## Role, regime, premises, and status
+
+- **Role:** lightlike kinematics plus a conditional matched-endpoint measurement dictionary.
+- **Regime:** homogeneous yield history, geometric propagation, neighboring signal features, negligible peculiar motion and endpoint evolution during one feature separation.
+- **Premises:** bosic-slot dressing, spatial homogeneity, the clean bound-frame branch, co-scaling rods, and matched endpoint clocks.
+- **Status:** candidate derivation for independent V3 review. Propagation is derived; the measurement dictionary is conditional on the stated local standards.
+
+## Notation ledger
+
+- $\chi(t)>0$ — normalized yield entering the generator; $\chi_o=1$ in the compact formulas.
+- $\chi_e,\chi_o$ — endpoint yield values when normalization is restored.
+- $p_f$ — fermic momentum scale; $p_f=0$ for a lightlike carrier.
+- $\mathbf k$ — external spatial wavevector on the homogeneous true-frame chart.
+- $\mathbf p=\hbar\mathbf k$ — conserved spatial momentum content.
+- $\omega_\chi$ — instantaneous generator angular frequency.
+- $x_T,t$ — true-frame propagation coordinate and common history parameter.
+- $\delta t_e,\delta t_o$ — neighboring-feature endpoint separations in $t$.
+- $\Delta t_e,\Delta t_o$ — durations reported by local endpoint clocks.
+- $\ell_T$ — local true-frame rod standard.
+- $a_B=\chi_o/\chi$ — clean-branch bound-frame scale factor.
+- $\eta$ — conformal propagation time.
+
+Whenever the absolute normalization is not $\chi_o=1$, replace the generator's $\chi$ by $X=\chi/\chi_o$. Endpoint observables depend only on $\chi_e/\chi_o$.
+
+## Lightlike dispersion and group velocity
+
+The bosic-slot generator magnitude is
+
+$$
+M_\chi
+=
+\sqrt{p_f^2+\chi^2p^2}.
+$$
+
+For a lightlike carrier, $p_f=0$, so
+
+$$
+\boxed{
+M_\chi=\chi|p|
+}.
+$$
+
+The energy-unit generator and angular frequency are
+
+$$
+H_\chi=cM_\chi=c\chi|p|,
+\qquad
+\omega_\chi=\frac{H_\chi}{\hbar}
+=
+\chi c|\mathbf k|.
+$$
+
+The group velocity is
+
+$$
+\dot x_k
+=
+\frac{\partial H_\chi}{\partial p_k}
+=
+\chi c\,\frac{p_k}{|p|}.
+$$
+
+For forward propagation,
+
+$$
+\boxed{
+\dot x_T=\chi c
+}.
+$$
+
+Thus the $\chi^2$ massive theorem reduces to the original $\chi$ lightlike law because the dressed magnitude itself contributes one factor of $\chi$ in the denominator.
+
+## Conserved external wavenumber and drifting frequency
+
+The generator is homogeneous in space:
+
+$$
+\frac{\partial H_\chi}{\partial x_k}=0.
+$$
+
+Hamilton's equation therefore gives
+
+$$
+\dot p_k=0,
+$$
+
+and, with fixed $\hbar$,
+
+$$
+\boxed{
+\dot k_k=0
+}.
+$$
+
+The external spatial phase gradient and true-frame coordinate wavelength
+
+$$
+\lambda_T=\frac{2\pi}{|\mathbf k|}
+$$
+
+remain fixed in flight. The generator frequency does not:
+
+$$
+\omega_\chi(t)=\chi(t)c|\mathbf k|,
+\qquad
+\frac{\dot\omega_\chi}{\omega_\chi}
+=
+\frac{\dot\chi}{\chi}.
+$$
+
+The signal therefore undergoes generator drift at fixed external spatial content. This is not an in-flight stretching of the external wavelength. A changing wavelength is reported only after the fixed coordinate pattern is compared with endpoint rods whose true-frame size depends on $\chi$.
+
+## Propagation kernel
+
+Integrating the forward lightlike velocity from emission to observation gives the true-frame path interval
+
+$$
+\boxed{
+\mathcal D_\chi(t_e,t_o)
+=
+c\int_{t_e}^{t_o}\chi(t)\,dt
+}.
+$$
+
+The integral is a propagation kernel. It is not by itself a luminosity distance, angular-diameter distance, ruler distance, or flux law.
+
+On the clean branch,
+
+$$
+a_B=\frac{1}{\chi}
+$$
+
+in the normalized convention. Define conformal time by
+
+$$
+d\eta\equiv\frac{dt}{a_B}.
+$$
+
+Then
+
+$$
+\boxed{
+d\eta=\chi\,dt
+}
+$$
+
+and
+
+$$
+\mathcal D_\chi=c\int_{\eta_e}^{\eta_o}d\eta.
+$$
+
+With an unnormalized yield, the exact identity is
+
+$$
+d\eta=\frac{\chi}{\chi_o}\,dt;
+$$
+
+the conventional $\chi_o=1$ choice gives the boxed form. The lightlike kernel is therefore the standard conformal propagation kernel under the clean correspondence. It does not by itself change the usual horizon accounting.
+
+## Neighboring-feature equal-path derivation
+
+Consider two neighboring signal features emitted by the same source and received by the same observer. Assume that, over the small endpoint separations, source and observer keep the same true-frame coordinate separation and that changes in peculiar motion, lensing, and inhomogeneity are negligible.
+
+The first feature obeys
+
+$$
+D_T
+=
+c\int_{t_e}^{t_o}\chi(t)\,dt.
+$$
+
+The second feature follows the same path:
+
+$$
+D_T
+=
+c\int_{t_e+\delta t_e}^{t_o+\delta t_o}\chi(t)\,dt.
+$$
+
+Subtracting gives
+
+$$
+0
+=
+c\int_{t_o}^{t_o+\delta t_o}\chi(t)\,dt
+-
+c\int_{t_e}^{t_e+\delta t_e}\chi(t)\,dt.
+$$
+
+For neighboring features, $\chi$ varies negligibly across each endpoint interval. To first order,
+
+$$
+0
+=
+c\chi_o\delta t_o
+-
+c\chi_e\delta t_e.
+$$
+
+Hence
+
+$$
+\boxed{
+\chi_o\delta t_o
+=
+\chi_e\delta t_e
+}
+$$
+
+and
+
+$$
+\boxed{
+\frac{\delta t_o}{\delta t_e}
+=
+\frac{\chi_e}{\chi_o}
+}.
+$$
+
+This equation follows from the common path and the lightlike propagation law. Turning it into an observed duration relation requires the clock assumption below.
+
+## Matched endpoint rods
+
+On the clean branch, local true-frame rods scale as
+
+$$
+\ell_T(t)=\ell_o\frac{\chi(t)}{\chi_o}.
+$$
+
+The conserved external wavelength $\lambda_T=2\pi/|\mathbf k|$ is therefore reported in local rod units as
+
+$$
+\lambda_B(t)
+\propto
+\frac{\lambda_T}{\ell_T(t)}
+\propto
+\frac{\chi_o}{\chi(t)}.
+$$
+
+For the same transported phase pattern compared at emission and observation,
+
+$$
+\frac{\lambda_{B,o}}{\lambda_{B,e}}
+=
+\frac{\chi_e}{\chi_o}.
+$$
+
+Thus the measured wavelength relation is
+
+$$
+\boxed{
+1+z
+\equiv
+\frac{\lambda_o}{\lambda_e}
+=
+\frac{\chi_e}{\chi_o}
+}.
+$$
+
+The same ratio appears in frequency language. An emitted feature with local angular frequency $\omega_e$ fixes an external wavevector through
+
+$$
+\omega_e
+=
+\frac{\chi_e}{\chi_o}c|\mathbf k|.
+$$
+
+Spatial homogeneity preserves $\mathbf k$ in flight, so the observation-epoch generator frequency is
+
+$$
+\omega_o
+=
+c|\mathbf k|
+=
+\frac{\chi_o}{\chi_e}\omega_e.
+$$
+
+Therefore
+
+$$
+\frac{\omega_e}{\omega_o}
+=
+\frac{\chi_e}{\chi_o}
+=
+1+z.
+$$
+
+This frequency statement assumes that emitter and observer use matched local spectral standards. Derivation 5.6A supplies a hydrogenic proxy in which those standards remain fixed while rods co-scale.
+
+## Matched endpoint clocks and duration stretching
+
+The clean branch takes local tick frequency to be fixed relative to the common history parameter:
+
+$$
+\nu_T\propto\chi^0.
+$$
+
+Reported endpoint durations are therefore proportional to the corresponding background intervals with the same conversion factor at emission and observation:
+
+$$
+\frac{\Delta t_o}{\Delta t_e}
+=
+\frac{\delta t_o}{\delta t_e}.
+$$
+
+Using the equal-path result,
+
+$$
+\boxed{
+\frac{\Delta t_o}{\Delta t_e}
+=
+\frac{\chi_e}{\chi_o}
+=
+1+z
+}.
+$$
+
+Equivalently,
+
+$$
+\boxed{
+\Delta t_o=(1+z)\Delta t_e
+}.
+$$
+
+One endpoint ratio therefore governs wavelength redshift and neighboring-feature duration stretching, but only after the co-scaling rod and matched-clock assumptions are applied.
+
+## Limiting checks
+
+### Inertial history
+
+If $\chi$ is constant, then
+
+$$
+\omega_\chi=\text{constant},
+\qquad
+\delta t_o=\delta t_e,
+\qquad
+z=0.
+$$
+
+### Normalization invariance
+
+Under a constant rescaling $\chi\mapsto C\chi$, the normalized generator uses $X=\chi/\chi_o$, while endpoint observables use
+
+$$
+\frac{C\chi_e}{C\chi_o}
+=
+\frac{\chi_e}{\chi_o}.
+$$
+
+No measured relation depends on the arbitrary normalization.
+
+### Direction reversal
+
+Reversing the propagation orientation changes the sign of $\dot x_T$ but not $M_\chi$, $\omega_\chi$, or the endpoint ratios.
+
+## Result and boundaries
+
+This appendix establishes:
+
+1. $p_f=0$ implies $M_\chi=\chi|p|$ and $\dot x_T=\chi c$;
+2. spatial homogeneity conserves external $\mathbf k$ while $\omega_\chi=\chi c|\mathbf k|$ drifts;
+3. the path kernel is $c\int\chi\,dt$;
+4. neighboring equal paths give $\chi_o\delta t_o=\chi_e\delta t_e$;
+5. co-scaling rods give $1+z=\chi_e/\chi_o$;
+6. matched clocks give $\Delta t_o/\Delta t_e=1+z$;
+7. $d\eta=\chi\,dt$ in the normalized clean convention.
+
+It does not derive luminosity distance, angular-diameter distance, flux or photon-number transport, lensing, full radiative transfer, source evolution, blackbody evolution, recombination, thermal history, or Friedmann dynamics. It also does not claim that the external wavelength stretches during flight.
+
+Chapter 5.4 may cite this appendix for the lightlike path, generator drift, endpoint comparison, and conditional matched-standard signal dictionary.

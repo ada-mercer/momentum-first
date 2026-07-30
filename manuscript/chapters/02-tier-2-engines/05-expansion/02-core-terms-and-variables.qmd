@@ -1,46 +1,41 @@
 ## Core Terms and Variables
 
-This section declares the notation used by the expansion chapter. The physical work performed by these quantities is developed in the sections that follow.
+The expansion engine adds one stage variable and two coordinate descriptions to momentum and operator notation already established. This section fixes their meanings and governing relations in one place. The mechanism and derivation begin in the next section.
 
-### Inherited momentum quantities
+### Inherited momentum and operator terms
 
-The fermic momentum scale is $p_f$. The bosic momentum has vector form $\vec p$ and nonnegative magnitude
-
-$$
-p=|\vec p|.
-$$
-
-For an oriented unit direction $\hat{k}$, its signed projection is
+**Fermic momentum** $p_f$ is the fixed intrinsic scale,
 
 $$
-p_k=\vec p\mathbin{\cdot}\hat{k}.
+p_f=m_0c.
 $$
 
-The inertial core-momentum magnitude may be written as a function of $p$,
+The **directed bosic momentum** is $\mathbf p$, with magnitude $p=|\mathbf p|$. For an oriented unit direction $\hat{k}$, its signed component is
 
 $$
-M(p)=\sqrt{p_f^2+p^2}.
+p_k=\mathbf p\mathbin{\cdot}\hat{k}.
 $$
 
-The corresponding positive shell readings along the chosen orientation are
+The **inertial core-momentum magnitude** is
 
 $$
-p_k^\pm=M(p)\pm\frac12p_k.
+M=\sqrt{p_f^2+p^2}.
 $$
 
-The superscripts $+$ and $-$ label opposed positive readings. For a selected orientation, ADMC conserves one shell reading per particle. Reversing the orientation exchanges $p_k^+$ and $p_k^-$. The two readings may be displayed together for comparison or inversion; they are not two simultaneous terms in one particle's ADMC contribution.
-
-### Translation yield
-
-The chapter's expansion quantity is
+The **canonical momentum operator** is $\hat{\mathbf p}=-i\hbar\nabla$. The **flat core-momentum operator** is
 
 $$
-\chi(t),
+\hat M
+=
+\beta p_f+
+\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}.
 $$
 
-called **translation yield**. It is a dimensionless factor associated with the displacement produced by directed momentum at epoch $t$.
+The constant $c$ retains its inherited role as the intrinsic local propagation scale.
 
-Emission and observation values are written
+### Stage state and dressed generator
+
+The dimensionless **homogeneous stage state** is $\chi(t)>0$, with endpoint values
 
 $$
 \chi_e=\chi(t_e),
@@ -48,34 +43,92 @@ $$
 \chi_o=\chi(t_o).
 $$
 
-The observation epoch may be used as the normalization point,
+The observation epoch is the default reference, so $\chi_o=1$ unless another normalization is stated. When the normalization remains explicit, the **normalized stage ratio** is
 
 $$
-\chi_o=1,
+X(t)=\frac{\chi(t)}{\chi_o},
+\qquad
+X_o=1.
 $$
 
-unless another normalization is stated.
+Compact operator formulas use $\chi$ in the normalized convention; otherwise $X$ takes its place.
 
-The defining translation map is
-
-$$
-\dot x_k(t)=\chi(t)c\frac{p_k}{M(p)}.
-$$
-
-Here $t$ is the common background-history parameter used to label the homogeneous yield state, and $x_k$ is the corresponding translation coordinate along $\hat{k}$. The dot denotes differentiation with respect to that parameter. These variables provide the propagation bookkeeping; an operational measurement additionally involves the local rods and clocks used at the endpoints. Here $c$ retains its inherited role as the intrinsic local propagation scale. The epoch-dependent factor is $\chi(t)$.
-
-The fractional yield-change rate is
+The **stage-dressed core-momentum operator** and its positive instantaneous magnitude are
 
 $$
-H_\chi(t)=-\frac{\dot\chi(t)}{\chi(t)}.
+\boxed{
+\hat M_\chi
+=
+\beta p_f+
+\chi(t)\,\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}
+},
+\qquad
+\boxed{
+M_\chi=
+\sqrt{p_f^2+\chi^2p^2}
+}.
 $$
 
-### Signal labels
+Here $M$ is the inertial magnitude, while $M_\chi$ is the instantaneous eigenvalue or principal-symbol magnitude of the dressed generator. The spatial momentum content $\mathbf p$ remains a separate quantity.
 
-Observed wavelength redshift is denoted by
+**Translation yield** names the stage-conditioned relation between directed momentum and generated motion. Its governing law is
+
+$$
+\boxed{
+\dot x_k
+=
+\chi^2c\,\frac{p_k}{M_\chi}
+}.
+$$
+
+[Derivation 5.2A](../../../appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd) supplies the operator algebra and group-velocity theorem.
+
+### True-frame and bound-frame variables
+
+The common homogeneous history parameter is $t$. The **true-frame coordinate** $x_T$ records propagation on the homogeneous chart. The **bound-frame coordinate** $x_B$ reports lengths using co-scaling local rods:
+
+$$
+x_B=\frac{x_T}{X}.
+$$
+
+The associated clean-branch scale factor and fractional history rate are
+
+$$
+\boxed{
+a_B=\frac1X=\frac{\chi_o}{\chi}
+},
+\qquad
+\boxed{
+H=\frac{\dot a_B}{a_B}=-\frac{\dot X}{X}
+}.
+$$
+
+The clean branch uses matched local clocks, so $t$ also serves as the local time variable in the comparisons below. The function $H(t)$ is supplied rather than derived in this chapter.
+
+### Propagation and signal labels
+
+For lightlike propagation, the **history kernel** is
+
+$$
+\mathcal D_\chi(t_e,t_o)
+=
+c\int_{t_e}^{t_o}\chi(t)\,dt.
+$$
+
+It labels a path interval, not a complete observational distance.
+
+For neighboring signal features, $\delta t_e$ and $\delta t_o$ denote endpoint separations in the common parameter $t$. The symbols $\Delta t_e$ and $\Delta t_o$ denote durations reported by the emitter's and observer's local clocks.
+
+Observed wavelength redshift is
 
 $$
 1+z=\frac{\lambda_o}{\lambda_e}.
 $$
 
-For two neighboring signal features, $\delta t_e$ and $\delta t_o$ denote their emission and reception separations in the background parameter $t$. The durations reported against the emitter's and observer's local clock standards are written $\Delta t_e$ and $\Delta t_o$. The propagation argument first relates the background endpoint separations; the signal comparison then states when they may be read as the corresponding local durations.
+On the matched-standard branch developed below, the conditional endpoint relation is
+
+$$
+1+z=\frac{\chi_e}{\chi_o}.
+$$
+
+Momentum labels conserved spatial content, $M_\chi$ labels the dressed generator value, $X$ compares stage states, and bound-frame variables describe measurements made with local standards.

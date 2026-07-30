@@ -1,0 +1,350 @@
+# Derivation 5.2A — Bosic-slot stage dressing and the chi-squared group velocity {#sec-derivation-05-02a-bosic-slot-stage-dressing .unnumbered}
+
+## Purpose
+
+This appendix supports Chapter 5.2. It separates conserved spatial momentum content from the generator that converts that content into phase evolution and translation, then derives the massive translation law
+
+$$
+\dot x_k
+=
+\chi^2c\,\frac{p_k}{M_\chi}.
+$$
+
+The result is a generator theorem within a stated two-slot dressing architecture. It does not determine the history $\chi(t)$, amend the ADMC ledger, or decide which dressed quantity gravitates.
+
+## Role, regime, premises, and status
+
+- **Role:** derivation of the homogeneous stage-dressed generator and its group velocity.
+- **Regime:** a free narrow wave packet on a spatially homogeneous, slowly varying stage; no local gravitational field.
+- **Premises:** the Chapter 4 phase law, the Dirac-form core-momentum operator, spatial translation symmetry, and a multiplicative dressing of its fermic and bosic slots.
+- **Status:** candidate derivation for independent V3 review. The placement result is unique only within the stated ansatz and requirements.
+
+## Notation ledger
+
+- $p_f$ — fixed fermic momentum scale.
+- $\hat{\mathbf p}$ — spatial momentum operator; $\mathbf p$ is its wave-packet label and $p=|\mathbf p|$.
+- $\beta,\alpha_i$ — Dirac matrices satisfying
+  $\beta^2=1$, $\{\alpha_i,\alpha_j\}=2\delta_{ij}$, and $\{\beta,\alpha_i\}=0$.
+- $\chi(t)>0$ — normalized homogeneous translation yield, with $\chi=1$ at the reference inertial epoch.
+- $\hat M_\chi$ — stage-dressed momentum-unit generator.
+- $M_\chi$ — positive instantaneous eigenvalue or principal-symbol magnitude of $\hat M_\chi$.
+- $\hat H_\chi=c\hat M_\chi$ — energy-unit generator.
+- $x_k,p_k$ — coordinate and conserved momentum label along a selected direction.
+
+If an unnormalized yield variable is used, every $\chi$ in this appendix means the ratio $\chi(t)/\chi_o$. The conventional choice $\chi_o=1$ suppresses that distinction.
+
+## Flat-space degeneracy
+
+In the inertial theory, the same operator appears in two roles:
+
+$$
+\hat M
+=
+\beta p_f+\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}.
+$$
+
+Its labels identify the carrier content $(p_f,\mathbf p)$, while its energy-unit form generates phase evolution,
+
+$$
+i\hbar\partial_t\Psi
+=
+c\hat M\Psi.
+$$
+
+For a free positive-branch eigenstate, the Dirac anticommutation relations give
+
+$$
+\hat M^2
+=
+p_f^2+\hat{\mathbf p}^{\,2},
+$$
+
+and hence
+
+$$
+M=\sqrt{p_f^2+p^2}.
+$$
+
+Flat space makes content and generator numerically degenerate: the conserved momentum labels also determine the time-independent generator eigenvalue. A time-dependent stage separates those roles. Spatial homogeneity can preserve $\mathbf p$ even while the generator built from it changes.
+
+## The two-slot multiplicative ansatz
+
+The most economical stage dressing preserves the first-order operator structure and assigns one homogeneous factor to each slot:
+
+$$
+\hat M[Y_f,Y_b]
+=
+Y_f(t)\,\beta p_f
++
+Y_b(t)\,\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}.
+$$
+
+The factors are dimensionless and recover the inertial operator when $Y_f=Y_b=1$. A common homogeneous factor changes the normalization of the complete phase generator. After the reference time normalization is fixed, the relative slot dressing is the nontrivial quantity. The expansion branch used here fixes the fermic reference scale and writes
+
+$$
+Y_f=1,
+\qquad
+Y_b=\chi(t).
+$$
+
+Thus
+
+$$
+\boxed{
+\hat M_\chi
+=
+\beta p_f
++
+\chi(t)\,\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}
+}.
+$$
+
+Because $\chi$ depends on time but not position,
+
+$$
+[\hat H_\chi,\hat p_k]=0.
+$$
+
+Equivalently, the Hamiltonian has no $x_k$ dependence, so Hamilton's equation gives
+
+$$
+\dot p_k
+=
+-\frac{\partial H_\chi}{\partial x_k}
+=0.
+$$
+
+The spatial momentum label is therefore conserved by homogeneous translation symmetry. This is the conserved content used below. It is not the same object as the time-dependent eigenvalue of the generator.
+
+## Instantaneous eigenvalue
+
+Squaring the dressed operator gives
+
+$$
+\begin{aligned}
+\hat M_\chi^{\,2}
+&=
+\left(
+\beta p_f
++
+\chi\alpha_i\hat p_i
+\right)
+\left(
+\beta p_f
++
+\chi\alpha_j\hat p_j
+\right)
+\\
+&=
+p_f^2
++
+\chi p_f(\beta\alpha_j+\alpha_j\beta)\hat p_j
++
+\chi^2\alpha_i\alpha_j\hat p_i\hat p_j.
+\end{aligned}
+$$
+
+The mixed term vanishes because $\{\beta,\alpha_j\}=0$. The antisymmetric part of $\alpha_i\alpha_j$ vanishes against the symmetric product $\hat p_i\hat p_j$, leaving
+
+$$
+\hat M_\chi^{\,2}
+=
+p_f^2+\chi^2\hat{\mathbf p}^{\,2}.
+$$
+
+On the positive branch,
+
+$$
+\boxed{
+M_\chi
+=
+\sqrt{p_f^2+\chi^2p^2}
+}.
+$$
+
+The labels $p_f$ and $\mathbf p$ remain fixed in the stated regime, but $M_\chi$ changes when $\chi(t)$ changes. The dressed phase frequency is
+
+$$
+\omega_\chi
+=
+\frac{cM_\chi}{\hbar}.
+$$
+
+## Group-velocity theorem
+
+For a narrow packet whose instantaneous dispersion is
+
+$$
+H_\chi(\mathbf p,t)
+=
+c\sqrt{p_f^2+\chi^2p^2},
+$$
+
+the center velocity is the momentum derivative of the energy-unit generator. Along direction $k$,
+
+$$
+\begin{aligned}
+\dot x_k
+&=
+\frac{\partial H_\chi}{\partial p_k}
+\\
+&=
+c\,\frac{1}{2}
+\left(p_f^2+\chi^2p^2\right)^{-1/2}
+\left(2\chi^2p_k\right)
+\\
+&=
+\chi^2c\,\frac{p_k}{M_\chi}.
+\end{aligned}
+$$
+
+Therefore
+
+$$
+\boxed{
+\dot x_k
+=
+\frac{\partial(cM_\chi)}{\partial p_k}
+=
+\chi^2c\,\frac{p_k}{M_\chi}
+}.
+$$
+
+The two powers of $\chi$ have one algebraic origin: the bosic slot enters the squared eigenvalue as $\chi^2p^2$, and differentiation is taken with respect to the conserved momentum coordinate $p_k$.
+
+## Placement-A diagnostic and whole-generator contrast
+
+The earlier Chapter 5 map was
+
+$$
+\dot x_k^{(A)}
+=
+\chi c\,\frac{p_k}{M},
+\qquad
+M=\sqrt{p_f^2+p^2}.
+$$
+
+That velocity does have a generating Hamiltonian:
+
+$$
+H_A
+=
+c\chi(t)M,
+\qquad
+\frac{\partial H_A}{\partial p_k}
+=
+\chi c\,\frac{p_k}{M}.
+$$
+
+The problem is not the literal absence of a generator. The problem is that $H_A$ dresses the whole generator,
+
+$$
+\hat M_A
+=
+\chi
+\left(
+\beta p_f+\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}
+\right),
+$$
+
+whereas the published map was presented as a downstream multiplier while the phase generator remained undressed. Those two statements cannot both represent the packet dynamics.
+
+Whole-generator dressing also co-scales the fermic and bosic slots. On the matched-standard branch, that common rescaling is absorbed into the common clock/phase normalization and supplies no nontrivial photon-to-atomic endpoint ratio. Bosic-slot dressing instead leaves the fermic reference scale fixed while the spatial slot changes. This produces the required massive history and the lightlike endpoint asymmetry developed in Derivations 5.3A and 5.4A.
+
+Within the two-slot multiplicative ansatz, the scope of the placement statement can be made exact. Consider
+
+$$
+\hat M_{a,b}
+=
+\chi^a\beta p_f
++
+\chi^b\boldsymbol\alpha\!\cdot\!\hat{\mathbf p}.
+$$
+
+The required lightlike law $\dot x=\chi c$ fixes $b=1$. Holding the intrinsic fermic scale fixed fixes $a=0$. These conditions select
+
+$$
+(a,b)=(0,1),
+$$
+
+which is the bosic-slot operator $\hat M_\chi$. This is uniqueness within this ansatz and these requirements, not uniqueness over every possible Hamiltonian, nonmultiplicative coupling, or stage theory.
+
+## Limiting checks
+
+### Inertial limit
+
+At $\chi=1$,
+
+$$
+M_\chi\to M,
+\qquad
+\dot x_k\to c\,\frac{p_k}{M}.
+$$
+
+The flat operator and inertial translation theorem are recovered.
+
+### Zero directed momentum
+
+For $p_k=0$,
+
+$$
+\dot x_k=0.
+$$
+
+Reversing the selected orientation changes the signs of $p_k$ and $\dot x_k$ but not $M_\chi$.
+
+### Nonrelativistic limit
+
+For $\chi p\ll p_f$,
+
+$$
+M_\chi
+=
+p_f+\frac{\chi^2p^2}{2p_f}
++O\!\left(\frac{\chi^4p^4}{p_f^3}\right),
+$$
+
+so
+
+$$
+\dot x_k
+\simeq
+\chi^2c\,\frac{p_k}{p_f}.
+$$
+
+With $p_f=m_0c$, the excess energy-unit generator is $\chi^2p^2/(2m_0)$.
+
+### Lightlike limit
+
+For $p_f=0$,
+
+$$
+M_\chi=\chi|p|,
+$$
+
+and therefore
+
+$$
+\dot x_k
+=
+\chi c\,\frac{p_k}{|p|}.
+$$
+
+Forward lightlike propagation gives $\dot x=\chi c$. The corrected massive placement therefore preserves the Chapter 5 lightlike law.
+
+## Result and boundaries
+
+This appendix establishes, within a homogeneous two-slot multiplicative dressing architecture:
+
+1. spatial translation symmetry conserves $\mathbf p$;
+2. the bosic-slot generator has positive eigenvalue
+   $M_\chi=\sqrt{p_f^2+\chi^2p^2}$;
+3. its group velocity is
+   $\dot x_k=\chi^2cp_k/M_\chi$;
+4. the inertial and lightlike limits are correct;
+5. the old $\chi$ map is the group velocity of a whole-generator dressing, not of the bosic-slot generator;
+6. the placement is unique only within the stated ansatz and requirements.
+
+The derivation does **not** amend ADMC. It keeps conserved spatial content, the dressed generator, and gravitational source weight as three distinct ledger questions. In particular, it does not assume that the ADMC even entry is $M_\chi$, and it does not determine whether a cosmological source law should use undressed content, dressed generator weight, or a stage-plus-carrier constraint.
+
+Chapter 5.2 may cite this appendix for the operator, eigenvalue, placement comparison, and $\chi^2$ theorem. Chapter 5.3 supplies the free-carrier correspondence test; Chapter 5.4 develops the lightlike endpoint package.

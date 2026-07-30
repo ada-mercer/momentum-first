@@ -70,6 +70,33 @@ $$
 
 with the local momentum-unit content still carried by $\hat M_g$.
 
+### Generator eigenvalues and translation
+
+The same phase law applies when a homogeneous stage makes the generator explicitly time-dependent. For the expansion-dressed operator introduced above,
+
+$$
+\hat H_\chi=c\hat M_\chi,
+\qquad
+\hat M_\chi=\beta p_f+\chi(t)\,\boldsymbol\alpha\cdot\hat{\mathbf p},
+$$
+
+and the positive instantaneous eigenvalue is
+
+$$
+H_\chi=cM_\chi
+=c\sqrt{p_f^2+\chi^2p^2}.
+$$
+
+For a narrow wave packet in a spatially homogeneous background, the motion of its center is set by the group velocity: the derivative of the energy-unit generator eigenvalue with respect to the packet's conserved momentum label. Along a selected direction $k$,
+
+$$
+\boxed{
+\dot x_k=\frac{\partial(cM_\chi)}{\partial p_k}
+}.
+$$
+
+This relation keeps two roles separate. Spatial homogeneity protects $p_k$ as momentum content, while the time-dependent stage changes $M_\chi$, and therefore changes both phase rate and translation generated from that content. Chapter 5 evaluates this derivative and develops its massive and lightlike consequences. No redefinition of ADMC is required for the operator and group-velocity bridge itself.
+
 The nonrelativistic Schrödinger equation appears when the large rest phase is separated from the slower envelope. Write schematically
 
 $$
@@ -85,4 +112,4 @@ $$
 
 Promoting $p$ to $\hat{\mathbf p}$ gives the ordinary leading Schrödinger kinetic operator. Thus the familiar nonrelativistic equation is not foreign to M1. It is the low-speed envelope equation obtained after the core momentum generator has been translated into energy units and the rest-scale phase has been factored out.
 
-The empirical grammar of ordinary quantum mechanics remains intact: $\Psi$ carries phase, $\hbar$ relates phase rate to generator value, and $\hat{\mathbf p}=-i\hbar\nabla$ generates spatial translations. M1's contribution is to identify the generator beneath the Hamiltonian as core momentum and to show how the same object can be gravity-dressed without leaving the stationary bookkeeping developed in the gravity chapter.
+The empirical grammar of ordinary quantum mechanics remains intact: $\Psi$ carries phase, $\hbar$ relates phase rate to generator value, and $\hat{\mathbf p}=-i\hbar\nabla$ generates spatial translations. M1's contribution is to identify the generator beneath the Hamiltonian as core momentum and to show how the same two-slot operator can be dressed by a physical stage. Stationary gravity supplies the spatially structured case; homogeneous expansion supplies the bosic-slot case developed in the next chapter.

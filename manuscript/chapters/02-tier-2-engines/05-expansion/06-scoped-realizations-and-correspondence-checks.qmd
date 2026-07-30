@@ -1,0 +1,157 @@
+## Scoped Realizations and Correspondence Checks
+
+The clean bound frame sets a definite physical target. Local rods must scale as $X$, local clock frequencies must remain fixed, and a bound system must keep the same size and timing when measured by those standards. The low-speed bosic generator supplies two powers of $X$ in the kinetic response. The question is then which interaction scaling lets an electromagnetic atom or a Newtonian orbit meet the target.
+
+In both proxies, the answer is one power of $X$. That exponent is not inserted merely because it works downstream; it is selected independently by the required bound scale in each sector.
+
+### A hydrogenic electromagnetic proxy
+
+After the rest phase is removed, write the normalized dressed magnitude as $M_X=\sqrt{p_f^2+X^2p^2}$, with $p_f=m_ec$ for the electron. Its low-speed expansion is
+
+$$
+c(M_X-p_f)
+\simeq
+\frac{X^2\mathbf p^2}{2m_e}.
+$$
+
+Let the Coulomb strength scale provisionally as
+
+$$
+e^2(X)=e_o^2X^n,
+$$
+
+with $\hbar$ and $m_e$ fixed. For a hydrogenic state, $p\sim\hbar/r$, so balancing the $X^2$ kinetic contribution against the Coulomb attraction gives
+
+$$
+a_0(X)
+\propto
+\frac{X^2\hbar^2}{m_e e^2(X)}
+\propto
+X^{2-n}.
+$$
+
+The clean-branch rod target is $a_0(X)=Xa_{0,o}$. It therefore selects
+
+$$
+\boxed{
+n=1,
+\qquad
+e^2(X)=e_o^2X
+}.
+$$
+
+The same exponent fixes the spectral scale. Hydrogenic transition energies vary as
+
+$$
+\Delta E(X)
+\propto
+\frac{e^4(X)}{X^2}
+\propto
+X^{2n-2},
+$$
+
+so $n=1$ gives
+
+$$
+\boxed{
+a_0(X)=Xa_{0,o},
+\qquad
+\Delta E(X)=\Delta E_o
+}.
+$$
+
+Atomic lengths co-scale with local rods while electronic transition frequencies remain fixed. The dimensionless coupling read against the local light scale is likewise constant:
+
+$$
+\alpha_X
+=
+\frac{e^2(X)}{\hbar cX}
+=
+\frac{e_o^2}{\hbar c}.
+$$
+
+The electromagnetic proxy therefore supplies the rod and clock behavior used in the endpoint comparison. Its first-power law is selected inside the hydrogenic adiabatic model; fuller electromagnetic and material standards require their own realization.
+
+### A Newtonian bound orbit
+
+The gravitational proxy begins from the same $X^2$ low-speed kinetic response. Write the effective Newtonian coupling provisionally as
+
+$$
+G_{\mathrm{eff}}(X)=G_NX^g.
+$$
+
+For an adiabatic circular orbit, the angular action $J=pr$ is conserved. Balancing the kinetic and attractive terms gives the orbital scale
+
+$$
+r_{\mathrm{orbit}}(X)
+\propto
+\frac{X^2J^2}
+{m^2G_{\mathrm{eff}}(X)M_s}
+\propto
+X^{2-g}.
+$$
+
+The clean branch requires the orbit to co-scale with local rods, $r_{\mathrm{orbit}}\propto X$. This independently selects
+
+$$
+\boxed{
+g=1,
+\qquad
+G_{\mathrm{eff}}(X)=G_NX
+}.
+$$
+
+The orbital radius and true-frame velocity then obey
+
+$$
+\boxed{
+r_{\mathrm{orbit}}(X)=Xr_{\mathrm{orbit},o}
+},
+\qquad
+v_T\propto X.
+$$
+
+Their common factor cancels from the period:
+
+$$
+T_T\sim\frac{r_{\mathrm{orbit}}}{v_T}\propto X^0.
+$$
+
+The Newtonian orbit therefore retains its size against local rods and its timing against the matched clock. As in the atomic case, the clean target selects the needed first power within the proxy rather than deriving a complete microscopic sector law.
+
+### Linear matter growth at a fixed history
+
+The same powers reappear in the linear growth equation. In the pressureless, linear, quasi-static regime, take $H(t)$ as supplied and use the selected Newtonian scaling $G_{\mathrm{eff}}=G_NX$. The source acquires two powers from the kinetic response and one from the coupling:
+
+$$
+\boxed{
+X^3
+=
+\underbrace{X^2}_{\text{kinetic response}}
+\underbrace{X}_{\text{Newtonian coupling}}
+}.
+$$
+
+That product is exactly the homogeneous volume conversion between true-frame and bound-frame matter density,
+
+$$
+\bar\rho_B=X^3\bar\rho_T.
+$$
+
+The density contrast therefore obeys
+
+$$
+\boxed{
+\ddot\delta+2H\dot\delta
+=
+4\pi G_N\bar\rho_B\delta
+}.
+$$
+
+This is the standard linear matter-growth equation at the same supplied $H(t)$ and $\bar\rho_B(t)$. The matching friction and source terms are consequences of the same kinetic and coupling powers that stabilize the local proxies.
+
+### What these checks establish
+
+The clean-branch requirement selects first-power scaling independently in the hydrogenic and Newtonian models. With those powers, atomic lengths, electronic clock frequencies, orbital radii, orbital periods, and linear matter growth fit one common local-standard construction. [Derivation 5.6A](../../../appendices/derivations/05-06A-local-covariance-and-scoped-sector-realizations.qmd) provides the detailed balances, growth derivation, and regime ledger.
+
+The result is a coherent electromagnetic/Newtonian realization, not yet an all-sector law. Its value is sharper than an assumed fit: two different bound systems select the same coupling exponent, and that exponent then completes the $X^3$ structure required by linear growth.

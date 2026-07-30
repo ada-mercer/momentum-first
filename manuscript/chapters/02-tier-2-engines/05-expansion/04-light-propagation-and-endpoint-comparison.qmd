@@ -1,0 +1,145 @@
+## Light Propagation and Endpoint Comparison
+
+Light follows the same dressed generator as a massive carrier. Setting $p_f=0$ gives
+
+$$
+M_\chi=\chi|p|.
+$$
+
+Substituting this magnitude into the translation law leaves
+
+$$
+\boxed{
+\dot x_T=\chi(t)c
+}.
+$$
+
+One power of $\chi$ remains after the dressed magnitude cancels the other. The bosic-slot construction therefore carries massive and lightlike motion in one law: fermic content changes the massive response, while a purely bosic carrier translates at the stage-conditioned rate $\chi c$.
+
+### A fixed spatial pattern with a changing phase rate
+
+Write the lightlike spatial momentum as
+
+$$
+\mathbf p=\hbar\mathbf k.
+$$
+
+The stage state depends on time but not position. It therefore changes no spatial phase gradient, and the external wavevector remains fixed during flight:
+
+$$
+\dot{\mathbf k}=0.
+$$
+
+The generator frequency changes with the stage. For a lightlike carrier,
+
+$$
+\omega_\chi(t)
+=
+\frac{cM_\chi}{\hbar}
+=
+\chi(t)c|\mathbf k|.
+$$
+
+The signal consequently carries two distinct features. Its external spatial pattern is set by the conserved wavevector, with true-frame coordinate wavelength
+
+$$
+\lambda_T=\frac{2\pi}{|\mathbf k|},
+$$
+
+while its phase turns at the changing rate $\omega_\chi(t)$. The pattern remains fixed on the homogeneous true-frame chart as the bosic cycle changes its temporal expression. A wavelength redshift appears when that transported pattern is read against local rods at the two endpoints.
+
+### The path accumulated through the stage
+
+A signal emitted at $t_e$ and observed at $t_o$ samples every stage state between them. Integrating its translation rate gives the true-frame path interval
+
+$$
+\boxed{
+\mathcal D_\chi(t_e,t_o)
+=
+c\int_{t_e}^{t_o}\chi(t)\,dt
+}.
+$$
+
+The integral measures the translation accumulated by light through the supplied history. Different histories with the same endpoint ratio can therefore produce different path intervals even though they produce the same matched-standard redshift.
+
+The clean bound frame uses $a_B=1/\chi$ in the normalized convention. Its conformal time satisfies
+
+$$
+\boxed{
+d\eta=\frac{dt}{a_B}=\chi(t)\,dt
+},
+\qquad
+\mathcal D_\chi=c\int d\eta.
+$$
+
+If the observation normalization remains explicit, the exact relation is $d\eta=Xdt$. The stage-dressed path kernel and the usual conformal propagation kernel are therefore the same path written in the two coordinate descriptions. Their conformal causal reach is identical: once the history is supplied, stage-dressed kinematics does not enlarge the light cone or solve the horizon problem.
+
+Observable distance and brightness relations require the later transport layer built on this interval.
+
+### Neighboring features on the same path
+
+Now consider two neighboring features emitted by the same source and received by the same observer. Over their short separation, take the source and observer to retain the same true-frame coordinate separation. The two features then traverse equal paths:
+
+$$
+c\int_{t_e}^{t_o}\chi(t)\,dt
+=
+c\int_{t_e+\delta t_e}^{t_o+\delta t_o}\chi(t)\,dt.
+$$
+
+Subtracting the common part and keeping the first-order endpoint contributions gives
+
+$$
+\boxed{
+\chi_o\delta t_o
+=
+\chi_e\delta t_e
+}.
+$$
+
+The later feature must wait a different interval at observation because translation proceeds under a different stage state there. The propagation law therefore carries the endpoint ratio directly into the separation between neighboring features:
+
+$$
+\frac{\delta t_o}{\delta t_e}
+=
+\frac{\chi_e}{\chi_o}.
+$$
+
+These intervals belong to the common history parameter. Local rods and clocks now turn them into reported wavelengths and durations.
+
+### Wavelength at the endpoints
+
+On the clean branch, a local true-frame rod scales with $X(t)=\chi(t)/\chi_o$. The transported wavelength $\lambda_T$ is fixed, while its numerical reading in local rod units scales as $1/X$. Comparing the same spatial pattern at emission and observation gives
+
+$$
+\boxed{
+1+z
+\equiv
+\frac{\lambda_o}{\lambda_e}
+=
+\frac{\chi_e}{\chi_o}
+}.
+$$
+
+The signal arrives redshifted because the observer reads its conserved external pattern with a different local rod. Momentum has not drained from the carrier along the path; the endpoint standards express the same transported pattern differently.
+
+### Duration at the endpoints
+
+Matched local clocks retain the same rate against the common history parameter. Their reported durations therefore inherit the neighboring-feature relation:
+
+$$
+\frac{\Delta t_o}{\Delta t_e}
+=
+\frac{\delta t_o}{\delta t_e}
+=
+\frac{\chi_e}{\chi_o}.
+$$
+
+Combining this with the wavelength ratio gives
+
+$$
+\boxed{
+\Delta t_o=(1+z)\Delta t_e
+}.
+$$
+
+Wavelength redshift and duration stretching are thus two readings of one endpoint comparison. The stage history determines the path, equal paths determine the neighboring-feature separation, and co-scaling rods with matched clocks determine what emitter and observer report. [Derivation 5.4A](../../../appendices/derivations/05-04A-lightlike-propagation-and-matched-endpoint-standards.qmd) gives the full endpoint expansion and regime assumptions.

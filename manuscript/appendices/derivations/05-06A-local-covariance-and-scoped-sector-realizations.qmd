@@ -1,0 +1,562 @@
+# Derivation 5.6A — Local covariance and scoped sector realizations {#sec-derivation-05-06a-local-covariance .unnumbered}
+
+## Purpose
+
+This appendix supports Chapter 5.6. It states the clean true-frame/bound-frame transform, derives its local light and ranging condition, and tests that transform in three controlled settings:
+
+1. an adiabatic hydrogenic electromagnetic proxy;
+2. an adiabatic Newtonian bound orbit;
+3. linear nonrelativistic matter growth at a prescribed background history.
+
+The calculations are realizations of a covariance target, not a proof that every interaction sector follows one universal law. Strong and weak closure remain open, and exact local indistinguishability is not established.
+
+## Role, regime, premises, and status
+
+- **Role:** conditional local-covariance derivation and scoped sector correspondence.
+- **Regime:** homogeneous slowly varying yield; clean branch; adiabatic bound systems; hydrogenic EM proxy; Newtonian/quasi-static gravity; linear nonrelativistic perturbations.
+- **Premises:** bosic-slot $\chi^2$ kinetics, fixed content constants, co-scaling rods, matched clocks, $e^2\propto\chi$ in the EM realization, and $G_{\mathrm{eff}}\propto\chi$ in the gravity realization.
+- **Status:** candidate derivation for independent V3 review. The EM and gravity results are regime-bounded; the linear-growth result is conditional on a supplied $H(z)$.
+
+## Notation ledger
+
+- $X\equiv\chi/\chi_o$ — normalized yield, with $X_o=1$.
+- $a_B\equiv X^{-1}$ — clean-branch bound-frame scale factor.
+- $x_T,x_B$ — true-frame and bound-frame spatial coordinates.
+- $t$ — common history parameter and clean-branch clock time.
+- $\ell_T$ — local true-frame rod length.
+- $p_f=m_0c$ — fixed fermic content scale.
+- $\hbar,c,m_0$ — fixed content constants in the proxy calculations.
+- $e^2(X)$ — Coulomb coupling in a convention with $\alpha_X=e^2/(\hbar cX)$.
+- $G_{\mathrm{eff}}(X)$ — effective Newtonian coupling on the true-frame chart.
+- $\rho_T,\rho_B$ — true-frame and bound-frame matter densities.
+- $\delta$ — density contrast, invariant under the homogeneous volume conversion.
+- $H=\dot a_B/a_B=-\dot X/X$ — prescribed background rate.
+
+The formulas below use $X$ to keep normalization explicit. In Chapter 5 notation with $\chi_o=1$, replace $X$ by $\chi$.
+
+## Clean true-frame/bound-frame transform
+
+The clean branch takes local true-frame rods to co-scale linearly with the normalized yield:
+
+$$
+\boxed{
+\ell_T(X)=\ell_oX
+}.
+$$
+
+A local observer reports a true-frame interval by dividing by that rod standard. The corresponding bound-frame coordinate is
+
+$$
+\boxed{
+x_B=\frac{x_T}{X}
+},
+$$
+
+and the bound-frame scale factor is
+
+$$
+\boxed{
+a_B=\frac{1}{X}=\frac{\chi_o}{\chi}
+}.
+$$
+
+A bound length that co-scales as $R_T=R_oX$ is therefore constant locally:
+
+$$
+R_B=\frac{R_T}{X}=R_o.
+$$
+
+A fixed true-frame separation instead appears as $D_B=a_BD_T$. This transform is bookkeeping between two descriptions; it does not by itself supply the sector forces that make a bound length track $X$.
+
+The clean branch also takes local tick frequencies to be fixed relative to $t$:
+
+$$
+\boxed{
+\nu_T(X)=\nu_o
+}.
+$$
+
+Thus $dt_B=dt$ in the local comparisons used below.
+
+## Local light and radar-ranging condition
+
+Lightlike motion in the true frame is
+
+$$
+\dot x_T=cX.
+$$
+
+During one local tick $\nu_o^{-1}$, the true-frame light distance is
+
+$$
+\ell_{\mathrm{tick},T}
+=
+\frac{cX}{\nu_o}.
+$$
+
+Measured in local rods,
+
+$$
+\frac{\ell_{\mathrm{tick},T}}{\ell_T}
+=
+\frac{cX/\nu_o}{\ell_oX}
+=
+\frac{c}{\nu_o\ell_o},
+$$
+
+which is independent of $X$. Local observers therefore report a fixed light speed even though both the true-frame light distance per tick and the rod length co-scale.
+
+Radar ranging gives the same condition. For a co-scaled local radius
+
+$$
+r_T=r_oX,
+$$
+
+the true-frame round-trip time is
+
+$$
+\Delta t_T
+=
+\frac{2r_T}{cX}
+=
+\frac{2r_o}{c}.
+$$
+
+The local tick count $\nu_o\Delta t_T$ is constant. This is the operational local-covariance condition used by the sector checks. It is not a general proof that every probe is insensitive to $X$.
+
+## Hydrogenic electromagnetic proxy
+
+### Premises
+
+Use the nonrelativistic limit of the bosic-slot generator after the rest phase is removed:
+
+$$
+H_{\mathrm{kin}}
+=
+\frac{X^2\mathbf p^2}{2m_e}.
+$$
+
+Take
+
+$$
+\hbar=\text{constant},
+\qquad
+m_e=\text{constant},
+\qquad
+e^2(X)=e_o^2X.
+$$
+
+The last relation is a scoped coupling realization, not a change in a conserved content constant. The hydrogenic proxy Hamiltonian is
+
+$$
+\boxed{
+H_{\mathrm{H}}(X)
+=
+\frac{X^2\mathbf p^2}{2m_e}
+-
+\frac{e_o^2X}{r}
+}.
+$$
+
+The history is assumed adiabatic on atomic timescales, so the bound state follows the instantaneous spectrum.
+
+### Rod scale
+
+For a state of characteristic radius $r$, uncertainty gives $p\sim\hbar/r$. The energy scale is therefore
+
+$$
+E(r)
+\sim
+\frac{X^2\hbar^2}{2m_er^2}
+-
+\frac{e_o^2X}{r}.
+$$
+
+Stationarity requires
+
+$$
+\frac{dE}{dr}
+\sim
+-
+\frac{X^2\hbar^2}{m_er^3}
++
+\frac{e_o^2X}{r^2}
+=0.
+$$
+
+Hence the characteristic Bohr scale is
+
+$$
+\boxed{
+a_0(X)
+\sim
+\frac{X^2\hbar^2}{m_ee^2(X)}
+=
+X\frac{\hbar^2}{m_ee_o^2}
+=
+Xa_{0,o}
+}.
+$$
+
+The atomic proxy rod co-scales exactly as required by the clean transform.
+
+### Spectral scale
+
+The bound-state energies inherit the hydrogenic form with the dressed kinetic coefficient:
+
+$$
+E_n(X)
+=
+-
+\frac{m_ee^4(X)}
+{2X^2\hbar^2n^2}.
+$$
+
+Since $e^2(X)=e_o^2X$, one has $e^4(X)=e_o^4X^2$, so
+
+$$
+\boxed{
+E_n(X)
+=
+-
+\frac{m_ee_o^4}{2\hbar^2n^2}
+}.
+$$
+
+Transition energies and frequencies are therefore independent of $X$:
+
+$$
+\Delta E\propto X^0,
+\qquad
+\nu_{\mathrm{atom}}=\frac{\Delta E}{h}\propto X^0.
+$$
+
+The proxy supplies the matched-clock condition used in Derivation 5.4A.
+
+### Fixed fine-structure and velocity checks
+
+The operative dimensionless coupling is
+
+$$
+\alpha_X
+\equiv
+\frac{e^2(X)}{\hbar cX}.
+$$
+
+With $e^2(X)=e_o^2X$,
+
+$$
+\boxed{
+\alpha_X
+=
+\frac{e_o^2}{\hbar c}
+=
+\text{constant}
+}.
+$$
+
+The characteristic canonical momentum scales as
+
+$$
+p_{\mathrm{atom}}\sim\frac{\hbar}{a_0}\propto X^{-1}.
+$$
+
+Hamilton's equation gives the true-frame orbital velocity
+
+$$
+v_T
+\sim
+\frac{X^2p_{\mathrm{atom}}}{m_e}
+\propto X.
+$$
+
+Thus $v_T/(cX)$ is constant, and the velocity reported using co-scaling rods and fixed clocks is also constant.
+
+These results establish a hydrogenic, adiabatic proxy only. They do not derive the scaling of QED corrections, molecular structure, hyperfine standards, nuclear scales, material rods, or strong/weak quantities.
+
+## Newtonian bound-orbit realization
+
+### Premises and Hamiltonian
+
+Consider a test mass $m$ in a quasi-static Newtonian potential generated by a fixed source content $M_s$. Use
+
+$$
+G_{\mathrm{eff}}(X)=G_NX
+$$
+
+and the nonrelativistic Hamiltonian
+
+$$
+\boxed{
+H_{\mathrm{orb}}
+=
+\frac{X^2p^2}{2m}
+-
+\frac{G_{\mathrm{eff}}(X)M_sm}{r}
+}.
+$$
+
+The orbit is assumed adiabatic, so its angular action
+
+$$
+J=pr
+$$
+
+is conserved.
+
+### Orbit scale
+
+For a circular orbit, substitute $p=J/r$:
+
+$$
+H_{\mathrm{orb}}(r)
+=
+\frac{X^2J^2}{2mr^2}
+-
+\frac{G_{\mathrm{eff}}M_sm}{r}.
+$$
+
+The stationary-radius condition is
+
+$$
+\frac{dH_{\mathrm{orb}}}{dr}
+=
+-
+\frac{X^2J^2}{mr^3}
++
+\frac{G_{\mathrm{eff}}M_sm}{r^2}
+=0.
+$$
+
+Therefore
+
+$$
+r
+=
+\frac{X^2J^2}
+{m^2G_{\mathrm{eff}}M_s}.
+$$
+
+For fixed $J,m,M_s$,
+
+$$
+r\propto\frac{X^2}{G_{\mathrm{eff}}}.
+$$
+
+Demanding the clean rod scaling $r\propto X$ fixes
+
+$$
+\boxed{
+G_{\mathrm{eff}}(X)=G_NX
+}.
+$$
+
+Conversely, that coupling law makes the bound orbital radius co-scale with local rods:
+
+$$
+\boxed{
+r(X)=Xr_o
+}.
+$$
+
+### Orbital velocity and timing
+
+Hamilton's equation gives
+
+$$
+v_T
+=
+\frac{\partial H_{\mathrm{orb}}}{\partial p}
+=
+\frac{X^2p}{m}.
+$$
+
+With $p=J/r\propto X^{-1}$,
+
+$$
+\boxed{
+v_T\propto X
+}.
+$$
+
+The true-frame orbital period scales as
+
+$$
+T_T\sim\frac{r}{v_T}\propto X^0.
+$$
+
+Fixed local clocks therefore count a constant number of ticks per orbit. The turning combination is
+
+$$
+v_T^2r
+=
+X^2G_{\mathrm{eff}}M_s
+\propto X^3,
+$$
+
+where two powers come from the dressed kinetic relation and one from $G_{\mathrm{eff}}\propto X$.
+
+This is a Newtonian, adiabatic orbit realization. It does not derive a relativistic gravitational field equation, strong-field dynamics, lensing, or the cosmological gravitational source weight.
+
+## Conditional linear-growth correspondence
+
+The same kinetic and coupling powers can be checked dynamically in the linear, quasi-static matter regime.
+
+### Premises
+
+1. The homogeneous yield history $X(t)$ is prescribed, with
+   $a_B=1/X$ and $H=-\dot X/X$.
+2. The true-frame chart is static for the homogeneous matter background, so
+   $\bar\rho_T$ is constant.
+3. Bound-frame volume conversion gives
+   $$
+   \bar\rho_B=X^3\bar\rho_T.
+   $$
+4. The density contrast $\delta$ is invariant under the homogeneous conversion.
+5. Matter is nonrelativistic and pressureless; perturbations are linear.
+6. Gravity is quasi-static and obeys
+   $$
+   \Delta_TU_T
+   =
+   4\pi G_NX\,\bar\rho_T\delta.
+   $$
+7. The content-velocity variable $\mathbf u\equiv\mathbf p/m$ obeys
+   $$
+   \dot{\mathbf x}_T=X^2\mathbf u,
+   \qquad
+   \dot{\mathbf u}=-\boldsymbol\nabla_TU_T.
+   $$
+
+### Derivation
+
+Linear continuity on the static true-frame grid is
+
+$$
+\dot\delta
+=
+-X^2\boldsymbol\nabla_T\!\cdot\!\mathbf u.
+$$
+
+Differentiate:
+
+$$
+\ddot\delta
+=
+-2X\dot X\boldsymbol\nabla_T\!\cdot\!\mathbf u
+-
+X^2\boldsymbol\nabla_T\!\cdot\!\dot{\mathbf u}.
+$$
+
+The continuity equation gives
+
+$$
+-2X\dot X\boldsymbol\nabla_T\!\cdot\!\mathbf u
+=
+\frac{2\dot X}{X}\dot\delta
+=
+-2H\dot\delta.
+$$
+
+Euler and Poisson give
+
+$$
+-X^2\boldsymbol\nabla_T\!\cdot\!\dot{\mathbf u}
+=
+X^2\Delta_TU_T
+=
+4\pi G_NX^3\bar\rho_T\delta.
+$$
+
+Since $X^3\bar\rho_T=\bar\rho_B$,
+
+$$
+\boxed{
+\ddot\delta+2H\dot\delta
+=
+4\pi G_N\bar\rho_B\delta
+}.
+$$
+
+This is the standard linear matter-growth equation at the same prescribed $H(t)$ and $\bar\rho_B(t)$. The friction coefficient comes from differentiating the $X^2$ kinetic dressing. The source contains the same two kinetic powers plus the one coupling power in $G_{\mathrm{eff}}=G_NX$.
+
+The equality is a conditional correspondence, not a background prediction. It does not determine $H(z)$ and does not establish relativistic perturbations, radiation-era transfer, nonlinear growth, or lensing.
+
+## Realization ledger
+
+| Sector or check | Result in this appendix | Regime | Status beyond the regime |
+|---|---|---|---|
+| Local rods, clocks, and ranging | $x_B=x_T/X$, $\ell_T\propto X$, $\nu_T\propto X^0$, local light/radar ratios fixed | clean homogeneous branch | transform and target only |
+| Electromagnetism | $e^2=e_o^2X$, $a_0\propto X$, $\Delta E\propto X^0$, $\alpha_X$ fixed | hydrogenic, adiabatic proxy | QED, molecular, hyperfine, and material closure open |
+| Gravity-bound systems | $G_{\mathrm{eff}}=G_NX$, $r\propto X$, $v_T\propto X$ | Newtonian, adiabatic, fixed source content | relativistic and strong-field closure open |
+| Matter growth | standard linear equation at fixed $H(z)$ | pressureless, linear, quasi-static | radiation, horizon-scale, nonlinear, and lensing sectors open |
+| Strong sector | no realization derived | — | confinement and nuclear scaling open |
+| Weak sector | no realization derived | — | transition-rate scaling open |
+
+The broader statement that all space-mediated couplings scale as $X$ is therefore a hypothesis supported here only by the EM proxy and Newtonian gravity realization. It is not an established all-sector principle.
+
+## Local-drift falsifiers and scope
+
+The clean realizations predict no drift in the dimensionless quantities they actually close:
+
+- $\alpha_X$ and hydrogenic electronic spectral ratios remain fixed;
+- local light/radar ranging ratios remain fixed;
+- Newtonian orbital periods remain fixed relative to the matched clock;
+- co-scaled atomic and orbital lengths remain fixed relative to the same rods.
+
+A confirmed nonzero drift that survives reduction to a dimensionless local comparison would falsify the corresponding clean realization. Relevant channels include cross-family clock ratios, $\Delta\alpha/\alpha$, recoil-to-spectral ratios, radar-to-atomic length ratios, orbital-to-atomic timing, and composition-dependent residuals.
+
+Because strong and weak realization is not derived here, an anomaly involving nuclear, confinement, or weak-transition physics would expose an open closure problem before it could be called a falsification of the $\chi^2$ generator itself. Likewise, failure of $G_{\mathrm{eff}}\propto X$ in the Newtonian mapping would reject that scoped gravity realization without undoing the free-carrier theorem of Derivation 5.2A.
+
+## Result and boundaries
+
+This appendix establishes a mutually consistent clean-branch package under explicit premises:
+
+$$
+\boxed{
+x_B=\frac{x_T}{X},
+\qquad
+a_B=\frac{1}{X},
+\qquad
+\ell_T\propto X,
+\qquad
+\nu_T\propto X^0
+},
+$$
+
+$$
+\boxed{
+e^2\propto X,
+\qquad
+a_0\propto X,
+\qquad
+\alpha_X=\text{constant}
+}
+\quad
+\text{(hydrogenic proxy),}
+$$
+
+and
+
+$$
+\boxed{
+G_{\mathrm{eff}}\propto X,
+\qquad
+r_{\mathrm{orbit}}\propto X
+}
+\quad
+\text{(Newtonian orbit).}
+$$
+
+With the additional linear and quasi-static premises, it also gives
+
+$$
+\boxed{
+\ddot\delta+2H\dot\delta
+=
+4\pi G_N\bar\rho_B\delta
+}
+$$
+
+at a fixed background history.
+
+It does not establish exact local indistinguishability, all-sector coupling co-scaling, Friedmann dynamics, a dressed gravitational source law, strong/weak closure, radiation physics, or a complete observational cosmology. Chapter 5.6 may cite the scoped EM, gravity, and linear-growth results only with these regime boundaries attached.

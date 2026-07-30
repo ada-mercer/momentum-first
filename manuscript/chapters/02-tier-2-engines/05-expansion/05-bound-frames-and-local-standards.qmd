@@ -1,0 +1,73 @@
+## Bound Frames and Local Standards
+
+A universal stage state cannot be interpreted by applying the free-propagation law indiscriminately to every atom, laboratory, planet, or galaxy. A bound system has an equilibrium set by its kinetic and interaction terms. The local question is therefore not whether cosmological motion is simply switched off, but whether the whole bound configuration and the standards used to measure it transform coherently.
+
+### The clean bound-frame construction
+
+Normalize the stage state by
+
+$$
+X=\frac{\chi}{\chi_o}.
+$$
+
+The clean construction takes a local true-frame rod to scale linearly with $X$,
+
+$$
+\ell_T(X)=\ell_oX,
+$$
+
+while local tick frequencies remain fixed relative to the common history parameter. A true-frame interval is then reported in local rod units through
+
+$$
+\boxed{
+x_B=\frac{x_T}{X}
+},
+\qquad
+\boxed{
+a_B=\frac1X
+}.
+$$
+
+A bound separation that co-scales as $R_T=R_oX$ is locally constant:
+
+$$
+R_B=\frac{R_T}{X}=R_o.
+$$
+
+A fixed true-frame separation between freely separated systems behaves differently. In bound-frame units it is multiplied by $a_B$, and therefore appears to expand as $X$ falls. The same transform can thus describe local stability and cosmological separation without declaring bound systems exempt from the stage.
+
+### Local light and radar measurements
+
+True-frame lightlike motion is
+
+$$
+\dot x_T=cX.
+$$
+
+During one fixed local tick, the true-frame light path scales as $X$. The rod used to measure it scales by the same factor. Their ratio is therefore constant, so a local observer continues to report the intrinsic speed $c$.
+
+Radar ranging gives the same result over a sufficiently short round trip. If $H\Delta t_T\ll1$, the stage ratio is effectively constant during the measurement. For a local radius that co-scales as $r_T=r_oX$, the round-trip light time is, to leading adiabatic order,
+
+$$
+\Delta t_T
+=
+\frac{2r_T}{cX}
+=
+\frac{2r_o}{c}.
+$$
+
+A fixed local clock counts the same number of ticks. Co-scaling rods, light paths, and bound separations can therefore remain stable in local measurement even while their true-frame lengths vary with the stage.
+
+### Adiabatic scope
+
+For a bound system with characteristic internal time $\tau_{\mathrm{dyn}}$, the natural regime is
+
+$$
+H\tau_{\mathrm{dyn}}\ll1.
+$$
+
+The stage then changes little during one internal cycle, allowing the system to follow a sequence of near-equilibrium states. This condition does not force every interaction to co-scale correctly. It identifies the regime in which the proposed local transform can be tested without violent nonequilibrium driving.
+
+The clean transform is therefore a target rather than a universal proof. Electromagnetic binding must produce the required rod and spectral behavior. Gravity must preserve bound orbital scales and timing. Different clock families must not acquire forbidden relative drifts, and the remaining interaction sectors must be compatible with the same standards.
+
+The next section tests that target in a hydrogenic electromagnetic proxy and a Newtonian bound orbit, then checks linear matter growth at a supplied background history. These controlled cases make the construction concrete without closing every interaction sector.

@@ -24,8 +24,10 @@ project:
   - manuscript/appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
   - manuscript/appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
   - manuscript/appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
-  - manuscript/appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
-  - manuscript/appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
+  - manuscript/appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
+  - manuscript/appendices/derivations/05-03A-free-carrier-correspondence-under-yield-history.qmd
+  - manuscript/appendices/derivations/05-04A-lightlike-propagation-and-matched-endpoint-standards.qmd
+  - manuscript/appendices/derivations/05-06A-local-covariance-and-scoped-sector-realizations.qmd
   - manuscript/backmatter/manuscript-status.qmd
   - manuscript/references.qmd
 book:
@@ -65,8 +67,10 @@ book:
     - manuscript/appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
     - manuscript/appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
     - manuscript/appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
-    - manuscript/appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
-    - manuscript/appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
+    - manuscript/appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
+    - manuscript/appendices/derivations/05-03A-free-carrier-correspondence-under-yield-history.qmd
+    - manuscript/appendices/derivations/05-04A-lightlike-propagation-and-matched-endpoint-standards.qmd
+    - manuscript/appendices/derivations/05-06A-local-covariance-and-scoped-sector-realizations.qmd
   - manuscript/backmatter/manuscript-status.qmd
 bibliography: manuscript/bibliography.bib
 glossary: manuscript/glossary.yml
