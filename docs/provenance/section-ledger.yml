@@ -6,7 +6,7 @@ coverage:
   rendered_units: 26
 human_verification_decision:
   decided_by: Arne Klaveness
-  decided_on: 2026-07-28
+  decided_on: 2026-07-30
   scope_note: >
     Substantive chapters carry the explicit statuses below. Appendix
     human-verification entries remain deliberately not_yet_recorded because
@@ -121,10 +121,10 @@ sections:
       Arne supplied the stage-dressing direction, physical constraints, and
       acceptance decisions; AI-assisted contribution included formalization,
       drafting, structure, editing, source work, and review.
-    human_verification: not_yet_verified
+    human_verification: partially_verified
     verification_note: >
-      The chapter was rewritten after the v0.3.6 partial human-verification
-      record; no human-verification claim is made for the v0.3.7 candidate.
+      Arne Klaveness explicitly confirmed partial human verification for the
+      v0.3.7 candidate on 2026-07-30; no broader human verification is claimed.
 
   - id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
     title: Derivation 2.3A — Structural uniqueness of the directional shell readings
