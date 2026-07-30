@@ -119,7 +119,7 @@ Current rendered structure:
 - `manuscript/chapters/01-tier-1-foundations/02-foundations/index.qmd` is Chapter 2, Foundations.
 - `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd` is Chapter 3, Gravity and Structured Spacetime.
 - `manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd` is Chapter 4, Quantum Mechanics in Momentum Language.
-- `manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd` is Chapter 5, Space Expansion as Translation Yield.
+- `manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd` is Chapter 5, Space Expansion and Stage Dressing.
 - Appendices are declared after the rendered body in `_quarto.yml`.
 - `manuscript/references.qmd` sits after the rendered manuscript body.
 

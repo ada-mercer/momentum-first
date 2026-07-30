@@ -7,5 +7,5 @@
 | Foundations | Stabilizing | V3 (technical) · AI-assisted review | Primitive variables, ADMC, and the invertible mappings — the load-bearing locks. |
 | Gravity and Structured Spacetime | Stabilizing | V2 (conceptual) · AI-assisted review | Source-to-field-to-observer pipeline; conceptually reviewed, with targeted V3 review of load-bearing source-map chains. |
 | Quantum Mechanics in Momentum Language | Working draft | V2 (conceptual) · AI-assisted review | Momentum-language reconstruction; correspondence-heavy, read provisionally. |
-| Space Expansion as Translation Yield | Working draft | V2 (conceptual) · AI-assisted review | The χ(t) translation-yield picture; a regime-bound cosmological mapping. |
+| Space Expansion and Stage Dressing | Working draft | V2 (conceptual) · AI-assisted review | Bosic-slot stage dressing, χ² massive motion, and scoped cosmological correspondence at a supplied history. |
 | Derivation appendices | Working draft | V2 (conceptual) · AI-assisted review | All appendices passed at least conceptual review; load-bearing formal chains received targeted V3 review. |

@@ -2,8 +2,8 @@ schema: momentum-first.section-contribution-ledger.v1
 purpose: Public-facing section contribution and human-verification ledger for Momentum First.
 coverage:
   source: _quarto.yml project.render
-  release_candidate: v0.3.6
-  rendered_units: 24
+  release_candidate: v0.3.7
+  rendered_units: 26
 human_verification_decision:
   decided_by: Arne Klaveness
   decided_on: 2026-07-28
@@ -111,20 +111,20 @@ sections:
       Arne Klaveness explicitly confirmed partial human verification for the
       v0.3.6 candidate on 2026-07-28; no broader human verification is claimed.
 
-  - id: space-expansion-as-translation-yield
-    title: Space Expansion as Translation Yield
+  - id: space-expansion-and-stage-dressing
+    title: Space Expansion and Stage Dressing
     path: manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the translation-yield concept, physical direction, and
+      Arne supplied the stage-dressing direction, physical constraints, and
       acceptance decisions; AI-assisted contribution included formalization,
       drafting, structure, editing, source work, and review.
-    human_verification: partially_verified
+    human_verification: not_yet_verified
     verification_note: >
-      Arne Klaveness explicitly confirmed partial human verification for the
-      v0.3.6 candidate on 2026-07-28; no broader human verification is claimed.
+      The chapter was rewritten after the v0.3.6 partial human-verification
+      record; no human-verification claim is made for the v0.3.7 candidate.
 
   - id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
     title: Derivation 2.3A — Structural uniqueness of the directional shell readings
@@ -321,9 +321,9 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-5-6a-universal-true-frame-yield-and-the-bound-frame-transform
-    title: Derivation 5.6A — Universal true-frame yield and the bound-frame transform
-    path: manuscript/appendices/derivations/05-06A-universal-true-frame-yield-bound-frame-transform.qmd
+  - id: derivation-5-2a-bosic-slot-stage-dressing-and-the-chi-squared-group-velocity
+    title: Derivation 5.2A — Bosic-slot stage dressing and the chi-squared group velocity
+    path: manuscript/appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -333,12 +333,12 @@ sections:
       consistency checking, source work, editing, and review.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No separate human-verification claim is recorded for this v0.3.7
+      appendix; qualified AI review is recorded separately.
 
-  - id: derivation-5-6b-sector-consistency-under-universal-yield
-    title: Derivation 5.6B — Sector consistency under universal yield
-    path: manuscript/appendices/derivations/05-06B-sector-consistency-under-universal-yield.qmd
+  - id: derivation-5-3a-free-carrier-correspondence-under-a-yield-history
+    title: Derivation 5.3A — Free-carrier correspondence under a yield history
+    path: manuscript/appendices/derivations/05-03A-free-carrier-correspondence-under-yield-history.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -348,8 +348,38 @@ sections:
       consistency checking, source work, editing, and review.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No separate human-verification claim is recorded for this v0.3.7
+      appendix; qualified AI review is recorded separately.
+
+  - id: derivation-5-4a-lightlike-propagation-and-matched-endpoint-standards
+    title: Derivation 5.4A — Lightlike propagation and matched endpoint standards
+    path: manuscript/appendices/derivations/05-04A-lightlike-propagation-and-matched-endpoint-standards.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      No separate human-verification claim is recorded for this v0.3.7
+      appendix; qualified AI review is recorded separately.
+
+  - id: derivation-5-6a-local-covariance-and-scoped-sector-realizations
+    title: Derivation 5.6A — Local covariance and scoped sector realizations
+    path: manuscript/appendices/derivations/05-06A-local-covariance-and-scoped-sector-realizations.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      No separate human-verification claim is recorded for this v0.3.7
+      appendix; qualified AI review is recorded separately.
 
   - id: manuscript-status
     title: Manuscript Status

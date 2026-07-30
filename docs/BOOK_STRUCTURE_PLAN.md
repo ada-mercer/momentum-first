@@ -62,7 +62,7 @@ Best current rendered/planned structure:
 
 - **Front matter** = landing page plus Preface material: origin, posture, collaboration, reading guidance, and working method.
 - **Tier 1 — Foundations** = rendered chapters `Introduction` and `Foundations`.
-- **Tier 2 — Engines** = achieved or near-achieved M1 effective engines. Currently rendered chapters: `Gravity and Structured Spacetime` and `Quantum Mechanics in Momentum Language`. Next likely engine: `Space Expansion as Translation Yield`. QFT/EFT remains a candidate Tier 2 engine if it can be kept as a bounded stationary/effective foundation rather than a broad completion claim.
+- **Tier 2 — Engines** = achieved or near-achieved M1 effective engines. Currently rendered chapters: `Gravity and Structured Spacetime`, `Quantum Mechanics in Momentum Language`, and `Space Expansion and Stage Dressing`. QFT/EFT remains a candidate Tier 2 engine if it can be kept as a bounded stationary/effective foundation rather than a broad completion claim.
 - **Tier 3 — Tests, Predictions, and Failure Modes** = empirical/risk close. Near-term candidate: neutron-star shallow-heating / strong-gravity quantum-sensitivity test channel.
 - **Tier 0 — Deep Structure and Sub-Particle Models** = provisional downstream-in-reading-order treatment of underlying space/sub-particle carrier models: BFSS/string-compatible structures, torus/two-cycle models, closure/resonance, and internal geometry under M1 constraints.
 - **Appendices and Derivations** = derivation trust layer and technical support.
@@ -140,9 +140,9 @@ Foundations should not develop the gravity program. Gravity belongs to Tier 2. F
 Rendered files:
 1. `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd` — **Gravity and Structured Spacetime**
 2. `manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd` — **Quantum Mechanics in Momentum Language**
+3. `manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd` — **Space Expansion and Stage Dressing**
 
 Planned later candidates:
-3. **Space Expansion as Translation Yield** — next likely Tier 2 chapter.
 4. **QFT / EFT Foundations** — only if mature enough as a bounded stationary/effective engine.
 
 **Job:** develop M1's achieved or near-achieved effective engines in reader-facing form.
@@ -182,18 +182,22 @@ Current rendered chapter arc:
 
 This chapter has now taken over the mature `QM / Dirac bridge` burden from the old planned quantum-geometry part. Presence-vs-expression remains a light supporting stance around `\Psi`, phase, and expression/detection. Torus/internal geometry, EM projectors, full QFT, measurement theory, and compact-object phenomenology remain outside this chapter unless later maturity demands a carefully bounded cross-reference.
 
-#### Planned Tier 2 chapter — Space Expansion as Translation Yield
+#### Chapter 5 — Space Expansion and Stage Dressing
 
 **Job:** treat cosmology as a separate M1 engine, not as gravity scaled up and not merely as a fit exercise.
 
-Likely chapter burden:
-- why cosmology is a KM-B / translation-yield engine rather than a local gravity chapter;
-- `\chi(t)` as the bosic displacement-yield modifier;
-- redshift mapping `1+z = \chi_{emit}/\chi_{obs}` in its proper regime;
-- how the cosmology engine preserves the M1 variables `p`, `p_k`, and `M` without global fermic rescaling;
-- a bounded handoff to Tier 3 for observational fits, degeneracy, and falsifiers.
+Current rendered chapter arc:
+1. space expansion and the conservation problem;
+2. expansion-side core terms and variables;
+3. bosic-slot stage dressing and massive motion;
+4. light propagation and endpoint comparison;
+5. bound frames and local standards;
+6. scoped sector realizations and correspondence checks;
+7. what the expansion engine establishes.
 
-Current recommendation: make cosmology the next Tier 2 authoring target after the current plan sync. Keep ansatz menus and fit machinery out of the main engine exposition except as brief signposts.
+The chapter owns homogeneous kinematics at a supplied stage history. It keeps
+the dynamical law for that history, a closed stage action, gravitational source
+weighting, ADMC amendment, and observational closure outside the Tier 2 claim.
 
 #### Planned Tier 2 candidate — QFT / EFT Foundations
 

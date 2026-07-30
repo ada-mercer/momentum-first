@@ -22,7 +22,7 @@ defaults:
     Arne supplied the core framing and acceptance direction; AI-assisted
     contribution shaped drafting, structure, and review.
 
-# Verification below records the distinct WP2 review pass for the v0.3.6
+# Verification below records the distinct review passes current through the v0.3.7
 # candidate. It is independent of section-level human verification in
 # docs/provenance/section-ledger.yml.
 chapters:
@@ -55,11 +55,11 @@ chapters:
     note: Momentum-language reconstruction; correspondence-heavy, read provisionally.
 
   - id: expansion
-    title: Space Expansion as Translation Yield
+    title: Space Expansion and Stage Dressing
     maturity: working_draft
     verification: V2
     verified_by: AI-assisted review
-    note: The χ(t) translation-yield picture; a regime-bound cosmological mapping.
+    note: Bosic-slot stage dressing, χ² massive motion, and scoped cosmological correspondence at a supplied history.
 
 # Derivation appendices are tracked collectively for now. Promote an individual
 # appendix to its own entry (same fields as a chapter) once its status diverges

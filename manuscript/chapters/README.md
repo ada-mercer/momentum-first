@@ -18,7 +18,7 @@ Current layout:
 - `01-tier-1-foundations/02-foundations/index.qmd` — Chapter 2, Foundations.
 - `02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd` — Chapter 3, Gravity and Structured Spacetime.
 - `02-tier-2-engines/04-quantum-mechanics/index.qmd` — Chapter 4, Quantum Mechanics in Momentum Language.
-- `02-tier-2-engines/05-expansion/index.qmd` — Chapter 5, Space Expansion as Translation Yield.
+- `02-tier-2-engines/05-expansion/index.qmd` — Chapter 5, Space Expansion and Stage Dressing.
 
 ## Wrapper and section-file policy
 
