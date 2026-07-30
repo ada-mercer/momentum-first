@@ -44,6 +44,29 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.3.7 — Bosic-slot stage dressing and χ² expansion kinematics
+
+- replaced the prior translation-yield Chapter 5 with a seven-section
+  stage-dressing engine that separates conserved carrier content, dressed
+  generator value, true-frame translation, and bound-frame measurement;
+- adopted bosic-slot dressing
+  `M_χ = sqrt(p_f² + χ²p²)`, deriving the `χ²` true-frame group velocity and
+  the exact special-relativistic FLRW free-carrier velocity and drag law under
+  the stated clean correspondence;
+- preserved the lightlike law while deriving the conformal path identity,
+  matched endpoint wavelength and duration relations, and the result that the
+  kinematic map does not enlarge causal reach;
+- added scoped hydrogenic and Newtonian realizations, including first-power
+  coupling selection within the proxy Hamiltonians and standard linear matter
+  growth at a supplied background history;
+- replaced the two prior Chapter 5 appendices with four derivation appendices
+  covering generator placement, free-carrier correspondence, lightlike
+  endpoint standards, and local covariance, while keeping stage dynamics,
+  gravitational source weighting, ADMC amendment, and all-sector closure open;
+- aligned the Chapter 4 bridge, Chapter 5 reference lock, provenance ledger,
+  manuscript status, citation metadata, and Quarto render map with the new
+  package.
+
 ### 0.3.6 — Directional shell readings and release evidence
 
 - adopted directional shell readings and `p_k^\pm = M \pm p_k/2` consistently
