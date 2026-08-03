@@ -1,255 +1,248 @@
-# Tier 2 / Gravity - Author Notes
+# Gravity and Structured Spacetime — Author Notes
 
-Status: active chapter authoring map
-Updated: 2026-07-09
-Mode stack: `roles/book-prose + topics/m1/gravity-and-structured-spacetime + artifacts/manuscript + styles/book-mainline + audiences/broad-technical`
+## Job of this chapter
 
-Historical July 2026 source-law evolution is archived at `book/dev/planning/GRAVITY_AUTHOR_NOTES_HISTORY_2026-07-09.md`.
-This file records the active state only. Do not treat the archived presentation-rule or null-route planning blocks as current authoring guidance.
+Gravity is the first full Tier 2 engine of *Momentum First*. It must show how the inertial commitments of Foundations become a source-dependent physical stage without importing classical gravitational variables as M1 primitives.
 
-## Chapter Burden
-
-Chapter 3 should make gravity the first developed Tier 2 engine of the book.
-
-It should:
-- establish gravity in M1's physical-first order;
-- make the stationary source-to-field-to-observer pipeline feel achieved;
-- present the carrier source map as the active M1-native source identification;
-- keep GR/classical language downstream as correspondence and calibration;
-- give nonstationary gravity bounded room without claiming completion;
-- close with honest spacetime lessons and visible open derivation targets.
-
-The chapter should feel firmer and more concrete than Foundations, but still disciplined about claim boundaries.
-
-## Active Section Spine
-
-Rendered wrapper:
-`index.qmd`
-
-Included sections:
-1. `01-gravity-in-m1.qmd`
-2. `02-core-terms-and-variables.qmd`
-3. `03-gravitational-sources.qmd`
-4. `04-the-stationary-gravitational-field.qmd`
-5. `05-local-gravity-and-observer-bookkeeping.qmd`
-6. `06-stationary-classical-correspondence.qmd`
-7. `07-nonstationary-gravity-extension-track.qmd`
-8. `08-spacetime-lessons-and-open-boundaries.qmd`
-
-## Section Jobs
-
-### 3.1 - Gravity in M1
-
-Job: establish the physical claim before machinery appears.
-
-Keep central:
-- momentum content changes relational/spatial conditions;
-- local clocks, paths, and transported momentum read those altered conditions;
-- the primitive route is physical before mathematical.
-
-Avoid:
-- heavy equations;
-- early source-symbol machinery except as a light forward pointer;
-- making gravity sound field-theory-first or GR-geometry-first.
-
-### 3.2 - Core Terms and Variables
-
-Job: act as the concept and notation gateway.
-
-Keep central:
-- source -> field -> local readout;
-- calligraphic source variables as source packages, not carrier variables;
-- scalar-well/depth, shift/directional structure, and local readout variables.
-
-Avoid:
-- importing classical stress-tensor notation as primitive;
-- turning GR comparison into a fourth primitive layer.
-
-### 3.3 - Gravitational Sources
-
-Job: establish the carrier source map.
-
-Active source law:
+The chapter begins from observable pressure: clocks change rate, paths bend, light changes frequency, and organized motion produces directional effects. It then develops the M1 route
 
 ```text
-mathcal J_k^pm = density of (M pm p_k/2)
-mathcal M_k = mathcal M = varrho
-mathcal P_k = j_k
+source -> field -> local readout
 ```
 
-Keep central:
-- the source identification (SI) is a named postulate;
-- full `M` appears on every axis, with no `M/3` or axis-share source law;
-- `C_ij` is the second transport moment for full momentum accounting, not a third active scalar/shift field source;
-- pressure, stress, and radiation do not add separate M1 well weight;
-- classical pressure/radiation weights are subsystem apportioning handled in 3.6 and Appendix 3.3A.
+before turning downstream to classical correspondence.
 
-Avoid:
-- reviving the superseded presentation rule;
-- using `T_munu`, Komar weight, radiation factor two, or `varrho/3` as M1 source targets;
-- treating the source map as fully micro-derived.
+The chapter should establish:
 
-### 3.4 - The Stationary Gravitational Field
+- gravity as momentum content structuring the relational stage;
+- the opposed positive source-channel densities $\mathcal J_k^\pm$;
+- SI as the chapter's carrier-to-source postulate;
+- the exact free-carrier consequences $\mathcal M=\varrho$, $\mathcal P_i=j_i$, and channel positivity, given SI;
+- the stationary scalar $1/R$ and Poisson map as the strongest achieved field result;
+- an action-consistent point-carrier account of clocks, rulers, massive motion, null motion, and exact local $c$;
+- the reciprocity boundary connecting ruler response to scalar source response in the declared carrier and response class;
+- Newtonian recovery and other classical tests as downstream correspondence;
+- the different maturity of the scalar, spatial, directional, and nonstationary sectors;
+- a clear established / conditional / open close and a clean handoff to quantum mechanics.
 
-Job: build the stationary field representation from the already-earned source packages.
+It should not present gravity as a completed nonlinear, rotating, radiative, or strong-field theory.
 
-Keep central:
-- scalar well from the direction-blind even package;
-- directional/shift field from the odd package;
-- independent `C_ij` contributions are neglected in the achieved minimal stationary scalar-plus-shift construction;
-- two aspects of deformation: clock depth and weak-field spatial stretch;
-- `kappa_A=4` as a derived packaging value whose chain is summarized later in 3.6.
+## Intended reader and tone
 
-Avoid:
-- rederiving the source split;
-- pulling density/current calibration into the native field-construction section.
+The intended reader has completed Foundations and knows the roles of $p_f$, $p$, $M$, $p_k$, $p_k^\pm$, ADMC, and the stage/actor distinction. The reader does not yet know the gravity-side source fields, field variables, or observer packages.
 
-### 3.5 - Local Gravity and Observer Bookkeeping
+The chapter should feel:
 
-Job: show how local clocks, transported momentum, packaged local magnitude, and stationary generator are read once the field is present.
+- physical before formal;
+- technically firmer than Foundations;
+- native-M1-first;
+- explicit about what is postulated, derived, conditional, or open;
+- confident about the stationary scalar construction without transferring that confidence to unfinished sectors;
+- readable by a broad technical audience without turning every paragraph into a qualification ledger.
 
-Keep central:
-- `p_{f,c}=p_f G` as contextual clock-scale readout;
-- `Pi_i` as shift-dressed transport momentum;
-- `M_{g,loc}` as packaged local magnitude, distinct from `H_{g,stat}`;
-- observer bookkeeping as readout, not source or field construction.
+Use status language where it changes what the reader may infer. State a boundary once, clearly, and then let the physical and mathematical construction move.
 
-Avoid:
-- calling `M_{g,loc}` simple local energy in the mainline;
-- letting quantum/operator material take over. That belongs to Chapter 4.
+## Governing architecture
 
-### 3.6 - Stationary Classical Correspondence
-
-Job: collect downstream classical and GR-facing comparison.
-
-Keep central:
-- static density calibration `mathcal M <-> c rho`;
-- momentum-form correspondence matrix `P^{mu nu} = [[M, P_j], [P_i, C_ij]]` with `T^{mu nu}=c P^{mu nu}`;
-- Newtonian scalar limit;
-- shift-current comparison;
-- derived `kappa_A=4` chain: SI -> `P_i=j_i`, P2 -> `sigma=1`, boost consistency -> `kappa_A=4`;
-- PPN gamma, light bending, Shapiro, and frame-drag endpoint as stationary weak-field checks;
-- pressure/radiation reconciliation: total/monopole agreement for isolated stationary systems, spherical exterior agreement, aspherical stress-multipole divergence.
-
-Avoid:
-- using correspondence equations as primitive source-law definitions;
-- saying dense-star maximum-mass predictions are already delivered. They require an M1 TOV-analogue.
-
-### 3.7 - Nonstationary Gravity Extension Track
-
-Job: present bounded time-dependent gravity.
-
-Keep central:
-- locked scalar+shift linear baseline;
-- retarded solutions and exact stationary recovery;
-- completion ladder for nonlinear, tensor, radiative, and rotating-source work.
-
-Avoid:
-- claiming full nonlinear/radiative completion;
-- letting nonstationary speculation blur the achieved stationary backbone.
-
-### 3.8 - Spacetime Lessons and Open Boundaries
-
-Job: close the chapter by naming what gravity has forced M1 to say about spacetime and what remains unearned.
-
-Keep central:
-- structured spacetime is now a real physical layer in M1;
-- stationary gravity is the achieved backbone;
-- nonstationary gravity is a bounded extension track;
-- `kappa_A` is no longer an open calibration debt;
-- SI and P2 are the named hardening targets;
-- compact-star structure is a Tier 3 derivation target, not a completed prediction set.
-
-Avoid:
-- triumphal closure;
-- hiding open nonlinear, rotating-source, tensor, radiative, SI, or P2 burdens.
-
-## Layer Discipline
-
-Keep the three layers visibly distinct:
+The chapter follows the Tier 2 Engine movement:
 
 ```text
-physical layer -> M1 mathematical layer -> GR/classical correspondence layer
+physical pressure -> Core Terms and Variables -> native source construction
+-> stationary field construction -> operational readout
+-> correspondence and controlled discriminator
+-> bounded nonstationary extension -> established / conditional / open handoff
 ```
 
-- Physical layer: momentum content changes relational/spatial conditions.
-- M1 mathematical layer: carrier source map, scalar well, shift, local readout.
-- GR/classical correspondence layer: density/current calibration, metric-facing dictionary, standard tests, Kerr/frame-drag comparison.
+Three layers must remain distinct:
 
-Do not let `T_munu`, pressure/radiation active weight, lapse/shift vocabulary, or metric notation become the native source law. They are allowed only as comparison, calibration, or appendix-facing audit language.
+1. **Source:** momentum content organized as $\mathcal J_k^\pm$, $\mathcal M$, $\mathcal P_i$, and $\mathcal C_{ij}$.
+2. **Field:** the achieved scalar well $\theta_0$ and the provisional transverse response $\theta_i^\perp$.
+3. **Local readout:** clocks, rulers, transport, and the diagnostic directional packages through which material systems read the field.
 
-## Current Source-Law Status
+Classical density, stress-energy, potential, metric, PPN, Kerr, and Lense–Thirring notation belongs only to the correspondence layer. It may test or translate the M1 construction; it must not define the native source law retroactively.
 
-Active source law: carrier source map.
+## Rendered section sequence and ownership
 
-```text
-mathcal J_k^pm = density of (M pm p_k/2)
-mathcal M_k = mathcal M = varrho
-mathcal P_k = j_k
-```
+The wrapper `index.qmd` includes eight sections in this order.
 
-Status:
-- SI is a named source-identification postulate.
-- Given SI, `mathcal M=varrho`, `mathcal P_k=j_k`, and positivity are exact consequences.
-- P2 is comoving-cycle readout / depth=stretch, giving weak-field `sigma=1`.
-- `kappa_A=4` is derived conditional on SI and P2, with frame drag as endpoint audit.
-- Pressure, stress, and radiation enhancements are not M1 source weights. They are classical subsystem apportioning that cancels in total over isolated stationary systems.
-- The full momentum-transport accounting includes `C_ij` as a second transport moment; Chapter 3.4 neglects independent `C_ij` field contributions to preserve the minimal stationary scalar-plus-shift construction.
-- The deliberate divergence remains in local apportioning, aspherical stress multipoles, compact-star structure, and cosmology handoff.
+### 3.1 — Gravity in M1
 
-## Appendix Support Map
+**File:** `01-gravity-in-m1.qmd`
 
-Current rendered gravity support appendices:
+Open from altered physical behavior. Establish that momentum content changes the local relational stage and that clocks, paths, and transported momentum respond to the local condition where they are.
 
-- `03-03A-carrier-source-map.qmd` - SI, carrier map consequences, pressure/radiation reconciliation.
-- `03-03B-null-probe-diagnostic.qmd` - rejected null-route diagnostic and no-go containment.
-- `03-03C-momentum-manifestations.qmd` - source-manifestation lookup table.
-- `03-04A-stationary-source-to-field-map.qmd` - native source-to-field map.
-- `03-04B-depth-equals-stretch.qmd` - P2, weak-field spatial trace, `sigma=1`.
-- `03-05A-local-observer-bookkeeping.qmd` - local readout support.
-- `03-06A-stationary-correspondence-calibration.qmd` - downstream density/current/Newtonian/metric-facing calibration.
-- `03-06B-frame-drag-coefficient-audit.qmd` - endpoint audit of `kappa_A=4`.
-- `03-06C-boost-consistency-shift-coefficient.qmd` - boost relation `kappa_A=2(1+sigma)/eta`.
-- `03-07A-nonstationary-linear-baseline.qmd` - scalar/shift retarded baseline and stationary recovery.
-- `03-07B-nonstationary-completion-ladder.qmd` - nonlinear/tensor/radiative completion ladder.
+Keep equations, notation inventories, correspondence, and maturity ledgers out of the opening. Its job is to make the construction necessary before naming its machinery.
 
-Appendices should carry algebra, coefficient audits, sign checks, no-go routes, and benchmark detail. Mainline sections should carry the physical object, its job, its regime, and what the reader should take forward.
+### 3.2 — Core Terms and Variables
 
-## Current Open Work
+**File:** `02-core-terms-and-variables.qmd`
 
-Short active queue:
+Serve as the chapter's declaration page and stable notation reference. Introduce source, field, and local-readout objects in that order. Give each object its symbol, role, and necessary status without deriving later results.
 
-1. Relabel or de-tautologize `check_carrier_source_map.py` and `check_depth_stretch_pipeline.py` so they are not overread as independent proof of SI.
-2. Align Appendix 3.6B wording: "local energy" -> "packaged local magnitude" if still present.
-3. Derive the M1 hydrostatic-equilibrium / TOV-analogue before making dense-star maximum-mass, radius, or tidal-deformability predictions.
-4. Harden SI with a micro-model of why stage deformation couples to the shell-reading source map.
-5. Harden P2 with an equilibrium-size defense for comoving-cycle readout.
-6. Continue longer-range gravity work: nonlinear `gamma_ij` dynamics, exact native rotating-source closure, tensor/radiative completion.
+Keep $\theta_0$ visibly firmer than $\theta_i^\perp$. Reserve $A_i$, $B_{ij}$, $\Pi_i$, and the shift-dependent part of $M_{g,\mathrm{loc}}$ as provisional directional bookkeeping. Do not let the gateway become a compressed field derivation or correspondence section.
 
-Do not keep old completed July repair items as active work. They live in the archive and reviews.
+### 3.3 — Gravitational Sources
 
-## Verification Expectations
+**File:** `03-gravitational-sources.qmd`
 
-For gravity manuscript or appendix edits, use the relevant subset:
+Own the native source construction. Begin from the local positive channel densities $\mathcal J_k^\pm(x)$ and distinguish the source location $x$ from later integration and observation coordinates.
 
-- `python3 tooling/scripts/check_crossrefs.py`
-- `python3 tooling/scripts/check_carrier_source_map.py`
-- `python3 tooling/scripts/check_depth_stretch_pipeline.py`
-- `python3 tooling/scripts/audit_frame_drag_coefficient.py`
-- `quarto render --profile pdf` when rendered `.qmd` files change.
+State SI as a gravitational postulate:
 
-Treat the two new source/depth scripts as regression and coherence guards unless they are independently strengthened.
+$$
+\mathcal J_k^\pm(x)
+=
+\left\langle\sum_a
+\left(M_a\pm\frac{1}{2}p_{k,a}\right)
+\right\rangle_x.
+$$
 
-## Key Context Pointers
+Given SI, derive the direction-blind even source $\mathcal M=\varrho$, the odd source $\mathcal P_i=j_i$, and channel positivity. Treat $\mathcal C_{ij}$ as the second transport moment of the same momentum content, not as a new source substance. Its independent gravitational response remains open.
 
-Active/current:
-- `book/dev/reviews/GRAVITY_APPENDIX_REPAIR_AND_AUTHOR_NOTES_PLAN_2026-07-09.md`
-- `book/dev/reviews/GRAVITY_APPENDICES_INDEPENDENT_REVIEW_2026-07-09.md`
-- `book/dev/reviews/GRAVITY_CHAPTER_CARRIER_MAP_REVIEW_2026-07-07_second-pass.md`
-- `book/dev/reviews/GRAVITY_CHAPTER_CARRIER_MAP_REVIEW_2026-07-06.md`
-- `book/dev/planning/GRAVITY_AUTHOR_NOTES_FULL_REWRITE_PLAN_2026-07-09.md`
+Keep free-carrier consequences distinct from interacting and composite allocation. Binding energy, mediator momentum, wall tension, and improvements require a conserved interaction ledger that the chapter does not yet possess.
 
-Historical:
-- `book/dev/planning/GRAVITY_AUTHOR_NOTES_HISTORY_2026-07-09.md`
+### 3.4 — The Stationary Gravitational Field
 
-The old gravity draft remains quarantined in `_old/`. Do not patch it forward.
+**File:** `04-the-stationary-gravitational-field.qmd`
+
+Own the native stationary source-to-field construction. The achieved backbone is
+
+$$
+\mathcal M
+\longrightarrow
+\theta_0
+\longrightarrow
+G,
+$$
+
+with the scalar $1/R$ map and its Poisson form. There is one axis-independent scalar source; no sum over three copies of $\mathcal M_k$ is introduced.
+
+Keep the directional route separate:
+
+$$
+\mathcal P_i^\perp
+\longrightarrow
+\theta_i^\perp
+\longrightarrow
+A_i.
+$$
+
+The first arrow is a provisional transverse response assumption. The second is observer-facing packaging whose physical coefficient, sign, action, and transport meaning are not closed. Do not derive the scalar and directional fields from one common primitive response merely because both use the stationary $1/R$ kernel.
+
+Treat $G=\sqrt{1-2\theta_0}$ as an exact definition of the selected clock-depth package, not as proof of nonlinear spatial or strong-field closure. A physical ruler response is not derived by the scalar map alone.
+
+### 3.5 — Local Gravity and Observer Bookkeeping
+
+**File:** `05-local-gravity-and-observer-bookkeeping.qmd`
+
+Own the operational readout. Derive clock, ruler, massive-carrier motion, massless motion, and local speed from one displayed point-carrier generator rather than assigning them independently.
+
+The scalar carrier block establishes an internally consistent point-carrier clock/ruler/transport package and exact local $c$. It also exposes the reciprocity boundary: within the declared algebraic isotropic shell and regular self-adjoint response class, a content-only operational clock response cannot coexist with a nonzero content-driven isotropic ruler response while reciprocal work is retained.
+
+Keep that result scoped. It is not a universal theorem against every possible carrier theory and does not by itself disprove primitive SI.
+
+Retain $A_i$, $\Pi_i$, $\gamma^{ij}$, and shift-dependent $M_{g,\mathrm{loc}}$ as local diagnostics. They identify what a completed directional observer map must organize; they are not a universal generator or a completed work law.
+
+### 3.6 — Stationary Classical Correspondence
+
+**File:** `06-stationary-classical-correspondence.qmd`
+
+Own all classical and GR-facing translation. Begin with dimensional calibration, then recover the Newtonian potential and Poisson equation. Keep the achieved scalar correspondence distinct from the spatial and directional targets.
+
+The standard weak ruler and light response, the boost relation, and the rotating endpoint $\lvert\kappa_A\rvert=4$ are compatibility and regression targets. They do not form a derived source–action–observer pipeline. Kerr and Lense–Thirring appear only as weak stationary correspondence; there is no exact Kerr pullback or native rotating-source solution.
+
+The conserved radiation cavity is a controlled conditional discriminator. Under SI plus the minimal stationary scalar field/readout map, its exterior monopole agrees with GR while its center-to-inner-wall shift is half the GR value at leading weak-field order. Do not generalize this into a universal pressure rule or present it without its complete-source and reopening conditions.
+
+### 3.7 — Nonstationary Gravity: Extension Track
+
+**File:** `07-nonstationary-gravity-extension-track.qmd`
+
+Extend the chapter only far enough to distinguish two levels of time-dependent work.
+
+The scalar wave equation is an action-supported point-carrier candidate with a positive free mode, causal retarded propagation, reciprocal point-carrier work, and exact stationary recovery. Its interacting source and standard weak-light readout are not jointly closed.
+
+The transverse vector equation is a provisional field-side PDE seed. A retarded solution and stationary limit do not by themselves establish a physical vector mode, correct rotating-source sign, reciprocal current-work ledger, or observer-axis transport.
+
+Keep nonlinear spatial dynamics, tensor and radiative sectors, waveform observables, and exact rotating solutions open.
+
+### 3.8 — Spacetime Lessons and Open Boundaries
+
+**File:** `08-spacetime-lessons-and-open-boundaries.qmd`
+
+Close by separating established, conditional, and open results. Do not replay the derivations.
+
+The close should leave the reader with one earned ontological change: the relational stage is now source-dependent and physically readable. It should also make clear that the stationary scalar engine is more mature than the spatial, directional, interacting-matter, and nonstationary completion layers.
+
+Hand off to Chapter 4 by asking how momentum-bearing systems acquire quantum state structure inside this gravitationally conditioned stage.
+
+## Maturity map
+
+### Established within the stated premises
+
+- SI is the chapter's declared source postulate.
+- Given SI, the displayed free-carrier ledger yields $\mathcal M=\varrho$, $\mathcal P_i=j_i$, and positive $\mathcal J_k^\pm$.
+- The stationary scalar $1/R$/Poisson map and Newtonian recovery are the strongest achieved gravitational results.
+- The displayed scalar point-carrier action supplies a mutually consistent clock, ruler, massive/null map, exact local $c$, and reciprocal work ledger.
+- The single-shell and regular multisector reciprocity obstructions hold within their declared classes.
+
+### Conditional or target-level
+
+- The $\gamma=1$ spatial and light response is a required correspondence target, not a result of the content-only branch.
+- The directional transverse response, shift packaging, boost identity, and rotating coefficient endpoint are provisional or conditional.
+- The radiation-cavity difference depends on SI, the minimal scalar response, and the present complete-source allocation.
+- The scalar nonstationary equation is an action-supported point-carrier candidate rather than a complete interacting theory.
+
+### Open
+
+- microscopic or interaction-action support for SI;
+- conserved allocation of binding, mediator, wall, and composite momentum content;
+- any independent scalar response to $\mathcal C_{ij}$;
+- a physical spatial response compatible with source/readout reciprocity;
+- a positive causal directional action with the observed sign, reciprocal work, and observer transport;
+- nonlinear, strong-field, hydrostatic, exact rotating, tensor, and radiative completion.
+
+## Notation and conceptual discipline
+
+- Use the p-based momentum family inherited from Foundations.
+- $p_k$ is signed; $p_k^\pm=M\pm p_k/2$ are positive opposed shell readings.
+- $\mathcal J_k^\pm$ are source-density fields, not the particle readings themselves.
+- $\mathcal M$, $\mathcal P_i$, and $\mathcal C_{ij}$ are source packages or moments, not separate substances.
+- $\theta_0$ is the achieved stationary scalar field; $\theta_i^\perp$ is the provisional transverse response.
+- $A_i$ is the observer-facing shift package; $\mathcal A_i$ is the nonstationary action/PDE coordinate. Do not conflate them.
+- The scalar coefficient $\gamma$ and the indexed diagnostic object $\gamma^{ij}$ have different roles.
+- $M_{g,\mathrm{loc}}$ is a packaged local diagnostic magnitude, not automatically an energy or universal generator.
+- Keep source coordinates, integration variables, and observation coordinates explicit when integral maps are introduced.
+- Use Quarto-safe math syntax and consult `/home/adah/.hermes/notes/QUARTO_MATH_CHEATSHEET.md` when editing formulas.
+
+## Appendix trust layer
+
+The mainline should carry the physical object, governing construction, result, regime, and reader-facing boundary. Detailed algebra, coefficient audits, obstruction proofs, sign checks, and benchmark calculations belong in the derivation appendices:
+
+- **3.3A** — carrier source map and exact free-carrier consequences;
+- **3.3B** — rejected null-probe diagnostic;
+- **3.3C** — momentum-manifestation source dictionary;
+- **3.4A** — stationary source-to-field map and conventions;
+- **3.4B** — scalar carrier/readout consistency and single-shell reciprocity;
+- **3.4C** — regular multisector reciprocity obstruction;
+- **3.5A** — scalar versus directional observer bookkeeping;
+- **3.6A** — stationary dimensional and Newtonian correspondence;
+- **3.6B** — frame-drag coefficient and sign audit;
+- **3.6C** — conditional boost-consistency relation;
+- **3.6D** — conserved radiation-cavity discriminator;
+- **3.7A** — scalar nonstationary action candidate and work ledger;
+- **3.7B** — directional PDE and higher completion boundaries.
+
+Use appendices to support trust, not to make the mainline read like a derivation report. Do not promote an appendix candidate, obstruction, or fitted endpoint beyond the maturity stated in the chapter.
+
+## Prose and structural guidance
+
+- Begin each section from its physical object or tension, then introduce the mathematics needed to resolve it.
+- Preserve the order source, field, readout, correspondence. The order is part of the argument.
+- Let the scalar construction carry the chapter's confidence.
+- Keep directional and spatial caveats local to those sectors rather than weakening every gravity claim.
+- State premises before conditional results.
+- Prefer one sharp maturity statement to repeated hedging.
+- Keep equations that define the engine in the mainline; move long derivations and coefficient audits to appendices.
+- Do not turn correspondence into ontology or resemblance into derivation.
+- Do not use exact Kerr, completed frame dragging, full nonlinear gravity, radiative closure, or strong-field prediction language.
+- End with the structured-stage result and the quantum handoff, not with a research-management list.

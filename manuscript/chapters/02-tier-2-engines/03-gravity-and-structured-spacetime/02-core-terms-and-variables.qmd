@@ -15,7 +15,7 @@ The source layer names the momentum content that acts gravitationally. The field
 The source layer begins from the directional shell readings used in Foundations. For an oriented unit direction $\hat{k}$, the carrier readings are
 
 $$
-p_k^\pm=M\pm\frac12p_k.
+p_k^\pm=M\pm\frac{1}{2}p_k.
 $$
 
 For gravitational sourcing, write the densities of these opposed readings as
@@ -26,9 +26,9 @@ $$
 \mathcal{J}_k^-.
 $$
 
-Each is a local source-density field with units of kg/(s m$^2$) — momentum content per unit volume, sorted by directional sense. They are the field image of the two opposed shell readings accumulated over the carriers present at a point. Each channel is a positive directional total in its own right, never a signed component; the precise identification is developed in the next section.
+Each is a local source-density field with units of kg/(s m$^2$) — momentum content per unit volume, sorted by directional sense. They are the field image of the two opposed shell readings accumulated over the carriers present at a point. Each channel is a positive directional total in its own right, never a signed component. Chapter 3 adopts this identification as its source postulate, SI; the precise statement and its free-carrier consequences are developed in the next section.
 
-From these, two combinations are extracted
+From these, two combinations are extracted:
 
 $$
 \mathcal{M}_k = \frac{\mathcal{J}_k^+ + \mathcal{J}_k^-}{2},
@@ -36,25 +36,41 @@ $$
 \mathcal{P}_k = \mathcal{J}_k^+ - \mathcal{J}_k^-.
 $$
 
-The quantity $\mathcal{M}_k$ is the even or additive source channel. It captures the source role that feeds the scalar-well side of gravity. The quantity $\mathcal{P}_k$ is the odd or directional source channel. It captures the imbalance that feeds shift, rotation, and frame-drag-like structure.
+The quantity $\mathcal{M}_k$ is the even or additive source channel. It captures the source role that feeds the scalar-well side of gravity. The quantity $\mathcal{P}_k$ is the odd or directional source channel. It captures the imbalance associated with directional and rotational structure.
 
 Here the subscript $k$ labels the chosen direction used in the source split. It should not be confused with the core momentum $M$ introduced in Foundations. The point of $\mathcal{M}_k$ is source bookkeeping: it names the even gravitational source package associated with direction $k$.
 
-This is the source-side reason gravity is not introduced from a single undifferentiated scalar. A scalar density can be the right operational compression in a stationary overlap regime, but the primitive source story retains a directional split. The next section develops that split and shows how it is compressed into usable density and current variables.
+A second transport moment,
+
+$$
+\mathcal C_{ij}
+:=
+\left\langle\sum_a\frac{p_{i,a}p_{j,a}}{M_a}\right\rangle,
+$$
+
+records internal momentum transport. Its gravitational role beyond the minimal scalar and directional source packages remains open.
+
+For later use, define the mass-density-form variable
+
+$$
+\rho_M:=\frac{\mathcal M}{c},
+$$
+
+and let $t_*$ denote the action evolution parameter normalized to the asymptotic clock.
 
 ### Field-side variables
 
-The stationary field layer is led by three objects:
+The stationary field layer distinguishes two objects:
 
 $$
 \theta_0,
 \qquad
-A_i,
-\qquad
-\gamma_{ij}.
+\theta_i^\perp.
 $$
 
-The scalar variable $\theta_0$ is the well variable: it tracks the depth-like part of the gravitational structure. The shift field $A_i$ tracks directional and rotational structure. The spatial metric sector $\gamma_{ij}$ belongs to the fuller stationary dictionary, though the first stationary pass is led by the scalar and shift sectors.
+The scalar variable $\theta_0$ is the well variable: it tracks the depth-like part of the gravitational structure. It belongs to the achieved stationary scalar map.
+
+The transverse variable $\theta_i^\perp$ represents the provisional directional response to the odd source. Its field equation is retained as a response seed rather than as a closed physical directional theory.
 
 A useful scalar package built from the well variable is
 
@@ -64,19 +80,17 @@ $$
 
 In the stationary grammar, $G$ functions as the local gravitational clock factor. It tells how the fermic clock scale is read through the gravitational structure.
 
-The shift sector also has a circulation-like object,
+The chapter also reserves $A_i$ for a proposed observer-facing shift package. Its circulation-like object is
 
 $$
-B_{ij}=\partial_i A_j-\partial_j A_i,
+B_{ij}=\partial_i A_j-\partial_j A_i.
 $$
 
-which marks the part of the field associated with directional circulation and frame-drag-like behavior.
-
-At this stage, these variables should be read by role rather than by full derivation. The scalar well carries depth. The shift carries directional structure. The spatial sector carries the geometry needed for local momentum readout. The following sections give the stationary equations, sign conventions, and correspondence limits.
+Both symbols remain useful for directional bookkeeping, but their physical action and observer map are provisional. The spatial ruler response is likewise left to the carrier construction and later correspondence rather than declared here as an established field sector.
 
 ### Local-readout variables
 
-The observer-facing layer contains the quantities through which the field becomes local physics. The main variables are
+The observer-facing layer contains the quantities through which the field becomes local physics. The main variables retained from the stationary grammar are
 
 $$
 p_{f,c},
@@ -88,46 +102,40 @@ M_{g,loc},
 H_{g,stat}.
 $$
 
-The quantity $p_{f,c}$ is the context-dressed fermic scale. It is the local gravitational reading of the clock-carrying momentum scale $p_f$. In the stationary scalar grammar, the leading relation is
+The quantity $p_{f,c}$ is the context-dressed fermic scale. It is the local gravitational reading of the clock-carrying momentum scale $p_f$. In the stationary scalar grammar,
 
 $$
-p_{f,c}=p_f G.
+p_{f,c}=p_fG.
 $$
 
-The quantity $\Pi_i$ is the transport momentum read against the local background rather than against the flat inertial stage. In the stationary shift grammar, it takes the schematic form
+The quantity $\Pi_i$ is momentum read against a proposed local directional frame:
 
 $$
-\Pi_i = p_i - p_{f,c} A_i.
+\Pi_i=p_i-p_{f,c}A_i.
 $$
 
-From these pieces one builds a local packaged magnitude, denoted $M_{g,loc}$. This is not the same thing as the stationary generator $H_{g,stat}$. The first is a local magnitude read from the dressed clock scale and local transport momentum. The second is the generator used to describe stationary transport.
+From these pieces one may form the diagnostic local magnitude $M_{g,loc}$. It packages the context-dressed fermic scale together with momentum read in the proposed local directional frame; its explicit realization belongs to the observer-bookkeeping section.
 
-Keeping them separate prevents a common confusion: local bookkeeping and stationary evolution are related, but they are not the same object.
+The quantities $A_i$, $\Pi_i$, and the shift-dependent part of $M_{g,loc}$ are provisional observer-facing bookkeeping. They are not a universal physical generator.
+
+The symbol $H_{g,stat}$ is reserved for a stationary generator supplied by an explicitly displayed action. It should not be identified with the diagnostic magnitude $M_{g,loc}$. Section 3.5 develops the action-supported scalar clock, ruler, and transport map before returning to the directional diagnostics.
 
 ### The gravity route
 
-The stationary grammar can now be written compactly:
+The gravity grammar can now be written compactly:
 
 $$
-(\mathcal{J}_k^\pm)
+(\mathcal J_k^\pm)
 \to
-(\mathcal{M}_k,\mathcal{P}_k)
+(\mathcal M,\mathcal P_i,\mathcal C_{ij})
 \to
-\text{scalar/directional deformation}
+(\theta_0,\theta_i^\perp)
 \to
-(\theta_0,A_i,\gamma_{ij})
-\to
-(G,p_{f,c},\Pi_i,M_{g,loc}).
+\text{local clocks, rulers, and transport}.
 $$
 
-This line is the route through the next several chapters. Directional source channels are first separated into even and odd roles. Those roles feed scalar-well and shift field structure. The resulting background is then read locally through clock dressing and transport bookkeeping.
+This line fixes the order of construction. The source packages come first. They feed an achieved scalar field and a separate provisional directional response. Local carrier variables then determine what clocks, rulers, and transport can read from that structure.
 
-![Stationary gravity grammar in M1. The source layer packages directional momentum content, the field layer builds the stationary scalar-well and shift structure, and the observer layer reads local clocking and transport from that background.](../../../../figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png){#fig-stationary-gravity-grammar fig-align="center" width="100%"}
+![Stationary gravity grammar in M1. The source layer packages directional momentum content, the field layer displays the scalar well and the reserved directional-shift notation, and the observer layer collects local clocking and transport variables. The diagram is a map of roles, not a claim that every arrow has the same maturity.](../../../../figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png){#fig-stationary-gravity-grammar fig-align="center" width="100%"}
 
-@fig-stationary-gravity-grammar gives the compact visual form of the same route. It should be read as a map, not as a proof. The proof burden is distributed across the following sections: source structure comes next, the stationary field equations follow, local observer bookkeeping comes after that, and the nonstationary extension is introduced only once the stationary package is clear.
-
-The strongest claims in the gravity chapter are stationary. The scalar-well plus shift package has a clean Newtonian limit and a readable weak and moderate correspondence dictionary. Stronger stationary correspondence targets are discussed only after the scalar-well, shift, and observer bookkeeping have been established.
-
-The nonstationary extension later in the chapter keeps the same scalar and shift language but gives it a locked linear propagation baseline. That baseline is real enough to state clearly, with retarded solutions and exact stationary recovery. It remains bounded, and full nonlinear tensor-radiative gravity completion remains open.
-
-The next section can now focus on one layer only: gravitational sources.
+@fig-stationary-gravity-grammar gives the visual form of the same route. Source structure comes next, followed by the stationary field construction and local observer bookkeeping. The nonstationary extension later in the chapter keeps the same distinction: the scalar equation is an action-supported point-carrier candidate, while the vector equation remains a provisional PDE seed.

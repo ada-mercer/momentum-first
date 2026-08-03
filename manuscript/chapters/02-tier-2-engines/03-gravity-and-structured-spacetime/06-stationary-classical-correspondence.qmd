@@ -1,245 +1,255 @@
 ## Stationary Classical Correspondence
 
-The previous sections built the stationary gravity pipeline in M1 language:
-
-$$
-\mathcal{J}_k^\pm
-\longrightarrow
-(\theta_0,\theta_i)
-\longrightarrow
-(G,A_i,B_{ij})
-\longrightarrow
-\text{local observer bookkeeping}.
-$$
-
-This section collects the classical comparison material in one place. Its purpose is not to replace the M1 variables with classical density, current, or metric notation. Its purpose is to show how the M1 stationary field package is calibrated against the familiar stationary limits of gravity.
-
-That ordering matters. The previous sections did not start from classical density, current, or metric variables and then rename them. They first built a native map from positive momentum-source channels into scalar-well and directional field structure. The correspondence task is to check how that native map faces the familiar stationary language once the M1 construction is already on the table.
+The native construction has now separated three things: the SI source packages, the achieved stationary scalar map, and the narrower carrier and directional realizations. Classical correspondence can therefore test each layer without turning classical variables into M1's primitive language.
 
 ### Source-density calibration
 
-The primitive source channels $\mathcal{J}_k^\pm$ and their even packages $\mathcal{M}_k$ have units
+The even source is a momentum-content density,
 
 $$
-[\mathcal{M}_k]=\mathrm{kg\,s^{-1}m^{-2}}.
+[\mathcal M]=\mathrm{kg\,s^{-1}m^{-2}},
 $$
 
-Ordinary mass density has units
+whereas ordinary mass density has units kg m$^{-3}$. Cold static matter therefore calibrates as
 
 $$
-[\rho]=\mathrm{kg\,m^{-3}}.
+\boxed{\mathcal M=c\rho}.
 $$
 
-The extra factor is one power of velocity. Under the carrier map the even package is the core-momentum density on every axis, so the static calibration is
-
-$$
-\mathcal{M} \longleftrightarrow c\rho,
-$$
-
-the same on each of the three axes — the axis label on $\mathcal{M}_k$ is dropped because the carrier map makes the even package direction-blind. For a static source with no directional imbalance,
-
-$$
-\mathcal{J}_k^+=\mathcal{J}_k^-=c\rho,
-\qquad
-\mathcal{P}_k=0.
-$$
-
-The six positive channels are therefore not six copies of the classical source. They are three opposed shell-reading pairs whose common even package reads the scalar source $c\rho$ in the static overlap.
-
-For the broader stress-energy comparison, the M1 source packages can be assembled into a momentum-form source matrix,
+The convenient mass-density-form variable is $\rho_M=\mathcal M/c$. The first and second carrier moments may be assembled into the correspondence matrix
 
 $$
 P^{\mu\nu}
 =
 \begin{pmatrix}
-\mathcal{M} & \mathcal{P}_j \\
-\mathcal{P}_i & \mathcal{C}_{ij}
-\end{pmatrix}.
-$$
-
-Here $\mathcal{C}_{ij}$ is the directional momentum-coupling density, the second transport moment introduced in the source layer. In classical language it supplies the spatial stress components. The corresponding stress-energy matrix is
-
-$$
-T^{\mu\nu}=c\,P^{\mu\nu},
-$$
-
-so componentwise
-
-$$
-T^{00}=c\,\mathcal{M},
+\mathcal M & \mathcal P_j\\
+\mathcal P_i & \mathcal C_{ij}
+\end{pmatrix},
 \qquad
-T^{0i}=c\,\mathcal{P}_i,
-\qquad
-T^{ij}=c\,\mathcal{C}_{ij}.
+T^{\mu\nu}=cP^{\mu\nu}.
 $$
 
-This is a correspondence matrix, not a new source ontology. The matrix entries are moments of one local momentum content: scalar/even content, net directional imbalance, and directional transport coupling. The stationary scalar-and-shift construction of the previous sections used only $\mathcal{M}$ and $\mathcal{P}_i$ as independent field inputs; $\mathcal{C}_{ij}$ restores the spatial stress side of the classical comparison without turning pressure or stress into primitive source substances.
+Thus, componentwise,
 
-### Newtonian scalar limit
+$$
+T^{00}=c\mathcal M,
+\qquad
+T^{0i}=c\mathcal P_i,
+\qquad
+T^{ij}=c\mathcal C_{ij}.
+$$
 
-The M1 scalar field equation can be written as
+This is a correspondence matrix, not a new source ontology. Its entries are moments of one local momentum content: scalar/even content, net directional imbalance, and directional transport coupling. The stationary scalar construction uses $\mathcal M$ as its achieved source. The provisional directional response uses $\mathcal P_i$. The matrix simply shows how those native packages face familiar energy, current, and stress components after the M1 source grammar is already in place.
+
+### Newtonian recovery
+
+The stationary scalar equation is
 
 $$
 \Delta\theta_0
-=
--\frac{4\pi G_N}{c^3}\,\mathcal{M}.
+=-\frac{4\pi G_N}{c^3}\mathcal M.
 $$
 
-Using the static isotropic calibration gives
+With $\mathcal M=c\rho$ and
 
 $$
-\Delta\theta_0
-=
--\frac{4\pi G_N}{c^2}\rho.
+U:=-c^2\theta_0,
 $$
 
-Define the ordinary Newtonian potential by
+it becomes
 
 $$
-U:=-c^2\theta_0.
+\boxed{\Delta U=4\pi G_N\rho}.
 $$
 
-Then the scalar equation becomes
-
-$$
-\Delta U=4\pi G_N\rho.
-$$
-
-For an exterior spherical source,
+For a spherical exterior source of mass $M$,
 
 $$
 U(r)=-\frac{G_NM}{r},
-$$
-
-so
-
-$$
-\theta_0(r)=\frac{G_NM}{c^2r},
 \qquad
-G(r)=\sqrt{1-\frac{2G_NM}{c^2r}}.
+\theta_0(r)=\frac{G_NM}{c^2r},
 $$
 
-This is the scalar clock-depth correspondence. It is the check that the additive part of the directional source channels produces the usual Newtonian weak-field limit.
+and hence
 
-### Shift-current comparison
+$$
+G(r)=\sqrt{1-\frac{2G_NM}{c^2r}}
+=1+\frac U{c^2}+O(U^2/c^4).
+$$
 
-The directional side of the M1 field is built from the odd source package. In a stationary gauge-fixed comparison, the corresponding classical object is a transverse current-like source $j_i^\perp$.
+The Poisson equation, Newtonian potential, and leading clock-redshift slope form the achieved stationary correspondence. The exact square root belongs to the selected clock package; it is not an exact Schwarzschild or nonlinear spatial derivation.
 
-The comparison equation is
+This is the scalar clock-depth correspondence. It checks that the additive part of the directional source channels produces the usual Newtonian weak-field limit without importing classical density as the primitive M1 source.
+
+The dimensional calibration, potential dictionary, and weak-light target are collected in [Appendix 3.6A](#sec-derivation-03-06A-stationary-correspondence).
+
+### Spatial and light targets
+
+In the weak isotropic comparison,
+
+$$
+d\ell^2
+=\left(1-2\gamma\frac{U}{c^2}\right)
+\delta_{ij}dx^i dx^j.
+$$
+
+The leading light coefficients are
+
+$$
+\delta\phi
+=2(1+\gamma)\frac{G_NM}{bc^2},
+$$
+
+and
+
+$$
+\Delta t_{\mathrm{Shapiro}}
+=\frac{(1+\gamma)G_NM}{c^3}
+\ln(\text{endpoint geometry}).
+$$
+
+The observed values require $\gamma=1$ [@will2014confrontation]. Chapter 3 therefore keeps the standard bending and Shapiro results as correspondence requirements. The carrier analysis of the previous section explains why they are not yet predictions of a content-only reciprocal M1 action: within the declared shell and response class, the $\gamma=1$ ruler brings a matching stress-trace scalar source.
+
+### Directional and rotating-source targets
+
+Given SI, the odd source is the current:
+
+$$
+\mathcal P_i=j_i.
+$$
+
+The provisional transverse response is
+
+$$
+\Delta\theta_i^\perp
+=-\frac{4\pi G_N}{c^3}j_i^\perp.
+$$
+
+In the familiar stationary gauge-fixed comparison, the target shift equation is
 
 $$
 \Delta A_i
-=
-\frac{16\pi G_N}{c^3}j_i^\perp,
+=\frac{16\pi G_N}{c^3}j_i^\perp,
 \qquad
 \partial_iA_i=0.
 $$
 
-This equation should be read as a calibration and comparison statement. It does not replace $\mathcal{P}_k$ as the M1 source of the directional field. It says how the stationary shift sector is recognized in the familiar current language used for weak stationary gravity.
+This equation is a calibration target, not the M1 source law. The current $j_i$ enters because SI has already supplied $\mathcal P_i=j_i$. The transverse condition also reminds us that not every raw directional distribution is automatically a stationary shift input.
 
-The transverse condition is also a useful reminder. Not every raw directional source distribution is automatically a clean stationary shift input. In the stationary comparison problem, the directional source is read through its admissible or transverse part.
-
-On the M1 side, the ingredients of this comparison are already fixed. The native odd-sector field equation is
+If the observer-facing package is written as
 
 $$
-\Delta\theta_i=-\frac{4\pi G_N}{c^3}\sum_k\mathcal{P}_k\,e_{(k)i},
+A_i=-\kappa_A\theta_i^\perp,
 $$
 
-the odd package satisfies $\sum_k\mathcal{P}_k\,e_{(k)i}\leftrightarrow j_i$ — derived in the source layer from the carrier map — and the shift potential is packaged as $A_i=-\kappa_A\,\theta_i^\perp$ with the derived value $\kappa_A=4$. Composing these gives
+then $\kappa_A=4$ would reproduce the target coefficient. The issue is not whether that number can be inserted. It is whether one positive causal action fixes its magnitude and sign while also supplying reciprocal work and observer transport. The present construction has not yet done so.
+
+For a compact slow rotating source with angular momentum $\mathbf J$,
 
 $$
-\Delta A_i=\kappa_A\,\frac{4\pi G_N}{c^3}\,j_i^\perp
-=\frac{16\pi G_N}{c^3}\,j_i^\perp,
+\theta_i^{\mathrm{rot}}
+=\frac{G_N}{2c^3}
+\frac{(\mathbf J\times\mathbf r)_i}{r^3}.
 $$
 
-in exact agreement with the classical comparison equation. That agreement is no longer a definition of $\kappa_A$; it is a check the derived package passes. Where the value comes from deserves its own subsection.
-
-### The shift coefficient derived
-
-The scalar sector matched the classical limit with no leftover coefficient. The shift sector appears at first not to repeat that luxury: the M1 field map gives the scalar and directional fields with *equal* coefficients — both sectors ride the same $1/R$ kernel with the same $4\pi\kappa$ in the field equation — yet the classical gravitomagnetic equation demands $16\pi G_N/c^3$, and the Lense–Thirring readout behind that demand has been confirmed by the LAGEOS nodal-precession analyses and by Gravity Probe B [@ciufolini2004confirmation; @everitt2011gravity]. A factor of $4$ has to come from somewhere, and it must not be smuggled into the source channels or the current bookkeeping.
-
-It does not have to be smuggled anywhere. The factor is derived, in three steps that the chapter has already assembled.
-
-The first step is the source law. The carrier map of the source layer fixes the odd package as the net bosic component, $\mathcal{P}_k=j_k$ — exactly, including the relativistic factors, for matter in bulk motion (Appendix 3.3A). In the weak stationary component convention used for the correspondence matrix above, the field-facing translation is $\mathcal{M}\leftrightarrow T^{00}/c$ and $\mathcal{P}_k\leftrightarrow T^{0k}/c$, with no independent stress term added to the scalar well or shift source: where the classical accounting adds pressure weight to the well, M1 deliberately does not, and the reconciliation is the apportioning argument later in this section. The full correspondence matrix also contains $\mathcal{C}_{ij}\leftrightarrow T^{ij}/c$ as the spatial stress side of momentum transport, but that moment is not used here to tune the odd-sector coupling. The current convention used in the comparison above is read straight off the opposed shell readings.
-
-The second step is the two-aspect deformation. The even source produces clock depth and isotropic spatial stretch as two readouts of one deformation, with the weak-field trace coefficient forced to $\sigma=1$ by the cycle-readout argument (Appendix 3.4B).
-
-The third step is boost consistency. A static well, viewed from a frame in which the source moves, must present the same physics as a moving source building its own directional field. Carrying out that comparison at first order in $v/c$ forces the packaging coefficient to
+Weak Kerr and Lense--Thirring comparison require
 
 $$
-\kappa_A=2(1+\sigma),
+h_{0i}^{\mathrm{GR}}
+=-\frac{2G_N}{c^3}
+\frac{(\mathbf J\times\mathbf r)_i}{r^3}
+=-4\theta_i^{\mathrm{rot}}.
 $$
 
-one part from the depth response and $\sigma$ parts from the stretch response (Appendix 3.6C). With $\sigma=1$,
+Thus a future physical directional map must reach
 
 $$
-\kappa_A=4.
+\boxed{\lvert\kappa_A\rvert=4}
 $$
 
-The factor of $4$ is therefore not one mystery, and not two mysteries either: it is the sum of the two static responses of the deformed stage, doubled by the boost kinematics. Nothing about frame drag was used to obtain it.
+with the observed orientation [@ciufolini2004confirmation; @everitt2011gravity]. This endpoint is precise enough to reject incorrect closures, but it does not itself supply one. The positive one-vector action reaches the magnitude with the opposite physical orientation; an elliptic constrained response can fit the stationary sign only by choosing an undetermined coefficient and supplies no causal observer transport.
 
-The Lense–Thirring audit of Appendix 3.6B remains in force, with its status sharpened rather than retired. It runs the full stationary pipeline end to end — rotating source through $\mathcal{P}_k$, $\theta_i$, $A_i$, into the observer cross term and the precession readout — with $\kappa_A$ symbolic, and finds that the empirical endpoint requires $\kappa_A=4$ and that the observer transport term contributes unit coefficient, hiding nothing. The audit was performed before the derivation chain closed; the chain therefore had a fixed target it could not adjust to, and it hit that target. The audit is the endpoint validation of the derived value, not its source.
-
-The status of the number should still be said plainly, because "derived" has a precise scope here. The value $\kappa_A=4$ is derived conditional on two named premises, each independently checked and neither yet grounded in a micro-model:
-
-- **SI — the source identification.** The gravitational source channels are the densitized opposed shell readings, $\mathcal{J}_k^\pm=$ density of $M\pm\tfrac12 p_k$, with nothing added or reweighted. Checked through the Newtonian limit, the derived $\mathcal{P}_i=j_i$ feeding the Lense–Thirring endpoint, manifest channel positivity, and the isolated-system agreement of the apportioning argument below.
-- **P2 — comoving-cycle readout.** The clock rate is the reciprocal of the local spatial stretch, because a clock is a confined cycle read out in the deformed stage. Checked through PPN $\gamma=1$, light bending, Shapiro delay, and recovery of the existing scalar clock dictionary.
-
-Both premises are carried as explicit hardening targets in the closing section of this chapter. One structural point is worth fixing against a natural misreading: the spatial sector is not a competing home for part of the coefficient, waiting to absorb a factor of $2$ out of the packaging. It is one of the two inputs that produce the $4$. The coefficient is what it is *because* the stretch response is as strong as the depth response, and no re-partitioning between packaging and spatial sector is pending (Appendix 3.6C).
-
-<!--
-P2-failure fallback wording for this subsection (do not render; see AUTHOR_NOTES
-2026-07-04 open-decisions note). If the equilibrium-size defense of P2 fails in a
-later derivation session, replace the derivation-chain framing above with:
-
-  "The shift coefficient is fixed by boost consistency as kappa_A = 2(1+sigma),
-  with the odd normalization \mathcal{P}_i = j_i derived from the carrier map. The
-  spatial trace coefficient sigma is not yet derived natively; its value sigma = 1
-  is validated empirically through the PPN channel (gamma = 1, standard light
-  bending, standard Shapiro delay) and the Lense-Thirring endpoint. The package is
-  therefore boost-consistent with one empirically anchored coefficient, rather
-  than zero."
-
-and re-list sigma (not kappa_A) as the open item in 3.8; the SI side and the
-carrier-map source law are unaffected.
--->
-
-### The classical weak-field tests
-
-The derived package settles more than frame drag. Because the spatial stretch carries coefficient $\sigma=1$, the PPN spatial-curvature parameter of the stationary weak-field package is
+A boosted static metric gives a useful conditional relation. Take
 
 $$
-\gamma_{\mathrm{PPN}}=1,
+h_{00}=2\theta_0,
+\qquad
+h_{ij}=2\sigma\theta_0\delta_{ij},
 $$
 
-and the two classical light-propagation tests follow at their standard values. The leading deflection of light grazing a mass $M$ at impact parameter $b$ is
+Under the normalized weak clock convention, the carrier/ruler coefficient and the boosted-metric coefficient describe the same spatial slope, $\sigma=\gamma$. The separate symbols keep their two roles visible.
+
+If the odd-source convention is $\mathcal P_i=\eta j_i$, first-order boost consistency yields
 
 $$
-\delta\phi=\frac{4G_NM}{b\,c^2},
+\boxed{
+\kappa_A\eta=2(1+\sigma)}.
 $$
 
-and the Shapiro time delay carries its standard coefficient $2G_NM/c^3$ in front of the usual logarithmic path factor. Both scale with $1+\gamma_{\mathrm{PPN}}$ [@will2014confrontation]; a depth-only package ($\sigma=0$) would predict half of each, and is excluded by the same derivation that closes the shift coefficient. Together with the Newtonian limit, the clock-depth dictionary, and the Lense–Thirring endpoint, this places the stationary weak-field package in agreement with the classical tests it can currently address — as consequences of the derived pipeline, not as separately calibrated facts.
+SI gives $\eta=1$, and the standard spatial target gives $\sigma=1$, so the relation lands on $\kappa_A=4$. The agreement shows that the source normalization, weak spatial target, boost relation, and rotating endpoint are mutually compatible. It does not turn them into one derived source--action--observer pipeline. Kerr and Lense--Thirring therefore remain weak stationary correspondence targets; Chapter 3 has neither an exact Kerr pullback nor a native rotating-source solution.
 
-### Where the two accountings part ways
+The endpoint sign audit and the conditional boost identity are developed in [Appendix 3.6B](#sec-derivation-03-06B-frame-drag-audit) and [Appendix 3.6C](#sec-derivation-03-06C-boost-consistency).
 
-One correspondence question remains, and it deserves to be answered rather than blurred: the classical source assigns extra well weight to pressure and stress — a gas of photons is classically said to gravitate at twice the weight of equal-content cold matter — while the M1 source layer weighs everything at its content. These cannot both describe the local apportioning of a source. They can, and do, agree on the total source weight of any isolated stationary system, and on the full exterior field in the spherical case that carries the standard weak-field tests.
+### A conserved radiation cavity
 
-The reconciliation is a classical identity. For any isolated stationary system, the classical stresses obey
+Source apportioning becomes physically visible only when a complete conserved system is compared. Consider uniform isotropic radiation of total energy $U$ confined within a thin spherical wall of inner radius $R$. The radiation pressure is $p=u/3$. Mechanical equilibrium requires the wall's tangential tension magnitude to be
 
 $$
-\int T^{kk}\,d^3r = 0
-\qquad\text{(each axis)},
+\tau=\frac{pR}{2}
+=\frac{U}{8\pi R^2}.
 $$
 
-because whatever pushes outward somewhere is held in by tension somewhere else [@misner1959active]. A box of photon gas is the canonical case: the classical accounting gives the gas the extra pressure weight, and gives the box walls a matching *negative* stress contribution from their tension. Summed over the whole system, the extra weights cancel identically, and the total gravitating content is just the content — exactly what the carrier map assigns directly, gas at content weight, walls at content weight, nothing to cancel. The famous factor of two is a statement about a *subsystem inside a confining structure*, never about anything isolated; the "second half" of the photon gas's classical weight lives in the walls, as wall tension, with opposite sign.
+Radiation pressure and wall tension then satisfy, axis by axis,
 
-The consequence is sharp, but its scope is important. For every isolated stationary system, the two accountings produce the same total source weight. For spherical sources this also fixes the whole exterior field, so the standard exterior tests — orbits, clocks, deflection, and frame drag in the usual spherical or near-spherical regimes — are blind to the difference at the order considered here. For aspherical pressurized sources, however, the cancellation need not remove the pressure or stress quadrupole and higher moments. The accountings can therefore differ not only inside a bound system, but also in exterior multipoles at fractional order $\sim p/\rho c^2$.
+$$
+\int T^{ii}\,d^3x=0
+\qquad\text{(no sum)}.
+$$
 
-That difference is a prediction, not an embarrassment, and it is registered as such in the closing section. Its exposures are the regimes where apportioning matters: interior field profiles of pressurized bodies at fractional precision $\sim p/\rho c^2$, exterior multipoles of aspherical pressurized bodies at the same order, and the strong-field structure of dense stars, where the classical equations lean on local pressure gravitation and M1 does not. The dense-star consequence is not yet a delivered mass-radius curve; it requires a derived M1 hydrostatic-equilibrium equation, the analogue of the TOV equation, before maximum-mass, radius, and tidal-deformability predictions can be compared with data. Radiation-dominated cosmological dynamics, separately, belongs in M1 to the translation-yield engine $\chi(t)$ rather than to the stationary source layer.
+This is a complete conserved source, not a photon gas treated apart from its container. Both the linearized GR ledger and SI plus the minimal stationary M1 map give the same exterior monopole,
+
+$$
+\Theta_{\mathrm{ext}}(r)
+=\frac{G_N(E_{\mathrm w}+U)}{c^4r},
+$$
+
+where $E_{\mathrm w}$ is the wall energy. The difference lies inside. GR's stationary lapse responds to $T^{00}+T^{kk}$, while the minimal M1 scalar map reads the content density once and assigns no independent response to $\mathcal C_{ij}$.
+
+Compare a static clock at the center with one at the inner wall. With the stationary clock field normalized at infinity,
+
+$$
+1+z_{c\to R}=\frac{N(R)}{N(0)}.
+$$
+
+At leading weak-field order, the two descriptions give
+
+$$
+z_{c\to R}^{\mathrm{GR}}
+=\frac{G_NU}{c^4R},
+$$
+
+$$
+z_{c\to R}^{\mathrm{M1}}
+=\frac{G_NU}{2c^4R}.
+$$
+
+Thus SI plus the current minimal stationary field/readout map predicts half the GR center-to-inner-wall shift for this cavity. The wall energy contributes equally to the two selected clock locations and cancels from the ratio; the exterior field remains unchanged.
+
+This is one controlled conditional discriminator, not a generic theorem that pressure always gravitates by half. It depends on SI, the minimal scalar response, and the present allocation of the complete source. An independently derived scalar response to $\mathcal C_{ij}$ could change or remove the difference, and a complete M1 wall and binding ledger remains open. The scale also makes a direct laboratory test infeasible:
+
+$$
+\lvert\Delta z\rvert
+\simeq4.13\times10^{-45}
+\frac{U/\mathrm J}{R/\mathrm m}.
+$$
+
+For $U=1$ MJ and $R=1$ m, the difference is about $4.1\times10^{-39}$. No external novelty claim is made for the result.
+
+The complete-source ledger, paired clock ratio, robustness conditions, and scale estimate are derived in [Appendix 3.6D](#sec-derivation-03-06D-radiation-cavity).
 
 ### Metric-facing dictionary
 
-For comparison with familiar stationary geometry, the weak-field dictionary may be written schematically as
+For comparison with familiar stationary geometry, take $x^0=ct$, so the mixed metric perturbation is dimensionless. The weak-field dictionary may then be written schematically as
 
 $$
 g_{00}=-(1+2U/c^2),
@@ -248,61 +258,43 @@ $$
 and
 
 $$
-g_{0i}\sim\frac{A_i}{c}.
+g_{0i}\sim A_i.
 $$
 
-The first relation reads the scalar package as the clock-depth side of the geometry. The second reads the shift potential as the mixed time-space, frame-drag side.
+The first relation reads the scalar package as the clock-depth side of the geometry. The second reserves the shift potential for the mixed directional side. Its sign and coefficient depend on the comparison convention and on the still-unclosed observer map.
 
-The schematic sign and coefficient in the second relation are intentional here. They depend on the stationary metric convention used for comparison. The robust point is the structural one: the M1 scalar package supplies the lapse-like side, while the M1 directional package supplies the shift-like side.
-
-A stationary rotating target such as Kerr is valuable because it sharply exhibits the same split. A scalar clocking factor and an azimuthal shift appear as distinct pieces of one stationary gravitational structure. The full M1 rotating-source derivation remains a later burden, but the field grammar already shows where the two parts enter.
+A stationary rotating target such as Kerr is useful because it sharply exhibits the same split: scalar clocking and an azimuthal shift appear as distinct pieces of one stationary gravitational structure. Here that remains a weak stationary comparison. The chapter does not possess an exact Kerr pullback or a native rotating-source derivation.
 
 ### Local clock and transport comparison
 
-The local observer bookkeeping also has a classical stationary reading. In the M1 presentation, the scalar field dresses the fermic scale through
+The scalar carrier block also has a stationary clock reading. In M1 variables,
 
 $$
-p_{f,c}=p_fG,
-$$
-
-and the shift field modifies transport through
-
-$$
-\Pi_i=p_i-p_{f,c}A_i.
-$$
-
-In the corresponding stationary clock language, proper time combines a gravity-side contextual factor with a motion-side local factor. Schematically,
-
-$$
-d\tau=dt\,G\sqrt{1-V_{loc}^2},
-$$
-
-where the velocity is measured relative to the local stationary frame rather than relative to a distant asymptotic standard.
-
-For Kerr-like stationary targets this takes the same structural form,
-
-$$
-d\tau=dt\,G_K\sqrt{1-V_K^2},
-$$
-
-with $V_K$ measured relative to the local dragged frame. The interpretive point is that gravity-side scalar dressing and motion-side slowing remain distinct mechanisms even when they appear together in one stationary clock law.
-
-### What the correspondence establishes
-
-The correspondence layer establishes that the M1 stationary pipeline has the right classical faces:
-
-$$
-\mathcal{M} \leftrightarrow c\rho,
+d\tau=N\,dt_*,
 \qquad
-\theta_0 \leftrightarrow U,
-\qquad
-A_i \leftrightarrow \text{stationary shift},
-\qquad
-\gamma_{\mathrm{PPN}}=1,
+d\ell^2=Q^{-1}\delta_{ij}dx^i dx^j.
 $$
 
-with the shift coefficient $\kappa_A=4$ derived from the carrier map, the two-aspect deformation, and boost consistency, and validated against the frame-drag endpoint. It also establishes where the correspondence deliberately ends: the classical pressure and radiation weights are subsystem apportioning whose total contribution cancels over isolated systems, but whose higher moments can matter for aspherical sources; M1 does not import those weights. It also keeps the status of those faces clear. Classical density, current, and metric notation are comparison tools. The main M1 route remains the shell-reading source-to-field map built in the previous sections.
+For two static clocks, $1+z_{a\to b}=N(b)/N(a)$. Gravity-side clock dressing and motion-side slowing therefore remain distinct even when a later comparison writes them in one proper-time expression.
 
-The supporting calibration sheet for this section is collected in Appendix 3.6A.
+The provisional directional bookkeeping,
 
-What has been established here is stationary correspondence, not primitive ontology. What has not been established is a complete time-dependent gravity theory. The next section therefore changes scope carefully: it asks which pieces of the scalar-well and shift grammar survive when the field representation itself becomes nonstationary.
+$$
+\Pi_i=p_i-p_{f,c}A_i,
+$$
+
+has the expected structural place in a dragged local frame, but it is not yet a derived universal generator. Correspondence identifies the endpoint a completed observer map must reach; it does not promote the diagnostic notation by resemblance alone.
+
+### What correspondence establishes
+
+The stationary scalar construction reaches classical gravity where it is strongest:
+
+$$
+\mathcal M=c\rho,
+\qquad
+\theta_0=-U/c^2,
+\qquad
+\Delta U=4\pi G_N\rho.
+$$
+
+The standard $\gamma=1$ light response, boost identity, and $|\kappa_A|=4$ rotating endpoint define the next correspondence targets rather than a completed derivation. The conserved cavity then shows what the current source choice would mean in one interior comparison while leaving the exterior monopole untouched. These distinctions keep correspondence useful: it validates the achieved scalar engine, sharpens the unclosed spatial and directional burdens, and identifies one conditional place where source apportioning matters.

@@ -16,7 +16,7 @@ $$
 \mathcal{J}_k^-(x).
 $$
 
-They represent positive source content associated with the two senses of direction $k$ at position $x$, with units of kg/(s m$^2$): momentum content per unit volume, sorted by directional sense. Concretely, $\mathcal{J}_k^+$ and $\mathcal{J}_k^-$ are the field image of the opposed shell readings $p_k^\pm=M\pm\tfrac{1}{2}p_k$ defined for a single carrier — the same positive readings, now accumulated as densities over the carriers present at $x$. That identification is made precise just below; here it is enough that each channel is a positive directional total in its own right, never a signed component.
+They represent positive source content associated with the two senses of direction $k$ at position $x$, with units of kg/(s m$^2$): momentum content per unit volume, sorted by directional sense. Concretely, $\mathcal{J}_k^+$ and $\mathcal{J}_k^-$ are the field image of the opposed shell readings $p_k^\pm=M\pm\tfrac{1}{2}p_k$ defined for a single carrier — the same positive readings, now accumulated as densities over the carriers present at $x$. Each channel is a positive directional total in its own right, never a signed component.
 
 These channels are the source-side form of the shell-reading logic used in Foundations. Instead of beginning from a signed directional source alone, M1 begins with two positive directional channels and then forms the combinations needed for gravity.
 
@@ -38,17 +38,17 @@ $$
 \mathcal{J}_k^\pm(x) = \mathcal{M}_k(x) \pm \tfrac{1}{2}\mathcal{P}_k(x).
 $$
 
-The quantity $\mathcal{M}_k$ measures the part of the source that remains when directional sign is forgotten. It is the source role that feeds the scalar-well side of the field. The quantity $\mathcal{P}_k$ measures directional imbalance. It is the source role that feeds the shift, rotation, and frame-drag-like side of the field.
+The quantity $\mathcal{M}_k$ measures the part of the source that remains when directional sign is forgotten. It is the source role that feeds the scalar-well side of the field. The quantity $\mathcal{P}_k$ measures directional imbalance. It supplies the source role associated with shift, rotation, and frame-drag-like structure.
 
 The calligraphic letters keep the source layer visually distinct from the particle layer: $\mathcal{M}_k$ is a source package, not the core momentum $M$ of a single carrier, and $\mathcal{P}_k$ is a source package, not a bosic momentum component $p_k$. That distinction is about to matter, because the two layers are related by the most direct map the framework could offer.
 
-![Directional source bookkeeping split into even and odd channels before field construction. The additive sector feeds the scalar well, while the directional imbalance feeds the shift and rotation channel.](../../../../figures/build/gravity-and-structured-spacetime/source-side-density-maps.png){#fig-gravity-source-density-map fig-align="center"}
+![Directional source bookkeeping split into even and odd channels before field construction. The additive sector feeds the scalar well, while the directional imbalance supplies the source for the provisional transverse response.](../../../../figures/build/gravity-and-structured-spacetime/source-side-density-maps.png){#fig-gravity-source-density-map fig-align="center"}
 
-@fig-gravity-source-density-map shows the split visually. The channels and their even/odd packages are the primitive source language of the chapter. What remains is to say how physical momentum content fills them.
+@fig-gravity-source-density-map shows the split visually. The channels and their even/odd packages are the source language of the chapter. What remains is to say how physical momentum content fills them.
 
 ### From carrier readings to source channels
 
-Foundations already answered this question once, for a single carrier. For any oriented axis $\hat{k}$, a carrier with core momentum $M=\sqrt{p_f^2+p^2}$ and bosic component $p_k$ has the opposed shell readings
+Foundations already defined the relevant quantities for a single carrier. For any oriented axis $\hat{k}$, a carrier with core momentum $M=\sqrt{p_f^2+p^2}$ and bosic component $p_k$ has the opposed shell readings
 
 $$
 p_k^+ = M + \tfrac{1}{2}p_k,
@@ -58,15 +58,18 @@ $$
 
 Both readings are positive, each contains the carrier's full core momentum, and the bosic component appears as a tilt between the two senses. ADMC conserves one shell reading for a selected orientation; reversing $\hat{k}$ exchanges $p_k^+$ and $p_k^-$.
 
-The gravitational source law is the statement that gravity reads the two opposed shell readings together. A carrier feeds each axis's channel pair with its two readings:
+Chapter 3 now makes a separate gravitational choice. The source identification SI postulates that a carrier feeds each axis's channel pair with its two readings:
 
 $$
-\mathcal{J}_k^\pm
-\;=\;
-\text{density of }\;\bigl(M \pm \tfrac{1}{2}p_k\bigr).
+\boxed{
+\mathcal{J}_k^\pm(x)
+=
+\left\langle\sum_a
+\left(M_a\pm\frac{1}{2}p_{k,a}\right)
+\right\rangle_x }.
 $$
 
-Nothing is added, rescaled, or reweighted. The source channels are the shell readings, accumulated over the carriers present. We call this the *carrier map*, and its adoption as the gravitational source law is the source identification of the gravity chapter — a named postulate, with its checks collected in Appendix 3.3A and its remaining obligations listed in the closing section.
+The brackets denote local coarse graining per unit volume. Nothing is added, rescaled, or reweighted in the displayed free-carrier map. SI is the source postulate of this chapter; it is not derived merely by defining the shell readings in Foundations.
 
 Two field-facing consequences follow immediately.
 
@@ -76,10 +79,10 @@ $$
 \mathcal{M}_k = \varrho
 \qquad\text{for every }k,
 \qquad
-\varrho := \text{density of } M .
+\varrho := \left\langle\sum_aM_a\right\rangle_x .
 $$
 
-The even source does not depend on the axis chosen to read it. The scalar well is direction-blind not by assumption but by algebra: whatever the carriers are doing, the $\pm\tfrac12 p_k$ tilt is precisely what the even combination removes. There is therefore really only one even source field, the local core-momentum density $\varrho$, and we write the well's source as $\mathcal{M}$ without an axis label. For matter at rest, $\varrho$ is the fermic content $\rho c$ carried by the rest mass; for moving or hot matter it grows with the carriers' core momenta; for light it is the beam or bath content itself.
+The even source does not depend on the axis chosen to read it. The scalar well is direction-blind by algebra: whatever the carriers are doing, the $\pm\tfrac{1}{2}p_k$ tilt is precisely what the even combination removes. There is therefore one even source field, the local core-momentum density $\varrho$, and we write the well's source as $\mathcal{M}$ without an axis label. For free matter at rest, $\varrho$ is the fermic content $\rho c$ carried by the rest mass; for moving or hot free carriers it grows with their core momenta; for light it is the beam or bath content itself.
 
 Second, the odd package is the net bosic component:
 
@@ -87,25 +90,27 @@ $$
 \mathcal{P}_k = j_k ,
 $$
 
-the density of $p_k$ summed over carriers — for slow matter, the ordinary mass-current density. Where opposite-directed carriers balance, the odd package vanishes; where they do not, their surplus is the odd source. The odd channel *is* the bosic sector's net component, read straight off the momentum bookkeeping. The convention used by the frame-drag analysis later in the chapter is therefore derived from the carrier readings, not chosen for classical convenience.
+the density of $p_k$ summed over carriers. Where opposite-directed carriers balance, the odd package vanishes; where they do not, their surplus remains. This current convention follows from SI rather than being selected later for correspondence.
 
-A third package belongs to the full carrier-level accounting of momentum transport. Define the directional momentum-coupling density by
+A third package belongs to the fuller carrier-level accounting of momentum transport. Define
 
 $$
 \mathcal{C}_{ij}(x)
 :=
 \left\langle
 \sum_a \frac{p_{i,a}p_{j,a}}{M_a}
-\right\rangle_x,
-\qquad
-M_a=\frac{E_a}{c}.
+\right\rangle_x.
 $$
 
-It records how momentum component $i$ is carried through spatial direction $j$. This makes $\mathcal{C}_{ij}$ the second transport moment of the same local momentum content, not a new source substance. It is needed for complete momentum-transport accounting in general matter — pressure, counterflow, shear, anisotropic stress, radiation, and internal dispersion — even though the minimal stationary field map developed next uses only the scalar package $\mathcal{M}$ and the net directional package $\mathcal{P}_i$ as independent field inputs.
+It records how momentum component $i$ is carried through spatial direction $j$. This makes $\mathcal{C}_{ij}$ the second transport moment of the same local momentum content, not a new source substance. It is needed for pressure, counterflow, shear, anisotropic dispersion, and radiation transport. The minimal stationary field map developed next uses only $\mathcal M$ and $\mathcal P_i$ as independent field inputs. Whether $\mathcal C_{ij}$ has an independent gravitational response remains an open completion question.
 
-Finally, positivity is manifest. Since $|p_k|\le p\le M$ carrier by carrier, every channel satisfies $\mathcal{J}_k^\pm\ge\varrho/2>0$ wherever content is present. The shell-reading grammar of Foundations survives densitization without any auxiliary condition.
+Finally, positivity is manifest. Since $|p_k|\le p\le M$ carrier by carrier,
 
-This is the entire source law. One carrier map fills the accounting packages: core momentum builds the well, net bosic momentum builds the shift, and the second transport moment records how momentum is internally carried through matter.
+$$
+M\pm\frac{1}{2}p_k\ge\frac{1}{2}M\ge0,
+$$
+
+so every $\mathcal J_k^\pm$ is nonnegative. Given SI, axis independence, $\mathcal P_k=j_k$, and channel positivity are exact for the displayed free-carrier ledger.
 
 ### From carriers to continuous sources
 
@@ -114,41 +119,49 @@ The carrier map is stated per carrier; sources are continuous fields. The bridge
 $$
 \mathcal{J}_k^\pm(x)
 =
-\Bigl\langle \textstyle\sum_a \bigl(M_a \pm \tfrac12 p_{k,a}\bigr) \Bigr\rangle_x ,
+\Bigl\langle \textstyle\sum_a \bigl(M_a \pm \tfrac{1}{2}p_{k,a}\bigr) \Bigr\rangle_x .
 $$
 
-with the angle bracket denoting the per-volume average over that region. For statistically described matter the same statement reads through the carrier distribution: the even source is the distribution's core-momentum content, the odd source its first bosic moment.
+For statistically described matter the same statement reads through the carrier distribution: the even source is the distribution's core-momentum content, the odd source its first bosic moment.
 
-The same coarse-graining also defines the second transport moment $\mathcal{C}_{ij}$. It does not change the scalar or shift source just identified; it completes the momentum-accounting description when internal transport, pressure, shear, or anisotropic dispersion cannot be represented by the zeroth and first moments alone.
+The same coarse-graining also defines $\mathcal{C}_{ij}$. It does not change the scalar or directional source just identified; it completes the momentum-accounting description when internal transport cannot be represented by the zeroth and first moments alone.
 
-Two familiar situations show the mechanics. In a warm gas at rest, carriers move in all directions: every $p_k$ appears alongside its opposite, the odd package cancels, and the gas sources gravity through $\varrho$ alone — temperature enters only insofar as agitation raises the carriers' core momenta. In a rotating body, the bosic components are organized rather than random: ring by ring, $\mathcal{P}_\phi(r)$ survives, and the body sources directional field structure that a static body of the same content cannot.
+Two free-carrier situations show the mechanics. In an isotropic gas, carriers move in all directions: every $p_k$ appears alongside its opposite, the odd package cancels, and the gas sources through $\varrho$ while agitation appears in its core momenta and second transport moment. In a rotating carrier distribution, the bosic components are organized rather than random: ring by ring, $\mathcal{P}_\phi(r)$ survives and supplies a directional source that a static distribution of the same content does not.
 
-### What different sources present
+The free-carrier result does not yet settle composite matter. Binding energy, interaction momentum, mediator content, wall tension, and improvements must all be localized in one conserved M1 ledger. No present interaction action derives that allocation. Claims about stressed solids, confining walls, or bound static fields must therefore wait for that construction.
 
-Applied to the standard manifestations of momentum content, the carrier map produces a short dictionary — and its brevity is the point. The full reference version, with worked entries and per-entry status, is Appendix 3.3C; the summary is:
+The source postulate is stated and its exact free-carrier consequences are derived in [Appendix 3.3A](#sec-derivation-03-03A-carrier-source-map); the rejected null-probe route and the status-aware source dictionary are collected in [Appendix 3.3B](#sec-derivation-03-03B-null-probe-diagnostic) and [Appendix 3.3C](#sec-derivation-03-03C-momentum-manifestations).
 
-| Manifestation | Even source $\mathcal{M}=\varrho$ | Odd source $\mathcal{P}_k$ |
-|---|---|---|
-| Cold matter at rest | $\rho c$ | none |
-| Moving dust | content weight, motion included | $\mathcal{P}_k=j_k$ |
-| Warm gas | content weight, agitation included | none |
-| Photon gas | content weight $\varepsilon/c$ | none |
-| Directed null beam | content weight $\varepsilon/c$ | beam current $\mathcal{P}_x=j_x$ |
-| Rotating body | content weight | ring pattern $\mathcal{P}_\phi(r)$ |
-| Stressed solid | content weight | none |
-| Static field content | content weight | none |
+### What different free sources present
 
-Every even entry is the same entry: content at its core-momentum weight. Pressure, stress, and confinement do not appear as separate gravitational ingredients — a stressed solid and a relaxed solid of equal content source the same well. Light sources the well at its content weight like everything else; what distinguishes a directed beam is not extra well weight but its odd package, the beam current. And the dictionary has no vacuum row: the channels accumulate the opposed shell readings of actual momentum content, and empty space has none. Lambda-shaped phenomenology in cosmological data belongs to the translation-yield history $\chi(t)$ treated in the expansion chapter, not to the gravitational source layer.
+Applied within its declared regime, SI gives a short dictionary:
 
-Readers coming from general relativity will notice what is absent: the classical source assigns extra well weight to pressure and doubles the weight of radiation. Those weights are subsystem bookkeeping in the classical packaging, and their total contribution cancels over any isolated stationary system against the stresses of whatever confines it. The two accountings therefore agree on the total source weight, and on the full exterior field of a spherically symmetric source. They part ways in interior apportioning, and also in the exterior multipoles of aspherical pressurized sources at order $p/\rho c^2$. That difference is a stated, testable divergence rather than a defect. The comparison, with the cancellation and its scope shown, belongs to the correspondence section.
+| Manifestation | Even source $\mathcal M$ | Odd source $\mathcal P_i$ | Second moment $\mathcal C_{ij}$ |
+|---|---|---|---|
+| Cold free carriers at rest | $\rho c$ | $0$ | negligible in the ideal limit |
+| Coherent dust stream | carrier content density | net momentum density $j_i$ | coherent transport |
+| Isotropic free gas | content including agitation | $0$ | isotropic pressure moment |
+| Isotropic null gas | $u/c$ | $0$ | isotropic radiation transport |
+| Directed null beam | $u/c$ | beam current | directed null transport |
+| Rotating carrier distribution | content density | azimuthal current | internal transport |
+
+For a beam along $+x$,
+
+$$
+\mathcal J_x^+=\frac{3}{2}\frac{u}{c},
+\qquad
+\mathcal J_x^-=\frac{1}{2}\frac{u}{c},
+\qquad
+\mathcal P_x=\frac{u}{c}.
+$$
+
+The beam is directional without becoming exactly chiral in the shell channels. This distinguishes the affine carrier readings from quadratic null-flux probes, which are useful diagnostics but not the source identification used here.
 
 ### Stationary source consistency
 
 A stationary source is not merely a source frozen at one moment. It is a source whose gravitational content can support a time-independent field description.
 
-In M1 terms, the even package must supply a stable scalar-well source, and the odd package must supply a stable directional source for the shift sector.
-
-This condition says that the directional source content must be prepared so that the stationary field problem is well posed. The detailed comparison with classical transverse-current language is collected later in the stationary correspondence section.
+In M1 terms, the even package must supply a stable scalar-well source, and the odd package must supply a stationary-admissible directional source. The detailed transverse restriction belongs to the field construction rather than to SI itself.
 
 ### Two source pictures
 
@@ -156,14 +169,14 @@ Two simple source pictures are enough for the mainline route.
 
 The first is a static compact source. Its directional imbalance is absent or negligible at leading order. The even channel dominates, so the later field is led by the scalar well. This is the clean route to the Newtonian and static-spherical limit.
 
-The second is a stationary rotating source. Its even content still builds the scalar well, but its directional content no longer cancels. The odd channel becomes visible, and the field acquires shift or frame-drag-like structure. This is the route by which stationary rotation enters the gravity program.
+The second is a stationary rotating source. Its even content still builds the scalar well, but its directional content no longer cancels. The odd channel becomes visible and supplies the source for a shift or frame-drag-like response. This is the route by which stationary rotation enters the gravity program, although the physical directional response remains provisional.
 
-These examples are deliberately modest. They are not a full catalog of possible sources — Appendix 3.3C carries that catalog. They show the two source roles needed before the stationary field is constructed.
+These examples are deliberately modest. They show the two source roles needed before the stationary field is constructed.
 
 ### What the source layer establishes
 
-The source layer establishes that gravity needs no source law of its own. The carrier map fills the directional source channels with the shell readings defined in Foundations — $\mathcal{J}_k^\pm$ as the density of $M\pm\tfrac12 p_k$ — and everything the field layer needs follows by algebra: one direction-blind well source $\mathcal{M}=\varrho$, one derived odd convention $\mathcal{P}_k=j_k$, and channel positivity carrier by carrier. The even and odd packages that feed the scalar-well and shift sides of the stationary field system are the two halves of the carrier map, densitized.
+The source layer establishes a selected carrier map and its immediate consequences. SI identifies $\mathcal J_k^\pm$ with the local densities of $M\pm\tfrac{1}{2}p_k$. Given that postulate, the displayed free-carrier ledger yields one direction-blind well source $\mathcal M=\varrho$, one net directional source $\mathcal P_k=j_k$, and positive channels carrier by carrier.
 
-The fuller momentum-accounting layer also contains $\mathcal{C}_{ij}$, the directional coupling or second transport moment. Its role is not to weaken the one-source claim. M1 has one source: momentum content. The symbols $\mathcal{M}$, $\mathcal{P}_i$, and $\mathcal{C}_{ij}$ are packages, projections, or moments of how that content is locally organized.
+The fuller momentum-accounting layer also contains $\mathcal C_{ij}$, the second transport moment. Its role is not to introduce another source substance. The symbols $\mathcal M$, $\mathcal P_i$, and $\mathcal C_{ij}$ are packages or moments of how momentum content is locally organized. Their interacting allocation and any independent gravitational response to $\mathcal C_{ij}$ remain open.
 
-Once this is in place, the next section can ask the field question directly: given the even and odd source packages, what stationary deformation do they produce, and how is that deformation represented by scalar-well and shift variables? The later correspondence section then checks how these source roles face ordinary density and current language — including where M1's accounting deliberately differs from the classical one.
+Once this is in place, the next section can ask the field question directly: given the even source package, what stationary scalar deformation does it produce, and what separate directional response is provisionally associated with the odd package?

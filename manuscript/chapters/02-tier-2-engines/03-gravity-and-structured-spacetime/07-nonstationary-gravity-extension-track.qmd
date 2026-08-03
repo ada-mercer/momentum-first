@@ -1,78 +1,110 @@
 ## Nonstationary Gravity: Extension Track
 
-Up to this point the gravity chapter has stayed inside the achieved stationary backbone. That was the right place to begin, but it is no longer the whole story. The nonstationary gravity program has now matured enough that it deserves explicit structural room.
+A stationary field says how a settled source structures the stage. A changing source raises a further question: can that structure propagate causally while retaining the stationary map when the change stops? Chapter 3 has one action-supported scalar candidate and one more provisional directional PDE seed. They should not be merged into a single physical baseline.
 
-The right way to present that room is as an extension track, not as a replacement for the stationary package. The stationary backbone remains the main achieved package — now with its weak-field coefficients derived rather than calibrated, so the extension track below inherits a pipeline with no tuned constants in it. The nonstationary layer now adds a real first-pass closure package above it, with explicit maturity labels attached to each further step.
+### Scalar action-supported candidate
 
-### The locked linear baseline
-
-The exact minimal nonstationary baseline is a retarded two-channel system for the scalar well and the shift field:
+The scalar point-carrier action of the previous sections contains the field term
 
 $$
-\frac{1}{c^2}\partial_{t_*}^2\theta_0 - \Delta\theta_0 = \frac{4\pi G_N}{c^2}\rho_M,
+S_\theta
+=\frac{Z}{2}\int dt_*\,d^3x
+\left(
+\frac{\dot{\theta}^{2}}{c^2}
+-\lvert\nabla\theta\rvert^2
+\right),
 $$
 
+with carrier generator
+
 $$
-\frac{1}{c^2}\partial_{t_*}^2 A_i - \Delta A_i = -\frac{16\pi G_N}{c^3}j_i^\perp,
+H_a=N(\theta)c
+\sqrt{p_{f,a}^2+Q(\theta)p_a^2}.
+$$
+
+For the content-only branch, $\gamma=0$, and the normalized weak choice $\alpha=1$, variation gives
+
+$$
+\boxed{
+\left(
+\frac1{c^2}\partial_{t_*}^2-
+\Delta
+\right)
+\theta
+=\frac{4\pi G_N}{c^2}\rho_M},
 \qquad
-\partial_i A_i = 0.
+\rho_M:=\frac{\mathcal M}{c}.
 $$
 
-This block freezes the conservative choices that matter most at baseline: one time variable $t_*$, one scalar channel, one transverse shift channel, propagation speed $c$ in both channels, and a fixed gauge condition for the shift field.
+For compact prescribed source data, the retarded solution is
 
-The architectural importance of this result is easy to state. Genuine time dependence now lives in the field layer itself. The nonstationary program is therefore no longer just a matter of attaching changing labels to the source. It has a real dynamical field block of its own.
+$$
+\theta(t_*,\mathbf x)
+=\frac{G_N}{c^2}
+\int
+\frac{
+\rho_M(t_*-R/c,\mathbf x')
+}{R}
+\,d^3x',
+\qquad
+R:=\lvert\mathbf x-\mathbf x'\rvert.
+$$
 
-### Retarded propagation and exact stationary recovery
+When the time derivatives vanish, this reduces exactly to
 
-The linear baseline matters for two reasons.
+$$
+\Delta\theta
+=-\frac{4\pi G_N}{c^2}\rho_M,
+$$
 
-First, it gives both scalar and shift disturbances genuinely retarded propagation. That removes the earlier pressure to speak as though gravity were only a settled stationary structure.
+which is the achieved stationary scalar map.
 
-Second, it recovers the frozen stationary packet exactly when the time derivatives vanish. The nonstationary field block is not a rival to the stationary one. It settles back into it.
+The free scalar mode has positive energy because Newtonian normalization fixes
 
-That exact recovery is one of the reasons the package now deserves structural recognition. It means the time-dependent layer grows cleanly out of the stationary backbone instead of forcing the book to choose between two incompatible grammars.
+$$
+Z=\frac{c^4}{4\pi G_N}>0.
+$$
 
-### Baseline evidence and limits
+It propagates with $\omega^2=c^2k^2$, and the displayed carrier--field action supplies reciprocal local and integrated work. The same action also supplies the clock, ruler, massive/null map, and exact local $c$ described in Section 3.5.
 
-The current benchmark verdict is that the linear nonstationary baseline has passed the checks needed to count as a solid first-pass closure in its intended regime.
+These are substantial consistencies, but the status remains a point-carrier candidate. The source history must ultimately come from a conserved interacting matter model, not an arbitrary prescribed function. Bound matter, emission, screening, and the physical $\gamma=1$ readout are not jointly closed by this branch.
 
-Those checks are modest but important. The scalar channel propagates retardedly. The shift channel propagates retardedly. The stationary limit is recovered exactly. The field layer supports local and integrated field-work identities. And the odd channel carries the correct bounded rotating asymptotics in the far zone.
+### Provisional vector PDE seed
 
-That does not amount to full completion. But it does move the nonstationary layer beyond speculation. The linear baseline is now stable enough to carry manuscript weight, provided the stronger nonlinear and radiative claims remain explicitly bounded.
+The provisional transverse vector equation is
 
-The field block, retarded solutions, stationary recovery, and benchmark checks are collected in Appendix 3.7A.
+$$
+\boxed{
+\left(
+\frac1{c^2}\partial_{t_*}^2-
+\Delta
+\right)
+\mathcal A_i
+=-\frac{16\pi G_N}{c^3}j_i^\perp,
+\qquad
+\partial_i\mathcal A_i=0}.
+$$
 
-### Promoted nonlinear and tensor layers
+As a PDE, it has the retarded Green solution
 
-Above the linear baseline sit two additional layers, both real, both bounded.
+$$
+\mathcal A_i(t_*,\mathbf x)
+=-\frac{4G_N}{c^3}
+\int
+\frac{j_i^\perp(t_*-R/c,\mathbf x')}{R}
+\,d^3x',
+$$
 
-The first is a promoted nonlinear scalar and shift closure family. Its role is to let the scalar channel self-source, let shift-sector field content feed back into the scalar well, and allow the scalar background to dress the odd-current coupling. This family is organized enough to cite and compare, but it remains coefficient-conditional.
+and its stationary limit recovers the transverse Poisson equation. For the positive one-vector action normalization, $\mathcal A_i=-4\theta_i^\perp$.
 
-The second is a disciplined tensor slot. In its current form the spatial structure is written as an isotropic scalar-led piece together with a transverse traceless anisotropic piece. That gives the nonstationary program a real home for anisotropic and radiative structure without pretending that a full radiative gravity theory has already been completed.
+Here $\mathcal A_i$ is the action/PDE coordinate, not the provisional observer-facing shift $A_i$. The field-side equation and its retarded solution do not establish a physical vector mode. The positive reciprocal one-vector action gives the wrong Lense--Thirring orientation, while an elliptic constrained response can fit the stationary sign only through an undetermined coefficient and supplies no causal observer transport. A closed current-work ledger, transported observer axes, a physical radiation observable, and the required rotating-source sign remain missing.
 
-These layers should be described with explicit maturity labels.
+### Open completion layers
 
-The linear baseline is locked and benchmarked strongly enough to reuse. The promoted nonlinear family is reusable but still conditional. The tensor slot is a disciplined first-pass reference layer, not a final completion claim.
+The two time-dependent equations therefore occupy different levels. The scalar candidate has a positive free mode, reciprocal point-carrier work, operational carrier variables, and exact stationary recovery. The vector equation has field-side mathematical consistency but not physical source-to-observer closure.
 
-### What remains unfinished
+No nonlinear scalar/spatial equation, tensor source and action, radiative waveform sector, or exact rotating solution is adopted here. Those layers require their own sources, constraints, modes, work exchange, and observables before familiar coefficients or retarded forms can carry physical weight.
 
-Several important tasks are still open.
+The nonstationary extension is thus real but narrow. It shows that the achieved scalar map can be embedded in a causal action-supported point-carrier candidate. It also preserves a precise vector PDE target. It does not yet provide a complete time-dependent theory of gravity.
 
-The package does not yet fix the full physical calibration of the promoted nonlinear coefficients. It does not yet provide an exact native rotating-source closure comparable to the stationary Kerr target. It does not yet deliver full nonlinear tensor backreaction, full radiative phenomenology, or a finished target-response constitutive law in every channel.
-
-Those open problems matter, but they should not be allowed to swallow the chapter's center of gravity. The purpose here is not to dramatize what remains undone. It is to show that the nonstationary program is now strong enough to matter while still remaining bounded.
-
-### The maturity ladder
-
-The right verdict is therefore a ladder, not a single label.
-
-- The locked linear scalar-and-shift baseline is the solid nonstationary result.
-- The promoted nonlinear family is reusable but coefficient-conditional.
-- The tensor and radiative slot is disciplined first-pass structure, not final completion.
-- Full native rotating-source closure and full nonlinear radiative gravity remain open.
-
-That ladder is careful, but it is not timid. It acknowledges a genuine step forward without blurring the difference between a benchmarked baseline, a conditional promoted layer, and an unfinished final theory.
-
-What has been established is a bounded nonstationary extension of the scalar-well and shift grammar. What has not been established is final nonlinear radiative gravity. The closing chapter can therefore ask the right question: what has gravity forced M1 to say about spacetime, and where do the boundaries still remain?
-
-The promoted nonlinear, tensor, radiative, and rotating-source completion ladder is collected in Appendix 3.7B.
+The scalar action and work ledger are developed in [Appendix 3.7A](#sec-derivation-03-07A-scalar-nonstationary); the vector PDE and higher completion boundaries are collected in [Appendix 3.7B](#sec-derivation-03-07B-completion-boundaries).

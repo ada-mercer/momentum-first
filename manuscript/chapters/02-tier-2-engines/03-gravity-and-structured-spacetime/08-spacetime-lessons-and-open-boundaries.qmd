@@ -1,51 +1,51 @@
 ## Spacetime Lessons and Open Boundaries
 
-The gravity chapter began with a simple claim: gravity is the first place where structured spacetime becomes unavoidable in M1. The sections in between have now shown what that claim amounts to at the present maturity level.
+Gravity makes the relational stage physically active. Momentum content does not merely move through unchanged space; it alters the local conditions in which other momentum clocks, travels, and changes direction. Chapter 3 has turned that statement into a working stationary scalar engine while showing exactly where the wider construction still stops.
 
-The result is neither trivial nor final. Momentum content cannot be treated only as an actor moving on an unchanged stage. Once it sources gravity, it also changes the relational conditions in which other momentum is expressed. M1 represents that change with source, field, and observer variables; GR then provides comparison and compression language in the overlap regimes. That is the disciplined spacetime lesson of the gravity chapter, not a full derivation of spacetime from deeper first principles.
+### Established
 
-### What gravity has already forced M1 to say
+The chapter's established backbone begins with a declared premise. SI postulates that gravity reads the densities of the opposed shell quantities $M\pm p_k/2$. Given that postulate, the displayed free-carrier algebra yields an axis-independent content source and a net directional current,
 
-The first lesson is that spacetime cannot remain a merely passive backdrop once gravity becomes part of the story. The stage acquires real structure. Sources do not act directly on distant targets in one step. They alter the relational/spatial condition, M1 represents that alteration with field variables, and local systems read the result through clocking, transport, and observer bookkeeping.
+$$
+\mathcal M=\varrho,
+\qquad
+\mathcal P_i=j_i,
+$$
 
-The second lesson is that this structure is not exhausted by a single scalar well. The gravity program already requires at least a scalar and a directional shift distinction. The even source channel and the odd source channel do different work, and the field they generate preserves that distinction.
+with positive channels. The result is exact within that ledger, not a derivation of the postulate or of interacting composite matter.
 
-The third lesson is that observer bookkeeping matters. Gravity is not fully characterized by source equations or field equations alone. The framework must also say how local magnitudes and local clocks are read once the background is structured.
+The strongest field result is the stationary scalar map,
 
-### What has been earned most strongly
+$$
+\theta_0(\mathbf r)
+=\frac{G_N}{c^3}
+\int
+\frac{\mathcal M(\mathbf r')}{\lvert\mathbf r-\mathbf r'\rvert}
+\,d^3r',
+$$
 
-The most strongly earned result is the stationary backbone.
+with its Poisson form and Newtonian recovery. This construction gives the correct $1/R$ exterior potential and leading stationary clock-depth slope.
 
-The source-side parity packaging is clear. The scalar-well plus shift field grammar is clear. The stationary Newtonian limit is clear. The weak and moderate stationary dictionary is clear. The stationary Kerr pullback is strong enough to function as an exact target of the present overlap package. And the local moving-clock reading now has a disciplined gravity-side and motion-side split.
+The displayed $N,Q$ carrier action also establishes a mutually consistent point-carrier clock, ruler, massive/null transport map, exact local speed $c$, and reciprocal scalar work ledger. Its value is not only that it supplies these readings. It shows that clocks and rulers cannot be assigned independently of the carrier dynamics that makes them operational.
 
-Those are not decorative achievements. They are the reason the gravity chapter can function as a real engine rather than as a speculative preview.
+That same analysis earns a boundary. Within the declared algebraic isotropic shell and regular self-adjoint response class, operational content-only clock response and a nonzero content-driven $\gamma=1$ ruler cannot be kept together with reciprocal work. The single-shell and multisector results are scoped obstructions, not universal theorems against every possible carrier theory.
 
-### What the nonstationary extension adds
+### Conditional
 
-The nonstationary program adds something important, but narrower.
+Several important statements remain conditional on additional premises or serve as correspondence targets. The standard weak spatial response $\gamma=1$, the boost relation $\kappa_A\eta=2(1+\sigma)$, and the weak rotating endpoint $|\kappa_A|=4$ fit together, but they do not yet arise from one closed source--action--observer chain. Kerr and Lense--Thirring enter only as weak stationary targets.
 
-It adds a locked retarded scalar and shift baseline, exact stationary recovery, real field-work bookkeeping, and a structured hierarchy of promoted nonlinear and tensor layers. That is enough to say that time-dependent gravity is now part of the live framework. It is not enough to say that the entire gravity theory is finished.
+The conserved radiation cavity gives one sharper consequence of the present source choice. For SI plus the minimal stationary scalar field/readout map, the exterior monopole agrees with GR while the center-to-inner-wall clock shift is half the GR value at leading weak-field order. The calculation concerns one complete conserved source. It is not a generic half-pressure rule, it is infeasible as a direct laboratory test, and no external novelty claim has been established. A future independent scalar response to $\mathcal C_{ij}$ could change the result.
 
-The distinction matters because it protects the chapter from overclaiming. Stationary gravity is the achieved backbone. Nonstationary gravity is the bounded extension track growing out of that backbone.
+The scalar nonstationary equation is action-supported for collisionless point carriers. It has a positive free mode, causal retarded propagation, reciprocal point-carrier work, and exact stationary recovery. Its interacting source and standard weak-light readout are not jointly closed, so it remains a candidate rather than a complete physical theory.
 
-### Correspondence, derivation, and open completion work
+### Open
 
-This chapter has repeatedly used correspondence language, and that is appropriate. Some of its strongest results are best described as overlap or pullback results. The stationary Kerr package is the clearest example. It is an exact stationary target in M1 variables, but the full native rotating-source derivation remains open.
+The first open burden is matter itself. SI does not yet come with an interaction action that allocates binding energy, wall tension, mediator momentum, and composite stress in one conserved M1 ledger. Until that exists, the treatment of bound rods, clocks, cavities, and dense matter remains conditional beyond the free-carrier level.
 
-That pattern should be stated plainly. A successful correspondence result is not nothing, but it is also not automatically a full derivation. The gravity chapter therefore earns the right to speak confidently about some stationary structures while still keeping visible where the derivational burden remains.
+The spatial burden is to obtain the required ruler response without evading reciprocity by assertion. A successful completion must either use a carrier generator outside the stated shell class, exhibit a healthy singular or nonlinear branch, provide a closed causal reciprocal response outside the regular self-adjoint class, or explicitly redirect the scalar source and derive the full interacting ledger.
 
-The main unfinished boundaries are now also clear enough to name. Exact native rotating-source closure remains open. Full nonlinear closure remains open: the weak-field spatial stretch $\gamma_{ij}=(1+2\theta_0)\,\delta_{ij}$ is derived, but its nonlinear dynamics — a genuine $\gamma_{ij}$ field equation — are not. The tensor and radiative sectors remain first-pass rather than final.
+The directional burden is equally concrete. The transverse PDE and the weak rotating endpoint are known, but a positive causal action must still connect current, field, carrier force, observer-axis transport, and the observed sign. The provisional $A_i$, $\Pi_i$, and shift-dependent $M_{g,\mathrm{loc}}$ identify pieces of that future map; they do not close it.
 
-The shift coefficient itself has left the debt list: $\kappa_A=4$ is derived through the carrier map, the two-aspect deformation, and boost consistency, with the frame-drag audit as its endpoint validation. What replaces it in the ledger are the two premises that derivation stands on, each a named hardening target. The source identification — the postulate that the gravitational channels are the densitized opposed shell readings, nothing added or reweighted — is checked through the Newtonian limit, the derived current convention, channel positivity, and the isolated-system agreement with the classical accounting, but *why* stage deformation couples to exactly this shell-reading source map still wants a micro-model. Premise P2 — the clock rate as reciprocal of local spatial stretch — is checked through the PPN channel, but its assumption that a confined cycle keeps its coordinate size in a stretched stage still wants an equilibrium-size defense. These are sharper debts than the one they replace: each names a specific argument to be built, not a number to be explained.
+Beyond these lie nonlinear spatial dynamics, physical vector propagation, tensor and radiative sectors, strong fields, hydrostatic equilibrium, TOV-like structure, and an exact native rotating-source solution. No exact Kerr construction or waveform theory is claimed here.
 
-One entry belongs on the prediction side of the ledger rather than the debt side. Because the carrier map weighs all content at its core momentum, M1 assigns no separate gravitational weight to pressure or radiation inside a source. The classical accounting does, and its extra weights cancel in total over any isolated stationary system. That preserves the total source weight, and the full exterior in spherical cases, but it does not force the pressure or stress multipoles of aspherical bodies to cancel. The exposures are stated in the correspondence section: interior field profiles of pressurized bodies at fractional order $p/\rho c^2$, exterior multipoles of aspherical pressurized bodies at the same order, and above all the structure of dense stars, where the classical interior equations lean on local pressure gravitation and M1's do not. The Tier 3 task is now sharp: derive the M1 hydrostatic-equilibrium equation, the analogue of the TOV equation, and only then turn the source-law difference into maximum-mass, radius, and tidal-deformability predictions.
-
-And the deeper ontological question of what spacetime ultimately is in M1 remains downstream of the gravity results rather than fully settled by them.
-
-### The honest closing posture
-
-The right closing posture is therefore disciplined rather than triumphant.
-
-Gravity has done enough to force structured spacetime into the framework as a real physical layer. It has not yet licensed the claim that every aspect of that structure is fully derived, fully closed, or fully interpreted. What this chapter achieves is better than a slogan and less than a finished doctrine. It gives the reader a gravity package that can be followed, judged, and tested, together with a clear view of where the package still stops.
-
-That is the right place to end the gravity chapter. Gravity has shown that the inertial shell is not the whole story. The next task is to ask what additional internal structure is needed once one moves beyond gravity into the geometry of expression, state organization, and the quantum bridge taken up next in the Tier 2 quantum-mechanics chapter.
+Gravity has nevertheless done enough to change M1's ontology of the stage. The stage is no longer a passive coordinate setting. It carries source-dependent structure that local material systems can read. The stationary scalar engine makes that statement calculable; the reciprocity and directional boundaries make its next tests precise. Chapter 4 can now ask how momentum-bearing systems acquire the additional state structure needed for the quantum bridge without mistaking gravity's unfinished sectors for settled foundations.
