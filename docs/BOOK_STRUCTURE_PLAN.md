@@ -2,7 +2,7 @@
 
 Status: working draft
 Created: 2026-03-28
-Last updated: 2026-05-14
+Last updated: 2026-08-03
 Purpose: establish and refine the book architecture while keeping the rendered Quarto hierarchy, M1 maturity levels, and tier logic aligned.
 
 ## Dynamic document note
@@ -62,7 +62,7 @@ Best current rendered/planned structure:
 
 - **Front matter** = landing page plus Preface material: origin, posture, collaboration, reading guidance, and working method.
 - **Tier 1 — Foundations** = rendered chapters `Introduction` and `Foundations`.
-- **Tier 2 — Engines** = achieved or near-achieved M1 effective engines. Currently rendered chapters: `Gravity and Structured Spacetime`, `Quantum Mechanics in Momentum Language`, and `Space Expansion and Stage Dressing`. QFT/EFT remains a candidate Tier 2 engine if it can be kept as a bounded stationary/effective foundation rather than a broad completion claim.
+- **Tier 2 — Engines** = achieved or near-achieved M1 effective engines. Currently rendered chapters: `Gravity and Structured Spacetime`, `Quantum Mechanics in Momentum Language`, and `Space Expansion and Stage Dressing`. **Chapter 6 — Bounded Background Dynamics** remains a **HELD / SPECULATIVE** Tier 2 candidate: a reusable architecture exists, but no folder, authoring brief, or prose session is currently authorized. QFT/EFT remains a candidate Tier 2 engine if it can be kept as a bounded stationary/effective foundation rather than a broad completion claim.
 - **Tier 3 — Tests, Predictions, and Failure Modes** = empirical/risk close. Near-term candidate: neutron-star shallow-heating / strong-gravity quantum-sensitivity test channel.
 - **Tier 0 — Deep Structure and Sub-Particle Models** = provisional downstream-in-reading-order treatment of underlying space/sub-particle carrier models: BFSS/string-compatible structures, torus/two-cycle models, closure/resonance, and internal geometry under M1 constraints.
 - **Appendices and Derivations** = derivation trust layer and technical support.
@@ -142,8 +142,11 @@ Rendered files:
 2. `manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd` — **Quantum Mechanics in Momentum Language**
 3. `manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd` — **Space Expansion and Stage Dressing**
 
-Planned later candidates:
-4. **QFT / EFT Foundations** — only if mature enough as a bounded stationary/effective engine.
+Held later candidate:
+- `manuscript/chapters/02-tier-2-engines/06-background-dynamics/` — **Chapter 6 — Bounded Background Dynamics** (**HELD / SPECULATIVE**; reusable architecture only, with no folder or prose authorized)
+
+Planned later candidate:
+- **QFT / EFT Foundations** — only if mature enough as a bounded stationary/effective engine.
 
 **Job:** develop M1's achieved or near-achieved effective engines in reader-facing form.
 
@@ -198,6 +201,48 @@ Current rendered chapter arc:
 The chapter owns homogeneous kinematics at a supplied stage history. It keeps
 the dynamical law for that history, a closed stage action, gravitational source
 weighting, ADMC amendment, and observational closure outside the Tier 2 claim.
+
+#### Chapter 6 — Bounded Background Dynamics
+
+**Maturity:** **HELD / SPECULATIVE CANDIDATE** — the G1--G7 research packet is
+recorded at bounded-effective speculative maturity, not as fundamental,
+all-amplitude, continuum-complete, or empirically novel cosmology. The
+eight-section architecture remains a reusable proposal, not a standing
+authoring contract. No chapter folder, active authoring brief, or prose session
+is currently authorized.
+
+**Potential job if reopened:** derive the flat homogeneous matter/radiation
+histories supplied to Chapter 5 from the projectable RVQ stage-plus-carrier
+packet, carrying the global constraint, carrier-work/continuity identity,
+acceleration equation, and bounded Chapter 3/5 correspondence without claiming
+G8 or Tier 3 closure.
+
+Reusable proposed spine, inactive while the chapter is held:
+1. The Supplied-History Problem and the Bounded Contract;
+2. Core Terms and Variables;
+3. Projectable Stage-Plus-Carrier Action;
+4. The Homogeneous Constraint, Work, and Acceleration Engine;
+5. Matter, Radiation, and Mixed Histories;
+6. Local Packet and Relational Vacuum;
+7. Chapter 5 Handoff and Background Correspondence;
+8. What the Bounded Background Engine Establishes.
+
+**Dependency direction if reopened:** Chapter 6 would depend one way on Chapter
+3's achieved stationary scalar backbone while preserving Chapter 3's
+provisional directional/vector boundary; Chapter 3 does not supply a locked
+local scalar/vector/tensor packet. Chapter 6 would also depend on Chapter 5's
+supplied-history kinematics. It could cite, project, and interpret those results
+inside its bounded domain, but could not revise the achieved scalar equations,
+the declared source postulate and scoped obstructions, the provisional
+directional status, or the Chapter 5 endpoint formulas. Any upstream
+boundary/handoff clarification would require separate review and adoption.
+
+**Proposed mainline / appendix boundary if reopened:** mainline would carry the
+compact bounded-action anchor and the constraint/work/acceleration derivation.
+Projector kernels, full constraint and Dirac count, RVQ quotient proof and
+observable algebra, tangent-cone analysis, and weak-readout boundedness proof
+would belong in derivation appendices. G8, perturbations, fits, and broader Tier
+3 cosmology remain deferred.
 
 #### Planned Tier 2 candidate — QFT / EFT Foundations
 
@@ -326,7 +371,7 @@ Immature material should remain in `../book/dev/`, not appendices, until stable 
 | Presence vs expression | Light support in QM; fuller treatment only if needed in Tier 0 | Not load-bearing ontology. |
 | Strong-gravity quantum sensitivity | Tier 2 QM result; Tier 3 tests | Keep claims bounded: `p_f -> p_{f,c}` can affect phase/envelope/tunneling. |
 | Neutron-star shallow heating | Tier 3 test chapter candidate | Near-term prediction/application channel; not an engine chapter. |
-| Cosmology `\chi(t)` | Tier 2 engine; Tier 3 for fit/degen tests | Next likely Tier 2 chapter. |
+| Cosmology `\chi(t)` | Chapter 5 in Tier 2; Chapter 6 held as a speculative candidate; Tier 3 for fits/degeneracy/tests | Chapter 5 owns supplied-history kinematics. The G1--G7 background packet remains frontier theory unless the Chapter 6 resumption rule is met. |
 | QFT/EFT | Tier 2 if bounded stationary/effective engine; Tier 3 for overlap tests | Composite/internal-geometry-heavy material stays Tier 0/support. |
 | Torus / two-cycle model | Tier 0 candidate carrier | Bounded carrier/visualization, not primitive backbone. |
 | Closure / resonance / admissibility | Tier 0 / support | Helps constrain sub-particle/internal state models. |
@@ -355,7 +400,8 @@ Immature material should remain in `../book/dev/`, not appendices, until stable 
 - QM as the core operator/correspondence chapter;
 - `\hat M`, `\hat M_g`, standard QM/Dirac correspondence, nonrelativistic and classical/stationary limits;
 - strong-gravity quantum sensitivity as a bounded structural result;
-- cosmology as a separate KM-B / `\chi(t)` engine if the chapter stays engine-first rather than fit-first;
+- Chapter 5 supplied-history stage-dressing kinematics;
+- Chapter 6 only as a held speculative candidate architecture; it is not an active engine or authorized prose project without a fresh contract decision;
 - QFT/EFT only if it can be written as a bounded stationary/effective engine.
 
 ### Keep in Tier 3 — Tests, Predictions, and Failure Modes
@@ -427,8 +473,8 @@ Use this section to capture comments, unresolved structural choices, and explici
 - **Why it matters:** cosmology can be an engine, a fit/testing program, or both.
 - **Current Ada recommendation:** keep cosmology as a Tier 2 engine if `\chi(t)` can be presented cleanly; put fit/degen/test material in Tier 3.
 - **Arne response:** cosmology should have its own visible treatment; it is a separate engine.
-- **Status:** partially resolved.
-- **Next action:** perform a cosmology maturity review before creating its chapter files.
+- **Status:** revised 2026-07-31 after the background-dynamics reassessment. Chapter 5 remains the supplied-history kinematic engine. Chapter 6 is a HELD / SPECULATIVE candidate rather than an authorized reader-facing engine. Fits, degeneracies, perturbations, and falsifiers remain Tier 3.
+- **Next action:** do not launch Chapter 6 prose. Reopen only under the active background-dynamics resumption rule and a fresh explicit contract decision.
 
 ### CQ-06 — Should QFT/EFT be Tier 2, Tier 3, or Tier 0/support?
 - **Why it matters:** QFT/EFT could be a bounded effective engine, an overlap-test program, or a generalized state-space/internal-geometry extension.
@@ -450,9 +496,9 @@ Use this section to capture comments, unresolved structural choices, and explici
 - **Next action:** wait to update `_quarto.yml` with future placeholder parts until actual chapter files are created.
 
 ### WQ-02 — Detail the Cosmology Tier 2 chapter
-- **Status:** next likely planning target.
-- **Question:** how much of `\chi(t)` is engine exposition versus Tier 3 fit/test material?
-- **Next action:** inspect cosmology source notes and propose a chapter burden / section map.
+- **Status:** architecture preserved but prose held after the 2026-07-31 reassessment.
+- **Result:** Chapter 5/6 duties and a possible eight-section Chapter 6 spine are recorded as a reusable proposal. They are not fixed reader-facing architecture or standing authoring authority. Any future route must inherit Chapter 3's achieved scalar result and provisional vector boundary accurately.
+- **Next action:** none while held. Reopen only if the bounded engine gains materially lower trust burden, a selected viable prediction supplies reader payoff, or Arne explicitly accepts formal background closure as sufficient payoff; every route still requires a fresh contract decision.
 
 ### WQ-03 — Detail the neutron-star shallow-heating Tier 3 chapter
 - **Status:** next likely planning target.
@@ -472,7 +518,7 @@ Use this section to capture comments, unresolved structural choices, and explici
 
 - Tier-as-part architecture at the level of major part boundaries.
 - Tier 1 containing Introduction and Foundations as rendered chapters.
-- Tier 2 containing Gravity and Quantum Mechanics as rendered chapters, with Cosmology as the next likely engine target.
+- Tier 2 containing rendered Gravity, Quantum Mechanics, and Chapter 5 stage dressing, with Chapter 6 retained only as a held speculative candidate architecture.
 - Tier 3 containing predictions/tests/failure modes, with neutron-star shallow heating as the next likely test-channel target.
 - Core judgment that the old broad `Quantum Structure and the Geometry of Expression` plan is obsolete because Chapter 04 now handles the mature QM/operator bridge.
 - Core judgment that BFSS/string/torus/internal-geometry material belongs in Tier 0 / Deep Structure and Sub-Particle Models, not in an engine-adjacent speculative sub-tier.
@@ -480,10 +526,11 @@ Use this section to capture comments, unresolved structural choices, and explici
 
 ## Significant blockers
 
-_None currently._
+_None for current structure maintenance. The Chapter 6 hold is a deliberate
+research and authoring disposition, not an active planning blocker._
 
 Add blockers here only when they materially prevent the next structural step.
 
 ## Next smallest win
 
-Build short planning briefs for the two likely next authoring targets: Tier 3 neutron-star shallow heating and Tier 2 cosmology.
+Keep Chapter 6 held and advance WQ-03, the bounded Tier 3 neutron-star shallow-heating structure, as the next likely planning target.
