@@ -68,9 +68,12 @@ release.
 
 This is a working manuscript under active development. Cite a specific
 [GitHub release](https://github.com/ada-mercer/momentum-first/releases) when a
-stable version matters. Machine-readable citation metadata lives in
-[`CITATION.cff`](CITATION.cff), and contribution and verification records live
-under [`docs/provenance/`](docs/provenance/README.md).
+stable version matters. The canonical manuscript citation is the
+[manuscript concept DOI](https://doi.org/10.5281/zenodo.21729037); tagged source
+archives are collected under the separate
+[source concept DOI](https://doi.org/10.5281/zenodo.21775704). Machine-readable
+citation metadata lives in [`CITATION.cff`](CITATION.cff), and contribution and
+verification records live under [`docs/provenance/`](docs/provenance/README.md).
 
 Manuscript text, figures, and rendered outputs are licensed under
 **CC BY-NC-SA 4.0**. Code, scripts, tests, and CI configuration are licensed
