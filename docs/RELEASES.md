@@ -44,6 +44,30 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.3.8 — Gravity closure-boundary recalibration
+
+- corrected the Chapter 3 source boundary by separating the SI free-carrier
+  identity from the declared interacting-source postulate and retaining its
+  scoped single-shell and regular-multisector reciprocal-response obstructions;
+- established the action-consistent stationary scalar packet for clock depth,
+  ruler scaling, and null propagation, including exact local light speed within
+  the stated carrier readout;
+- replaced the former derived spatial/directional closure claim with an explicit
+  conditional correspondence, preserving the scalar `kappa` versus directional
+  `kappa_A` distinction and the conserved radiation-cavity discriminator;
+- separated the nonstationary sector into an action-supported scalar candidate
+  and a provisional directional/vector seed, without claiming complete
+  interacting closure, derived `gamma = 1`, physical directional closure, or
+  Kerr, TOV, tensor, strong-field, and waveform completion;
+- adopted thirteen Chapter 3 derivation appendices as the trust layer for the
+  carrier map, scoped obstructions, observer bookkeeping, stationary
+  correspondence audits, radiation discriminator, and nonstationary boundary;
+- organized derivation appendices by chapter, repaired Quarto navigation,
+  provenance, and downstream paths, and aligned the book structure plan with
+  Chapter 3's achieved scalar and provisional directional maturity;
+- added the guarded Zenodo manuscript-publication path and focused verification
+  needed for the first production manuscript DOI mint.
+
 ### 0.3.7 — Bosic-slot stage dressing and χ² expansion kinematics
 
 - replaced the prior translation-yield Chapter 5 with a seven-section
