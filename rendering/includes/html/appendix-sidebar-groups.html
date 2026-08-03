@@ -1,0 +1,71 @@
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebarRoot = document.querySelector(
+    "#quarto-sidebar .sidebar-menu-container > ul"
+  );
+
+  if (!sidebarRoot) return;
+
+  // The book title already links to the home page above the menu.
+  const homeItem = [...sidebarRoot.children].find((item) => {
+    const link = item.querySelector(":scope > .sidebar-item-container a");
+    const text = link?.querySelector(".menu-text")?.textContent?.trim();
+    return text === "Momentum First";
+  });
+
+  homeItem?.remove();
+
+  const appendixSection = [...sidebarRoot.children].find((item) => {
+    const label = item.querySelector(
+      ":scope > .sidebar-item-container .menu-text"
+    );
+    return label?.textContent?.trim() === "Appendices";
+  });
+
+  const appendixList = appendixSection?.querySelector(":scope > ul.sidebar-section");
+  if (!appendixList) return;
+
+  const appendixItems = [...appendixList.children].filter((item) =>
+    item.matches("li.sidebar-item")
+  );
+
+  const groups = [
+    { label: "Chapter 2 — Foundations", path: "/02-foundations/" },
+    {
+      label: "Chapter 3 — Gravity",
+      path: "/03-gravity-and-structured-spacetime/",
+    },
+    { label: "Chapter 4 — Quantum Mechanics", path: "/04-quantum-mechanics/" },
+    { label: "Chapter 5 — Expansion", path: "/05-expansion/" },
+  ];
+
+  for (const group of groups) {
+    const items = appendixItems.filter((item) => {
+      const href = item.querySelector("a.sidebar-link")?.getAttribute("href");
+      return href?.includes(group.path);
+    });
+
+    if (items.length === 0) continue;
+
+    const wrapper = document.createElement("li");
+    wrapper.className = "sidebar-item mf-appendix-group";
+
+    const details = document.createElement("details");
+    details.className = "mf-appendix-details";
+    details.open = items.some((item) =>
+      item.querySelector("a.sidebar-link.active")
+    );
+
+    const summary = document.createElement("summary");
+    summary.textContent = group.label;
+
+    const contents = document.createElement("ul");
+    contents.className = "collapse list-unstyled sidebar-section depth2 show";
+    items.forEach((item) => contents.appendChild(item));
+
+    details.append(summary, contents);
+    wrapper.appendChild(details);
+    appendixList.appendChild(wrapper);
+  }
+});
+</script>

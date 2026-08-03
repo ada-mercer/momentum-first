@@ -38,7 +38,7 @@ Presence-vs-expression is allowed only as a light support note around `\Psi`, ph
 
 ### 04 — Stationary gravity and the operator `\hat M_g`
 - Job: show `p_{f,c}`, `\hat{\boldsymbol\Pi}`, and `\hat M_g` as the gravity deformation of `\hat M`; explicitly show compatibility by squaring the local/principal symbol to recover `M_{g,loc}`.
-- Source links: `book/tiers/T2_engines/QM_DIRAC_M1_SUMMARY.md`; `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/05-local-gravity-and-observer-bookkeeping.qmd`; `manuscript/appendices/derivations/03-05A-local-observer-bookkeeping.qmd`.
+- Source links: `book/tiers/T2_engines/QM_DIRAC_M1_SUMMARY.md`; `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/05-local-gravity-and-observer-bookkeeping.qmd`; `manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-local-observer-bookkeeping.qmd`.
 - Note: this chapter uses the simplified momentum-potential convention `\hat{\boldsymbol\Pi}=\hat{\mathbf p}-\mathbf A_g`; the gravity chapter's normalized shift convention can be footnoted later if needed.
 
 ### 05 — Why the Schrödinger form appears

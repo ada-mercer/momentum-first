@@ -1,3 +1,8 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/05-03A-free-carrier-correspondence-under-yield-history.html
+---
+
 # Derivation 5.3A — Free-carrier correspondence under a yield history {#sec-derivation-05-03a-free-carrier-correspondence .unnumbered}
 
 ## Purpose

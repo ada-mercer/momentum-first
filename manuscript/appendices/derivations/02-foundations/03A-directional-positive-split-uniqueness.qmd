@@ -1,3 +1,8 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/02-03A-directional-positive-split-uniqueness.html
+---
+
 # Derivation 2.3A — Structural uniqueness of the directional shell readings {#sec-directional-positive-split-uniqueness .unnumbered}
 
 ## Purpose

@@ -81,7 +81,7 @@ $$
 }.
 $$
 
-[Derivation 5.2A](../../../appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd) supplies the operator algebra and group-velocity theorem.
+[Derivation 5.2A](../../../appendices/derivations/05-expansion/02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd) supplies the operator algebra and group-velocity theorem.
 
 ### True-frame and bound-frame variables
 

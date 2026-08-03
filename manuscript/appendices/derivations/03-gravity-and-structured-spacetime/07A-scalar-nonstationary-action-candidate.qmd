@@ -1,0 +1,187 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/03-07A-nonstationary-linear-baseline.html
+---
+
+# Derivation 3.7A — Scalar nonstationary action candidate {#sec-derivation-03-07A-scalar-nonstationary .unnumbered}
+
+## Purpose
+
+This appendix records the scalar time-dependent equation supported by the
+reviewed point-carrier action, including its positive free mode, retarded
+solution, stationary recovery, and reciprocal work ledger.
+
+## Role, regime, and status
+
+- **Role:** nonstationary scalar candidate.
+- **Regime:** linear weak response about the asymptotic background, with
+  collisionless point carriers and action time $t_*$.
+- **Status:** action-supported PDE and point-carrier work closure; not an
+  interacting physical gravity baseline.
+- **Non-claim:** the appendix does not derive bound-matter sourcing,
+  $\gamma=1$ operational readout, emission phenomenology, screening, or a
+  tensor waveform sector.
+
+## Definitions
+
+$t_*$ is the evolution parameter of the carrier--field action, normalized to
+the asymptotic clock. The content-density notation is
+
+$$
+\rho_M:=\frac{\mathcal M}{c},
+$$
+
+so $[\rho_M]=\mathrm{kg\,m^{-3}}$ in the cold static calibration.
+
+The scalar field and carriers are governed by
+
+$$
+S_\theta=\frac Z2\int dt_*d^3x
+\left(\frac{\dot\theta^2}{c^2}-|\nabla\theta|^2\right),
+$$
+
+$$
+H_a=N(\theta)c
+\sqrt{p_{f,a}^2+Q(\theta)p_a^2}.
+\tag{3.7A.1}
+$$
+
+At the weak point,
+
+$$
+N=1-\alpha\theta+\cdots,
+\qquad
+Q=1-2\alpha\gamma\theta+\cdots,
+$$
+
+and Newtonian normalization fixes
+
+$$
+Z=\frac{\alpha^2c^4}{4\pi G_N}>0.
+\tag{3.7A.2}
+$$
+
+## Linear equation and source status
+
+Variation gives
+
+$$
+\Box\theta
+=\frac{4\pi G_N}{\alpha c^3}
+\left(\mathcal M+\gamma\mathcal C_{kk}\right),
+\qquad
+\Box:=\frac1{c^2}\partial_{t_*}^2-\Delta.
+\tag{3.7A.3}
+$$
+
+The current content-only stationary source package corresponds, within this
+single-shell scalar completion, to $\gamma=0$. With the normalized choice
+$\alpha=1$,
+
+$$
+\boxed{
+\Box\theta=\frac{4\pi G_N}{c^2}\rho_M}.
+\tag{3.7A.4}
+$$
+
+This branch preserves the stationary Poisson map and exact local $c$ with its
+carrier-derived clock and ruler. It does not provide the standard
+$\gamma=1$ weak-light response. The $\gamma=1$ alternative changes the
+point-carrier source to $\mathcal M+\mathcal C_{kk}$ and is not adopted or
+interaction-closed.
+
+## Retarded solution and stationary recovery
+
+For compact prescribed weak source data, Equation (3.7A.4) has the retarded
+solution
+
+$$
+\boxed{
+\theta(t_*,\mathbf x)
+=\frac{G_N}{c^2}\int
+\frac{\rho_M(t_*-R/c,\mathbf x')}{R}\,d^3x'},
+\qquad
+R:=|\mathbf x-\mathbf x'|.
+\tag{3.7A.5}
+$$
+
+When time derivatives vanish,
+
+$$
+\Delta\theta=-\frac{4\pi G_N}{c^2}\rho_M,
+$$
+
+$$
+\theta(\mathbf x)
+=\frac{G_N}{c^2}\int
+\frac{\rho_M(\mathbf x')}{R}\,d^3x',
+\tag{3.7A.6}
+$$
+
+which is exactly the weak stationary scalar map. The source history in
+Equation (3.7A.5) must come from a conserved matter model; an arbitrary
+prescribed function is only an external-source approximation.
+
+## Positive mode and reciprocal work
+
+The conjugate momentum and field Hamiltonian are
+
+$$
+\pi_\theta=\frac Z{c^2}\dot\theta,
+$$
+
+$$
+H_\theta=\int d^3x
+\left(\frac{c^2\pi_\theta^2}{2Z}
++\frac Z2|\nabla\theta|^2\right).
+\tag{3.7A.7}
+$$
+
+Because $Z>0$, the free scalar has one positive mode per nonzero wave vector,
+
+$$
+\omega^2=c^2k^2.
+$$
+
+Let
+
+$$
+\Xi(\mathbf x)
+:=\sum_a\frac{\partial H_a}{\partial\theta}
+\delta^{(3)}(\mathbf x-\mathbf x_a).
+$$
+
+The field energy satisfies
+
+$$
+\partial_{t_*}u_\theta+\nabla\cdot\mathbf S_\theta
+=-\Xi\dot\theta,
+$$
+
+and the carrier energy satisfies the opposite equation after its transport
+flux is included. Thus the displayed point-carrier action has reciprocal local
+and integrated work. This does not establish positivity or localization for
+arbitrary binding and interaction energies.
+
+## Operational content
+
+The same action supplies clocks, rulers, and trajectories:
+
+$$
+d\tau=N\,dt_*,
+\qquad
+d\ell^2=Q^{-1}\delta_{ij}dx^i dx^j,
+\qquad
+\frac{d\ell}{d\tau}=c\quad\text{for }p_f=0.
+$$
+
+These observables make the scalar mode more than a free formal PDE. Its status
+nevertheless remains a point-carrier candidate because the interacting source
+and the physical $\gamma=1$ readout are not jointly closed.
+
+## Result
+
+The scalar equation has a positive action-supported free mode, causal retarded
+propagation at $c$, exact stationary recovery, and reciprocal point-carrier
+work. It is a disciplined nonstationary candidate, not a promoted physical
+gravity baseline.

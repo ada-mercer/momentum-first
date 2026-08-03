@@ -1,3 +1,8 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/05-04A-lightlike-propagation-and-matched-endpoint-standards.html
+---
+
 # Derivation 5.4A — Lightlike propagation and matched endpoint standards {#sec-derivation-05-04a-lightlike-endpoint-standards .unnumbered}
 
 ## Purpose

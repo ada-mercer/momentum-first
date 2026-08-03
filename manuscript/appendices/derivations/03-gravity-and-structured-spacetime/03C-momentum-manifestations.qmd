@@ -1,0 +1,103 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/03-03C-momentum-manifestations.html
+---
+
+# Derivation 3.3C — Momentum manifestations and source status {#sec-derivation-03-03C-momentum-manifestations .unnumbered}
+
+## Purpose
+
+This appendix is a status-aware dictionary for the source packages
+$\mathcal M$, $\mathcal P_i$, and $\mathcal C_{ij}$.
+
+## Role, regime, and status
+
+- **Role:** source and transport lookup table.
+- **Regime:** local carrier bookkeeping; present field use is weak and
+  stationary.
+- **Status:** exact where it applies the declared free-carrier map; conditional
+  or open where interactions determine the ledger.
+- **Non-claim:** entries for solids, walls, binding, and static fields are not
+  derived without a complete interacting action.
+
+The governing definitions are
+
+$$
+\mathcal M=\left\langle\sum_a M_a\right\rangle,
+\qquad
+\mathcal P_i=\left\langle\sum_a p_{i,a}\right\rangle,
+\qquad
+\mathcal C_{ij}=\left\langle\sum_a\frac{p_{i,a}p_{j,a}}{M_a}\right\rangle.
+$$
+
+## Exact within the carrier map
+
+| Manifestation | $\mathcal M$ | $\mathcal P_i$ | $\mathcal C_{ij}$ | Status |
+|---|---|---|---|---|
+| one free massive carrier | $M$ | $p_i$ | $p_ip_j/M$ | exact given SI |
+| cold free carriers at rest | $\rho c$ | $0$ | negligible in the ideal limit | exact given SI and the rest idealization |
+| coherent dust stream | carrier content density | net momentum density $j_i$ | coherent transport $p_ip_j/M$ | exact for the stated ensemble |
+| isotropic free gas | content including kinetic agitation | $0$ | isotropic pressure moment | exact for the stated distribution |
+| isotropic null gas | $u/c$ | $0$ | $\mathcal C_{kk}=\mathcal M$ | exact for collisionless null carriers |
+| directed null beam | $u/c$ | $j_i$ | directed null transport | exact for the beam distribution |
+
+For a beam along $+x$,
+
+$$
+\mathcal J_x^+=\frac32\frac{u}{c},
+\qquad
+\mathcal J_x^-=\frac12\frac{u}{c},
+\qquad
+\mathcal C_{xx}=\frac{u}{c}.
+$$
+
+## Point-carrier realizations
+
+The scalar carrier action used in Derivation 3.4B replaces the flat moments by
+
+$$
+\mathcal M_Q
+=\left\langle\sum_a\sqrt{p_{f,a}^2+Qp_a^2}\right\rangle,
+\qquad
+\mathcal C_{Q,ij}
+=\left\langle\sum_a\frac{p_{i,a}p_{j,a}}
+{\sqrt{p_{f,a}^2+Qp_a^2}}\right\rangle.
+$$
+
+Those expressions are derived for the displayed collisionless point-carrier
+action. They close its local transport and work ledger. They do not supply a
+bound rod, a wall, a binding mediator, or an interaction stress.
+
+## Interacting and composite entries
+
+| Manifestation | Provisional allocation | Missing derivation |
+|---|---|---|
+| warm interacting gas | content in $\mathcal M$; pressure transport in $\mathcal C_{ij}$ | collision and binding localization |
+| stressed solid | material content in $\mathcal M$; anisotropic transport/stress in $\mathcal C_{ij}$ | lattice, binding, and improvement-invariant ledger |
+| confining wall | wall content in $\mathcal M$; tangential tension in $\mathcal C_{ij}$ | explicit wall action and reciprocal gravity coupling |
+| rotating body | content in $\mathcal M$; net azimuthal current in $\mathcal P_\phi$; internal transport in $\mathcal C_{ij}$ | complete composite current and stress ledger |
+| static field configuration | field content and stress moments | action-level allocation shared with its supports |
+
+These rows are conditional bookkeeping targets, not derived M1 source
+theorems. In particular, the classical Laue cancellation expected for a
+complete isolated stationary system does not by itself determine how M1
+localizes wall and binding contributions.
+
+## Open field-response allocation
+
+The achieved stationary map uses $\mathcal M$ as the scalar source and
+$\mathcal P_i$ as the directional source. An independent gravitational
+response to $\mathcal C_{ij}$ remains a theory choice. The reviewed scalar
+carrier analysis shows why this matters: in its reciprocal single-shell class,
+an isotropic ruler response with coefficient $\gamma$ carries the same
+$\gamma\mathcal C_{kk}$ scalar source. The current content-only source
+postulate and the standard $\gamma=1$ ruler are therefore not jointly derived
+by that action.
+
+## Result
+
+Free-carrier manifestations are exact applications of SI. Point-carrier
+action results are exact only for their displayed model. Composite, wall,
+field, and binding entries require an interacting ledger. The gravitational
+response assigned to the second transport moment remains an open completion
+question rather than a hidden part of the source dictionary.

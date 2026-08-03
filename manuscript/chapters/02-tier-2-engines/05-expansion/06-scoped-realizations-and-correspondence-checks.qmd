@@ -152,6 +152,6 @@ This is the standard linear matter-growth equation at the same supplied $H(t)$ a
 
 ### What these checks establish
 
-The clean-branch requirement selects first-power scaling independently in the hydrogenic and Newtonian models. With those powers, atomic lengths, electronic clock frequencies, orbital radii, orbital periods, and linear matter growth fit one common local-standard construction. [Derivation 5.6A](../../../appendices/derivations/05-06A-local-covariance-and-scoped-sector-realizations.qmd) provides the detailed balances, growth derivation, and regime ledger.
+The clean-branch requirement selects first-power scaling independently in the hydrogenic and Newtonian models. With those powers, atomic lengths, electronic clock frequencies, orbital radii, orbital periods, and linear matter growth fit one common local-standard construction. [Derivation 5.6A](../../../appendices/derivations/05-expansion/06A-local-covariance-and-scoped-sector-realizations.qmd) provides the detailed balances, growth derivation, and regime ledger.
 
 The result is a coherent electromagnetic/Newtonian realization, not yet an all-sector law. Its value is sharper than an assumed fit: two different bound systems select the same coupling exponent, and that exponent then completes the $X^3$ structure required by linear growth.

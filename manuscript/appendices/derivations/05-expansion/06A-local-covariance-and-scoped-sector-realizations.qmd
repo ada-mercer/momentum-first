@@ -1,3 +1,8 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/05-06A-local-covariance-and-scoped-sector-realizations.html
+---
+
 # Derivation 5.6A — Local covariance and scoped sector realizations {#sec-derivation-05-06a-local-covariance .unnumbered}
 
 ## Purpose

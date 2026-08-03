@@ -1,3 +1,8 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.html
+---
+
 # Derivation 5.2A — Bosic-slot stage dressing and the chi-squared group velocity {#sec-derivation-05-02a-bosic-slot-stage-dressing .unnumbered}
 
 ## Purpose

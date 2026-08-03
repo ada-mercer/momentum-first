@@ -1,0 +1,166 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/03-03A-carrier-source-map.html
+---
+
+# Derivation 3.3A — Carrier-map source postulate and consequences {#sec-derivation-03-03A-carrier-source-map .unnumbered}
+
+## Purpose
+
+This appendix states the source identification used by the stationary M1
+gravity construction and derives what follows from it without importing an
+interacting source ledger.
+
+## Role, regime, and status
+
+- **Role:** selected source postulate followed by exact algebraic consequences.
+- **Regime:** the counting is kinematic; its present gravitational use is weak
+  and stationary.
+- **Status:** the free-carrier map is explicit. Its microscopic origin and its
+  extension through binding, walls, and interactions remain open.
+- **Non-claim:** the postulate is not derived from Foundations, and the algebra
+  below is not a complete theory of composite gravitating matter.
+
+## Source identification
+
+For a carrier with core-momentum magnitude
+
+$$
+M=\sqrt{p_f^2+\delta^{ij}p_i p_j},
+$$
+
+the opposed shell readings along an oriented axis $\hat k$ are
+
+$$
+p_k^+=M+\frac12p_k,
+\qquad
+p_k^-=M-\frac12p_k.
+$$
+
+The source identification (SI) postulates that gravity reads the local
+densities of these quantities:
+
+$$
+\mathcal J_k^\pm(x)
+=
+\left\langle\sum_a
+\left(M_a\pm\frac12p_{k,a}\right)\right\rangle_x .
+\tag{3.3A.1}
+$$
+
+Here $\langle\cdot\rangle_x$ denotes a local coarse-grained density. Equation
+(3.3A.1) is the postulate. The remaining identities in this section are its
+algebraic consequences.
+
+## Even and odd packages
+
+Define
+
+$$
+\mathcal M_k:=\frac{\mathcal J_k^++\mathcal J_k^-}{2},
+\qquad
+\mathcal P_k:=\mathcal J_k^+-\mathcal J_k^-.
+$$
+
+Substitution gives
+
+$$
+\boxed{\mathcal M_k=\varrho
+:=\left\langle\sum_aM_a\right\rangle_x}
+\qquad\text{for every }k,
+\tag{3.3A.2}
+$$
+
+and
+
+$$
+\boxed{\mathcal P_k=j_k
+:=\left\langle\sum_a p_{k,a}\right\rangle_x}.
+\tag{3.3A.3}
+$$
+
+The scalar package is therefore axis-independent without an isotropy
+assumption or a $1/3$ share. The odd package is the local net momentum
+component. For cold matter at rest, $\mathcal M=\rho c$; for radiation of
+energy density $u$, $\mathcal M=u/c$.
+
+The channels are positive carrier by carrier. Since
+$|p_k|\leq |\mathbf p|\leq M$,
+
+$$
+M\pm\frac12p_k\geq\frac12M\geq0,
+$$
+
+so $\mathcal J_k^\pm\geq0$. This positivity is inherited from the declared
+shell readings; it is not a separate energy condition.
+
+## The second transport moment
+
+The even and odd packages do not exhaust local momentum transport. Free
+carriers also define
+
+$$
+\mathcal C_{ij}(x)
+:=
+\left\langle\sum_a\frac{p_{i,a}p_{j,a}}{M_a}\right\rangle_x.
+\tag{3.3A.4}
+$$
+
+$\mathcal C_{ij}$ records pressure, counterflow, shear, and radiation
+transport. In a local flat bookkeeping frame it enters the first-moment
+balance schematically as
+
+$$
+\partial_{t_*}\mathcal P_i+c\,\partial_j\mathcal C_{ij}=f_i.
+$$
+
+The current minimal stationary field map assigns no independent scalar
+response to $\mathcal C_{ij}$. That assignment is part of the adopted source
+package; it is not proved by Equation (3.3A.4).
+
+## Free carriers versus interacting systems
+
+Equations (3.3A.2)--(3.3A.4) are exact for the declared local free-carrier
+coarse graining. A composite system adds a harder question: how interaction
+energy, binding, mediator momentum, wall tension, and improvements are
+localized in one conserved M1 ledger. No interaction action presently derives
+that allocation.
+
+Classical stationary systems provide a useful comparison. Conservation and
+compact support imply the Laue identity
+
+$$
+\int T^{ij}\,d^3x=0,
+$$
+
+or, axis by axis,
+
+$$
+\int T^{ii}\,d^3x=0
+\qquad\text{(no sum)}.
+\tag{3.3A.5}
+$$
+
+Equation (3.3A.5) explains why radiation pressure and confining wall tension
+cancel in the exterior monopole of a complete isolated system
+[@misner1959active]. It does not derive the corresponding M1 wall and binding
+ledger. Nor does it erase local interior differences: the Green kernel weights
+different source radii differently even when the unweighted stress integral
+vanishes.
+
+## Result
+
+The stationary source construction adopts
+
+$$
+\mathcal J_k^\pm
+\quad\Longrightarrow\quad
+\mathcal M=\varrho,
+\qquad
+\mathcal P_i=j_i,
+$$
+
+with channel positivity and axis independence following exactly from SI. The
+postulate supplies a clean free-carrier source grammar. It does not yet supply
+the interacting allocation needed for walls, binding, or a universal
+stress-response law.

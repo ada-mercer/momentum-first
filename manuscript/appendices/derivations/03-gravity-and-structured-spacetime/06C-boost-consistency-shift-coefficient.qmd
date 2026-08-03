@@ -1,0 +1,114 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/03-06C-boost-consistency-shift-coefficient.html
+---
+
+# Derivation 3.6C — Boost consistency and the shift coefficient {#sec-derivation-03-06C-boost-consistency .unnumbered}
+
+## Purpose
+
+This appendix retains the weak boosted-metric coefficient relation as a
+conditional correspondence identity and states exactly why it does not close
+the physical directional theory.
+
+## Role, regime, and status
+
+- **Role:** weak stationary regression relation.
+- **Regime:** first order in $\beta_i=v_i/c$ and first order in the static
+  scalar field.
+- **Status:** the kinematic coefficient family is valid given its metric-facing
+  premises. Its inputs are not jointly derived from the current M1 action.
+- **Non-claim:** the relation does not prove P2, $\gamma=1$, the directional
+  action, or the observer-transport sign.
+
+## Boosted static response
+
+Let a static weak field have
+
+$$
+h_{00}=2\theta_0,
+\qquad
+h_{ij}=2\sigma\theta_0\delta_{ij},
+\tag{3.6C.1}
+$$
+
+where $\sigma$ is kept symbolic. A first-order boost produces
+
+$$
+h_{0i}^{\mathrm{boost}}
+=-2(1+\sigma)\beta_i\theta_0
+\tag{3.6C.2}
+$$
+
+in the declared shift convention. One contribution comes from the clock
+response and $\sigma$ from the isotropic spatial response.
+
+Under the normalized weak clock convention $\alpha=1$ used in the carrier
+analysis, $\sigma=\gamma$. The separate symbols are retained here only because
+$\gamma$ labels the carrier/ruler coefficient whereas $\sigma$ labels its
+boosted-metric correspondence role.
+
+Suppose the odd source convention is
+
+$$
+\mathcal P_i=\eta j_i,
+$$
+
+so that the corresponding primitive directional response of the boosted
+source is
+
+$$
+\theta_i=\eta\beta_i\theta_0.
+$$
+
+If the provisional observer-facing Chapter shift reserved in Derivation 3.5A
+is packaged as $A_i=-\kappa_A\theta_i$, equating it to Equation (3.6C.2)
+gives
+
+$$
+\boxed{
+\kappa_A\eta=2(1+\sigma)},
+\qquad
+\kappa_A=\frac{2(1+\sigma)}\eta.
+\tag{3.6C.3}
+$$
+
+Given SI, $\eta=1$. Given a standard weak spatial response, $\sigma=1$.
+Those two premises make Equation (3.6C.3) land on $\kappa_A=4$, the endpoint
+magnitude of Derivation 3.6B.
+
+## Why this is conditional
+
+The old derivation chain treated $\sigma=1$ as a consequence of comoving
+cycle reasoning. The scalar carrier analysis now shows that the physical ruler
+must be derived with the clock and null transport from one action. In the
+reviewed reciprocal class, nonzero $\sigma$ is paired with a stress-trace
+scalar response; the current content-only source and $\sigma=1$ are not
+jointly closed.
+
+The directional analysis supplies a second boundary. Equation (3.6C.3)
+matches metric components after a boost. It does not decide which response
+coordinate couples to carriers, how that coordinate is sourced by a positive
+action, or how local axes are transported to infinity. The one-vector action
+can have the required magnitude while giving the wrong physical orientation.
+
+Thus the three statements
+
+$$
+\eta=1,
+\qquad
+\sigma=1,
+\qquad
+|\kappa_A|=4
+$$
+
+remain mutually compatible as weak correspondence targets. Their compatibility
+is not a derivation of one physical source--action--observer pipeline.
+
+## Result
+
+Boost consistency yields the conditional identity
+$\kappa_A\eta=2(1+\sigma)$. It is a useful regression relation among a
+source-current normalization, a spatial response, and a metric-facing shift.
+It neither supplies the missing scalar action closure nor fixes the
+directional observable sign.

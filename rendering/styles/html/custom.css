@@ -13,6 +13,48 @@ main.content h3 {
   margin-top: 1.7rem;
 }
 
+/* Chapter-grouped appendix navigation ------------------------------------ */
+
+.mf-appendix-group {
+  margin-left: 0.25rem;
+}
+
+.mf-appendix-details > summary {
+  display: flex;
+  gap: 0.45rem;
+  align-items: baseline;
+  padding: 0.22rem 0.15rem;
+  color: var(--bs-body-color);
+  cursor: pointer;
+  list-style: none;
+}
+
+.mf-appendix-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.mf-appendix-details > summary::before {
+  content: "›";
+  flex: 0 0 auto;
+  color: var(--bs-secondary-color);
+  font-size: 1.05em;
+  transform-origin: center;
+  transition: transform 120ms ease;
+}
+
+.mf-appendix-details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.mf-appendix-details > summary:hover,
+.mf-appendix-details > summary:focus-visible {
+  color: var(--bs-link-color);
+}
+
+.mf-appendix-details > .sidebar-section {
+  margin-left: 0.65rem;
+}
+
 /* Home / HTML front page -------------------------------------------------- */
 
 body.mf-home #title-block-header,

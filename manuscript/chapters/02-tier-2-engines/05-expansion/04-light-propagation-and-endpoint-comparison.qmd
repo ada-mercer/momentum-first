@@ -142,4 +142,4 @@ $$
 }.
 $$
 
-Wavelength redshift and duration stretching are thus two readings of one endpoint comparison. The stage history determines the path, equal paths determine the neighboring-feature separation, and co-scaling rods with matched clocks determine what emitter and observer report. [Derivation 5.4A](../../../appendices/derivations/05-04A-lightlike-propagation-and-matched-endpoint-standards.qmd) gives the full endpoint expansion and regime assumptions.
+Wavelength redshift and duration stretching are thus two readings of one endpoint comparison. The stage history determines the path, equal paths determine the neighboring-feature separation, and co-scaling rods with matched clocks determine what emitter and observer report. [Derivation 5.4A](../../../appendices/derivations/05-expansion/04A-lightlike-propagation-and-matched-endpoint-standards.qmd) gives the full endpoint expansion and regime assumptions.

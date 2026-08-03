@@ -1,3 +1,8 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.html
+---
+
 # Derivation 4.8A — Strong-gravity tunneling sensitivity {#sec-derivation-04-08a-strong-gravity-tunneling .unnumbered}
 
 ## Purpose

@@ -14,14 +14,19 @@ Examples:
 
 ## Filename convention
 
-Use a filesystem-safe form while preserving the visible derivation label inside the file.
-Recommended filename pattern:
+Group derivations by their parent manuscript chapter. The chapter directory
+carries the chapter number and slug; each filename therefore begins with only
+the local section-and-letter label.
 
-- `03-01A-short-slug.qmd`
-- `03-01B-short-slug.qmd`
-- `02-05A-short-slug.qmd`
+Recommended path pattern:
 
-This keeps lexicographic ordering stable while preserving the human numbering convention.
+- `02-foundations/05A-short-slug.qmd`
+- `03-gravity-and-structured-spacetime/01A-short-slug.qmd`
+- `03-gravity-and-structured-spacetime/01B-short-slug.qmd`
+
+The visible title inside each file retains the complete derivation label, such
+as `Derivation 3.1A`. This keeps chapter ownership explicit without repeating
+the chapter number in both the directory and filename.
 
 ## In-text reference style
 

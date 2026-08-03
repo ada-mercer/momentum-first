@@ -1,0 +1,109 @@
+---
+aliases:
+  - /manuscript/appendices/derivations/03-07B-nonstationary-completion-ladder.html
+---
+
+# Derivation 3.7B — Directional and completion boundaries {#sec-derivation-03-07B-completion-boundaries .unnumbered}
+
+## Purpose
+
+This appendix records the inherited transverse-vector PDE as a provisional
+field seed and localizes the remaining nonlinear, tensor, radiative, and
+rotating-source burdens.
+
+## Role, regime, and status
+
+- **Role:** maturity and completion ledger.
+- **Regime:** weak nonstationary response and downstream extensions.
+- **Status:** vector PDE provisional; higher layers open.
+- **Non-claim:** no physical vector mode, nonlinear coefficient family,
+  tensor source, waveform, or exact rotating solution is promoted here.
+
+## Provisional vector seed
+
+The inherited transverse equation is
+
+$$
+\boxed{
+\Box \mathcal A_i
+=-\frac{16\pi G_N}{c^3}j_i^\perp,
+\qquad
+\partial_i\mathcal A_i=0}.
+\tag{3.7B.1}
+$$
+
+As a PDE, Equation (3.7B.1) has the retarded Green form
+
+$$
+\mathcal A_i(t_*,\mathbf x)
+=-\frac{4G_N}{c^3}\int
+\frac{j_i^\perp(t_*-R/c,\mathbf x')}{R}\,d^3x'.
+\tag{3.7B.2}
+$$
+
+Its stationary limit recovers the inherited transverse Poisson equation. In
+the selected positive-action normalization only, this gives
+$\mathcal A_i=-4\theta_i^\perp$. Here $\mathcal A_i$ labels the propagating
+action/PDE coordinate. It is not the provisional observer-facing Chapter shift
+$A_i$ of Derivation 3.5A, is not identified with a physical observer shift,
+and is not a universal readout map. These facts establish field-side
+consistency only.
+
+The physical promotion gate remains failed. For a single positive reciprocal
+vector action, the source sign, work ledger, mass-shell metric dictionary, and
+rotating-source solution combine to reverse the physical Lense--Thirring
+orientation. A tested elliptic constrained response can repair the stationary
+sign only by fitting a coefficient and introduces no stage-causal observable
+map. Promoting the compensator to a healthy causal propagating sector returns
+the positive-bundle sign obstruction.
+
+Equation (3.7B.1) therefore does not yet support:
+
+- a physical ordinary-matter vector mode count;
+- a closed source--carrier work exchange;
+- a transported observer-axis law;
+- a vector radiation observable; or
+- a rotating-source prediction.
+
+## Completion ledger
+
+| Layer | Present object | What is established | What remains open |
+|---|---|---|---|
+| stationary scalar | $\Delta\theta_0=-(4\pi G_N/c^3)\mathcal M$ | Poisson/Newtonian map | interacting source allocation and physical $\gamma=1$ ruler |
+| nonstationary scalar | Derivation 3.7A | positive point-carrier mode, retarded solution, reciprocal point-carrier work | bound matter, emission, screening, empirical viability |
+| stationary directional | $\Delta\theta_i^\perp=-(4\pi G_N/c^3)j_i^\perp$ | field-side target and $|\kappa|=4$ endpoint | positive causal action/readout orientation |
+| nonstationary directional | $\mathcal A_i$ in Equation (3.7B.1) | provisional PDE seed | physical source, work, axes, radiation |
+| nonlinear scalar/spatial | no adopted equation | none beyond selected scalar clock package | field equations, constraints, moderate/strong regime |
+| tensor sector | no adopted source/action | none | physical modes, source law, backreaction, waveforms |
+| rotating source | weak endpoint only | Lense--Thirring regression target | native stationary solution; exact Kerr remains open |
+
+## What is not carried forward
+
+Earlier completion notes assigned unity defaults to nonlinear scalar and shift
+self-sources and wrote a transverse-traceless wave slot with a familiar
+normalization. Those expressions were provisional ansatz families. No reviewed
+action, constraint count, source law, or observer map promoted them. They are
+therefore omitted from the candidate trust layer rather than preserved as a
+near-complete ladder.
+
+## Reopening conditions
+
+Directional promotion requires a complete construction that fixes its
+coefficient before endpoint comparison and supplies:
+
+1. positive physical modes or healthy constraints;
+2. one reciprocal current and work ledger;
+3. causal response for time-dependent sources;
+4. explicit carrier and observer-axis transport; and
+5. the required rotating-source orientation.
+
+Tensor, nonlinear, and radiative work should open only after its source,
+action, constraint, and observable objects are specified. Retarded solutions
+or familiar coefficients alone are not enough.
+
+## Result
+
+The nonstationary scalar candidate is the only action-supported time-dependent
+sector in the present appendix packet. The vector equation remains a PDE seed,
+and nonlinear, tensor, radiative, and exact rotating completion remain open
+research layers.

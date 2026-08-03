@@ -3,7 +3,7 @@ purpose: Public-facing section contribution and human-verification ledger for Mo
 coverage:
   source: _quarto.yml project.render
   release_candidate: v0.3.7
-  rendered_units: 26
+  rendered_units: 28
 human_verification_decision:
   decided_by: Arne Klaveness
   decided_on: 2026-07-30
@@ -128,7 +128,7 @@ sections:
 
   - id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
     title: Derivation 2.3A — Structural uniqueness of the directional shell readings
-    path: manuscript/appendices/derivations/02-03A-directional-positive-split-uniqueness.qmd
+    path: manuscript/appendices/derivations/02-foundations/03A-directional-positive-split-uniqueness.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -141,9 +141,9 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-3a-the-carrier-source-map
-    title: Derivation 3.3A — The carrier source map
-    path: manuscript/appendices/derivations/03-03A-carrier-source-map.qmd
+  - id: derivation-3-3a-carrier-map-source-postulate-and-consequences
+    title: Derivation 3.3A — Carrier-map source postulate and consequences
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-carrier-source-map.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -156,9 +156,9 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-3b-null-probe-diagnostic-and-no-go
-    title: Derivation 3.3B — Null-probe diagnostic and no-go
-    path: manuscript/appendices/derivations/03-03B-null-probe-diagnostic.qmd
+  - id: derivation-3-3b-rejected-null-probe-source-route
+    title: Derivation 3.3B — Rejected null-probe source route
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03B-null-probe-diagnostic.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -171,9 +171,9 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-3c-momentum-manifestations-and-source-channels
-    title: Derivation 3.3C — Momentum manifestations and source channels
-    path: manuscript/appendices/derivations/03-03C-momentum-manifestations.qmd
+  - id: derivation-3-3c-momentum-manifestations-and-source-status
+    title: Derivation 3.3C — Momentum manifestations and source status
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03C-momentum-manifestations.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -186,9 +186,9 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-4a-stationary-primitive-source-to-field-map
-    title: Derivation 3.4A — Stationary primitive source-to-field map
-    path: manuscript/appendices/derivations/03-04A-stationary-source-to-field-map.qmd
+  - id: derivation-3-4a-stationary-source-to-field-map
+    title: Derivation 3.4A — Stationary source-to-field map
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-stationary-source-to-field-map.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -201,9 +201,24 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-4b-depth-equals-stretch
-    title: Derivation 3.4B — Depth equals stretch
-    path: manuscript/appendices/derivations/03-04B-depth-equals-stretch.qmd
+  - id: derivation-3-4b-scalar-carrier-and-readout-consistency
+    title: Derivation 3.4B — Scalar carrier and readout consistency
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04B-scalar-carrier-readout-consistency.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-4c-reciprocal-multisector-response-obstruction
+    title: Derivation 3.4C — Reciprocal multisector response obstruction
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04C-reciprocal-multisector-response-obstruction.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -218,7 +233,7 @@ sections:
 
   - id: derivation-3-5a-local-observer-bookkeeping
     title: Derivation 3.5A — Local observer bookkeeping
-    path: manuscript/appendices/derivations/03-05A-local-observer-bookkeeping.qmd
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-local-observer-bookkeeping.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -233,7 +248,7 @@ sections:
 
   - id: derivation-3-6a-stationary-correspondence-calibration
     title: Derivation 3.6A — Stationary correspondence calibration
-    path: manuscript/appendices/derivations/03-06A-stationary-correspondence-calibration.qmd
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06A-stationary-correspondence-calibration.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -246,9 +261,9 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-6b-frame-drag-coefficient-audit
-    title: Derivation 3.6B — Frame-drag coefficient audit
-    path: manuscript/appendices/derivations/03-06B-frame-drag-coefficient-audit.qmd
+  - id: derivation-3-6b-frame-drag-endpoint-audit
+    title: Derivation 3.6B — Frame-drag endpoint audit
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06B-frame-drag-coefficient-audit.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -263,7 +278,7 @@ sections:
 
   - id: derivation-3-6c-boost-consistency-and-the-shift-coefficient
     title: Derivation 3.6C — Boost consistency and the shift coefficient
-    path: manuscript/appendices/derivations/03-06C-boost-consistency-shift-coefficient.qmd
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06C-boost-consistency-shift-coefficient.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -276,9 +291,9 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-7a-nonstationary-linear-baseline-and-benchmarks
-    title: Derivation 3.7A — Nonstationary linear baseline and benchmarks
-    path: manuscript/appendices/derivations/03-07A-nonstationary-linear-baseline.qmd
+  - id: derivation-3-6d-conserved-radiation-cavity-discriminator
+    title: Derivation 3.6D — Conserved radiation-cavity discriminator
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06D-conserved-radiation-cavity-discriminator.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -291,9 +306,24 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-7b-nonstationary-completion-ladder
-    title: Derivation 3.7B — Nonstationary completion ladder
-    path: manuscript/appendices/derivations/03-07B-nonstationary-completion-ladder.qmd
+  - id: derivation-3-7a-scalar-nonstationary-action-candidate
+    title: Derivation 3.7A — Scalar nonstationary action candidate
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-scalar-nonstationary-action-candidate.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne supplied the theoretical premises and acceptance direction;
+      AI-assisted contribution included formalization, derivation drafting,
+      consistency checking, source work, editing, and review.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
+      qualified AI review is recorded separately.
+
+  - id: derivation-3-7b-directional-and-completion-boundaries
+    title: Derivation 3.7B — Directional and completion boundaries
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07B-directional-and-completion-boundaries.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -308,7 +338,7 @@ sections:
 
   - id: derivation-4-8a-strong-gravity-tunneling-sensitivity
     title: Derivation 4.8A — Strong-gravity tunneling sensitivity
-    path: manuscript/appendices/derivations/04-08A-strong-gravity-tunneling-sensitivity.qmd
+    path: manuscript/appendices/derivations/04-quantum-mechanics/08A-strong-gravity-tunneling-sensitivity.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -323,7 +353,7 @@ sections:
 
   - id: derivation-5-2a-bosic-slot-stage-dressing-and-the-chi-squared-group-velocity
     title: Derivation 5.2A — Bosic-slot stage dressing and the chi-squared group velocity
-    path: manuscript/appendices/derivations/05-02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
+    path: manuscript/appendices/derivations/05-expansion/02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -338,7 +368,7 @@ sections:
 
   - id: derivation-5-3a-free-carrier-correspondence-under-a-yield-history
     title: Derivation 5.3A — Free-carrier correspondence under a yield history
-    path: manuscript/appendices/derivations/05-03A-free-carrier-correspondence-under-yield-history.qmd
+    path: manuscript/appendices/derivations/05-expansion/03A-free-carrier-correspondence-under-yield-history.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -353,7 +383,7 @@ sections:
 
   - id: derivation-5-4a-lightlike-propagation-and-matched-endpoint-standards
     title: Derivation 5.4A — Lightlike propagation and matched endpoint standards
-    path: manuscript/appendices/derivations/05-04A-lightlike-propagation-and-matched-endpoint-standards.qmd
+    path: manuscript/appendices/derivations/05-expansion/04A-lightlike-propagation-and-matched-endpoint-standards.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
@@ -368,7 +398,7 @@ sections:
 
   - id: derivation-5-6a-local-covariance-and-scoped-sector-realizations
     title: Derivation 5.6A — Local covariance and scoped sector realizations
-    path: manuscript/appendices/derivations/05-06A-local-covariance-and-scoped-sector-realizations.qmd
+    path: manuscript/appendices/derivations/05-expansion/06A-local-covariance-and-scoped-sector-realizations.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
