@@ -49,7 +49,7 @@ and internal records should not silently expand its claims.
 - [`CONTRIBUTORS.md`](CONTRIBUTORS.md) — contributor record
 - [`provenance/README.md`](provenance/README.md) — section-level contribution and
   verification ledger
-- [`doi/`](doi/) — DOI preparation records
+- [`doi/`](doi/) — canonical DOI workflow and historical preparation records
 
 ## Where documentation belongs
 

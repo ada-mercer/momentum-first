@@ -201,6 +201,8 @@ Purpose:
 - verify the pushed tag matches `VERSION`
 - render the PDF book
 - attach `Momentum-First.pdf` to a GitHub Release
+- when DOI setup is complete, publish that exact PDF as a version of the
+  canonical Zenodo manuscript record
 
 This workflow runs only when a tag matching `v*` is pushed.
 That is the core safeguard against frequent accidental releases.
@@ -241,8 +243,17 @@ git push origin main --follow-tags
 8. The workflow copies the rendered PDF to the stable release asset name
    `Momentum-First.pdf`, attaches it to the GitHub Release, and thereby updates
    the README's latest-PDF link target.
-9. Manually dispatch **Deploy Book Site** if the Pages-hosted PDF should
+9. When `ZENODO_MANUSCRIPT_CONCEPT_ID` is configured, the separate
+   `zenodo-manuscript` job publishes or verifies the exact release PDF and writes
+   the concept DOI, version DOI, and SHA-256 checksum to the Actions summary.
+   Zenodo's native GitHub integration separately archives the tagged source.
+10. Manually dispatch **Deploy Book Site** if the Pages-hosted PDF should
    immediately mirror the newly published release PDF.
+
+Before the first DOI-bearing release, complete the one-time setup in
+[`doi/README.md`](doi/README.md). Later releases require no manual Zenodo upload.
+If DOI publication fails, rerun the failed job rather than creating another
+record or draft manually.
 
 ## After a release
 
@@ -257,4 +268,7 @@ That makes it clear the repo has moved beyond the last tagged milestone.
 - Releases are intended to be **deliberate and relatively rare**.
 - The default mode of the repo is ongoing work on `main`, not continuous release publishing.
 - The book PDF is a release artifact. Do not commit `_book/` or generated PDF files to the repository during ordinary development.
+- The manuscript concept DOI is the general citation target; release-specific
+  citations use the corresponding manuscript version DOI. The source DOI family
+  is provenance, not the preferred book citation.
 - If the project later needs public release cadence, the policy can be revisited intentionally.

@@ -1,5 +1,8 @@
 # DOI Readiness Plan — Momentum First v0.3.3
 
+Status: historical planning record. Superseded by `docs/doi/README.md`, including
+its later decision to use a narrow `.zenodo.json` source-license override.
+
 Status audit and execution plan for minting DOIs. Supersedes the planning parts
 of `zenodo-v0.3.2.md` (the metadata templates there still apply, bumped to 0.3.3).
 

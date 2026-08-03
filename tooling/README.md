@@ -6,7 +6,7 @@ repository root so paths agree with Quarto, manifests, and CI.
 ## Layout
 
 - `scripts/` — dependency, cross-reference, generated-status, table, figure,
-  print-asset, and targeted derivation checks
+  print-asset, DOI-release, and targeted derivation automation
 - `tests/` — pytest checks for dependencies, repository integrity, and
   documentation invariants
 - `ci/` — environment specifications and the Ubuntu/Debian bootstrap script

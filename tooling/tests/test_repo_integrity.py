@@ -189,3 +189,43 @@ def test_citation_metadata_is_present_for_doi_workflow() -> None:
     assert preferred["authors"] == citation["authors"]
     assert preferred["date-released"] == citation["date-released"]
     assert (ROOT / "docs" / "doi" / "zenodo-v0.3.6.md").exists()
+
+    zenodo_metadata = yaml.safe_load(
+        (ROOT / "docs" / "doi" / "zenodo-manuscript.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert zenodo_metadata["creators"] == [
+        {"name": "Klaveness, Arne"}
+    ]
+    assert zenodo_metadata["license"] == "cc-by-nc-sa-4.0"
+    assert zenodo_metadata["upload_type"] == "publication"
+    assert zenodo_metadata["publication_type"] == "book"
+    assert (ROOT / "docs" / "doi" / "README.md").is_file()
+    assert (ROOT / "tooling" / "scripts" / "publish_zenodo.py").is_file()
+
+    source_metadata = yaml.safe_load(
+        (ROOT / ".zenodo.json").read_text(encoding="utf-8")
+    )
+    assert source_metadata["creators"] == [{"name": "Klaveness, Arne"}]
+    assert source_metadata["upload_type"] == "software"
+    assert source_metadata["license"] == "other-open"
+    assert "CC-BY-NC-SA-4.0" in source_metadata["description"]
+    assert "MIT" in source_metadata["description"]
+    assert "LICENSE.md" in source_metadata["description"]
+
+
+def test_release_workflow_has_guarded_zenodo_job() -> None:
+    workflow = yaml.load(
+        (ROOT / ".github" / "workflows" / "release-book.yml").read_text(
+            encoding="utf-8"
+        ),
+        Loader=yaml.BaseLoader,
+    )
+    job = workflow["jobs"]["zenodo-manuscript"]
+    assert job["needs"] == "release"
+    assert job["environment"] == "zenodo-production"
+    assert "ZENODO_MANUSCRIPT_CONCEPT_ID" in job["if"]
+    publish_step = job["steps"][-1]
+    assert publish_step["env"]["ZENODO_TOKEN"] == "${{ secrets.ZENODO_TOKEN }}"
+    assert "--confirm-publication" in publish_step["run"]

@@ -1,0 +1,19 @@
+{
+  "title": "Momentum First — source repository",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Klaveness, Arne"
+    }
+  ],
+  "description": "Tagged source snapshot for the Momentum First manuscript and its supporting software. Licensing is file-scoped: manuscript text, figures, and rendered creative outputs are CC-BY-NC-SA-4.0; code, scripts, tests, and CI configuration are MIT. See LICENSE.md in the archive for the authoritative path-level terms.",
+  "keywords": [
+    "physics",
+    "theoretical physics",
+    "momentum",
+    "quarto book",
+    "research software"
+  ],
+  "access_right": "open",
+  "license": "other-open"
+}

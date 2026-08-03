@@ -1,6 +1,7 @@
 # Zenodo metadata draft — Momentum First v0.3.6
 
-Status: prepared; no DOI reserved and no record created
+Status: historical metadata draft; no DOI was reserved or created. The active
+procedure is `docs/doi/README.md`.
 Prepared: 2026-07-28
 
 ## Record architecture

@@ -1,0 +1,24 @@
+{
+  "title": "Momentum First",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "description": "Momentum First is a pre-1.0 theoretical manuscript exploring a momentum-centered framework for foundations, gravity, quantum mechanics, and cosmology. It develops Additive Directional Momentum Conservation, directional shell readings, gravity and quantum bridge structures, and a stage-dressing account of cosmological expansion.",
+  "creators": [
+    {
+      "name": "Klaveness, Arne"
+    }
+  ],
+  "keywords": [
+    "physics",
+    "theoretical physics",
+    "momentum",
+    "gravity",
+    "quantum mechanics",
+    "cosmology",
+    "quarto book"
+  ],
+  "language": "eng",
+  "access_right": "open",
+  "license": "cc-by-nc-sa-4.0",
+  "notes": "Developed with AI-assisted drafting, review, editing, formalization, source, figure, and repository support. Arne Klaveness remains the sole manuscript author and DOI creator; all claims, interpretations, and release decisions remain his responsibility."
+}
