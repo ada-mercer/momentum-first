@@ -143,10 +143,13 @@ Those can be added once the manuscript or figure pipeline actually needs them.
 
 ## R library path
 
-Local R package installs use `R_LIBS_USER` when available. The repo provides `.Renviron.example` with the recommended user-local path:
+Local R package installs use `R_LIBS_USER` when available. The repository
+installer and dependency checker default to:
 
 ```text
 ~/.local/share/R/%p-library/%v
 ```
 
-Copy it to `.Renviron` for local work if needed. `.Renviron` itself is ignored because it is machine-local configuration; `tooling/ci/install-ubuntu.sh` creates it automatically when absent.
+Set `R_LIBS_USER` externally to override this location. The installer creates a
+local `.Renviron` automatically when needed; that machine-specific file remains
+ignored.

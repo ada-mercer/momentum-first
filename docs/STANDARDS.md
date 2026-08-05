@@ -54,8 +54,6 @@ Never commit:
 - accidental large files,
 - machine-specific state.
 
-Narrow exception: commit `.Renviron.example` as documented non-secret dependency guidance, but keep local `.Renviron` files ignored because they are machine-specific configuration.
-
 Prefer `.gitignore` updates for recurring disposable artifacts.
 
 ## 3. Repository source-of-truth layout
@@ -72,7 +70,6 @@ Canonical manuscript source:
 - `manuscript/glossary.yml`
 - manuscript-owned metadata and backmatter under `manuscript/`
 - rendering assets, styles, and configured filters under `rendering/`
-- documented dependency examples such as `.Renviron.example`, not local environment files
 
 Canonical figure source:
 - `figures/src/`
