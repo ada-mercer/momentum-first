@@ -1,0 +1,85 @@
+name: Benchmark CI Image
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  publication:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ada-mercer/momentum-first-build@sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Prepare pinned environment
+        run: |
+          ln -s /opt/momentum-first/venv .venv
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      - name: Record benchmark start
+        id: benchmark
+        run: echo "started=$(date +%s)" >> "$GITHUB_OUTPUT"
+
+      - name: Verify publication dependencies
+        run: .venv/bin/python tooling/scripts/check_dependencies.py --mode publication
+
+      - name: Run release validation
+        run: |
+          .venv/bin/python -m pytest tooling/tests
+          .venv/bin/python tooling/scripts/check_crossrefs.py
+          .venv/bin/python tooling/scripts/build_manuscript_status.py
+          git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md
+          .venv/bin/python tooling/scripts/build_figures.py
+          .venv/bin/python tooling/scripts/check_figure_reproducibility.py
+
+      - name: Render PDF benchmark
+        run: quarto render --profile pdf
+
+      - name: Validate PDF artifact
+        run: |
+          set -euo pipefail
+          PDF_PATH="$(find _book -type f -name '*.pdf' | sort | head -n 1 || true)"
+          if [ -z "$PDF_PATH" ]; then
+            echo "No PDF was produced under _book/" >&2
+            exit 1
+          fi
+          cp "$PDF_PATH" Momentum-First.pdf
+          test -s Momentum-First.pdf
+          test "$(pdfinfo Momentum-First.pdf | awk '/^Pages:/ {print $2}')" = "204"
+          if pdffonts Momentum-First.pdf | tail -n +3 | \
+              grep -Eq '[[:space:]]no[[:space:]]+(yes|no)[[:space:]]+(yes|no)[[:space:]]+[0-9]+[[:space:]]+[0-9]+$'; then
+            echo 'PDF contains an unembedded font' >&2
+            exit 1
+          else
+            echo '[ok] all PDF fonts are embedded'
+          fi
+
+      - name: Record benchmark result
+        run: |
+          ELAPSED=$(($(date +%s) - ${{ steps.benchmark.outputs.started }}))
+          {
+            echo '## Pinned-image benchmark'
+            echo
+            echo "Publication validation and PDF render: ${ELAPSED}s"
+            echo
+            echo '`ghcr.io/ada-mercer/momentum-first-build@sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e`'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload benchmark PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: Momentum-First-image-benchmark-${{ github.sha }}
+          path: Momentum-First.pdf
+          if-no-files-found: error
+          retention-days: 7

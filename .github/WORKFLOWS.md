@@ -7,6 +7,7 @@ become a release operation.
 | Workflow | Role | Trigger |
 |---|---|---|
 | `build-ci-image.yml` | build, attest, and publish the reusable figure/PDF environment to GHCR | relevant push to `main` or manual dispatch |
+| `benchmark-ci-image.yml` | validate a candidate image digest through full figure and PDF production | manual dispatch |
 | `lint-content.yml` | repository tests, cross-reference validation, and generated-status check | pull request or manual dispatch |
 | `build-figures.yml` | registered figure rebuild and canonical-output drift check | manual dispatch |
 | `render-book.yml` | release-equivalent validation and PDF preview artifact | manual dispatch |
