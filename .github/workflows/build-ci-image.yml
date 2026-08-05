@@ -7,7 +7,10 @@ on:
       - main
     paths:
       - '.github/workflows/build-ci-image.yml'
-      - 'tooling/ci/image/**'
+      - 'tooling/ci/image/Dockerfile'
+      - 'tooling/ci/image/install-r-packages.R'
+      - 'tooling/ci/image/requirements.in'
+      - 'tooling/ci/image/requirements.lock'
 
 permissions:
   contents: read
