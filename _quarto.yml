@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _book
+  resources:
+  - googled99b772d08f0333f.html
   pre-render:
   - .venv/bin/python tooling/scripts/build_manuscript_status.py
   render:
@@ -36,7 +38,8 @@ book:
   title: Momentum First
   site-url: https://ada-mercer.github.io/momentum-first/
   author:
-  - Arne Klaveness
+  - name: Arne Klaveness
+    orcid: 0009-0004-1536-3055
   downloads:
   - pdf
   sharing:
@@ -79,6 +82,20 @@ book:
   - manuscript/backmatter/manuscript-status.qmd
 bibliography: manuscript/bibliography.bib
 glossary: manuscript/glossary.yml
+description: >-
+  Momentum First is an independent theoretical-physics manuscript exploring a
+  momentum-conservation framework across relativity, gravity, quantum
+  mechanics, and cosmology.
+keywords:
+- theoretical physics
+- foundations of physics
+- momentum conservation
+- canonical momentum
+- special relativity
+- stationary gravity
+- gravitoelectromagnetism
+- quantum mechanics
+- FLRW cosmology
 profile:
   default: pdf
 crossref:

@@ -3,16 +3,37 @@
   "upload_type": "software",
   "creators": [
     {
-      "name": "Klaveness, Arne"
+      "name": "Klaveness, Arne",
+      "orcid": "0009-0004-1536-3055"
     }
   ],
   "description": "Tagged source snapshot for the Momentum First manuscript and its supporting software. Licensing is file-scoped: manuscript text, figures, and rendered creative outputs are CC-BY-NC-SA-4.0; code, scripts, tests, and CI configuration are MIT. See LICENSE.md in the archive for the authoritative path-level terms.",
   "keywords": [
-    "physics",
     "theoretical physics",
-    "momentum",
+    "foundations of physics",
+    "momentum conservation",
+    "canonical momentum",
+    "special relativity",
+    "stationary gravity",
+    "gravitoelectromagnetism",
+    "quantum mechanics",
+    "FLRW cosmology",
     "quarto book",
     "research software"
+  ],
+  "related_identifiers": [
+    {
+      "scheme": "doi",
+      "identifier": "10.5281/zenodo.21729037",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-book"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://ada-mercer.github.io/momentum-first/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-book"
+    }
   ],
   "access_right": "open",
   "license": "other-open"

@@ -10,6 +10,9 @@
 physics can be rebuilt when momentum conservation is taken as the primary
 starting point.
 
+**Author:** [Arne Klaveness](https://orcid.org/0009-0004-1536-3055) · ORCID
+[0009-0004-1536-3055](https://orcid.org/0009-0004-1536-3055)
+
 ## Read the book
 
 - [Read the HTML book](https://ada-mercer.github.io/momentum-first/)
@@ -66,7 +69,8 @@ release.
 
 ## Status, citation, and license
 
-This is a working manuscript under active development. Cite a specific
+This is an independent, non-peer-reviewed working manuscript under active
+development. Cite a specific
 [GitHub release](https://github.com/ada-mercer/momentum-first/releases) when a
 stable version matters. The canonical manuscript citation is the
 [manuscript concept DOI](https://doi.org/10.5281/zenodo.21729037); tagged source

@@ -1,6 +1,7 @@
 ## On Authorship and Collaboration
 
-This book is authored and released by **Arne Klaveness**.
+This book is authored and released by **Arne Klaveness** ([ORCID
+0009-0004-1536-3055](https://orcid.org/0009-0004-1536-3055)).
 
 The project is developed in an environment where human and AI contributors may assist through draft text, criticism, review, derivation support, editing, figures, repository automation, and structural proposals. These are treated as real contributions rather than as invisible assistance. Authorship, however, is not the same thing as contribution. The manuscript keeps a stable human authorship line, while broader project contributions are acknowledged separately.
 

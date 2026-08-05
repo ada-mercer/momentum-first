@@ -177,7 +177,12 @@ def test_citation_metadata_is_present_for_doi_workflow() -> None:
     assert citation["version"] == version
     assert citation["type"] == "software"
     assert citation["license"] == "MIT"
-    assert citation["authors"] == [{"family-names": "Klaveness", "given-names": "Arne"}]
+    expected_cff_author = {
+        "family-names": "Klaveness",
+        "given-names": "Arne",
+        "orcid": "https://orcid.org/0009-0004-1536-3055",
+    }
+    assert citation["authors"] == [expected_cff_author]
     assert citation["repository-code"] == "https://github.com/ada-mercer/momentum-first"
     assert date.fromisoformat(str(citation["date-released"]))
     assert "AI-assisted" in citation["message"]
@@ -195,9 +200,11 @@ def test_citation_metadata_is_present_for_doi_workflow() -> None:
             encoding="utf-8"
         )
     )
-    assert zenodo_metadata["creators"] == [
-        {"name": "Klaveness, Arne"}
-    ]
+    expected_zenodo_creator = {
+        "name": "Klaveness, Arne",
+        "orcid": "0009-0004-1536-3055",
+    }
+    assert zenodo_metadata["creators"] == [expected_zenodo_creator]
     assert zenodo_metadata["license"] == "cc-by-nc-sa-4.0"
     assert zenodo_metadata["upload_type"] == "publication"
     assert zenodo_metadata["publication_type"] == "book"
@@ -207,12 +214,18 @@ def test_citation_metadata_is_present_for_doi_workflow() -> None:
     source_metadata = yaml.safe_load(
         (ROOT / ".zenodo.json").read_text(encoding="utf-8")
     )
-    assert source_metadata["creators"] == [{"name": "Klaveness, Arne"}]
+    assert source_metadata["creators"] == [expected_zenodo_creator]
     assert source_metadata["upload_type"] == "software"
     assert source_metadata["license"] == "other-open"
     assert "CC-BY-NC-SA-4.0" in source_metadata["description"]
     assert "MIT" in source_metadata["description"]
     assert "LICENSE.md" in source_metadata["description"]
+    assert {
+        "scheme": "doi",
+        "identifier": "10.5281/zenodo.21729037",
+        "relation": "isSupplementTo",
+        "resource_type": "publication-book",
+    } in source_metadata["related_identifiers"]
 
 
 def test_release_workflow_has_guarded_zenodo_job() -> None:

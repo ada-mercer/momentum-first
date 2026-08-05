@@ -13,6 +13,8 @@ format:
 
 A momentum-first framework for foundations, gravity, quantum structure, and cosmology.
 
+By [Arne Klaveness](https://orcid.org/0009-0004-1536-3055) · ORCID [0009-0004-1536-3055](https://orcid.org/0009-0004-1536-3055)
+
 [Start with the Preface](manuscript/chapters/00-front-matter/00-preface/){.mf-primary-link}
 :::
 
@@ -48,7 +50,9 @@ Download the current release snapshot as a PDF.
 ::: {.mf-path-card}
 [**Status and citation**]{.mf-card-title}
 
-Pre-1.0 working manuscript. Cite the latest GitHub Release unless a more formal edition is provided.
+Independent, non-peer-reviewed working manuscript. Cite the canonical manuscript DOI for the evolving work, or a version DOI for an exact release.
+
+[Manuscript DOI](https://doi.org/10.5281/zenodo.21729037){.mf-card-link}
 
 [View releases](https://github.com/ada-mercer/momentum-first/releases){.mf-card-link}
 :::

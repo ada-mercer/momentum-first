@@ -10,6 +10,7 @@ on:
       - '_quarto-html.yml'
       - '_variables.yml'
       - 'index.qmd'
+      - 'googled99b772d08f0333f.html'
       - 'manuscript/**'
       - 'rendering/**'
       - 'figures/build/**'

@@ -30,6 +30,7 @@ PRODUCTION_API = "https://zenodo.org/api"
 SANDBOX_API = "https://sandbox.zenodo.org/api"
 ALLOWED_API_URLS = {PRODUCTION_API, SANDBOX_API}
 PDF_NAME = "Momentum-First.pdf"
+SOURCE_CONCEPT_DOI = "10.5281/zenodo.21775704"
 VERSION_RE = re.compile(r"^[0-9]+\.[0-9]+\.[0-9]+$")
 
 
@@ -78,7 +79,12 @@ def load_metadata_template(path: Path) -> dict[str, Any]:
     except (OSError, json.JSONDecodeError) as exc:
         raise ZenodoError(f"Cannot load metadata template {path}: {exc}") from exc
 
-    expected_creator = [{"name": "Klaveness, Arne"}]
+    expected_creator = [
+        {
+            "name": "Klaveness, Arne",
+            "orcid": "0009-0004-1536-3055",
+        }
+    ]
     required = {
         "title": "Momentum First",
         "upload_type": "publication",
@@ -143,6 +149,11 @@ def build_metadata(
         },
         {
             "identifier": release_url,
+            "relation": "isSupplementedBy",
+            "resource_type": "software",
+        },
+        {
+            "identifier": SOURCE_CONCEPT_DOI,
             "relation": "isSupplementedBy",
             "resource_type": "software",
         },

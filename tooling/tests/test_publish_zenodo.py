@@ -104,7 +104,12 @@ def metadata(version: str = "0.3.8") -> dict:
 
 def test_metadata_has_one_human_creator_and_exact_license() -> None:
     result = metadata()
-    assert result["creators"] == [{"name": "Klaveness, Arne"}]
+    assert result["creators"] == [
+        {
+            "name": "Klaveness, Arne",
+            "orcid": "0009-0004-1536-3055",
+        }
+    ]
     assert result["license"] == "cc-by-nc-sa-4.0"
     assert result["upload_type"] == "publication"
     assert result["publication_type"] == "book"
@@ -116,6 +121,11 @@ def test_metadata_has_one_human_creator_and_exact_license() -> None:
         },
         {
             "identifier": "https://github.com/ada-mercer/momentum-first/releases/tag/v0.3.8",
+            "relation": "isSupplementedBy",
+            "resource_type": "software",
+        },
+        {
+            "identifier": "10.5281/zenodo.21775704",
             "relation": "isSupplementedBy",
             "resource_type": "software",
         },
