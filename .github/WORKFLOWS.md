@@ -6,6 +6,7 @@ become a release operation.
 
 | Workflow | Role | Trigger |
 |---|---|---|
+| `build-ci-image.yml` | build, attest, and publish the reusable figure/PDF environment to GHCR | relevant push to `main` or manual dispatch |
 | `lint-content.yml` | repository tests, cross-reference validation, and generated-status check | pull request or manual dispatch |
 | `build-figures.yml` | registered figure rebuild and canonical-output drift check | manual dispatch |
 | `render-book.yml` | release-equivalent validation and PDF preview artifact | manual dispatch |
@@ -17,6 +18,12 @@ paths aligned with [`../tooling/`](../tooling/README.md),
 [`../manuscript/`](../manuscript/README.md),
 [`../rendering/`](../rendering/README.md), and
 [`../figures/`](../figures/README.md).
+
+Figure and PDF jobs consume the project image by immutable registry digest.
+The source image tag identifies its defining commit, but tags are never used as
+the production trust boundary. See
+[`../tooling/ci/image/README.md`](../tooling/ci/image/README.md) for the update
+and validation procedure.
 
 The release workflow's `zenodo-manuscript` job runs only after the one-time DOI
 setup has supplied the repository variable `ZENODO_MANUSCRIPT_CONCEPT_ID`. It

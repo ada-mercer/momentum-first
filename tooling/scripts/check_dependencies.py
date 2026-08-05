@@ -170,26 +170,33 @@ def check_figures() -> None:
     check_registered_figure_runners()
 
 
-def check_full() -> None:
+def check_publication() -> None:
     check_figures()
     check_version("quarto", ["quarto", "--version"])
     check_version("R", ["R", "--version"])
+    check_python_imports(
+        ["numpy", "matplotlib", "pandas", "yaml", "nbformat", "pytest"],
+        label="publication",
+    )
+    check_r_packages()
+    check_quarto_render()
+    check_pdf_toolchain()
+
+
+def check_full() -> None:
+    check_publication()
     check_version("julia", ["julia", "--version"])
     check_version("dot", ["dot", "-V"])
     check_version("inkscape", ["inkscape", "--version"])
     check_version("rsvg-convert", ["rsvg-convert", "--version"])
-    check_python_imports(["numpy", "matplotlib", "pandas", "yaml", "nbformat", "pytest"], label="full")
-    check_r_packages()
     check_julia_basic()
-    check_quarto_render()
-    check_pdf_toolchain()
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--mode",
-        choices=["minimal", "figures", "full"],
+        choices=["minimal", "figures", "publication", "full"],
         default="full",
         help="dependency profile to check (default: full)",
     )
@@ -204,6 +211,8 @@ def main() -> int:
             check_minimal()
         elif args.mode == "figures":
             check_figures()
+        elif args.mode == "publication":
+            check_publication()
         else:
             check_full()
     except CheckFailure as exc:

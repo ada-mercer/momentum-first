@@ -73,6 +73,10 @@ python3 tooling/scripts/check_dependencies.py --mode full
 quarto render
 ```
 
+The narrower `publication` mode checks the currently exercised figure and PDF
+stack without requiring dormant Julia or vector-conversion tooling. The pinned
+CI image uses this mode; `full` remains the local forward-compatible profile.
+
 The plain command is the supported local default and produces the PDF book
 because `_quarto.yml` sets the default profile to `pdf`. Use
 `quarto render --profile html` when you explicitly want the web edition;
