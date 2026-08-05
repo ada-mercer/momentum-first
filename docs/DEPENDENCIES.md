@@ -99,7 +99,10 @@ bash tooling/ci/install-ubuntu.sh --ci
 bash tooling/ci/install-ubuntu.sh --no-profile-edit
 ```
 
-GitHub workflows use `--ci`.
+The installer remains the local-development and recovery path. GitHub's figure,
+preview, and release jobs use the digest-pinned image under
+`tooling/ci/image/`; repository validation and HTML deployment use their
+smaller Python-only environments.
 
 ## System dependencies installed by `tooling/ci/install-ubuntu.sh`
 

@@ -3,23 +3,32 @@ name: Build Figures
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   build-figures:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ada-mercer/momentum-first-build@sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    defaults:
+      run:
+        shell: bash
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
 
-      - name: Set up canonical Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.14.3'
+      - name: Prepare pinned environment
+        run: |
+          ln -s /opt/momentum-first/venv .venv
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - name: Bootstrap environment
-        run: bash tooling/ci/install-ubuntu.sh --ci
-
-      - name: Verify baseline dependencies
-        run: python3 tooling/scripts/check_dependencies.py --mode figures
+      - name: Verify figure dependencies
+        run: .venv/bin/python tooling/scripts/check_dependencies.py --mode figures
 
       - name: Build registered figures
         run: .venv/bin/python tooling/scripts/build_figures.py

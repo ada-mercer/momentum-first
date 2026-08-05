@@ -13,6 +13,12 @@ Nimbus Sans is installed explicitly because base R resolves its `Helvetica`
 device family through fontconfig. Omitting that package changes two canonical
 R-rendered PNGs even when every R package version is identical.
 
+Current production reference:
+
+```text
+ghcr.io/ada-mercer/momentum-first-build@sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e
+```
+
 ## Update procedure
 
 1. Change `Dockerfile`, `requirements.in`, or `install-r-packages.R`.

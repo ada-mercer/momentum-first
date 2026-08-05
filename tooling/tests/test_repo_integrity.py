@@ -9,6 +9,10 @@ from urllib.parse import unquote
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
+PINNED_CI_IMAGE = (
+    "ghcr.io/ada-mercer/momentum-first-build@"
+    "sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e"
+)
 
 
 def _load_quarto_config() -> dict:
@@ -94,6 +98,31 @@ def test_pages_workflow_watches_root_book_homepage() -> None:
     )
     watched_paths = workflow["on"]["push"]["paths"]
     assert "index.qmd" in watched_paths
+
+
+def test_publication_workflows_share_immutable_ci_image() -> None:
+    jobs = {
+        "benchmark-ci-image.yml": "publication",
+        "build-figures.yml": "build-figures",
+        "render-book.yml": "render-preview",
+        "release-book.yml": "release",
+    }
+    for workflow_name, job_name in jobs.items():
+        workflow = yaml.load(
+            (ROOT / ".github" / "workflows" / workflow_name).read_text(
+                encoding="utf-8"
+            ),
+            Loader=yaml.BaseLoader,
+        )
+        job = workflow["jobs"][job_name]
+        assert job["container"]["image"] == PINNED_CI_IMAGE
+        assert job["container"]["credentials"]["password"] == (
+            "${{ secrets.GITHUB_TOKEN }}"
+        )
+        run_blocks = "\n".join(
+            step.get("run", "") for step in job["steps"] if isinstance(step, dict)
+        )
+        assert "install-ubuntu.sh" not in run_blocks
 
 
 def test_figure_registry_paths_and_ids_are_valid() -> None:

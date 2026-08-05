@@ -24,7 +24,8 @@ Figure and PDF jobs consume the project image by immutable registry digest.
 The source image tag identifies its defining commit, but tags are never used as
 the production trust boundary. See
 [`../tooling/ci/image/README.md`](../tooling/ci/image/README.md) for the update
-and validation procedure.
+and validation procedure. The first cold-pull benchmark completed the full
+figure-validation and 204-page PDF path in 1 minute 42 seconds.
 
 The release workflow's `zenodo-manuscript` job runs only after the one-time DOI
 setup has supplied the repository variable `ZENODO_MANUSCRIPT_CONCEPT_ID`. It
