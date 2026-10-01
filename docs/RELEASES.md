@@ -44,6 +44,23 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.4.0 — Reconciled engines and the first Part 0 geometry chapter
+
+- integrated the revised Foundations, gravity and quantum mechanics treatments,
+  including eight reconciled gravity derivation appendices and six active QM
+  appendices, while preserving conditional comparisons and open closure questions;
+- introduced *A First Picture of M1 Geometry*, the adopted opening chapter of
+  Part 0, with seven selected, reproducible illustrations of cycles, momentum,
+  translation, dilation and illustrative modes; later Part 0 chapters remain planned;
+- integrated current gravity/QM figures and retained the Part 0 generation recipes
+  without adding the optional 3D stack to ordinary publication CI;
+- consolidated book navigation and figure execution, repaired include-aware
+  references, metadata coverage and PDF font syntax, and made the release PDF
+  artifact path explicit;
+- strengthened source and figure validation and enforced release-tag ancestry
+  on main; adoption and passing checks do not imply whole-manuscript scientific
+  or human verification.
+
 ### 0.3.8 — Gravity closure-boundary recalibration
 
 - corrected the Chapter 3 source boundary by separating the SI free-carrier
@@ -239,28 +256,27 @@ That is the core safeguard against frequent accidental releases.
 2. Choose the milestone version and update all release metadata together:
    `VERSION`, the `version` and `date-released` fields in `CITATION.cff`, and
    the milestone notes in this file.
-3. Regenerate derived status and run the local release gate:
+3. Regenerate derived status when needed, then run the local release gate in a
+   clean accepted checkout (use an isolated snapshot while authoring is dirty):
 
 ```bash
-.venv/bin/python tooling/scripts/build_manuscript_status.py
-python3 tooling/scripts/check_dependencies.py --mode full
-.venv/bin/python -m pytest tooling/tests
-.venv/bin/python tooling/scripts/check_crossrefs.py
-.venv/bin/python tooling/scripts/build_figures.py
-.venv/bin/python tooling/scripts/check_figure_reproducibility.py
-quarto render
+.venv/bin/python tooling/scripts/build_manuscript_status.py --check
+.venv/bin/python tooling/scripts/validate.py --publication
+quarto render --profile pdf
+quarto render --profile html --output-dir _html-book
 ```
 
 4. Inspect the final diff, confirm `VERSION` and `CITATION.cff` agree, and commit
    the release state. Do not commit `_book/` or a local `Momentum-First.pdf`.
-5. Optionally run a manual preview via the **Render Book Preview** workflow.
-6. Create and push an annotated tag matching `VERSION`:
+5. Push the reviewed main commit without tags. Run **Validate Repo** and
+   **Render Book Preview** against that exact commit and inspect their results.
+   A main push also deploys HTML with the existing latest-release PDF.
+6. Create and push only the annotated release tag matching `VERSION`:
 
 ```bash
 git checkout main
-git pull --ff-only
-git tag -a v0.1.0 -m "Release v0.1.0"
-git push origin main --follow-tags
+git tag -a v0.4.0 VERIFIED_COMMIT -m "Release v0.4.0"
+git push origin refs/tags/v0.4.0
 ```
 
 7. GitHub Actions will rerun the release gate and render the book PDF.
@@ -274,8 +290,8 @@ git push origin main --follow-tags
 10. Manually dispatch **Deploy Book Site** if the Pages-hosted PDF should
    immediately mirror the newly published release PDF.
 
-Before the first DOI-bearing release, complete the one-time setup in
-[`doi/README.md`](doi/README.md). Later releases require no manual Zenodo upload.
+The existing DOI setup is recorded in [`doi/README.md`](doi/README.md).
+Subsequent releases reuse those families and require no manual Zenodo upload.
 If DOI publication fails, rerun the failed job rather than creating another
 record or draft manually.
 

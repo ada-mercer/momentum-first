@@ -1,0 +1,115 @@
+## The Deformation of Space {#sec-gravity-deformation}
+
+Space has an underlying geometry. The exact description of this geometry is not yet established, but string theory does resonate strongly with the momentum structures we see. Exploration of this geometry will be carried out in part 0. For now, we will limit ourselves to describing the deformations.
+
+With a description of the source in place, the next step is to describe how this geometry is deformed by momentum, and then connect that deformation to local displacement and cycling.
+
+### From source channels to deformation
+
+The source tensor $J^{\mu\nu}$ describes the actual momentum content in a region of space. A deformation can redistribute a particle's fermic and bosic content. Its resulting momentum configuration enters $J$ without changing the source definition.
+
+The source content, directional imbalance and momentum transport enter different components of the surrounding deformation. In the weak stationary field law, $\mathcal M$ contributes to the common deformation $\theta^{00}$, while the local imbalance $\mathcal P^i$ sources the temporal–spatial components $\theta^{0i}$. The secondary transport tensor $\mathcal C^{ij}$ supplies spatial stretch and shear, and its trace contributes to temporal readout through $\phi$.
+
+For a localized, conserved stationary leading source, with the deformation's own stress negligible at this order and the fields vanishing at infinity, the aligned harmonic-coordinate response is
+
+$$
+\theta^{\mu\nu}(\mathbf r)
+=\frac{G_N}{c^3}\int
+\frac{J^{\mu\nu}(\mathbf r')}
+{|\mathbf r-\mathbf r'|}\,d^3\mathbf r'.
+$$ {#eq-gravity-weak-indexed-deformation}
+
+Every source component supplies the corresponding deformation component with the same coupling. Expanding the source into the blocks defined in §3.3 gives
+
+$$
+\begin{aligned}
+\theta^{00}(\mathbf r)
+&=\frac{G_N}{c^3}\int
+\frac{\mathcal M}{|\mathbf r-\mathbf r'|}\,d^3\mathbf r',\\
+\theta^{0i}(\mathbf r)
+&=\frac{G_N}{c^3}\int
+\frac{\mathcal P^i}{|\mathbf r-\mathbf r'|}\,d^3\mathbf r',\\
+\theta^{ij}(\mathbf r)
+&=\frac{G_N}{c^3}\int
+\frac{\mathcal C^{ij}}{|\mathbf r-\mathbf r'|}\,d^3\mathbf r'.
+\end{aligned}
+$$ {#eq-gravity-weak-source-deformation}
+
+Here $G_N$ is the coupling of the adopted field law, and all source quantities are evaluated at $\mathbf r'$. The inverse-distance kernel carries their spatial pattern into the surrounding deformation. Reversing the rotation reverses $\mathcal P^i$ and its directional response, while leaving $\mathcal M$ and the kinetic transport unchanged. A stationary rotating body also needs the stresses that sustain its motion; these must be included in its source.
+
+### From deformation to local increments
+
+The registered deformation determines the metric shadow used to construct local increments:
+
+$$
+\begin{aligned}
+g_{00}&=-1+2(\theta^{00}+\delta_{kl}\theta^{kl}),\\
+g_{0i}&=-4\delta_{ij}\theta^{0j},\\
+g_{ij}&=(1+2\theta^{00}-2\delta_{kl}\theta^{kl})\delta_{ij}
+       +4\delta_{ik}\delta_{jl}\theta^{kl}.
+\end{aligned}
+$$ {#eq-gravity-deformation-chart}
+
+These components reconstruct the operational map $\phi$. We fix the local spatial axes by taking $[\phi^i{}_j]=[g_{ij}]_+^{1/2}$, the symmetric positive-definite square root. Its spatial Gram matrix then reproduces $g_{ij}$, while the temporal and mixed blocks complete the same map. This frame choice leaves the sourced temporal–spatial components intact. We use the regular domain with a positive spatial metric and future temporal coefficient $\phi^0{}_0>0$.
+
+With weak deformation in this frame, the map reduces to
+
+$$
+\begin{aligned}
+\phi^0{}_0&\simeq1-\theta^{00}-\delta_{kl}\theta^{kl},
+\qquad \phi^0{}_i=0,\\
+\phi^i{}_0&\simeq-4\theta^{0i},\\
+\phi^i{}_j&\simeq
+(1+\theta^{00}-\delta_{kl}\theta^{kl})\delta^i{}_j+2\delta_{jl}\theta^{il}.
+\end{aligned}
+$$ {#eq-gravity-weak-operational-map}
+
+The temporal coefficient converts a coordinate-time increment into a local temporal increment. The mixed components contribute local spatial increments from that same coordinate-time increment; the spatial block converts coordinate displacements. In the registered convention $\theta^{10}=\theta^{01}$, so the corresponding directional map is $\phi^1{}_0\simeq-4\theta^{10}$.
+
+The linear response can be assembled one channel at a time. Take matched profiles in opposite directions, $\mathcal J_1^+$ and $\mathcal J_1^-$, with equal positive amounts $Q^+$ and $Q^-$:
+
+$$
+Q^\pm=\int\mathcal J_1^\pm(\mathbf x)\,d^3\mathbf x,
+\qquad Q^+=Q^->0.
+$$ {#eq-gravity-primitive-channel-strength}
+
+Both profiles use the axial shape $f(z)=e^{-|z|/r_0}/(2r_0)$, normalized to unit integral. @fig-primitive-source-2d-k0-fields compares the full positive-channel profile with half of each opposed profile. The respective amounts are $(Q^+,0)$ and $(\tfrac{Q^+}{2},\tfrac{Q^-}{2})$. Their sum is unchanged; their difference cancels. The figure isolates these channel contributions to the weak external map, keeping the transport contribution separate.
+
+![Primitive channel contributions. The pairs above the graphs name the whole source profiles; the amounts alongside are their integrals. A full positive-channel profile (left) is compared with half of each matched opposed profile (right). The temporal response remains while the directional response cancels. The $\phi$ panels use the first-order map.](/figures/build/gravity-and-structured-spacetime/primitive-source-2d-k0-fields.png){#fig-primitive-source-2d-k0-fields fig-align="center" width="100%"}
+
+### The sourced equations
+
+For the external deformation, the model retains Einstein metric dynamics as an explicit physical input. This is a choice of field law, not a derivation of that law from ADMC. In native source notation,
+
+$$
+G^{\mu\nu}[g(\phi)]
+=\frac{8\pi G_N}{c^3}\bigl(J^{\mu\nu}\bigr)_{\mathrm{coord}}.
+$$ {#eq-gravity-sourced-laws}
+
+Here $G^{\mu\nu}$ is the Einstein curvature operator of the metric shadow. Both indices of the displayed curvature operator are raised with the coordinate metric. The source is expressed in all-upper coordinate components: the conversion from the local source frame is $J_{\mathrm{coord}}=\phi^{-1}J_{\mathrm{local}}\phi^{-\mathsf T}$. This changes the representation of the source, not its momentum content. The constant $G_N$ belongs to this metric law. Each source contribution has momentum-per-volume units.
+
+A solution also needs initial and boundary data. A changing configuration requires the initial deformation, its dynamical data and a compatible carrier population. A stationary exterior requires interior matching and whatever stresses maintain the source. The equations do not turn a prescribed body into a self-supporting one.
+
+[Derivation 3.4A](/manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-sourced-spatial-deformation.qmd#sec-derivation-03-04A-sourced-spatial-deformation) constructs the finite map and obtains the free-carrier source from the same action used for motion in §3.5. A resolved material source also needs the internal and supporting stresses of its own particle model.
+
+### A weak spherical source
+
+A simple exterior makes the source-to-deformation step concrete. Take a spherical body of radius $R_s$, dominated by cold, slowly moving carriers with weak binding and small support corrections. Let $M_{\mathrm{src}}$ be its integrated leading core content and define the length coefficient
+
+$$
+\ell_g=\frac{G_NM_{\mathrm{src}}}{c^3}.
+$$ {#eq-gravity-exterior-scales}
+
+Normalize the distant reference by $\phi^0{}_0\to1$ and $\phi^i{}_j\to\delta^i{}_j$. Outside the body, at the retained weak order,
+
+$$
+\begin{aligned}
+\phi^0{}_0(r)&\simeq1-\frac{\ell_g}{r},\\
+\phi^i{}_j(r)&\simeq\left(1+\frac{\ell_g}{r}\right)\delta^i{}_j,
+\qquad \phi^0{}_i=\phi^i{}_0=0.
+\end{aligned}
+$$ {#eq-gravity-exterior-profile}
+
+The temporal coefficient is smaller near the source, while the spatial map stretches coordinate displacements into local lengths. In this nonrotating, orientation-aligned example $\theta^{00}\simeq\ell_g/r$, with the other registered deformation components zero. The spatial map still changes because it depends on the full dictionary in @eq-gravity-deformation-chart.
+
+The approximation requires $\ell_g/R_s\ll1$, small transport and binding/support corrections to the leading source, and observations in the exterior, with $r\gg R_s$. Interior matching and the stresses that maintain the body are supplied, not solved. Derivation 3.4A gives the weak exterior construction. The weak exterior motion and light comparisons retain these assumptions; effects smaller than the omitted source or nonlinear corrections are not resolved by them. The later finite-geometry and material examples state their own source laws and regimes.

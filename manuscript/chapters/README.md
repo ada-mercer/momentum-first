@@ -20,6 +20,8 @@ Current layout:
 - `02-tier-2-engines/04-quantum-mechanics/index.qmd` — Chapter 4, Quantum Mechanics in Momentum Language.
 - `02-tier-2-engines/05-expansion/index.qmd` — Chapter 5, Space Expansion and Stage Dressing.
 
+Part 0 now renders `04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/index.qmd` after the current engines. Its within-part folder numbering is a documented temporary exception; the later two Part 0 chapters remain planning-only.
+
 ## Wrapper and section-file policy
 
 Use:
@@ -46,8 +48,8 @@ manuscript/chapters/01-tier-1-foundations/02-foundations/
 
 manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/
   index.qmd
-  01-quantum-mechanics-after-gravity.qmd
-  04-stationary-gravity-and-the-operator-mg.qmd
+  01-quantum-momentum-and-interference.qmd
+  05-quantum-motion-in-deformed-space.qmd
 ```
 
 The chapter number belongs to the chapter folder. The section number belongs to the section file.

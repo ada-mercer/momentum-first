@@ -40,10 +40,11 @@ and is not committed to the repository.
   redshift and stretched signal durations can arise because momentum produces
   displacement differently as the universe evolves.
 
-The foundations and stationary-gravity chapters are the manuscript's most
-mature parts. The quantum and expansion chapters remain working bridges: they
-establish explicit connections and consequences while leaving broader theory
-and observational completion open.
+The foundations and gravity chapters carry the manuscript's most developed
+material, with review scope recorded separately from adoption. Quantum mechanics
+and expansion remain working treatments. Part 0 opens with a geometric picture
+of cycles, momentum and motion; its later chapters remain planned. Broader
+theory, microscopic closure and observational completion remain open.
 
 ## Repository guide
 

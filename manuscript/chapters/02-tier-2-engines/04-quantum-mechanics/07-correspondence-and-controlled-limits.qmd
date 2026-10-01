@@ -1,0 +1,113 @@
+## Correspondence and controlled limits {#sec-qm-correspondence}
+
+The momentum-unit generator gives a common starting point for three familiar descriptions: relativistic spinor motion, a slow quantum envelope and an approximately classical trajectory. Each uses the same state dynamics at a different level of resolution. A matched barrier experiment then tests whether a gravitational comparison has changed the physical experiment or only its normalization.
+
+### Dirac dynamics in standard units
+
+Multiplication by $c$ converts the chosen-time generator into the conventional energy-unit Hamiltonian:
+
+$$
+\widehat H=c\widehat M_t.
+$$
+
+For the flat first-order realization, using $p_f=m_0c$ gives
+
+$$
+\widehat H
+=\beta m_0c^2+c\boldsymbol\alpha\cdot\widehat{\mathbf p},
+\qquad i\hbar\partial_t\Psi=\widehat H\Psi.
+$$
+
+This is the free Dirac equation in Hamiltonian form. The correspondence is exact: the amplitudes, phase evolution and measured probabilities are unchanged. Core momentum remains the primary quantity in the M1 description; energy units provide the familiar comparison.
+
+### The slow envelope
+
+At low directed momentum, most of the free phase rate comes from the fermic scale. The positive magnitude expands as
+
+$$
+M=p_f+\frac{p^2}{2p_f}-\frac{p^4}{8p_f^3}
++O\!\left(\frac{p^6}{p_f^5}\right).
+$$
+
+The first term produces a rapid common rest phase. The slower change of the wave envelope is governed by the excess above it. In the standard Dirac block representation, write
+
+$$
+\Psi=e^{-icp_ft/\hbar}\binom{\varphi}{\xi},
+$$
+
+where $\varphi$ and $\xi$ are two-component amplitudes. The three Pauli matrices $\boldsymbol\sigma$ act on these components. In the low-momentum positive branch, $\xi$ is small. Its leading equation gives
+
+$$
+\xi\simeq\frac{\boldsymbol\sigma\cdot\widehat{\mathbf p}}{2p_f}\varphi.
+$$
+
+Substituting into the equation for $\varphi$ multiplies two first-order momentum operators. Since the free momentum derivatives commute, $(\boldsymbol\sigma\cdot\widehat{\mathbf p})^2=\widehat{\mathbf p}^{\,2}$, and
+
+$$
+\boxed{
+\frac{i\hbar}{c}\partial_t\varphi
+=\frac{\widehat{\mathbf p}^{\,2}}{2p_f}\varphi.
+}
+$$ {#eq-qm-slow-envelope}
+
+In energy units this is $i\hbar\partial_t\varphi=-\hbar^2\nabla^2\varphi/(2m_0)$. The familiar second-order Schrödinger operator appears because the small spinor component has been eliminated, not because the underlying relativistic equation has changed its spatial order.
+
+A weak, smooth static deformation adds the expected leading potential. Write $N=\phi^0{}_0=1+\nu$ and take $\nu$ and $b-1$ to be of the same small order as $p^2/p_f^2$, with spatial gradients controlled on the envelope scale. Removing the constant free rest phase then gives
+
+$$
+\frac{i\hbar}{c}\partial_t\varphi
+\simeq\left[p_f\nu+
+\frac{\widehat{\mathbf p}_{\mathrm{coord}}^{\,2}}{2p_f}\right]\varphi.
+$$
+
+For the Newtonian comparison, $\Phi=c^2\nu$ turns the first term into $m_0\Phi$ after multiplication by $c$. Away from this weak, slowly varying regime, the ordered spinor equation must be used before reducing the envelope. In a constant isotropic patch, for example, the kinetic excess in reference units is $N|\mathbf p_{\mathrm{coord}}|^2/(2p_fb^2)$: the same temporal conversion multiplies the whole local excess.
+
+[Derivation 4.7A](/manuscript/appendices/derivations/04-quantum-mechanics/07A-matched-limits-and-gravitational-barriers.qmd#sec-derivation-04-07a-matched-limits) supplies the elimination, gradient ordering and approximation conditions.
+
+### From waves to trajectories
+
+The ray form used for the path-phase calculation also recovers particle motion. When $\Psi\simeq a e^{iS/\hbar}$, derivatives acting on the rapidly varying phase dominate those acting on the amplitude. The spinor equation then requires
+
+$$
+g^{\mu\nu}\partial_\mu S\,\partial_\nu S=-p_f^2,
+\qquad g=\phi^{\mathsf T}\eta\phi.
+$$ {#eq-qm-eikonal-shell}
+
+Its future branch is the chosen-time generator already obtained from the momentum map. The rays follow
+
+$$
+\dot x^i=c\frac{\partial M_t}{\partial p_{{\mathrm{coord}},i}},
+\qquad
+\dot p_{{\mathrm{coord}},i}=-c\frac{\partial M_t}{\partial x^i}.
+$$
+
+Thus the same wave equation returns Gravity's free-carrier trajectories. The compatible connection transports amplitude and spin at the next order. Near a turning point, where a propagating wave becomes an evanescent one, the simple ray approximation must give way to wave matching.
+
+### Matched gravitational barriers
+
+Tunnelling is sensitive to small changes in the forbidden momentum because that momentum enters an exponential. It is therefore also sensitive to comparing different incident states or different apparatus standards by mistake.
+
+Begin with a constant $N$ and use proper distance $\ell$ across a one-dimensional barrier. Let $u(\ell)$ be its local additive momentum coefficient and $C$ the stationary reference generator value. The local incident value is $\epsilon=C/N$. Dividing the consistently converted stationary equation by $N$ gives
+
+$$
+\left[-i\hbar\alpha^1\partial_\ell+\beta p_f+u(\ell)I\right]\psi
+=\epsilon\psi.
+$$
+
+The temporal map coefficient has disappeared. Two experiments with the same local incident value, local barrier height, proper width, fermic scale and apparatus therefore have the same transmission. The incoming and outgoing probability fluxes must also be normalized in that same comparison. Derivation 4.7A checks the statement by exact spinor matching, without relying on a tunnelling exponent alone.
+
+A spatially varying $N$ is a different experiment. If the distant incident value $C$ is held fixed, the local value $C/N(\ell)$ changes along the barrier. In a forbidden interval the local decay momentum satisfies
+
+$$
+\kappa_{\mathrm{local}}^{\,2}
+=p_f^2-\left[\frac{C}{N(\ell)}-u(\ell)\right]^2.
+$$
+
+Where the variation is slow enough for a semiclassical approximation, the amplitude contains
+
+$$
+\exp\!\left[-\frac1\hbar
+\int\kappa_{\mathrm{local}}\,d\ell\right].
+$$
+
+Nonuniform deformation can consequently change the transmitted fraction substantially. The appendix verifies such a change with the full wave equation and conserved flux. It is the gravitational sensitivity of the specified, consistently coupled spinor model, shared by its metric description. An additional quantum-gravitational effect would require an additional physical interaction, compared with the same preparation and apparatus—not a conversion applied to only one term of the shell.

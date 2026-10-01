@@ -1,0 +1,156 @@
+# Derivation 4.6A — Path phase and coherent clocks {#sec-derivation-04-06a-coherent-clocks .unnumbered}
+
+## Purpose {.unnumbered}
+
+Phase accumulated along a carrier's path and a clock's observable recurrence are different quantities. This derivation supports proposed §4.6, “Phase and physical clocks.” It first relates a WKB path phase to the ideal-cycle expression inherited from Gravity. It then specifies a coherent two-state clock and proves the condition under which every accessible internal process shares one rescaling of time.
+
+## Starting assumptions and the ray phase {.unnumbered}
+
+Use the free massive local shell and prescribed minimally coupled coframe control of Derivation 4.5A. For a WKB state $\Psi=a e^{iS/\hbar}$, assume background and amplitude variations are small on the local wavelength scale, away from turning points, caustics and branch crossings. Let $P_i=\partial_iS$ and choose the future branch
+
+$$
+M=\sqrt{p_f^2+h^{ij}P_iP_j},\qquad
+M_t=NM-w^iP_i,\qquad \partial_tS=-cM_t.
+$$
+
+The ray velocity is
+
+$$
+\dot x^i=c\frac{\partial M_t}{\partial P_i}
+=c\left(\frac{Nh^{ij}P_j}{M}-w^i\right).
+$$
+
+Evaluate the **total** phase derivative along that ray rather than at a fixed coordinate:
+
+$$
+\begin{aligned}
+\frac{dS}{dt}
+&=P_i\dot x^i-cM_t\\
+&=cN\frac{h^{ij}P_iP_j}{M}-cw^iP_i-cNM+cw^iP_i\\
+&=-\frac{cNp_f^2}{M}.
+\end{aligned}
+$$
+
+The shift cancels between transport and the generator. Substituting the same ray velocity into the interval gives
+
+$$
+\frac{d\tau}{dt}
+=\sqrt{N^2-h_{ij}(\dot x^i/c+w^i)(\dot x^j/c+w^j)}
+=\frac{Np_f}{M}.
+$$
+
+Hence
+
+$$
+\boxed{\frac{dS}{dt}=-cp_f\frac{d\tau}{dt}.}
+$$
+
+This is local along the ray and does not require a conserved $M_t$. In a static zero-shift comparison, $M_r=NM$ and $p_{f,r}=Np_f$, so
+
+$$
+-\frac1\hbar\frac{dS}{dt}
+=\frac c\hbar\frac{p_{f,r}^2}{M_r}.
+$$
+
+It matches the magnitude of Gravity's stipulated ideal-cycle rate. At a fixed coordinate, by contrast, the phase frequency is $cM_t/\hbar$. Confusing the partial and total derivatives would lose the translational subtraction. For a null ray the leading action is constant along the ray although fixed-location waves can oscillate; no fermic internal clock is inferred for it.
+
+A common phase multiplying an isolated state cancels from all its expectation values. The identity above therefore does not, by itself, give a detector-readable clock. An observable recurrence needs at least a relative phase and a specified measurement.
+
+## A complete two-state clock control {.unnumbered}
+
+Consider a small held internal system whose support does not change its internal dynamics and across which $N$ is effectively uniform. Assume its local momentum-unit generator couples to proper time. With normalized internal state $|\psi\rangle$, the action is
+
+$$
+\mathcal A_{\mathrm{int}}=\int dt\left[
+\frac{i\hbar}{2}\langle\psi|\overleftrightarrow{\partial_t}|\psi\rangle
+-cN(t)\langle\psi|\widehat M_{\mathrm{int}}|\psi\rangle\right].
+$$
+
+Variation, with normalization enforced if required, gives $i\hbar\partial_t|\psi\rangle=cN\widehat M_{\mathrm{int}}|\psi\rangle$ up to an irrelevant common-phase term. This is an explicit proper-time coupling premise; the WKB identity has not derived the internal action.
+
+Choose
+
+$$
+\widehat M_{\mathrm{int}}=M_0I+g\sigma_x,\qquad M_0>g>0,
+\qquad |\psi(0)\rangle=|L\rangle=\binom10.
+$$
+
+The eigenvalues $M_0\pm g$ are positive. Define $\tau(t)=\int_0^tN(t')dt'$ and $\vartheta=cg\tau/\hbar$. Since the fixed internal generator commutes with itself at every time,
+
+$$
+|\psi(t)\rangle=e^{-icM_0\tau/\hbar}
+\bigl(\cos\vartheta|L\rangle-i\sin\vartheta|R\rangle\bigr).
+$$
+
+A population measurement gives
+
+$$
+\boxed{P_R(t)=\sin^2\vartheta,\qquad
+\langle\sigma_z\rangle=\cos(2\vartheta).}
+$$
+
+The common $M_0$ phase disappears; the gap $2g$ generates the measurable oscillation. At constant lapse the reference period is $\pi\hbar/(cNg)$ and the proper period is $\pi\hbar/(cg)$. Uniform time dependence of $N$ does not require an adiabatic approximation in this model. Repeated readout would need a non-disruptive protocol or identically prepared trials; the formula is the coherent free-running signal between measurements.
+
+## Universal rescaling on an accessible sector {.unnumbered}
+
+Now ask a stronger question than whether one clock slows: when do **all** states and observables in an accessible internal sector undergo the same time change? In a finite-dimensional irreducible sector, require the infinitesimal dynamics to satisfy
+
+$$
+[\widehat M_r,\varrho]
+=\Lambda[\widehat M_0,\varrho]\quad
+\text{for every density operator }\varrho.
+$$
+
+Set $D=\widehat M_r-\Lambda\widehat M_0$. Density operators span the Hermitian matrices, and their complex span is the full matrix algebra. Therefore $D$ commutes with every matrix unit. Commuting with $|j\rangle\langle j|$ removes the off-diagonal entries of $D$. Commuting with $|j\rangle\langle k|$ makes its diagonal entries equal. It follows that
+
+$$
+\boxed{\widehat M_r=\Lambda\widehat M_0+aI.}
+$$
+
+Conversely the added scalar commutes with every state, so this identity immediately proves the desired dynamics. For fixed $\widehat M_0$ and time-dependent $\Lambda(t)$, the same argument yields evolution under the accumulated parameter $\int\Lambda(t)dt$, with only a common phase from $a(t)$.
+
+For genuine superselection sectors, the accessible algebra is block diagonal and the undetectable difference can be a different scalar in each irreducible block. More generally the difference belongs to the commutant of the accessible algebra. If coherences between two blocks can actually be prepared or measured, their relative scalar is no longer invisible. Infinite-dimensional versions additionally require shared domains; no unrestricted unbounded-operator theorem is assumed here.
+
+This criterion tests all transition gaps **and** coherent couplings. Equal scaling of one population rate or one transition frequency is insufficient.
+
+## Open systems and complete events {.unnumbered}
+
+For a time-homogeneous Markovian density evolution $\partial_t\varrho=\mathcal L\varrho$, equality of all dynamical maps after $t\mapsto\Lambda t$ is equivalent to
+
+$$
+\boxed{\mathcal L_r=\Lambda\mathcal L_0}
+$$
+
+on the accessible operator space. Necessity follows by differentiating the maps at zero time; sufficiency follows by exponentiation. This compares the **whole** superoperator, including coherent and dissipative parts, not a particular nonunique set of Lindblad operators. Time-dependent histories require the corresponding time-reparameterized generator at each time; non-Markovian processes require comparison of their full memory-dependent maps.
+
+A fixed proper pulse illustrates why complete events matter. If a local coupling $g$ acts for $\Delta\tau$, then in a static reference $g_r=Ng$ and $\Delta t=\Delta\tau/N$. Its pulse area is unchanged:
+
+$$
+\vartheta=\frac c\hbar\int g_r\,dt
+=\frac c\hbar\int g\,d\tau.
+$$
+
+The same pulse map $\mathcal E$ repeated at local Poisson cadence $\nu_0$ gives the reference generator $N\nu_0(\mathcal E-I)$. That is a genuine uniform slowdown of this process. Holding the reference pulse duration fixed instead changes the proper event and is a different comparison.
+
+To see explicitly why changed event probability is not enough, take $U_\vartheta=\cos\vartheta I-i\sin\vartheta\sigma_x$ and events of cadence $\nu$. Direct expansion gives
+
+$$
+\nu(U_\vartheta\varrho U_\vartheta^\dagger-\varrho)
+=\nu\sin^2\vartheta(\sigma_x\varrho\sigma_x-\varrho)
+-i\nu\sin\vartheta\cos\vartheta[\sigma_x,\varrho].
+$$
+
+The ratio of coherent to population coefficients is $\cot\vartheta$, where both are nonzero. At fixed cadence a small pulse-area reduction scales the population term quadratically and the coherent term linearly. It cannot rescale the full generator by one factor. This is a counterexample to inferring universal clock slowing from event probability alone, not a model-independent experimental discriminator: variable pulse statistics, decoherence and actual material couplings would need their own specification.
+
+## Source response and result {.unnumbered}
+
+The same held-system action fixes its lapse response,
+
+$$
+\frac{\delta\mathcal A_{\mathrm{int}}}{\delta N(t)}
+=-c\langle\widehat M_{\mathrm{int}}\rangle.
+$$
+
+It is not the derivative of a transition probability. In the clock preparation above, $\langle\sigma_x\rangle=0$ throughout free running even though $P_R$ depends on $g$. A switched drive or physical support must be included when the total source and momentum exchange are required.
+
+Proposed §4.6 receives two distinct results: a path-phase identity for a specified free ray and an observable coherent clock for a specified internal coupling. The universal-rescaling criterion states exactly what real-material universality would require; the construction does not derive that universality for all matter.

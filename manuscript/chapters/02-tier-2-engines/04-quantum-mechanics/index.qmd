@@ -1,19 +1,21 @@
-# Quantum Mechanics in Momentum Language
+# Quantum Mechanics in Momentum Language {#sec-qm}
 
-{{< include 01-quantum-mechanics-after-gravity.qmd >}}
+{{< include 01-quantum-momentum-and-interference.qmd >}}
 
 {{< include 02-core-terms-and-variables.qmd >}}
 
-{{< include 03-the-core-momentum-operator.qmd >}}
+{{< include 03-phase-bearing-states-and-directional-readings.qmd >}}
 
-{{< include 04-stationary-gravity-and-the-operator-mg.qmd >}}
+{{< include 04-the-core-momentum-operator.qmd >}}
 
-{{< include 05-correspondence-with-standard-quantum-mechanics.qmd >}}
+{{< include 05-quantum-motion-in-deformed-space.qmd >}}
 
-{{< include 06-the-nonrelativistic-limit.qmd >}}
+{{< include 06-phase-and-physical-clocks.qmd >}}
 
-{{< include 07-classical-and-stationary-gravity-limits.qmd >}}
+{{< include 07-correspondence-and-controlled-limits.qmd >}}
 
-{{< include 08-strong-gravity-and-quantum-sensitivity.qmd >}}
+{{< include 08-quantum-sources-and-reciprocal-gravity.qmd >}}
 
-{{< include 09-what-the-quantum-chapter-establishes.qmd >}}
+{{< include 09-a-changing-stage-and-the-one-particle-boundary.qmd >}}
+
+{{< include 10-what-the-quantum-chapter-establishes.qmd >}}

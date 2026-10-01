@@ -1,0 +1,183 @@
+# Derivation 4.3A — Quantum directional readings and coherent states {#sec-derivation-04-03a-quantum-readings .unnumbered}
+
+## Purpose {.unnumbered}
+
+Six opposed momentum readings describe a carrier's core and translation, but they do not replace its quantum state. This derivation supports proposed §4.3, “Phase-bearing states and directional readings.” It establishes the positive free reading operators, identifies the shell information carried by their second moments, and constructs a six-reading representation that retains the complete fixed-carrier density operator rather than discarding relative phase.
+
+## Starting assumptions {.unnumbered}
+
+Work in one inertial local frame, with $x^0=ct$ and $p_f>0$ the fermic scale of the declared free-space realization. Retain a complex quantum Hilbert space, normalized density operator $\varrho\geq0$, unitary free evolution and the usual Born rule for a specified measurement. None is inferred from directional conservation alone. In momentum representation,
+
+$$
+\mathscr H=L^2(d^3p)\otimes\mathscr H_{\mathrm{int}},\qquad
+\widehat M_+=\sqrt{p_f^2+\widehat{\mathbf p}^{\,2}}.
+$$
+
+The internal space is carried unchanged throughout. Use states with finite second moments for the moment identities; use smooth wave packets or a finite periodic regulator when writing kernels. The free massive inverse is bounded; a massless extension needs its zero-core mode and inverse domain treated separately.
+
+## Positive readings on common support {.unnumbered}
+
+Let $A=(i,\sigma)$ abbreviate the native slashed directional index $\not i$, with $i=1,2,3$ and $\sigma=\pm1$. Define
+
+$$
+\widehat p^{i\sigma}=\widehat M_++\frac{\sigma}{2}\widehat p_i.
+$$
+
+All four underlying operators are multiplication operators in momentum space. Their common spectral domain makes the sums and products unambiguous. Since $M(p)=\sqrt{p_f^2+|\mathbf p|^2}\geq|\mathbf n\cdot\mathbf p|$ for every unit $\mathbf n$,
+
+$$
+\widehat M_+\pm\frac12\mathbf n\cdot\widehat{\mathbf p}
+\ \geq\ \frac12\widehat M_+\ \geq0.
+$$
+
+These inequalities are quadratic-form inequalities, obtained pointwise in the joint spectral representation. In particular,
+
+$$
+\widehat p^{i+}+\widehat p^{i-}=2\widehat M_+,
+\qquad
+\widehat p_i=\widehat p^{i+}-\widehat p^{i-},
+\qquad
+\widehat M_+=\frac16\sum_A\widehat p^A.
+$$
+
+The factor $1/2$ multiplies the signed translation, not the entire opposed reading. The six entries sum to six times the same core; they are not six populations or six independently additive budgets.
+
+Retain Gravity's indexed representation maps,
+
+$$
+L^{i\sigma}{}_0=1,\quad
+L^{i\sigma}{}_j=\frac\sigma2\delta_{ij},\qquad
+L^0{}_{i\sigma}=\frac16,\quad
+L^j{}_{i\sigma}=\sigma\delta^j{}_i.
+$$
+
+Multiplication gives $L^\mu{}_A L^A{}_\nu=\delta^\mu{}_\nu$, whereas the reverse product is
+
+$$
+\Pi^{i\sigma}{}_{j\tau}=\frac16+\frac{\sigma\tau}{2}\delta_{ij},
+\qquad \Pi^2=\Pi.
+$$
+
+Its image consists exactly of lists with equal opposed pair sums. It has rank four: a common component and three opposed differences. For a fixed $p_f$, the future shell within that support has three independent momentum parameters. Neither count specifies spin states.
+
+With local signature $\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$, the supported forms are
+
+$$
+\eta_{i\sigma,j\tau}=\sigma\tau\delta_{ij}-\frac1{36},\qquad
+\eta^{i\sigma,j\tau}=-1+\frac{\sigma\tau}{4}\delta_{ij},
+\qquad \eta^{AC}\eta_{CB}=\Pi^A{}_B.
+$$
+
+They compare the common core with the opposed differences; they are not a positive quantum norm. Direct substitution proves
+
+$$
+\eta_{AB}\widehat p^A\widehat p^B
+=-\widehat M_+^2+\widehat{\mathbf p}^{\,2}
+=-p_f^2 I.
+$$
+
+Positivity does not replace this shell condition. For example, $(M,p_1,p_2,p_3)=(1,3/2,0,0)$ produces six positive supported entries but violates $M\geq|\mathbf p|$. Conversely, adding a redundant pair-even vector can leave the invariant unchanged while violating support. Both support and the shell must therefore be imposed.
+
+## The shell belongs to second moments, not generally to means {.unnumbered}
+
+Define the reading means and symmetric covariance by
+
+$$
+\mu^A=\operatorname{Tr}(\varrho\widehat p^A),\qquad
+\Sigma^{AB}=\frac12\left\langle
+\{\widehat p^A-\mu^A,\widehat p^B-\mu^B\}\right\rangle.
+$$
+
+Taking the expectation of the operator identity, then separating the product into mean and covariance, gives
+
+$$
+\boxed{\eta_{AB}(\mu^A\mu^B+\Sigma^{AB})=-p_f^2.}
+$$
+
+Equivalently,
+
+$$
+\langle M\rangle^2-|\langle\mathbf p\rangle|^2
+=p_f^2+\sum_i\operatorname{Var}(p_i)-\operatorname{Var}(M).
+$$
+
+The rightmost terms are momentum spread, not a changed fermic identity. The square-root function satisfies $|M(p)-M(q)|\leq|p-q|$; averaging its square over two independent samples proves $\operatorname{Var}(M)\leq\sum_i\operatorname{Var}(p_i)$. Thus the mean four-vector remains future causal, but generally lies above the fixed one-carrier shell.
+
+For a concrete example take $p_f=1$ and equal weights at $p_x=\pm\sqrt3$, with the other components zero. Both modes have $M=2$. All six means are $2$, so the shell inferred from means alone would give $\langle M\rangle^2=4$. The actual shell has $p_f^2=1$; the missing $3$ is $\operatorname{Var}(p_x)$. A coherent superposition and the incoherent mixture have the same reading moments here. This identity is neither a coherence witness nor evidence that spread changes $p_f$.
+
+In a static zero-shift reference comparison, all readings instead scale as $p_r^A=Np^A$. At a fixed common $N$, their shell is $\eta_{AB}p_r^Ap_r^B=-p_{f,r}^2$, with $p_{f,r}=Np_f$. This is a different comparison of the same shell, not a new local coefficient.
+
+## An explicit phase difference invisible to every reading statistic {.unnumbered}
+
+In a periodic interval of length $\mathscr L$, choose a nonzero allowed wave number $k=2\pi n/\mathscr L$ and the scalar Fourier representative
+
+$$
+\psi_\vartheta(x)=\frac{1+e^{i\vartheta}e^{ikx}}{\sqrt{2\mathscr L}}.
+$$
+
+The two orthogonal momentum modes $0$ and $\hbar k$ each have probability $1/2$. Therefore every function of the commuting momentum readings has the same spectral distribution for all $\vartheta$. Yet a position measurement in this specified representation gives
+
+$$
+|\psi_\vartheta(x)|^2=\frac{1+\cos(kx+\vartheta)}{\mathscr L}.
+$$
+
+Changing $\vartheta$ translates the interference pattern. Replacing the state by reading means, by all diagonal moments, or even by the entire joint reading distribution loses that change. This example uses a stated Fourier position readout; it does not claim a unique relativistic localization prescription.
+
+## Bilocal reconstruction and its normalization {.unnumbered}
+
+The missing information is retained if both momentum arguments and the internal indices survive. Write $y^A(p)=M(p)+\sigma p_i/2$ only as a calculation alias for the eigenvalue of $\widehat p^A$, and set
+
+$$
+f_A(p)=\frac{y^A(p)}{\sqrt{M(p)}},\qquad
+\mathcal C^{AB}_{ss'}(p,p')=
+ f_A(p)\varrho_{ss'}(p,p')f_B(p').
+$$
+
+Since $\sum_A f_A(p)=6\sqrt{M(p)}$, summing both reading indices gives the inverse immediately:
+
+$$
+\boxed{\varrho_{ss'}(p,p')=
+\frac{\sum_{A,B}\mathcal C^{AB}_{ss'}(p,p')}
+{36\sqrt{M(p)M(p')}}.}
+$$
+
+Thus the full kernel is injective, including off-diagonal phases and all internal coherence. As an operator, $\mathcal C=F\varrho F^\dagger$ is positive on its form domain. This does not make its individual off-diagonal entries real or positive.
+
+Its trace, however, is not one in general. The extra weight is
+
+$$
+d(p)=\sum_A f_A(p)^2
+=6M(p)+\frac{|\mathbf p|^2}{2M(p)}.
+$$
+
+To preserve the quantum norm directly, define
+
+$$
+u_A(p)=\frac{y^A(p)}{\sqrt{6M(p)^2+|\mathbf p|^2/2}},
+\qquad (U\psi)_A(p)=u_A(p)\psi(p).
+$$
+
+Here the displayed $u_A$ is a real dimensionless amplitude coefficient, not a velocity. The sum $\sum_Au_A^2=1$ proves $U^\dagger U=I$, so
+
+$$
+\varrho_6=U\varrho U^\dagger,\qquad
+\operatorname{Tr}\varrho_6=1,\qquad
+\mathcal C=\sqrt d\,\varrho_6\sqrt d.
+$$
+
+At each fixed momentum its range projector is $\mathsf P_{AB}(p)=u_A(p)u_B(p)$, of rank **one in reading space**, tensored with the unchanged internal space. The condition $\Pi\Xi=\Xi$ alone is too weak for an amplitude $\Xi$: it would allow extra components absent from the original state. The actual condition is $\mathsf P\Xi=\Xi$. Rank-four classical support and rank-one fixed-momentum amplitude support answer different questions.
+
+For a fixed encoding and a specified self-adjoint generator, the evolution also lifts without adding physics:
+
+$$
+\widehat M_6=U\widehat M_tU^\dagger\quad
+\text{on }\operatorname{Ran}\mathsf P,
+\qquad
+ i\hbar\partial_0\varrho_6=[\widehat M_6,\varrho_6].
+$$
+
+The inverse $U^\dagger$ recovers the original evolution. Extending this operator to the forbidden complement and calling its additional zero modes physical would change the state space, not merely its notation.
+
+## Result and return to the chapter {.unnumbered}
+
+The free directional operators are positive, supported observables. Their second moments obey the fixed-carrier shell; their diagonal statistics do not determine phase. A correctly normalized bilocal six-reading encoding retains the full original state, without adding six spin or particle modes. Proposed §4.3 can therefore use readings and moments as useful observables while keeping the coherent state indispensable. Neither the encoding nor its kinetic diagonal selects an exact local gravitational source, and a fixed-carrier density operator is not a complete field state with variable particle number.

@@ -22,8 +22,8 @@ defaults:
     Arne supplied the core framing and acceptance direction; AI-assisted
     contribution shaped drafting, structure, and review.
 
-# Verification below records the distinct review passes current through the v0.3.7
-# candidate. It is independent of section-level human verification in
+# Verification below records scoped review history for the v0.4.0 candidate,
+# not automatic re-verification of changed text. It is independent of human verification in
 # docs/provenance/section-ledger.yml.
 chapters:
   - id: introduction
@@ -45,7 +45,7 @@ chapters:
     maturity: stabilizing
     verification: V2
     verified_by: AI-assisted review
-    note: Source-to-field-to-observer pipeline; conceptually reviewed, with targeted V3 review of load-bearing source-map chains.
+    note: Source-to-field-to-observer pipeline; historical V2 review with targeted V3 chains. Five narrow companion files received independent technical review with the 2026-10-01 appendix reconciliation; this is not whole-chapter re-verification.
 
   - id: quantum
     title: Quantum Mechanics in Momentum Language
@@ -61,6 +61,13 @@ chapters:
     verified_by: AI-assisted review
     note: Bosic-slot stage dressing, χ² massive motion, and scoped cosmological correspondence at a supplied history.
 
+  - id: first-picture-of-m1-geometry
+    title: A First Picture of M1 Geometry
+    maturity: working_draft
+    verification: none
+    verified_by: ""
+    note: Adopted opening chapter of Part 0 (2026-10-01, v17). Earlier conceptual, writing and local mathematical reviews cover named revisions and constructions; no whole-v17 independent verification is claimed.
+
 # Derivation appendices are tracked collectively for now. Promote an individual
 # appendix to its own entry (same fields as a chapter) once its status diverges
 # from the group.
@@ -69,4 +76,4 @@ appendices:
   maturity: working_draft
   verification: V2
   verified_by: AI-assisted review
-  note: All appendices passed at least conceptual review; load-bearing formal chains received targeted V3 review.
+  note: Historical aggregate V2 status is retained, not re-certified. Gravity appendices 3.3A–3.10A received exact-revision independent V3 review on 2026-10-01; QM and other appendices were not re-accepted by this review.

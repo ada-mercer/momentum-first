@@ -4,6 +4,11 @@ This package is the reusable implementation layer for native 3D figures. It
 contains backend-neutral scene contracts, shared primitives, camera and style
 presets, exporters, and backend adapters.
 
+Metadata and runtime routing import without NumPy or a rendering backend.
+Numerical primitives retain their public package exports but load on demand;
+actual figure generation still requires the figure environment. Keep lightweight
+validation from acquiring those optional dependencies through eager imports.
+
 Keep family-specific physics and manuscript meaning under
 [`../../src/geometry3d/`](../../src/geometry3d/README.md). Move behavior into the
 shared library only when multiple families genuinely use the same abstraction.

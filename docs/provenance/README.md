@@ -11,7 +11,7 @@ AI assistance may be credited as contribution, but the public ledger uses the ca
 ## Ledger model
 
 The section ledger is `section-ledger.yml`. Its coverage is the explicit
-`project.render` list in `_quarto.yml`, including administrative rendered units
+`book.chapters` order in `_quarto.yml`, including administrative rendered units
 such as manuscript status and references. Each entry should stay simple:
 
 ```yaml

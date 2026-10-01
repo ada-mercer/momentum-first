@@ -16,10 +16,7 @@ repository root so paths agree with Quarto, manifests, and CI.
 For a lightweight source and documentation pass:
 
 ```bash
-python3 tooling/scripts/check_dependencies.py --mode minimal
-python3 tooling/scripts/check_crossrefs.py
-python3 -m py_compile tooling/scripts/*.py tooling/tests/*.py
-pytest tooling/tests/test_repo_integrity.py
+.venv/bin/python tooling/scripts/validate.py
 ```
 
 For registered figures:
@@ -43,6 +40,23 @@ details and the supported setup modes live in
 [`../docs/DEPENDENCIES.md`](../docs/DEPENDENCIES.md).
 Figure-specific generation and geometry3d commands live in
 [`../figures/README.md`](../figures/README.md).
+
+`validate.py` is shared by local checks, validation CI and Pages. It checks
+dependencies, repository tests, the rendered include/link/asset closure and the
+generated status table without rewriting that table. `--publication` also
+rebuilds registered figures and checks reproducibility; it requires a clean
+`figures/build/` baseline and stops before generation when source validation
+fails. Use an isolated accepted snapshot for publication rehearsal, not a dirty
+authoring checkout. Rendering and publication are separate operations.
+
+The maintained book order is `book.chapters` in `_quarto.yml`; Quarto derives
+render targets and the sidebar. Do not add a duplicate `project.render` or HTML
+sidebar file list. Templates, candidates and unlisted QMDs are not promoted by
+directory scanning. Review/provenance facts remain independently maintained and
+are checked against the book order, never generated as scientific approvals.
+
+Check the CI image copies with `python3 tooling/scripts/sync_ci_image.py`.
+The [image update procedure](ci/image/README.md) covers deliberate digest changes.
 
 ## Maintenance boundary
 

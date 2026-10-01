@@ -1,0 +1,104 @@
+## Time-Dependent Gravity {#sec-gravity-time-dependent}
+
+Moving particles change the momentum source, and a changing deformation alters their subsequent motion. When both evolve, gravity is no longer a sequence of stationary wells. The particle distribution and the geometry must advance together.
+
+### Momentum in a changing geometry
+
+The free-particle law from §3.5 also applies to a changing geometry. In coordinate components it gives
+
+$$
+\frac{dx^i}{dx^0}=\frac{p^i}{p^0},
+\qquad
+\frac{dp_\mu}{dx^0}
+=-\frac{1}{2p^0}\partial_\mu g^{\alpha\beta}p_\alpha p_\beta.
+$$ {#eq-gravity-time-dependent-transport}
+
+The second equation now includes changes in the temporal momentum:
+
+$$
+\frac{d(-p_0)}{dx^0}
+=\frac{1}{2p^0}\partial_0g^{\alpha\beta}p_\alpha p_\beta.
+$$ {#eq-gravity-changing-reference-generator}
+
+In a stationary geometry, $\partial_0g^{\alpha\beta}=0$ and $-p_0$ is conserved. Time dependence allows $-p_0$ to change according to the equation above. The conserved reference core in §3.5 followed from this time symmetry.
+
+A collisionless population evolves by transporting particles through position and momentum space. Averaging their local contributions gives the changing $J$. The same transport law implies $\nabla_\mu J^{\mu\nu}=0$, so the motion that updates the source also preserves its local momentum balance.
+
+### A disturbance travels through space
+
+In the weak regime, with no incoming radiation, the sourced solution is retarded:
+
+$$
+\theta^{\mu\nu}(t,\mathbf x)
+=\frac{G_N}{c^3}\int
+\frac{J^{\mu\nu}\!\left(t-|\mathbf x-\mathbf x'|/c,\mathbf x'\right)}
+{|\mathbf x-\mathbf x'|}\,d^3x'.
+$$ {#eq-gravity-retarded-source}
+
+A change at the source reaches another point after a finite travel time. The stationary integral returns when the delay no longer changes the source values. Free gravitational radiation can be specified separately in the initial data.
+
+In the weak vacuum, the equations admit two transverse wave polarizations. They change the tidal separation between neighboring free trajectories even when the common component $\theta^{00}$ vanishes. Describing these waves requires the spatial components of the deformation, beyond a scalar well. At finite field strength, disturbances follow the local null cone of the evolving geometry.
+
+[Derivation 3.8A](/manuscript/appendices/derivations/03-gravity-and-structured-spacetime/08A-time-dependent-transport-and-coupled-sources.qmd#sec-derivation-03-08A-time-dependent-transport-and-coupled-sources) gives the transport and wave calculations. The full free-particle–field system has local evolution from regular, constraint-satisfying data under the conditions stated in [Derivation 3.7A](/manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-field-equations-and-momentum-balance.qmd#sec-derivation-03-07A-field-equations-and-momentum-balance).
+
+### An exact coupled example
+
+A uniform, isotropic population of light gives an exact coupled example. Choose a spatial map that stretches every direction by the same time-dependent factor:
+
+$$
+\phi^0{}_0=1,
+\qquad \phi^i{}_j=a(x^0)\delta^i{}_j,
+\qquad \phi^0{}_i=\phi^i{}_0=0,
+$$ {#eq-gravity-homogeneous-map}
+
+Here $a>0$ sets the physical distance between coordinate points. Translation symmetry keeps each particle’s coordinate momentum $p_i$ fixed, while its local spatial momentum is $p_i/a$. The number density per physical volume scales as $a^{-3}$: the same population occupies a changing volume.
+
+Normalize $a(0)=1$ and let $\mathcal M_0$ be the initial core density. Each nonzero light carrier has local core equal to its spatial momentum magnitude, so its core scales as $a^{-1}$. Together with the changing number density, this gives
+
+$$
+\mathcal M=\mathcal M_0a^{-4},
+\qquad
+\mathcal P^i=0,
+\qquad
+\mathcal C^{ij}=\frac{\mathcal M}{3}\delta^{ij}.
+$$ {#eq-gravity-homogeneous-null-source}
+
+Solving the full field equations with this source gives the expanding solution
+
+$$
+a^2(x^0)
+=1+2\sqrt{\frac{8\pi G_N\mathcal M_0}{3c^3}}\,x^0.
+$$ {#eq-gravity-homogeneous-null-solution}
+
+The opposite sign before the time term gives the contracting solution. Both branches apply while $a>0$. In each case, the particle trajectories, source and full field equations—constraints as well as evolution—are satisfied together.
+
+The corresponding registered deformation is
+
+$$
+\theta^{00}=\frac{3(a^2-1)}8,
+\qquad
+\theta^{0i}=0,
+\qquad
+\theta^{ij}=\frac{1-a^2}{8}\delta^{ij}.
+$$ {#eq-gravity-homogeneous-theta}
+
+The common component and spatial trace cancel in the temporal map, leaving $\phi^0{}_0=1$, while the spatial geometry evolves. Time derivatives now supply field terms that were absent from §3.6’s static equation. This example tests coupled gravitational evolution; the physical assumptions of the book’s separate expansion engine are introduced later.
+
+### A material recurrence can evolve too
+
+An oscillating body provides a clock whose recurrence can be followed through changing geometry. Take a specified self-bound fluid model with a supported spherical equilibrium and a small radial oscillation. Finite perturbations make its surface move and its internal stresses evolve along with the gravitational field, so the period can shift from its linear value.
+
+The numerical calculation follows two small but finite perturbations for six reference periods, with no signal probe present. At the larger amplitude, successive periods shorten slightly toward the linear value. The resolution study separates this change from numerical drift over the tested interval.
+
+A time comparison must follow the moving surface as well. Its elapsed proper time is
+
+$$
+\Delta\tau_s
+=\int_{t_1}^{t_2}
+\sqrt{-g_{\mu\nu}(x_s(t))
+\frac{dx_s^\mu}{c\,dt}\frac{dx_s^\nu}{c\,dt}}\,dt.
+$$ {#eq-gravity-evolving-surface-time}
+
+The integral accumulates gravitational and translational slowing along the actual surface motion. Both the geometry and the velocity must therefore be updated throughout the recurrence. This is the dynamical counterpart of §3.5’s clock comparison, now applied to an evolving material body.
+
+§3.10 compares this material recurrence and a separate weak scalar-signal calculation with GR. Finite material–signal exchange has been evolved in a homogeneous model; coupling such an exchange to the oscillating body and a distant observer remains open.

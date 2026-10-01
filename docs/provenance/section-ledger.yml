@@ -1,9 +1,10 @@
 schema: momentum-first.section-contribution-ledger.v1
 purpose: Public-facing section contribution and human-verification ledger for Momentum First.
 coverage:
-  source: _quarto.yml project.render
-  release_candidate: v0.3.7
-  rendered_units: 28
+  source: _quarto.yml book.chapters
+  release_candidate: v0.4.0
+  rendered_units: 29
+  coverage_note: Working-book path coverage reconciled on 2026-10-01, including six active QM appendices, the references page and the adopted Part 0 opening chapter. Historical human-verification decisions are unchanged; this is not whole-book scientific re-verification.
 human_verification_decision:
   decided_by: Arne Klaveness
   decided_on: 2026-07-30
@@ -126,6 +127,22 @@ sections:
       Arne Klaveness explicitly confirmed partial human verification for the
       v0.3.7 candidate on 2026-07-30; no broader human verification is claimed.
 
+  - id: first-picture-of-m1-geometry
+    title: A First Picture of M1 Geometry
+    path: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/index.qmd
+    contributors:
+      - Arne Klaveness
+      - AI-assisted
+    contribution_note: >
+      Arne directed the chapter, selected revisions and authorized integration;
+      AI-assisted contribution included drafting, diagrams, bounded review
+      and repository integration.
+    human_verification: not_yet_recorded
+    verification_note: >
+      Adopted working prose matches candidate v17 on 2026-10-01 before
+      asset-path integration. Adoption does not imply human scientific
+      verification. Earlier reviews apply to their named versions and scopes.
+
   - id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
     title: Derivation 2.3A — Structural uniqueness of the directional shell readings
     path: manuscript/appendices/derivations/02-foundations/03A-directional-positive-split-uniqueness.qmd
@@ -141,215 +158,223 @@ sections:
       Arne Klaveness directed this appendix entry to remain not_yet_recorded;
       qualified AI review is recorded separately.
 
-  - id: derivation-3-3a-carrier-map-source-postulate-and-consequences
-    title: Derivation 3.3A — Carrier-map source postulate and consequences
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-carrier-source-map.qmd
+  - id: derivation-3-03a-resolved-gravitational-sources
+    title: Derivation 3.3A — Resolved Gravitational Sources
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-resolved-gravitational-sources.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-3b-rejected-null-probe-source-route
-    title: Derivation 3.3B — Rejected null-probe source route
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03B-null-probe-diagnostic.qmd
+  - id: derivation-3-04a-sourced-spatial-deformation
+    title: Derivation 3.4A — Sourced Spatial Deformation
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-sourced-spatial-deformation.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-3c-momentum-manifestations-and-source-status
-    title: Derivation 3.3C — Momentum manifestations and source status
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03C-momentum-manifestations.qmd
+  - id: derivation-3-05a-particle-response-and-internal-cycling
+    title: Derivation 3.5A — Particle Response and Internal Cycling
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-particle-response-and-internal-cycling.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-4a-stationary-source-to-field-map
-    title: Derivation 3.4A — Stationary source-to-field map
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-stationary-source-to-field-map.qmd
+  - id: derivation-3-06a-reciprocal-sources-and-static-feedback
+    title: Derivation 3.6A — Reciprocal Sources and Static Feedback
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06A-reciprocal-sources-and-static-feedback.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-4b-scalar-carrier-and-readout-consistency
-    title: Derivation 3.4B — Scalar carrier and readout consistency
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04B-scalar-carrier-readout-consistency.qmd
+  - id: derivation-3-07a-field-equations-and-momentum-balance
+    title: Derivation 3.7A — Field Equations and Momentum Balance
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-field-equations-and-momentum-balance.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-4c-reciprocal-multisector-response-obstruction
-    title: Derivation 3.4C — Reciprocal multisector response obstruction
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04C-reciprocal-multisector-response-obstruction.qmd
+  - id: derivation-3-08a-time-dependent-transport-and-coupled-sources
+    title: Derivation 3.8A — Time-Dependent Transport and Coupled Sources
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/08A-time-dependent-transport-and-coupled-sources.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-5a-local-observer-bookkeeping
-    title: Derivation 3.5A — Local observer bookkeeping
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-local-observer-bookkeeping.qmd
+  - id: derivation-3-09a-four-and-six-component-forms
+    title: Derivation 3.9A — Four- and Six-Component Forms
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/09A-four-and-six-component-forms.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-6a-stationary-correspondence-calibration
-    title: Derivation 3.6A — Stationary correspondence calibration
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06A-stationary-correspondence-calibration.qmd
+  - id: derivation-3-10a-gr-correspondence-and-material-comparisons
+    title: Derivation 3.10A — GR Correspondence and Material Comparisons
+    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/10A-gr-correspondence-and-material-comparisons.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the theoretical premises and conditional adoption direction;
+      AI-assisted contribution included derivation drafting, reconciliation,
+      independent technical review, and integration.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      No human scientific verification is inferred from adoption authorization.
+      Exact-revision independent AI technical review is recorded in the
+      2026-10-01 gravity appendix adoption evidence packet.
 
-  - id: derivation-3-6b-frame-drag-endpoint-audit
-    title: Derivation 3.6B — Frame-drag endpoint audit
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06B-frame-drag-coefficient-audit.qmd
+  - id: derivation-4-03a-quantum-directional-readings-and-coherent-states
+    title: Derivation 4.3A — Quantum directional readings and coherent states
+    path: manuscript/appendices/derivations/04-quantum-mechanics/03A-quantum-directional-readings-and-coherent-states.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the framework and manuscript direction; AI-assisted
+      contribution included derivation drafting and integration support.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      Active working appendix wired into the book on 2026-10-01. This
+      maintenance pass records neither new scientific acceptance nor human
+      verification; historical review of another revision does not transfer.
 
-  - id: derivation-3-6c-boost-consistency-and-the-shift-coefficient
-    title: Derivation 3.6C — Boost consistency and the shift coefficient
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06C-boost-consistency-shift-coefficient.qmd
+  - id: derivation-4-04a-core-momentum-and-first-order-evolution
+    title: Derivation 4.4A — Core momentum and first-order evolution
+    path: manuscript/appendices/derivations/04-quantum-mechanics/04A-core-momentum-and-first-order-evolution.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the framework and manuscript direction; AI-assisted
+      contribution included derivation drafting and integration support.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      Active working appendix wired into the book on 2026-10-01. This
+      maintenance pass records neither new scientific acceptance nor human
+      verification; historical review of another revision does not transfer.
 
-  - id: derivation-3-6d-conserved-radiation-cavity-discriminator
-    title: Derivation 3.6D — Conserved radiation-cavity discriminator
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06D-conserved-radiation-cavity-discriminator.qmd
+  - id: derivation-4-05a-coframe-evolution-and-probability-conservation
+    title: Derivation 4.5A — Coframe evolution and probability conservation
+    path: manuscript/appendices/derivations/04-quantum-mechanics/05A-coframe-evolution-and-probability-conservation.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the framework and manuscript direction; AI-assisted
+      contribution included derivation drafting and integration support.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      Active working appendix wired into the book on 2026-10-01. This
+      maintenance pass records neither new scientific acceptance nor human
+      verification; historical review of another revision does not transfer.
 
-  - id: derivation-3-7a-scalar-nonstationary-action-candidate
-    title: Derivation 3.7A — Scalar nonstationary action candidate
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-scalar-nonstationary-action-candidate.qmd
+  - id: derivation-4-06a-path-phase-and-coherent-clocks
+    title: Derivation 4.6A — Path phase and coherent clocks
+    path: manuscript/appendices/derivations/04-quantum-mechanics/06A-path-phase-and-coherent-clocks.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the framework and manuscript direction; AI-assisted
+      contribution included derivation drafting and integration support.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      Active working appendix wired into the book on 2026-10-01. This
+      maintenance pass records neither new scientific acceptance nor human
+      verification; historical review of another revision does not transfer.
 
-  - id: derivation-3-7b-directional-and-completion-boundaries
-    title: Derivation 3.7B — Directional and completion boundaries
-    path: manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07B-directional-and-completion-boundaries.qmd
+  - id: derivation-4-07a-matched-limits-and-gravitational-barriers
+    title: Derivation 4.7A — Matched limits and gravitational barriers
+    path: manuscript/appendices/derivations/04-quantum-mechanics/07A-matched-limits-and-gravitational-barriers.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the framework and manuscript direction; AI-assisted
+      contribution included derivation drafting and integration support.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      Active working appendix wired into the book on 2026-10-01. This
+      maintenance pass records neither new scientific acceptance nor human
+      verification; historical review of another revision does not transfer.
 
-  - id: derivation-4-8a-strong-gravity-tunneling-sensitivity
-    title: Derivation 4.8A — Strong-gravity tunneling sensitivity
-    path: manuscript/appendices/derivations/04-quantum-mechanics/08A-strong-gravity-tunneling-sensitivity.qmd
+  - id: derivation-4-08a-coherent-sources-and-reciprocal-accounting
+    title: Derivation 4.8A — Coherent sources and reciprocal accounting
+    path: manuscript/appendices/derivations/04-quantum-mechanics/08A-coherent-sources-and-reciprocal-accounting.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted
     contribution_note: >
-      Arne supplied the theoretical premises and acceptance direction;
-      AI-assisted contribution included formalization, derivation drafting,
-      consistency checking, source work, editing, and review.
+      Arne supplied the framework and manuscript direction; AI-assisted
+      contribution included derivation drafting and integration support.
     human_verification: not_yet_recorded
     verification_note: >
-      Arne Klaveness directed this appendix entry to remain not_yet_recorded;
-      qualified AI review is recorded separately.
+      Active working appendix wired into the book on 2026-10-01. This
+      maintenance pass records neither new scientific acceptance nor human
+      verification; historical review of another revision does not transfer.
 
   - id: derivation-5-2a-bosic-slot-stage-dressing-and-the-chi-squared-group-velocity
     title: Derivation 5.2A — Bosic-slot stage dressing and the chi-squared group velocity

@@ -1,0 +1,7 @@
+## What the Gravity Model Establishes {#sec-gravity-close}
+
+A particle’s momentum configuration responds to deformed space and enters its gravitational source. Describing both through the same particle shell connects the motion of matter to the geometry it helps produce.
+
+With the chosen field law, this connection extends to finite geometry and causal, time-dependent dynamics. The four- and six-component forms describe the same system and reproduce GR when the physical laws and comparison conditions are matched. The material examples reach beyond prescribed test particles: one fluid model supplies its own support and radial recurrence, a weak scalar signal carries that recurrence outward, and a separate finite-amplitude calculation follows the body beyond linear motion.
+
+The next task is to give the internally compensated M1 particle an equally complete account. Its momentum redistribution, source and support must follow from its dynamics, and a curved isolated system must satisfy ADMC in a common directional comparison. A native completion then has a clear physical standard: the same momentum that responds to gravity must consistently source it.

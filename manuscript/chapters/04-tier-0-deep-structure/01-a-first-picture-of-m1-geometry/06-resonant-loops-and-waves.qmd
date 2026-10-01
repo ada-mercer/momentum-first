@@ -1,0 +1,21 @@
+## Resonant Loops and Waves {#sec-t0-loops-waves}
+
+The closed path traced on the torus is a line. The surface provides a way to place its two phase coordinates, but the path itself can be followed without filling the surface. Seen this way, the resonance gives us a first string-like picture: a continuous loop winding through the two selected cycles.
+
+There are two different changes we can now imagine. A marker can travel around the loop, recording progress through the resonant cycle. A pattern can also vary *along* the loop. To make the second idea visible, assign a scalar wave amplitude to each position and draw it as a colour. A crest is then a region of high amplitude, not a bulge in the torus surface.
+
+![An illustrative wave on the selected resonant loop. Colour represents a scalar amplitude distributed along the path, not momentum magnitude or surface displacement. The right panel unwraps that same loop and shows an example pattern at two instants; it contains three full repetitions per circuit. Moving the pattern changes its phase while leaving the underlying path unchanged. The phase advance and mode count are illustrative choices.](/figures/build/part-0-first-picture/loop-wave.png){#fig-t0-loop-wave fig-align="center" width="100%"}
+
+Because the loop closes, a continuous scalar pattern must agree where its end rejoins its beginning. In the simple periodic example of @fig-t0-loop-wave, a whole number of wave repetitions fits around the loop. That number labels a *mode*. Stretching the loop while keeping the mode fixed increases the distance occupied by each repetition. This is the wave picture behind the inverse-length momentum interpretation used for dilation.
+
+We can also make a mode visible through the shape itself. A deformation can vary around the major ring, making some tube sections broader and others narrower. It can also vary around the minor cycle, changing the shape of each section. The second variation makes the fermic amplitude visible across the tube rather than only around the ring. In the standing pattern below, both variations oscillate in place: the surface passes through its undeformed form, then the outward and inward displacements exchange.
+
+![A standing deformation with variation around both torus cycles. Each lower panel shows the orange tube section above it, viewed face-on: the solid curve is the deformed section and the dashed circle its undeformed reference. At this selected section the major-ring contribution vanishes, exposing the minor-cycle contribution alone. Its maximum displacement is $\varepsilon_f r_f$, where $r_f$ is the reference tube radius and $\varepsilon_f$ sets the fractional geometric amplitude. The middle panel is the undeformed crossing between opposite extremes. The reference radii, camera and scale are fixed. This prescribed shape illustrates a mode; it is not a physical eigenmode derived from M1 dynamics.](/figures/build/part-0-first-picture/standing-mode-storyboard.png){#fig-t0-shape-mode fig-align="center" width="100%"}
+
+Unlike the colour pattern on the fixed loop, @fig-t0-shape-mode changes the geometry. Unlike the uniform dilation shown earlier, it makes one region larger while another becomes smaller. These are different questions about a cycle: how its overall scale changes, what pattern it carries, and whether that pattern deforms its shape.
+
+A physical wave equation must determine which patterns propagate and which survive disturbances. More structured fields can also carry orientation information around the loop. Their return conditions need more than the single scalar amplitude used in these illustrations.
+
+The same distinction matters for particle identity. A persistent particle would require an allowed internal organization that remains stable and has definite momentum and interaction properties. A winding number is a useful label for a pattern; it is not, on its own, an identification of that pattern with an electron or another species.
+
+The loop prepares an equally useful question for string theory. Can an extended, phase-bearing object supply the dynamics that the torus picture leaves unspecified? To answer, we will have to compare what the object carries, what its allowed modes are and how it interacts. Calling the drawn loop a string is the beginning of that comparison, not its conclusion.

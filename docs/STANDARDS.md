@@ -107,7 +107,9 @@ Cleanup sessions must not delete or demote files merely because they are not cur
 
 ## 4. Manuscript, Quarto, and part structure
 
-The manuscript is Quarto-first. `_quarto.yml` is the canonical rendered-structure map.
+The manuscript is Quarto-first. `book.chapters` in `_quarto.yml` is the maintained
+rendered-structure map. Quarto derives render targets and the HTML sidebar; do not
+maintain duplicate `project.render` or profile-specific sidebar path lists.
 
 Current rendered structure:
 - `index.qmd` is the unnumbered book opener/front stub.
@@ -117,6 +119,7 @@ Current rendered structure:
 - `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd` is Chapter 3, Gravity and Structured Spacetime.
 - `manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd` is Chapter 4, Quantum Mechanics in Momentum Language.
 - `manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd` is Chapter 5, Space Expansion and Stage Dressing.
+- `manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/index.qmd` is the adopted Part 0 opening chapter, currently the next rendered chapter after the engines.
 - Appendices are declared after the rendered body in `_quarto.yml`.
 - `manuscript/references.qmd` sits after the rendered manuscript body.
 
@@ -125,6 +128,11 @@ Default chapter-folder pattern:
 - each chapter folder keeps the global chapter number and chapter slug;
 - files inside a chapter use local section numbers only, e.g. `01-core-terms-and-variables.qmd`;
 - each rendered chapter uses an `index.qmd` wrapper listed in `_quarto.yml`.
+
+Temporary Part 0 exception: retain its within-part folder prefixes while the
+intervening Tier 2/Tier 3 structure remains unsettled. Quarto supplies rendered
+numbers; the current displayed Chapter 6 does not allocate the separately held
+background-dynamics project. See the Part 0 README before renumbering folders.
 
 Default chapter-file pattern:
 - `index.qmd` wrappers listed directly in `_quarto.yml` are rendered chapters and must start with `#`.

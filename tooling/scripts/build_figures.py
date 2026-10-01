@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 import shutil
 import subprocess
 import sys
@@ -86,7 +87,9 @@ def main() -> None:
     root = Path(__file__).resolve().parents[2]
     registry = root / "figures" / "figures.yml"
     venv_python = root / ".venv" / "bin" / "python"
-    python = venv_python if venv_python.exists() else Path(sys.executable)
+    python = Path(os.environ.get("FIGURES_PYTHON") or (
+        str(venv_python) if venv_python.exists() else sys.executable
+    ))
 
     data = yaml.safe_load(registry.read_text(encoding="utf-8")) or {}
     figures = data.get("figures", [])

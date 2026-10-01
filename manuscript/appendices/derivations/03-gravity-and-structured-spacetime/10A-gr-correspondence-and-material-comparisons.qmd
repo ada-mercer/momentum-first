@@ -1,0 +1,364 @@
+# Derivation 3.10A — GR Correspondence and Material Comparisons {#sec-derivation-03-10A-gr-correspondence-and-material-comparisons .unnumbered}
+
+## Purpose
+
+The retained field and matter laws give the exact GR correspondence used in §3.10. This derivation develops the counted-pulse experiment, weak and finite gravitational comparisons, and a supported material body whose outgoing signal carries its recurrence. A different prediction requires a specified change in the governing laws.
+
+## Starting assumptions
+
+The retained field law is the Einstein equation with zero cosmological term, using the torsion-free metric connection. Free carriers are spinless and minimally coupled. Complete material examples use their explicitly stated effective matter law in place of, not in addition to, a free-particle model for the same constituents. Initial data, boundaries and measuring standards are held fixed in each comparison.
+
+Conventional mass, energy and metric variables enter here to express the correspondence with the preceding momentum-based construction.
+
+## Derivation
+
+### Exact field and particle correspondence
+
+In matching frames,
+
+$$
+T^{\mu\nu}=cJ^{\mu\nu},
+\qquad m_0=\frac{p_f}{c},
+\qquad N=\phi^0{}_0.
+$$ {#eq-g310a-unit-dictionary}
+
+The last identification is the lapse of the coframe-adapted slicing. A coordinate-held clock has rate $N$ only in the zero-shift static comparison, or with its motion relative to that frame otherwise accounted for. The free shell is
+
+$$
+g^{\mu\nu}p_\mu p_\nu=-m_0^2c^2,
+$$
+
+and the retained field equation becomes $G^{\mu\nu}=8\pi G_NT^{\mu\nu}/c^4$. Derivation 3.7A proves that unrestricted variation in the regular $\theta$ chart preserves all metric equations. Derivation 3.8A gives the same particle trajectories, invariant shell measure and collisionless transport as GR.
+
+The equivalence includes finite curvature, the four initial constraints, the two local radiative polarizations and null gravitational characteristics. Local existence and uniqueness use the smooth constrained-data, compact momentum-support and regular-chart hypotheses stated with their primary theorem sources in Derivation 3.7A. Massive and purely massless cases are established separately, with null support away from zero momentum. The change of variables does not itself establish global regularity or an arbitrary-boundary theorem.
+
+### The counted-pulse comparison
+
+Let $\Gamma_a=d\varphi_a/dt$ and $\Gamma_b=d\varphi_b/dt$ be the two ideal cycle rates in one stationary coordinate time. If the emitter sends one pulse every $m$ cycles, its emission interval is $2\pi m/\Gamma_a$. For fixed endpoints and a stationary path, the travel time is constant, so the arrival separation in that coordinate time is unchanged. The receiver completes $m\Gamma_b/\Gamma_a$ cycles between arrivals. Hence
+
+$$
+\mathcal R_{a\to b}=\frac{\Gamma_a}{m\Gamma_b}.
+$$
+
+For identical held clocks with the selected cycle coupling, $\Gamma_a/\Gamma_b=N_a/N_b$, giving
+
+$$
+m\mathcal R_{a\to b}=\frac{N_a}{N_b}.
+$$ {#eq-g310a-counted-pulses}
+
+For unequal fixed free-space cycle scales, multiply the right-hand side by $p_{f,a}/p_{f,b}$. These comparisons assume that support leaves the cycles undisturbed. In a changing geometry, varying travel times also affect the arrival intervals.
+
+### Shared weak coefficient
+
+Let $\ell_g=G_Nm_{\mathrm{src}}/c^2=G_NM_{\mathrm{src}}/c^3$. The cold weak isotropic exterior has
+
+$$
+g_{00}\simeq-1+\frac{2\ell_g}{r},
+\qquad
+g_{ij}\simeq\left(1+\frac{2\ell_g}{r}\right)\delta_{ij},
+\qquad
+N\simeq1-\frac{\ell_g}{r}.
+$$
+
+The slow timelike geodesic gives $\mathbf a=-c^2\ell_g\widehat{\mathbf r}/r^2$ at leading order. The counted-pulse ratio gives
+
+$$
+m\mathcal R_{a\to b}-1
+\simeq-\ell_g\left(\frac1{r_a}-\frac1{r_b}\right).
+$$
+
+For null propagation, the reference-coordinate optical factor is
+
+$$
+\frac{\sqrt{g_{11}}}{N}\simeq1+\frac{2\ell_g}{r}
+$$
+
+along locally chosen isotropic axes. Integrating its transverse gradient along the leading straight ray gives $\delta_{\mathrm{light}}=4\ell_g/B$ for distant endpoints and impact parameter $B$. Integrating its excess along a finite leading ray of Euclidean length $L$ gives the one-way coordinate propagation delay
+
+$$
+\Delta t_{\mathrm{grav}}
+\simeq\frac{2\ell_g}{c}
+\log\frac{r_a+r_b+L}{r_a+r_b-L}.
+$$ {#eq-g310a-weak-delay}
+
+A physical timing experiment converts this coordinate delay using its endpoint clocks. Acceleration, counted pulses, bending and delay share the same source normalization.
+
+For a bound massive geodesic of the finite Schwarzschild exterior, let $u=1/r$ and $\psi$ be orbital angle. With the conserved length $\ell_p=p_\psi/p_f$, the radial equation becomes
+
+$$
+\frac{d^2u}{d\psi^2}+u
+=\frac{\ell_g}{\ell_p^2}+3\ell_g u^2.
+$$
+
+The leading secular correction to a weak ellipse of semimajor axis $a_{\mathrm{orb}}$ and eccentricity $e$ is
+
+$$
+\Delta\psi\simeq
+\frac{6\pi\ell_g}{a_{\mathrm{orb}}(1-e^2)}.
+$$ {#eq-g310a-pericentre}
+
+Precession uses the retained finite metric; the preceding force, pulse and light formulas use its weak limit.
+
+### A horizon-regular finite map
+
+For the vacuum Schwarzschild solution put $u_r=\sqrt{r_s/r}$, with $r_s=2\ell_g$ and $r>0$. The ingoing Painlevé–Gullstrand map has
+
+$$
+\phi^0{}_0=1,\quad \phi^0{}_i=0,\quad
+\phi^i{}_j=\delta^i{}_j,\quad
+\phi^i{}_0=u_r\hat r^i.
+$$
+
+The registered deformation is
+
+$$
+\theta^{00}=\frac{u_r^2}{8},
+\quad
+\theta^{0i}=-\frac{u_r\hat r^i}{4},
+\quad
+\theta^{ij}=\frac{u_r^2}{8}\delta^{ij}.
+$$ {#eq-g310a-horizon-registration}
+
+They reconstruct $ds^2=-(dx^0)^2+|d\mathbf x+u_r\hat{\mathbf r}\,dx^0|^2$. A direct constraint check uses flat spatial slices and
+
+$$
+K_{ij}=\frac{u_r}{r}
+\left(\delta_{ij}-\frac32\hat r_i\hat r_j\right).
+$$
+
+Its trace square equals $K_{ij}K^{ij}$, the momentum constraints vanish, and the stationary spatial evolution identities hold. Thus all vacuum equations remain satisfied across $r=r_s$. The coordinate radial null speeds are $-u_r\pm1$ per unit $x^0$, while the local null speed is $c$.
+
+For a coordinate-held exterior clock, $d\tau/dt=\sqrt{1-u_r^2}$ because it moves relative to the freely falling local frame. Such held worldlines cease to be timelike at $r_s$, while the map remains regular. The coordinate construction is also discussed by [Martel and Poisson](https://arxiv.org/abs/gr-qc/0001069).
+
+### Why material stress needs a material law
+
+The kinetic source has $n_i\mathcal C^{ij}n_j\geq0$ for every spatial direction. A binding field may carry tension; for example, a local electric field can have stress–energy entries proportional to $(1,-1,1,1)$ in its principal frame. Positive free dyads therefore cannot represent every complete material source.
+
+In a flat stationary isolated balance with vanishing outer traction, integration of $\partial_k(x^iT^{kj})$ gives $\int T^{ij}d^3x=0$. If all spatial stress were a positive free-dyad sum, this would force its occupied spatial momenta to vanish. The argument uses ordinary flat-space divergence; curved self-gravitating kinetic equilibria obey a covariant balance instead.
+
+### One self-bound effective material
+
+For the following material comparison use $G_N=c=1$. Denote energy density by $\varepsilon(n)$ and pressure by $P$, with constituent density $n$. Adopt
+
+$$
+\varepsilon(n)=\frac{\varepsilon_s}{1+s}
+\left[s+\left(\frac n{n_s}\right)^{1+s}\right],
+\qquad
+P=n\varepsilon_n-\varepsilon=s(\varepsilon-\varepsilon_s),
+\qquad s=\frac13.
+$$ {#eq-g310a-material-law}
+
+The material occupies a compact domain, and the density law applies only inside it. The exterior contains no material. A free surface has $P=0$ and $n=n_s$. This is the complete effective material source, including the law’s constant contribution once. It replaces the free-dyad model for these constituents rather than being added to it. It is also distinct from the incompressible constant-density sphere of Derivation 3.6A.
+
+With $ds^2=-e^{2\nu}dt^2+e^{2\lambda}dr^2+r^2d\Omega^2$ and $e^{-2\lambda}=1-2m/r$, equilibrium satisfies
+
+$$
+m'=4\pi r^2\varepsilon,
+\qquad
+P'=-(\varepsilon+P)\frac{m+4\pi r^3P}{r(r-2m)},
+\qquad
+\nu'=\frac{m+4\pi r^3P}{r(r-2m)}.
+$$ {#eq-g310a-material-equilibrium}
+
+For $\varepsilon_s=n_s=1$ and central pressure $P_c=0.02\varepsilon_s$, the worked solution has
+
+$$
+R_s=0.0909395683980106,
+\qquad
+m(R_s)=0.00322436115453085,
+\qquad
+\frac{2m(R_s)}{R_s}=0.0709121719254032.
+$$
+
+Analytic bounds give a finite simple zero-pressure surface without a horizon for central-pressure ratios $0.01,0.02,0.04$. The first and second fundamental forms match the Schwarzschild exterior without a shell. A density scale converts these dimensionless radii and frequencies to physical units.
+
+### A derived stable radial recurrence
+
+Let $\xi(r)$ be radial displacement and $\zeta=r^2e^{-\nu}\xi$. Linearizing the same fluid and gravitational equations gives
+
+$$
+(A\zeta')'+(B+\omega^2W)\zeta=0,
+$$
+
+with local operator coefficients
+
+$$
+A=\frac{s(\varepsilon+P)e^{\lambda+3\nu}}{r^2},
+\qquad
+W=\frac{(\varepsilon+P)e^{3\lambda+\nu}}{r^2},
+$$
+
+$$
+B=\frac{(\varepsilon+P)e^{\lambda+3\nu}}{r^2}
+\left[(\nu')^2+\frac{4\nu'}r-8\pi e^{2\lambda}P\right].
+$$ {#eq-g310a-radial-operator}
+
+Regularity selects the central branch. The moving free-surface condition is $\Delta P(R_s)=0$, hence $\zeta'(R_s)=0$, because $s(\varepsilon+P)$ remains nonzero at the finite-density surface. This is the standard radial operator, also given by [Kokkotas and Ruoff](https://arxiv.org/abs/gr-qc/0011093), applied to the specified material and its surface condition.
+
+Integration by parts yields
+
+$$
+\omega^2=
+\frac{\int_0^{R_s}(A\zeta'^2-B\zeta^2)dr}
+{\int_0^{R_s}W\zeta^2dr}.
+$$
+
+To bound every admissible radial mode, bound the full quadratic form. In dimensionless radius $x=\sqrt{4\pi\varepsilon_s}\,r$, let $y_c=P_c/\varepsilon_s$ and define
+
+$$
+X_{\max}^2=6y_c,\quad
+ d=1-4(1+3y_c)y_c,\quad
+\nu_{\min}=\tfrac12\log d-\tfrac14\log(1+4y_c),
+\quad V=\frac{(1+3y_c)/3+y_c}{d}.
+$$
+
+Writing the dimensionless operator coefficients as $\widetilde A/x^2$, $\widetilde B/x^2$, $\widetilde W/x^2$, the equilibrium bounds give
+
+$$
+\widetilde A\geq A_{\min}=s e^{3\nu_{\min}},
+\quad
+\widetilde B\leq B_{\max}
+=(1+4y_c)d^{-1/2}(X_{\max}^2V^2+4V),
+\quad
+\widetilde W\leq W_{\max}=(1+4y_c)d^{-3/2}.
+$$
+
+Weighted Cauchy–Schwarz gives
+
+$$
+\int_0^{X_s}\frac{\zeta^2}{x^2}dx
+\leq\frac{X_s^2}{6}\int_0^{X_s}\frac{\zeta'^2}{x^2}dx,
+\qquad X_s^2\leq X_{\max}^2.
+$$
+
+When the numerator is positive,
+
+$$
+\frac{\omega^2}{4\pi\varepsilon_s}
+\geq\frac{6A_{\min}/X_{\max}^2-B_{\max}}{W_{\max}}.
+$$
+
+For the model above, a conservative exact-rational bound gives
+
+$$
+\frac{\omega^2}{4\pi\varepsilon_s}
+\geq\frac{1190922209}{123353008}>9.65458
+$$ {#eq-g310a-radial-positivity}
+
+for every radial eigenvalue. Independent shooting and Galerkin calculations give the nodeless fundamental $\omega_\infty\simeq18.176020566$ and period $T_\infty\simeq0.3456854202$. Its surface-area event is
+
+$$
+A_s(t)=4\pi R_s^2[1+2\epsilon\cos(\omega_\infty t)]+O(\epsilon^2).
+$$
+
+The bound establishes stability against linear radial perturbations, and the fundamental mode supplies a material recurrence.
+
+### A specified signal carries the material cadence
+
+Add a scalar probe $\psi$ with density-linear interaction $\kappa n\psi^2/2$. This is an explicitly adopted signal field, not an internal-radius modulus; its coupling belongs to this material–signal comparison. In these units its equation is
+
+$$
+\Box_g\psi=\kappa n\psi.
+$$
+
+With $u_\mu u^\mu=-1$, the material-plus-interaction and scalar stresses are
+
+$$
+T_m^{\mu\nu}
+=(\varepsilon+P+\kappa n\psi^2/2)u^\mu u^\nu+Pg^{\mu\nu},
+$$
+
+$$
+T_\psi^{\mu\nu}
+=\nabla^\mu\psi\nabla^\nu\psi
+-\frac12g^{\mu\nu}\nabla_\alpha\psi\nabla^\alpha\psi.
+$$
+
+Together with constituent conservation, their exchange is
+
+$$
+\nabla_\mu T_m^{\mu\nu}=-\kappa n\psi\nabla^\nu\psi,
+\qquad
+\nabla_\mu T_\psi^{\mu\nu}=+\kappa n\psi\nabla^\nu\psi.
+$$ {#eq-g310a-scalar-material-exchange}
+
+The total stress sources the retained field equation once. In the small-mode, test-signal calculation, density, metric and moving-interface perturbations produce outgoing quadratures
+
+$$
+A_{\mathrm{out}}(t)
+=1+\epsilon\left[b_+e^{-i\omega_\infty t}
++b_-e^{i\omega_\infty t}\right]+O(\epsilon^2).
+$$
+
+A static-body control removes the sidebands; changing the incoming carrier leaves their offsets from the carrier, $\pm\omega_\infty$, unchanged. A finite-energy Gaussian train with bandwidth $0.04\omega_\infty$ gives a four-period fit residual $0.001565$. Calculated whole-train mode disturbance can be bounded within the chosen classical force model. The outgoing scalar field thus carries the body’s cadence; converting it into recorded events requires a detector model.
+
+### Finite exchange and the moving boundary
+
+The full smooth spherical equations for this same material and scalar are also specified. In local comoving derivatives $D_t,D_s$, let $R$ be areal radius, $U=D_tR$, $\Gamma=D_sR$ and $m=R(1+U^2-\Gamma^2)/2$. Define
+
+$$
+\mathcal F=-(D_t\psi)(D_s\psi),
+\quad
+\varepsilon_{\mathrm{tot}}
+=\varepsilon+\kappa n\psi^2/2
++\tfrac12[(D_t\psi)^2+(D_s\psi)^2],
+\quad
+P_r=P+\tfrac12[(D_t\psi)^2+(D_s\psi)^2].
+$$
+
+The mass constraints and work law include
+
+$$
+D_sm=4\pi R^2(\varepsilon_{\mathrm{tot}}\Gamma+\mathcal F U),
+\qquad
+D_tm=-4\pi R^2(P_rU+\mathcal F\Gamma).
+$$ {#eq-g310a-finite-mass-flux}
+
+The material surface has $n=n_s$. It obeys scalar value and normal-flux continuity, no-shell matching and the compatibility condition $(D_sU-4\pi R\mathcal F)/\Gamma=-2U/R$. Finite scalar stress changes the surface mass even though the material pressure vanishes, so the exterior must solve a nonvacuum field problem. With zero probe, the exterior is Schwarzschild.
+
+Derivation 3.8A records the actual six-period, zero-probe nonlinear body evolution at $\epsilon=0.001,0.005$, including its finite boundary residual and the unverified larger-amplitude extension. The finite-probe bounded-body equations have not yet been evolved through an outgoing readout experiment.
+
+### Finite exchange in a homogeneous system
+
+Finite exchange is demonstrated in a different geometry. Put $n=N_0/a^3$, $v=\dot\psi$, $\varepsilon_m=\varepsilon+\kappa n\psi^2/2$ and $\varepsilon_\psi=v^2/2$. The homogeneous equations are
+
+$$
+\dot a=Ha,\qquad \dot\psi=v,\qquad
+\dot v=-3Hv-\kappa n\psi,
+\qquad
+\dot H=-4\pi(\varepsilon_m+P+2\varepsilon_\psi),
+$$
+
+$$
+H^2=\frac{8\pi}{3}(\varepsilon_m+\varepsilon_\psi),
+$$
+
+$$
+\dot\varepsilon_m+3H(\varepsilon_m+P)=\kappa n\psi v,
+\qquad
+\dot\varepsilon_\psi+6H\varepsilon_\psi=-\kappa n\psi v.
+$$ {#eq-g310a-homogeneous-exchange}
+
+The control uses $\kappa=40000$, $N_0=4$, $a(0)=1$, $v(0)=0$, the positive initial $H$ fixed by the constraint, and $\psi(0)=0,0.0005,0.002,0.005$ over $0\leq t\leq0.04$. Independent evolution of $H$ monitors rather than projects the constraint. Fixed-step refinement and an adaptive reference show fourth-order endpoint convergence. For the nonzero-scalar runs, the endpoint refinement shows the stated fourth-order behavior; the zero-scalar case is already at the roundoff/reference-error scale. The largest amplitude changes final $a$ from the zero-probe value $1.23542171$ to $1.27117084$; all runs remain at $n\geq1.947$.
+
+The reference relative gravitational-constraint residual is below $9\times10^{-13}$ and integrated exchange-balance errors below $6\times10^{-13}$. These numerical solutions demonstrate finite coupled exchange in the homogeneous setting. They are separate from the bounded-body evolution with zero probe.
+
+## Result
+
+The retained Einstein and matched matter laws give exact GR correspondence on the regular deformation chart. Weak forces, clock ratios, deflection, delay and precession share that same field/probe choice. Finite vacuum geometry, constrained local dynamics and specified supported-material and signal calculations extend the correspondence substantially beyond those weak tests.
+
+## Notes
+
+A different finite field law or internal source, material, clock or signal coupling can change predictions and must be tested with its own reciprocal source and dynamics. Agreement of weak coefficients does not uniquely select those laws. The internally compensated native particle, universal measuring standards and a complete positive curved-system ADMC account remain to be derived. The mainline synthesis is [§3.10](/manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd#sec-gravity-correspondence).
+
+<!-- Scientific provenance (not a new review receipt):
+G4-D010 r1: local theorem applicability and PG vacuum
+G4-D012 r1: material stress boundaries
+G4-D014 r1 C01-C05: equilibrium
+G4-D015 r1 C01-C04: same-material radial clock
+G4-D016 r1 C01-C03: weak scalar readout
+G4-D017 r1 C01-C04: nonlinear material/scalar equations
+G4-D018 r1 C01-C04: zero-probe finite-amplitude body
+G4-D019 r1 C01-C02: separate homogeneous finite exchange
+Exact proof revisions/hashes and review scope: exchange/reviews/manuscript/2026-10-01-gravity-appendix-adoption/EVIDENCE_MAP.md.
+-->

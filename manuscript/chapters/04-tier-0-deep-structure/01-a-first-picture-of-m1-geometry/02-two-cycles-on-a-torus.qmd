@@ -1,0 +1,15 @@
+## Two Cycles on a Torus {#sec-t0-two-cycles}
+
+Imagine bending a tube into a ring and joining its ends. There are now two ways to go around. One follows the ring around its central opening; the other circles the tube itself. A point on the surface can advance in either direction, or in both at once. To specify its position, we need to say how far it has progressed around each cycle.
+
+Progress around a cycle is its *phase*. A full turn advances the phase by $2\pi$, returning that coordinate to its starting value. In this picture, the major, ring-following phase is $u$, and the minor, tube-following phase is $v$. We use the major cycle to picture the bosic momentum role and the minor cycle to picture the fermic role. A moving marker then displays the changing pair of phases.
+
+![Geometry, coupled motion and phase return. The first panel separates the major cycle, in blue, from the minor cycle, in amber; $r_b$ measures the major radius to the tube centre and $r_f$ the tube radius. The middle panel follows a loop through both cycles: its solid half reaches B, and its dashed half completes the return to A. The phase chart counts two bosic turns for one fermic turn. The torus is an internal phase display with proportions chosen for legibility.](/figures/build/part-0-first-picture/two-cycles.png){#fig-t0-two-cycles fig-align="center" width="100%"}
+
+The surface path in @fig-t0-two-cycles couples the two advances. Follow it from A. After one major turn, the marker has reached the opposite minor phase, B: it has come around the central opening but has not returned around the tube. After a second major turn, it completes the minor turn as well. The pair of phases returns to A.
+
+This is a selected two-to-one resonance. *Resonance* here means that the two advances remain locked in a ratio that permits a combined return. Other ratios give other paths. A rational ratio closes after suitable whole numbers of turns; an irrational ratio does not return exactly under steady two-phase motion. The torus accommodates all of these possibilities. A physical model must determine which of them can persist.
+
+The two-to-one example is useful because the incomplete first return is easy to see. Returning both phase coordinates tells us where the marker is; describing its orientation requires further information. For now, the closed curve records a simpler fact—two periodic coordinates can complete a shared cycle even when they complete different numbers of turns.
+
+The drawing also gives each cycle a size. Write $r_b$ for the major display radius and $r_f$ for the minor display radius. Changing either alters the shape we see. Connecting those sizes to momentum requires an additional physical rule; the phase labels alone do not supply one. We can already use the torus to follow recurrence before making that further identification.

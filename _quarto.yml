@@ -5,35 +5,7 @@ project:
   - googled99b772d08f0333f.html
   pre-render:
   - .venv/bin/python tooling/scripts/build_manuscript_status.py
-  render:
-  - index.qmd
-  - manuscript/chapters/00-front-matter/00-preface/index.qmd
-  - manuscript/chapters/01-tier-1-foundations/01-introduction/index.qmd
-  - manuscript/chapters/01-tier-1-foundations/02-foundations/index.qmd
-  - manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
-  - manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
-  - manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd
-  - manuscript/appendices/derivations/02-foundations/03A-directional-positive-split-uniqueness.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-carrier-source-map.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03B-null-probe-diagnostic.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03C-momentum-manifestations.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-stationary-source-to-field-map.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04B-scalar-carrier-readout-consistency.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04C-reciprocal-multisector-response-obstruction.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-local-observer-bookkeeping.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06A-stationary-correspondence-calibration.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06B-frame-drag-coefficient-audit.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06C-boost-consistency-shift-coefficient.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06D-conserved-radiation-cavity-discriminator.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-scalar-nonstationary-action-candidate.qmd
-  - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07B-directional-and-completion-boundaries.qmd
-  - manuscript/appendices/derivations/04-quantum-mechanics/08A-strong-gravity-tunneling-sensitivity.qmd
-  - manuscript/appendices/derivations/05-expansion/02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
-  - manuscript/appendices/derivations/05-expansion/03A-free-carrier-correspondence-under-yield-history.qmd
-  - manuscript/appendices/derivations/05-expansion/04A-lightlike-propagation-and-matched-endpoint-standards.qmd
-  - manuscript/appendices/derivations/05-expansion/06A-local-covariance-and-scoped-sector-realizations.qmd
-  - manuscript/backmatter/manuscript-status.qmd
-  - manuscript/references.qmd
+
 book:
   title: Momentum First
   site-url: https://ada-mercer.github.io/momentum-first/
@@ -46,6 +18,7 @@ book:
   - twitter
   - facebook
   - linkedin
+  # Sole maintained book order; Quarto derives render targets and the HTML sidebar.
   chapters:
   - index.qmd
   - manuscript/chapters/00-front-matter/00-preface/index.qmd
@@ -58,28 +31,33 @@ book:
     - manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
     - manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
     - manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd
+  - part: "Part 0 — Deep Structure: Cycles, States and Space"
+    chapters:
+    - manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/index.qmd
   - part: Appendices
     chapters:
     - manuscript/appendices/derivations/02-foundations/03A-directional-positive-split-uniqueness.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-carrier-source-map.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03B-null-probe-diagnostic.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03C-momentum-manifestations.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-stationary-source-to-field-map.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04B-scalar-carrier-readout-consistency.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04C-reciprocal-multisector-response-obstruction.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-local-observer-bookkeeping.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06A-stationary-correspondence-calibration.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06B-frame-drag-coefficient-audit.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06C-boost-consistency-shift-coefficient.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06D-conserved-radiation-cavity-discriminator.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-scalar-nonstationary-action-candidate.qmd
-    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07B-directional-and-completion-boundaries.qmd
-    - manuscript/appendices/derivations/04-quantum-mechanics/08A-strong-gravity-tunneling-sensitivity.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-resolved-gravitational-sources.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-sourced-spatial-deformation.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-particle-response-and-internal-cycling.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06A-reciprocal-sources-and-static-feedback.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-field-equations-and-momentum-balance.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/08A-time-dependent-transport-and-coupled-sources.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/09A-four-and-six-component-forms.qmd
+    - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/10A-gr-correspondence-and-material-comparisons.qmd
+
+    - manuscript/appendices/derivations/04-quantum-mechanics/03A-quantum-directional-readings-and-coherent-states.qmd
+    - manuscript/appendices/derivations/04-quantum-mechanics/04A-core-momentum-and-first-order-evolution.qmd
+    - manuscript/appendices/derivations/04-quantum-mechanics/05A-coframe-evolution-and-probability-conservation.qmd
+    - manuscript/appendices/derivations/04-quantum-mechanics/06A-path-phase-and-coherent-clocks.qmd
+    - manuscript/appendices/derivations/04-quantum-mechanics/07A-matched-limits-and-gravitational-barriers.qmd
+    - manuscript/appendices/derivations/04-quantum-mechanics/08A-coherent-sources-and-reciprocal-accounting.qmd
     - manuscript/appendices/derivations/05-expansion/02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
     - manuscript/appendices/derivations/05-expansion/03A-free-carrier-correspondence-under-yield-history.qmd
     - manuscript/appendices/derivations/05-expansion/04A-lightlike-propagation-and-matched-endpoint-standards.qmd
     - manuscript/appendices/derivations/05-expansion/06A-local-covariance-and-scoped-sector-realizations.qmd
   - manuscript/backmatter/manuscript-status.qmd
+  - manuscript/references.qmd
 bibliography: manuscript/bibliography.bib
 glossary: manuscript/glossary.yml
 description: >-

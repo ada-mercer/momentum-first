@@ -1,0 +1,270 @@
+# Derivation 3.9A — Four- and Six-Component Forms {#sec-derivation-03-09A-four-and-six-component-forms .unnumbered}
+
+## Purpose
+
+This derivation proves the direct transformations used in §3.9. It distinguishes a six-component carrier vector from six aggregate first moments and from the full correlation tensor, and constructs the metric, map and field equation on the physical four-dimensional support.
+
+## Starting assumptions
+
+Order the component labels as $(1+,1-,2+,2-,3+,3-)$. Write $A=(i,\sigma)$, with fixed axis label $i$ and branch $\sigma=\pm1$. The four-component local vector is $(M,p_1,p_2,p_3)^{\mathsf T}$, with signed spatial momenta. The Foundations normalization is $p^{i\sigma}=M+\sigma p_i/2$.
+
+The primary source $J$ and deformation $\theta$ are all-upper arrays. The reference form is $\eta_{(4)}=\operatorname{diag}(-1,1,1,1)$. Representation subscripts distinguish the four- and six-component forms.
+
+## Derivation
+
+### Lift, inverse and support
+
+The forward and inverse maps both use the symbol $L$; the indices specify the direction:
+
+$$
+[L^{A}{}_{\mu}]=
+\begin{pmatrix}
+1&1/2&0&0\\1&-1/2&0&0\\
+1&0&1/2&0\\1&0&-1/2&0\\
+1&0&0&1/2\\1&0&0&-1/2
+\end{pmatrix},
+\qquad
+[L^\mu{}_{A}]=
+\begin{pmatrix}
+1/6&1/6&1/6&1/6&1/6&1/6\\
+1&-1&0&0&0&0\\
+0&0&1&-1&0&0\\
+0&0&0&0&1&-1
+\end{pmatrix}.
+$$ {#eq-g39a-direct-matrices}
+
+They satisfy
+
+$$
+L^\mu{}_{A}L^{A}{}_{\nu}=\delta^\mu{}_{\nu},
+\qquad \Pi^{A}{}_{B}=L^{A}{}_{\mu}L^\mu{}_{B},
+\qquad \Pi^2=\Pi=\Pi^{\mathsf T},
+\qquad \operatorname{rank}\Pi=4.
+$$
+
+In component form,
+
+$$
+\Pi^{i\sigma}{}_{j\tau}
+=\frac16+\frac{\sigma\tau}{2}\delta_{ij}.
+$$
+
+There is no implicit sum over the fixed component labels in this formula. A vector belongs to the image precisely when its three opposed-pair sums agree. Their common half-sum gives $M$, and their differences give the three $p_i$. The particle’s mass shell imposes a further condition within this image.
+
+### Correlations must precede averaging
+
+For a kinetic population, form the products on each carrier:
+
+$$
+J^{AB}=L^{A}{}_{\mu}L^{B}{}_{\nu}J^{\mu\nu},
+\qquad
+J^{\mu\nu}=L^\mu{}_{A}L^\nu{}_{B}J^{AB}.
+$$
+
+Explicitly,
+
+$$
+J^{i\sigma,j\tau}
+=\mathcal M+\frac{\sigma}{2}\mathcal P^i
++\frac{\tau}{2}\mathcal P^j
++\frac{\sigma\tau}{4}\mathcal C^{ij}.
+$$ {#eq-g39a-component-correlation}
+
+The first moments are recovered from the row sums:
+
+$$
+\mathcal J^{i\sigma}
+=\frac16\sum_{j,\tau}J^{i\sigma,j\tau}
+=\mathcal M+\frac{\sigma}{2}\mathcal P^i.
+$$
+
+They do not determine $\mathcal C^{ij}$. For example, equal streams with momenta $\pm p\hat x$ and equal streams with momenta $\pm p\hat y$, using the same cores and weights, both have zero net spatial momentum and identical first moments. The former has transport along $x$, the latter along $y$. Multiplying their aggregate component values would erase this difference.
+
+For two equal carriers with local core $M$ and momenta $+p\hat x$ and $-p\hat x$, the relevant four directional readings are
+
+$$
+p^{1+}_\pm=M\pm\frac p2,
+\qquad
+p^{1-}_\pm=M\mp\frac p2,
+\qquad
+p^{2+}_\pm=p^{2-}_\pm=M.
+$$
+
+Therefore, for unit carrier weights,
+
+$$
+J_x^{1+,1+}-J_x^{1+,1-}
+=\sum_{\pm}\frac{(p^{1+}_\pm)^2-p^{1+}_\pm p^{1-}_\pm}{M}
+=\frac{p^2}{M},
+$$
+
+while
+
+$$
+J_x^{2+,2+}-J_x^{2+,2-}=0.
+$$
+
+For equal streams along $y$, the same nonzero difference appears in the $2$ pair instead. The first moments remain $\mathcal J^{i\sigma}=\mathcal M$ in both examples, but the correlation tensor locates the transport direction.
+
+Both the source and the deformation obey the support condition $\Pi X\Pi=X$. This restricts a symmetric six-component tensor to ten independent components, the same as a symmetric four-by-four tensor.
+
+### Reference form, metric and operational map
+
+The lower reference form and its supported upper inverse are
+
+$$
+\eta_{AB}=L^\mu{}_{A}L^\nu{}_{B}\eta_{\mu\nu},
+\qquad
+\eta^{AB}=L^{A}{}_{\mu}L^{B}{}_{\nu}\eta^{\mu\nu}.
+$$
+
+Equivalently, the lower reference form is the shell invariant
+
+$$
+\eta_{AB}p^Ap^B
+=\sum_{k=1}^{3}(p^{k+}-p^{k-})^2
+-\left(\frac16\sum_Ap^A\right)^2=-p_f^2.
+$$
+
+This equality uses the local fixed-$p_f$ shell. For the static zero-shift reference readings $p_r^A=Np^A$, it instead becomes
+
+$$
+\eta_{AB}p_r^Ap_r^B=-N^2p_f^2=-p_{f,r}^{\,2}.
+$$
+
+Neither equation identifies local momentum with reference-expressed momentum. The local kinetic source written using reference inputs has denominator $NM_r$, not merely $M_r$:
+
+$$
+(J^{AB})_{\mathrm{local}}
+=\left\langle\sum_a\frac{p_{r,a}^Ap_{r,a}^B}{NM_{r,a}}\right\rangle.
+$$
+
+The reference form's entries and supported upper inverse are
+
+$$
+\eta_{i\sigma,j\tau}=-\frac1{36}+\sigma\tau\delta_{ij},
+\qquad
+\eta^{i\sigma,j\tau}=-1+\frac{\sigma\tau}{4}\delta_{ij}.
+$$
+
+The product is $\Pi$, not $I_6$. The reference form is Lorentzian on its support and has two redundant null directions off it. Lowered component momenta are dual components, not the positive opposed values.
+
+The current all-upper deformation transforms directly:
+
+$$
+\theta^{AB}=L^{A}{}_{\mu}L^{B}{}_{\nu}\theta^{\mu\nu},
+\qquad
+\theta^{\mu\nu}=L^\mu{}_{A}L^\nu{}_{B}\theta^{AB}.
+$$
+
+The metric and supported inverse are
+
+$$
+g_{AB}=L^\mu{}_{A}L^\nu{}_{B}g_{\mu\nu},
+\qquad
+g^{AB}=L^{A}{}_{\mu}L^{B}{}_{\nu}g^{\mu\nu}.
+$$
+
+The covariant metric is equivalently obtained from the readout increments $d\ell^A=\phi^A{}_Bdx^B$:
+
+$$
+g_{AB}dx^Adx^B
+=\sum_{k=1}^{3}(d\ell^{k+}-d\ell^{k-})^2
+-\left(\frac16\sum_A d\ell^A\right)^2,
+$$
+
+or componentwise $g_{AB}=\eta_{CD}\phi^C{}_A\phi^D{}_B$. They satisfy the same registered dictionary on support,
+
+$$
+g_{AB}=\eta_{AB}
++4\eta_{AC}\theta^{CD}\eta_{DB}
+-2\eta_{AB}\eta_{CD}\theta^{CD}.
+$$ {#eq-g39a-supported-metric}
+
+Recover the four-dimensional metric by $g_{\mu\nu}=L^{A}{}_{\mu}L^{B}{}_{\nu}g_{AB}$. Its induced spatial metric determines physical volume.
+
+The operational map and supported inverse preserve slot ownership:
+
+$$
+\phi^{A}{}_{B}=L^{A}{}_{\mu}\phi^{\mu}{}_{\nu}L^\nu{}_{B},
+\qquad
+(\phi^{-1})^{A}{}_{B}=L^{A}{}_{\mu}(\phi^{-1})^{\mu}{}_{\nu}L^\nu{}_{B}.
+$$ {#eq-g39a-supported-coframe}
+
+Their products are the appropriate support projectors. In the undeformed reference, $\phi_{(6)}=\Pi$. To construct the map, first reconstruct $\phi_{(4)}$ with the fixed positive spatial square root, then lift it.
+
+### Tensor transformations and source weights
+
+For a fixed four-component frame change $\Lambda$, the supported vector map is $U^{A}{}_{B}=L^{A}{}_{\mu}\Lambda^\mu{}_{\nu}L^\nu{}_{B}$. A consistently formed all-upper source transforms by congruence,
+
+$$
+J'_{(6)}=UJ_{(6)}U^{\mathsf T}.
+$$
+
+Its metric-lowered mixed operator transforms by similarity instead. The same distinction applies to field operators. The isolated particle kernel retains its density weight:
+
+$$
+j'_a=\frac{M_a}{M'_a}\Lambda j_a\Lambda^{\mathsf T}.
+$$
+
+The distribution or slice weight supplies the complementary factor, so the aggregate source transforms as a tensor. An already formed local tensor converts to coordinate components by $\phi^{-1}J\phi^{-\mathsf T}$; physical-volume normalization is a separate operation.
+
+### Supported derivatives, curvature and the field solution
+
+In the following finite-coordinate curvature construction, first convert the source by $J_{(4),\mathrm{coord}}=\phi_{(4)}^{-1}J_{(4),\mathrm{local}}\phi_{(4)}^{-\mathsf T}$ and define $J^{AB}_{\mathrm{coord}}=L^A{}_{\mu}L^B{}_{\nu}J^{\mu\nu}_{\mathrm{coord}}$. The earlier carrier products were local; at finite deformation they cannot be equated directly to a coordinate curvature tensor.
+
+For a fixed registration $X^A=L^A{}_{\mu}x^\mu$, define
+
+$$
+\partial_A=L^\mu{}_A\partial_\mu,
+\qquad
+\partial_{i\sigma}=\frac16\partial_0+\sigma\partial_i.
+$$
+
+Then $\eta^{AB}\partial_A\partial_B=\Box$. The connection calculated with the supported inverse is
+
+$$
+\Gamma^A{}_{BC}
+=\frac12g^{AD}
+(\partial_Bg_{DC}+\partial_Cg_{DB}-\partial_Dg_{BC})
+=L^A{}_{\rho}L^\mu{}_B L^\nu{}_C\Gamma^\rho{}_{\mu\nu}.
+$$
+
+Curvature contractions therefore reproduce the four-dimensional ones, and
+
+$$
+G^{AB}=L^{A}{}_{\mu}L^{B}{}_{\nu}
+\left(R^{\mu\nu}
+-\frac12g^{\mu\nu}R\right)
+=\frac{8\pi G_N}{c^3}J^{AB}_{\mathrm{coord}}
+$$ {#eq-g39a-lifted-field-equation}
+
+with coordinate components on both sides. Both upper slots transform by $L^{A}{}_{\mu}$, as they do for the source.
+
+In the aligned weak limit the leading coordinate and local source components agree. The weak harmonic equation and stationary solution then become
+
+$$
+\Box\theta^{AB}=-\frac{4\pi G_N}{c^3}J^{AB},
+\qquad
+\theta^{AB}(\mathbf x)=\frac{G_N}{c^3}
+\int\frac{J^{AB}(\mathbf x')}{|\mathbf x-\mathbf x'|}\,d^3x',
+$$
+
+under the same leading-source, gauge and decay assumptions as in four components. Applying $L^\mu{}_{A}$ on both upper slots recovers the original equation and solution.
+
+Position-dependent frame registrations also contribute derivatives of the registration and the compatible frame connection. Fixing the coframe’s displayed orientation leaves that transport intact. Covariant conservation on the support is the four-dimensional balance in its six-component representation.
+
+## Result
+
+The vector, source, deformation, metric and operational map have exact direct and inverse dictionaries on the rank-four support. The six-component description carries the retained finite field equations and their weak solution on the same rank-four component support. A fixed massive future shell has three independent momentum parameters within that support; this is not a count of gravitational modes. The full correlation tensor supplies the transport information that six aggregate first moments leave unresolved.
+
+## Notes
+
+The result applies to the all-upper source and deformation with the fixed-orientation map. The microscopic internal source and curved ADMC account enter later physical work; this derivation supplies the representation used in [§3.9](/manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd#sec-gravity-six-component).
+
+<!-- Scientific provenance (not a new review receipt):
+v4/research/2026-09-20-six-channel-formulation/RESULT.md: supported algebra, historical notation dictionary required
+V4 fixed-orientation/all-upper reference
+2026-09-28-six-component-section-qm-qft-review.md: local/reference correction
+Exact proof revisions/hashes and review scope: exchange/reviews/manuscript/2026-10-01-gravity-appendix-adoption/EVIDENCE_MAP.md.
+-->

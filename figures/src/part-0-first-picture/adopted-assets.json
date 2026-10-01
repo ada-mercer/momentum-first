@@ -1,0 +1,54 @@
+{
+  "candidate": "2026-10-01-v17",
+  "assets": [
+    {
+      "file": "figures/build/part-0-first-picture/two-cycles.png",
+      "source": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/_candidates/2026-10-01-v17/assets/two-cycles.png",
+      "sha256": "725b5e9ed9c65f1ddbb1f392fdab5f3173003c180384287976b468b7a6d67aa4",
+      "section": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/02-two-cycles-on-a-torus.qmd",
+      "id": "fig-t0-two-cycles"
+    },
+    {
+      "file": "figures/build/part-0-first-picture/momentum-wave.png",
+      "source": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/_candidates/2026-10-01-v17/assets/momentum-wave.png",
+      "sha256": "c1726766793bf47ba96c1f452b488ab82808acc9b35f00f8e43506a835b28b6b",
+      "section": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/03-momentum-and-a-moving-clock.qmd",
+      "id": "fig-t0-momentum-wave"
+    },
+    {
+      "file": "figures/build/part-0-first-picture/translation-pitch.png",
+      "source": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/_candidates/2026-10-01-v17/assets/translation-pitch.png",
+      "sha256": "2cb513b90167ea3b700f75483814d2ea143e18a1d23c8ff84867ac43973e4c66",
+      "section": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/04-translation-and-pitch.qmd",
+      "id": "fig-t0-pitch"
+    },
+    {
+      "file": "figures/build/part-0-first-picture/two-dilations.png",
+      "source": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/_candidates/2026-10-01-v17/assets/two-dilations.png",
+      "sha256": "fa299b0d1def27274737207e0dcbecc650eea6add20ade83b37dbe1b6811de96",
+      "section": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/05-two-ways-to-dilate-the-geometry.qmd",
+      "id": "fig-t0-dilations"
+    },
+    {
+      "file": "figures/build/part-0-first-picture/bosonic-dilation-response.png",
+      "source": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/_candidates/2026-10-01-v17/assets/bosonic-dilation-response.png",
+      "sha256": "fe3b43f67643693d9d4e96508288d33bf71385faad93f810aede5fa31d045fe2",
+      "section": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/05-two-ways-to-dilate-the-geometry.qmd",
+      "id": "fig-t0-bosonic-response"
+    },
+    {
+      "file": "figures/build/part-0-first-picture/loop-wave.png",
+      "source": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/_candidates/2026-10-01-v17/assets/loop-wave.png",
+      "sha256": "a428afc8f98ab2eacfd9bd7047f4345bae3077a7769912e7e81bf8ef2bdfae45",
+      "section": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/06-resonant-loops-and-waves.qmd",
+      "id": "fig-t0-loop-wave"
+    },
+    {
+      "file": "figures/build/part-0-first-picture/standing-mode-storyboard.png",
+      "source": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/_candidates/2026-10-01-v17/mode-study/standing-mode-storyboard.png",
+      "sha256": "9a7e012a88f0d549f16bc7d110d4f209faffbea8b1e17c0a0e12a6d8e4df018f",
+      "section": "manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/06-resonant-loops-and-waves.qmd",
+      "id": "fig-t0-shape-mode"
+    }
+  ]
+}

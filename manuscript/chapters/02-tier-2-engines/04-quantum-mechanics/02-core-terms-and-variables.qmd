@@ -1,89 +1,41 @@
-## Core Terms and Variables
+## Core Terms and Variables {#sec-qm-terms}
 
-The earlier parts have already fixed the basic momentum vocabulary. Fermic momentum $p_f$ is the intrinsic momentum scale, bosic momentum $p$ is the translational magnitude, and core momentum $M$ is the total momentum-content scalar in the inertial baseline:
+The quantum state carries amplitudes and relative phases. Momentum operators act on that state; their possible readings and probabilities follow from the chosen measurement. The momentum shell keeps its earlier meaning, while the quantum description adds the information needed for interference.
 
-$$
-p_f=m_0c,
-\qquad
-M=\sqrt{p_f^2+p^2}.
-$$
+### State and evolution
 
-Those definitions remain in force. In the quantum setting, the same quantities must be read once the state is phase-bearing and the relevant quantities become operators. The new vocabulary is therefore not a replacement for the Foundations vocabulary. It is the operator layer built on top of it.
+| Symbol | Name and definition | Job |
+|:--|:--|:--|
+| $\Psi$ | Phase-bearing quantum state | Describes a coherent preparation, including its internal components. |
+| $\vartheta$ | Relative phase between two amplitudes | Controls how those amplitudes interfere. |
+| $\widehat A$ | An operator acting on the state | Represents a specified observable or generator; the hat distinguishes the operator from a scalar value. |
+| $\widehat M_t$ | Momentum-unit evolution generator: $(i\hbar/c)\partial_t\Psi=\widehat M_t\Psi$ in a fixed-norm representation | Generates phase change with respect to the selected time $t$. |
 
-### Quantum state
+Complex amplitudes, the Born probability rule and unitary evolution are the quantum premises used here. They are not consequences of the classical shell alone. The time coordinate is written $x^0=ct$ when it is useful to give all four coordinates length units.
 
-The quantum state is denoted by $\Psi$.
+### Free core and directional readings
 
-Here $\Psi$ is the amplitude-level state object used by ordinary quantum mechanics. It carries phase, can be superposed, and gives detection probabilities through the usual setup-dependent expression measures. No new measurement theory is assumed. The only interpretive caution needed here is narrower: a phase-bearing state is not exhausted by a single local value of $|\Psi|^2$.
+| Symbol | Name and definition | Job |
+|:--|:--|:--|
+| $p_f$ | Fermic momentum of the declared free-space realization | Fixes the free massive shell; initially $p_f>0$. |
+| $\widehat p_i=-i\hbar\partial_i$ | Signed spatial momentum operator in an inertial frame | Generates translations along axis $i$. |
+| $\widehat M_+=\sqrt{p_f^2+\widehat{\mathbf p}^{\,2}}$ | Positive free core operator | Gives the positive magnitude associated with each free momentum component. |
+| $\widehat p^{i\sigma}=\widehat M_++\sigma\widehat p_i/2$ | Opposed directional reading operator, $\sigma=\pm1$ | Combines common core and signed directional imbalance. |
+| $\beta,\alpha^i$ | Constant Hermitian spinor matrices | Supply the first-order realization developed in @sec-qm-core-operator. |
 
-The distinction is small but useful. Local expression is what a specified detector, channel, or projection reads. The state may carry phase relations that affect later expression even when a local probability-density description is the correct operational summary for a given setup.
+Gravity's slashed index $\not i$ labels the six entries $(1+,1-,2+,2-,3+,3-)$. Its indexed $L$ maps still convert between four- and six-component displays. The six reading labels describe momentum projections, not the number of components in $\Psi$.
 
-Where the chapter touches the gravity-source bridge, $J_k^\pm[\Psi]$ denotes a schematic quantum source-readout functional of the state. It is distinct from the particle shell readings $p_k^\pm$ and from the gravity-side density fields $\mathcal J_k^\pm$. In a classical localized limit, the functional readout must recover those density fields; no full quantum source law is assumed here.
+The subscript $+$ on $\widehat M_+$ marks a positive magnitude. The subscript $t$ on $\widehat M_t$ marks a generator's time parameter. A first-order spinor generator has signed spectral branches; it agrees with the positive core on its free positive branch.
 
-### Operators and scalar readings
+### Gravity and comparison frames
 
-A hat denotes an operator. The same symbol without a hat denotes the corresponding scalar value, eigenvalue, local magnitude, or classical quantity when the context is clear.
+| Symbol | Name and definition | Job |
+|:--|:--|:--|
+| $\phi^a{}_{\mu}$ | Gravity's map: $d\ell^a=\phi^a{}_{\mu}dx^\mu$ | Converts coordinate increments to local orthonormal components. |
+| $N=\phi^0{}_0$ | Temporal map coefficient in a Stage-adapted frame | Converts the normal local time increment to the selected coordinate normalization. |
+| $p_{{\mathrm{coord}},i}$, $\widehat p_{{\mathrm{coord}},i}=-i\hbar\partial_i$ | Coordinate momentum and its derivative operator | Distinguishes a coordinate phase gradient from local momentum. |
+| $M$, $p_{{\mathrm{local}},a}$ | Local core and local spatial momentum | Obey $M^2=p_f^2+|\mathbf p_{\mathrm{local}}|^2$ for the free carrier. |
+| $M_r=NM$, $p_{f,r}=Np_f$, $\mathbf p_r=N\mathbf p_{\mathrm{local}}$ | Static, zero-shift reference-expressed momenta | Put the entire local shell into one common reference normalization. |
+| $M_t=-p_{{\mathrm{coord}},0}$ | Scalar chosen-time generator | Gives the future-branch phase rate; it equals $M_r$ in the static zero-shift comparison. |
 
-Thus $\hat{\mathbf p}$ is the momentum operator, while $\mathbf p$, $p_i$, or $p_k$ denotes a momentum value or component. The bosic momentum magnitude remains $p=|\mathbf p|$; the components $p_i$ or $p_k$ carry direction.
-
-The canonical momentum operator is the usual one,
-
-$$
-\hat{\mathbf p}=-i\hbar\nabla.
-$$
-
-M1 reads this as the quantum operator for directed bosic momentum. It is not the total momentum content of the particle. It is the operator form of the translational part that enters the flat composition relation.
-
-### Core momentum operator
-
-The central new object is the **core momentum operator**, written $\hat M$.
-
-The scalar $M$ names the core momentum magnitude. The operator $\hat M$ is the quantum generator whose eigenvalue or local scalar reading is $M$ in the relevant regime. In stationary or eigenstate language,
-
-$$
-\hat M\Psi=M\Psi.
-$$
-
-This is the main notation shift from standard energy-first language. M1 treats $\hat M$ as the primary generator in momentum units. The corresponding energy-unit translation appears when the same object is compared directly with standard quantum notation.
-
-### Phase evolution
-
-Quantum evolution is written in generator form. If $t$ denotes the chosen evolution time for the flat or stationary background, the M-first form is
-
-$$
-\frac{i\hbar}{c}\frac{\partial\Psi}{\partial t}=\hat M\Psi.
-$$
-
-The role of $\hbar$ is standard: it sets the scale relating generator action to phase evolution. The M1 difference is not that phase evolution is abandoned or replaced. It is that the generator is read first as core momentum, with energy language treated as a unit translation.
-
-### Gravity-side operator terms
-
-The stationary gravity construction introduced local readout variables such as the contextual fermic scale $p_{f,c}$ and the transport momentum $\Pi_i$. Their operator counterparts enter through the gravity-dressed core momentum operator.
-
-The contextual fermic scale is the gravity-dressed version of $p_f$:
-
-$$
-p_{f,c}(\mathbf x)=p_f\sqrt{-g_{00}(\mathbf x)}.
-$$
-
-The mechanical momentum operator is written
-
-$$
-\hat{\boldsymbol\Pi}=\hat{\mathbf p}-\mathbf A_g(\hat{\mathbf x}),
-$$
-
-in the simplified momentum-potential convention used for the quantum operator discussion. These two quantities lead to the stationary gravity-dressed core momentum operator $\hat M_g$.
-
-### Working convention
-
-The working convention is therefore compact:
-
-- $\Psi$ is the phase-bearing quantum state.
-- $\hat{\mathbf p}$ is the canonical momentum operator for directed bosic momentum.
-- $p_f$ is the inherited fermic scale.
-- $M$ is the scalar core momentum magnitude.
-- $\hat M$ is the core momentum operator.
-- Energy-unit notation appears only when comparing with standard quantum notation.
-- $p_{f,c}$ and $\hat{\boldsymbol\Pi}$ are the stationary gravity-side replacements used in $\hat M_g$.
-
-The inherited variables keep their earlier meanings. The new layer is the operator vocabulary: state, phase, canonical momentum, core momentum operator, and the gravity-dressed terms used below.
+The symbol $N$ abbreviates $\phi^0{}_0$ in calculations. The coordinate label keeps the phase gradient distinct from local and reference-expressed momentum. Spatial variation also changes the volume used to normalize $\Psi$. The construction in @sec-qm-deformed-space introduces the corresponding representative $\psi$ when that distinction becomes necessary.

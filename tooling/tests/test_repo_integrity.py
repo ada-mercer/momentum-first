@@ -9,10 +9,7 @@ from urllib.parse import unquote
 import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
-PINNED_CI_IMAGE = (
-    "ghcr.io/ada-mercer/momentum-first-build@"
-    "sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e"
-)
+PINNED_CI_IMAGE = (ROOT / "tooling/ci/image/reference.txt").read_text().strip()
 
 
 def _load_quarto_config() -> dict:
@@ -29,11 +26,12 @@ def _walk_book_entries(entries: list[object]) -> list[str]:
     return paths
 
 
-def test_quarto_render_paths_exist() -> None:
+def test_book_has_one_maintained_render_order() -> None:
     config = _load_quarto_config()
-    render_paths = config["project"]["render"]
-    missing = [path for path in render_paths if not (ROOT / path).exists()]
-    assert not missing
+    assert "render" not in config["project"]
+    for profile in ROOT.glob("_quarto-*.yml"):
+        data = yaml.safe_load(profile.read_text())
+        assert "contents" not in data.get("book", {}).get("sidebar", {})
 
 
 def test_quarto_book_chapter_paths_exist() -> None:
@@ -70,7 +68,7 @@ def test_provenance_ledger_covers_every_rendered_unit() -> None:
     )
     sections = ledger["sections"]
     paths = [section["path"] for section in sections]
-    assert paths == config["project"]["render"]
+    assert paths == _walk_book_entries(config["book"]["chapters"])
     assert len(paths) == len(set(paths))
     assert ledger["coverage"]["rendered_units"] == len(paths)
 
@@ -100,7 +98,28 @@ def test_pages_workflow_watches_root_book_homepage() -> None:
     assert "index.qmd" in watched_paths
 
 
+def test_shared_validation_runs_before_render_or_publication() -> None:
+    jobs = {
+        "lint-content.yml": ("validate", False),
+        "deploy-book-site.yml": ("deploy", False),
+        "render-book.yml": ("render-preview", True),
+        "release-book.yml": ("release", True),
+        "benchmark-ci-image.yml": ("publication", True),
+    }
+    for name, (job_name, publication) in jobs.items():
+        workflow = yaml.load((ROOT / ".github/workflows" / name).read_text(), Loader=yaml.BaseLoader)
+        steps = workflow["jobs"][job_name]["steps"]
+        expected = ".venv/bin/python tooling/scripts/validate.py" + (" --publication" if publication else "")
+        gates = [i for i, step in enumerate(steps) if step.get("run", "").strip() == expected]
+        assert len(gates) == 1
+        for i, step in enumerate(steps):
+            run = step.get("run", "")
+            if "quarto render" in run or "gh release " in run or "actions/deploy-pages@" in step.get("uses", ""):
+                assert gates[0] < i
+
+
 def test_publication_workflows_share_immutable_ci_image() -> None:
+    assert re.fullmatch(r"ghcr\.io/ada-mercer/momentum-first-build@sha256:[0-9a-f]{64}", PINNED_CI_IMAGE)
     jobs = {
         "benchmark-ci-image.yml": "publication",
         "build-figures.yml": "build-figures",
@@ -271,3 +290,20 @@ def test_release_workflow_has_guarded_zenodo_job() -> None:
     publish_step = job["steps"][-1]
     assert publish_step["env"]["ZENODO_TOKEN"] == "${{ secrets.ZENODO_TOKEN }}"
     assert "--confirm-publication" in publish_step["run"]
+
+
+def test_release_origin_and_artifact_are_unambiguous() -> None:
+    profile = yaml.safe_load((ROOT / '_quarto-pdf.yml').read_text())
+    assert profile['format']['pdf']['output-file'] == 'Momentum-First.pdf'
+    for name, job in [('render-book.yml', 'render-preview'),
+                      ('release-book.yml', 'release'),
+                      ('benchmark-ci-image.yml', 'publication')]:
+        workflow = yaml.load((ROOT / '.github/workflows' / name).read_text(), Loader=yaml.BaseLoader)
+        runs = [s.get('run', '') for s in workflow['jobs'][job]['steps']]
+        assert any('cp _book/Momentum-First.pdf Momentum-First.pdf' in run for run in runs)
+        assert not any('find _book' in run for run in runs)
+        if name == 'release-book.yml':
+            origin_gate = next(i for i, run in enumerate(runs) if 'merge-base --is-ancestor' in run)
+            validation = next(i for i, run in enumerate(runs) if 'validate.py' in run)
+            assert origin_gate < validation
+            assert workflow['on']['push'] == {'tags': ['v*']}

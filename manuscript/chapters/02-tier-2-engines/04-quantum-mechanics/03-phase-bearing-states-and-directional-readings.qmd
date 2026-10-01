@@ -1,0 +1,59 @@
+## Phase-bearing states and directional readings {#sec-qm-readings}
+
+Consider two momentum components in a periodic interval of length $\mathscr L$. One has momentum zero; the other has momentum $\hbar k$, where $k$ is a nonzero allowed wave number. At one instant, a scalar Fourier representative with equal amplitudes is
+
+$$
+\Psi_\vartheta(x)=\frac{1+e^{i\vartheta}e^{ikx}}{\sqrt{2\mathscr L}}.
+$$
+
+The relative phase is $\vartheta$. A momentum measurement returns either value with probability one half, whatever $\vartheta$ is. For the position measurement defined by this Fourier representation, however,
+
+$$
+|\Psi_\vartheta(x)|^2
+=\frac{1+\cos(kx+\vartheta)}{\mathscr L}.
+$$ {#eq-qm-interference}
+
+Changing the relative phase moves the interference fringes without changing either momentum weight. An incoherent preparation, which chooses one momentum or the other rather than superposing their amplitudes, has the same momentum weights but a uniform position distribution. Interference distinguishes the preparations.
+
+![Equal momentum weights, different spatial patterns. The upper panel gives the same two momentum probabilities for every preparation shown below. The coherent states with relative phases zero and $\pi$ have shifted fringes; the incoherent mixture is uniform. The horizontal coordinate is position divided by the periodic length, and the density is multiplied by that length.](/figures/build/quantum-mechanics/qm-interference.png){#fig-qm-interference fig-align="center" width="88%"}
+
+### Reading the inherited shell
+
+For a free massive carrier in one inertial frame, each momentum component has the positive core $M(\mathbf p)=\sqrt{p_f^2+|\mathbf p|^2}$. Acting on a superposition means applying this same rule to every momentum amplitude:
+
+$$
+\widehat M_+=\sqrt{p_f^2+\widehat{\mathbf p}^{\,2}},\qquad
+\widehat p^{i\sigma}=\widehat M_++\frac{\sigma}{2}\widehat p_i.
+$$ {#eq-qm-positive-readings}
+
+These are the quantum versions of the opposed readings already used in Gravity. Since $M\geq|p_i|$, every reading is at least $M/2$ and hence positive. The pair relations also survive as operator identities:
+
+$$
+\widehat p^{i+}+\widehat p^{i-}=2\widehat M_+,\qquad
+\widehat p^{i+}-\widehat p^{i-}=\widehat p_i.
+$$
+
+All three pairs share the same core. The six entries are six projections of the same momentum organization, not six independently occupied states. Nor does their positivity make them probabilities: they have momentum units and are read through the state and its measurement rule.
+
+In this free representation the reading operators are functions of the same commuting momenta. Consequently, even their complete joint probability distribution is unchanged when $\vartheta$ changes in the two-component example. The directional display preserves the momentum information, but it does not restore the relative phase once that phase has been discarded.
+
+### Momentum spread and the shell of a mean
+
+A superposition also requires care when taking averages. The shell holds for the operators,
+
+$$
+\widehat M_+^{\,2}-\widehat{\mathbf p}^{\,2}=p_f^2I,
+$$
+
+so its expectation gives
+
+$$
+\langle\widehat M_+^{\,2}\rangle
+-\langle\widehat{\mathbf p}^{\,2}\rangle=p_f^2.
+$$ {#eq-qm-second-moment-shell}
+
+These are averages of squares, not squares of averages. To see the difference, take equal weights at opposite momenta $\pm p_0$ along one axis. Both components have core $M_0=\sqrt{p_f^2+p_0^2}$, while their mean signed momentum vanishes. Treating the mean list as a resting carrier would assign it the fermic scale $M_0$ instead of $p_f$. The missing information is the momentum spread: $\langle p_x^2\rangle=p_0^2$.
+
+The same example can be a coherent superposition or an incoherent mixture. Both share these momentum moments. Second moments repair the shell accounting, but they do not by themselves diagnose coherence.
+
+A full directional representation can retain the phase by keeping correlations between *different* momentum arguments, together with the internal state components. [Derivation 4.3A](/manuscript/appendices/derivations/04-quantum-mechanics/03A-quantum-directional-readings-and-coherent-states.qmd#sec-derivation-04-03a-quantum-readings) gives an invertible construction and the general covariance identity. In the main description, keeping $\Psi$ makes the distinction immediate: momentum readings tell what values can be obtained; the coherent state also tells how their amplitudes interfere.

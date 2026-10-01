@@ -1,0 +1,31 @@
+## Translation and Pitch {#sec-t0-pitch}
+
+Translation depends on the wave's advance in the bosic direction and on how that advance is directed along the carrier's motion. Write $v_b$ for the wave velocity in the bosic direction. In the constant-speed manifold picture,
+
+$$
+v_b=c\sin\theta=c\frac{p}{M}.
+$$
+
+Keep the torus in view while the carrier translates. Place each turn of the bosic phase at the position the carrier has reached. Phase winds around the display axis while displacement advances along it, producing a helix. The torus's symmetry axis is aligned with $\hat{k}$, and its centre follows that straight axis. The helix records the bosic phase alone: its radius stays fixed rather than moving inward and outward with the fermic phase.
+
+Define the *pitch angle* $\alpha$ as the angle between the helix tangent and the circumferential direction in the plane perpendicular to $\hat{k}$. The angle compares axial advance with advance around the bosic cycle. Use a calibrated helix picture in which those two distances share the same length scale. For steady motion along the forward branch,
+
+$$
+\dot x_k=v_b\tan\alpha.
+$$
+
+Here $v_b$ is the circumferential component, not the total speed along the drawn helix. A larger $v_b$ gives faster translation at the same pitch angle; a larger $\alpha$ gives faster translation at the same $v_b$. The angles have different jobs: $\theta$ resolves momentum into its fermic and bosic parts, while $\alpha$ relates bosic advance to translation.
+
+![Two bosic phase histories with different pitch angles. The panels use the same bosic wave velocity, cycle size, camera and axial scale, isolating the change in $\alpha$. Each angle is drawn between the local circumferential direction and the helix tangent. Small transparent tori mark centre positions at bosic phases $0$, $2\pi$ and $4\pi$; the rulers compare axial advance per turn. The helix radius equals $r_b+r_f$, the sum of the torus's major and minor display radii. The carrier centre follows the straight axis, while the helix records its bosic phase history.](/figures/build/part-0-first-picture/translation-pitch.png){#fig-t0-pitch fig-align="center" width="100%"}
+
+At $\alpha=45^\circ$, axial and circumferential advances are equal. The translation law becomes
+
+$$
+\dot x_k=v_b=c\sin\theta=c\frac{p}{M},
+$$
+
+recovering the forward free-inertial relation. This $45^\circ$ case belongs to the calibrated helix picture, rather than to an angle measured directly on the perspective drawing. For free inertial motion, $v_b$ and $\alpha$ must together satisfy the momentum law. Whether this equal-advance relation is fixed, or the bosic asymmetry can yield a smaller pitch angle in other circumstances, remains an open question.
+
+Bosonic dilation changes the internal cycle's extent and can also change its propagation and translation response. Cycle size alone therefore does not determine how quickly the carrier moves. The next section follows those changes together.
+
+In the earlier two-turn example, the selected pair of phases returns after two bosic turns, but at a new position. Internal closure and return to the same place are different events. The distance advanced per turn is also distinct from a spatial wavelength, which compares equal wave phases at one instant. Identifying the two requires a relation between internal cycling and the spatial wave.

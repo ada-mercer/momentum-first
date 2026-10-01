@@ -40,3 +40,13 @@ The family code should reference these via `color_key` when possible.
 ## Current boundary rule
 If a color or label treatment is part of the shared figure language, keep it in `styles.py`.
 If it is specific to one scene’s geometry math or object grouping, keep it in family code.
+
+## Figure text versus caption — owner direction, 2026-09-18
+
+Keep manuscript figures visually concise: title, short panel headings, relevant
+field symbols and necessary diagram labels belong inside the figure.
+Explanatory subtitles, panel descriptions, scope/candidate qualifications and
+other prose belong in the caption, not beneath the title or panel headings and
+not as footer paragraphs. Preserve those explanations in the accompanying
+caption rather than dropping them. Include field symbols directly in panel
+headings when they distinguish the compared effects.

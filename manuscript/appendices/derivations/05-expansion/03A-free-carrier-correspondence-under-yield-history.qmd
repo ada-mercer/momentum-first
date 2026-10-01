@@ -16,7 +16,6 @@ The theorem is conditional on a prescribed homogeneous yield history. It checks 
 - **Role:** exact kinematic correspondence theorem and placement diagnostic.
 - **Regime:** free carrier, homogeneous yield history, no local gravitational field, clean bound-frame branch.
 - **Premises:** Derivation 5.2A, normalized yield, co-scaling rods, matched clocks, and subtraction of the common background recession term when peculiar velocity is defined.
-- **Status:** candidate derivation for independent V3 review.
 
 ## Notation ledger
 

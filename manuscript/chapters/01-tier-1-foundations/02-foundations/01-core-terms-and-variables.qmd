@@ -62,7 +62,7 @@ $$
 p^\perp=M.
 $$
 
-Superscripts $+$ and $-$ label opposed positive readings, not arithmetic signs. The quantities $p_f$, $p$, $M$, $p^\pm$, $p_k^\pm$, and $p^\perp$ are nonnegative scalars; $\vec p$ is a vector, and $p_k$ is its signed component along $\hat{k}$. When several particles appear, $\bigl(p_k^\pm\bigr)^{(i)}$ denotes the readings of particle $i$.
+Superscripts $+$ and $-$ label opposed positive readings, not arithmetic signs. The quantities $p_f$, $p$, $M$, $p^\pm$, $p_k^\pm$, and $p^\perp$ are nonnegative scalars; $\vec p$ is a vector, and $p_k$ is its signed component along $\hat{k}$. When several particles appear, a particle label is appended as a second subscript: $M_i$, $p_{k,i}$, and $p_{k,i}^\pm$ denote the quantities belonging to particle $i$. The label is omitted when only one particle is under discussion.
 
 ### Terminology note
 

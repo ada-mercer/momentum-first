@@ -1,0 +1,356 @@
+# Derivation 4.8A — Coherent sources and reciprocal accounting {#sec-derivation-04-08a-coherent-sources .unnumbered}
+
+## Purpose and model boundaries {.unnumbered}
+
+A coherent state can have positive probability and positive total core without being a positive classical carrier distribution at every point. This derivation supports proposed §4.8, “Quantum sources and reciprocal gravity.” It constructs the weighted kinetic kernel, supplies a local coherent scalar source and its directional balance, and then tests a different, explicitly specified spinor source. A finite interacting example separately demonstrates reciprocal global accounting.
+
+Use the native readings $p^{i\sigma}=M+\sigma p_i/2$ in one declared local frame, and the indexed four/six maps $L$ of Derivation 4.3A. Write $A=(i,\sigma)$ only as a slashed-index abbreviation. Source densities use physical spatial volume. The scalar, spinor and finite interacting examples below are distinct models; their favorable properties cannot be combined into a single unconstructed native interaction.
+
+## What the kinetic kernel retains {.unnumbered}
+
+For commuting free positive reading operators, define
+
+$$
+\widehat j_{\mathrm{kin}}^{AB}
+=\widehat p^A\widehat M_+^{-1}\widehat p^B.
+$$
+
+The inverse is bounded for $p_f>0$; products are understood on their common form domain. For any complex constants $v_A$,
+
+$$
+v_A^*\widehat j_{\mathrm{kin}}^{AB}v_B
+=\left(\sum_Av_A\widehat p^A\right)^\dagger
+\widehat M_+^{-1}
+\left(\sum_Bv_B\widehat p^B\right)\geq0.
+$$
+
+Thus it is positive as a reading-space Gram matrix of operators. The free spectral entries are nonnegative too. Its row sum and shell contraction follow before any averaging:
+
+$$
+\frac16\sum_B\widehat j_{\mathrm{kin}}^{AB}=\widehat p^A,
+\qquad
+\boxed{-\eta_{AB}\widehat j_{\mathrm{kin}}^{AB}
+=p_f^2\widehat M_+^{-1}.}
+$$
+
+For a local classical or incoherent kinetic ensemble with density weights $w_a$ per physical volume,
+
+$$
+J_{\mathrm{kin}}^{AB}=\sum_aw_a\frac{p_a^Ap_a^B}{M_a},
+\quad
+-\eta_{AB}J_{\mathrm{kin}}^{AB}=\sum_aw_a\frac{p_{f,a}^2}{M_a}.
+$$
+
+The inverse core belongs **inside** the moment. This is not a covariance and is not generally $p_f^2/\langle M\rangle$. The spinor probability density is a different quantity. For a static zero-shift reference comparison the same local kernel written in reference readings is
+
+$$
+\frac{p^Ap^B}{M}=\frac{p_r^Ap_r^B}{NM_r},
+\qquad p_r^A=Np^A,\quad M_r=NM.
+$$
+
+Changing the denominator to $M_r$ alone would multiply the local source by $N$. Physical-volume conversion is a further, separate operation.
+
+First moments also omit transport correlations. Two streams of weight $w$ each at $\pm p\mathbf e_1$, core $M$, have $\mathcal M=2wM$, $\mathcal P^i=0$ and $\mathcal C^{11}=2wp^2/M$. In six components,
+
+$$
+J^{1+,1+}-J^{1+,1-}=\frac{wp^2}{M},\qquad
+J^{2+,2+}-J^{2+,2-}=0.
+$$
+
+Rotating the pair to the second axis preserves all six first moments but moves the transport. This is why the source tensor carries more information than the total readings.
+
+Even the full diagonal kinetic distribution misses the off-diagonal phases demonstrated in Derivation 4.3A. That derivation's bilocal kernel retains the state, but a **local source** still requires its vertex: the rule that turns the two momentum arguments and their coherence into a source at an event.
+
+## A specified scalar action and its coherent vertex {.unnumbered}
+
+Take a free scalar amplitude $\psi$ with positive evolution $i\hbar\partial_0\psi=\widehat M_+\psi$ and unit spatial norm. Define $\zeta=\widehat M_+^{-1/2}\psi$. This is a nonlocal re-encoding of the same fixed-carrier amplitude, not an independent reservoir. Its local second-order equation follows by squaring the free generator:
+
+$$
+(\partial_0^2-\nabla^2+p_f^2/\hbar^2)\zeta=0.
+$$
+
+Choose the covariant scalar action
+
+$$
+\mathcal A_0=-\frac12\int dV\,
+\left[\hbar^2g^{\mu\nu}\partial_\mu\zeta^*\partial_\nu\zeta
++p_f^2|\zeta|^2\right],
+\qquad dV=\sqrt{-g}\,d^4x.
+$$
+
+It has action units in length coordinates. The positive-frequency condition is a restriction on its flat free initial data; it does not follow merely from this second-order equation. Define the momentum-unit source by the full on-shell metric variation,
+
+$$
+\delta\mathcal A_0=\frac12\int dV\,J_0^{\mu\nu}\delta g_{\mu\nu}.
+$$
+
+Using $\delta g^{\alpha\beta}=-g^{\alpha\mu}g^{\beta\nu}\delta g_{\mu\nu}$ and $\delta\sqrt{-g}=\sqrt{-g}\,g^{\mu\nu}\delta g_{\mu\nu}/2$ gives
+
+$$
+J_0^{\mu\nu}=\hbar^2\operatorname{Re}
+(\partial^\mu\zeta^*\partial^\nu\zeta)+g^{\mu\nu}\mathcal L_0.
+$$
+
+The same action therefore specifies propagation and source; the latter is not a guessed product of mean momenta. Diffeomorphism variation, with $\delta g_{\mu\nu}=2\nabla_{(\mu}\epsilon_{\nu)}$ and the scalar equation imposed, gives $\nabla_\mu J_0^{\mu\nu}=0$ after integration by parts for compactly supported $\epsilon$. A coupled Stage must supply the corresponding response law and accounting; the scalar variation alone has not selected that law.
+
+To expose the coherent source, Fourier expand $\zeta$ with amplitude $\psi(p)/\sqrt{M(p)}$ and convention $(2\pi\hbar)^{-3/2}e^{i\mathbf p\cdot\mathbf x/\hbar}$. Let $p^\mu=(M,\mathbf p)$ and $p'^\mu=(M',\mathbf p')$, both on the same shell. Substitution in the bilinear source gives the four-slot vertex
+
+$$
+\mathcal V_0^{\mu\nu}(p,p')=
+\frac{p^\mu p'^\nu+p'^\mu p^\nu
+-\eta^{\mu\nu}(p\cdot p'+p_f^2)}{2\sqrt{MM'}}.
+$$
+
+The first two terms come from the two real-conjugate derivative products; the metric term comes from $\mathcal L_0$. Lifting both upper indices gives the native form
+
+$$
+\boxed{\mathcal V_0^{AB}(p,p')=
+\frac{y^Ay'^B+y'^Ay^B
+-\eta^{AB}(y\cdot y'+p_f^2)}{2\sqrt{MM'}},}
+$$
+
+where $y^A=L^A{}_\mu p^\mu$ and $y\cdot y'=\eta_{AB}y^Ay'^B$. Thus for a scalar density kernel,
+
+$$
+J_0^{AB}(x)=\int\frac{d^3p\,d^3p'}{(2\pi\hbar)^3}
+ e^{i(\mathbf p-\mathbf p')\cdot\mathbf x/\hbar}
+ \mathcal V_0^{AB}(p,p')\varrho(p,p';x^0).
+$$
+
+Its diagonal is $y^Ay^B/M$. For $q^A=y^A-y'^A$, use $y^2=y'^2=-p_f^2$ to find $q\cdot y=-(p_f^2+y\cdot y')$ and $q\cdot y'=p_f^2+y\cdot y'$. These terms cancel the contraction of the metric term, proving
+
+$$
+q_A\mathcal V_0^{AB}=0.
+$$
+
+That is momentum-transfer continuity of the full coherent vertex, including its off-diagonal stress.
+
+## Positive local readings with their gradient fluxes {.unnumbered}
+
+In the flat realization set
+
+$$
+v_0=i\hbar\partial_0\zeta=\widehat M_+\zeta,
+\quad v_i=-i\hbar\partial_i\zeta,
+\quad v_f=p_f\zeta.
+$$
+
+The action-derived source components are
+
+$$
+u=J_0^{00}=\frac12\left(|v_0|^2+\sum_i|v_i|^2+|v_f|^2\right),
+\qquad j_i=J_0^{0i}=\operatorname{Re}(v_0^*v_i),
+$$
+$$
+s_{ij}=J_0^{ij}=\operatorname{Re}(v_i^*v_j)
++\frac{\delta_{ij}}2\left(|v_0|^2-\sum_k|v_k|^2-|v_f|^2\right).
+$$
+
+Here $u$ is the common local core density. Cauchy–Schwarz and $2ab\leq a^2+b^2$ give
+
+$$
+|\mathbf j|\leq|v_0|\sqrt{\sum_i|v_i|^2}\leq u.
+$$
+
+Construct one common core first and only then its opposed readings:
+
+$$
+\boxed{d^{i\pm}=u\pm\frac12j_i\geq\frac u2\geq0,
+\qquad d^{i+}+d^{i-}=2u.}
+$$
+
+The scalar equation supplies their exact flux. For one real component $z$ of $\zeta$, write $\mathcal E[z]=\partial_0^2z-\nabla^2z+p_f^2z/\hbar^2$. Direct differentiation of the quadratic expressions gives
+
+$$
+\partial_0u+\partial_i j_i=\hbar^2(\partial_0z)\mathcal E[z],
+\qquad
+\partial_0j_i+\partial_j s_{ij}=-\hbar^2(\partial_i z)\mathcal E[z].
+$$
+
+For complex $\zeta$, add its two real components. Both right sides vanish on the same shell equation, so
+
+$$
+\boxed{\partial_0d^{i\pm}
++\partial_j\left(j_j\pm\frac12s_{ji}\right)=0.}
+$$
+
+Integrating over a finite region gives its directional change as minus the outward flux $\int_{\partial\Omega}(j_j\pm s_{ji}/2)n_jdS$. With periodic or decaying boundaries, Parseval gives
+
+$$
+\begin{aligned}
+\int u\,d^3x
+&=\frac12\langle\zeta,
+(\widehat M_+^2+\widehat{\mathbf p}^{\,2}+p_f^2)\zeta\rangle
+=\langle\psi,\widehat M_+\psi\rangle,\\
+\int j_i\,d^3x
+&=\operatorname{Re}\langle\widehat M_+\zeta,\widehat p_i\zeta\rangle
+=\langle\psi,\widehat p_i\psi\rangle.
+\end{aligned}
+$$
+
+Convex mixtures preserve these positivity and balance statements. The construction retains spatial phase while supplying the correct integrated readings.
+
+Its gradient stresses cannot be discarded. With $p_f=\hbar=1$, take equal Fourier weights at $p_x=0,\sqrt3$, in periodic volume $\mathscr V$:
+
+$$
+\psi=\frac{e^{-ix^0}+e^{i\sqrt3x-2ix^0}}{\sqrt{2\mathscr V}},
+\qquad
+\zeta=\frac{e^{-ix^0}+2^{-1/2}e^{i\sqrt3x-2ix^0}}{\sqrt{2\mathscr V}}.
+$$
+
+At opposite interference phase, substitution gives
+
+$$
+\mathscr V u=\frac32-\frac{3\sqrt2}{4}>0,
+\quad
+\mathscr V j_1=\frac{\sqrt3}{2}-\frac{\sqrt6}{4},
+\quad
+\mathscr V s_{22}=-\frac{\sqrt2}{4}<0.
+$$
+
+No nonnegative kinetic sum of $p_2^2/M$ can produce that transverse stress. Positive opposed densities therefore do not imply a positive kinetic representation of the entire local tensor. The source has coherent gradient structure beyond its free diagonal.
+
+## Why the diagonal still does not select the source {.unnumbered}
+
+A conserved improvement already demonstrates the freedom:
+
+$$
+\mathcal V_\xi^{AB}=\mathcal V_0^{AB}
++\xi\frac{q^Aq^B-\eta^{AB}q_Cq^C}{\sqrt{MM'}}.
+$$
+
+Its diagonal vanishes and its contraction with $q_A$ is zero. Thus it leaves flat free propagation and integrated core/translation unchanged under suitable boundaries. It arises consistently by adding $-\xi\hbar^2R|\zeta|^2/2$ to the same scalar action, not by changing the source alone. The curved equation acquires $\xi\hbar^2R\zeta$, while the source acquires
+
+$$
+\Delta J^{\mu\nu}=\xi\hbar^2\left[
+G^{\mu\nu}|\zeta|^2+
+(g^{\mu\nu}\Box_g-\nabla^\mu\nabla^\nu)|\zeta|^2\right].
+$$
+
+Here $R$ and $G^{\mu\nu}$ are the scalar curvature and Einstein tensor of the chosen metric control. In flat space $\Delta J^{00}=-\xi\hbar^2\nabla^2|\zeta|^2$, whose integral is a boundary term. The free diagonal kernel cannot distinguish these models. The positive construction above uses $\xi=0$; imposing a stronger all-states pointwise selection condition or a finite-resolution instrument is a further physical requirement, not an editorial choice.
+
+## A separate positive-branch spinor source counterexample {.unnumbered}
+
+Now change models explicitly. For the minimally coupled free Hermitian spinor action,
+
+$$
+\mathcal A_D=\int dV\left[
+\frac{i\hbar}{2}\bar\Psi\gamma^\mu\overleftrightarrow D_\mu\Psi
+-p_f\bar\Psi\Psi\right],
+$$
+
+the on-shell symmetric source in our Clifford convention is
+
+$$
+J_D^{\mu\nu}=-\frac{i\hbar}{4}\bar\Psi
+\left(\gamma^\mu\overleftrightarrow D^{\nu}
++\gamma^\nu\overleftrightarrow D^{\mu}\right)\Psi.
+$$
+
+Raised derivatives use Gravity's $(-+++)$ signature. In a flat positive plane wave the minus sign makes $J_D^{00}=M\Psi^\dagger\Psi$, as required. This source is not the scalar allocation just constructed.
+
+Take $p_f=\hbar=c=1$, a periodic longitudinal length $\mathscr L=2\pi/(4\sqrt3)$ and uniform transverse mode, total volume $\mathscr V$. Two normalized positive modes in one polarization block are
+
+$$
+p_1=0,\quad M_1=1,\quad u_1=\binom10,
+\qquad
+p_2=4\sqrt3,\quad M_2=7,\quad
+u_2=\binom{2/\sqrt7}{\sqrt{3/7}}.
+$$
+
+Direct application of $\sigma_z+p_j\sigma_x$ gives $M_ju_j$ for both. Form the normalized state
+
+$$
+\Psi(t,x)=\frac1{\sqrt{\mathscr V}}
+\left[\frac2{\sqrt5}u_1e^{-it}
+-\frac1{\sqrt5}u_2e^{i4\sqrt3x-i7t}\right].
+$$
+
+Orthogonal Fourier modes ensure the integrated norm is one. At $t=x=0$, the symmetric source is $J_D^{00}=\operatorname{Re}(\Psi^\dagger D\Psi)$. Using $u_1^\dagger u_2=2/\sqrt7$, its diagonal contributions are $4/5+7/5$ and its cross contribution is $(-2/5)(1+7)(2/\sqrt7)$. Therefore
+
+$$
+\boxed{\mathscr V J_D^{00}=\frac{11}{5}-\frac{32}{5\sqrt7}
+\simeq-0.218973.}
+$$
+
+Yet
+
+$$
+\mathscr V\Psi^\dagger\Psi=1-\frac8{5\sqrt7}>0,
+\qquad M_{\mathrm{tot}}=\frac{11}{5},\qquad
+P_{\mathrm{tot}}=\frac{4\sqrt3}{5},\qquad M_{\mathrm{tot}}>|P_{\mathrm{tot}}|.
+$$
+
+The negative patch is coherent interference between two positive matter modes. It is not an antiparticle or negative-probability state. A six-component lift cannot repair it: $J_D^{00}=\sum_{A,B}J_D^{AB}/36$, and local opposed source densities whose sum is $2J_D^{00}$ cannot both be nonnegative there. This disproves unsmeared classical-positive interpretation of **this** source, not every possible operational allocation.
+
+## A complete finite reciprocal comparator {.unnumbered}
+
+One can test reciprocal coherent interaction without pretending to have completed either continuum action. In units $\hbar=c=p_{f,A}=p_{f,B}=1$, retain momentum modes $n=-3,\ldots,3$ for each of two carriers on a circle of circumference $2\pi$. Give each carrier a degenerate two-state internal space. The total Hilbert dimension is $7^2\times4=196$.
+
+Let $T|n\rangle=|n+1\rangle$ inside the retained range and zero at its upper edge. Define the compressed relative-position operator
+
+$$
+F=I+\frac12(T\otimes T^\dagger+T^\dagger\otimes T),
+$$
+
+which is the orthogonal compression of multiplication by $1+\cos(x_A-x_B)$ and is therefore positive. Set
+
+$$
+\begin{aligned}
+\widehat M_0&=\sqrt{1+P_A^2}+\sqrt{1+P_B^2},\\
+V&=gF\otimes(I+\sigma_x^A\sigma_x^B),\qquad g\geq0,\\
+\widehat M_{\mathrm{tot}}&=\widehat M_0+V.
+\end{aligned}
+$$
+
+Both factors in $V$ are positive. Every off-diagonal momentum shift is opposite on the two carriers, including after compression; hence $[\widehat M_{\mathrm{tot}},P_A+P_B]=0$. The autonomous generator conserves itself, while
+
+$$
+\frac{dP_A}{dx^0}=i[\widehat M_{\mathrm{tot}},P_A],\qquad
+\frac{dP_B}{dx^0}=i[\widehat M_{\mathrm{tot}},P_B]
+=-\frac{dP_A}{dx^0}.
+$$
+
+The interaction is counted once in the complete core. Its positivity and the diagonal free inequality prove
+
+$$
+\widehat M_{\mathrm{tot}}\geq\widehat M_0\geq|P_A+P_B|.
+$$
+
+Consequently $\widehat Q_k^\pm=\widehat M_{\mathrm{tot}}\pm k(P_A+P_B)/2$ are positive and conserved for every directional projection $|k|\leq1$. This is a global finite-system statement, not a local tensor source.
+
+For $g=0.25$, take normalized $v_n\propto e^{-n^2/2}$ for each carrier and internal state $|00\rangle$. Evolving with $e^{-i\widehat M_{\mathrm{tot}}}$ for one unit of $x^0$ and tracing out both momentum spaces gives internal negativity $0.3395840322$, where negativity is $(\|\rho_{\mathrm{int}}^{T_B}\|_1-1)/2$. With displaced initial amplitudes $v_ne^{-in/2}$ and $v_ne^{in/2}$, the mean impulses are $+0.1190235253$ and $-0.1190235253$. The reproduced finite calculation conserves norm and complete core to below $10^{-12}$ and $10^{-11}$ respectively; the exact total-momentum commutator vanishes.
+
+This demonstrates that entanglement, reciprocal momentum transfer and positive conserved global directional charges can coexist. The finite cutoff is spatially nonlocal and frame specific, and the interaction is not a derived attractive gravitational coupling. No causal continuum, local source tensor or curved completion is inferred from it.
+
+## Recurrence, gravitational sourcing and the remaining boundary {.unnumbered}
+
+The kinetic contraction $-\eta_{AB}j^{AB}=p_f^2/M$ is the free recurrence quantity. The weak temporal deformation responds instead to core **plus** transport. In the aligned frame define the selector
+
+$$
+\mathcal W_{i\sigma,j\tau}=\frac1{36}+\sigma\tau\delta_{ij}.
+$$
+
+Since $N\simeq1-\theta^{00}-\sum_i\theta^{ii}$,
+
+$$
+\delta N=-\mathcal W_{AB}\delta\theta^{AB},\qquad
+\mathcal W_{AB}J^{AB}=\mathcal M+\operatorname{tr}\mathcal C,
+\qquad
+-\eta_{AB}J^{AB}=\mathcal M-\operatorname{tr}\mathcal C.
+$$
+
+A null kinetic carrier has zero recurrence contraction but temporal projection $2M$. It still sources gravity. The indexed $L$ lift changes display, whereas $J_{\mathrm{coord}}=\phi^{-1}J_{\mathrm{local}}\phi^{-\mathsf T}$ changes frame. Neither operation selects an extra force. For a localized stationary complete source with vanishing boundary terms, $\partial_kJ^{kj}=0$ implies $\int J^{ij}d^3x=\int\partial_k(x^iJ^{kj})d^3x=0$. Internal stresses without their supports therefore cannot be used to infer an extra independent long-range stress monopole.
+
+A curved-region balance also needs its comparison field. For a conserved symmetric source and covector $K_\nu$,
+
+$$
+\nabla_\mu(J^{\mu\nu}K_\nu)
+=J^{\mu\nu}\nabla_{(\mu}K_{\nu)}.
+$$
+
+Four arbitrary observer components are not four conserved Killing charges on a generic curved Stage. Boundary and interaction/Stage exchange must be kept in a common accounting.
+
+Finally, this one-carrier scalar positivity result is not a field-vacuum theorem. A field state may contain pair coherence absent from its one-body kernel. A positive operator with zero vacuum expectation would annihilate the vacuum and could not retain nonzero vacuum–pair matrix elements. Renormalized source mean, connected source noise and causal detector response therefore remain distinct; this distinction is central in [Hu and Verdaguer's account of stochastic gravity](https://arxiv.org/abs/0802.0658). Real unbound momentum can source gravity without forming a stable particle, but a noise variance is not automatically extra positive mean core.
+
+Proposed §4.8 receives a constructive scalar allocation, a precise spinor-source obstruction and a bounded reciprocal interaction example. The native task left by them is concrete: select one coherent interaction whose response, complete source and operational positive accounting follow together, with its material and Stage state laws specified.

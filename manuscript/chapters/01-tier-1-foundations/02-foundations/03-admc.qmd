@@ -9,7 +9,7 @@ We call this principle **Additive Directional Momentum Conservation**, or **ADMC
 The conservation rule can be written as:
 
 $$
-\sum_i \bigl(p_k^+\bigr)^{(i)}
+\sum_i p_{k,i}^+
 =
 \text{constant}
 $$
@@ -17,7 +17,7 @@ $$
 for any direction $\hat{k}$. Using the algebraic form established in the preceding section, the same statement is
 
 $$
-\sum_i\left(M^{(i)}+\tfrac12p_k^{(i)}\right)
+\sum_i\left(M_i+\tfrac12p_{k,i}\right)
 =
 \text{constant}.
 $$

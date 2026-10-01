@@ -1,55 +1,51 @@
 ## Kinematic Modifiers
 
-Up to this point, Foundations has described the inertial baseline. The stage has been treated as unmodified, so fermic momentum, bosic momentum, and total momentum content obey the fixed relation
+Foundations has described the inertial baseline,
 
 $$
-M = \sqrt{p_f^2 + p^2}.
+M=\sqrt{p_f^2+p^2}.
 $$
 
-When the stage is deformed, that inertial relation need not be the whole story. The same core momentum content may be repartitioned, contextualized, or expressed differently through the fermic momentum role $p_f$ and the bosic momentum role $p$. Clock rates, material equilibrium, and local transport can then change. In broader cases, the internal composition may remain largely intact while the translational yield of directed bosic momentum changes.
+In that baseline, a particle's momentum configuration and its motion are related in the familiar inertial way. A structured physical setting can change that relation without replacing the particle's momentum content or adding a new momentum substance.
 
-M1 calls such effects **Kinematic Modifiers**.[^km-smc] A KM is a structured change in how momentum content becomes physical evolution. It can act internally, by changing the fermic-bosic organization of a particle or material system; externally, by changing what bosic momentum yields as translation; or at the level of state-space, by changing which kinematic configurations are available.
+M1 calls such an effect a **kinematic modifier**:
 
-Three kinds of modifier will matter in the present book:
+> A kinematic modifier is a physical structural effect that changes how a particle's momentum configuration produces motion.
 
-1. **composition modifiers**, which change how fermic and bosic momentum are internally related or contextualized;
-2. **yield modifiers**, which change what directed bosic momentum produces as displacement or frequency-style expression;
-3. **admissibility modifiers**, which change which kinematic states are available at all.
+The term names a job, not a universal equation. A modifier is not assumed to be an extra force, a correction attached to an otherwise complete trajectory, or a multiplier applied to every momentum quantity. Each later engine must identify the relevant physical structure and derive the particular momentum-to-motion relation it produces.
 
-These names are more important than the labels. The point is to say what kind of structural claim a later chapter is making.
+### What a modifier changes
 
-[^km-smc]: Kinematic Modifiers should not be confused with space-mediated momentum coupling. SMC names the general principle that momentum-bearing systems can become dynamically related through space. KMs name the structural form of a kinematic alteration: a change in composition, yield, or admissibility. SMC is therefore not a fourth modifier class, and KMs are not force categories.
+A particle can retain its fermic and bosic momentum content while the physical expression of that content changes. The same directed bosic momentum may then produce a different translation rate, or the same bound material system may sustain a different internal motion and equilibrium.
 
-### Composition modifiers
+Clocks and rulers can reveal such a change because they are moving physical systems. A clock sustains a repeatable internal cycle. A ruler sustains a bound equilibrium through the motions and interactions of its constituents. They are probes of a kinematic modifier, not separate modifier classes.
 
-A composition modifier changes the internal relation between fermic momentum, bosic momentum, and total momentum content. In the inertial baseline, that relation is
+The defining test remains motion: what does the particle's momentum configuration physically produce under the structural condition being considered?
+
+### Gravity and expansion
+
+Gravity and expansion both give the concept a concrete role, but they need not realize it through the same mechanism.
+
+In gravity, organized momentum changes the local stage. That structured stage changes the conditions under which particle momentum becomes local cycling and translation. The gravity engine must derive the corresponding local motion, material, and light responses from a reciprocal particle–stage construction.
+
+In homogeneous expansion, the stage state $\chi$ dresses the bosic slot of the core-momentum operator. The resulting translation-yield law is
+
 $$
-M = \sqrt{p_f^2 + p^2}.
+\dot x_k
+=
+\chi^2c\frac{p_k}{M_\chi}.
 $$
-A composition modifier does not abandon this vocabulary. It changes how the terms are packaged, contextualized, or read in a non-inertial setting.
 
-Most KMs belong closest to this class. They act on the internal structure of a particle or material system, changing the relation between the cycle-carrying fermic sector and the directed bosic sector. Gravity-like clock dressing is the main later example: the intrinsic fermic scale is not replaced, but it is read through a local context.
+Here the modifier's mechanism is explicit: bosic-slot stage dressing changes how directed momentum produces displacement. Calling gravity and expansion kinematic modifiers identifies their shared physical role; it does not claim that their realization laws are identical.
 
-The gravity chapter gives that dressing a definite physical origin. The fermic sector carries a confined cycle circulating at local $c$, and a gravitational source deforms the stage the cycle lives on; the dressed reading of the fermic scale is then the cycle readout of that deformed stage — a stretched cycle path completes more slowly, and the clock is read accordingly. This sharpens the interpretation without changing the bookkeeping: gravitational clock dressing remains a composition modifier, read through the same contextual relation, but its origin is a deformation of the stage rather than an unexplained contextual factor.
+### Possible state-space effects
 
-Composition modifiers are therefore the natural place for effects that alter clocking, local transport bookkeeping, or equilibrium structure by changing how the system's momentum content is organized.
+Some future effects may change motion by restricting the joint configurations available to particles rather than by adding a force to an already available trajectory. Exclusion may eventually admit such a reading.
 
-### Yield modifiers
+That possibility remains open. Foundations does not yet classify exclusion as an established modifier mechanism, because no current M1 derivation shows how its many-particle state restriction descends from the same kind of structure used in gravity or expansion.
 
-A yield modifier does not primarily change the internal composition of fermic and bosic momentum. It changes what directed bosic momentum yields as physical expression.
+### Relation to space-mediated momentum coupling
 
-The edge case is cosmology. In the current M1 reading, large-scale expansion-like behavior is not introduced first as space itself stretching in the usual sense. It is treated as a change in the translational yield of bosic momentum: the same bosic momentum content supports a different amount of large-scale displacement or frequency-shift behavior.
+Space-mediated momentum coupling and kinematic modification answer different questions. SMC asks how momentum-bearing systems become dynamically related through space. A kinematic modifier asks how physical structure changes the motion produced by a particle's momentum configuration.
 
-The current prototype is a yield factor such as
-$$
-\chi(t),
-$$
-which modifies how directional bosic momentum contributes to cosmological redshift and large-scale propagation. This is still a kinematic modification, but it sits farther from the internal particle-structure cases. It changes what bosic expression accomplishes, not primarily how a particle's fermic and bosic sectors compose into $M$.
-
-### Admissibility modifiers
-
-An admissibility modifier changes the available state-space. Its primary job is not to alter the composition map or the displacement yield, but to constrain which configurations can exist as allowed kinematic states.
-
-This matters because not every physical effect should be described as an added force or a changed trajectory. Some effects are better read as restrictions on the space of possible configurations. Exclusion language belongs here. On this reading, an exclusion effect is not first a force pushing otherwise available states apart. It is a statement that certain joint states are not available in the first place.
-
-Admissibility modifiers complete the taxonomy because they affect physical evolution at the level of possibility rather than at the level of composition or yield.
+A coupling may create or sustain the structure that acts as a modifier. The concepts can therefore meet in one engine, but neither is a subtype of the other.

@@ -16,7 +16,6 @@ The derivation keeps three objects distinct: the conserved external spatial wave
 - **Role:** lightlike kinematics plus a conditional matched-endpoint measurement dictionary.
 - **Regime:** homogeneous yield history, geometric propagation, neighboring signal features, negligible peculiar motion and endpoint evolution during one feature separation.
 - **Premises:** bosic-slot dressing, spatial homogeneity, the clean bound-frame branch, co-scaling rods, and matched endpoint clocks.
-- **Status:** candidate derivation for independent V3 review. Propagation is derived; the measurement dictionary is conditional on the stated local standards.
 
 ## Notation ledger
 

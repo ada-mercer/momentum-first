@@ -1,0 +1,97 @@
+## Quantum motion in deformed space {#sec-qm-deformed-space}
+
+A wave packet crossing deformed space samples more than one local momentum comparison. Its phase accumulates against a chosen time standard, its spatial gradients are read through the map $\phi$, and its spinor components must be compared between neighboring local frames. The simplest starting point is a static patch in which those conversions are constant.
+
+### One shell in local and reference descriptions
+
+Take zero shift and an isotropic spatial map,
+
+$$
+\phi^0{}_0=N>0,\qquad
+\phi^a{}_i=b\delta^a{}_i,\qquad
+ d\ell^0=Nc\,dt,\qquad d\ell^a=b\,dx^a.
+$$
+
+The scalar $b>0$ gives the spatial conversion; it is distinct from Gravity's indexed four/six maps $L$. A coordinate phase gradient $p_{{\mathrm{coord}},i}$ is read locally as $p_{{\mathrm{local}},i}=p_{{\mathrm{coord}},i}/b$. The local core is therefore
+
+$$
+M=\sqrt{p_f^2+\frac{|\mathbf p_{\mathrm{coord}}|^2}{b^2}}.
+$$
+
+The static reference expresses the whole shell with the common factor $N$:
+
+$$
+ p_{f,r}=Np_f,\qquad
+ \mathbf p_r=\frac Nb\mathbf p_{\mathrm{coord}},\qquad
+ M_r=NM=\sqrt{p_{f,r}^2+|\mathbf p_r|^2}.
+$$ {#eq-qm-static-reference-shell}
+
+A held particle has $M_r=p_{f,r}$, just as in Gravity. During stationary free fall, $M_r$ can remain constant while the local core $M=M_r/N$ changes. The free local shell still contains $p_f$; the reference shell contains $Np_f$. Both describe the same carrier with different comparison standards.
+
+In this constant patch the selected-time spinor generator is
+
+$$
+\widehat M_t=\beta Np_f+
+ \frac Nb\boldsymbol\alpha\cdot\widehat{\mathbf p_{\mathrm{coord}}}.
+$$
+
+Its positive branch is $NM=M_r$. Both terms have undergone the conversion required by the same clock and ruler comparison. Multiplying only the fermic term by $N$ while leaving a local spatial derivative unchanged would mix those descriptions.
+
+### Spatial variation and probability flow
+
+When $N$ or $b$ varies across the packet, a derivative also acts on the varying conversion factors. The shell magnitude alone no longer specifies the complete wave equation. We use a definite extension: the minimally coupled spinor equation, with neighboring spinors compared by the connection compatible with $\phi$ and its metric. This supplies a prescribed-background quantum model; its microscopic M1 coupling remains to be derived.
+
+Physical spatial volume is $b^3d^3x$. Thus the norm of the original local spinor is $\int b^3\Psi^\dagger\Psi\,d^3x$. It is convenient to absorb that volume factor into
+
+$$
+\psi=b^{3/2}\Psi,\qquad
+\int\psi^\dagger\psi\,d^3x=1.
+$$
+
+The state has not changed; the representative now uses ordinary coordinate volume. In this representation the exact static isotropic generator is
+
+$$
+\boxed{
+\widehat M_t=\beta Np_f+
+\frac12\left\{\frac Nb,
+ \boldsymbol\alpha\cdot\widehat{\mathbf p_{\mathrm{coord}}}\right\}.
+}
+$$ {#eq-qm-static-generator}
+
+Writing $F=N/b$ makes the derivative term transparent:
+
+$$
+\frac12\{F,\boldsymbol\alpha\cdot\widehat{\mathbf p_{\mathrm{coord}}}\}
+=F\boldsymbol\alpha\cdot\widehat{\mathbf p_{\mathrm{coord}}}
+-\frac{i\hbar}{2}\boldsymbol\alpha\cdot\nabla F.
+$$
+
+The extra term records the variation of the conversion across the wave. It also makes the probability balance work. The equation for $\psi$ gives
+
+$$
+\partial_t(\psi^\dagger\psi)
++\nabla\cdot\left(cF\psi^\dagger\boldsymbol\alpha\psi\right)=0.
+$$ {#eq-qm-static-continuity}
+
+Probability leaving one region enters another. With appropriate decaying, periodic or reflecting boundary conditions, the total norm remains fixed. This current describes probability transport; it is not the gravitational momentum-source tensor.
+
+![The static quantum comparison. The local shell is first expressed through the same temporal and spatial map. The reference generator then advances the state in the selected time. Spatial variation requires ordered derivatives and the corresponding probability flux. The middle panel is the constant-patch relation; the lower panel gives the varying static isotropic realization.](/figures/build/quantum-mechanics/qm-operator-bridge.png){#fig-qm-operator-bridge fig-align="center" width="100%"}
+
+### Beyond the static isotropic patch
+
+A general Stage-adapted map can also tilt the spatial frame relative to the coordinate time lines. Define its spatial part $E^a{}_i=\phi^a{}_i$ and the shift $w^i=(E^{-1})^i{}_a\phi^a{}_0$. Then
+
+$$
+ d\ell^a=E^a{}_i(dx^i+w^ic\,dt),\qquad
+ h_{ij}=\delta_{ab}E^a{}_iE^b{}_j.
+$$
+
+The inverse spatial metric $h^{ij}$ converts coordinate momentum into its local squared magnitude. For a future ray, the chosen-time generator becomes
+
+$$
+\boxed{M_t=N\sqrt{p_f^2+h^{ij}p_{{\mathrm{coord}},i}p_{{\mathrm{coord}},j}}-w^ip_{{\mathrm{coord}},i}.}
+$$ {#eq-qm-ray-generator}
+
+The shift contributes a drift relative to the coordinate grid. The full wave equation also carries the compatible spin transport. For example, in a rotating flat frame the coordinate generator contains both orbital and spin rotation; the shift alone supplies only the orbital part.
+
+If the spatial volume changes with time, the representative $\psi=(\det E)^{1/2}\Psi$ contributes a temporal derivative as well as spatial derivatives. These terms are fixed together by the same spinor equation. [Derivation 4.5A](/manuscript/appendices/derivations/04-quantum-mechanics/05A-coframe-evolution-and-probability-conservation.qmd#sec-derivation-04-05a-coframe-evolution) constructs them and establishes probability-conserving evolution under its smooth-background and boundary assumptions. The local shell determines the leading momentum balance; the connection, ordering and volume measure determine how a coherent state travels through the varying geometry.

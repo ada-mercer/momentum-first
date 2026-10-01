@@ -1,0 +1,71 @@
+## Field Equations {#sec-gravity-field-equations}
+
+A changing source changes the space through which it moves. The stationary source integral of §3.4 describes a weak field with no time dependence. To follow a travelling disturbance, or the effect of a finite deformation on its own evolution, we use the differential field law introduced in §3.4.
+
+### The finite field law
+
+The deformation $\theta$ determines $g$ and the local map $\phi$ through §3.4’s relations. With the Einstein curvature operator chosen there, the field equation is
+
+$$
+G^{\mu\nu}\!\left[g(\theta)\right]
+=\frac{8\pi G_N}{c^3}J_{\mathrm{coord}}^{\mu\nu},
+\qquad
+J_{\mathrm{coord}}^{\mu\nu}
+=(\phi^{-1})^\mu{}_\alpha
+(\phi^{-1})^\nu{}_\beta
+J^{\alpha\beta}.
+$$ {#eq-gravity-finite-field-equation}
+
+The inverse map converts the local components of $J$ into the coordinate components required by the field equation. On the left, $G^{\mu\nu}$ combines spatial and temporal variations of the geometry. Since $g$ is determined by $\theta$, this is a field equation for the registered deformation.
+
+Derivatives of $g[\theta]$ first give the compatible connection, which relates local frames at neighboring points. Curvature then combines derivatives and products of that connection. The resulting operator contains second derivatives of $\theta$, products of field gradients, and coefficients set by the finite geometry. [Derivation 3.7A](/manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-field-equations-and-momentum-balance.qmd#sec-derivation-03-07A-field-equations-and-momentum-balance) gives its explicit form and source normalization.
+
+### From the finite equation to propagation
+
+For a weak deformation about the undeformed reference, choose coordinates satisfying $\partial_\mu\theta^{\mu\nu}=0$ to leading order. The equation reduces to
+
+$$
+\Box\theta^{\mu\nu}
+=-\frac{4\pi G_N}{c^3}J^{\mu\nu},
+\qquad
+\Box=-\partial_0^2+\delta^{ij}\partial_i\partial_j.
+$$ {#eq-gravity-weak-wave-equation}
+
+Since $x^0=ct$, the temporal and spatial derivatives describe propagation at $c$ in the undeformed reference. Removing the time dependence gives §3.4's Poisson equation and its stationary source integral. Keeping it allows a source change to travel outward rather than alter the entire field instantaneously.
+
+At finite deformation, the geometry determines the local propagation cone. The nonlinear terms also let one part of a gravitational disturbance influence another. The curvature operator already contains this gravitational self-coupling.
+
+### Initial data and constraints
+
+To evolve a field, specify the geometry of a spatial slice, its rate of change, and the matter on it. The field equations link these initial data: their temporal projections constrain which combinations are possible. After the coordinates have been fixed, the remaining equations evolve the spatial geometry.
+
+These constraints and the freedom to choose coordinates leave two local radiative polarizations among the ten symmetric components of $\theta$. The fixed orientation of $\phi$ specifies the local axes, while the connection relates frames at neighboring points.
+
+A supported body needs its material equations as well as these gravitational equations. A population of free particles needs its transport law and initial distribution. Supplying $J$ from the same matter dynamics that moves the source is what turns a field solution into a reciprocal one.
+
+### Momentum balance through the geometry
+
+The field equation requires the local momentum balance
+
+$$
+\nabla_\mu J^{\mu\nu}=0.
+$$ {#eq-gravity-local-balance}
+
+This balance uses the connection of the evolving geometry. In coordinate components it reads
+
+$$
+\partial_\mu\!\left(\sqrt{-g}\,J^{\mu\nu}\right)
+=-\sqrt{-g}\,\Gamma^\nu{}_{\mu\alpha}J^{\mu\alpha},
+$$ {#eq-gravity-coordinate-balance}
+
+where $g=\det(g_{\mu\nu})$. The right-hand side accounts for the changing comparison of momentum components between neighboring events. Coordinate components can therefore have changing volume integrals even while this local balance holds.
+
+ADMC adds a global requirement: for an isolated system, the positive opposed directional totals must remain conserved in a declared common comparison. In a flat common frame, closed core and signed-momentum balances, together with $\mathcal M\geq|\boldsymbol{\mathcal P}|$, give
+
+$$
+\int_V\mathcal J_k^\pm\,d^3x
+=\int_V\left(\mathcal M
+\pm\frac12\hat{k}\mathbin{\cdot}\boldsymbol{\mathcal P}\right)d^3x.
+$$ {#eq-gravity-directional-totals}
+
+Derivation 3.7A obtains these conserved positive totals for closed boundaries. In curved space, a common directional balance also needs a way to compare separated local axes and to include the momentum carried by deformation, support and boundary transport. Constructing that complete account remains open.

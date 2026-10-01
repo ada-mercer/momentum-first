@@ -59,7 +59,7 @@ def render_scene(
 ) -> Path:
     manifest = load_manifest(manifest_path)
     family = manifest.get_family(family_id)
-    scene, _module, scene_manifest = _build_scene(manifest, family, scene_id)
+    scene, module, scene_manifest = _build_scene(manifest, family, scene_id)
 
     backend = (
         backend_name
@@ -80,17 +80,28 @@ def render_scene(
 
     output_target = scene.get_output(scene_manifest.output_kind)
     output_path = build_output_path(manifest.build_root, family.family_id, output_target)
-    render_scene_with_backend(
-        backend,
-        scene=scene,
-        output_path=output_path,
-        camera_name=camera,
-        style_name=style,
-    )
+    # A family may compose several native scenes into one manuscript plate.
+    # Geometry and composition stay family-owned; ordinary scenes retain the
+    # shared backend path unchanged. A compositor must honor or reject explicit
+    # backend/camera/style overrides, never silently substitute them.
+    compositor = getattr(module, 'render_composite', None)
+    if scene.metadata.get('composite'):
+        if not callable(compositor):
+            raise ValueError(f'{family_id}/{scene.scene_id} declares a composite without render_composite')
+        compositor(scene=scene, output_path=output_path, backend_name=backend,
+                   camera_name=camera, style_name=style)
+    else:
+        render_scene_with_backend(
+            backend,
+            scene=scene,
+            output_path=output_path,
+            camera_name=camera,
+            style_name=style,
+        )
     validate_output_file(output_path)
 
-    if hasattr(_module, 'post_render'):
-        _module.post_render(
+    if hasattr(module, 'post_render'):
+        module.post_render(
             scene=scene,
             output_path=output_path,
             manifest=manifest,

@@ -24,23 +24,67 @@ figures:
   - id: fig-gravity-directional-source-field-observer
     source: figures/src/gravity-and-structured-spacetime/gravity-directional-source-field-observer.prompt.md
     output: figures/build/gravity-and-structured-spacetime/gravity-directional-source-field-observer.png
-    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-as-a-deformation-of-space.qmd
     generator: openai/gpt-image-2
   - id: fig-stationary-gravity-grammar
     source: figures/src/gravity-and-structured-spacetime/stationary-gravity-grammar.prompt.md
     output: figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png
-    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-as-a-deformation-of-space.qmd
     generator: openai/gpt-image-2
+  - id: fig-shell-directional-sources
+    source: figures/src/gravity-and-structured-spacetime/shell_directional_sources.py
+    output: figures/build/gravity-and-structured-spacetime/shell-directional-sources.png
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/03-gravitational-sources.qmd
   - id: fig-source-side-density-maps
     source: figures/src/gravity-and-structured-spacetime/source_side_density_maps.R
     output: figures/build/gravity-and-structured-spacetime/source-side-density-maps.png
     chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/03-gravitational-sources.qmd
   - id: fig-primitive-source-2d-k0-fields
-    source: figures/src/gravity-and-structured-spacetime/primitive_source_2d_k0_fields.R
+    source: figures/src/gravity-and-structured-spacetime/primitive_source_2d_k0_fields.py
     output: figures/build/gravity-and-structured-spacetime/primitive-source-2d-k0-fields.png
-    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/04-the-stationary-gravitational-field.qmd
+    chapter: manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/04-the-deformation-of-space.qmd
   - id: fig-qm-operator-bridge
-    source: figures/src/quantum-mechanics/qm-operator-bridge.provenance.md
+    source: figures/src/quantum-mechanics/quantum_figures.py
     output: figures/build/quantum-mechanics/qm-operator-bridge.png
-    chapter: manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/04-stationary-gravity-and-the-operator-mg.qmd
-    generator: image-generation draft
+    chapter: manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/05-quantum-motion-in-deformed-space.qmd
+    generator: matplotlib
+  - id: fig-qm-interference
+    source: figures/src/quantum-mechanics/quantum_figures.py
+    output: figures/build/quantum-mechanics/qm-interference.png
+    chapter: manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/03-phase-bearing-states-and-directional-readings.qmd
+    generator: matplotlib
+  - id: fig-t0-two-cycles
+    source: figures/src/part-0-first-picture/adoption.provenance.md
+    output: figures/build/part-0-first-picture/two-cycles.png
+    chapter: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/02-two-cycles-on-a-torus.qmd
+    generator: Matplotlib + geometry3d/PyVista (checked static v17 asset)
+  - id: fig-t0-momentum-wave
+    source: figures/src/part-0-first-picture/adoption.provenance.md
+    output: figures/build/part-0-first-picture/momentum-wave.png
+    chapter: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/03-momentum-and-a-moving-clock.qmd
+    generator: Matplotlib + geometry3d/PyVista (checked static v17 asset)
+  - id: fig-t0-pitch
+    source: figures/src/part-0-first-picture/adoption.provenance.md
+    output: figures/build/part-0-first-picture/translation-pitch.png
+    chapter: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/04-translation-and-pitch.qmd
+    generator: Matplotlib + geometry3d/PyVista (checked static v17 asset)
+  - id: fig-t0-dilations
+    source: figures/src/part-0-first-picture/adoption.provenance.md
+    output: figures/build/part-0-first-picture/two-dilations.png
+    chapter: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/05-two-ways-to-dilate-the-geometry.qmd
+    generator: Matplotlib + geometry3d/PyVista (checked static v17 asset)
+  - id: fig-t0-bosonic-response
+    source: figures/src/part-0-first-picture/adoption.provenance.md
+    output: figures/build/part-0-first-picture/bosonic-dilation-response.png
+    chapter: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/05-two-ways-to-dilate-the-geometry.qmd
+    generator: Matplotlib + geometry3d/PyVista (checked static v17 asset)
+  - id: fig-t0-loop-wave
+    source: figures/src/part-0-first-picture/adoption.provenance.md
+    output: figures/build/part-0-first-picture/loop-wave.png
+    chapter: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/06-resonant-loops-and-waves.qmd
+    generator: Matplotlib + geometry3d/PyVista (checked static v17 asset)
+  - id: fig-t0-shape-mode
+    source: figures/src/part-0-first-picture/adoption.provenance.md
+    output: figures/build/part-0-first-picture/standing-mode-storyboard.png
+    chapter: manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/06-resonant-loops-and-waves.qmd
+    generator: Matplotlib + geometry3d/PyVista (checked static v17 asset)

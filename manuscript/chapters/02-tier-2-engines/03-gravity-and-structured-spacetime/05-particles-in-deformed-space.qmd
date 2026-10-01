@@ -1,0 +1,144 @@
+## Particles in Deformed Space {#sec-gravity-particles}
+
+A particle entering deformed space responds through both its motion and its internal structure. Expansion of the internal fermionic geometry lowers its realized fermic momentum. As the particle falls freely through a stationary gravitational well, momentum redistributes between the fermionic and bosonic structures while its reference core remains conserved.
+
+
+### The directional momentum shell
+
+A particle's four-momentum determines its entire directional momentum shell. The core fixes the shell's mean, while the bosic momentum sets the difference between opposed directions.
+
+Keep a static observer far from the well, where the map approaches the identity, and a static, zero-shift geometry with $\phi^0{}_i=\phi^i{}_0=0$ and $\phi^0{}_0>0$. Let $p_f$ denote the particle's fermic momentum in its free-space realization, taken as the undeformed reference for this comparison.
+
+For a massive free carrier, write its future-directed four-velocity as $u^\nu=dx^\nu/d\tau$, where $\tau$ is geometric proper time along its path. Its normalization is $g_{\mu\nu}u^\mu u^\nu=-c^2$. The map converts this coordinate four-velocity into local components. Expressing the corresponding momentum in the distant normalization gives
+
+$$
+p_r^\mu[\phi,u]
+=\frac{p_f\phi^0{}_0}{c}\phi^\mu{}_\nu u^\nu.
+$$ {#eq-gravity-reference-momenta}
+
+The upper index of $p_r^\mu$ labels the fixed local axes of the map; the common factor $\phi^0{}_0$ puts all components in the distant normalization. Extract the core and the signed bosic projection along a unit spatial direction $k$, with $\delta_{ij}k^ik^j=1$ in those same axes:
+
+$$
+M_r=p_r^0,
+\qquad
+p_{k,r}=\delta_{ij}k^i p_r^j.
+$$ {#eq-gravity-shell-components}
+
+In particular, $M_r=\phi^0{}_0M=-p_0$, where $M$ is the local core and $p_0$ is the coordinate covector component. The opposed shell momenta are
+
+$$
+\boxed{
+p_{k,r}^{\pm}
+=p_r^0\pm\frac12\delta_{ij}k^i p_r^j.
+}
+$$ {#eq-gravity-directional-shell}
+
+Substituting the four-momentum gives the shell directly from the deformation map and the particle's four-velocity:
+
+$$
+\boxed{
+p_{k,r}^{\pm}[\phi,u]
+=\frac{p_f\phi^0{}_0}{c}
+\left(\phi^0{}_\nu
+\pm\frac12\delta_{ij}k^i\phi^j{}_\nu\right)u^\nu.
+}
+$$ {#eq-gravity-shell-from-map}
+
+For the 2D drawing, take a plane containing the bosic momentum and measure $\alpha$ from its direction. The full outline is the polar plot
+
+$$
+R(\alpha)=M_r+\frac{p_r}{2}\cos\alpha,
+\qquad
+p_r=\sqrt{\delta_{ij}p_r^i p_r^j}.
+$$ {#eq-gravity-shell-outline}
+
+Here $R$ is only the plotted momentum radius, not a new physical field. The forward and backward values are $M_r\pm p_r/2$, while every exactly perpendicular value is $M_r$. At rest, $p_r=0$ and the outline is a circle.
+
+The core circle has radius $M_r$. The fermic circle has radius
+
+$$
+p_{f,r}=\sqrt{M_r^2-p_r^2}=\phi^0{}_0p_f.
+$$ {#eq-gravity-reference-core-triangle}
+
+These relations reconstruct the directional momentum shell and its two reference circles. They do not determine a unique microscopic momentum density or a physical particle boundary.
+
+### At rest in the well
+
+Compare two realizations of the same particle: one at rest far from a static source, the other settled at rest in the well. With no translation, $p_r=0$. The realized fermic and core momenta therefore coincide:
+
+$$
+p_{f,r}=M_r=\phi^0{}_0p_f=\phi^0{}_0M.
+$$ {#eq-gravity-realized-fermic-momentum}
+
+Far away, where the map approaches the identity, the particle is realized with $M=p_f$. In the well, $\phi^0{}_0<1$ gives less realized fermic momentum and a smaller core in the same comparison.
+
+![Resting states in a common reference. Panels (a) and (b) compare the distant and settled particles; (c) shows their difference. At rest the fermic and core momenta coincide. The well has $\phi^0{}_0=0.5$, and all panels share one momentum scale. The contours represent the momentum configuration, not the particle's spatial boundary.](/figures/build/gravity-and-structured-spacetime/gravity-shell-rest.png){#fig-gravity-shell-rest fig-align="center" width="100%"}
+
+The purple area shows the fermic reduction between these resting states.
+
+### Motion and directional momentum
+
+A moving carrier also carries directed bosic momentum. The fermic circle, core circle and full directional outline can therefore be distinguished.
+
+Compare two such realizations at the same reference velocity. For translation along $+x$ with a diagonal spatial map,
+
+$$
+\frac{v}{c}
+=\frac{\phi^0{}_0}{\phi^1{}_1}\frac{p_r}{M_r}.
+$$ {#eq-gravity-reference-velocity}
+
+A smaller temporal coefficient and a larger spatial coefficient reduce the velocity produced by a given bosic-to-core ratio. To match the distant particle's reference velocity, the particle in the well therefore needs a larger ratio. In the example below, it has more reference-expressed bosic momentum even though its reference core is smaller.
+
+![Moving states at the same distant-reference velocity, $v=0.21c$. In (d) and (e), dotted circles mark fermic momentum, dashed circles mark core momentum, and solid outlines represent the directional shells. Panel (f) compares the full outlines; its vertical marker measures the core difference. Bare $M,p$ refer to the distant state. The well uses $\phi^0{}_0=0.5$ and $\phi^1{}_1=16/9$. These are matched-motion snapshots, not stages of a fall or a circular orbit.](/figures/build/gravity-and-structured-spacetime/gravity-shell-motion.png){#fig-gravity-shell-motion fig-align="center" width="100%"}
+
+The unequal gaps around panel (f) show why the moving comparison is more than a uniform reduction. Perpendicular to the motion, the gap is $M-M_r$. Along other directions it also contains the change in bosic imbalance.
+
+### Free fall, then settling
+
+A freely falling particle changes its momentum configuration under a different condition: its reference core is conserved. Release it from rest in the distant limit. Stationarity fixes $M_r=p_f$ along the free trajectory, and the reference budget gives
+
+$$
+M_r=p_f,
+\qquad
+p_r=p_f\sqrt{1-[\phi^0{}_0]^2}.
+$$ {#eq-gravity-infall-budget}
+
+As the particle enters a deeper part of the well, $p_{f,r}$ decreases and $p_r$ grows. The dashed core circle stays fixed while the directional outline changes. Its local core rises according to $M=M_r/\phi^0{}_0$; it is the common-reference core, not the local one, that is conserved.
+
+![Free fall, then settling. Panels (a–c) use $\phi^0{}_0=1,0.75,0.5$: the reference core stays fixed while realized fermic momentum decreases and the bosic imbalance grows. Dotted circles mark fermic momentum, dashed circles mark core momentum, and solid outlines represent the directional shells, all on one momentum scale. Panel (d) shows a separate settling interaction at the last depth. The contours represent momentum configurations, not particle boundaries.](/figures/build/gravity-and-structured-spacetime/gravity-shell-infall.png){#fig-gravity-shell-infall fig-align="center" width="100%"}
+
+Settling removes the acquired translation. At the same depth, the final state has $p_r=0$ and $M_r=p_{f,r}$. The difference $p_f-p_{f,r}$ is transferred to the surroundings. A particle settled in the well is therefore not the outcome of free fall alone: an interaction must remove core momentum as it stops the particle.
+
+This example follows translational bosic momentum. In a structured particle, internal compensation need not all become centre-of-mass motion; its internal transport and supporting stresses require a structural model. [Derivation 3.5A](/manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-particle-response-and-internal-cycling.qmd#sec-derivation-03-05A-particle-response-and-internal-cycling) derives the free-carrier motion law, reference budget and stationary conservation.
+
+### Internal cycles and clocks
+
+A clock counts a repeatable internal cycle. Let $\varphi$ mark progress around a fermic cycle, with $2\pi$ corresponding to one recurrence. For the ideal clock used here, held at rest with its cycle undisturbed by the support, take the cycling rate in the common reference to be
+
+$$
+\left(\frac{d\varphi}{dt}\right)_{\mathrm{held}}
+=\frac{cp_{f,r}}{\hbar}
+=\frac{cp_f}{\hbar}\phi^0{}_0.
+$$ {#eq-gravity-held-cycle-rate}
+
+The realized fermic scale sets this resting rate. Motion adds the slowing factor established in Foundations: the ratio of fermic momentum to core momentum. In the common reference that ratio is $p_{f,r}/M_r=p_f/M$, so the moving cycle rate is
+
+$$
+\frac{d\varphi}{dt}
+=\frac{cp_{f,r}}{\hbar}\frac{p_{f,r}}{M_r}
+=\frac{c}{\hbar}\frac{p_{f,r}^{\,2}}{M_r}.
+$$ {#eq-gravity-physical-cycle-rate}
+
+The dotted fermic circle and dashed core circle now connect the momentum configuration to physical cycling. A lower fermic scale slows the resting cycle; a larger core relative to that scale slows it further through motion.
+
+At a fixed depth, settling removes the translational slowing, while the gravitational difference from the distant resting clock remains. Applying this ideal-cycle comparison to a particular material clock requires the internal dynamics and support conditions that keep its cycle stable. Section 3.10 turns the rate into a counted-pulse experiment.
+
+### Light in deformed space
+
+Light has no fermic internal cycle: $p_f=0$. Its momentum shell has $M_r=p_r$ and $p_{f,r}=0$. The local shell is $M=|\mathbf p|$, and the null momentum relation gives
+
+$$
+-p_0=\phi^0{}_0\sqrt{g^{ij}p_ip_j}.
+$$ {#eq-gravity-light-generator}
+
+In stationary space this reference momentum is conserved along the ray. The local core can still vary, and the direction changes as the ray crosses the spatially varying map. Locally the speed is $c$; a reference-coordinate path can nevertheless bend. Clock slowing and light bending therefore probe different aspects of the same deformation.

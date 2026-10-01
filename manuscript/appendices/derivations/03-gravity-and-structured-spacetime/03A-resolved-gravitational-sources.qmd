@@ -1,0 +1,195 @@
+# Derivation 3.3A — Resolved Gravitational Sources {#sec-derivation-03-03A-resolved-gravitational-sources .unnumbered}
+
+## Purpose
+
+A local particle population carries core content, directional imbalance and momentum transport. This derivation constructs these parts of the source before averaging, shows what the opposed channels retain, and separates the transport trace from the spacetime trace. It supplies the kinetic source used in §3.3.
+
+## Starting assumptions
+
+For §3.3's weak-field source approximation, take the particles to have their flat-space momentum configurations. The kernel uses their actual local core and spatial momentum; changing a particle configuration changes those inputs, not the definition of the source.
+
+Work at one event in a future local orthonormal source frame. Greek indices run from 0 to 3, Latin spatial indices from 1 to 3; carrier and species labels are summed explicitly. Use
+
+$$
+\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1),\qquad x^0=ct.
+$$
+
+The opposite signature sometimes used for the Foundations SR interval reverses the signed contraction, not the physical positive core or opposed readings. Here the future shell has contraction $-p_{f,a}^2$, and the local covector has temporal component $-M_a$. In an opposite-signature convention the contraction and metric-lowered covector both reverse sign and must be converted together.
+
+The free-carrier shell used here is
+
+$$
+p_a^\mu=(M_a,p_a^i),\qquad
+p_{\mu,a}=(-M_a,p_{i,a}),\qquad
+M_a=\sqrt{p_{f,a}^2+\delta_{ij}p_a^ip_a^j}>0.
+$$ {#eq-g33a-shell}
+
+$p_{f,a}$ is the fermic momentum of particle $a$ in its chosen free-space reference realization, held fixed in this free-carrier coupling. Nonzero null carriers have $p_{f,a}=0$; the zero null covector is excluded. All momentum components, $M_a$ and $p_{f,a}$ have momentum units.
+
+The brackets denote a positive linear moment per physical volume, at the same event. A discrete local stream representation is
+
+$$
+\left\langle\sum_a A_a\right\rangle=\sum_a w_a A_a,
+\qquad w_a\geq0,
+$$
+
+where $w_a$ has number-per-volume units. For a continuous species population we adopt a nonnegative scalar shell distribution $F_\alpha$ and define
+
+$$
+\left\langle\sum_a A_a\right\rangle
+=\sum_\alpha\int F_\alpha(x,\mathbf p)A_\alpha(\mathbf p)\,d^3p.
+$$ {#eq-g33a-measure}
+
+$F_\alpha d^3p$ is the number density in this local frame; $F_\alpha$ has inverse-volume per momentum-cubed units. Assume the required moments are finite. This pointwise kinetic construction also applies in a curved geometry when all inputs and physical-volume weights belong to the same local frame; its weak-field use in §3.3 does not make the finite source a sum of remote coordinate components.
+
+## Derivation
+
+### Opposed readings and the resolved kernel
+
+For a specified unit axis covector $n_i^{(k)}$, define
+
+$$
+p_{k,a}=n_i^{(k)}p_a^i,\qquad
+p_{k,a}^{\pm}=M_a\pm\frac12p_{k,a}.
+$$
+
+Because $|p_{k,a}|\leq |\mathbf p_a|\leq M_a$, each reading is at least $M_a/2>0$. Their inverse map is
+
+$$
+M_a=\frac{p_{k,a}^++p_{k,a}^-}{2},\qquad
+p_{k,a}=p_{k,a}^+-p_{k,a}^-.
+$$ {#eq-g33a-opposed}
+
+The resolved kernel and aggregate are
+
+$$
+j_a{}^{\mu\nu}=\frac{p_a^\mu p_a^\nu}{M_a},\qquad
+J^{\mu\nu}
+=\left\langle\sum_a j_a{}^{\mu\nu}\right\rangle
+=\begin{bmatrix}
+\mathcal M&\mathcal P^j\\
+\mathcal P^i&\mathcal C^{ij}
+\end{bmatrix},
+$$ {#eq-g33a-kernel}
+
+with
+
+$$
+\mathcal M=\left\langle\sum_a M_a\right\rangle,\quad
+\mathcal P^i=\left\langle\sum_a p_a^i\right\rangle,\quad
+\mathcal C^{ij}=\left\langle\sum_a\frac{p_a^i p_a^j}{M_a}\right\rangle.
+$$
+
+The single-particle contribution $j_a$ has momentum units; averaging gives $J$ momentum-per-volume units. Its temporal entry is the positive core content, and its time–space entries are the signed momentum components. Summing the opposed channels gives
+
+$$
+\mathcal J_k^\pm=\mathcal M\pm\tfrac12n_i^{(k)}\mathcal P^i.
+$$
+
+### Why the measure is part of the tensor statement
+
+At a fixed event $p_{f,\alpha}$ is a scalar. Integrating the invariant future-shell measure over its temporal momentum gives
+
+$$
+2\mathbf1_{p^0>0}\delta\!\left(-(p^0)^2+|\mathbf p|^2+p_{f,\alpha}^2\right)d^4p
+=\frac{d^3p}{M_\alpha}.
+$$
+
+For a proper future-preserving Lorentz change $\Lambda$, $M'_a=p'^0_a$ generally differs from $M_a$. Consequently
+
+$$
+j'_a=\frac{M_a}{M'_a}\Lambda j_a\Lambda^{\mathsf T},\qquad
+F'_\alpha\,d^3p'=\frac{M'_\alpha}{M_\alpha}F_\alpha\,d^3p.
+$$ {#eq-g33a-weights}
+
+The factors cancel in the aggregate, giving $J'=\Lambda J\Lambda^{\mathsf T}$. For discrete streams the density changes as $w'_a=(M'_a/M_a)w_a$. Both momenta and density weights therefore transform under a boost. Spatial rotations leave $M_a$ unchanged.
+
+Now relate the local and coordinate momentum measures. In a slice-normal coframe, $\phi^0{}_i=0$, $\phi^0{}_0>0$, choose its spatial orientation positive. Use $P_m=p_{\mathrm{coord},m}$ and $p_i=p_{\mathrm{local},i}$ for this calculation. Coframe duality gives
+
+$$
+P_m=\phi^i{}_m p_i,\qquad
+ d^3P=\det[\phi^i{}_m]\,d^3p,\qquad
+ d\Sigma=\det[\phi^i{}_m]\,d^3x.
+$$
+
+Thus $d^3x\,d^3P=d\Sigma\,d^3p$. Furthermore,
+
+$$
+p^0_{\mathrm{coord}}=\frac{M}{\phi^0{}_0},\qquad
+\frac{d^3P}{\sqrt{-g}\,p^0_{\mathrm{coord}}}=\frac{d^3p}{M},\qquad
+\sqrt{-g}=\phi^0{}_0\det[\phi^i{}_m].
+$$ {#eq-g33a-coordinate-measure}
+
+The denominator uses contravariant $p^0_{\mathrm{coord}}$, not the coordinate generator $-p_{\mathrm{coord},0}$ or the scaled local component $p_r^0$ of §3.5. These measure relations also hold pointwise for a specified scalar local shell. Conservation of this distribution under evolution requires the actual carrier equations; covariance of its instantaneous moment alone proves no conservation law.
+
+### Symmetry and transport correlations
+
+The two momentum factors in @eq-g33a-kernel give $J^{\mu\nu}=J^{\nu\mu}$. For any real covector $z_\mu$, the same construction gives
+
+$$
+z_\mu J^{\mu\nu}z_\nu
+=\left\langle\sum_a\frac{(z_0M_a+z_ip_a^i)^2}{M_a}\right\rangle\geq0.
+$$ {#eq-g33a-positive}
+
+Lowered forms follow from the local metric:
+
+$$
+J^\mu{}_\nu=J^{\mu\alpha}\eta_{\alpha\nu},\qquad
+J_{\mu\nu}=\eta_{\mu\alpha}\eta_{\nu\beta}J^{\alpha\beta}=J_{\nu\mu}.
+$$
+
+The mixed array reverses the temporal column and need not be symmetric or positive semidefinite. This is an index conversion, not a change of physical content.
+
+Write the local velocities in units of $c$ as $v_a^i=p_a^i/M_a$. For $\mathcal M>0$, their content-weighted mean is $\bar v^i=\mathcal P^i/\mathcal M$. Expanding the transport around this mean isolates the information absent from the summed channels:
+
+$$
+\mathcal C^{ij}
+=\frac{\mathcal P^i\mathcal P^j}{\mathcal M}
++\left\langle\sum_a M_a(v_a^i-\bar v^i)(v_a^j-\bar v^j)\right\rangle.
+$$ {#eq-g33a-covariance}
+
+The cross terms vanish because $\langle\sum_a M_a(v_a-\bar v)\rangle=0$. Contracting the last term with a spatial covector twice gives a sum of nonnegative squares. This contribution is positive semidefinite and vanishes only when all populated local velocities coincide. At zero content, all moments vanish.
+
+The same positive weights give $|\boldsymbol{\mathcal P}|\leq\langle\sum_a|\mathbf p_a|\rangle\leq\mathcal M$, the local content–direction cone bound.
+
+For two equal streams of weight $w$ and opposite momenta $\pm p e_1$,
+
+$$
+\mathcal M=2wM,\quad \mathcal P^i=0,\quad
+[\mathcal C^{ij}]=\frac{2wp^2}{M}\operatorname{diag}(1,0,0),\qquad
+M=\sqrt{p_f^2+p^2}.
+$$
+
+Replacing $e_1$ by $e_2$ leaves every summed opposed channel unchanged but rotates the nonzero transport array. The channels therefore leave out the direction of momentum transport. In particular, $n_i\mathcal C^{ij}n_j$ detects a correlation erased by $\mathcal P^i=0$.
+
+### Core content, transport and the source trace
+
+Contraction of the free-carrier shell gives
+
+$$
+-\eta_{\mu\nu}J^{\mu\nu}
+=\mathcal M-\delta_{ij}\mathcal C^{ij}
+=\left\langle\sum_a\frac{p_{f,a}^2}{M_a}\right\rangle\geq0.
+$$ {#eq-g33a-trace}
+
+Core content $\mathcal M$ sources the common deformation $\theta^{00}$ in the weak field. The transport trace remains in the spatial deformation block and contributes to the temporal map through $\phi^0{}_0\simeq1-\theta^{00}-\delta_{kl}\theta^{kl}$. Its temporal effect therefore involves $\mathcal M+\delta_{ij}\mathcal C^{ij}$, whereas the spacetime trace above contains their difference.
+
+Cold carriers at rest have $\mathcal C=0$, so both combinations coincide with $\mathcal M$. For nonzero null carriers, $\delta_{ij}\mathcal C^{ij}=\mathcal M$: the spacetime trace vanishes while the weak temporal-readout combination is $2\mathcal M$. An isotropic null population has $\mathcal P=0$ and $\mathcal C^{ij}=(\mathcal M/3)\delta^{ij}$. Neither its zero net direction nor its zero spacetime trace erases its gravitational source.
+
+## Result
+
+The resolved kernel supplies three distinct source blocks. Opposed channels determine content and directional imbalance; the transport tensor retains additional carrier correlations. Positive physical-volume weights give the stated symmetry, cone and covariance properties. The kinetic spacetime trace differs from the combination governing weak temporal readout.
+
+These blocks provide the kinetic source used in §3.4.
+
+## Notes
+
+Extending this local moment to a finite spatial window requires a comparison map between tangent spaces, a slice, evolving weights and boundary fluxes. Derivation 3.7A develops the corresponding balance conditions.
+
+Binding, interfaces and supports require material source laws; their stresses need not admit a positive free-carrier decomposition. The kinetic calculation leaves these additional contributions and full isolated-system ADMC open.
+
+<!-- Scientific provenance (not a new review receipt):
+G4-D001 r1: source moments/measure/trace
+G4-D006 r2: source variation and collisionless balance
+Exact proof revisions/hashes and review scope: exchange/reviews/manuscript/2026-10-01-gravity-appendix-adoption/EVIDENCE_MAP.md.
+-->

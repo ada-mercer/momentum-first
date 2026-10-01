@@ -1,0 +1,130 @@
+# Derivation 4.4A — Core momentum and first-order evolution {#sec-derivation-04-04a-first-order-evolution .unnumbered}
+
+## Purpose {.unnumbered}
+
+A positive core magnitude and a local first-order spinor generator are related, but they are not the same operator on every state. This derivation supports proposed §4.4, “The core momentum operator.” It exposes the factorization premise, identifies the free positive spectral sector, and rewrites the chosen spinor equation in constrained directional indices without creating six spin states.
+
+## Starting assumptions {.unnumbered}
+
+Retain the complex state space, Born readout and continuous unitary time evolution of ordinary quantum mechanics. In a flat inertial frame let $\widehat p_i=-i\hbar\partial_i$, with a common smooth core and the self-adjoint free realization on $H^1(\mathbb R^3,\mathbb C^4)$ or a periodic spatial domain. The fermic scale $p_f>0$ belongs to the declared free-space identity realization. Introduce constant Hermitian matrices obeying
+
+$$
+\beta^2=I,\qquad \{\beta,\alpha^i\}=0,\qquad
+\{\alpha^i,\alpha^j\}=2\delta^{ij}I.
+$$
+
+A concrete choice is
+
+$$
+\beta=\begin{pmatrix}I_2&0\\0&-I_2\end{pmatrix},\qquad
+\alpha^i=\begin{pmatrix}0&\sigma_i\\\sigma_i&0\end{pmatrix},
+$$
+
+where $\sigma_i$ are the Pauli matrices. This is a stipulated spinor realization of the shell, not a consequence of ADMC alone. The historical first-order construction is Dirac's [@dirac1928quantum].
+
+## The Clifford square and the two spectral signs {.unnumbered}
+
+Define the signed flat generator
+
+$$
+D=\beta p_f+\alpha^i\widehat p_i.
+$$
+
+Its square can be checked without choosing a matrix basis:
+
+$$
+\begin{aligned}
+D^2&=\beta^2p_f^2+
+ p_f\{\beta,\alpha^i\}\widehat p_i+
+ \frac12\{\alpha^i,\alpha^j\}\widehat p_i\widehat p_j\\
+&=(p_f^2+\widehat{\mathbf p}^{\,2})I.
+\end{aligned}
+$$
+
+The antisymmetric matrix part drops out only because the free momentum components commute. The spectral magnitude is therefore
+
+$$
+|D|=\widehat M_+I,\qquad
+\widehat M_+=\sqrt{p_f^2+\widehat{\mathbf p}^{\,2}}.
+$$
+
+At each momentum $D$ has eigenvalues $\pm M(p)$, each of multiplicity two in this realization. Because $p_f>0$, the projectors
+
+$$
+P_\pm=\frac12\left(I\pm\frac D{\widehat M_+}\right)
+$$
+
+are well defined. The square identity proves $P_\pm^2=P_\pm$, $P_+P_-=0$, and $DP_\pm=\pm\widehat M_+P_\pm$. Thus $D$ agrees with the positive core operator **on** $\operatorname{Ran}P_+$; it is not positive on the entire four-spinor space.
+
+The square-root formulation keeps the positive free spectrum explicitly. In position space its Fourier multiplier is not a polynomial in momentum, so it is generally a nonlocal pseudodifferential operator. The full $D$ is local and first order, at the cost of the larger signed spinor representation. Projection back onto $P_+$ is itself momentum dependent and generally spatially nonlocal. One cannot retain an arbitrary locally supported four-spinor while simultaneously claiming it belongs entirely to the positive spectral sector.
+
+This distinction does not assign negative physical core to antimatter. The two fermic-cycle orientations retain positive physical core in the native interpretation; their relation to field coefficients requires a field representation and is not supplied by relabeling a negative eigenvalue.
+
+## What the phase law assumes and what it yields {.unnumbered}
+
+For an autonomous self-adjoint $\widehat M_t$, retain the phase-to-generator calibration
+
+$$
+U(t)=\exp(-ic\widehat M_t t/\hbar).
+$$
+
+Differentiating on its generator domain gives
+
+$$
+\boxed{\frac{i\hbar}{c}\partial_t\psi=\widehat M_t\psi.}
+$$
+
+A mode with generator value $m_t$ has phase $e^{-icm_t t/\hbar}$ and angular frequency $cm_t/\hbar$. In the flat full-spinor realization $\widehat M_t=D$; within its invariant positive sector the same equation uses $\widehat M_+$. Multiplying by $c$ gives the conventional energy-unit generator $\widehat H=c\widehat M_t$, with $cp_f=m_0c^2$.
+
+Continuous unitary evolution supplies a self-adjoint generator. The identification of that generator with this shell realization, its phase calibration by $\hbar$, the quantum state grammar and the measurement rule remain retained premises. The algebra does not derive them from conservation of classical directional totals. Nor does a first-order time derivative alone imply a particular microscopic spin or statistics law.
+
+## One Clifford convention in four and six displays {.unnumbered}
+
+Keep Gravity's signature $\eta=\operatorname{diag}(-1,1,1,1)$, and choose
+
+$$
+\gamma^0=\beta,\qquad \gamma^i=\beta\alpha^i,
+\qquad \{\gamma^\mu,\gamma^\nu\}=-2\eta^{\mu\nu}I.
+$$
+
+Thus $(\gamma^0)^2=I$ and $(\gamma^i)^2=-I$. The minus sign in the Clifford relation does not alter the interval signature. Multiplication of $(i\hbar\gamma^\mu\partial_\mu-p_f)\Psi=0$ by $\beta$ gives $i\hbar\partial_0\Psi=D\Psi$ directly.
+
+Use $A=(i,\sigma)$ as the short slashed-index label and the indexed $L$ maps of Derivation 4.3A. The upper directional matrices and supported derivatives are
+
+$$
+\gamma^A=L^A{}_\mu\gamma^\mu,\qquad
+\partial_A=L^\mu{}_A\partial_\mu.
+$$
+
+Since the return followed by the lift is the four-component identity,
+
+$$
+\gamma^A\partial_A=\gamma^\mu\partial_\mu,
+\qquad
+\{\gamma^A,\gamma^B\}=-2\eta^{AB}I.
+$$
+
+For a future on-shell momentum $p^\mu=(M,p_i)$ it is useful instead to form the lower coefficients
+
+$$
+K_A=-\eta_{AB}\gamma^B,\qquad
+K_{i\sigma}=\frac16\gamma^0-\sigma\gamma^i.
+$$
+
+The opposed sums and differences then give
+
+$$
+K_Ap^A=\gamma^0M-\gamma^ip_i,\qquad
+\{K_A,K_B\}=-2\eta_{AB}I,
+$$
+$$
+(K_Ap^A)^2=-\eta_{AB}p^Ap^B I=p_f^2I.
+$$
+
+Consequently $(K_Ap^A-p_f)u=0$ is precisely the original positive-plane-wave spinor equation. For the differential equation, define $\widehat p^A=-i\hbar\eta^{AB}\partial_B$; support gives $K_A\widehat p^A=i\hbar\gamma^\mu\partial_\mu$. This four-derivative notation is not the commuting positive spectral reading operator on arbitrary spacetime-dependent spinors. The two agree on the specified positive plane waves, where $\partial_0=-iM/\hbar$ and $\partial_i=ip_i/\hbar$.
+
+Each matrix still acts on the original four-spinor. Their six labels satisfy linear dependencies; they are not six independent Clifford generators. In a varying frame the coframe and compatible spin lift must be included, rather than promoting the six labels to unrelated partial derivatives.
+
+## Result and return to the chapter {.unnumbered}
+
+The chosen first-order algebra factors the free shell and supplies a local signed generator. Its positive spectral restriction recovers the square-root core; its directional display preserves the original spinor and derivatives. Proposed §4.4 should retain the short squaring argument and its premise, while using this derivation for the spectral and representation distinctions. Spin, statistics, the Born rule and native microscopic coupling are not selected by this factorization.

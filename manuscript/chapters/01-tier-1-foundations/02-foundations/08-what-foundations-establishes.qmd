@@ -20,7 +20,7 @@ $$
 ADMC conserves
 
 $$
-\sum_i \bigl(p_k^+\bigr)^{(i)}
+\sum_i p_{k,i}^+
 $$
 
 for every chosen orientation. Reversing $\hat{k}$ exchanges $p_k^+$ and $p_k^-$. Their average recovers $M$, while their difference recovers signed $p_k$. Along three independent spatial directions, the resulting four quantities are exactly and invertibly related to the familiar special-relativistic four-momentum package.
@@ -29,7 +29,7 @@ The point is not that M1 has abandoned standard inertial relativity. The point i
 
 ### Space, time, and physical change
 
-Foundations also fixed the framework's first interpretive order. Space is the stage. Momentum is the actor of physical change. Time is not introduced as a separate substance that drives evolution; it is a measure abstracted from stable physical change.
+Foundations also fixed the framework's first interpretive order. Space is the stage. Momentum is the actor of physical change. A particle is one stable organization of momentum, but momentum does not have to be carried by a particle: the physical structure of space can, in certain situations, hold momentum and participate in its transfer. Time is not introduced as a separate substance that drives evolution; it is a measure abstracted from stable physical change.
 
 That stance gives the clock discussion its meaning. A clock is a physical system with a stable cycle. In M1, clock slowing is read as changed physical cycling, not as time itself stretching. In the inertial case, the standard relation is recovered through
 $$
@@ -47,18 +47,20 @@ $$
 M = \sqrt{p_f^2 + p^2},
 $$
 
-but it is not assumed to exhaust every physical setting. Once the stage is structured, constrained, or deformed, the same momentum content may be repartitioned, contextualized, or expressed differently through the fermic momentum role $p_f$ and the bosic momentum role $p$. In other cases, the internal composition may remain largely intact while the translational yield of directed bosic momentum changes.
+but it is not assumed to exhaust every physical setting. A structured stage can change how a particle's momentum configuration produces motion without replacing that momentum content.
 
-Space-mediated momentum coupling gives the interaction side of this picture. It states that momentum-bearing systems become dynamically related through space, and that familiar forces are different mechanisms by which such coupling is realized. Kinematic modifiers give the structural side. They name the form taken by the departure from the inertial baseline.
+M1 calls such a structural effect a **kinematic modifier**. The term identifies a shared physical role, not a universal multiplier or a single mechanism. Gravity and expansion may both modify the relation between momentum and motion, while deriving that change in different ways. In expansion, bosic-slot stage dressing supplies a specific translation-yield law. In gravity, the local stage structure must supply its own particle, material, and light realization.
 
-Three modifier types are used in the later engines. **Composition modifiers** change how fermic and bosic momentum are internally related or contextualized. **Yield modifiers** change what directed bosic momentum produces as displacement or frequency-style expression. **Admissibility modifiers** change which kinematic states are available at all.
+Clocks and rulers can reveal a modifier because they are physical systems sustained by internal motion and material equilibrium. They are probes, not separate modifier classes. Possible exclusion physics remains a later question: it may eventually restrict the motions available to a many-particle configuration, but Foundations does not yet treat that possibility as an established modifier mechanism.
 
-This is added structure, not a completed engine. ADMC remains the conservation grammar. SMC gives the Foundations-level interaction principle. KMs classify the structural form of departures that later chapters will make explicit.
+Space-mediated momentum coupling gives the interaction side of the picture. It states that momentum-bearing systems become dynamically related through space. Kinematic modifiers give a structural motion side: they identify settings in which physical structure changes what motion a particle's momentum produces.
+
+This is room for later engines, not a completed engine in Foundations. ADMC remains the conservation grammar. SMC supplies the general coupling principle. Each kinematic modifier must still be given a concrete mechanism and realization law where it is used.
 
 ### What remains beyond Foundations
 
 Foundations has not built the gravity program, the quantum program, the cosmology program, or the later state-space and composite-structure programs. It has not derived full field dynamics, internal particle geometry, or final observational tests. Those are downstream tasks.
 
-This boundary is intentional. A foundation should make the later theory legible before it tries to make the later theory powerful. The reader now has the primitive quantities, the conservation structure, the inertial correspondence, the stage/actor interpretation, the clock and true-frame stance, and the modifier taxonomy needed to understand what comes next.
+This boundary is intentional. A foundation should make the later theory legible before it tries to make the later theory powerful. The reader now has the primitive quantities, the conservation structure, the inertial correspondence, the stage/actor interpretation, the possibility of momentum held directly by space, the clock and true-frame stance, and the kinematic-modifier concept needed to recognize a structurally changed momentum-to-motion relation.
 
-The next part begins with gravity because gravity is the first major case where organized momentum deforms the stage itself and thereby modifies local kinematics.
+The next part begins with gravity because gravity is the first major case where organized momentum changes the local stage and thereby changes the conditions under which particle momentum becomes motion.

@@ -1,8 +1,8 @@
 # DOI Workflow
 
-Status: locally implemented; source archiving, Sandbox rehearsal, production
-draft bootstrap, and GitHub configuration are complete. The first production
-mint remains pending.
+Status: operational. The v0.3.8 release and manuscript DOI job completed on
+2026-08-03. New releases publish versions in the existing families; no new
+bootstrap is needed. Production publication retains its environment approval.
 
 This is the canonical DOI procedure. Earlier version-labelled files in this
 directory are retained as planning history and metadata provenance.
@@ -68,36 +68,18 @@ Setup completed on 2026-07-31:
   `zenodo-production` environment, its required `ada-mercer` approval, and the
   environment secret `ZENODO_TOKEN` are configured.
 
-The remaining one-time boundary is publishing the first production version from
-the next formal release.
+The subsequent v0.3.8 release completed production publication:
+[release run](https://github.com/ada-mercer/momentum-first/actions/runs/30821088453).
+Current manuscript concept DOI: `10.5281/zenodo.21729037`.
+Current source concept DOI: `10.5281/zenodo.21775704`.
+The initial draft IDs above are historical bootstrap facts, not current drafts.
 
-1. Sign in to Zenodo through the repository's GitHub account, enable
-   `ada-mercer/momentum-first`, and confirm the source integration is active.
-   Zenodo will archive only releases created after it is enabled.
-2. Create a separate Zenodo Sandbox account/token and rehearse `bootstrap` plus
-   `publish` against `https://sandbox.zenodo.org/api`. Sandbox publication creates
-   only a test DOI (`10.5072/...`).
-3. Create a production personal access token with `deposit:write` and
-   `deposit:actions` scopes.
-4. Create the initial unpublished production draft:
-
-   ```bash
-   export ZENODO_TOKEN='<production token>'
-   python3 tooling/scripts/publish_zenodo.py bootstrap \
-     --api-url https://zenodo.org/api \
-     --output /tmp/momentum-first-zenodo-bootstrap.json
-   unset ZENODO_TOKEN
-   ```
-
-5. Copy `concept_record_id` from the output into the repository variable
-   `ZENODO_MANUSCRIPT_CONCEPT_ID`.
-6. Create the protected GitHub environment `zenodo-production`; store
-   `ZENODO_TOKEN` there and require Arne's approval for the first production run.
-   The approval requirement may be removed after the first successful mint if
-   fully automatic future publication is desired.
-
-Creating the production draft is reversible. Publishing it is the permanent
-external commitment boundary.
+For an exceptional future credential rotation, use the host's protected secret
+entry or GitHub's environment-secret UI; never put tokens in commands, transcripts
+or files staged for commit. Keep the existing `ZENODO_TOKEN` environment secret
+and `ZENODO_MANUSCRIPT_CONCEPT_ID` repository variable. Do not repeat family
+bootstrap for a normal release. Publication remains the permanent external
+commitment boundary, distinct from preparing source or a preview.
 
 ## Future formal release procedure
 
@@ -117,11 +99,9 @@ external commitment boundary.
    version draft or verifies the published version.
 7. Manually dispatch `Deploy Book Site` when the site should pick up the new PDF.
 
-After the first production mint, make one follow-up metadata commit adding the
-two concept DOI links to the README and the appropriate source/preferred-citation
-identifiers to `CITATION.cff`. Version DOI links remain available on each Zenodo
-record and in the release workflow summary; they do not require a post-release
-source commit every time.
+The two concept DOI links are already recorded in the README and CFF.
+Release-specific version DOIs are recorded in the release receipt and provider
+records; they do not require rewriting the tagged source after publication.
 
 ## Local validation without publication
 

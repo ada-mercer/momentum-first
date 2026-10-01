@@ -10,13 +10,23 @@ A clock is a physical system with a stable repeatable cycle. Its rate is therefo
 
 In M1, the clean primary clock-carrying sector is fermic. Fermic momentum $p_f$ is the locked intrinsic scale associated with stable internal cycling, and composite material clocks inherit their timing behavior through stable internal structure built from such cycle-carrying constituents.
 
-Bosic momentum matters differently. It is not the intrinsic clock scale, but directed bosic expression changes how the total momentum content of a system is organized. A moving clock therefore does not merely carry the same internal cycle through an external time variable. Its internal clocking is read through a different fermic-to-bosic organization of momentum content.
+Bosic momentum matters differently. It is not the intrinsic clock scale, but directed bosic expression changes how the total momentum content of a system is organized. A moving clock therefore does not merely carry the same internal cycle through an external time variable. Its fermic cycle changes relative to the free-current baseline of the surrounding space as the relation between $M$ and $p_f$ changes.
 
 This is the section's central distinction: clock language belongs first to systems with stable internal cycles. Pure massless or bosic transport can still exhibit redshift, phase, and arrival-rate effects, but those should not be casually identified with internal clock slowing in the same sense.
 
+The general cycle-duration factor is
+
+$$
+\boxed{
+\frac{M}{p_f}.
+}
+$$
+
+It tells how much the duration of a fermic cycle changes from that free-current baseline. The inverse ratio $p_f/M$ is the clock-rate factor: as $M/p_f$ increases, each cycle takes longer and the clock runs more slowly.
+
 ### Inertial time dilation
 
-Inertial time dilation is the simplest place where the distinction becomes quantitative. A moving clock runs slow not because time itself stretches, but because more of the system's total momentum content is expressed bosically. The fermic share available to the internal cycle is reduced.
+Inertial time dilation is the simplest place where the distinction becomes quantitative. A moving clock runs slow not because time itself stretches, but because more of the system's total momentum content is expressed bosically. The ratio $M/p_f$ increases, so the fermic cycle takes longer.
 
 The familiar relativistic clock relation is
 $$
@@ -36,7 +46,7 @@ $$
 $$
 The formal result is the standard inertial one. What changes is the reading: the slower clock is a slower physical cycle, caused by the system's changed momentum organization.
 
-This point will matter again in gravity. Motion-induced clock slowing and gravity-induced clock slowing are not the same mechanism in M1. Motion changes the fermic-to-bosic organization of the moving system. Gravity will later dress the local fermic scale through the surrounding field. General relativity packages these effects through one proper-time geometry; M1 separates their underlying causes while preserving the standard overlap relations where those relations are recovered.
+The ratio $M/p_f$ is not specific to inertial motion. It governs the fermic cycle whenever the relation between bosic and fermic momentum changes. What changes from one setting to another is the physical reason: motion reorganizes the particle's momentum, gravity changes how that momentum configuration is expressed under the local spatial geometry, and expansion changes its expression as the stage evolves. Each later engine must derive how its particular structure changes $M/p_f$; the cycle rate then follows from the inverse ratio $p_f/M$.
 
 ### Motion and material contraction
 

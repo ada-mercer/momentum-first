@@ -1,0 +1,76 @@
+## Phase and physical clocks {#sec-qm-clocks}
+
+A moving wave packet accumulates phase while its peak travels through a spatial pattern. The phase change at a fixed position is therefore different from the phase change followed along the packet. Neither is automatically a clock reading: a clock must turn its internal evolution into an observable recurrence.
+
+### Following phase along a path
+
+For a slowly varying packet write $\Psi\simeq a e^{iS/\hbar}$, where $S$ is the phase expressed in action units. Its spatial gradient gives the coordinate momentum, $p_{{\mathrm{coord}},i}=\partial_iS$, and its time derivative gives $\partial_tS=-cM_t$. This ray description applies when the amplitude and background vary slowly on the local wavelength scale, away from turning points and branch crossings.
+
+Use the future generator from @eq-qm-ray-generator. The packet velocity is $\dot x^i=c\,\partial M_t/\partial p_{{\mathrm{coord}},i}$. Following the phase along that motion gives
+
+$$
+\begin{aligned}
+\frac{dS}{dt}
+&=\partial_tS+p_{{\mathrm{coord}},i}\dot x^i\\
+&=-cM_t+p_{{\mathrm{coord}},i}\dot x^i\\
+&=-\frac{cNp_f^2}{M}.
+\end{aligned}
+$$ {#eq-qm-path-phase}
+
+The transport term subtracts the phase variation traversed by the packet. The shift cancels in the result. Along the same massive ray, $d\tau/dt=Np_f/M$, so $dS/dt=-cp_f\,d\tau/dt$.
+
+In the static reference notation this becomes
+
+$$
+-\frac1\hbar\frac{dS}{dt}
+=\frac c\hbar\frac{p_{f,r}^{\,2}}{M_r}.
+$$
+
+The magnitude agrees with Gravity's ideal fermic-cycle rate. By contrast, the phase rate at a fixed coordinate is $cM_t/\hbar$. For a null ray the leading phase is constant *along* the ray even though a detector at a fixed location can register an oscillating wave. Phase propagation and an internal fermic cycle are different physical comparisons.
+
+### A clock with an observable signal
+
+A common phase multiplying an isolated state cancels from every expectation value. A clock signal instead needs a relative phase that changes a measured quantity. A two-state internal system supplies a simple example.
+
+Call the two distinguishable configurations $|L\rangle$ and $|R\rangle$. Let their local momentum-unit generator be
+
+$$
+\widehat M_{\mathrm{int}}=M_0I+g\sigma_x,\qquad M_0>g>0,
+$$
+
+where $\sigma_x$ interchanges the configurations and $g$ is the coherent coupling in momentum units. Its two stationary values are $M_0\pm g$. Prepare the system in $|L\rangle$ and hold it at rest in a zero-shift comparison, with $N$ effectively uniform across its size. Assume that its internal dynamics couples to proper time without being altered by the support. Then
+
+$$
+\tau(t)=\int_0^tN(t')\,dt',\qquad
+|\Psi_{\mathrm{int}}(t)\rangle
+=e^{-icM_0\tau/\hbar}
+\left[
+\cos\!\left(\frac{cg\tau}{\hbar}\right)|L\rangle
+-i\sin\!\left(\frac{cg\tau}{\hbar}\right)|R\rangle
+\right].
+$$
+
+The probability of finding the system in $|R\rangle$ is
+
+$$
+\boxed{P_R(t)=\sin^2\!\left(\frac{cg\tau(t)}{\hbar}\right).}
+$$ {#eq-qm-clock-signal}
+
+The common $M_0$ phase has disappeared. The gap $2g$ produces the oscillation. Identically prepared trials measured after different waiting times reveal this signal without assuming that repeated measurements leave one running clock undisturbed.
+
+At constant $N$, the proper period is $\pi\hbar/(cg)$ and the reference period is $\pi\hbar/(cNg)$. A smaller $N$ therefore gives a slower reference clock. The effect follows from the specified internal coupling, not from declaring every phase factor a clock.
+
+### What a common slowdown requires
+
+One working clock does not establish that all material processes rescale together. A system can have several transition gaps, coherent couplings and relaxation rates. To behave as the same system running more slowly, all observable internal dynamics must share the time conversion.
+
+Compare the baseline internal generator $\widehat M_{{\mathrm{int}},0}$ with its reference-time counterpart $\widehat M_{{\mathrm{int}},r}$. For a finite-dimensional closed sector with all states and observables accessible, every process shares one time rescaling exactly when
+
+$$
+\widehat M_{{\mathrm{int}},r}
+=\Lambda\widehat M_{{\mathrm{int}},0}+aI.
+$$ {#eq-qm-universal-clock-scaling}
+
+Here $\Lambda$ is the common rate factor and $aI$ changes only an unobservable common phase. Scaling one transition probability is weaker: it need not scale the coherent phase changes that drive other measurements. For an open system, relaxation and noise must be included in the comparison of the full dynamics.
+
+[Derivation 4.6A](/manuscript/appendices/derivations/04-quantum-mechanics/06A-path-phase-and-coherent-clocks.qmd#sec-derivation-04-06a-coherent-clocks) proves the criterion and separates the ray-phase identity from the internal-clock premise. The two-state example shows how a coherent quantum process can realize the gravitational clock comparison. Extending that result to material clocks requires their internal interactions and support conditions to produce the same rescaling.

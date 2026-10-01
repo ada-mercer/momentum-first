@@ -147,6 +147,17 @@ If you need cross-backend comparisons, prefer:
 - do not hide backend-specific geometry assumptions in family code
 - backend-specific camera approximation belongs in the shared camera/backend layer, not in family-local geometry logic
 
+## Composite manuscript plates
+
+A family-owned builder may return a SceneSpec with `metadata['composite'] = True`
+and panel SceneSpecs in its metadata. The module must provide
+`render_composite(scene, output_path, backend_name, camera_name, style_name)`
+as keyword arguments. Runtime delegates only declared composites to this hook;
+ordinary scenes retain the shared backend path. Compose panels in the family
+and render geometry through shared backends. Use temporary panel files unless
+separately registered. Honor or explicitly reject overrides; never silently
+ignore them. The final registered output is checked for existence and size.
+
 ## Minimal recipe for a new family
 1. create `figures/src/geometry3d/<family>/family.py`
 2. return a real `SceneSpec` from one or more builder functions

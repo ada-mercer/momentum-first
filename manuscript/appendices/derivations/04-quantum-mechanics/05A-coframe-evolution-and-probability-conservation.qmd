@@ -1,0 +1,224 @@
+# Derivation 4.5A — Coframe evolution and probability conservation {#sec-derivation-04-05a-coframe-evolution .unnumbered}
+
+## Purpose and assumptions {.unnumbered}
+
+A varying Stage changes spatial derivatives, spin transport and the measure used to normalize a state. This derivation supports proposed §4.5, “Quantum motion in deformed space,” and the changing-Stage boundary in proposed §4.9. It derives a complete prescribed-background spinor control, including the terms that a shell calculation alone cannot fix.
+
+Assume an oriented, torsion-free, metric-compatible spin geometry with a smooth prescribed Stage-adapted coframe, $\phi^0{}_i=0$, $N=\phi^0{}_0>0$. Retain the minimally coupled spinor equation and the Clifford convention of Derivation 4.4A. The background is not varied dynamically here. Define calculation aliases
+
+$$
+E^a{}_i=\phi^a{}_i,\quad
+w^i=(E^{-1})^i{}_a\phi^a{}_0,\quad
+h_{ij}=\delta_{ab}E^a{}_iE^b{}_j,\quad W=\det E>0.
+$$
+
+Then
+
+$$
+d\ell^0=Ndx^0,\qquad d\ell^a=E^a{}_i(dx^i+w^idx^0),
+$$
+$$
+ds^2=-N^2(dx^0)^2+h_{ij}(dx^i+w^idx^0)(dx^j+w^jdx^0).
+$$
+
+Here $h^{ij}$ means the inverse **spatial** metric, not the spatial block of the inverse spacetime metric. Physical spatial volume is $W\,d^3x$. Coordinate momentum is $P_i=p_{{\mathrm{coord}},i}$, and $p_{{\mathrm{local}},a}=(E^{-1})^i{}_aP_i$.
+
+## Construct the connection before solving for evolution {.unnumbered}
+
+Let $\Gamma^\rho{}_{\mu\nu}$ be the Levi-Civita connection of $g=\phi^{\mathsf T}\eta\phi$. In matrix notation $(\Gamma_\mu)^\rho{}_\nu=\Gamma^\rho{}_{\mu\nu}$. Coframe compatibility fixes the local frame connection:
+
+$$
+\mathcal A_\mu=(\phi\Gamma_\mu-\partial_\mu\phi)\phi^{-1}.
+$$
+
+Its Lorentz-lowered pair is antisymmetric. For the convention $\{\gamma^a,\gamma^b\}=-2\eta^{ab}I$, the compatible spin lift is
+
+$$
+\mathsf A_\mu=-\frac14\eta_{ac}\mathcal A_\mu{}^c{}_b\gamma^a\gamma^b,
+\qquad D_\mu=\partial_\mu+\mathsf A_\mu.
+$$
+
+Indeed the Clifford commutator identity yields
+
+$$
+\partial_\mu\gamma^\nu+\Gamma^\nu{}_{\mu\lambda}\gamma^\lambda
++[\mathsf A_\mu,\gamma^\nu]=0,
+\qquad \gamma^\mu=(\phi^{-1})^\mu{}_a\gamma^a.
+$$
+
+This supplies an explicit construction and a check of every sign. It is not an independent gravitational field fitted after the generator is written.
+
+Since $\gamma^0=\beta/N$, define the Hermitian velocity matrices
+
+$$
+A^i=N\alpha^a(E^{-1})^i{}_a-w^i I=N\beta\gamma^i.
+$$
+
+Multiplying the stipulated equation $(i\hbar\gamma^\mu D_\mu-p_f)\Psi=0$ by $N\beta$ gives
+
+$$
+i\hbar\partial_0\Psi=\widehat M_{t,{\mathrm{raw}}}\Psi,
+$$
+$$
+\widehat M_{t,{\mathrm{raw}}}
+=A^i\widehat P_i+\beta Np_f
+-i\hbar(\mathsf A_0+A^i\mathsf A_i),
+\qquad\widehat P_i=-i\hbar\partial_i.
+$$
+
+The shift is an identity-valued drift $-w^iP_i$, together with its connection effects. It is not generally a fixed momentum subtraction inside the $\alpha$ term.
+
+## Put the changing norm into a fixed Hilbert space {.unnumbered}
+
+The slice norm is $\int W\Psi^\dagger\Psi\,d^3x$. Set $\psi=W^{1/2}\Psi$. Differentiating both $W^{-1/2}\psi$ in space and $W^{1/2}\Psi$ in time gives
+
+$$
+\boxed{\widehat M_t=A^i\widehat P_i+\beta Np_f+Z,}
+$$
+$$
+\boxed{Z=-i\hbar(\mathsf A_0+A^i\mathsf A_i)
++\frac{i\hbar}{2}
+\bigl(A^i\partial_i\ln W+I\partial_0\ln W\bigr).}
+$$
+
+Evolution is $i\hbar\partial_0\psi=\widehat M_t\psi$, now with norm $\int\psi^\dagger\psi\,d^3x$. The temporal derivative is essential whenever the spatial measure changes. This is the changing-inner-product issue treated in the curved-spinor literature, for example by [Huang and Parker](https://arxiv.org/abs/0811.2296).
+
+Equivalently,
+
+$$
+\widehat M_t=\frac12\{A^i,\widehat P_i\}+\beta Np_f+V_{\mathrm{spin}},
+\qquad V_{\mathrm{spin}}=Z+\frac{i\hbar}{2}\partial_iA^i.
+$$
+
+The spin potential is fixed by the compatible lift. Symmetrizing the derivative term by hand without this remainder is not the general coframe equation.
+
+## Continuity, adjointness and the boundary term {.unnumbered}
+
+The spinor equation and its adjoint give $\nabla_\mu j_{\mathrm{prob}}^\mu=0$, where $j_{\mathrm{prob}}^\mu=\bar\Psi\gamma^\mu\Psi$ and $\bar\Psi=\Psi^\dagger\beta$. Since $\sqrt{-g}=NW$,
+
+$$
+\sqrt{-g}\,j_{\mathrm{prob}}^0=W\Psi^\dagger\Psi,
+\qquad
+\sqrt{-g}\,j_{\mathrm{prob}}^i=W\Psi^\dagger A^i\Psi.
+$$
+
+Therefore
+
+$$
+\boxed{\partial_0(\psi^\dagger\psi)
++\partial_i(\psi^\dagger A^i\psi)=0.}
+$$
+
+In ordinary time the probability flux is $c\psi^\dagger A^i\psi$. It is not the gravitational source tensor.
+
+The same identity follows by subtracting the generator equation and its conjugate. The required coefficient relation is
+
+$$
+Z-Z^\dagger=-i\hbar\partial_iA^i.
+$$
+
+For test spinors $u,v$ in a spatial region $\Omega$, integration by parts now gives the exact Green identity
+
+$$
+\langle u,\widehat M_t v\rangle-
+\langle\widehat M_t u,v\rangle
+=-i\hbar\int_{\partial\Omega}u^\dagger A^iv\,n_i\,dS.
+$$
+
+The volume terms cancel; formal adjointness therefore requires a boundary domain, not merely real eigenvalues of the shell symbol. In the raw representation the corresponding coordinate-measure identity is instead
+
+$$
+\widehat M_{t,{\mathrm{raw}}}^\dagger W-W\widehat M_{t,{\mathrm{raw}}}
+=i\hbar\partial_0W.
+$$
+
+To see the sign, differentiate $\langle\Psi,W\Psi\rangle$: the two evolution terms contribute $(i/\hbar)\langle\Psi,(M_{t,{\mathrm{raw}}}^\dagger W-WM_{t,{\mathrm{raw}}})\Psi\rangle$, which cancels $\langle\Psi,\partial_0W\Psi\rangle$. Setting the raw adjoint defect to zero while $W$ changes would violate norm conservation.
+
+## Three explicit controls {.unnumbered}
+
+### Static isotropic space {.unnumbered}
+
+Take $E=b(\mathbf x)I$, $w=0$ and $F=N/b$. The scalar $b$ is a spatial scale, distinct from the indexed four/six maps $L$. For variation along $x^1$, the nonzero spin coefficients are
+
+$$
+\mathsf A_0=\frac{N'}{2b}\alpha^1,\qquad
+\mathsf A_2=\frac{b'}{2b}\gamma^1\gamma^2,\qquad
+\mathsf A_3=\frac{b'}{2b}\gamma^1\gamma^3.
+$$
+
+Thus $\mathsf A_0+A^i\mathsf A_i=(N'/(2b)+Nb'/b^2)\alpha^1$. Combining this with $\partial_1\ln W=3b'/b$ yields $Z=-i\hbar\alpha^1F'/2$. The vector form is
+
+$$
+\boxed{\widehat M_t=\beta Np_f+
+\frac12\{F,\boldsymbol\alpha\cdot\widehat{\mathbf P}\}.}
+$$
+
+Its full semiclassical dispersion matrix, including the zeroth-order fermic term, squares to $N^2(p_f^2+|\mathbf P|^2/b^2)I$. This is not the derivative-only principal symbol used to define characteristic cones. Its positive eigenvalue is $M_t=NM=M_r$, with $\mathbf p_r=F\mathbf P$ and $p_{f,r}=Np_f$. Both slots use the same comparison. This control agrees with the Hermitian isotropic construction of [Obukhov, Silenko and Teryaev](https://arxiv.org/abs/1106.0173).
+
+### A rotating flat-coordinate frame {.unnumbered}
+
+Take $N=1$, $E=I$, $w=\boldsymbol\Omega\times\mathbf x/c$, with constant $\boldsymbol\Omega$. For rotation around $z$, write $\omega=\Omega/c$. The compatible spin lift gives $\mathsf A_0=-i\omega\Sigma_z/2$ and $\mathsf A_i=0$, where $\Sigma_z=\operatorname{diag}(\sigma_z,\sigma_z)$. Hence
+
+$$
+\widehat M_t=\beta p_f+\boldsymbol\alpha\cdot\widehat{\mathbf P}
+-\frac1c\boldsymbol\Omega\cdot
+(\mathbf L_{\mathrm{orb}}+\mathbf S),
+\qquad \mathbf S=\frac\hbar2\boldsymbol\Sigma.
+$$
+
+The shift supplies the orbital term and the connection supplies spin rotation. The geometry is flat: this checks frame transport, not a sourced rotating gravitational field. A timelike rotating laboratory lies inside its light cylinder; no global positivity claim for the rotating generator is required.
+
+### A homogeneous changing Stage {.unnumbered}
+
+For $N=1$, $w=0$, $E=\operatorname{diag}(a_1,a_2,a_3)$, let $H_i=\partial_0\ln a_i$. The compatible lift has $\mathsf A_0=0$, $\mathsf A_i=(\partial_0a_i)\alpha^i/2$. Consequently $A^i\mathsf A_i=\sum_iH_i I/2$, and its contribution to $Z$ cancels $i\hbar\partial_0\ln W/2$ exactly. The result is
+
+$$
+\widehat M_t=\beta p_f+\sum_i\alpha^i\widehat P_i/a_i.
+$$
+
+For $a_i=a$, identify Expansion's supplied yield $\chi=1/a>0$:
+
+$$
+\widehat M_\chi=\beta p_f+\chi\boldsymbol\alpha\cdot\widehat{\mathbf P},
+\qquad M_\chi=\sqrt{p_f^2+\chi^2|\mathbf P|^2}.
+$$
+
+Spatial homogeneity conserves the canonical labels $P_i$. A narrow packet following an instantaneous branch has $\dot x^i=c\chi^2P_i/M_\chi$. The factor $\chi^2$ follows by differentiating the branch magnitude, not from an additional law. The background history remains supplied, not solved here.
+
+## Bounded unitary evolution and the positive-sector boundary {.unnumbered}
+
+A clean existence statement uses a finite time interval and a compact spatial slice without boundary, for example a periodic control. Assume smooth coefficients with bounded derivatives, $N$ bounded away from zero, and uniformly nondegenerate $E$. The rescaled equation is a linear symmetric hyperbolic system with time matrix $I$. Sobolev Cauchy existence, uniqueness and continuous dependence supply forward and backward evolution for smooth data. The proved continuity law preserves its $L^2$ norm. Extension by density and backward evolution give an onto isometry, hence a unitary propagator of norm one. “Bounded” here describes the propagator and time interval, not the generally unbounded differential generator.
+
+For stationary coefficients this is a strongly continuous unitary group. If also $|w|_h<N$, the derivative symbol has no zero eigenvalue at nonzero covector, so it is elliptic; on the smooth compact slice its self-adjoint realization has domain $H^1$. With a physical boundary one must specify a maximal admissible boundary domain. Requiring zero flux of each individual state alone is not such a specification. MIT-type reflecting boundary problems are an established example under their own hypotheses; see [Große and Murro](https://arxiv.org/abs/1806.06544). Noncompact falloff, singular charts and nonlinear backreaction are outside this bounded statement.
+
+Unitarity does not imply preservation of an instantaneous positive spectral subspace. For one homogeneous momentum mode and a polarization block, write
+
+$$
+h_j=p_f\sigma_z+\chi_jP\sigma_x,\qquad
+\epsilon_j=\sqrt{p_f^2+\chi_j^2P^2}.
+$$
+
+At a sudden change the spinor is continuous. Projecting the old positive state onto the new negative subspace gives
+
+$$
+\begin{aligned}
+P_{+\to-}
+&=\operatorname{tr}\left[
+\frac{I-h_2/\epsilon_2}{2}\frac{I+h_1/\epsilon_1}{2}\right]\\
+&=\frac12\left[1-
+\frac{p_f^2+\chi_1\chi_2P^2}{\epsilon_1\epsilon_2}\right].
+\end{aligned}
+$$
+
+The quench is a separate piecewise-constant control, not a smoothness premise of the Cauchy theorem. For smooth change set $\tan\vartheta=\chi P/p_f$. Rotation to the instantaneous basis supplies an off-diagonal term of magnitude $\hbar|\partial_0\vartheta|/2$, against gap $2\epsilon$. Thus the local adiabatic diagnostic is
+
+$$
+\partial_0\vartheta=\frac{p_fP\partial_0\chi}{p_f^2+\chi^2P^2},
+\qquad \frac{\hbar|\partial_0\vartheta|}{4\epsilon}\ll1.
+$$
+
+A controlled branch approximation also needs a nonclosing gap, sufficiently regular slow history and control of accumulated transitions over the interval; a small instantaneous ratio alone is not a global error theorem. For $p_f=0$, fixed nonzero $P$ and positive $\chi$, the eigendirection is constant and this mixing vanishes. Neither example identifies a massless spinor with a photon or derives particle creation without a field-state prescription.
+
+## Result and return to the chapter {.unnumbered}
+
+The prescribed minimal spinor control has an explicit generator, conserved probability flux and a bounded unitary Cauchy evolution under stated domain hypotheses. It matches the static local/reference shell and Expansion's homogeneous operator. Proposed §§4.5 and 4.9 can use those results while distinguishing full-spinor evolution from branch-following approximations. The construction does not select native microscopic coupling or a self-consistent quantum Stage law.

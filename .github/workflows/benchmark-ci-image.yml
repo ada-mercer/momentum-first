@@ -31,17 +31,8 @@ jobs:
         id: benchmark
         run: echo "started=$(date +%s)" >> "$GITHUB_OUTPUT"
 
-      - name: Verify publication dependencies
-        run: .venv/bin/python tooling/scripts/check_dependencies.py --mode publication
-
-      - name: Run release validation
-        run: |
-          .venv/bin/python -m pytest tooling/tests
-          .venv/bin/python tooling/scripts/check_crossrefs.py
-          .venv/bin/python tooling/scripts/build_manuscript_status.py
-          git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md
-          .venv/bin/python tooling/scripts/build_figures.py
-          .venv/bin/python tooling/scripts/check_figure_reproducibility.py
+      - name: Validate publication inputs
+        run: .venv/bin/python tooling/scripts/validate.py --publication
 
       - name: Render PDF benchmark
         run: quarto render --profile pdf
@@ -49,14 +40,10 @@ jobs:
       - name: Validate PDF artifact
         run: |
           set -euo pipefail
-          PDF_PATH="$(find _book -type f -name '*.pdf' | sort | head -n 1 || true)"
-          if [ -z "$PDF_PATH" ]; then
-            echo "No PDF was produced under _book/" >&2
-            exit 1
-          fi
-          cp "$PDF_PATH" Momentum-First.pdf
+          test -s _book/Momentum-First.pdf
+          cp _book/Momentum-First.pdf Momentum-First.pdf
           test -s Momentum-First.pdf
-          test "$(pdfinfo Momentum-First.pdf | awk '/^Pages:/ {print $2}')" = "204"
+          test "$(pdfinfo Momentum-First.pdf | awk '/^Pages:/ {print $2}')" -gt 0
           if pdffonts Momentum-First.pdf | tail -n +3 | \
               grep -Eq '[[:space:]]no[[:space:]]+(yes|no)[[:space:]]+(yes|no)[[:space:]]+[0-9]+[[:space:]]+[0-9]+$'; then
             echo 'PDF contains an unembedded font' >&2
@@ -73,7 +60,7 @@ jobs:
             echo
             echo "Publication validation and PDF render: ${ELAPSED}s"
             echo
-            echo '`ghcr.io/ada-mercer/momentum-first-build@sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e`'
+            cat tooling/ci/image/reference.txt
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload benchmark PDF

@@ -1,0 +1,44 @@
+## A changing Stage and the one-particle boundary {#sec-qm-changing-stage}
+
+A spatially uniform change of the Stage can alter phase evolution without changing a carrier's spatial momentum label. Translation symmetry preserves that label. The changing Stage alters how the same directed content enters the generator.
+
+The homogeneous case used by Expansion leaves the fermic scale fixed and supplies a positive bosic translation yield $\chi(t)$. Its first-order generator is
+
+$$
+\boxed{\widehat M_\chi
+=\beta p_f+\chi(t)\boldsymbol\alpha\cdot\widehat{\mathbf p}.}
+$$ {#eq-qm-stage-generator}
+
+Here $\mathbf p$ is the conserved spatial label used in Chapter 5. In the coordinate notation of @sec-qm-deformed-space it is $\mathbf p_{\mathrm{coord}}$. The same operator follows from the homogeneous map $\phi^0{}_0=1$, $\phi^a{}_i=\chi^{-1}\delta^a{}_i$, with zero shift and the volume-rescaled state. The connection and changing-volume terms combine as derived in Derivation 4.5A.
+
+At fixed time, the positive branch magnitude is
+
+$$
+M_\chi=\sqrt{p_f^2+\chi^2p^2}.
+$$
+
+For a narrow packet that follows this branch, its translation along axis $k$ is
+
+$$
+\boxed{\dot x_k
+=c\frac{\partial M_\chi}{\partial p_k}
+=\chi^2c\,\frac{p_k}{M_\chi}.}
+$$ {#eq-qm-stage-velocity}
+
+The two factors of $\chi$ follow from differentiating the dressed squared momentum. The conserved label $\mathbf p$ continues to represent the same spatial momentum content. Its local expression $\mathbf p_{\mathrm{local}}=\chi\mathbf p$, phase rate and coordinate translation change with the Stage. The history $\chi(t)$ is supplied here; deriving it requires the Stage's dynamics and its complete source.
+
+### Following an instantaneous branch
+
+A unitary equation preserves the full state norm, but a changing generator need not preserve its instantaneous positive branch. For a massive mode, changing $\chi$ changes the relative weight of the fermic and bosic matrices. It therefore changes their eigenvectors as well as their eigenvalues.
+
+If the change is slow compared with the separation of the spectral branches, and transitions remain small over the interval, a packet can approximately follow one branch. A rapid change can instead mix the instantaneous branches while conserving the full norm. Derivation 4.5A provides both a sudden-change example and the conditions for a controlled slow-history approximation. Particle creation cannot be inferred from this mixing alone; that interpretation requires a field state and a specified particle measurement.
+
+### Beyond a fixed carrier
+
+A one-carrier state retains momentum and internal coherence within a fixed particle description. A field state can also contain coherence between different particle-number sectors, including the vacuum and a particle pair. That information is absent from a one-carrier density operator.
+
+The distinction limits what can be inferred from positive one-carrier source examples. If a source operator were positive in every field state and had exactly zero vacuum expectation, it would annihilate the vacuum. It could then have no matrix element connecting the vacuum to a pair. A source with such pair coherence cannot satisfy all of those conditions at once. The vacuum source mean, its fluctuations and a detector's response must therefore be distinguished rather than identified with one positive density.
+
+Real unbound momentum can still source gravity without forming a stable particle. Waves and propagating spatial deformation already make that possibility part of the physical picture. A fluctuation variance, however, does not by itself establish additional positive mean core. A field description must determine the source and its measurement together.
+
+For the supplied homogeneous history, the packet law above gives a concrete next step. Chapter 5 follows massive and lightlike propagation and compares emitted patterns with material standards at a later epoch. A quantum law for the Stage and a complete field-source theory remain separate tasks.

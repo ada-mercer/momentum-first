@@ -4,13 +4,13 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from .primitives import SUPPORTED_OUTPUT_KINDS
 from .scene_spec import OutputTarget
 
 OUTPUT_SUFFIXES = {
     'canonical_png': '.png',
     'preview_png': '.png',
 }
+SUPPORTED_OUTPUT_KINDS = frozenset(OUTPUT_SUFFIXES)
 
 
 def build_output_path(build_root: Path, family: str, target: OutputTarget) -> Path:

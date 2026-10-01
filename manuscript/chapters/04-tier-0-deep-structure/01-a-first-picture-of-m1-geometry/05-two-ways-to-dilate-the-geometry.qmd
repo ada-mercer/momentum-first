@@ -1,0 +1,45 @@
+## Two Ways to Dilate the Geometry {#sec-t0-dilation}
+
+A cycle can grow in extent without changing how many times a pattern winds around it. Imagine spreading the same repeated pattern along a longer closed path. Each repetition then occupies more length. If the number of wave repetitions stays fixed and momentum scales inversely with their length, the corresponding momentum scale falls.
+
+This supplies a useful conditional interpretation of the torus radii. Increasing the minor scale can depict a reduced fermic scale; increasing the major scale can depict a reduced bosic expression. The inverse-length rule is the extra assumption that connects the drawing to momentum. Without it, enlarging a torus is simply changing a picture.
+
+![Two distinct illustrative dilations. The reference torus is compared with a larger minor, fermionic scale and a larger major, bosonic scale. Each comparison changes one display radius at a time. With a fixed number of repetitions and an inverse-length momentum rule, the enlarged cycle carries a lower corresponding momentum scale. The panels use a common display scale, not a calibrated physical size; they distinguish the two geometric changes rather than specifying a full gravitational trajectory or a cosmological evolution.](/figures/build/part-0-first-picture/two-dilations.png){#fig-t0-dilations fig-align="center" width="100%"}
+
+### Fermionic dilation and gravity
+
+M1 interprets gravitational response through dilation of the internal fermionic geometry and the associated reduction of realized fermic momentum. The minor-cycle change in @fig-t0-dilations gives that interpretation a visible form. It must be read in the same comparison as the momentum change, rather than as a measured enlargement of a particle surface.
+
+In the static, zero-shift comparison of the Gravity chapter, $p_f$ denotes the particle's fermic momentum in the free-space realization chosen as the reference. The temporal coefficient $\phi^0{}_0$ of the deformation map expresses the gravitational change in that common reference:
+
+$$
+p_{f,r}=\phi^0{}_0p_f.
+$$
+
+A value below one gives a smaller reference-expressed fermic scale. For the ideal clock held at rest in that chapter, the reference cycling rate falls by the same factor. The enlarged minor cycle is an illustration of the intended internal mechanism; the momentum and clock relations do not, by themselves, determine a unique physical radius.
+
+A falling carrier must also obey its momentum budget. In the declared stationary free-fall comparison, its reference core $M_r$ remains fixed while the reference-expressed fermic contribution falls and the bosic contribution grows. The torus's internal change therefore belongs beside a changing translation history. It is not a loss of core momentum along that no-exchange trajectory. Stopping and settling the carrier is a separate interaction that transfers momentum to its surroundings.
+
+### Bosonic dilation and expansion
+
+The Expansion chapter changes a different part of the organization. For a supplied homogeneous stage history, the factor $\chi$ dresses the bosic contribution while the fermic scale remains fixed:
+
+$$
+M_\chi=\sqrt{p_f^2+\chi^2p^2}.
+$$
+
+The conserved spatial momentum label is still $p$; the bosic contribution to this generator is expressed as $\chi p$. In the inverse-length picture, decreasing $\chi$ corresponds to a longer bosonic cycle with the same number of repetitions. The major-radius change in @fig-t0-dilations illustrates that distinction: the bosonic geometry changes while the fermionic scale is held fixed.
+
+Translation must follow the dressed generator as well. In the Expansion chapter’s true-frame coordinates, motion along the chosen direction obeys
+
+$$
+\dot x_k=\chi^2c\frac{p_k}{M_\chi}.
+$$
+
+This is the coordinate translation rate; an observer using bound-frame rods expresses the motion in the corresponding local units. At the same conserved $p$ and fermic scale $p_f$, a smaller positive $\chi$ gives a lower forward coordinate speed. The carrier advances less during an equal reference-time interval, even though the bosonic cycle is represented as larger.
+
+![Bosonic dilation and translation at matched momentum content. The left panels show the reference torus and a torus with a larger major scale but the same minor scale. The right panels compare advance during equal intervals of true-frame coordinate time, keeping $p$ and $p_f$ fixed. The lower row uses a smaller positive $\chi$ and the stage-dressed motion law, giving a shorter advance. Dots mark equal time steps, not equal phase steps. The torus-size change uses the illustrative inverse-length interpretation; the displacement comes from the motion law.](/figures/build/part-0-first-picture/bosonic-dilation-response.png){#fig-t0-bosonic-response fig-align="center" width="100%"}
+
+The two comparisons isolate different aspects of translation. @fig-t0-pitch follows a steady cycle and marks the advance per turn. @fig-t0-bosonic-response changes the bosonic geometry while holding momentum content fixed, then compares advance per unit time. Assigning a helix to the second comparison would additionally require the bosic cycle's period at each stage. Once that cadence is specified, the pitch follows from the same distance-per-cycle relation.
+
+The two dilation pictures thus distinguish a gravitational change in the realized fermic scale from an expansion-driven change in the bosic contribution. Each changes a different part of the internal organization, with its effect governed by the corresponding momentum relations.

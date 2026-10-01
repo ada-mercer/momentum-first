@@ -1,0 +1,9 @@
+## What the quantum chapter establishes {#sec-qm-close}
+
+A coherent momentum state carries more than a list of possible readings. Its amplitudes and relative phases determine interference, while its momentum operators preserve the directional shell and its second-moment balance. The six-component display makes common core and opposed imbalance visible without replacing the state that connects them.
+
+Core momentum also organizes quantum evolution. The positive free magnitude and the local first-order spinor generator give complementary representations, with agreement on the free positive branch. Consistent conversion through $\phi$ extends the specified spinor model to deformed space, including the derivative ordering, spin transport and volume factors needed for probability conservation. Its slow envelope and rays recover the corresponding Schrödinger and gravitational particle limits; matched barriers distinguish physical spatial variation from a change of normalization.
+
+A coherent internal process can turn that evolution into a clock signal. Its observable recurrence depends on relative phase and a specified internal coupling. A reciprocal gravitational description asks more: the same interaction must determine the response and the complete coherent source. The scalar and spinor examples make that requirement sharper, but do not yet select the microscopic M1 interaction or a quantum law for the Stage.
+
+The next chapter takes the homogeneous Stage history as supplied. It asks how conserved spatial momentum translates and how signals are compared when the bosic yield changes. The quantum generator now provides the link from that changing yield to phase and motion.

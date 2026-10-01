@@ -13,6 +13,7 @@ or let it run automatically at Quarto pre-render (wired in `_quarto.yml`).
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -61,6 +62,9 @@ def _row(entry: dict) -> str:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--check", action="store_true", help="Check without rewriting the table")
+    args = parser.parse_args()
     if not LEDGER.exists():
         print(f"[error] missing ledger: {LEDGER}", file=sys.stderr)
         return 1
@@ -83,8 +87,15 @@ def main() -> int:
         lines.append(_row(appx))
 
     lines.append("")
+    rendered = "\n".join(lines)
+    if args.check:
+        if not OUTPUT.exists() or OUTPUT.read_text(encoding="utf-8") != rendered:
+            print("[fail] manuscript status table is stale; run this script without --check")
+            return 1
+        print("[ok] manuscript status table matches its ledger (not a scientific review)")
+        return 0
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT.write_text("\n".join(lines), encoding="utf-8")
+    OUTPUT.write_text(rendered, encoding="utf-8")
     print(f"[ok] wrote {OUTPUT.relative_to(ROOT)} ({len(data.get('chapters', []) or [])} chapters)")
     return 0
 

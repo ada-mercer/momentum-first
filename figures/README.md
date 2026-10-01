@@ -45,12 +45,15 @@ review record explicitly promotes them.
 Generate the registered figure set:
 
 ```bash
-python3 figures/scripts/generate_all.py
+.venv/bin/python tooling/scripts/build_figures.py
 ```
 
 Set `FIGURES_PYTHON` when generation should use a particular interpreter. The
 generator otherwise prefers the repository `.venv` and then the current Python
-interpreter.
+interpreter. `python3 figures/scripts/generate_all.py` remains a compatibility
+entrypoint to this same builder, not a second registry parser or renderer.
+The primitive-field registry calls its Python renderer directly; its former R
+entrypoint is retained only for older callers.
 
 Render or check native 3D families:
 
@@ -82,3 +85,10 @@ Do not move one-off family logic into the shared layer prematurely.
 Project-wide figure and generated-output policy lives in
 [`../docs/STANDARDS.md`](../docs/STANDARDS.md). Dependency setup lives in
 [`../docs/DEPENDENCIES.md`](../docs/DEPENDENCIES.md).
+
+## Adopted native renders in the manuscript registry
+
+An adopted native 3D render can additionally appear in `figures.yml` with a
+`.provenance.md` source as a checked static manuscript asset. The geometry3d
+manifest owns explicit regeneration, while ordinary manuscript figure builds
+verify the accepted PNG without introducing a VTK/GPU dependency.

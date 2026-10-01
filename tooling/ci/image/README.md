@@ -13,11 +13,10 @@ Nimbus Sans is installed explicitly because base R resolves its `Helvetica`
 device family through fontconfig. Omitting that package changes two canonical
 R-rendered PNGs even when every R package version is identical.
 
-Current production reference:
-
-```text
-ghcr.io/ada-mercer/momentum-first-build@sha256:b84ecafd7849b0edaaf82f3faf699dfb9780f32f522dfc6fe477752f7566ee4e
-```
+The maintained production reference is [`reference.txt`](reference.txt).
+Actions must know a container image before checkout, so its four consumer jobs
+retain literal digest-pinned copies. `sync_ci_image.py` and repository validation
+check those copies; they are not independent configuration choices.
 
 ## Update procedure
 
@@ -33,5 +32,16 @@ ghcr.io/ada-mercer/momentum-first-build@sha256:b84ecafd7849b0edaaf82f3faf699dfb9
 
 3. Build and test the image locally.
 4. Publish it through the `Build CI Image` workflow.
-5. Benchmark figures and PDF rendering before updating any production workflow
-   digest.
+5. Benchmark the candidate image locally through figures and PDF rendering before
+   adopting its digest. In an isolated checkout, update the reference and consumer
+   copies together:
+
+   ```bash
+   python3 tooling/scripts/sync_ci_image.py --set ghcr.io/ada-mercer/momentum-first-build@sha256:REPLACE_WITH_VERIFIED_64_HEX_DIGEST
+   python3 tooling/scripts/sync_ci_image.py
+   ```
+
+   The script does not pull, build or publish an image. The manual benchmark
+   workflow verifies the digest selected by that checkout; it checks a nonempty
+   PDF and embedded fonts, not a fixed manuscript page count. Publication of a
+   workflow change or an image remains a separate authorized operation.

@@ -1,0 +1,11 @@
+## Quantum momentum and interference {#sec-qm-opening}
+
+Two preparations can give the same momentum readings and still place their interference fringes in different positions. Take a coherent superposition of two momentum components. Changing their relative phase leaves the probability of either momentum unchanged, but moves the places where the amplitudes reinforce or cancel. A list of momentum probabilities therefore leaves out something physically observable.
+
+The directional shell from Foundations and Gravity remains useful. It tells how a carrier's common core and signed translation appear in opposed directions. Gravity then uses correlations between those components to distinguish, for example, transport along one axis from transport along another. Quantum mechanics adds a further requirement: a description must retain the phases that connect the momentum components of a state.
+
+The object is now a phase-bearing state, $\Psi$, rather than a trajectory with one definite momentum. Momentum operators act on its amplitudes, and an evolution generator advances their phases. M1 keeps the usual quantum state and probability rules while writing that generator in momentum units. The inherited shell supplies its free magnitude; a first-order spinor realization supplies a local wave equation.
+
+Deformed space changes how that wave propagates and how its phase is compared. The same local and reference distinctions used for particles must therefore survive in the quantum equation. They also matter for a physical clock: a turning phase becomes a clock signal only when an observable internal process repeats.
+
+The reverse gravitational question is just as important. A coherent state that responds to deformation must also enter a consistent account of the momentum that sources it. Its source can depend on interference, transport and internal stresses that no mean shell contains. The chapter develops the propagation and clock examples first, then uses them to make this reciprocal source problem precise.

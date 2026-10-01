@@ -2,7 +2,7 @@
 
 Status: working draft
 Created: 2026-03-28
-Last updated: 2026-08-03
+Last updated: 2026-10-01 (Part 0 integration note; other planning history retained)
 Purpose: establish and refine the book architecture while keeping the rendered Quarto hierarchy, M1 maturity levels, and tier logic aligned.
 
 ## Dynamic document note
@@ -285,9 +285,15 @@ Boundary: this belongs in Tier 3 because it is a test/prediction channel, not a 
 
 ### Tier 0 — Deep Structure and Sub-Particle Models
 
-**Status:** provisional later part; not yet detailed chapter-by-chapter.
-
-Recommended public title: **Tier 0 — Deep Structure and Sub-Particle Models**.
+**Current integration (2026-10-01):** Part 0 — Deep Structure: Cycles, States and Space.
+The owner-selected three-chapter route is A First Picture of M1 Geometry;
+Beyond the Torus: Phase, Orientation and Interaction; and M1, Strings and the
+Structure of Space. Only the opening chapter is adopted and rendered, after
+the current Tier 2 body and before appendices. Tier 3 remains planned, not an
+empty rendered part. The chapter-local README records provisional folder and
+rendered-number handling without allocating the held background-dynamics chapter.
+The older cluster below is retained as supporting topic coverage, not the
+current chapter list.
 
 **Job:** study candidate underlying space/sub-particle structures under M1 constraints after the Tier 2 engines and Tier 3 test targets have clarified what the deeper model must explain.
 
@@ -295,7 +301,7 @@ Recommended public title: **Tier 0 — Deep Structure and Sub-Particle Models**.
 
 **Tier 0 discipline rule:** M1 remains primary. BFSS, string theory, torus geometry, closure/resonance models, and internal geometry are tested as candidate support structures. They do not redefine `p_f`, `p`, `M`, ADMC, or the source -> field -> observer grammar.
 
-Provisional chapter cluster, intentionally light for now:
+Earlier provisional topic cluster (superseded as chapter architecture):
 
 1. **What a Deeper Model Must Explain**
    - collected constraints inherited from Tier 1, Tier 2, and Tier 3;

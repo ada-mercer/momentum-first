@@ -69,13 +69,13 @@ For an isolated system, define the two system readings
 $$
 \mathcal P_k^\pm
 =
-\sum_i \bigl(p_k^\pm\bigr)^{(i)}.
+\sum_i p_{k,i}^\pm.
 $$
 
 ADMC conserves $\mathcal P_k^+$ for every oriented unit direction $\hat{k}$ and therefore conserves $\mathcal P_k^-$ for the reversed orientation $-\hat{k}$. Applying the inverse map to the two system readings gives
 
 $$
-\sum_i M^{(i)}
+\sum_i M_i
 =
 \tfrac12\left(
 \mathcal P_k^+
@@ -87,7 +87,7 @@ $$
 and
 
 $$
-\sum_i p_k^{(i)}
+\sum_i p_{k,i}
 =
 \mathcal P_k^+
 -

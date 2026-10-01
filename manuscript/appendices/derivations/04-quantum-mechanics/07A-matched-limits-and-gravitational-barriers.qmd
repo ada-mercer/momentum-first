@@ -1,0 +1,224 @@
+# Derivation 4.7A — Matched limits and gravitational barriers {#sec-derivation-04-07a-matched-limits .unnumbered}
+
+## Purpose and comparison conditions {.unnumbered}
+
+The quantum generator must recover low-speed wave mechanics and classical rays before a tunnelling comparison can test anything beyond them. This derivation supports proposed §4.7, “Correspondence and controlled limits.” It derives those limits from the corrected spinor generator, then compares barriers with the preparation, geometry, apparatus and flux normalization held explicitly fixed.
+
+Use the minimally coupled prescribed-background model of Derivation 4.5A, not an independently changed local fermic coefficient. An external barrier and its support are supplied classical apparatus; this is not a closed source calculation. No Klein/pair-production channel is included. The envelope, ray and exact scattering calculations below have different approximation assumptions, stated where used.
+
+## The slow free envelope {.unnumbered}
+
+In flat space write the four-spinor in two-spinor blocks after removing the rest phase,
+
+$$
+\psi=e^{-icp_ft/\hbar}\binom{\varphi}{\xi}.
+$$
+
+The first-order equation gives
+
+$$
+\frac{i\hbar}{c}\partial_t\varphi
+=\boldsymbol\sigma\cdot\widehat{\mathbf P}\,\xi,
+\qquad
+\frac{i\hbar}{c}\partial_t\xi
+=\boldsymbol\sigma\cdot\widehat{\mathbf P}\,\varphi-2p_f\xi.
+$$
+
+For a positive-sector envelope with $|P|/p_f\ll1$ and time variation small compared with $cp_f/\hbar$, solve the second equation iteratively:
+
+$$
+\xi=\frac{\boldsymbol\sigma\cdot\widehat{\mathbf P}}{2p_f}\varphi
++\text{higher-order terms}.
+$$
+
+Because the free derivatives commute, $(\boldsymbol\sigma\cdot\widehat{\mathbf P})^2=\widehat{\mathbf P}^{\,2}$. Thus
+
+$$
+i\hbar\partial_t\varphi
+=\frac{c\widehat{\mathbf P}^{\,2}}{2p_f}\varphi
+=-\frac{\hbar^2}{2m_0}\nabla^2\varphi,
+\qquad p_f=m_0c.
+$$
+
+The branch expansion independently checks the approximation:
+
+$$
+M_+-p_f=\frac{P^2}{2p_f}-\frac{P^4}{8p_f^3}
++O(P^6/p_f^5).
+$$
+
+The leading envelope has a second-order spatial derivative because elimination of the small component multiplies two first-order momentum operators, not because the relativistic generator has changed its order.
+
+## A controlled gravitational envelope and its ordering {.unnumbered}
+
+For a static isotropic coframe $E=bI$, set $F=N/b$ and
+
+$$
+q_i=\frac12\{F,\widehat P_i\},\qquad
+\mathcal Q=\sigma_iq_i.
+$$
+
+Here $q_i$ denotes the **reference-expressed** translation operator, not local orthonormal momentum. For a stationary mode with generator value $C$, the two block equations are
+
+$$
+(C-Np_f)\varphi=\mathcal Q\xi,\qquad
+(C+Np_f)\xi=\mathcal Q\varphi.
+$$
+
+Where the multiplication operator $C+Np_f$ is bounded away from zero, exact elimination gives
+
+$$
+(C-Np_f)\varphi
+=\mathcal Q(C+Np_f)^{-1}\mathcal Q\varphi.
+$$
+
+This formula preserves the order of the varying coefficient. A local approximation $C\simeq Np_f$ inside the denominator gives $\mathcal Q(2Np_f)^{-1}\mathcal Q$ only in a region where the local kinetic excess and gradient corrections are controlled. It is not a globally valid envelope for a deep well with large variation of $N$.
+
+For a weak-field envelope choose $N=1+\nu$, $b=1+\lambda$, with $\nu,\lambda=O(\varepsilon^2)$, $|P|/p_f=O(\varepsilon)$ and $\hbar/(p_f\ell)=O(\varepsilon)$ for the variation scale $\ell$. Keep derivatives of the weak coefficients at the corresponding smooth scale. Then $\mathcal Q=\boldsymbol\sigma\cdot\widehat{\mathbf P}+O(p_f\varepsilon^3)$, and after removing the constant free rest phase,
+
+$$
+\frac{i\hbar}{c}\partial_t\varphi
+=\left[p_f\nu+\frac{\widehat{\mathbf P}^{\,2}}{2p_f}\right]\varphi
++O(p_f\varepsilon^4).
+$$
+
+Writing $\Phi=c^2\nu$ only for the Newtonian comparison gives the standard leading terms $m_0\Phi+\widehat P^2/(2m_0)$ in energy units. In a constant but not necessarily weak patch, the kinetic coefficient is $N/(2p_fb^2)$, not $1/(2Np_fb^2)$. A coefficient obtained by reducing only the fermic slot uses an inconsistent frame conversion.
+
+Gradient terms are not absent from the exact operator. For example,
+
+$$
+[q_i,q_j]=-i\hbar\bigl[(\partial_iF)q_j-(\partial_jF)q_i\bigr],
+$$
+$$
+\begin{aligned}
+\widehat M_t^2={}&N^2p_f^2+\sum_iq_i^2
++i\hbar p_fF\beta\boldsymbol\alpha\cdot\nabla N\\
+&+\hbar\boldsymbol\Sigma\cdot(\nabla F\times\mathbf q).
+\end{aligned}
+$$
+
+These follow by applying the derivatives to smooth test spinors before simplifying. They belong to the ordered spinor control; discarding them is an approximation, not a scalar-shell identity.
+
+## WKB rays from the same equation {.unnumbered}
+
+For $\Psi=a e^{iS/\hbar}$, the leading covariant equation is $(-\gamma^\mu\partial_\mu S-p_f)a=0$. Multiplication by the conjugate factor and the declared Clifford relation give
+
+$$
+g^{\mu\nu}\partial_\mu S\partial_\nu S=-p_f^2.
+$$
+
+Its future branch in the Stage-adapted frame is
+
+$$
+-\partial_0S=M_t
+=N\sqrt{p_f^2+h^{ij}P_iP_j}-w^iP_i.
+$$
+
+The rays satisfy $\dot x^i=c\partial M_t/\partial P_i$ and $\dot P_i=-c\partial M_t/\partial x^i$. Thus the corrected generator returns the same declared free-carrier trajectory law. Connection terms transport amplitude and spin at the next WKB order. This approximation fails at turning points or when gradients compete with the phase scale; it is not used to obtain the exact square-barrier answer below.
+
+## Specify a matched constant-lapse barrier {.unnumbered}
+
+Take a one-dimensional polarization block, proper distance $\ell$, spatial coframe $b=1$ and constant $N>0$. Let $u(\ell)$ be the local additive momentum coefficient of an electrostatic barrier. Its reference contribution is $Nu$, so
+
+$$
+\widehat M_t=\sigma_zNp_f+
+\frac12\{N,\sigma_x\widehat P_\ell\}+NuI.
+$$
+
+Compare the **same** local incident value $\epsilon=C/N>p_f$, local height $u_0$, proper width $d$, fermic scale and apparatus standards at each $N$. The stationary equation divided by $N$ is
+
+$$
+[-i\hbar\sigma_x\partial_\ell+p_f\sigma_z+u(\ell)]\psi
+=\epsilon\psi.
+$$
+
+No lapse remains. Require $|\epsilon-u_0|<p_f$ inside the barrier, and define
+
+$$
+k=\sqrt{\epsilon^2-p_f^2},\qquad
+\kappa=\sqrt{p_f^2-(\epsilon-u_0)^2},\qquad
+r_0=\frac{k}{\epsilon+p_f}.
+$$
+
+These $k,\kappa$ have momentum units. Exterior spinors $v_\pm=(1,\pm r_0)^{\mathsf T}$ have local flux $\pm2cr_0$. Unit local-flux modes are $v_\pm/\sqrt{2cr_0}$; unit reference-flux modes use $\sqrt{2cNr_0}$ instead. Identical exterior regions make the incoming/outgoing velocity factors cancel in transmission, but that cancellation must be checked rather than assumed for unequal endpoints.
+
+## Exact transfer and flux {.unnumbered}
+
+Inside the constant barrier,
+
+$$
+\partial_\ell\psi=B\psi,\qquad
+B=\frac1\hbar[i(\epsilon-u_0)\sigma_x-p_f\sigma_y],
+\qquad B^2=\frac{\kappa^2}{\hbar^2}I.
+$$
+
+Thus the interface-to-interface transfer is
+
+$$
+Y=\cosh z\,I+\frac{\hbar B}{\kappa}\sinh z,
+\qquad z=\kappa d/\hbar.
+$$
+
+Let $V=(v_+,v_-)$ and $S=V^{-1}YV$. Matching at the two faces gives $S(1,r)^{\mathsf T}=(t,0)^{\mathsf T}$, up to the irrelevant exterior propagation phase. Therefore $r=-S_{21}/S_{22}$ and $t=\det S/S_{22}$. Since $\operatorname{tr}B=0$, $\det S=1$. Direct multiplication gives
+
+$$
+S_{22}=\cosh z-i\frac{\epsilon(\epsilon-u_0)-p_f^2}{k\kappa}\sinh z.
+$$
+
+Using
+
+$$
+k^2\kappa^2+[\epsilon(\epsilon-u_0)-p_f^2]^2=p_f^2u_0^2
+$$
+
+yields the exact normalized transmission,
+
+$$
+\boxed{T=|t|^2=
+\left[1+\frac{p_f^2u_0^2}{k^2\kappa^2}\sinh^2(\kappa d/\hbar)\right]^{-1}.}
+$$
+
+The identity $B^\dagger\sigma_x+\sigma_xB=0$ proves $Y^\dagger\sigma_xY=\sigma_x$, hence $R+T=1$. This derivation includes matching and flux, not just an exponential estimate.
+
+For $p_f=1$, $\epsilon=1.2$, $u_0=0.8$, $d=2$ and $\hbar=0.6$, the result is $T=0.00512540161548$ at $N=0.4,0.6,0.8,1$. Constant lapse is a time normalization of flat geometry, so it cannot create an additional matched local effect. A different physical local interaction is a different model, not a consequence of changing reference units.
+
+## A smooth nonuniform gravitational control {.unnumbered}
+
+Now fix the **distant** incident value $C=1.2$ and use
+
+$$
+b_a(x)=\begin{cases}
+\exp[1-1/(1-(x/a)^2)],&|x|<a,\\0,&|x|\geq a,
+\end{cases}
+$$
+$$
+N(x)=1-\delta b_4(x),\qquad u(x)=0.8b_2(x),
+\qquad p_f=1,\quad\hbar=0.6.
+$$
+
+The bump notation $b_a$ here denotes the stated profile; the spatial coframe remains one. Integrate from $x=-6$ to $6$, where $N=1$ and $u=0$. The stationary raw spinor and flux-normalized variable $f=\sqrt N\psi$ obey
+
+$$
+\partial_x\psi=\left[B(x)-\frac{N'}{2N}I\right]\psi,
+\qquad
+\partial_x f=B(x)f,
+$$
+$$
+B(x)=\frac1\hbar[i(C/N-u)\sigma_x-p_f\sigma_y].
+$$
+
+This $\sqrt N$ transformation normalizes scattering flux; it is not the spatial-volume transformation $W^{1/2}$, since $W=1$ here. Independently integrate both matrix equations from identity initial data, transform to the same exterior $V$ basis, and extract $r,t$ as above. A fourth-order Runge–Kutta integration gives:
+
+| $\delta$ | $T$, 2,000 steps | $T$, 4,000 steps | Absolute change |
+|---:|---:|---:|---:|
+| 0 | 0.000918942198793 | 0.000918942198686 | $1.08\times10^{-13}$ |
+| 0.15 | 0.005381627568409 | 0.005381627568223 | $1.87\times10^{-13}$ |
+| 0.35 | 0.709836341388783 | 0.709836341280029 | $1.09\times10^{-10}$ |
+
+At 4,000 steps the maximum $|R+T-1|$ is $5.26\times10^{-13}$; the largest raw/flux-variable difference in $T$ is below $9.3\times10^{-14}$. These numbers come from the reproduced calculation, with acceptance limits $10^{-8}$ for grid change and flux balance, and $10^{-9}$ for representation agreement. The finite matrices preserve flux analytically; their numerical residuals test the implementation. Very small grid differences can reach roundoff, so these data are an empirical convergence control, not a rigorous global truncation-error bound.
+
+The local forbidden momentum is $\kappa_{\mathrm{loc}}^2=p_f^2-(C/N-u)^2$. In a slowly varying forbidden interval, the WKB amplitude contains $\exp[-\int\kappa_{\mathrm{loc}}\,d\ell/\hbar]$. A reference normal momentum would need division by $N$ before use in that proper-distance exponent. As $N$ varies, fixed distant preparation means a changing local incident value; substantial transmission changes are therefore possible. The numerical calculation follows the full two-component equation, including turning regions where the WKB form alone is insufficient.
+
+## Result and return to the chapter {.unnumbered}
+
+The corrected generator recovers the Schrödinger envelope and the prescribed metric ray law. It also predicts ordinary sensitivity to a nonuniform gravitational background. The matched constant-lapse calculation gives no extra tunnelling effect from lapse dressing alone. Proposed §4.7 can retain the physical sensitivity of tunnelling without treating an unmatched normalization as a new force or a violation of local correspondence. A native additional effect would need a separately specified interaction, source and matched apparatus comparison.

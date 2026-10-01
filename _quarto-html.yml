@@ -1,51 +1,7 @@
 book:
   sidebar:
     collapse-level: 2
-    # Quarto books flatten nested sidebar sections. The HTML include below
-    # restores the four appendix chapter groups as progressive enhancement.
-    contents:
-      - text: Preface
-        href: manuscript/chapters/00-front-matter/00-preface/index.qmd
-      - section: Tier 1 — Foundations
-        contents:
-          - manuscript/chapters/01-tier-1-foundations/01-introduction/index.qmd
-          - manuscript/chapters/01-tier-1-foundations/02-foundations/index.qmd
-      - section: Tier 2 — Engines
-        contents:
-          - manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd
-          - manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/index.qmd
-          - manuscript/chapters/02-tier-2-engines/05-expansion/index.qmd
-      - section: Appendices
-        contents:
-          - section: Chapter 2 — Foundations
-            contents:
-              - manuscript/appendices/derivations/02-foundations/03A-directional-positive-split-uniqueness.qmd
-          - section: Chapter 3 — Gravity
-            contents:
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-carrier-source-map.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03B-null-probe-diagnostic.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03C-momentum-manifestations.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-stationary-source-to-field-map.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04B-scalar-carrier-readout-consistency.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04C-reciprocal-multisector-response-obstruction.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-local-observer-bookkeeping.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06A-stationary-correspondence-calibration.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06B-frame-drag-coefficient-audit.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06C-boost-consistency-shift-coefficient.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/06D-conserved-radiation-cavity-discriminator.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07A-scalar-nonstationary-action-candidate.qmd
-              - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/07B-directional-and-completion-boundaries.qmd
-          - section: Chapter 4 — Quantum Mechanics
-            contents:
-              - manuscript/appendices/derivations/04-quantum-mechanics/08A-strong-gravity-tunneling-sensitivity.qmd
-          - section: Chapter 5 — Expansion
-            contents:
-              - manuscript/appendices/derivations/05-expansion/02A-bosic-slot-stage-dressing-and-chi2-group-velocity.qmd
-              - manuscript/appendices/derivations/05-expansion/03A-free-carrier-correspondence-under-yield-history.qmd
-              - manuscript/appendices/derivations/05-expansion/04A-lightlike-propagation-and-matched-endpoint-standards.qmd
-              - manuscript/appendices/derivations/05-expansion/06A-local-covariance-and-scoped-sector-realizations.qmd
-      - text: Manuscript status
-        href: manuscript/backmatter/manuscript-status.qmd
+    # Contents come from book.chapters; the include below groups appendices.
 
 format:
   html:
@@ -55,11 +11,3 @@ format:
       - rendering/includes/html/appendix-sidebar-groups.html
     toc: true
     toc-depth: 2
-    # number-sections: true # Automatically number headings
-    # code-fold: true       # Allows readers to collapse/expand code blocks
-    # code-tools: true      # Adds a "Copy Code" button to blocks
-    # search: true          # Enables a search bar for the HTML book
-    # comments:             # Enable commenting systems for readers
-    #   hypothesis: true    # Web annotations
-    #   giscus:             # GitHub Discussions integration
-    #     repo: yourusername/momentum-first

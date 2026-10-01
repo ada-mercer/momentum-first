@@ -13,8 +13,15 @@ on:
       - 'manuscript/**'
       - 'rendering/**'
       - 'figures/build/**'
-      - 'tooling/scripts/build_manuscript_status.py'
-      - '.github/workflows/deploy-book-site.yml'
+      - 'tooling/**'
+      - 'docs/provenance/**'
+      - 'figures/figures.yml'
+      - 'figures/src/**'
+      - 'figures/lib/**'
+      - '.github/workflows/**'
+      - 'VERSION'
+      - 'CITATION.cff'
+      - '.zenodo.json'
 
 permissions:
   contents: read
@@ -52,14 +59,11 @@ jobs:
         with:
           version: '1.9.36'
 
-      - name: Verify HTML render dependencies
-        run: |
-          python3 tooling/scripts/check_dependencies.py --mode minimal
-          quarto --version
+      - name: Validate before deploying
+        run: .venv/bin/python tooling/scripts/validate.py
 
       - name: Render HTML book
         run: |
-          export PATH="$HOME/.local/bin:$PATH"
           quarto render --profile html
 
       - name: Add latest release PDF to site artifact

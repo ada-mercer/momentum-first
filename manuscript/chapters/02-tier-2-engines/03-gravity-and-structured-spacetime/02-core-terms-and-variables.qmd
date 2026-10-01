@@ -1,141 +1,95 @@
-## Core Terms and Variables
+## Core Terms and Variables {#sec-gravity-terms}
 
-The opening chapter kept to the physical claim: gravity begins when momentum content changes the relational stage. Clocks, paths, and transported momenta are then read inside altered local conditions.
+The notation distinguishes sources, spatial deformation, the map between local and reference descriptions, and the particles realized in that setting. Each domain has its own table. Within a table, the inputs come before the quantities built from them, with related components kept together. The label $a$ identifies one particle, also called a carrier.
 
-This section does not yet derive the gravity equations. It fixes the vocabulary needed to state them. The gravity chapter will use three layers:
+### Gravitational sources
+
+| Symbol | Name | Definition or role |
+|:---|:---|:---|
+| **Individual particles** | | |
+| $M_a$ | Realized carrier core momentum | Positive local core of particle $a$, including its internal and translational contributions. |
+| $p_a^i$ | Realized translation | Local spatial momentum, with $p_{i,a}=\delta_{ij}p_a^j$. |
+| $p_{k,a}$ | Signed directional projection | $p_{k,a}=\mathbf p_a\mathbin{\cdot}\hat{k}$ for an oriented unit direction $\hat{k}$. |
+| $p_{k,a}^{\pm}$ | Opposed carrier readings | $p_{k,a}^{\pm}=M_a\pm p_{k,a}/2$. |
+| **Source construction** | | |
+| $j_a{}^{\mu\nu}$ | Single-carrier source kernel | $j_a{}^{\mu\nu}=p_a^\mu p_a^\nu/M_a$, formed before aggregation. |
+| $\langle\cdot\rangle$ | Local source moment | Sum with nonnegative weights per physical volume in the declared source frame. |
+| $\mathcal J_k^{\pm}$ | Opposed source channels | $\mathcal J_k^{\pm}=\langle\sum_a p_{k,a}^{\pm}\rangle$. |
+| $J^{\mu\nu}$ | Local momentum source tensor | Actual momentum content in a region of space, $J^{\mu\nu}=\langle\sum_a j_a{}^{\mu\nu}\rangle$. |
+| **Content, direction and transport** | | |
+| $\mathcal M$ | Additive source content | $\mathcal M=\langle\sum_a M_a\rangle=J^{00}$. |
+| $\mathcal P^i$ | Directional source imbalance | $\mathcal P^i=\langle\sum_a p_a^i\rangle=J^{i0}$. |
+| $\mathcal C^{ij}$ | Momentum transport | $\mathcal C^{ij}=\langle\sum_a p_a^ip_a^j/M_a\rangle=J^{ij}$. |
+
+Here $p_a^\mu=(M_a,p_a^i)$ collects the local momentum components, and $p_{\mu,a}=(-M_a,p_{i,a})$ lowers the index with the local signature. Lowercase $j$ records one carrier; uppercase $J$ records the aggregate. The calligraphic symbols distinguish population quantities from individual momenta. The blocks $\mathcal M$, $\mathcal P^i$ and $\mathcal C^{ij}$ belong to one source tensor. Source and deformation use all-upper components; the coframe remains a mixed-index map.
+
+The source moment is taken at one event, in one declared frame. It is not a direct sum of components at separated locations. The particle construction in §3.3 supplies the kinetic case. Internal transport, binding and supporting stresses need their own consistent contributions to the same source; they are not fixed by the free-particle sum alone.
+
+### Spatial deformation
+
+
+| Symbol            | Name                               | Definition or role                                                          |
+| :---------------- | :--------------------------------- | :-------------------------------------------------------------------------- |
+| $\theta^{\mu\nu}$ | Deformation tensor                 | Collects the common, directional and spatial stretch/shear components.      |
+| $\theta^{00}$     | Common deformation component       | Core-content response; sourced by $\mathcal M$ in the weak-field equations. |
+| $\theta^{0i}$     | Directional deformation components | Temporal–spatial entries, with $\theta^{i0}=\theta^{0i}$.                   |
+| $\theta^{ij}$     | Spatial stretch/shear block        | Spatial components of the same deformation array.                           |
+
+The array $\theta$ describes deformation relative to a specified reference. Its primary all-upper form is symmetric; reference-metric lowering is a separate operation.
+
+### Local and reference geometry
+
+| Symbol | Name | Definition or role |
+|:---|:---|:---|
+| **Conversion map** | | |
+| $\phi^\mu{}_\nu$ | Operational map | Converts coordinate increments $dx^\nu$ into local increments $d\ell^\mu$. |
+| $(\phi^{-1})^\mu{}_\nu$ | Inverse operational map | Converts local increments back into coordinate increments. |
+| **Components of the map** | | |
+| $\phi^0{}_0$ | Temporal map component | Temporal conversion; weakly $\phi^0{}_0\simeq1-\theta^{00}-\delta_{kl}\theta^{kl}$. Distinct from a physical clock's cycle rate. |
+| $\phi^i{}_0$ | Spatial–temporal map components | Local spatial increments contributed by a coordinate-time increment. |
+| $\phi^i{}_j$ | Spatial map components | Convert coordinate spatial increments into local spatial increments. |
+| **Local increments and interval** | | |
+| $d\ell^\mu$ | Local temporal and spatial increments | $d\ell^\mu=\phi^\mu{}_\nu dx^\nu$; the temporal increment in time units is $d\ell^0/c$. |
+| $g_{\mu\nu}$ | Metric shadow | Interval representation derived from $\phi$; $g^{\mu\nu}$ is its inverse. |
+
+The map connects reference displacements to local geometry:
 
 $$
-\text{source} \to \text{field} \to \text{local readout}.
-$$
-
-The source layer names the momentum content that acts gravitationally. The field layer names the variables used to represent the gravitational structure produced by that source. The local-readout layer names how particles, clocks, and transported momenta are read once that structure is in place.
-
-### Source-side variables
-
-The source layer begins from the directional shell readings used in Foundations. For an oriented unit direction $\hat{k}$, the carrier readings are
-
-$$
-p_k^\pm=M\pm\frac{1}{2}p_k.
-$$
-
-For gravitational sourcing, write the densities of these opposed readings as
-
-$$
-\mathcal{J}_k^+,
+d\ell^\mu=\phi^\mu{}_\nu dx^\nu,
 \qquad
-\mathcal{J}_k^-.
-$$
+g_{\mu\nu}=\eta_{\alpha\beta}\phi^\alpha{}_\mu\phi^\beta{}_\nu.
+$$ {#eq-gravity-operational-map}
 
-Each is a local source-density field with units of kg/(s m$^2$) — momentum content per unit volume, sorted by directional sense. They are the field image of the two opposed shell readings accumulated over the carriers present at a point. Each channel is a positive directional total in its own right, never a signed component. Chapter 3 adopts this identification as its source postulate, SI; the precise statement and its free-carrier consequences are developed in the next section.
+The upper slot of $\phi$ is local output and the lower slot is coordinate input; the inverse reverses that direction. Its components belong to one map, and $g$ is derived from it, not independently chosen. The Stage-adapted form used below has $\phi^0{}_i=0$. A material clock or ruler still needs a model of the motion or equilibrium that produces its readings.
 
-From these, two combinations are extracted:
+### Particle realization and internal cycles
 
-$$
-\mathcal{M}_k = \frac{\mathcal{J}_k^+ + \mathcal{J}_k^-}{2},
-\qquad
-\mathcal{P}_k = \mathcal{J}_k^+ - \mathcal{J}_k^-.
-$$
+| Symbol | Name | Definition or role |
+|:---|:---|:---|
+| **Particle identity and location** | | |
+| $p_f$ | Intrinsic fermic momentum | Fixed identity scale; written $p_{f,a}$ when identifying a particular particle. |
+| $x_a^\mu$ | Carrier event / trajectory | Position in the declared coordinates, where the deformation is evaluated; $x^0=ct$. |
+| $u_a^\mu$ | Proper-time four-velocity | $u_a^\mu=dx_a^\mu/d\tau_a$, with $g_{\mu\nu}u_a^\mu u_a^\nu=-c^2$. |
+| **Realized momentum configuration** | | |
+| $p_a^i$ | Realized translation | Local spatial momentum, with $p_{i,a}=\delta_{ij}p_a^j$. |
+| $M_a$ | Realized carrier core momentum | Positive local core; the free-carrier approximation uses $M_a=\sqrt{p_{f,a}^2+p_a^ip_{i,a}}$. |
+| $p_a^\mu,\ p_{\mu,a}$ | Carrier four-momentum | One momentum family in the declared frame; local $p_a^0=M_a$. |
 
-The quantity $\mathcal{M}_k$ is the even or additive source channel. It captures the source role that feeds the scalar-well side of gravity. The quantity $\mathcal{P}_k$ is the odd or directional source channel. It captures the imbalance associated with directional and rotational structure.
+| **Reference shell (static, zero shift)** | | |
+| $p_r^\mu$ | Reference-expressed four-momentum | $p_r^\mu=\phi^0{}_0(p^\mu)_{\mathrm{local}}$, in the map's local output axes with the common distant normalization. |
+| $M_r=-p_0$ | Reference core | $M_r=p_r^0=\phi^0{}_0M$; $p_0$ is the temporal coordinate covector component. |
+| $p_r$ | Reference-expressed translation | $p_r=\sqrt{\delta_{ij}p_r^ip_r^j}$, the magnitude of the reference-expressed spatial momentum. |
+| $p_{k,r}$ | Signed reference projection | $p_{k,r}=\delta_{ij}k^ip_r^j$ for a unit direction in the same local output axes. |
+| $p_{k,r}^{\pm}$ | Opposed reference-shell momenta | $p_{k,r}^{\pm}=M_r\pm p_{k,r}/2$. |
+| $p_{f,r}$ | Reference-expressed fermic momentum | $p_{f,r}=\sqrt{M_r^2-p_r^2}=\phi^0{}_0p_f$; the local free-carrier shell retains $p_f$ as its coefficient. |
 
-Here the subscript $k$ labels the chosen direction used in the source split. It should not be confused with the core momentum $M$ introduced in Foundations. The point of $\mathcal{M}_k$ is source bookkeeping: it names the even gravitational source package associated with direction $k$.
+Realization describes the particle's actual momentum configuration and propagation in the local deformation. The free-carrier shell used below keeps the free-space reference $p_f$ fixed and combines it with translation. Resolving a particle's internal momentum and stresses requires its structural model. For nonzero lightlike carriers, $p_f=0$ and $M=|\mathbf p|>0$.
 
-A second transport moment,
 
-$$
-\mathcal C_{ij}
-:=
-\left\langle\sum_a\frac{p_{i,a}p_{j,a}}{M_a}\right\rangle,
-$$
+### Indices, signs and units
 
-records internal momentum transport. Its gravitational role beyond the minimal scalar and directional source packages remains open.
+Greek indices run over $0,1,2,3$; Latin spatial indices run over $1,2,3$. A repeated tensor index is summed once up and once down. The labels $f$, $r$, $a$ and $k$ instead mark the fermic slot, its reference expression, a carrier and a reading direction. Carriers are summed explicitly with $\sum_a$; the label $k$ in $p_{k,a}^{\pm}$ is not summed.
 
-For later use, define the mass-density-form variable
+Frames are stated where quantities are used. Local source components use $\eta_{\mu\nu}=\operatorname{diag}(-1,1,1,1)$ and spatial components use $\delta_{ij}$; coordinate components use $g_{\mu\nu}$. This signature reverses the overall interval convention used in Foundations' inertial correspondence without changing its positive momentum readings. Ordinary indices are retained in both frames, and $\phi$ connects them. In $\phi^i{}_j$, the upper and lower slots therefore belong to different bases despite both carrying spatial indices.
 
-$$
-\rho_M:=\frac{\mathcal M}{c},
-$$
-
-and let $t_*$ denote the action evolution parameter normalized to the asymptotic clock.
-
-### Field-side variables
-
-The stationary field layer distinguishes two objects:
-
-$$
-\theta_0,
-\qquad
-\theta_i^\perp.
-$$
-
-The scalar variable $\theta_0$ is the well variable: it tracks the depth-like part of the gravitational structure. It belongs to the achieved stationary scalar map.
-
-The transverse variable $\theta_i^\perp$ represents the provisional directional response to the odd source. Its field equation is retained as a response seed rather than as a closed physical directional theory.
-
-A useful scalar package built from the well variable is
-
-$$
-G = \sqrt{1 - 2\theta_0}.
-$$
-
-In the stationary grammar, $G$ functions as the local gravitational clock factor. It tells how the fermic clock scale is read through the gravitational structure.
-
-The chapter also reserves $A_i$ for a proposed observer-facing shift package. Its circulation-like object is
-
-$$
-B_{ij}=\partial_i A_j-\partial_j A_i.
-$$
-
-Both symbols remain useful for directional bookkeeping, but their physical action and observer map are provisional. The spatial ruler response is likewise left to the carrier construction and later correspondence rather than declared here as an established field sector.
-
-### Local-readout variables
-
-The observer-facing layer contains the quantities through which the field becomes local physics. The main variables retained from the stationary grammar are
-
-$$
-p_{f,c},
-\qquad
-\Pi_i,
-\qquad
-M_{g,loc},
-\qquad
-H_{g,stat}.
-$$
-
-The quantity $p_{f,c}$ is the context-dressed fermic scale. It is the local gravitational reading of the clock-carrying momentum scale $p_f$. In the stationary scalar grammar,
-
-$$
-p_{f,c}=p_fG.
-$$
-
-The quantity $\Pi_i$ is momentum read against a proposed local directional frame:
-
-$$
-\Pi_i=p_i-p_{f,c}A_i.
-$$
-
-From these pieces one may form the diagnostic local magnitude $M_{g,loc}$. It packages the context-dressed fermic scale together with momentum read in the proposed local directional frame; its explicit realization belongs to the observer-bookkeeping section.
-
-The quantities $A_i$, $\Pi_i$, and the shift-dependent part of $M_{g,loc}$ are provisional observer-facing bookkeeping. They are not a universal physical generator.
-
-The symbol $H_{g,stat}$ is reserved for a stationary generator supplied by an explicitly displayed action. It should not be identified with the diagnostic magnitude $M_{g,loc}$. Section 3.5 develops the action-supported scalar clock, ruler, and transport map before returning to the directional diagnostics.
-
-### The gravity route
-
-The gravity grammar can now be written compactly:
-
-$$
-(\mathcal J_k^\pm)
-\to
-(\mathcal M,\mathcal P_i,\mathcal C_{ij})
-\to
-(\theta_0,\theta_i^\perp)
-\to
-\text{local clocks, rulers, and transport}.
-$$
-
-This line fixes the order of construction. The source packages come first. They feed an achieved scalar field and a separate provisional directional response. Local carrier variables then determine what clocks, rulers, and transport can read from that structure.
-
-![Stationary gravity grammar in M1. The source layer packages directional momentum content, the field layer displays the scalar well and the reserved directional-shift notation, and the observer layer collects local clocking and transport variables. The diagram is a map of roles, not a claim that every arrow has the same maturity.](../../../../figures/build/gravity-and-structured-spacetime/stationary-gravity-grammar.png){#fig-stationary-gravity-grammar fig-align="center" width="100%"}
-
-@fig-stationary-gravity-grammar gives the visual form of the same route. Source structure comes next, followed by the stationary field construction and local observer bookkeeping. The nonstationary extension later in the chapter keeps the same distinction: the scalar equation is an action-supported point-carrier candidate, while the vector equation remains a provisional PDE seed.
+The individual quantities $p_f$, $p_{f,r}$, $M$, $M_r$, $p_\mu$, $p_r^\mu$ and $j_a{}^{\mu\nu}$ have momentum units; $u^\mu$ has velocity units. Source densities such as $J$, $\mathcal M$, $\mathcal P$ and $\mathcal C$ have momentum-per-volume units. The deformation coefficients $\theta$, the map coefficients $\phi$, and the metric coefficients $g$ are dimensionless in the chosen length coordinates. The conventional gravity dictionary is reserved for §3.10.

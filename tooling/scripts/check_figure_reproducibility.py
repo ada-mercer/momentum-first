@@ -7,9 +7,6 @@ import io
 import subprocess
 from pathlib import Path
 
-import numpy as np
-from PIL import Image
-
 ROOT = Path(__file__).resolve().parents[2]
 
 # Matplotlib's PNG encoder varies across supported host runtimes even when the
@@ -39,12 +36,13 @@ def _changed_build_paths() -> list[str]:
         "git",
         "diff",
         "--name-only",
-        "--diff-filter=ACMRT",
         "HEAD",
         "--",
         "figures/build",
     )
-    return [line for line in result.stdout.decode("utf-8").splitlines() if line]
+    untracked = _run("git", "ls-files", "--others", "--exclude-standard", "--", "figures/build")
+    return sorted(set(result.stdout.decode("utf-8").splitlines())
+                  | set(untracked.stdout.decode("utf-8").splitlines()))
 
 
 def _committed_bytes(path: str) -> bytes:
@@ -52,6 +50,9 @@ def _committed_bytes(path: str) -> bytes:
 
 
 def _pixel_metrics(reference: bytes, generated_path: Path) -> tuple[float, float, int]:
+    import numpy as np
+    from PIL import Image
+
     with Image.open(io.BytesIO(reference)) as expected_image:
         expected = np.asarray(expected_image.convert("RGBA"), dtype=np.int16)
     with Image.open(generated_path) as actual_image:
@@ -85,7 +86,7 @@ def main() -> int:
         generated_path = ROOT / path
         try:
             mean_delta, high_fraction, max_delta = _pixel_metrics(reference, generated_path)
-        except ValueError as exc:
+        except (ValueError, OSError) as exc:
             print(f"[fail] {path}: {exc}")
             failed = True
             continue

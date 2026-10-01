@@ -11,6 +11,7 @@ It should establish:
 - the opposed shell readings, orientation reversal, and exact correspondence map
 - the inertial SR correspondence in momentum-first variables
 - the stage/actor distinction between space and momentum
+- the foundation refinement that the Actor role belongs to momentum rather than to particles as a class: particle, interaction-correlation, and stage configurations may organize momentum without becoming separate substances
 - the time / clock / dilation interpretation
 - the true-frame stance as an interpretive commitment, not a new inertial equation
 - kinematic modifiers as the grammar for departures from the inertial baseline
@@ -77,7 +78,7 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 - `02-the-momentum-configuration.qmd` owns fermionic structure and fermic momentum, perpendicular bosonic geometry, the spherical internal particle cycle, the momentum triangle, swelling and directional asymmetry, the shell figures, limiting configurations, the arbitrary-direction bridge, $p^\pm$, $p_k^\pm$, $p^\perp$, positivity, and orientation reversal.
 - `03-admc.qmd` owns the ADMC postulate, the conserved $p_k^+$ sum, its compact algebraic form, the reversed-orientation $p_k^-$ statement, and the scoped uniqueness pointer to Derivation 2.3A.
 - `04-invertible-mapping.qmd` owns inversion of $(p_k^+,p_k^-)$ to $(M,p_k)$, conservation equivalence, the $P_+$ four-component package, and SR correspondence review.
-- `05-space-and-momentum-stage-and-actor.qmd` owns the stage/actor distinction: space as the rule-bearing stage that conditions available kinematic relations, momentum as the actor carrying changing physical content.
+- `05-space-and-momentum-stage-and-actor.qmd` owns the stage/actor distinction: space as the rule-bearing stage that conditions available kinematic relations, momentum as the actor carrying changing physical content, and the foundation-level statement that momentum need not be particle-bound.
 - `06-time.qmd` owns the interpretation of time, clocks, inertial dilation, material contraction, and true-frame language.
 - `07-kinematic-modifiers.qmd` owns the KM definition and taxonomy: composition modifiers, yield modifiers, and admissibility modifiers.
 - `08-what-foundations-establishes.qmd` owns the chapter-level close: what Foundations has established, what it has not established, and why gravity comes next.
@@ -85,8 +86,9 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 ### Boundary locks
 
 - Do not restore a separate Foundations gravity-grammar section while the gravity chapter begins with `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd`.
-- Foundations may mention gravity only as the next major case of a structured or deformed stage modifying local kinematics.
+- Foundations may state that particle, interaction-correlation, and stage configurations are possible organizations of momentum. It may mention gravity only as the next major case that must derive their local ledger and a structured or deformed stage modifying local kinematics.
 - Keep the detailed `source -> field -> observer` grammar, gravity-side variables, stationary field packaging, and observer bookkeeping in the gravity chapter.
+- Do not turn non-particle-bound momentum into a completed gravity source, identify stage stress with the free positive carrier moment, or make space a second Actor or new substance.
 - The bounded fermionic-cycle, bosonic-geometry, and spherical-cycle language in §2.2 belongs to the reader-facing spine. Do not extend it into torus, winding, detailed chirality, or full internal-geometry machinery without a reviewed theory basis.
 
 ### Terminology locks
@@ -105,6 +107,7 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 - Side-by-side use of $(p_k^+,p_k^-)$ belongs to inversion, structural comparison, and gravity-source densitization, not to a single oriented ADMC sum.
 - Treat the $p_f=0$ case as the purely bosic boundary of the inertial composition rule unless later reviewed theory supplies its full structural realization.
 - M1 may take the directional shell-reading structure as foundational. Exact invertibility by itself establishes equivalence of the realized bookkeeping; it does not mathematically prove which description is deeper.
+- Use **Actor** for the physical role of momentum. A particle is one organization of momentum, not a synonym for the Actor role. Interaction and stage organizations do not introduce new source substances.
 
 ### Time / frame locks
 

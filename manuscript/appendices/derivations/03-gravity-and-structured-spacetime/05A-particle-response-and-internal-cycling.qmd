@@ -1,0 +1,233 @@
+# Derivation 3.5A — Particle Response and Internal Cycling {#sec-derivation-03-05A-particle-response-and-internal-cycling .unnumbered}
+
+## Purpose
+
+A stationary deformation can preserve a particle's reference core while changing its local momentum and motion. This derivation obtains that result from the free-carrier action, constructs §3.5's directional shell from reference-expressed four-momentum, and derives the cycle rate under its explicit clock hypothesis.
+
+## Starting assumptions
+
+Use the free-carrier action of [Derivation 3.4A](04A-sourced-spatial-deformation.qmd#sec-derivation-03-04A-sourced-spatial-deformation), with fixed free-space reference $p_f$, positive local $M$, and signature $(-+++)$. For the reference-root calculation take a zero-shift map,
+
+$$
+\phi^0{}_i=\phi^i{}_0=0,
+\qquad \phi^0{}_0>0,
+\qquad
+g_{ij}=\delta_{kl}\phi^k{}_i\phi^l{}_j.
+$$
+
+The inverse spatial block is $g^{ij}$. Momentum indices refer to the stated frame; when local and coordinate spatial momenta occur together, the local ones are labelled explicitly. Work in the test-particle limit with a prescribed background.
+
+For an ideal massive clock, assume that a physical phase follows the action according to $d\varphi=-dS/\hbar$, with one recurrence per $2\pi$ phase increment. This cycle coupling is an additional model premise.
+
+## Derivation
+
+### Carrier variation and the reference root
+
+Variation of the constrained action with respect to the multiplier, momentum and position gives
+
+$$
+\begin{aligned}
+g^{\mu\nu}p_\mu p_\nu+p_f^2&=0,\\
+\dot x^\mu&=e\,g^{\mu\nu}p_\nu,\\
+\dot p_\gamma&=-\frac e2(\partial_\gamma g^{\mu\nu})p_\mu p_\nu.
+\end{aligned}
+$$ {#eq-g35a-carrier-variation}
+
+The dot refers to the trajectory parameter $\lambda$. In the zero-shift branch the positive root is
+
+$$
+-p_0=\phi^0{}_0 M,
+\qquad
+M=\sqrt{p_f^2+g^{ij}p_ip_j},
+\qquad
+p_i=p_j^{\mathrm{local}}\phi^j{}_i.
+$$ {#eq-g35a-reference-root}
+
+Eliminating the constraint and using $x^0$ as parameter gives the reduced action
+
+$$
+S=\int\left[p_i\frac{dx^i}{dx^0}-(-p_0)\right]dx^0.
+$$
+
+Hamilton's equations therefore differentiate the same positive root:
+
+$$
+\begin{aligned}
+\frac{dx^i}{dx^0}
+&=\frac{\partial(-p_0)}{\partial p_i}
+=\frac{\phi^0{}_0}{M}g^{ij}p_j,\\
+\frac{dp_i}{dx^0}
+&=-\frac{\partial(-p_0)}{\partial x^i}
+=-M\partial_i\phi^0{}_0
+-\frac{\phi^0{}_0}{2M}(\partial_i g^{jk})p_jp_k.
+\end{aligned}
+$$ {#eq-g35a-response}
+
+At an instant of local rest, differentiation of the first equation gives
+
+$$
+\frac{d^2x^i}{(dx^0)^2}
+=-\phi^0{}_0g^{ij}\partial_j\phi^0{}_0.
+$$ {#eq-g35a-rest-acceleration}
+
+The term differentiating the velocity coefficient vanishes at that instant because $p_j=0$. Acceleration per reference time $t=x^0/c$ is $c^2$ times this expression.
+
+### Four-momentum and the directional shell
+
+For a massive carrier, define $u^\mu=dx^\mu/d\tau$ with $g_{\mu\nu}u^\mu u^\nu=-c^2$. The shell and trajectory relations in @eq-g35a-carrier-variation give
+
+$$
+g_{\mu\nu}\dot x^\mu\dot x^\nu=-e^2p_f^2,
+\qquad
+c\,\frac{d\tau}{d\lambda}=e p_f
+$$
+
+on the future-directed branch. Consequently the local momentum is
+
+$$
+(p^\mu)_{\mathrm{local}}
+=\phi^\mu{}_\nu g^{\nu\gamma}p_\gamma
+=\frac{p_f}{c}\phi^\mu{}_\nu u^\nu.
+$$
+
+Express every local component with the same distant normalization:
+
+$$
+p_r^\mu=\phi^0{}_0(p^\mu)_{\mathrm{local}}
+=\frac{p_f\phi^0{}_0}{c}\phi^\mu{}_\nu u^\nu.
+$$ {#eq-g35a-reference-four-momentum}
+
+The output axes remain local, while $u^\nu$ has coordinate components. In the zero-shift map, $M_r=p_r^0=\phi^0{}_0M=-p_0$. Contracting the reference vector gives
+
+$$
+(p_r^0)^2-\delta_{ij}p_r^ip_r^j
+=-\left(\frac{p_f\phi^0{}_0}{c}\right)^2
+ g_{\mu\nu}u^\mu u^\nu
+=(\phi^0{}_0p_f)^2.
+$$ {#eq-g35a-reference-norm}
+
+Thus $p_{f,r}=\phi^0{}_0p_f$ and $p_r=\sqrt{\delta_{ij}p_r^ip_r^j}$ obey
+
+$$
+M_r^2=p_{f,r}^{\,2}+p_r^2.
+$$ {#eq-g35a-reference-triangle}
+
+For any unit spatial direction $k^i$ in the same output axes, $p_{k,r}=\delta_{ij}k^ip_r^j$. The opposed values follow by projection:
+
+$$
+p_{k,r}^{\pm}
+=M_r\pm\frac12p_{k,r}
+=\frac{p_f\phi^0{}_0}{c}
+\left(\phi^0{}_\nu\pm\frac12\delta_{ij}k^i\phi^j{}_\nu\right)u^\nu.
+$$ {#eq-g35a-directional-shell}
+
+In a plane containing the bosic direction, $p_{k,r}=p_r\cos\alpha$. Plotting the plus value along each ray therefore gives $R(\alpha)=M_r+(p_r/2)\cos\alpha$; the opposite ray gives the minus value. The core and fermic reference circles have radii $M_r$ and $p_{f,r}$, respectively.
+
+For light, use $p_r^\mu=\phi^0{}_0(p^\mu)_{\mathrm{local}}$ with nonzero null momentum. Its norm vanishes and $p_r=M_r>0$; the proper-time formula above requires $p_f>0$.
+
+### Stationary core and contextual components
+
+Along a trajectory, the total derivative of the positive root equals its explicit reference-time derivative:
+
+$$
+\frac{dM_r}{dx^0}=\frac{d(-p_0)}{dx^0}
+=M\partial_0\phi^0{}_0
++\frac{\phi^0{}_0}{2M}(\partial_0g^{ij})p_ip_j.
+$$ {#eq-g35a-stationary-core}
+
+It vanishes for a stationary map. At fixed $M_r$, the squared fermic and bosic changes in @eq-g35a-reference-triangle cancel. Local $M=M_r/\phi^0{}_0$ need not be constant along the trajectory. The local shell retains $p_f$ as its coefficient, while the reference shell uses $p_{f,r}$.
+
+The momenta conjugate to the coordinates $x^i$ are $p_i$. Their canonical one-form uses the spatial map,
+
+$$
+p_i\,dx^i=p_j^{\mathrm{local}}\phi^j{}_i\,dx^i,
+$$
+
+The reference triangle instead uses $\phi^0{}_0\mathbf p_{\mathrm{local}}$. Substituting those components into the action without transforming the coordinates and symplectic structure would change the dynamics.
+
+### Reference normalization and physical internal length
+
+The common factor is a declared comparison. If the reference observer has temporal coefficient $N_o$, replace $N=\phi^0{}_0$ in the normalized readings by $N/N_o$; the chapter chooses $N_o=1$. A constant change $\widetilde x^0=a x^0$ sends both $N$ and $N_o$ to their values divided by $a$. The normalized readings are unchanged, whereas the coordinate generator $-p_0$ scales as $1/a$. Its conservation statement always refers to the chosen stationary time.
+
+The reference triangle does not uniquely determine a physical internal radius. For a selected cyclic pair $(\vartheta,I)$ with $I>0$, $R_0>0$ and $p_f=I/R_0$, compare the two extended line elements
+
+$$
+d\sigma_1^2=-(dx^0)^2+N^{-2}g_{ij}dx^idx^j
++(R_0/N)^2d\vartheta^2,
+\qquad d\sigma_2^2=N^2d\sigma_1^2.
+$$
+
+Their null constraints differ by the positive factor $N^{-2}$ and give the same root $-p_0=N\sqrt{I^2/R_0^2+g^{ij}p_ip_j}$ after rescaling the constraint multiplier. They have the same reduced trajectories and selected cycle phase, although the displayed circle radii are $R_0/N$ and $R_0$. These comparison observables alone therefore do not select which internal length is physical. A separate internal constitutive law must make that assignment.
+
+In particular, replacing the **local** shell coefficient by $Np_f$ while retaining the same temporal conversion gives the different root $N\sqrt{(Np_f)^2+|\mathbf p_{\mathrm{local}}|^2}$. Its held value is $N^2p_f$, not $Np_f$. The intended no-exchange redistribution requires a consistently derived internal response and source, not a second use of one reference factor.
+
+### Axial motion and the shell figures
+
+For motion along $+x$ with a diagonal spatial map, $p_1=\phi^1{}_1p^1_{\mathrm{local}}$ and $g^{11}=1/(\phi^1{}_1)^2$. Substitution into @eq-g35a-response gives
+
+$$
+\frac{v}{c}
+=\frac{dx^1}{dx^0}
+=\frac{\phi^0{}_0}{\phi^1{}_1}\frac{p^1_{\mathrm{local}}}{M}
+=\frac{\phi^0{}_0}{\phi^1{}_1}\frac{p_r}{M_r}.
+$$ {#eq-g35a-axial-velocity}
+
+At the same reference velocity, the bosic-to-core ratio depends on the local map. The shell comparison in §3.5 holds the reference velocity fixed and calculates the two bosic momenta separately.
+
+For release from rest in the distant limit, $\phi^0{}_0\to1$ fixes $M_r=p_f$. The reference triangle then gives
+
+$$
+p_r^2=p_f^2-p_{f,r}^{\,2}
+=p_f^2\left(1-[\phi^0{}_0]^2\right).
+$$ {#eq-g35a-infall-components}
+
+This gives the free-fall sequence in §3.5. A later interaction that stops the carrier at a fixed depth leaves $p_r=0$ and $M_r=p_{f,r}$, transferring $p_f-p_{f,r}$ out of the carrier. The endpoint balance fixes this amount; the stopping interaction must be supplied separately.
+
+### The specified moving and held cycle
+
+For the same massive carrier, the constrained part of the action vanishes on the shell. Using $c\,d\tau/d\lambda=e p_f$, the action along the trajectory becomes
+
+$$
+dS=p_\mu dx^\mu=-cp_f\,d\tau.
+$$
+
+The chosen action phase consequently satisfies
+
+$$
+d\varphi=\frac{cp_f}{\hbar}d\tau.
+$$ {#eq-g35a-action-phase}
+
+In reference coordinates, $\dot x^0=eM/\phi^0{}_0$. Hence
+
+$$
+\frac{d\tau}{dt}=\phi^0{}_0\frac{p_f}{M},
+\qquad
+\frac{d\varphi}{dt}
+=\frac{cp_f}{\hbar}\phi^0{}_0\frac{p_f}{M}.
+$$ {#eq-g35a-moving-cycle}
+
+Equivalently, $d\varphi/dt=(c/\hbar)p_{f,r}^{\,2}/(-p_0)=(c/\hbar)p_{f,r}^{\,2}/M_r$. The same result follows directly from the reduced action: $p_i(dx^i/dx^0)-(-p_0)=-\phi^0{}_0p_f^2/M$. In flat space, $\phi^0{}_0=1$, and the cycle-rate factor reduces to the Foundations ratio $p_f/M$.
+
+For a held ideal carrier, $\mathbf p_{\mathrm{local}}=0$ and $M=p_f$ in this free kinetic description. If the support does not perturb the chosen cycle,
+
+$$
+\left(\frac{d\varphi}{dt}\right)_{\mathrm{held}}
+=\frac{cp_f}{\hbar}\phi^0{}_0=\frac{cp_{f,r}}{\hbar}.
+$$ {#eq-g35a-held-cycle}
+
+Applying this ideal-cycle rate to a material clock requires its internal motion, stresses and response to the support to justify the approximation.
+
+## Result
+
+The free-carrier action supplies §3.5's motion equations and its four-momentum-to-shell construction. In a prescribed zero-shift stationary map it conserves $M_r=-p_0=\phi^0{}_0M$, while the reference triangle exhibits fermic-to-bosic redistribution at fixed reference core. The additional action-phase hypothesis supplies the stated moving and held ideal-clock rates.
+
+## Notes
+
+The shell represents the particle’s momentum state; a microscopic density or spatial boundary needs further structure. In the free-carrier calculation the bosic momentum describes translation. Internal bosic compensation, source stresses and physical recurrence in a structured particle require its constrained internal dynamics. Derivation 3.10A develops the operational comparison for the cycle hypothesis used here.
+
+<!-- Scientific provenance (not a new review receipt):
+G4-D004 r1: free shell action
+G4-D005 r1: proper time and conditional cycles
+v4/native-restructuring/tranche-1/DERIVATION.md and REVIEW_STATUS.md: stationary reference bridge and radius nonselection
+Exact proof revisions/hashes and review scope: exchange/reviews/manuscript/2026-10-01-gravity-appendix-adoption/EVIDENCE_MAP.md.
+-->

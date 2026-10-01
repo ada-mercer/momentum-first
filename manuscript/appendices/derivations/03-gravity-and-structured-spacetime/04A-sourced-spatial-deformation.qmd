@@ -1,0 +1,218 @@
+# Derivation 3.4A — Sourced Spatial Deformation {#sec-derivation-03-04A-sourced-spatial-deformation .unnumbered}
+
+## Purpose
+
+This derivation supports §3.4's source-to-deformation step. It constructs the operational map from the registered deformation, obtains the free-carrier source from its action, and gives the controlled weak exterior used in the later comparisons.
+
+## Starting assumptions
+
+Use the source convention of [Derivation 3.3A](03A-resolved-gravitational-sources.qmd#sec-derivation-03-03A-resolved-gravitational-sources), with signature $(-+++)$ and $x^0=ct$. The map connects coordinate inputs to local outputs:
+
+$$
+g_{\mu\nu}=\eta_{\alpha\beta}\phi^\alpha{}_\mu\phi^\beta{}_\nu,
+\qquad d\ell^\alpha=\phi^\alpha{}_\mu dx^\mu.
+$$
+
+The metric field law below is a specified physical input. Together with the free-carrier action it defines the comparison sector calculated here. It does not derive the internal redistribution of a structured M1 particle or introduce an independent internal-modulus field. Greek indices on coordinate momenta are raised with $g$; in the local frame, $p^0=M$ and $M^2=p_f^2+|\mathbf p|^2$.
+
+## Derivation
+
+### Registered deformation coordinates
+
+The deformation has the symmetric component form
+
+$$
+[\theta^{\mu\nu}]=
+\begin{bmatrix}\theta^{00}&\theta^{0j}\\
+\theta^{i0}&\theta^{ij}\end{bmatrix},\qquad
+\theta^{i0}=\theta^{0i},\quad \theta^{ij}=\theta^{ji}.
+$$ {#eq-g34a-arrays}
+
+The ten independent entries parametrize the geometry. Lowering a registered index uses the reference form, $\theta_{\mu\nu}=\eta_{\mu\alpha}\eta_{\nu\beta}\theta^{\alpha\beta}$; coordinate indices instead use the varying metric.
+
+The registered metric dictionary is
+
+$$
+g_{00}=-1+2(\theta^{00}+\delta_{kl}\theta^{kl}),\qquad g_{0i}=-4\delta_{ij}\theta^{0j},\qquad
+ g_{ij}=(1+2\theta^{00}-2\delta_{kl}\theta^{kl})\delta_{ij}
+ +4\delta_{ik}\delta_{jl}\theta^{kl}.
+$$ {#eq-g34a-chart}
+
+With the reference form explicit, the same dictionary is
+
+$$
+g_{\mu\nu}=\eta_{\mu\nu}
++4\eta_{\mu\alpha}\theta^{\alpha\beta}\eta_{\beta\nu}
+-2\eta_{\mu\nu}\eta_{\alpha\beta}\theta^{\alpha\beta}.
+$$
+
+The fixed time split and reference deltas belong to this dictionary. A tensor transformation carries that reference structure with $\theta$. Extracting a fresh chart from a transformed metric instead reapplies the dictionary with the new reference split. Although the dictionary is affine, curvature built from $g$ contains nonlinear products.
+
+For construction only, set $h=[g_{mn}]$ and let $s=h_+^{1/2}$ be its symmetric positive-definite square root. Fix the local spatial orientation by
+
+$$
+[\phi^i{}_m]=s.
+$$
+
+The matrices $h$ and $s$ are computed from $g$. Choosing the positive square root fixes the local spatial axes for this chart. Complete the coframe by
+
+$$
+\phi^0{}_m=0,\qquad
+\phi^i{}_0=-4\delta^{ij}(\phi^{-1})^m{}_j\delta_{mn}\theta^{0n},
+\qquad
+\phi^0{}_0=\sqrt{1-2(\theta^{00}+\delta_{kl}\theta^{kl})+\delta_{ij}\phi^i{}_0\phi^j{}_0}.
+$$ {#eq-g34a-phi}
+
+Since $s^{\mathsf T}s=s^2=h$, the spatial Gram matrix reproduces $g_{mn}$. Multiplying the second expression by $\delta_{ij}\phi^i{}_m$ gives $g_{m0}=-4\delta_{mn}\theta^{0n}$; the last expression gives $g_{00}$ in @eq-g34a-chart. The reconstructed $\phi$ therefore reproduces every block of $g$.
+
+To display the inverse, use $E=[\phi^i{}_m]$ and $v=[\phi^i{}_0]$ as temporary arrays. Then
+
+$$
+[\phi^{-1}]=
+\begin{bmatrix}
+(\phi^0{}_0)^{-1}&0\\
+-E^{-1}v/(\phi^0{}_0)&E^{-1}
+\end{bmatrix},\qquad
+ g^{\mu\nu}=(\phi^{-1})^\mu{}_\alpha(\phi^{-1})^\nu{}_\beta\eta^{\alpha\beta}.
+$$ {#eq-g34a-inverse}
+
+Both multiplication orders give identity. The admitted domain is positive-definite $h$, positive radicand and the future root $\phi^0{}_0>0$. A coordinate-static timelike worldline additionally requires $1-2(\theta^{00}+\delta_{kl}\theta^{kl})>0$.
+
+The configuration can also be recovered. Put $d_{ij}=g_{ij}-\delta_{ij}$ and use the temporary trace helper $t_\theta=[3(g_{00}+1)-\delta^{ij}d_{ij}]/8$. Then
+
+$$
+\theta^{00}=(g_{00}+1+\delta^{ij}d_{ij})/8,\quad \theta^{0i}=-\delta^{ij}g_{0j}/4,\quad
+\theta^{ij}=\tfrac14(\delta^{ik}\delta^{jl}d_{kl}-2\theta^{00}\delta^{ij}+2t_\theta\delta^{ij}),
+$$
+
+and taking the spatial trace proves $t_\theta=\delta_{ij}\theta^{ij}$.
+
+Subsequent frame changes carry the coframe and source together; the transformed spatial coframe need not remain symmetric. The temporal–spatial components and compatible frame transport remain part of the reconstructed geometry.
+
+### Free-carrier response and source
+
+For a carrier with fixed free-space reference momentum $p_{f,a}$, use the constrained action
+
+$$
+S
+=\sum_a\int\left[p_{\mu,a}\dot x_a^\mu
+-\frac{e_a}{2}\left(g^{\mu\nu}p_{\mu,a}p_{\nu,a}+p_{f,a}^2\right)\right]d\lambda.
+$$ {#eq-g34a-carrier-action}
+
+A dot denotes differentiation with respect to the trajectory parameter $\lambda$; $e_a$ enforces the local shell. The action has momentum-times-length units. Variation gives the shell, trajectory and momentum equations developed in Derivation 3.5A.
+
+The metric source comes from varying this same action. Since
+
+$$
+\delta g^{\mu\nu}=-g^{\mu\alpha}g^{\nu\beta}\delta g_{\alpha\beta},
+$$
+
+its variation is
+
+$$
+\delta S
+=\frac12\sum_a\int e_a p_a^\alpha p_a^\beta
+\delta g_{\alpha\beta}(x_a)\,d\lambda.
+$$
+
+Thus the particle source, in coordinate components, is
+
+$$
+J^{\alpha\beta}(x)
+=\sum_a\int e_a p_a^\alpha p_a^\beta
+\frac{\delta^{(4)}(x-x_a)}{\sqrt{-g}}\,d\lambda.
+$$ {#eq-g34a-particle-source}
+
+On a local time slice, $\dot\ell^0=e_aM_a$. Eliminating the trajectory delta function supplies the factor $1/M_a$, recovering §3.3’s particle source in local components:
+
+$$
+J^{\mu\nu}
+=\left\langle\sum_a\frac{p_a^\mu p_a^\nu}{M_a}\right\rangle.
+$$
+
+For a material system, the variation also includes its internal, binding and support terms. Their contributions enter the same source $J$.
+
+### The field law and source data
+
+Choose the metric action, in the same momentum-length units,
+
+$$
+S_g=\frac{c^3}{16\pi G_N}\int R(g)\sqrt{-g}\,d^4x.
+$$
+
+With the appropriate boundary term or boundary conditions, its variation together with the consistently derived source gives
+
+$$
+G^{\mu\nu}(g)=\frac{8\pi G_N}{c^3}J^{\mu\nu}.
+$$ {#eq-g34a-metric-law}
+
+Both tensors are in coordinate components, with curvature indices raised using $g$. The local source converts by $J_{\mathrm{coord}}=\phi^{-1}J_{\mathrm{local}}\phi^{-\mathsf T}$. A solution requires compatible source dynamics, initial or boundary data, and the reference registration used to reconstruct $\phi$.
+
+In the aligned weak-field expansion, the harmonic condition $\partial_\mu\theta^{\mu\nu}=0$ reduces the linearized curvature to
+
+$$
+G^{(1)\mu\nu}=-2\Box\theta^{\mu\nu},\qquad
+\Box=-\partial_0^2+\delta^{ij}\partial_i\partial_j.
+$$
+
+The field equation therefore gives
+
+$$
+\Box\theta^{\mu\nu}=-\frac{4\pi G_N}{c^3}J^{\mu\nu}.
+$$ {#eq-g34a-weak-field-law}
+
+For a localized, conserved stationary leading source, $\Box$ reduces to the spatial Laplacian. Its decaying Green solution is the componentwise integral in §3.4, with the same positive coupling for every source component.
+
+### A common weak exterior approximation {#sec-g34a-ex1}
+
+Supply a stationary spherical source of radius $R_s$, dominated by cold, slowly moving carriers. Binding, internal transport and support corrections are small at the retained order, but the source is understood to include the stresses that maintain its configuration. Define its leading integrated core and length coefficient by
+
+$$
+M_{\mathrm{src}}=\int\mathcal M\,d^3x,
+\qquad
+\ell_g=\frac{G_NM_{\mathrm{src}}}{c^3}.
+$$ {#eq-g34a-exterior-scales}
+
+Use a weak source, $\ell_g/R_s\ll1$, and the distant normalization $\phi^0{}_0\to1$, $\phi^i{}_j\to\delta^i{}_j$. In the weak stationary source law of §3.4,
+
+$$
+\Delta\theta^{00}=-\frac{4\pi G_N}{c^3}\mathcal M.
+$$
+
+Because $\Delta(1/|\mathbf x-\mathbf y|)=-4\pi\delta^{(3)}(\mathbf x-\mathbf y)$, the decaying solution is
+
+$$
+\theta^{00}(\mathbf x)
+=\frac{G_N}{c^3}\int
+\frac{\mathcal M(\mathbf y)}{|\mathbf x-\mathbf y|}\,d^3y.
+$$
+
+Spherical symmetry reduces the exterior integral to $\ell_g/r$. The directional and spatial source moments are subleading in this cold-source approximation. The weak map therefore gives
+
+$$
+\begin{aligned}
+\phi^0{}_0&\simeq1-\frac{\ell_g}{r},
+&\phi^i{}_j&\simeq\left(1+\frac{\ell_g}{r}\right)\delta^i{}_j,\\
+g_{00}&\simeq-1+\frac{2\ell_g}{r},
+&g_{ij}&\simeq\left(1+\frac{2\ell_g}{r}\right)\delta_{ij}.
+\end{aligned}
+$$ {#eq-g34a-exterior-profile}
+
+These expressions retain first order in the exterior deformation and the leading cold-source moments. Comparisons using this weak exterior take $r\gg R_s$, negligible probe backreaction, and source corrections smaller than the retained terms. Interior matching and support are inputs to this exterior calculation. Appreciable transport, binding or nonlinear deformation requires the corresponding source and field calculation.
+
+## Result
+
+The registered deformation determines the operational map on the stated regular domain. The selected action reproduces the free-carrier kinetic source, while the retained metric response produces the weak spherical exterior used in §3.10.
+
+## Notes
+
+The action supplies both free-carrier motion and its reciprocal source. A material extension must supply the constrained internal dynamics and derive its complete source from them. Full curved-system ADMC also requires a common directional comparison that includes deformation, support and boundary transport; Derivation 3.7A sets out this open task.
+
+<!-- Scientific provenance (not a new review receipt):
+G4-D002 r1: source calibration
+G4-D003 r1: coframe/domain
+G4-D006 r2: source variation
+G4-D007 r2: adopted metric action
+V4 September20/21 source-matched all-upper and fixed-orientation revisions
+Exact proof revisions/hashes and review scope: exchange/reviews/manuscript/2026-10-01-gravity-appendix-adoption/EVIDENCE_MAP.md.
+-->

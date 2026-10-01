@@ -27,17 +27,8 @@ jobs:
           ln -s /opt/momentum-first/venv .venv
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
-      - name: Verify publication dependencies
-        run: .venv/bin/python tooling/scripts/check_dependencies.py --mode publication
-
-      - name: Run release validation
-        run: |
-          .venv/bin/python -m pytest tooling/tests
-          .venv/bin/python tooling/scripts/check_crossrefs.py
-          .venv/bin/python tooling/scripts/build_manuscript_status.py
-          git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md
-          .venv/bin/python tooling/scripts/build_figures.py
-          .venv/bin/python tooling/scripts/check_figure_reproducibility.py
+      - name: Validate publication inputs
+        run: .venv/bin/python tooling/scripts/validate.py --publication
 
       - name: Render PDF preview
         run: quarto render --profile pdf
@@ -45,13 +36,8 @@ jobs:
       - name: Prepare PDF preview artifact
         run: |
           set -euo pipefail
-          PDF_PATH="$(find _book -type f -name '*.pdf' | sort | head -n 1 || true)"
-          if [ -z "$PDF_PATH" ]; then
-            echo "No PDF was produced under _book/" >&2
-            exit 1
-          fi
-
-          cp "$PDF_PATH" Momentum-First.pdf
+          test -s _book/Momentum-First.pdf
+          cp _book/Momentum-First.pdf Momentum-First.pdf
           test -s Momentum-First.pdf
 
       - name: Upload preview artifact

@@ -1,0 +1,39 @@
+## Momentum and a Moving Clock {#sec-t0-moving-clock}
+
+The two cycles organize the momentum of one carrier. Fermic momentum $p_f$ supplies its stable internal scale, bosic momentum $p$ its translational component, and core momentum $M$ their combined magnitude. In the free inertial setting,
+
+$$
+M^2=p_f^2+p^2.
+$$
+
+The triangle in @fig-t0-momentum-wave makes this composition visible. At the front-centre point $Q$, $p_f$ and $M$ share an origin, and the blue $p$ arrow completes the triangle. Measure $\theta$ from the fermic direction to $M$: the fermic fraction is $p_f/M=\cos\theta$, while the bosic fraction is $p/M=\sin\theta$. The illustrated momentum ratio is chosen so that $M$ follows the loop's local tangent.
+
+In the constant-speed manifold picture, propagation through the internal geometry maintains speed $c$. The triangle resolves its direction into a fermic component $c\cos\theta$ and a bosic component $c\sin\theta$. Increasing bosic momentum at fixed $p_f$ tilts the resultant away from the fermic direction. The underlying propagation speed stays fixed; its fermic component decreases.
+
+A clock counts fermic cycles. Use reference time $t$ in a chosen inertial frame. Let $f_0$ be the carrier's cycling frequency when at rest in that frame, and $f$ its frequency when moving through it. Foundations gives the moving frequency as
+
+$$
+f=f_0\frac{p_f}{M}=f_0\cos\theta.
+$$
+
+The moving carrier retains its fermic scale but completes fewer cycles during the same reference interval. At rest, $p=0$, so $M=p_f$, $\theta=0$ and $f=f_0$. As bosic momentum increases, $M$ grows and the frequency falls. The changing angle pictures the slowing of a physical clock.
+
+![Momentum composition and fermic cycling. The close-up enlarges the boxed region. This selected loop makes five fermic turns per bosic turn; the amber segment highlights the path near $Q$. There, $M$ follows the local tangent, $p_f$ shares its origin, and $p$ completes the triangle. The angle $\theta$ directly shows the fermic fraction $p_f/M$. The frequency relation uses Foundations' inertial clock law, with $f_0$ the resting frequency and $f$ the moving frequency. The torus displays the momentum directions; its drawn path length does not set the clock rate.](/figures/build/part-0-first-picture/momentum-wave.png){#fig-t0-momentum-wave fig-align="center" width="100%"}
+
+The same momentum balance governs translation. Choose an oriented direction $\hat{k}$ in ordinary space. The signed component $p_k=\vec p\cdot\hat{k}$ records the bosic momentum along it, and
+
+$$
+\dot x_k=c\frac{p_k}{M}.
+$$
+
+The dot denotes change per unit reference time. Along the forward direction of motion, $p_k=p$, so the translation speed is $v=c\sin\theta$. The bosic fraction sets how quickly the carrier advances; the fermic fraction sets how quickly it cycles.
+
+The moving clock records a time $\tau$, calibrated so that each fermic cycle counts as $1/f_0$. Counting the same cycles gives $f\,dt=f_0\,d\tau$, hence
+
+$$
+d\tau=dt\,\frac{p_f}{M}.
+$$
+
+Since $v/c=p/M$, the momentum relation also gives $p_f/M=\sqrt{1-v^2/c^2}=1/\gamma$, where $\gamma$ is the Lorentz factor. This is the inertial time-dilation relation expressed through momentum and cycling.
+
+The earlier two-to-one example showed when the two phases return together; the fermic frequency tells how quickly the clock cycles. To picture translation next, we follow the distance advanced during each bosic turn.

@@ -1,0 +1,86 @@
+## Quantum sources and reciprocal gravity {#sec-qm-sources}
+
+A coherent carrier both responds to deformed space and contributes momentum to its source. The propagation equation describes the first direction. The second requires a local account of core, transport and stress that preserves the state's interference and the momentum exchanged with other systems.
+
+Gravity already supplied a simple reason to keep correlations. Equal counterstreams along $x$ and equal counterstreams along $y$ can have the same total core and zero net spatial momentum. Their six mean directional readings then agree, but their transport differs. Products of readings on each carrier retain that difference; products of the aggregate means lose it.
+
+### Correlate before averaging
+
+For the free positive-core quantum description, the corresponding kinetic operator is
+
+$$
+\widehat j_{\mathrm{kin}}^{\not i\not j}
+=\widehat p^{\not i}\widehat M_+^{-1}\widehat p^{\not j}.
+$$ {#eq-qm-kinetic-kernel}
+
+The inverse core weights the two directional readings on the same carrier. In an incoherent kinetic ensemble, summing these products with weights per physical volume returns Gravity's source $J^{\not i\not j}$. It is a momentum-weighted correlation, not an ordinary covariance.
+
+The shell fixes its contraction before averaging:
+
+$$
+-\eta_{\not i\not j}
+\left\langle\widehat j_{\mathrm{kin}}^{\not i\not j}\right\rangle
+=p_f^2\left\langle\widehat M_+^{-1}\right\rangle.
+$$ {#eq-qm-kinetic-contraction}
+
+The average inverse core appears here, rather than the inverse of the average core. Each momentum component brings its own weight. This is another place where replacing a distribution by a mean shell changes the source.
+
+The reference conversion must preserve that weight too. For a static comparison at one common $N=\phi^0{}_0$,
+
+$$
+\frac{p^{\not i}p^{\not j}}{M}
+=\frac{p_r^{\not i}p_r^{\not j}}{NM_r}.
+$$
+
+The numerator contains two reference factors, while the core denominator contains one. The remaining factor of $N$ restores the original local source. Conversion of physical volume is a separate step.
+
+### Interference enters the local source
+
+The kinetic expression still leaves out a distinction exposed by the two-component state. Its momentum weights stay fixed when the relative phase changes, but its spatial interference pattern moves. A local coherent source can depend on the cross terms between those amplitudes as well as on their separate weights.
+
+To calculate that source, the model must say how the coherent amplitudes couple to deformation. A specified matter action is one way to give propagation and source together: varying the matter state gives its equation of motion, while varying the deformation gives the momentum source. The action here is the mathematical rule for their joint dynamics. A free shell or a table of diagonal readings does not select that rule.
+
+A scalar example makes the additional content concrete. Take a normalized free complex scalar state $\Psi$ with positive-core evolution. To carry the inverse-core weighting into its quadratic source, form $\zeta=\widehat M_+^{-1/2}\Psi$. This re-encodes the same state, retaining its relative phases. The minimally coupled quadratic scalar action specified in [Derivation 4.8A](/manuscript/appendices/derivations/04-quantum-mechanics/08A-coherent-sources-and-reciprocal-accounting.qmd#sec-derivation-04-08a-coherent-sources) acts on $\zeta$.
+
+Write this scalar model’s source as $J_0^{\mu\nu}$. In its flat free realization, the local components are $u=J_0^{00}$, $j_i=J_0^{0i}$ and $s_{ij}=J_0^{ij}$: common core density, core flux and momentum transport. They satisfy $|\mathbf j|\leq u$, so the opposed densities are
+
+$$
+\boxed{d^{i\pm}=u\pm\frac12j_i\geq\frac u2\geq0.}
+$$ {#eq-qm-scalar-positive-densities}
+
+All pairs share the same local core. The scalar equation also gives their directional balance,
+
+$$
+\partial_0d^{i\pm}
++\partial_j\left(j_j\pm\frac12s_{ji}\right)=0,
+\qquad x^0=ct.
+$$
+
+For the normalized scalar state, with periodic or decaying boundaries, the integrated densities equal the expectation values of the free directional reading operators. Spatial phase is retained, and the transport terms carry changes between neighboring regions.
+
+Those transport terms include gradients produced by interference. They can contain a negative transverse stress even while the common core and all opposed densities remain positive. A sum of nonnegative classical terms $p_i^2/M$ cannot reproduce that stress. Thus a coherent source can satisfy positive directional balance without being a classical collection of independently moving carriers at every point.
+
+### Probability, total core and local source
+
+The spinor model used for propagation has a different source. For its standard minimally coupled symmetric source, interference between two positive-branch modes can produce a negative local core-density patch. The probability density remains positive, and the spatially integrated core remains positive. Derivation 4.8A gives an explicit two-mode state exhibiting all three properties.
+
+There is no contradiction between this example and the scalar construction. They use different matter models and different source expressions. Together they show why a positive probability, a positive total core and a positive local source are separate requirements. Writing the source in six components preserves its information; it cannot change a negative common-core value into six positive opposed densities.
+
+Even a successful free scalar source is not uniquely fixed by its kinetic limit. Additional coherent gradient terms can leave the free diagonal readings and integrated totals unchanged while altering the local stress. Their physical selection must come from the interaction and the way its source is measured.
+
+### Complete reciprocal accounting
+
+An interaction transfers momentum between participants and can entangle their internal states. The complete source must include that interaction and the systems that support or drive it. Counting only the responding carrier omits part of the exchange; counting the same interaction in both carriers' cores counts it twice.
+
+A finite two-carrier example in Derivation 4.8A demonstrates coherent entanglement with equal and opposite momentum transfer and positive conserved global directional charges. It is a constructive accounting example, not a derived local gravitational interaction. A native continuum description must supply the local source, its reciprocal response and the deformation dynamics within one common balance.
+
+The quantity associated with internal recurrence also must not be mistaken for the entire gravitational source. Gravity's source blocks give
+
+$$
+-\eta_{\not i\not j}J^{\not i\not j}
+=\mathcal M-\operatorname{tr}\mathcal C,
+$$
+
+whereas the weak temporal deformation responds to $\mathcal M+\operatorname{tr}\mathcal C$. A null kinetic carrier has zero fermic-recurrence contraction but a nonzero temporal source. Momentum does not need a fermic clock to gravitate.
+
+A complete coherent interaction must determine both the response to deformation and its source, with material and Stage contributions included in the same directional balance.

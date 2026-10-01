@@ -1,0 +1,9 @@
+## Beyond the First Picture {#sec-t0-beyond-picture}
+
+The torus has joined several relationships in one picture. Its two cycles keep the fermic and bosic momentum roles visible. Its resonant path shows internal return; the helix records translation during that return. Its two radii distinguish illustrative fermionic and bosonic dilation, and a pattern on the closed path gives waves somewhere to live.
+
+Yet the same path can carry different wave patterns. Even a specified pattern can carry information the drawing has not shown: an orientation, a relative phase between components, or a rule for comparing it with another carrier. We can picture the first omission by attaching a small arrow to our moving marker. The marker may return to its starting point while the arrow has changed its orientation. Position on the torus no longer specifies the whole state.
+
+Interactions make this additional information consequential. Two carriers can respond differently when their internal phases or orientations differ, even if their displayed radii and winding paths agree. A geometry capable of describing them must say how those states are compared across space and how their momentum changes through coupling. A bound rod or a material clock also requires such interactions; its behavior cannot be inferred by stretching a single torus drawing.
+
+The next step keeps the two-cycle picture while adding the phase and orientation information needed to describe a fuller internal state. The Clifford torus provides a different geometric setting for two periodic coordinates, while Clifford algebra supplies the first-order representation of the momentum shell already encountered in quantum mechanics. Understanding their respective roles will let us ask how recurrence, orientation and translation can be described together—and what further dynamics makes that description a physical model.

@@ -1,61 +1,52 @@
-kappa_A:
-  term: "$\\kappa_A$"
-  definition: >
-    Dimensionless shift coefficient in the stationary gravity packaging
-    $A_i=-\\kappa_A\\theta_i^\\perp$. Derived as $\\kappa_A=2(1+\\sigma)=4$ by
-    boost consistency from the carrier source map ($\\mathcal{P}_i=j_i$) and
-    the two-aspect deformation ($\\sigma=1$), conditional on the source
-    identification (SI) and comoving-cycle readout (P2); validated against the
-    Lense-Thirring endpoint by the frame-drag audit.
-
+# Current terminology aligned with the v0.4.0 working chapters.
+# Historical keys are retained for provenance, not promoted as current claims.
 carrier_source_map:
-  term: "carrier source map"
-  definition: >
-    Native stationary source law that fills the directional source channels
-    with the densitized opposed shell readings:
-    $\\mathcal{J}_k^\\pm=$ density of $(M\\pm p_k/2)$. It gives
-    $\\mathcal{M}_k=(\\mathcal{J}_k^+ + \\mathcal{J}_k^-)/2=\\varrho$ on every
-    axis and $\\mathcal{P}_k=\\mathcal{J}_k^+-\\mathcal{J}_k^-=j_k$. No pressure,
-    stress, radiation, or subsystem apportioning term is inserted into the M1
-    source layer.
-
-source_identification:
-  term: "source identification (SI)"
-  definition: >
-    Named hardening premise of the gravity chapter: gravity reads the same
-    opposed shell readings established in Foundations, densitized together as
-    source channels. Given SI, the even source is the local core-momentum
-    density and the odd source is the net bosic component. What remains open
-    is the deeper micro-model for why stage deformation couples to this
-    shell-reading source map.
-
+  term: directional source readings
+  definition: 'The current gravity chapter forms positive source channels from local particle
+    shell readings: $\mathcal J_k^\pm=\langle\sum_a(M_a\pm p_{k,a}/2)\rangle$. Their mean is
+    the core-content density $\mathcal M$ and their difference is the directional momentum density
+    $\mathcal P_k$. The full kinetic source also includes the independently resolved transport
+    block $\mathcal C^{ij}$; aggregate channel sums alone do not determine it.'
 momentum_content_density:
-  term: "$\\varrho$"
-  definition: >
-    Local core-momentum density: the per-volume sum of carrier core momentum
-    $M=\\sqrt{p_f^2+p^2}$ in the stationary source frame. Under the carrier
-    source map, $\\varrho$ is the direction-blind even source
-    $\\mathcal{M}_k$ on every axis. For matter at rest it is $\\rho c$; for
-    moving, hot, or radiative content it counts the carriers' own core
-    momenta, without separate pressure or stress weight.
-
+  term: $\mathcal M$
+  definition: 'Local core-momentum density in the stated orthonormal frame: $\mathcal M=\langle\sum_a
+    M_a\rangle$, with $M_a=\sqrt{p_{f,a}^2+|\mathbf p_a|^2}$. It is the common even directional
+    source reading and the kinetic source component $J^{00}$. Pressure and shear are represented
+    separately in the spatial transport block, not excluded from the full gravitational source.'
+momentum_source_tensor:
+  term: $J^{\mu\nu}$
+  definition: The all-upper local kinetic momentum source is $J^{\mu\nu}=\langle\sum_a p_a^\mu
+    p_a^\nu/M_a\rangle$. It contains core content, directional momentum and momentum transport.
+    Binding, walls and supports require their own consistently supplied stresses; the free-particle
+    sum is not a universal interacting-source closure. Coordinate and reference-expressed components
+    require the maps specified in the gravity chapter.
+reference_fermic_scale:
+  term: $p_{f,r}$
+  definition: In the declared static zero-shift comparison, $p_{f,r}=N p_f$ is the reference-expressed
+    fermic scale. It is distinguished from the fixed local free-carrier scale $p_f$ and from
+    the chosen-time coordinate generator. A clock or material interpretation requires its stated
+    dynamical assumptions.
+kappa_A:
+  term: $\kappa_A$ (historical)
+  definition: Shift coefficient used in earlier stationary scalar/vector gravity packaging.
+    Its historical calibration and derivation claims belong to those named revisions and assumptions.
+    It is not the defining field variable or a new closure result of the current finite source/deformation/coframe
+    formulation.
+source_identification:
+  term: source identification (SI; historical)
+  definition: Name of a source premise in earlier gravity revisions. The current chapter specifies
+    local resolved kinetic sources and distinguishes them from binding/support contributions
+    and complete interacting-source dynamics. Historical SI review conclusions do not establish
+    that broader closure.
 null_source_channels:
-  term: "null source channels"
-  definition: >
-    Rejected diagnostic reading in which the directional source channels are
-    identified with stress-tensor contractions $T(l_k^\\pm,l_k^\\pm)$ along the
-    null probes $l_k^\\pm=(1,\\pm e_k)$. The route grounds channel positivity in
-    the null energy condition and displays exact null-beam chirality, but fails
-    the fixed pressure/radiation targets and overshoots the frame-drag current;
-    it is a no-go as the primary source rule.
-
+  term: null source channels (historical diagnostic)
+  definition: Earlier diagnostic identification of directional channels with null contractions
+    of a stress tensor. This historical comparison is not the current directional-shell source
+    definition; its no-go conclusions retain the scope of the original diagnostic and do not
+    reject the current resolved kinetic stress tensor.
 momentum_presentation_tensor:
-  term: "classical subsystem apportioning"
-  definition: >
-    Correspondence-layer accounting that assigns extra local well weight to
-    pressure, stress, and radiation subsystems. M1 does not import this
-    apportioning into its source law. In isolated stationary systems those
-    extra classical weights cancel in total against confinement stresses,
-    leaving the same total source weight as the carrier source map, and the
-    same full exterior field for spherical sources. Aspherical pressure or
-    stress multipoles can remain as a discriminator.
+  term: classical subsystem apportioning (historical)
+  definition: Term used in earlier source-comparison discussions. In the current book, transport,
+    pressure, binding and support stresses are accounted for in their stated models. The older
+    term does not establish their exclusion from the full source or a general observational
+    discriminator.

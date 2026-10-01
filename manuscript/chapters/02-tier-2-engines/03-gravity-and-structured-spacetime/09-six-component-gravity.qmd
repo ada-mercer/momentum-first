@@ -1,0 +1,237 @@
+## Gravity in Six Directional Components {#sec-gravity-six-component}
+
+The directional shell does not begin with one time slot and three spatial slots. It begins with six positive directional components: one for each branch of three opposed axes. This is the more M1-native way to display the same gravitational content. The ordinary four-component form remains available, but the six-component form shows source correlations, metric comparison and transport relations directly.
+
+### Six readings, four degrees of freedom
+
+Choose one local orthonormal frame. Let a slashed component index $\not i$ label one of the six directional components,
+
+$$
+\not i\in\{1+,1-,2+,2-,3+,3-\}.
+$$
+
+For a particle with core $M$ and signed spatial components $p_i$, the six directional components are
+
+$$
+p^{i\sigma}=M+\frac{\sigma}{2}p_i,
+\qquad i=1,2,3,
+\qquad \sigma=\pm1.
+$$ {#eq-gravity-six-forward}
+
+Equivalently, write these components as $p^{\not i}$. The inverse relations are
+
+$$
+M=\frac16\sum_{\not i}p^{\not i},
+\qquad
+p_i=p^{i+}-p^{i-}.
+$$ {#eq-gravity-six-inverse}
+
+Thus the six readings contain the ordinary core and signed momentum in a supported four-dimensional pattern. Their opposed pair sums satisfy
+
+$$
+p^{1+}+p^{1-}
+=p^{2+}+p^{2-}
+=p^{3+}+p^{3-}=2M.
+$$ {#eq-gravity-six-support}
+
+The pair-sum equalities define a four-dimensional supported subspace inside the six displayed components. Future carriers also obey the mass-shell condition $M\geq|\mathbf p|$, so every directional component is positive. Using §3.5's reference-expressed momenta gives the same six-component shell for particles in deformed space.
+
+For comparison with the ordinary form, order the six components as $(1+,1-,2+,2-,3+,3-)$. Use $L$ for both directions and let the indices state the direction of the map:
+
+$$
+p^{\not i}=L^{\not i}{}_{\mu}p^\mu,
+\qquad
+p^\mu=L^\mu{}_{\not i}p^{\not i}.
+$$
+
+Here the ordered ordinary components are $p^\mu=(M,p_1,p_2,p_3)^{\mathsf T}$ and the ordered six-component list is $(p^{1+},p^{1-},p^{2+},p^{2-},p^{3+},p^{3-})^{\mathsf T}$. In matrix form,
+
+$$
+[L^{\not i}{}_{\mu}]=
+\begin{pmatrix}
+1&1/2&0&0\\1&-1/2&0&0\\
+1&0&1/2&0\\1&0&-1/2&0\\
+1&0&0&1/2\\1&0&0&-1/2
+\end{pmatrix},
+\qquad
+[L^\mu{}_{\not i}]=
+\begin{pmatrix}
+1/6&1/6&1/6&1/6&1/6&1/6\\
+1&-1&0&0&0&0\\
+0&0&1&-1&0&0\\
+0&0&0&0&1&-1
+\end{pmatrix}.
+$$ {#eq-gravity-six-direct-matrices}
+
+Lifting and returning leaves the ordinary four-component vector unchanged:
+
+$$
+L^\mu{}_{\not i}L^{\not i}{}_{\nu}=\delta^\mu{}_{\nu}.
+$$
+
+The reverse contraction $L^{\not i}{}_{\mu}L^\mu{}_{\not j}$ returns the six readings to the equal-pair-sum support. [Derivation 3.9A](/manuscript/appendices/derivations/03-gravity-and-structured-spacetime/09A-four-and-six-component-forms.qmd#sec-derivation-03-09A-four-and-six-component-forms) gives the projector and supported metric forms.
+
+### The metric compares common content with opposed differences
+
+The same sums and differences that recover core and bosic momentum also define the native reference metric. The core is the average of all six readings, while each bosic component is an opposed difference. The shell invariant is therefore
+
+$$
+\boxed{
+\eta_{\not i\not j}p^{\not i}p^{\not j}
+=\sum_{k=1}^{3}\left(p^{k+}-p^{k-}\right)^2
+-\left(\frac16\sum_{\not i}p^{\not i}\right)^2
+=-p_f^2.
+}
+$$ {#eq-gravity-six-shell-metric}
+
+This equation uses the local readings defined above. For the static reference readings $p_r^{\not i}=Np^{\not i}$, the same contraction is instead $-p_{f,r}^{\,2}=-(Np_f)^2$.
+
+The metric combines directional imbalance and common content into one invariant. The minus sign distinguishes those roles; it does not introduce negative momentum content. Componentwise, using the same branch notation as $p^{i\sigma}$, this is the supported reference metric:
+
+$$
+\boxed{
+\eta_{i\sigma,j\tau}
+=\sigma\tau\,\delta_{ij}
+-\frac1{36}.
+}
+$$ {#eq-gravity-six-reference-metric}
+
+The signs $\sigma$ and $\tau$ are $+1$ on plus branches and $-1$ on minus branches. The Kronecker delta compares the two spatial axes; there is no hidden sum over the displayed component labels.
+
+The deformed Stage applies the same structure to geometric increments. The readout map gives
+
+$$
+d\ell^{\not i}=\phi^{\not i}{}_{\not j}dx^{\not j}.
+$$ {#eq-gravity-six-readout-map}
+
+The interval can then be written entirely in six-component language:
+
+$$
+\boxed{
+g_{\not i\not j}dx^{\not i}dx^{\not j}
+=\sum_{k=1}^{3}\left(d\ell^{k+}-d\ell^{k-}\right)^2
+-\left(\frac16\sum_{\not i}d\ell^{\not i}\right)^2.
+}
+$$ {#eq-gravity-six-interval}
+
+The rule is the same as for the momentum shell: compare the three opposed displacement differences with the common process increment. Deformation changes that comparison through $\phi$. These increments are geometric quantities, and in the retained correspondence their common increment supplies the local clock component. Equivalently,
+
+$$
+g_{\not i\not j}
+=\eta_{\not k\not l}\,
+\phi^{\not k}{}_{\not i}\phi^{\not l}{}_{\not j}.
+$$ {#eq-gravity-six-metric-from-readout}
+
+Source, shell and metric now share one organizing structure: common content plus opposed differences. The common mode carries the temporal role; the opposed differences carry the spatial roles. Metric coefficients can therefore have mixed signs even though the directed momentum readings themselves are positive.
+
+### Source correlations appear as component products
+
+The source describes which directional components occur together. Form products for each carrier before averaging:
+
+$$
+J^{\not i\not j}
+=\left\langle\sum_a
+\frac{p_a^{\not i}p_a^{\not j}}{M_a}\right\rangle.
+$$ {#eq-gravity-six-kinetic-source}
+
+The six-by-six source records correlations between directional components. The aggregate first moments recover $\mathcal M$ and $\mathcal P^i$, but the transport block $\mathcal C^{ij}$ depends on which directional readings occur together on the same carriers. Equal counterstreams along $x$ and equal counterstreams along $y$ can have the same core and zero net spatial momentum while transporting momentum in different directions.
+
+For two equal carriers with momenta $\pm p\hat x$ and local core $M$, the opposed $x$ components differ by
+
+$$
+J_x^{1+,1+}-J_x^{1+,1-}=\frac{p^2}{M},
+\qquad
+J_x^{2+,2+}-J_x^{2+,2-}=0.
+$$ {#eq-gravity-six-counterstream-example}
+
+For equal streams along $y$, the nonzero difference moves from the $1$ pair to the $2$ pair. The first moments are identical in the two cases; the component correlation shows which direction carries transport. Derivation 3.9A gives the calculation.
+
+The ordinary source and the six-component source are connected by the same lift and recovery on both upper slots:
+
+$$
+J^{\not i\not j}=L^{\not i}{}_{\mu}L^{\not j}{}_{\nu}J^{\mu\nu},
+\qquad
+J^{\mu\nu}=L^{\mu}{}_{\not i}L^{\nu}{}_{\not j}J^{\not i\not j}.
+$$ {#eq-gravity-six-source-dictionary}
+
+The deformation has the same supported dictionary:
+
+$$
+\theta^{\not i\not j}=L^{\not i}{}_{\mu}L^{\not j}{}_{\nu}\theta^{\mu\nu},
+\qquad
+\theta^{\mu\nu}=L^{\mu}{}_{\not i}L^{\nu}{}_{\not j}\theta^{\not i\not j}.
+$$ {#eq-gravity-six-theta-dictionary}
+
+The slashed components and the ordinary components are two views of the same supported object. A source written as $J^{\not i\not j}$ displays how the opposed directional readings correlate; applying $L^\mu{}_{\not i}$ to each slot returns the ordinary four-component source.
+
+### Curvature compares directional momentum between places
+
+A source correlation asks which directional momenta occur together at one location. The geometric question is how the deformed Stage changes the comparison of those readings between neighboring locations. The connection supplies that comparison rule. Curvature measures its path dependence: transport the same momentum configuration along two infinitesimally different routes and compare the results.
+
+In the fixed supported component basis,
+
+$$
+[\nabla_{\not k},\nabla_{\not l}]p^{\not i}
+=\mathcal R^{\not i}{}_{\not j\not k\not l}p^{\not j}.
+$$ {#eq-gravity-six-curvature-transport}
+
+The first two slots describe the momentum response; the last two describe the two transport directions. Curvature is an oriented change in transport, so reversing the path orientation reverses signs. The sign of a curvature component therefore records the orientation of comparison, not the presence of negative momentum content.
+
+The field equation uses a particular two-index contraction of this transport curvature, the source-matched curvature response. In six-component form this response is the lifted two-index curvature combination
+
+$$
+G^{\not i\not j}
+\equiv
+L^{\not i}{}_{\mu}L^{\not j}{}_{\nu}
+\left(R^{\mu\nu}
+-\frac12 g^{\mu\nu}\,R\right),
+$$ {#eq-gravity-six-response-definition}
+
+For this finite coordinate-curvature equation, convert the local source first:
+
+$$
+J_{\mathrm{coord}}^{\mu\nu}
+=(\phi^{-1})^\mu{}_{\alpha}(\phi^{-1})^\nu{}_{\beta}J_{\mathrm{local}}^{\alpha\beta},
+\qquad
+J_{\mathrm{coord}}^{\not i\not j}
+=L^{\not i}{}_{\mu}L^{\not j}{}_{\nu}J_{\mathrm{coord}}^{\mu\nu}.
+$$
+
+The retained field law is
+
+$$
+L^{\not i}{}_{\mu}L^{\not j}{}_{\nu}
+\left(R^{\mu\nu}
+-\frac12 g^{\mu\nu}\,R\right)
+=\frac{8\pi G_N}{c^3}J_{\mathrm{coord}}^{\not i\not j}.
+$$ {#eq-gravity-six-finite-field}
+
+Both sides now use coordinate components and the same supported six-component representation. The equation constrains the source-matched contraction of curvature. The full transport curvature $\mathcal R^{\not i}{}_{\not j\not k\not l}$ can still carry vacuum tidal structure and propagating disturbances where the local source term vanishes.
+
+### The weak solution component by component
+
+In the aligned weak-harmonic limit,
+
+$$
+G^{(1)\not i\not j}
+=-2\Box\theta^{\not i\not j},
+$$ {#eq-gravity-six-weak-curvature-response}
+
+so the field equation becomes
+
+$$
+\Box\theta^{\not i\not j}
+=-\frac{4\pi G_N}{c^3}J^{\not i\not j}.
+$$ {#eq-gravity-six-weak-wave-equation}
+
+For a localized conserved stationary source, this gives
+
+$$
+\theta^{\not i\not j}(\mathbf x)
+=\frac{G_N}{c^3}\int
+\frac{J^{\not i\not j}(\mathbf x')}{|\mathbf x-\mathbf x'|}\,d^3x'.
+$$ {#eq-gravity-six-weak-solution}
+
+Each source correlation drives its corresponding deformation component in this weak limit. The finite operator then describes how all components jointly determine the comparison geometry through $g$, the connection and its curvature. Applying $L^\mu{}_{\not i}$ to both upper slots recovers the ordinary four-component equation and solution.
+
+The six-component form brings the retained GR-equivalent dynamics into the language of M1's directional momentum. Source correlations deform the Stage, the deformed Stage changes directional momentum comparison, and curvature records the path dependence of that comparison.

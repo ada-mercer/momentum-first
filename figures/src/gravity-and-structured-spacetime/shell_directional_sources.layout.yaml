@@ -1,0 +1,27 @@
+# Approved Research2 composition. Positions are axes data coordinates except
+# panel rectangles and title/integral positions, which are figure fractions.
+figure_size: [15, 6.4]
+dpi: 210
+title_position: [0.5, 0.955]
+integral_position: [0.5, 0.105]
+panels:
+  minus: [0.025, 0.25, 0.26, 0.57]
+  plus: [0.715, 0.25, 0.26, 0.57]
+  shell: [0.30, 0.235, 0.40, 0.63]
+shell_limits:
+  x: [-1.10, 1.63]
+  y: [-1.10, 1.32]
+labels:
+  axis_plus: [1.51, -0.16]
+  axis_minus: [-1.0, -0.16]
+  p_plus: [0.76, 0.57]
+  p_minus: [-0.42, -0.40]
+  pk_plus: [0.64, 0.07]
+  pk_minus: [-0.54, 0.07]
+  solid_angle: [0.87, -0.80]
+  direction: [0.39, -0.57]
+lines:
+  contour: 1.5
+  axis: 0.9
+  principal: 2.15
+  directional: 1.95

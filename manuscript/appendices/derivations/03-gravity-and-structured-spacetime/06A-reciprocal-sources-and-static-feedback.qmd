@@ -1,0 +1,255 @@
+# Derivation 3.6A — Reciprocal Sources and Static Feedback {#sec-derivation-03-06A-reciprocal-sources-and-static-feedback .unnumbered}
+
+## Purpose
+
+The particle momenta found in §3.5 supply the source in §3.6. This derivation obtains their local source contributions and the exact static temporal weighting. It then solves a supported continuum example and compares two scalar models of source feedback.
+
+## Starting assumptions
+
+Use signature $(-+++)$, $x^0=ct$ and the current all-upper momentum source. In the static zero-shift patch, write $N=\phi^0{}_0>0$ and $h_{ij}=g_{ij}$ as local calculation aliases. The retained equation is $G^{\mu\nu}=(8\pi G_N/c^3)J^{\mu\nu}$ in matching frames. Its source includes the complete material stress for the model being solved.
+
+The free-carrier example uses $p_r^\mu=Np_{\mathrm{local}}^\mu$, $M_r=NM$ and local physical-volume population weights. The prescribed scalar control later uses Euclidean volume instead; it is a different field-law problem. Neither the free-particle kernel nor the constant-density continuum resolves a singular particle self-field or supplies a microscopic internal-support law.
+
+## Derivation
+
+### From particle momentum to the source
+
+For each massive carrier, the normalized four-velocity of §3.5 gives
+
+$$
+p_{\mathrm{local},a}^{\mu}
+=\frac{p_{f,a}}{c}\phi^\mu{}_\alpha u_a^\alpha,
+\qquad
+p_{r,a}^{\mu}=Np_{\mathrm{local},a}^{\mu}.
+$$
+
+Consequently
+
+$$
+\begin{aligned}
+(j_a^{\mu\nu})_{\mathrm{local}}
+&=\frac{p_{\mathrm{local},a}^{\mu}p_{\mathrm{local},a}^{\nu}}{M_a}\\
+&=\frac{p_{r,a}^{\mu}p_{r,a}^{\nu}}{NM_{r,a}}\\
+&=\frac{p_{f,a}^2}{c^2M_a}
+\phi^\mu{}_\alpha\phi^\nu{}_\beta u_a^\alpha u_a^\beta.
+\end{aligned}
+$$ {#eq-g36a-shell-source}
+
+The first two forms also apply to nonzero null momenta; the massive proper-time parametrization in the last form does not. Form each product before taking the physical-volume moment. The blocks are
+
+$$
+\mathcal M=\left\langle\sum_a\frac{M_{r,a}}N\right\rangle,
+\qquad
+\mathcal P^i=\left\langle\sum_a\frac{p_{r,a}^i}N\right\rangle,
+\qquad
+\mathcal C^{ij}=\left\langle\sum_a
+\frac{p_{r,a}^ip_{r,a}^j}{NM_{r,a}}\right\rangle.
+$$ {#eq-g36a-reference-source-blocks}
+
+These are local source components expressed through reference-normalized inputs. Coordinate components require the separate congruence $J_{\mathrm{coord}}=\phi^{-1}J_{\mathrm{local}}\phi^{-\mathsf T}$. Neither operation changes which physical content belongs in $J$.
+
+### The static temporal equation
+
+For
+
+$$
+ds^2=-N^2(dx^0)^2+h_{ij}dx^idx^j,
+$$
+
+static curvature gives
+
+$$
+R_{00}=N D_iD^iN,
+\qquad
+D_iD^iN=\frac1{\sqrt{\det h}}
+\partial_i\left(\sqrt{\det h}\,h^{ij}\partial_jN\right).
+$$
+
+Trace reversal of the retained equation, in the local orthonormal frame, gives
+
+$$
+R_{\mathrm{local},00}
+=\frac{4\pi G_N}{c^3}
+\left(\mathcal M+\delta_{ij}\mathcal C^{ij}\right).
+$$
+
+Since $R_{\mathrm{local},00}=R_{00}/N^2$, the exact result is
+
+$$
+D_iD^iN
+=\frac{4\pi G_N}{c^3}N
+\left(\mathcal M+\delta_{ij}\mathcal C^{ij}\right).
+$$ {#eq-g36a-static-temporal-equation}
+
+Trace reversal gives the positive spatial-trace term. This equation sources the temporal map $N$; weak $\theta^{00}$ alone is sourced by $\mathcal M$.
+
+For resting free carriers, $\mathcal M=np_f$ and $\mathcal C^{ij}=0$, hence $N\mathcal M=np_{f,r}$. The single factor of $N$ converts the local fermic contribution to its reference-expressed value.
+
+The same source must satisfy conservation. For static dust its spatial equation is
+
+$$
+\mathcal M\,\partial_i\ln N=0.
+$$ {#eq-gravity-static-dust-obstruction}
+
+For positive density, this condition requires a spatially constant $N$. A static body in a varying well therefore needs a supporting stress or force.
+
+### A complete static continuum example
+
+Consider an incompressible continuum with constant total local core density, $\mathcal M=\mathcal M_0$, and isotropic total spatial stress, $\mathcal C^{ij}=\mathcal C_s(r)\delta^{ij}$. The supporting stress is included in $\mathcal C_s$. Let $r$ be areal radius and $R_s$ the surface radius. Define
+
+$$
+r_s=\frac{8\pi G_N\mathcal M_0R_s^3}{3c^3},
+\qquad
+F(r)=1-\frac{r_s r^2}{R_s^3},
+\qquad
+F_s=1-\frac{r_s}{R_s}.
+$$
+
+Inside the body,
+
+$$
+N=\frac{3\sqrt{F_s}-\sqrt F}{2},
+\qquad
+\mathcal C_s=\mathcal M_0
+\frac{\sqrt F-\sqrt{F_s}}{3\sqrt{F_s}-\sqrt F},
+$$ {#eq-g36a-supported-interior}
+
+and in areal Cartesian coordinates the spatial map is
+
+$$
+\phi^i{}_j=\delta^i{}_j+
+\left(F^{-1/2}-1\right)\hat r^i\hat r_j.
+$$
+
+The centre is defined by smooth extension. These expressions give $ds^2=-N^2(dx^0)^2+dr^2/F+r^2d\Omega^2$. Outside, $F=1-r_s/r$, $N=\sqrt F$ and $\mathcal C_s=0$.
+
+The radial field and material equations can be written using the enclosed core parameter $M_{\mathrm{enc}}$:
+
+$$
+\begin{aligned}
+\frac{dM_{\mathrm{enc}}}{dr}&=4\pi r^2\mathcal M_0,\\
+\frac{N'}N&=\frac{G_N}{c^3}
+\frac{M_{\mathrm{enc}}+4\pi r^3\mathcal C_s}
+{r^2[1-2G_NM_{\mathrm{enc}}/(c^3r)]},\\
+\mathcal C_s'&=-(\mathcal M_0+\mathcal C_s)\frac{N'}N.
+\end{aligned}
+$$ {#eq-g36a-supported-reciprocal-system}
+
+The displayed solution satisfies these equations and the tangential field equation. At $R_s$, its lapse and radial geometry match the vacuum exterior and its stress vanishes, so no surface stress layer is required. Positive central lapse and finite central stress require $0<r_s/R_s<8/9$.
+
+### Temporal weighting and the exterior source
+
+For a regular isolated static spherical solution, integrating the temporal equation gives the asymptotic core parameter, in momentum units,
+
+$$
+M_\infty
+=\frac{c^3}{G_N}\lim_{r\to\infty}r^2\sqrt F\,N'
+=\int N\left(\mathcal M+\delta_{ij}\mathcal C^{ij}\right)d\Sigma.
+$$ {#eq-g36a-static-source-flux}
+
+For the supported uniform sphere, $d\Sigma=4\pi r^2dr/\sqrt F$, and direct substitution gives
+
+$$
+\frac{N(\mathcal M_0+3\mathcal C_s)}{\sqrt F}=\mathcal M_0.
+$$
+
+Thus $M_\infty=4\pi\mathcal M_0R_s^3/3$. The proper integral of local cores alone is larger:
+
+$$
+\int\mathcal M_0\,d\Sigma
+=4\pi\mathcal M_0\int_0^{R_s}\frac{r^2}{\sqrt F}\,dr
+>M_\infty.
+$$
+
+The exterior source depends on temporal weighting, supporting stress and physical volume together.
+
+### A scalar feedback model
+
+Now prescribe constant $n$ per **Euclidean** volume, retain only $\theta^{00}$, and add the field-law postulate
+
+$$
+\Delta_{\mathrm{flat}}\theta^{00}
+=-\frac{4\pi G_Nnp_f}{c^3}\sqrt{1-2\theta^{00}}
+\quad (r<R_s).
+$$
+
+Require a regular centre, decay at infinity and continuous value and first radial derivative at the surface. With
+
+$$
+x=\frac r{R_s},\qquad
+\alpha=\frac{4\pi G_Nnp_fR_s^2}{c^3},\qquad
+y=1-2\theta^{00}=N^2,
+$$
+
+the boundary-value problem becomes
+
+$$
+y''+\frac2x y'=2\alpha\sqrt y,
+\qquad y'(0)=0,
+\qquad y(1)+y'(1)=1.
+$$ {#eq-g36a-feedback-bvp}
+
+Primes now mean $d/dx$. Outside, $y=1-b/x$ with $b=y'(1)$. The reduced-to-unreduced source fraction is
+
+$$
+S=3\int_0^1x^2\sqrt y\,dx,
+\qquad b=\frac{2\alpha}{3}S.
+$$
+
+Solving without expanding the square root gives:
+
+| $\alpha$ | Central $N$ | Surface $N$ | Source fraction $S$ |
+|---:|---:|---:|---:|
+| 0.1 | 0.950833949 | 0.967443049 | 0.960809196 |
+| 1 | 0.581376331 | 0.740308770 | 0.677914387 |
+| 2 | 0.302614700 | 0.596052040 | 0.483541474 |
+| 4 | 0.019726127 | 0.465118871 | 0.293874163 |
+
+The tabulated values are numerical solutions of this scalar boundary-value problem, checked by shooting, collocation and the source–flux identity. They are not solutions of all tensor field equations. The flat operator and Euclidean density are constitutive choices; a physical spatial metric and reciprocal material dynamics cannot be inferred from this scalar equation alone.
+
+### Giulini's homogeneous scalar sphere
+
+[Giulini's account of Einstein's Prague field equation](https://arxiv.org/abs/1306.5966), §§2–4, supplies a related exact scalar example. For a uniform bare mass $m_b$ inside $R_s$, his normalized scalar $\Psi=\sqrt{\Phi/c^2}$ satisfies
+
+$$
+\Delta_{\mathrm{flat}}\Psi=\kappa^2\Psi,
+\qquad
+\kappa^2=\frac{3G_Nm_b}{2c^2R_s^3},
+\qquad \Psi(\infty)=1.
+$$
+
+Put $z=\kappa R_s$. Regularity and matching give
+
+$$
+\Psi_{\mathrm{in}}(r)
+=\frac{\sinh(\kappa r)}{\kappa r\cosh z},
+\qquad
+\Psi_{\mathrm{out}}(r)=1-\frac{R_g}{r},
+$$
+
+$$
+R_g=R_s\left(1-\frac{\tanh z}{z}\right)
+=\frac{G_Nm_g}{2c^2},
+\qquad
+\frac{m_g}{m_b}
+=\frac3{z^2}\left(1-\frac{\tanh z}{z}\right).
+$$ {#eq-g36a-giulini-sphere}
+
+The active mass $m_g$ includes the scalar field's contribution in that theory. At $z=1$, $m_g/m_b=0.715217532$; its matter and field energy fractions are respectively $0.512429722$ and $0.202787811$.
+
+Identifying the bare mass density with $np_f/c$ gives $z^2=\alpha/2$ in Giulini’s model. A flat-spatial version of the retained resting-lapse equation would instead have $z^2=\alpha$, while the nonlinear-$\theta$ problem above has a different field equation again. These comparisons relate their source parameters; each model retains its own force law and source accounting.
+
+## Result
+
+The reference shell enters the kinetic source through $j_a^{\mu\nu}=p_{r,a}^\mu p_{r,a}^\nu/(NM_{r,a})$. The exact static temporal equation weights a resting contribution as $np_{f,r}$. The supported continuum solution shows how pressure and curved volume enter the complete source, while the two scalar examples describe feedback under their own field-law postulates.
+
+## Notes
+
+The supported uniform sphere is the interior Schwarzschild incompressible continuum in momentum units. Its stress is specified at the continuum level; internal particle support and causal material evolution require further physical laws. Giulini’s formulas used here are his equations (24), (32)–(33) and (37). The calculations support [§3.6](/manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd#sec-gravity-reciprocity).
+
+<!-- Scientific provenance (not a new review receipt):
+v4/research/2026-09-24-static-uniform-sphere/RESULT.md: conditional incompressible sphere
+v4/research/2026-09-24-reciprocal-reduced-source/RESULT.md: exact lapse equation and separate scalar controls
+Giulini 1306.5966 equations 24,32,33,37
+Exact proof revisions/hashes and review scope: exchange/reviews/manuscript/2026-10-01-gravity-appendix-adoption/EVIDENCE_MAP.md.
+-->

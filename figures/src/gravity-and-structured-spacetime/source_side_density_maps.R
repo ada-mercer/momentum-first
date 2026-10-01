@@ -1,6 +1,7 @@
 #!/usr/bin/env Rscript
-# Source-side directional gravity densities from the realized split
-# for a uniformly dense rotating body.
+# Flat-space source channels for a rotating particle population.
+# Uniform number density; tangential momentum grows with radius.
+# Source snapshot only, not a solved supported-body gravitational field.
 
 args <- commandArgs(trailingOnly = FALSE)
 file_arg <- grep("^--file=", args, value = TRUE)
@@ -25,15 +26,15 @@ compute_source_fields <- function() {
   Theta <- atan2(xy$y, xy$x)
   inside <- R <= 1
 
-  rho <- 1.0
+  number_density <- 1.0
   p_f <- 1.0
   eta <- 0.65
 
   p_mag <- ifelse(inside, eta * p_f * R, NA)
   p_k <- ifelse(inside, -p_mag * sin(Theta), NA)
   M <- ifelse(inside, sqrt(p_f^2 + p_mag^2), NA)
-  Jplus <- ifelse(inside, rho * (M + 0.5 * p_k), NA)
-  Jminus <- ifelse(inside, rho * (M - 0.5 * p_k), NA)
+  Jplus <- ifelse(inside, number_density * (M + 0.5 * p_k), NA)
+  Jminus <- ifelse(inside, number_density * (M - 0.5 * p_k), NA)
   Mk <- ifelse(inside, 0.5 * (Jplus + Jminus), NA)
   Pk <- ifelse(inside, Jplus - Jminus, NA)
 
@@ -107,14 +108,13 @@ draw_figure <- function(fields) {
     draw_arc_arrow(0.60, start = ctr - span / 2, end = ctr + span / 2, col = arc_col, lwd = 1.5)
   }
   draw_arc_arrow(0.85, start = 0.18 * pi, end = 1.78 * pi, col = arc_col, lwd = 2.2)
-  text(0.66, 0.96, labels = expression(omega), col = arc_col, cex = 0.95)
 
   mtext(expression("(a) " * "Rotating source model"), side = 3, line = 0.8, cex = 1.05)
   box(col = "#bdbdbd")
 
   field_panel(
     fields$ZJp,
-    title_expr = expression("(b) " * scriptstyle(J)[k]^"+"),
+    title_expr = expression("(b) " * "𝒥"[k]^"+"),
     cols = seq_cols,
     zlim = range(c(fields$Jplus, fields$Jminus), na.rm = TRUE),
     draw_contour = TRUE
@@ -122,7 +122,7 @@ draw_figure <- function(fields) {
 
   field_panel(
     fields$ZM,
-    title_expr = expression("(c) " * scriptstyle(M)[k] == frac(scriptstyle(J)[k]^"+" + scriptstyle(J)[k]^"-", 2)),
+    title_expr = expression("(c) " * "ℳ" == frac("𝒥"[k]^"+" + "𝒥"[k]^"-", 2)),
     cols = seq_cols,
     zlim = range(fields$Mk, na.rm = TRUE),
     draw_contour = TRUE
@@ -131,7 +131,7 @@ draw_figure <- function(fields) {
   pmax_abs <- max(abs(fields$Pk), na.rm = TRUE)
   field_panel(
     fields$ZP,
-    title_expr = expression("(d) " * scriptstyle(P)[k] == scriptstyle(J)[k]^"+" - scriptstyle(J)[k]^"-"),
+    title_expr = expression("(d) " * "𝒫"[k] == "𝒥"[k]^"+" - "𝒥"[k]^"-"),
     cols = div_cols,
     zlim = c(-pmax_abs, pmax_abs),
     add_zero_contour = TRUE,
@@ -145,7 +145,7 @@ draw_figure <- function(fields) {
   text(0.50, 0.64, labels = "k", cex = 1.0, col = "#333333")
   text(0.92, 0.54, labels = "k+", cex = 1.0, col = "#333333")
 
-  mtext("Source-side directional gravity densities from the realized split for a uniformly dense rotating body", outer = TRUE, cex = 1.15, font = 2)
+  mtext("Directional source content of a rotating body", outer = TRUE, cex = 1.15, font = 2)
 }
 
 render_with_device <- function(device, path, width, height, res = NULL) {

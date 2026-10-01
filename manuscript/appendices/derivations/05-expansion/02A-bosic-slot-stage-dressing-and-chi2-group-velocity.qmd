@@ -22,7 +22,6 @@ The result is a generator theorem within a stated two-slot dressing architecture
 - **Role:** derivation of the homogeneous stage-dressed generator and its group velocity.
 - **Regime:** a free narrow wave packet on a spatially homogeneous, slowly varying stage; no local gravitational field.
 - **Premises:** the Chapter 4 phase law, the Dirac-form core-momentum operator, spatial translation symmetry, and a multiplicative dressing of its fermic and bosic slots.
-- **Status:** candidate derivation for independent V3 review. The placement result is unique only within the stated ansatz and requirements.
 
 ## Notation ledger
 

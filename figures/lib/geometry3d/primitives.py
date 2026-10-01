@@ -11,6 +11,7 @@ from dataclasses import dataclass
 import numpy as np
 
 from .scene_spec import SceneObject
+from .exporters import SUPPORTED_OUTPUT_KINDS as SUPPORTED_OUTPUT_KINDS
 
 SUPPORTED_OBJECT_KINDS = {
     'sampled_surface',
@@ -22,11 +23,6 @@ SUPPORTED_OBJECT_KINDS = {
 SUPPORTED_ANNOTATION_KINDS = {
     'text2d',
     'text3d',
-}
-
-SUPPORTED_OUTPUT_KINDS = {
-    'canonical_png',
-    'preview_png',
 }
 
 

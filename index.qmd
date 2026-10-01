@@ -32,6 +32,12 @@ Gravity, quantum mechanics, and expansion as working framework engines.
 :::
 
 ::: {.mf-path-card}
+[**Part 0 — Deep Structure**]{.mf-card-title}
+
+A first geometric picture of internal cycles, momentum and motion.
+:::
+
+::: {.mf-path-card}
 [**Appendices**]{.mf-card-title}
 
 Derivations, calibration notes, and technical support for the main text.

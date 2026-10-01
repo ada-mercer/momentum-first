@@ -1,0 +1,115 @@
+## Correspondence with Newtonian Gravity and General Relativity {#sec-gravity-correspondence}
+
+The field law used in this chapter reaches beyond the inverse-square force: it governs finite geometry, gravitational waves and changing sources. Its correspondence with GR therefore rests on the coupled equations, including the laws for matter and measurement. These determine both the exact agreement and where a different M1 law could change a prediction.
+
+### Exact agreement under the same physical laws
+
+The source tensor uses momentum units. In the same frame, the conventional stress–energy tensor is
+
+$$
+T^{\mu\nu}=cJ^{\mu\nu},
+\qquad
+m_0=\frac{p_f}{c}.
+$$ {#eq-gravity-gr-unit-dictionary}
+
+The second relation identifies the free carrier’s rest-mass parameter. In a zero-shift chart, GR’s lapse is $N=\phi^0{}_0$ and its spatial metric is $h_{ij}=g_{ij}$. The dictionary expresses the same source and geometry in conventional units and variables.
+
+With this dictionary, the retained field equation is exactly
+
+$$
+G^{\mu\nu}[g]=\frac{8\pi G_N}{c^4}T^{\mu\nu}.
+$$ {#eq-gravity-einstein-correspondence}
+
+On the regular domain, the map between $\theta$ and $g$ is invertible and preserves all ten finite field equations. The free-carrier coupling gives the same timelike and null geodesics, and its distribution follows the same collisionless transport law. With the same matter laws, initial and boundary data, and measurement models, this sector gives exactly the same GR solutions and predictions.
+
+The agreement includes the four initial constraints, two local gravitational-wave polarizations and null gravitational characteristics. Under the appropriate regularity conditions, local existence and uniqueness carry over for massive data, and separately for purely massless data supported away from zero momentum. [Derivation 3.10A](/manuscript/appendices/derivations/03-gravity-and-structured-spacetime/10A-gr-correspondence-and-material-comparisons.qmd#sec-derivation-03-10A-gr-correspondence-and-material-comparisons) gives these conditions and the comparison premises.
+
+### One weak source, three familiar tests
+
+For §3.4's cold weak source, write $m_{\mathrm{src}}=M_{\mathrm{src}}/c$ and $\ell_g=G_Nm_{\mathrm{src}}/c^2$. A slow probe then has
+
+$$
+\mathbf a\simeq-\frac{G_Nm_{\mathrm{src}}}{r^2}\widehat{\mathbf r}.
+$$ {#eq-gravity-newtonian-comparison}
+
+This is the Newtonian inverse-square limit. The same source coefficient enters the clock and light comparisons, without separate adjustments of the gravitational coupling.
+
+To turn §3.5’s ideal clock law into an experiment, hold identical clocks at $a$ and $b$ in a static zero-shift geometry, with supports that leave their cycles unchanged. Clock $a$ sends one pulse every $m$ cycles. Let $\mathcal R_{a\to b}$ be the number of received pulses per cycle of clock $b$. The stationary travel time shifts arrival times but not their separation, so
+
+$$
+m\mathcal R_{a\to b}=\frac{N_a}{N_b},
+\qquad
+m\mathcal R_{a\to b}-1
+\simeq-\ell_g\left(\frac1{r_a}-\frac1{r_b}\right).
+$$ {#eq-gravity-clock-correspondence}
+
+With $N_a<N_b$, the emitter runs more slowly than the receiver, which records a reduced pulse rate per cycle. The comparison is made through counted events.
+
+For a distant light ray with impact parameter $B$, the temporal and spatial maps together give
+
+$$
+\delta_{\mathrm{light}}\simeq\frac{4\ell_g}{B}
+=\frac{4G_Nm_{\mathrm{src}}}{c^2B}.
+$$ {#eq-gravity-gr-light-comparison}
+
+This is the leading GR deflection. Both temporal slowing and spatial deformation contribute to it. The same weak metric gives the propagation delay, while the finite metric and timelike geodesics give orbital precession. All these effects follow from one geometry and one probe coupling.
+
+### Finite geometry and horizons
+
+At finite field strength, the supported constant-density solution of §3.6 is the interior Schwarzschild continuum expressed in momentum units. Its pressure, curved volume and temporal weighting enter together.
+
+A complementary vacuum example passes through a horizon without a singular operational map. In ingoing Painlevé–Gullstrand coordinates, let $r_s=2G_Nm_{\mathrm{src}}/c^2$ and $r=|\mathbf x|>0$. The local intervals are
+
+$$
+d\ell^0=dx^0,
+\qquad
+d\boldsymbol\ell
+=d\mathbf x+\sqrt{\frac{r_s}{r}}\,\widehat{\mathbf r}\,dx^0.
+$$ {#eq-gravity-horizon-regular-map}
+
+This is the Schwarzschild vacuum in a freely falling local frame. Direct substitution satisfies the full field constraints and stationary evolution equations, including at $r=r_s$. Radial null paths obey
+
+$$
+\frac{dr}{dx^0}=-\sqrt{\frac{r_s}{r}}\pm1,
+$$ {#eq-gravity-horizon-null-paths}
+
+while their speed in the local frame remains $c$. A clock held at fixed coordinates moves relative to these freely falling frames; its exterior rate is $\sqrt{1-r_s/r}$, although $\phi^0{}_0=1$ in this shifted map. At the horizon that held worldline ceases to be timelike, while the map itself remains regular.
+
+### Complete sources and finite regions
+
+A source must also represent the stresses of its material, including binding and support. For the free-particle source of §3.3,
+
+$$
+n_i\mathcal C^{ij}n_j
+=\left\langle\sum_a\frac{(n_ip_a^i)^2}{M_a}\right\rangle\geq0
+$$ {#eq-gravity-free-stress-bound}
+
+for every spatial direction $n_i$. A free-particle population therefore has nonnegative normal stress in every direction. Matter with tension needs the stress contributions of its binding fields or internal dynamics as well.
+
+The momentum balance of a finite region includes boundary transport, changes in physical volume and the comparison of local directions across the region. Integrating the local balance retains these flux and geometry terms. Explicit finite-window balances and error bounds quantify these effects. A spatial average alone therefore leaves out information needed for a closed source law.
+
+### A supported body with its own clock
+
+A self-bound fluid model supplies a body with its own surface and support. Its pressure vanishes at a finite nonzero density, giving a free surface. Solving the material and gravitational equations together produces a regular spherical body that matches the exterior Schwarzschild geometry without a surface stress layer.
+
+The body’s small radial displacements obey an oscillation equation derived from the same material law. In the worked models, an analytic positive bound on every admissible radial eigenvalue establishes linear radial stability. The fundamental mode provides a recurrence, and the changing surface area supplies its clock observable.
+
+A specified weak scalar signal carries that material recurrence outward. The moving body generates sidebands above and below the carrier, each offset by the independently calculated material frequency. Changing the incident carrier frequency leaves those offsets unchanged, while a stationary-body control removes the sidebands. Thus the outgoing signal records the body's cadence rather than a cadence prepared in the input.
+
+For this effective material, support, source, recurrence and the weak outgoing scalar field follow from compatible laws. The calculation connects the body’s dynamics to a signal carrying its cadence. Electromagnetic detection and other material clocks require their own dynamical models.
+
+### What the dynamical calculations add
+
+The nonlinear evolution in §3.8 advances the same body and its changing geometry for six periods at two specified finite perturbations, with the signal switched off. It measures successive periods and accumulated surface time from the evolved motion. The larger-perturbation extension remains outside the verified range: agreement of local and boundary balances is needed as well as a smooth surface trajectory.
+
+The finite equations for the material and scalar together include opposite momentum exchange, propagated gravitational constraints and transmission across a moving material surface. At finite signal strength, scalar stress outside the body can change its surface mass. The exterior must then evolve along with the body and signal.
+
+Finite material–scalar exchange with gravitational response has been demonstrated in a separate homogeneous calculation. The nonlinear bounded-body evolution, its weak outgoing-signal comparison and the homogeneous finite-exchange solution are distinct results. A full nonlinear body–signal–detector comparison still needs its own coupled solution.
+
+### Where M1 could differ
+
+Agreement with GR is exact while the field, matter and measurement laws are shared. A genuine departure must therefore change one of those laws: how internal momentum is redistributed, how its stresses source space, how space evolves, or how a material clock and signal couple to that evolution.
+
+Weak agreement does not uniquely choose the finite laws. Distinct nonlinear field equations can share a linear calibration, and distinct clock couplings can share a free-space frequency. A departure becomes a prediction only after its additional law is specified and its observable consequence derived. §3.6’s finite Poisson-feedback model makes one such additional field-law choice; its flat Poisson operator, Euclidean source-volume weights and scalar feedback define a different calculation from the full tensor solution.
+
+M1 requires internal fermic-to-bosic compensation and complete directional conservation. Turning these requirements into a microscopic source and support law, with a consistent common-frame account in curved space, remains the native construction to be completed. The GR results provide its benchmark: a completion must reproduce the shared-law predictions or derive a testable departure from a specified change in the physics.

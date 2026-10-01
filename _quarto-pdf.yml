@@ -1,5 +1,6 @@
 format:
   pdf:
+    output-file: Momentum-First.pdf
     filters:
       - rendering/filters/remove-empty-pdf-index.lua
     toc: true
@@ -9,14 +10,6 @@ format:
     urlcolor: black
     citecolor: black
     toccolor: black
-    # documentclass: scrbook # KOMA-script book class, often provides better typography for books
-    # number-sections: true
-    # keep-tex: true         # Keeps the intermediate .tex file (highly useful for debugging LaTeX errors)
-    # geometry:              # Easily adjust margins
-    #   - top=30mm
-    #   - left=20mm
-    #   - right=20mm
-    #   - bottom=30mm
     include-in-header:
       - rendering/styles/pdf/preamble.tex
       - rendering/styles/pdf/macros.tex

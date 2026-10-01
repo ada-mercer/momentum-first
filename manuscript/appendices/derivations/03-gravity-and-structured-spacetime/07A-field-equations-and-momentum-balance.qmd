@@ -1,0 +1,200 @@
+# Derivation 3.7A — Field Equations and Momentum Balance {#sec-derivation-03-07A-field-equations-and-momentum-balance .unnumbered}
+
+## Purpose
+
+The finite field law of §3.7 becomes a system of equations for the registered deformation. This derivation writes out that system, obtains its weak wave equation and initial constraints, and derives the local and finite-region momentum balances. A final common-frame argument gives conserved opposed directional amounts.
+
+## Starting assumptions
+
+Use the torsion-free metric connection, signature $(-+++)$ and $x^0=ct$. The registered reference form $\eta$ is fixed. Work where the spatial metric is positive definite and the future temporal map factor is positive. The selected matter law supplies the complete source, including any binding and support stresses.
+
+The Einstein field action with zero cosmological term is retained. Take compactly supported variations so that gravitational boundary terms do not enter the local Euler equation.
+
+## Derivation
+
+### The exact operator in deformation variables
+
+The finite dictionary is
+
+$$
+g_{\mu\nu}(\theta)=\eta_{\mu\nu}
++4\eta_{\mu\alpha}\theta^{\alpha\beta}\eta_{\beta\nu}
+-2\eta_{\mu\nu}\eta_{\alpha\beta}\theta^{\alpha\beta}.
+$$ {#eq-g37a-finite-dictionary}
+
+Form $g^{\mu\nu}$ by inverting this finite matrix. Its inverse and derivatives determine the connection and curvature:
+
+$$
+\Gamma^\alpha{}_{\mu\nu}
+=\frac12g^{\alpha\beta}
+\left(\partial_\mu g_{\beta\nu}
++\partial_\nu g_{\beta\mu}
+-\partial_\beta g_{\mu\nu}\right),
+$$
+
+$$
+R_{\mu\nu}
+=\partial_\alpha\Gamma^\alpha{}_{\mu\nu}
+-\partial_\nu\Gamma^\alpha{}_{\mu\alpha}
++\Gamma^\alpha{}_{\alpha\beta}\Gamma^\beta{}_{\mu\nu}
+-\Gamma^\alpha{}_{\nu\beta}\Gamma^\beta{}_{\mu\alpha},
+$$
+
+$$
+R=g^{\mu\nu}R_{\mu\nu},
+\qquad
+G^{\mu\nu}=g^{\mu\alpha}g^{\nu\beta}R_{\alpha\beta}
+-\frac12g^{\mu\nu}R.
+$$ {#eq-g37a-curvature-operator}
+
+Together these formulas give ten nonlinear second-order field equations for $\theta$. Although $g_{\mu\nu}$ is affine in $\theta$, its inverse, the connection products and the curvature contractions depend nonlinearly on the finite deformation.
+
+### Action normalization and full-rank variation
+
+The retained gravitational action and matter variation are
+
+$$
+S_g=\frac{c^3}{16\pi G_N}\int\sqrt{-g}\,R\,d^4x,
+\qquad
+\delta S_m=\frac12\int\sqrt{-g}\,
+J_{\mathrm{coord}}^{\mu\nu}\delta g_{\mu\nu}\,d^4x.
+$$
+
+Stationarity gives
+
+$$
+G^{\mu\nu}=\frac{8\pi G_N}{c^3}J_{\mathrm{coord}}^{\mu\nu},
+\qquad
+J_{\mathrm{coord}}=\phi^{-1}J_{\mathrm{local}}\phi^{-\mathsf T}.
+$$ {#eq-g37a-field-equation}
+
+Let $E^{\mu\nu}$ be the symmetric residual multiplying $\delta g_{\mu\nu}$. Varying $\theta$ directly gives the coefficient of unrestricted symmetric $\delta\theta^{\alpha\beta}$:
+
+$$
+4\eta_{\alpha\mu}E^{\mu\nu}\eta_{\nu\beta}
+-2\eta_{\alpha\beta}\eta_{\mu\nu}E^{\mu\nu}.
+$$
+
+Contracting with $\eta^{\alpha\beta}$ first makes the reference trace of $E$ vanish; the remaining equation then gives $E=0$. Thus the ten deformation equations and ten metric equations have exactly the same zero set on the regular chart. The positive-root choice for the spatial coframe fixes its orientation, not the allowed metric variations.
+
+### Weak propagation and the stationary limit
+
+Write $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ for this linearization only, and define its trace reverse $\bar h_{\mu\nu}=h_{\mu\nu}-\eta_{\mu\nu}\eta^{\alpha\beta}h_{\alpha\beta}/2$. The dictionary gives
+
+$$
+\bar h^{\mu\nu}=4\theta^{\mu\nu}.
+$$
+
+In aligned harmonic coordinates, $\partial_\mu\theta^{\mu\nu}=0$, so
+
+$$
+G^{(1)\mu\nu}=-2\Box\theta^{\mu\nu},
+\qquad
+\Box\theta^{\mu\nu}
+=-\frac{4\pi G_N}{c^3}J^{\mu\nu}.
+$$ {#eq-g37a-linear-field-equation}
+
+At this order local and coordinate leading sources coincide in the reference frame. A stationary conserved localized source, with response vanishing at infinity, gives
+
+$$
+\theta^{\mu\nu}(\mathbf x)
+=\frac{G_N}{c^3}\int
+\frac{J^{\mu\nu}(\mathbf x')}{|\mathbf x-\mathbf x'|}\,d^3x'.
+$$
+
+The integral solves the stationary weak equation. At finite deformation, the full operator also contains the inverse-metric and curvature-product terms above.
+
+### Initial constraints and local evolution
+
+Let $h_{ij}$ now denote the induced spatial metric, $n^\mu$ the future unit normal and $K_{ij}=-\tfrac12\mathcal L_nh_{ij}$ the extrinsic curvature. Use temporary normal-frame source projections
+
+$$
+\mathcal M_n=J_{\mu\nu}n^\mu n^\nu,
+\qquad
+\mathcal P_{n,i}=-J_{i\nu}n^\nu,
+$$
+
+where the coordinate source has been lowered with $g$. The four initial constraints are
+
+$$
+{}^{(3)}R+K^2-K_{ij}K^{ij}
+=\frac{16\pi G_N}{c^3}\mathcal M_n,
+\qquad
+D_jK^j{}_i-D_iK
+=\frac{8\pi G_N}{c^3}\mathcal P_{n,i}.
+$$ {#eq-g37a-initial-constraints}
+
+The six spatial equations evolve the spatial geometry with the matter. In a suitable wave-coordinate formulation, the coordinate-condition residual obeys a homogeneous wave equation when the matter balance holds. Compatible initial gauge and constraint data therefore remain compatible in their domain of dependence. The metric principal symbol is $g^{\alpha\beta}\xi_\alpha\xi_\beta$: the gravitational characteristics are null, and the usual constraint/gauge count leaves two local radiative polarizations.
+
+For the local existence statement, take smooth constraint-satisfying data on a spacelike Cauchy slice, a smooth nonnegative distribution with compact momentum support, and a regular chart whose spatial metric is positive definite and whose lapse stays positive. Work in a boundary-free neighborhood or its domain of dependence. For positive-mass species the local result follows from [Choquet-Bruhat's Einstein–Liouville Cauchy theorem](https://aif.centre-mersenne.org/item/10.5802/aif.385.pdf), §10; smooth compact-support data form a sufficient subclass of its weighted Sobolev hypotheses. For a purely massless population use the separately stated local Cauchy result, Theorem 12.1 of [Taylor](https://arxiv.org/abs/1602.02611), with momentum support restricted to a compact subset of the nonzero future null shell.
+
+The coframe and canonical/local momentum maps are smooth and invertible on compact regular patches; support away from zero bounds the null inverse-core weights. The free source and transport equations are those of these comparison systems. Their local geometric existence and uniqueness therefore transfer to the registered variables while the chart remains regular. This imports the stated local results, not a new PDE theorem, a proof of strong hyperbolicity for arbitrary raw evolution variables, an arbitrary mixed-shell or timelike-boundary theorem, or global regularity. The explicit mixed homogeneous example in Derivation 3.8A is a separate construction.
+
+### Local and finite-window momentum balance
+
+The matter equations must supply $\nabla_\mu J^{\mu\nu}=0$, consistently with the contracted curvature identity. In all-upper coordinate components,
+
+$$
+\partial_\mu\left(\sqrt{-g}\,J^{\mu\nu}\right)
+=-\sqrt{-g}\,\Gamma^\nu{}_{\mu\alpha}J^{\mu\alpha}.
+$$ {#eq-g37a-densitized-balance}
+
+For an explicitly chosen covector $K_\nu$ that specifies a component comparison between events,
+
+$$
+\partial_\mu\left(\sqrt{-g}\,J^{\mu\nu}K_\nu\right)
+=\sqrt{-g}\,J^{\mu\nu}\nabla_\mu K_\nu.
+$$
+
+Integrate against a smooth compact spatial window $w(x^0,\mathbf x)$ and integrate the spatial divergence by parts:
+
+$$
+\begin{aligned}
+\frac{d}{dx^0}\int w\sqrt{-g}\,J^{0\nu}K_\nu\,d^3x
+=\int\sqrt{-g}\,\bigl[&wJ^{\mu\nu}\nabla_\mu K_\nu\\
+&+(\partial_0w)J^{0\nu}K_\nu
++(\partial_iw)J^{i\nu}K_\nu\bigr]d^3x.
+\end{aligned}
+$$ {#eq-g37a-window-balance}
+
+The right-hand side separates changing component comparison, window motion and boundary transport. An average per physical volume also acquires a term from that volume’s variation. Its evolution therefore requires these flux, comparison and normalization terms as well as the averaged tensor. For a sharply bounded moving region, the surface flux is measured relative to the moving boundary.
+
+### Directional conservation in a common frame
+
+In a common flat frame, suppose the **complete** account satisfies
+
+$$
+\partial_0\mathcal M+\partial_i\mathcal P^i=0,
+\qquad
+\partial_0\mathcal P^i+\partial_j\mathcal C^{ji}=0,
+\qquad
+\mathcal M\geq|\boldsymbol{\mathcal P}|.
+$$
+
+For a fixed unit direction $\hat k$, linear combination gives
+
+$$
+\partial_0\mathcal J_k^\pm
++\partial_j\left(\mathcal P^j
+\pm\frac12\hat k_i\mathcal C^{ji}\right)=0.
+$$ {#eq-g37a-directional-current}
+
+If the corresponding boundary flux vanishes, each integrated opposed amount is conserved. Its density obeys $\mathcal J_k^\pm\geq\mathcal M/2$, so it is positive for nonzero total core. For the free kinetic case, the triangle inequality and $|\mathbf p_a|\leq M_a$ prove the assumed bound under nonnegative weights.
+
+Momentum transmitted through a supporting wall belongs in this balance. In curved space, extending the argument requires a common-direction comparison, the field contribution and a positive microscopic allocation. Covariant conservation supplies the local balance but not those additional ingredients.
+
+## Result
+
+The retained finite operator preserves all Einstein equations in the registered deformation. Its weak harmonic reduction is the sourced wave equation, and its stationary restriction gives the source integral. Local conservation supplies exact finite-region balances; positive conserved opposed totals follow under the additional common-frame, closure and positivity assumptions stated above.
+
+## Notes
+
+The field action remains a premise. A different field or matter action requires a fresh derivation of its source, constraints, characteristics and conservation laws. Within the stated premises, the results support [§3.7](/manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/index.qmd#sec-gravity-field-equations).
+
+<!-- Scientific provenance (not a new review receipt):
+G4-D007 r2: full field variation
+G4-D008 r1: conserved weak sources
+G4-D010 r1 C01-C02: constraints/local theorem applicability
+G4-D011 r1: finite-window balance
+Exact proof revisions/hashes and review scope: exchange/reviews/manuscript/2026-10-01-gravity-appendix-adoption/EVIDENCE_MAP.md.
+-->

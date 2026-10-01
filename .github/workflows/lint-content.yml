@@ -4,6 +4,9 @@ on:
   workflow_dispatch:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -23,16 +26,5 @@ jobs:
           python -m venv .venv
           .venv/bin/python -m pip install -r tooling/ci/requirements-minimal.txt
 
-      - name: Verify repository dependencies
-        run: .venv/bin/python tooling/scripts/check_dependencies.py --mode minimal
-
-      - name: Run repository test suite
-        run: .venv/bin/python -m pytest tooling/tests
-
-      - name: Check manuscript includes, assets, and explicit cross-references
-        run: .venv/bin/python tooling/scripts/check_crossrefs.py
-
-      - name: Verify generated manuscript status is current
-        run: |
-          .venv/bin/python tooling/scripts/build_manuscript_status.py
-          git diff --exit-code -- manuscript/backmatter/_manuscript-status-table.md
+      - name: Validate repository
+        run: .venv/bin/python tooling/scripts/validate.py

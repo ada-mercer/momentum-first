@@ -67,5 +67,3 @@ Thumbs.db
 **/*.quarto_ipynb
 
 /.vscode/
-
-/.quarto/

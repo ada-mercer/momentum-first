@@ -20,7 +20,6 @@ The calculations are realizations of a covariance target, not a proof that every
 - **Role:** conditional local-covariance derivation and scoped sector correspondence.
 - **Regime:** homogeneous slowly varying yield; clean branch; adiabatic bound systems; hydrogenic EM proxy; Newtonian/quasi-static gravity; linear nonrelativistic perturbations.
 - **Premises:** bosic-slot $\chi^2$ kinetics, fixed content constants, co-scaling rods, matched clocks, $e^2\propto\chi$ in the EM realization, and $G_{\mathrm{eff}}\propto\chi$ in the gravity realization.
-- **Status:** candidate derivation for independent V3 review. The EM and gravity results are regime-bounded; the linear-growth result is conditional on a supplied $H(z)$.
 
 ## Notation ledger
 

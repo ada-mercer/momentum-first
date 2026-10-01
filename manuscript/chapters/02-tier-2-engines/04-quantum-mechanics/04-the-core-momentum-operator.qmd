@@ -1,0 +1,59 @@
+## The core momentum operator {#sec-qm-core-operator}
+
+A momentum component must do more than satisfy the shell: it must also acquire the right phase as the state evolves. In the free positive-core description, the square-root operator supplies both jobs. A component with momentum $\mathbf p$ has core $M(\mathbf p)=\sqrt{p_f^2+|\mathbf p|^2}$ and evolves with the phase
+
+$$
+\Psi_{\mathbf p}(t)=e^{-icM(\mathbf p)t/\hbar}\Psi_{\mathbf p}(0).
+$$
+
+Different momentum components generally turn through phase at different rates. Their relative phases then change, moving or reshaping the interference pattern. With the usual quantum phase calibration, the generator law is
+
+$$
+\boxed{\frac{i\hbar}{c}\partial_t\Psi=\widehat M_t\Psi.}
+$$ {#eq-qm-evolution}
+
+For free positive-core evolution, $\widehat M_t=\widehat M_+$. A time-independent self-adjoint generator gives the unitary evolution $\exp(-ic\widehat M_t t/\hbar)$, which preserves the state norm. The first derivative in time expresses phase evolution; it does not determine which spatial operator must generate it.
+
+### A local first-order realization
+
+The square root is a legitimate operator. In momentum space it simply multiplies each amplitude by its core magnitude. In position space, however, it generally connects amplitudes at separated points rather than acting through a finite list of derivatives at one point. A local first-order equation requires a larger representation.
+
+Dirac’s first-order construction [@dirac1928quantum], expressed in momentum units, keeps the fermic and directed bosic terms visible:
+
+$$
+\boxed{\widehat M_{t,\mathrm{flat}}
+=\beta p_f+\boldsymbol\alpha\cdot\widehat{\mathbf p}.}
+$$ {#eq-qm-flat-generator}
+
+Here $\Psi$ is a four-component spinor, and the matrices $\beta$ and $\alpha^i$ act on its internal components. Their algebra is chosen so that squaring the generator recovers the shell:
+
+$$
+\beta^2=I,\qquad
+\{\beta,\alpha^i\}=0,\qquad
+\{\alpha^i,\alpha^j\}=2\delta^{ij}I.
+$$
+
+The braces denote an anticommutator, $\{A,B\}=AB+BA$. In the free case the spatial momentum operators commute, so
+
+$$
+\begin{aligned}
+\widehat M_{t,\mathrm{flat}}^{\,2}
+&=p_f^2I+p_f\{\beta,\alpha^i\}\widehat p_i
+ +\tfrac12\{\alpha^i,\alpha^j\}\widehat p_i\widehat p_j\\
+&=(p_f^2+\widehat{\mathbf p}^{\,2})I.
+\end{aligned}
+$$ {#eq-qm-clifford-square}
+
+The mixed fermic–bosic terms cancel. The remaining spatial terms combine into the squared momentum. This is the explanatory strength of the first-order form: a linear operator on amplitudes recovers the nonlinear scalar magnitude relation when squared.
+
+The matrix choice is an explicit spinor realization of the shell. The six directional readings do not supply these spinor components or derive their statistics. They remain observables that can be expressed in either the four- or six-component momentum display.
+
+### Positive core and signed evolution
+
+Squaring a number loses its sign. The same distinction matters here: at fixed momentum the first-order matrix has eigenvalues $+M$ and $-M$, while its magnitude is $M$ on both branches. On the invariant free positive branch it agrees with $\widehat M_+$. On the full spinor space it is a signed generator, not a positive core operator.
+
+The enlarged representation makes the equation local. Restricting it to the positive branch requires a momentum-dependent projection, which is generally nonlocal in position space. These are two useful descriptions with different advantages: an explicitly positive free core, and a local first-order spinor equation.
+
+A negative generator eigenvalue does not assign negative physical core to an antimatter particle. The opposite fermic-cycle orientation still carries positive core in M1; relating that orientation to particle and antiparticle field amplitudes requires the field description beyond this one-carrier construction.
+
+[Derivation 4.4A](/manuscript/appendices/derivations/04-quantum-mechanics/04A-core-momentum-and-first-order-evolution.qmd#sec-derivation-04-04a-first-order-evolution) gives the spectral projections and the constrained six-component display. The free engine is now explicit: the state retains its amplitudes and relative phases, and a momentum-unit generator advances them while preserving the shell relation in its stated representation.

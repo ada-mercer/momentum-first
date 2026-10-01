@@ -1,0 +1,15 @@
+# A First Picture of M1 Geometry {#sec-t0-first-picture}
+
+{{< include 01-from-momentum-to-geometry.qmd >}}
+
+{{< include 02-two-cycles-on-a-torus.qmd >}}
+
+{{< include 03-momentum-and-a-moving-clock.qmd >}}
+
+{{< include 04-translation-and-pitch.qmd >}}
+
+{{< include 05-two-ways-to-dilate-the-geometry.qmd >}}
+
+{{< include 06-resonant-loops-and-waves.qmd >}}
+
+{{< include 07-beyond-the-first-picture.qmd >}}
