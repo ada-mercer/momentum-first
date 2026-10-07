@@ -8,13 +8,15 @@ This reverses the usual explanatory order. M1 does not begin with time as an are
 
 A clock is a physical system with a stable repeatable cycle. Its rate is therefore not explained by time itself, but by the structure that lets the system cycle.
 
-In M1, the clean primary clock-carrying sector is fermic. Fermic momentum $p_f$ is the locked intrinsic scale associated with stable internal cycling, and composite material clocks inherit their timing behavior through stable internal structure built from such cycle-carrying constituents.
+Fermic momentum $p_f$ belongs to the internal organization that carries a particle's identity. Its magnitude does not by itself tell us how quickly the fermic cycle proceeds. A particle can retain the same fermic momentum while completing fewer cycles against a common reference.
 
-Bosic momentum matters differently. It is not the intrinsic clock scale, but directed bosic expression changes how the total momentum content of a system is organized. A moving clock therefore does not merely carry the same internal cycle through an external time variable. Its fermic cycle changes relative to the free-current baseline of the surrounding space as the relation between $M$ and $p_f$ changes.
+A material clock counts a process sustained by interactions among its constituents. M1's proposed connection is that these interactions unfold through the fermic cycling of the participating particles. Changes in that cycling can therefore change how quickly the clock completes its own cycle. Time is measured through this interacting physical activity, rather than supplied as an independent driver of it.
 
-This is the section's central distinction: clock language belongs first to systems with stable internal cycles. Pure massless or bosic transport can still exhibit redshift, phase, and arrival-rate effects, but those should not be casually identified with internal clock slowing in the same sense.
+Motion gives the simplest example of a changed cycling rate. In the free inertial setting, $p_f$ stays fixed while bosic momentum increases the core $M$. The fermic cycle then takes longer relative to the same particle at rest.
 
-The general cycle-duration factor is
+Light can exhibit redshift, phase changes and altered arrival rates without carrying a fermic internal clock. Those effects concern propagation and signal comparison rather than the slowing of such a cycle.
+
+For an ideal fermic clock, motion lengthens each cycle relative to rest in the chosen inertial frame by the factor
 
 $$
 \boxed{
@@ -22,13 +24,11 @@ $$
 }
 $$
 
-It tells how much the duration of a fermic cycle changes from that free-current baseline. The inverse ratio $p_f/M$ is the clock-rate factor: as $M/p_f$ increases, each cycle takes longer and the clock runs more slowly.
+The inverse ratio $p_f/M$ gives the moving rate as a fraction of the resting rate. As $M/p_f$ increases, fewer cycles fit into the same reference interval.
 
 ### Inertial time dilation
 
-Inertial time dilation is the simplest place where the distinction becomes quantitative. A moving clock runs slow not because time itself stretches, but because more of the system's total momentum content is expressed bosically. The ratio $M/p_f$ increases, so the fermic cycle takes longer.
-
-The familiar relativistic clock relation is
+Let $t$ be time in the chosen inertial frame and $\tau$ the proper time recorded by an ideal clock. The familiar relativistic clock relation is
 $$
 \Delta \tau = \Delta t\sqrt{1-\frac{v^2}{c^2}}.
 $$
@@ -46,7 +46,7 @@ $$
 $$
 The formal result is the standard inertial one. What changes is the reading: the slower clock is a slower physical cycle, caused by the system's changed momentum organization.
 
-The ratio $M/p_f$ is not specific to inertial motion. It governs the fermic cycle whenever the relation between bosic and fermic momentum changes. What changes from one setting to another is the physical reason: motion reorganizes the particle's momentum, gravity changes how that momentum configuration is expressed under the local spatial geometry, and expansion changes its expression as the stage evolves. Each later engine must derive how its particular structure changes $M/p_f$; the cycle rate then follows from the inverse ratio $p_f/M$.
+Gravity can change the resting cycle rate itself. In the ideal-clock comparison developed later, a clock held deeper in a gravitational well completes fewer cycles against the same distant reference. The ratio $p_f/M$ accounts for the additional slowing from motion, not this change in the resting rate. For a material clock, that comparison must follow from the internal motion and interactions that sustain its cycle, including the effects of its support.
 
 ### Motion and material contraction
 

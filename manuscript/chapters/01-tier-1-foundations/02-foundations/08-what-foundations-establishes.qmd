@@ -9,7 +9,7 @@ That grammar is not the whole theory. It is the language in which the rest of th
 
 ### The inertial foundation
 
-The opening sections fixed the core terms and assembled them into a physical momentum configuration. Fermic momentum $p_f$ names the locked intrinsic scale of the particle's internal cycle. Bosic momentum $p$ belongs to that same spherical cycle. It has a spherical contribution and carries an asymmetry with a net direction; its signed component along a chosen orientation $\hat{k}$ is $p_k$. In flat space the fermic and bosic roles are perpendicular contributions to one configuration, and the core momentum $M$ measures its complete momentum content.
+The opening sections fixed the core terms and assembled them into a physical momentum configuration. Fermic momentum $p_f$ names the momentum associated with the particle's identity-bearing internal organization. Bosic momentum $p$ belongs to the same internal cycle. Bosic momentum has a spherical contribution and carries an asymmetry with a net direction; its signed component along a chosen orientation $\hat{k}$ is $p_k$. The spherical momentum shell represents the combined configuration. In flat space the fermic and bosic roles are perpendicular contributions to one configuration, and the core momentum $M$ measures its complete momentum content.
 
 ADMC then gave that vocabulary its conservation structure. For an oriented unit direction $\hat{k}$, the particle's two positive shell readings are
 
@@ -31,11 +31,11 @@ The point is not that M1 has abandoned standard inertial relativity. The point i
 
 Foundations also fixed the framework's first interpretive order. Space is the stage. Momentum is the actor of physical change. A particle is one stable organization of momentum, but momentum does not have to be carried by a particle: the physical structure of space can, in certain situations, hold momentum and participate in its transfer. Time is not introduced as a separate substance that drives evolution; it is a measure abstracted from stable physical change.
 
-That stance gives the clock discussion its meaning. A clock is a physical system with a stable cycle. In M1, clock slowing is read as changed physical cycling, not as time itself stretching. In the inertial case, the standard relation is recovered through
+That stance gives the clock discussion its meaning. A material clock counts a repeatable process sustained by interactions among its constituents. M1 proposes that fermic cycling sets how those interactions unfold, connecting internal particle cycles to the processes clocks count. Clock slowing is then read as changed physical activity, not as time itself stretching. In the inertial case, the standard relation is recovered through
 $$
 d\tau = dt\,\frac{p_f}{M},
 $$
-with $p_f/M$ playing the role of the usual inverse gamma factor. The interpretation is different, but the overlap relation is the familiar one.
+with $p_f/M$ playing the role of the usual inverse gamma factor. The interpretation is different, but the overlap relation is the familiar one. A changed stage can also alter the resting cycle rate; that change must be found from the physical process the clock counts.
 
 The same stance also clarifies the true-frame language. Frame descriptions can be plural and operationally usable, but the underlying physical now is singular in the momentum/space ontology. That is an interpretive commitment of the foundation, not an additional inertial equation.
 

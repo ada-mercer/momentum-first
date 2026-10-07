@@ -44,6 +44,18 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.4.1 — Foundations clock-scope corrections
+
+- distinguished motion-related slowing from gravity's change to the resting
+  cycle rate, aligning Foundations with the existing ideal-clock comparison;
+- clarified the spherical momentum shell as a representation, the free-inertial
+  geometry scope, and the perpendicular directional-reading condition;
+- updated the Introduction's reading route and Foundations close, retaining
+  conditional GR correspondence and the illustrative status of Part 0 geometry;
+- aligned authoring guidance and scoped review records without claiming new
+  microscopic closure, universal material clocks or independent re-verification;
+- retained the existing chapter inventory, figures and publication pipelines.
+
 ### 0.4.0 — Reconciled engines and the first Part 0 geometry chapter
 
 - integrated the revised Foundations, gravity and quantum mechanics treatments,

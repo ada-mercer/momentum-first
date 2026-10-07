@@ -75,7 +75,7 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 ### Section ownership
 
 - `01-core-terms-and-variables.qmd` owns the three core momentum terms, the compact directional notation reference, and the terminology note. It defers the physical organization to §2.2.
-- `02-the-momentum-configuration.qmd` owns fermionic structure and fermic momentum, perpendicular bosonic geometry, the spherical internal particle cycle, the momentum triangle, swelling and directional asymmetry, the shell figures, limiting configurations, the arbitrary-direction bridge, $p^\pm$, $p_k^\pm$, $p^\perp$, positivity, and orientation reversal.
+- `02-the-momentum-configuration.qmd` owns fermionic structure and fermic momentum, perpendicular bosonic geometry, the spherical momentum-shell representation, the momentum triangle, swelling and directional asymmetry, the shell figures, limiting configurations, the arbitrary-direction bridge, $p^\pm$, $p_k^\pm$, $p^\perp$, positivity, and orientation reversal.
 - `03-admc.qmd` owns the ADMC postulate, the conserved $p_k^+$ sum, its compact algebraic form, the reversed-orientation $p_k^-$ statement, and the scoped uniqueness pointer to Derivation 2.3A.
 - `04-invertible-mapping.qmd` owns inversion of $(p_k^+,p_k^-)$ to $(M,p_k)$, conservation equivalence, the $P_+$ four-component package, and SR correspondence review.
 - `05-space-and-momentum-stage-and-actor.qmd` owns the stage/actor distinction: space as the rule-bearing stage that conditions available kinematic relations, momentum as the actor carrying changing physical content, and the foundation-level statement that momentum need not be particle-bound.
@@ -89,7 +89,7 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 - Foundations may state that particle, interaction-correlation, and stage configurations are possible organizations of momentum. It may mention gravity only as the next major case that must derive their local ledger and a structured or deformed stage modifying local kinematics.
 - Keep the detailed `source -> field -> observer` grammar, gravity-side variables, stationary field packaging, and observer bookkeeping in the gravity chapter.
 - Do not turn non-particle-bound momentum into a completed gravity source, identify stage stress with the free positive carrier moment, or make space a second Actor or new substance.
-- The bounded fermionic-cycle, bosonic-geometry, and spherical-cycle language in §2.2 belongs to the reader-facing spine. Do not extend it into torus, winding, detailed chirality, or full internal-geometry machinery without a reviewed theory basis.
+- The bounded fermionic-cycle, bosonic-geometry, and spherical momentum-shell language in §2.2 belongs to the reader-facing spine. Do not extend it into torus, winding, detailed chirality, or full internal-geometry machinery without a reviewed theory basis.
 
 ### Terminology locks
 
@@ -114,7 +114,8 @@ Preserve this order. It keeps familiar energy and four-momentum language out of 
 - Time is a measure abstracted from physical change, not the actor of change.
 - Clock language belongs first to systems with stable internal cycles; the clean primary clock-carrying role is fermic.
 - Motion-induced dilation is read through changed fermic-to-bosic organization: `d\tau = dt\,p_f/M` in the inertial overlap regime.
-- Gravity-induced dilation is only foreshadowed here; the gravity chapter owns local fermic contextualization by the field.
+- Distinguish motion-related slowing relative to rest from a changed resting cycle rate under a deformed stage. The inertial ratio `p_f/M` supplies the former, not the whole gravitational comparison.
+- Gravity-induced dilation is only foreshadowed here; the gravity chapter owns reference-expressed fermic contextualization and the ideal-cycle comparison. Material clocks require their internal dynamics and support conditions; do not promote that comparison to a universal material-clock derivation.
 - The true-frame claim is an interpretive consequence of the momentum/space ontology: frame descriptions are plural, but the underlying physical now is singular. Do not present it as an additional equation derived in §2.6.
 
 ### Kinematic modifier locks

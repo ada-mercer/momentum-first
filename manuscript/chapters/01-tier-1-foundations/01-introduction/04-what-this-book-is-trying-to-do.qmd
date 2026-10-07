@@ -6,6 +6,8 @@ It therefore begins with the core structure. The first task is to make the primi
 
 Only after that does the argument move outward toward relativity, gravity, quantum structure, and cosmology. And as it moves outward, the book does not assume in advance that every continuation will be equally secure. Some lines of development may hold firmly. Some may work only in a limited regime. Some may force a revision, or even a genuine fork, when two incompatible continuations both deserve to be seen clearly before one is chosen.
 
+Gravity connects momentum sources, deformed space, motion and clocks, with exact agreement with general relativity when the physical laws are matched. Quantum mechanics adds the amplitudes and relative phases needed for interference and observable internal recurrence. Part 0 then turns toward the underlying geometry, beginning with a torus as a picture of internal cycling rather than an established geometry of space.
+
 The book should therefore be read neither as a finished doctrine nor as a sequence of rhetorical claims. It is a structured investigation. Its successes are not all of one kind, and it matters to distinguish what is directly built from what is only recovered, what is interpretive, and what remains exploratory.
 
 The standard, however, is not loose. M1 earns its place only if this momentum-first order does real work: if it reduces the genuine primitive burden, clarifies the relation among mass, energy, and momentum, recovers known physics where it claims recovery, and reveals structure that is otherwise harder to see. It fails if the simplification is cosmetic, if the framework quietly assumes what it claims to explain, or if the correspondence burden overwhelms the primitive proposal.

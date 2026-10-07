@@ -2,9 +2,9 @@ schema: momentum-first.section-contribution-ledger.v1
 purpose: Public-facing section contribution and human-verification ledger for Momentum First.
 coverage:
   source: _quarto.yml book.chapters
-  release_candidate: v0.4.0
+  release_candidate: v0.4.1
   rendered_units: 29
-  coverage_note: Working-book path coverage reconciled on 2026-10-01, including six active QM appendices, the references page and the adopted Part 0 opening chapter. Historical human-verification decisions are unchanged; this is not whole-book scientific re-verification.
+  coverage_note: Working-book path coverage reconciled on 2026-10-01, including six active QM appendices, the references page and the adopted Part 0 opening chapter. Coverage rechecked for the 2026-10-07 Chapter 1–2 corrective update. Historical human-verification decisions are unchanged; this is not whole-book scientific re-verification.
 human_verification_decision:
   decided_by: Arne Klaveness
   decided_on: 2026-07-30
@@ -65,7 +65,8 @@ sections:
     human_verification: verified
     verification_note: >
       Arne Klaveness explicitly confirmed human verification for the v0.3.6
-      candidate on 2026-07-28.
+      candidate on 2026-07-28. The 2026-10-07 corrective revision received
+      bounded consistency and build checks, not a new human-verification decision.
 
   - id: foundations
     title: Foundations
@@ -80,7 +81,8 @@ sections:
     human_verification: verified
     verification_note: >
       Arne Klaveness explicitly confirmed human verification for the v0.3.6
-      candidate on 2026-07-28.
+      candidate on 2026-07-28. The 2026-10-07 corrective revision received
+      bounded consistency and build checks, not a new human-verification decision.
 
   - id: gravity-and-structured-spacetime
     title: Gravity and Structured Spacetime

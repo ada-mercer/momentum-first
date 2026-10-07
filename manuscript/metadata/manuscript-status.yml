@@ -22,7 +22,7 @@ defaults:
     Arne supplied the core framing and acceptance direction; AI-assisted
     contribution shaped drafting, structure, and review.
 
-# Verification below records scoped review history for the v0.4.0 candidate,
+# Verification below retains scoped review history from v0.4.0 and earlier,
 # not automatic re-verification of changed text. It is independent of human verification in
 # docs/provenance/section-ledger.yml.
 chapters:
@@ -31,14 +31,14 @@ chapters:
     maturity: stabilizing
     verification: V2
     verified_by: AI-assisted review
-    note: Framing and motivation; conceptually reviewed, but not load-bearing for later derivations.
+    note: Framing and motivation; historical V2 review retained. The 2026-10-07 reading-route correction received bounded consistency and build checks, not new independent re-verification.
 
   - id: foundations
     title: Foundations
     maturity: stabilizing
     verification: V3
     verified_by: AI-assisted review
-    note: Primitive variables, ADMC, and the invertible mappings — the load-bearing locks.
+    note: Primitive variables, ADMC, and invertible mappings retain their historical V3 scope. The 2026-10-07 shell and clock-scope corrections received bounded consistency and build checks, not new independent V3 verification.
 
   - id: gravity
     title: Gravity and Structured Spacetime

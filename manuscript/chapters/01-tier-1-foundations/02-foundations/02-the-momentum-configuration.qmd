@@ -1,6 +1,6 @@
 ## The Momentum Configuration
 
-A particle can translate only because it already has an organized internal momentum structure. M1 begins with that structure and distinguishes two perpendicular geometrical aspects within it: fermionic structure, which carries the particle's intrinsic organization, and bosonic geometry, on which translational momentum is expressed. Fermic and bosic momentum name the corresponding momentum roles.
+A particle can translate only because it already has an organized internal momentum structure. In the free inertial setting, M1 distinguishes two perpendicular geometrical aspects within it: fermionic structure, which carries the particle's intrinsic organization, and bosonic geometry, on which translational momentum is expressed. Fermic and bosic momentum name the corresponding momentum roles.
 
 ### Fermionic structure and fermic momentum
 
@@ -18,7 +18,7 @@ With no translation, the fermic cycle has no preferred external direction. Its m
 
 In flat space, the fermionic structure supports a bosonic geometry perpendicular to the fermionic cycle. Bosic momentum $p$ resides on this geometry. The word *perpendicular* describes the internal geometrical relation between the two momentum roles; it does not place $p_f$ along one ordinary spatial axis and $p$ along another.
 
-The fermionic and bosonic aspects are therefore not separate particles or detachable layers. They are perpendicular aspects of one internal particle cycle. The fermionic aspect carries the locked intrinsic scale. The bosonic aspect provides the geometry on which momentum can acquire translational expression. Together these aspects form the spherical internal particle cycle referred to throughout this chapter.
+The fermionic and bosonic aspects are therefore not separate particles or detachable layers. They are perpendicular aspects of one internal particle cycle. The fermionic aspect carries the locked intrinsic scale. The bosonic aspect provides the geometry on which momentum can acquire translational expression. The spherical momentum shell represents their combined momentum configuration.
 
 The whole configuration is measured by its core momentum $M$. In the flat inertial baseline, M1 takes the total core momentum to follow the composition rule
 
@@ -98,6 +98,8 @@ $$
 ![Vector decomposition and directional shell readings. Panel (a) separates bosic momentum magnitude $p=|\vec p|$, its represented vector $\vec p$, and the signed projection $p_k=\vec p\cdot\hat{k}=p\cos\alpha$. Panel (b) shows the net-axis readings $p^{\pm}=M\pm p/2$, the perpendicular reading $p^\perp=M$, and the chosen-axis readings $p_k^{\pm}=M\pm p_k/2$ on one directional shell. The dashed circle marks the undeformed core scale $M$; capped spokes are positive scalar readings, not additional momentum vectors.](../../../../figures/build/foundations/directional-momentum-readings.png){#fig-directional-momentum-readings fig-align="center" width="100%" fig-pos="H"}
 
 Superscripts $+$ and $-$ label the two opposed shell readings; they are not arithmetic signs. The quantities $p^\pm$, $p_k^\pm$, $p_f$, $p$, and $M$ all denote nonnegative scalar momentum quantities. By contrast, $\vec p$ denotes the momentum vector and $p_k$ its signed component along $\hat{k}$.
+
+Perpendicular to the net asymmetry, $p_k=0$, so
 
 $$
 p_k^+=p_k^-=p^\perp=M.
