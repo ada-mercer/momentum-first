@@ -38,7 +38,7 @@ chapters:
     maturity: stabilizing
     verification: V3
     verified_by: AI-assisted review
-    note: Primitive variables, ADMC, and invertible mappings retain their historical V3 scope. The 2026-10-07 shell and clock-scope corrections received bounded consistency and build checks, not new independent V3 verification.
+    note: Primitive variables, ADMC, and invertible mappings retain their historical V3 scope. The nine-section revision of 2026-10-08 preserves the inertial mapping and the v0.4.1 clock distinction; current consistency and build checks are not new independent V3 verification.
 
   - id: gravity
     title: Gravity and Structured Spacetime

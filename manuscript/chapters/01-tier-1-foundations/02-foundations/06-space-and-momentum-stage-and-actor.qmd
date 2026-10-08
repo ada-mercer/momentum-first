@@ -10,15 +10,15 @@ If the stage is different, the same momentum content need not support the same t
 
 ### Momentum as the actor
 
-Momentum is the actor of change. Translational motion is momentum expression. Mass is read through locked fermic momentum. Interaction is described through transfer, redistribution, or reorganization of momentum content.
+Momentum is the actor of change. Translational motion occurs when momentum gives a particle motion through space. Mass is read through locked fermic momentum. Interaction is described through transfer, redistribution, or reorganization of momentum content.
 
-This is the force of the momentum-first claim. What changes in a physical system changes through momentum expressed within spatial relations, not because time acts as an independent driver.
+This is the force of the momentum-first claim. What changes in a physical system changes through momentum acting within spatial relations, not because time acts as an independent driver.
 
 Momentum does not have to be carried by a particle. A particle is one stable organization of momentum, but momentum can also be held in the physical structure of space itself. Space remains the stage, but it need not be passive: its structured state can, in certain situations, carry momentum and participate in its transfer.
 
 ### Space-mediated momentum coupling - SMC
 
-The stage and the actor are not separate worlds. Momentum is always expressed in space, and space matters because it conditions that expression.
+The stage and the actor are not separate worlds. Momentum always acts within space, and space matters because it conditions what that momentum can do.
 
 Physical systems also do not exchange momentum across nothing. In M1, every force is understood as a mode of **space-mediated momentum coupling**: momentum content in one system becomes dynamically relevant to momentum content elsewhere through spatial relation.
 
@@ -30,6 +30,6 @@ The detailed mechanisms differ. For now, the foundation is only this: forces are
 
 This distinction now gives us the right starting point for time.
 
-A clock is not driven by time as an independent medium. A clock is a physical system whose momentum content undergoes regular, repeatable change. Its rate depends on how that momentum is organized, coupled, and expressed within the spatial conditions available to it.
+A clock is not driven by time as an independent medium. A clock is a physical system whose momentum content undergoes regular, repeatable change. Its rate depends on how that momentum is organized, coupled, and able to cycle within the spatial conditions available to it.
 
 If clock rates differ, the first place to look is therefore not a changing time-substance, but a difference in the physical conditions under which the clock’s momentum content can complete its cycle. The next section turns to time and dilation from that standpoint.

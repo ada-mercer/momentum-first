@@ -1,167 +1,114 @@
-# Foundations Author Notes
+# Author notes — Chapter 02 Foundations
 
-## Job of this chapter
+Status: current working chapter-local state notes; prepared for v0.4.2
+Mode stack: roles/book-prose + topics/m1/foundations + artifacts/manuscript + styles/book-mainline + audiences/broad-technical
 
-Foundations is where the book begins to cash out its claims.
+## Chapter burden
 
-It should establish:
-- primitive momentum terms and notation
-- the physical momentum configuration joining fermic and bosic roles
-- ADMC as the directional shell-reading conservation postulate
-- the opposed shell readings, orientation reversal, and exact correspondence map
-- the inertial SR correspondence in momentum-first variables
-- the stage/actor distinction between space and momentum
-- the foundation refinement that the Actor role belongs to momentum rather than to particles as a class: particle, interaction-correlation, and stage configurations may organize momentum without becoming separate substances
-- the time / clock / dilation interpretation
-- the true-frame stance as an interpretive commitment, not a new inertial equation
-- kinematic modifiers as the grammar for departures from the inertial baseline
-- a clean closing statement of what Foundations has and has not established
+Foundations turns the Introduction's momentum-first wager into a usable grammar. It must name the primitive momentum roles, assemble the inertial particle configuration, state ADMC as the conservation principle, recover familiar inertial four-momentum, and then give the interpretive grammar for space, time, clocks, and structured departures from inertial motion.
 
-It should **not** develop the gravity program. The Tier 2 gravity chapter owns gravity as the first major engine.
+The chapter should establish:
 
-## Local tone target
+- the reader-facing reason Foundations is needed before later engines;
+- fermic momentum `p_f`, bosic momentum `p`, and core momentum `M`;
+- directional notation: `\vec p`, `p_k`, `p^\pm`, `p_k^\pm`, and `p^\perp`;
+- the physical momentum configuration joining fermic and bosic roles;
+- the inertial composition rule `M=\sqrt{p_f^2+p^2}` and its momentum-triangle interpretation;
+- directional shell readings as positive scalar readings;
+- ADMC as conservation of one positive shell reading per particle for each oriented direction;
+- inversion from opposed readings back to `(M,p_k)` and the exact inertial correspondence with special-relativistic four-momentum;
+- space as the stage and momentum as the actor of physical change;
+- time as measured physical change, with clocks treated as physical systems sustained by internal cycles and interactions;
+- the true-frame stance as interpretive, not an extra inertial equation;
+- kinematic modifiers as the foundation-level vocabulary for structured changes in how momentum configuration yields motion;
+- a close that names what Foundations establishes and what later engines must still supply.
 
-Foundations should feel:
-- explicit
-- disciplined
-- technically cleaner than the Preface and Introduction
-- sparse on rhetoric
-- confident about M1's own commitments without overclaiming derivation status
+Foundations should not build the gravity, quantum, expansion, or Part 0 geometry programs. Those chapters own their mechanisms. Foundations supplies the grammar that lets the reader recognize what those engines are doing.
 
-This is where the framework either starts to hold together or it doesn't.
+## Active rendered structure
 
-## Rendered file sequence
+`index.qmd` renders nine included sections:
 
-The Foundations wrapper, `index.qmd`, includes eight rendered section files in this order:
-1. `01-core-terms-and-variables.qmd`
-2. `02-the-momentum-configuration.qmd`
-3. `03-admc.qmd`
-4. `04-invertible-mapping.qmd`
-5. `05-space-and-momentum-stage-and-actor.qmd`
-6. `06-time.qmd`
-7. `07-kinematic-modifiers.qmd`
-8. `08-what-foundations-establishes.qmd`
+1. `01-what-foundations-must-fix.qmd` — chapter burden and reader contract.
+2. `02-core-momentum-terms-and-directional-notation.qmd` — compact notation gateway.
+3. `03-the-momentum-configuration.qmd` — physical configuration, momentum triangle, shell readings, positivity.
+4. `04-admc.qmd` — ADMC postulate and conserved positive shell-reading sum.
+5. `05-invertible-mapping.qmd` — inversion and inertial SR correspondence.
+6. `06-space-and-momentum-stage-and-actor.qmd` — stage/actor interpretation and SMC entry.
+7. `07-time.qmd` — time, clocks, inertial dilation, contraction, true-frame stance.
+8. `08-kinematic-modifiers.qmd` — structured changes in momentum-to-motion relation.
+9. `09-what-foundations-establishes.qmd` — chapter synthesis and downstream boundary.
 
-Historical note:
-- the former minimal-gravity-grammar section is no longer rendered. Keep it out unless the architecture changes again.
-- the former scope-and-status section has been replaced by `08-what-foundations-establishes.qmd` as the rendered closer.
+Preserve this sequence. The first five sections build the formal inertial grammar. Sections 6–8 interpret the grammar and prepare later engines. Section 9 closes the chapter without importing a miniature gravity chapter.
 
-## Mode references
+## Section ownership
 
-Use these as the default stack when writing or revising Foundations prose:
-- `modes/roles/book-prose`
-- `modes/topics/m1/foundations`
-- `modes/artifacts/manuscript`
-- `modes/styles/book-mainline`
-- `modes/audiences/broad-technical`
+- `01-what-foundations-must-fix.qmd` owns the opening contract: primitive quantities, conservation language, inertial recovery, stage/actor interpretation, clock stance, and the boundary between Foundations and later engines.
+- `02-core-momentum-terms-and-directional-notation.qmd` owns the table-style symbol gateway. It should remain compact and defer physical construction to §2.3.
+- `03-the-momentum-configuration.qmd` owns the particle momentum configuration: fermic cycle, bosic role, perpendicular composition, core momentum, shell representation, net asymmetry, arbitrary-direction readings, and positivity.
+- `04-admc.qmd` owns the ADMC postulate: for an isolated system and chosen orientation, the conserved quantity is the sum of one positive shell reading per particle.
+- `05-invertible-mapping.qmd` owns the return from shell readings to familiar inertial quantities, including the exact correspondence with the standard energy-momentum package.
+- `06-space-and-momentum-stage-and-actor.qmd` owns the first interpretive order: space supplies structured conditions; momentum carries change; forces are space-mediated momentum coupling.
+- `07-time.qmd` owns clock language, inertial dilation, material contraction, and the true-frame commitment.
+- `08-kinematic-modifiers.qmd` owns the definition of a kinematic modifier as a physical feature of space that changes how a particle's momentum configuration yields motion.
+- `09-what-foundations-establishes.qmd` owns the synthesis and the handoff to gravity as the first later engine.
 
-## Derivations
+## Stable distinctions and terminology
 
-If a derivation grows long enough to interrupt the flow, move it to `manuscript/appendices/derivations/` and reference it by the section-based derivation label.
+- Use **fermic** and **bosic** for momentum roles and quantities in Foundations.
+- Reserve **fermionic** and **bosonic** for later geometry, winding, chirality, or state labels. Section 2 may state this terminology boundary, but section 3 should otherwise stay with fermic/bosic language.
+- `p_f` is identity-associated fermic momentum. It is fixed at the inertial baseline by `p_f=m_0c`.
+- `p` is bosic momentum. It contributes to the spherical shell and, when directionally imbalanced, gives the particle translational momentum.
+- `M` is core momentum: the total momentum content of the inertial configuration, with baseline composition `M=\sqrt{p_f^2+p^2}`.
+- At the foundation level, perpendicularity is read from the Pythagorean composition rule: fermic and bosic roles enter as independent legs of one configuration. Do not introduce Part 0 manifold language here.
+- The spherical shell is a representation of one internal momentum configuration, not a temporal mechanism, measured density, or external momentum flow.
+- Along the net asymmetry direction, the positive readings are `p^\pm=M\pm p/2`.
+- Along an arbitrary oriented unit direction `\hat{k}`, the signed component is `p_k=\vec p\cdot\hat{k}` and the positive readings are `p_k^\pm=M\pm p_k/2`.
+- `p^\perp=M` is the perpendicular reading when `p_k=0`.
+- Superscripts `+` and `-` label opposed positive readings; they are not signs attached to negative scalar values.
+- Reversing `\hat{k}` exchanges `p_k^+` and `p_k^-`.
+- ADMC uses one positive shell reading per particle for a chosen orientation. Do not describe one oriented ADMC sum as containing both readings from the same particle.
+- The side-by-side pair `(p_k^+,p_k^-)` belongs to inversion, comparison, and orientation reversal, not to a single oriented conservation sum.
+- Treat massless or purely bosic cases only at the level supported by the current text. Do not use Foundations to build their full internal geometry.
 
-Derivation 2.3A belongs to the ADMC section under the eight-section structure. No renumbering is required while ADMC remains §2.3. Its pending candidate reframe treats $p_k^+$ and $p_k^-$ as opposed shell readings and preserves the additive, reflection-symmetric proof structure. Preserve the appendix's suggested citation sentence as the scope-safe template: the result is uniqueness within the natural additive and symmetry-compatible axis-wise class, not a global no-alternative theorem.
+## Time, clocks, and frame status
 
-## Current chapter state
+- Time is a measure abstracted from physical change, not an actor that drives change.
+- Clock language belongs to physical systems with repeatable cycles. A material clock counts a process sustained by interactions among constituents.
+- Fermic momentum does not by itself fix an absolute cycling rate in every setting. Motion can slow a fermic cycle relative to a reference while `p_f` remains fixed.
+- In the inertial overlap regime, `d\tau = dt\,p_f/M` gives the moving ideal-clock rate relative to the chosen inertial frame.
+- Gravity can change the resting cycle comparison itself. Foundations may foreshadow that distinction; the gravity chapter owns its mechanism and material-clock scope.
+- The true-frame claim is interpretive: frame descriptions are plural and operationally usable, but the underlying physical now is singular in the momentum/space ontology. Do not present it as an additional inertial equation.
 
-The chapter has a four-step opening dependency order followed by the interpretive and modifier sections:
+## Kinematic modifiers
 
-1. core momentum terms and directional notation
-2. physical momentum configuration and directional shell readings
-3. ADMC postulate and conserved shell-reading sum
-4. opposite-reading inversion and inertial correspondence
+The current reader-facing definition is:
 
-Preserve this order. It keeps familiar energy and four-momentum language out of the foundational construction until the correspondence section.
+> A kinematic modifier is a physical feature of space that changes how a particle's momentum configuration yields motion.
 
-### Section ownership
+A modifier is a role that later engines fill with specific structure. Foundations should keep the concept lean: a structured physical setting can leave a particle's momentum content recognizable while changing translation rate, local cycling, light propagation, or material equilibrium.
 
-- `01-core-terms-and-variables.qmd` owns the three core momentum terms, the compact directional notation reference, and the terminology note. It defers the physical organization to §2.2.
-- `02-the-momentum-configuration.qmd` owns fermionic structure and fermic momentum, perpendicular bosonic geometry, the spherical momentum-shell representation, the momentum triangle, swelling and directional asymmetry, the shell figures, limiting configurations, the arbitrary-direction bridge, $p^\pm$, $p_k^\pm$, $p^\perp$, positivity, and orientation reversal.
-- `03-admc.qmd` owns the ADMC postulate, the conserved $p_k^+$ sum, its compact algebraic form, the reversed-orientation $p_k^-$ statement, and the scoped uniqueness pointer to Derivation 2.3A.
-- `04-invertible-mapping.qmd` owns inversion of $(p_k^+,p_k^-)$ to $(M,p_k)$, conservation equivalence, the $P_+$ four-component package, and SR correspondence review.
-- `05-space-and-momentum-stage-and-actor.qmd` owns the stage/actor distinction: space as the rule-bearing stage that conditions available kinematic relations, momentum as the actor carrying changing physical content, and the foundation-level statement that momentum need not be particle-bound.
-- `06-time.qmd` owns the interpretation of time, clocks, inertial dilation, material contraction, and true-frame language.
-- `07-kinematic-modifiers.qmd` owns the KM definition and taxonomy: composition modifiers, yield modifiers, and admissibility modifiers.
-- `08-what-foundations-establishes.qmd` owns the chapter-level close: what Foundations has established, what it has not established, and why gravity comes next.
+Use gravity and expansion as examples of the shared question, not as a merged mechanism. Gravity changes the local stage through organized momentum. Expansion dresses the bosic slot in the homogeneous stage model. Possible state-space effects remain open and should not be promoted to established modifier mechanisms.
 
-### Boundary locks
+## Boundaries
 
-- Do not restore a separate Foundations gravity-grammar section while the gravity chapter begins with `manuscript/chapters/02-tier-2-engines/03-gravity-and-structured-spacetime/01-gravity-in-m1.qmd`.
-- Foundations may state that particle, interaction-correlation, and stage configurations are possible organizations of momentum. It may mention gravity only as the next major case that must derive their local ledger and a structured or deformed stage modifying local kinematics.
-- Keep the detailed `source -> field -> observer` grammar, gravity-side variables, stationary field packaging, and observer bookkeeping in the gravity chapter.
-- Do not turn non-particle-bound momentum into a completed gravity source, identify stage stress with the free positive carrier moment, or make space a second Actor or new substance.
-- The bounded fermionic-cycle, bosonic-geometry, and spherical momentum-shell language in §2.2 belongs to the reader-facing spine. Do not extend it into torus, winding, detailed chirality, or full internal-geometry machinery without a reviewed theory basis.
+- Do not restore a separate Foundations gravity-grammar section. Gravity owns source, deformation, particle response, field dynamics, and GR correspondence.
+- Do not move energy or standard four-momentum into the initial definition of the momentum roles. They enter after the shell-reading structure has been built and inverted.
+- Do not turn non-particle-bound momentum into a completed gravity source in Foundations.
+- Do not introduce torus, manifold, winding, chirality, or full internal-geometry machinery into the mainline Foundations prose.
+- Do not use defensive guardrail clusters. State the positive physical role first; give only the local boundary needed to prevent a concrete misunderstanding.
 
-### Terminology locks
+## Figure ownership and interpretation
 
-- Use **fermic** and **bosic** for momentum quantities or momentum roles.
-- Use **fermionic** and **bosonic** for structure, geometry, winding, chirality, or state labels.
-- In Foundations, use `M = \sqrt{p_f^2 + p^2}` for the inertial composition rule. Present it as an M1 baseline commitment with a momentum-triangle interpretation, not as a result derived from perpendicularity alone.
-- Keep `p` as bosic momentum. It has a spherical contribution and an asymmetry with a net direction. Use `p_k` for its directional components. Do not replace `p` with vector notation in the foundational definition; the vector representation is downstream.
-- Treat `M` as representative of total momentum content, not as an independent primitive conservation law alongside ADMC.
-- Along the net asymmetry direction, the opposed shell readings are $p^\pm=M\pm p/2$.
-- For an arbitrary oriented unit direction $\hat{k}$, the signed component is $p_k=\vec p\cdot\hat{k}$ and the opposed shell readings are $p_k^\pm=M\pm p_k/2$.
-- A perpendicular reading has $p_k=0$ and is written $p^\perp=M$.
-- Superscripts $+$ and $-$ label opposed positive readings; they are not arithmetic signs attached to the scalar values.
-- Reversing $\hat{k}$ exchanges $p_k^+$ and $p_k^-$.
-- ADMC uses one positive shell reading per particle for each oriented direction: $p_k^+$ for $\hat{k}$, and equivalently $p_k^-$ when the orientation is reversed. Do not say that one particle contributes both readings simultaneously to one ADMC sum.
-- Side-by-side use of $(p_k^+,p_k^-)$ belongs to inversion, structural comparison, and gravity-source densitization, not to a single oriented ADMC sum.
-- Treat the $p_f=0$ case as the purely bosic boundary of the inertial composition rule unless later reviewed theory supplies its full structural realization.
-- M1 may take the directional shell-reading structure as foundational. Exact invertibility by itself establishes equivalence of the realized bookkeeping; it does not mathematically prove which description is deeper.
-- Use **Actor** for the physical role of momentum. A particle is one organization of momentum, not a synonym for the Actor role. Interaction and stage organizations do not introduce new source substances.
+- The momentum triangle belongs in §2.3 as the visual interpretation of `M=\sqrt{p_f^2+p^2}`.
+- The shell panels belong in §2.3 as two views of one internal momentum configuration: symmetric swelling from `p_f` to `M`, and directional asymmetry whose opposed readings differ by `p`.
+- The directional-readings figure belongs in §2.3 near the transition from net-axis readings to arbitrary chosen direction.
+- Figure prose should teach what the reader should see, not police every possible misuse. Keep necessary boundaries compact: shell deformations represent internal momentum organization, not measured external density or momentum flowing out of the particle.
 
-### Time / frame locks
+## Tone target
 
-- Time is a measure abstracted from physical change, not the actor of change.
-- Clock language belongs first to systems with stable internal cycles; the clean primary clock-carrying role is fermic.
-- Motion-induced dilation is read through changed fermic-to-bosic organization: `d\tau = dt\,p_f/M` in the inertial overlap regime.
-- Distinguish motion-related slowing relative to rest from a changed resting cycle rate under a deformed stage. The inertial ratio `p_f/M` supplies the former, not the whole gravitational comparison.
-- Gravity-induced dilation is only foreshadowed here; the gravity chapter owns reference-expressed fermic contextualization and the ideal-cycle comparison. Material clocks require their internal dynamics and support conditions; do not promote that comparison to a universal material-clock derivation.
-- The true-frame claim is an interpretive consequence of the momentum/space ontology: frame descriptions are plural, but the underlying physical now is singular. Do not present it as an additional equation derived in §2.6.
+Foundations should be direct, explicit, and spare. It is more technical than the Introduction, but it should still teach by physical sequence:
 
-### Kinematic modifier locks
+physical role -> symbol -> equation -> consequence -> boundary.
 
-- A KM is a structured change in how momentum content becomes physical evolution.
-- The reader-facing taxonomy is:
-  - **composition modifiers**: change how fermic and bosic momentum are internally related or contextualized;
-  - **yield modifiers**: change what directed bosic momentum produces as displacement or frequency-style expression;
-  - **admissibility modifiers**: change which kinematic states are available at all.
-- Avoid leading with arbitrary KM-A / KM-B / KM-C labels in manuscript prose unless an appendix or technical note needs them.
-- Cosmology is the edge-case yield example; do not overdevelop it in Foundations.
-- Gravity is the first later developed composition/contextualization case; do not rebuild the gravity chapter inside §2.7.
-
-### Figure ownership
-
-- The minimal momentum triangle belongs in §2.2 only.
-- The shell panels belong in §2.2 only.
-- §2.3 should not repeat the shell-reading definitions or either figure.
-- §2.4 should not repeat the triangle or shell figures unless a genuinely new visual argument is added.
-- No gravity pipeline figure belongs in rendered Foundations under the current architecture; that visual grammar belongs in the gravity chapter.
-
-### Figure interpretation locks
-
-- The shell panels are a schematic two-view depiction of one momentum configuration.
-- Panel (a) represents isotropic swelling from `p_f` to `M`.
-- Panel (b) represents directional deformation of the swollen shell along the net asymmetry direction.
-- The two views are representational rather than sequential; physically they belong to one combined momentum configuration.
-- The shell deformation encodes the opposed positive shell readings along the net asymmetry axis. Do not present it as two simultaneous conserved contributions or as a measured spatial distribution of momentum density.
-- Avoid caption or prose language that implies literal temporal evolution or momentum flowing out of the particle.
-
-### Prose and structure guidance
-
-- In §2.1, anchor terms in familiar physics, keep the section compact, and defer physical organization to §2.2.
-- In §2.2, develop the physical configuration before choosing a direction, then define $p^\pm$, $p_k^\pm$, $p^\perp$, orientation reversal, and the positivity bound. Preserve the distinction between bosic momentum $p$, its net asymmetry direction, and an arbitrary signed component $p_k$.
-- In §2.3, state the ADMC postulate and lead with the conserved $p_k^+$ sum; give $M+p_k/2$ second as its compact algebraic form.
-- In §2.4, invert $(p_k^+,p_k^-)$ to recover signed $(M,p_k)$. Introduce energy and standard four-momentum here, not earlier.
-- In §2.5, keep the stage/actor metaphor; do not replace it with abstract terminology. Make clear that the stage is not empty, rigid, or structureless: space already conditions closure, stability, motion, and local kinematic relations.
-- In §2.6, keep the section centered on time, clocks, dilation, contraction, and true-frame status. Do not let it become a full philosophy-of-time essay.
-- In §2.7, keep the KM definition lean and grounded in stage deformation modifying kinematics. Do not let the taxonomy become a glossary detached from the inertial baseline.
-- In §2.8, close Foundations by naming what is established and what remains downstream. Avoid management language such as “this subsection does.”
-
-### Tone guidance for Foundations
-
-- Keep the prose explicit and reader-anchored.
-- Favor confident definitions over repeated cautionary qualifiers.
-- Use caution once, sharply, when role or status matters.
-- Be careful with mechanistic language around shell figures and clock claims.
-- Use interpretation sparingly and only after the formal role of a section is clear.
-- End Foundations with a handoff to gravity, not a miniature gravity preview.
+Prefer concrete physical wording over administrative phrases such as “the term names a job” or “this section introduces.” Avoid review-report language and repeated “not X” guardrails. The chapter should sound like the framework is being built in front of the reader, one stable commitment at a time.

@@ -2,7 +2,7 @@
 
 The stage-and-actor distinction changes how M1 speaks about time. Space supplies the relational setting. Momentum carries the changing physical content. Time is not a third actor alongside them. It is the measure abstracted from physical change.
 
-This reverses the usual explanatory order. M1 does not begin with time as an arena and then ask how matter moves through it. It begins with physical systems whose momentum content is organized and expressed in structured ways, then asks how clocks, durations, and temporal order are read from those changes.
+This reverses the usual explanatory order. M1 does not begin with time as an arena and then ask how matter moves through it. It begins with physical systems whose momentum content is organized and changing in structured ways, then asks how clocks, durations, and temporal order are read from those changes.
 
 ### Clocks as physical cycles
 
@@ -50,11 +50,11 @@ Gravity can change the resting cycle rate itself. In the ideal-clock comparison 
 
 ### Motion and material contraction
 
-Directed motion also changes material equilibrium structure. A rod moving along one direction is not merely observed differently, and space itself is not simply compressed around it. In the M1 reading, directed bosic expression changes the effective conditions under which the system's internal structure remains stable.
+Directed motion also changes material equilibrium structure. A rod moving along one direction is not merely observed differently, and space itself is not simply compressed around it. In the M1 reading, directed bosic momentum changes the effective conditions under which the system's internal structure remains stable.
 
 That is the constructive reading of length contraction. The same underlying physical laws are not replaced by new laws for moving matter. Rather, the moving system carries a different directional momentum organization, and its stable configuration is determined under those altered kinematic conditions. A moving rod is shorter along the direction of motion because its equilibrium structure is different in that state.
 
-This has clear precedent in Lorentz-type and later Lorentzian-pedagogy accounts of rods and clocks, where contraction and dilation are treated as consequences of the dynamical laws governing moving matter rather than as primitive geometric postulates [@bell1976lorentzian; @brown2005physical]. M1 adopts the same constructive instinct, but expresses it in momentum-first terms: clock slowing and contraction are read as changes in physical cycling and material equilibrium produced by directed momentum expression.
+This has clear precedent in Lorentz-type and later Lorentzian-pedagogy accounts of rods and clocks, where contraction and dilation are treated as consequences of the dynamical laws governing moving matter rather than as primitive geometric postulates [@bell1976lorentzian; @brown2005physical]. M1 adopts the same constructive instinct, but states it in momentum-first terms: clock slowing and contraction are read as changes in physical cycling and material equilibrium produced by directed momentum.
 
 ### A true frame
 

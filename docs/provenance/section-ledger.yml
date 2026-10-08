@@ -2,9 +2,9 @@ schema: momentum-first.section-contribution-ledger.v1
 purpose: Public-facing section contribution and human-verification ledger for Momentum First.
 coverage:
   source: _quarto.yml book.chapters
-  release_candidate: v0.4.1
+  release_candidate: v0.4.2
   rendered_units: 29
-  coverage_note: Working-book path coverage reconciled on 2026-10-01, including six active QM appendices, the references page and the adopted Part 0 opening chapter. Coverage rechecked for the 2026-10-07 Chapter 1–2 corrective update. Historical human-verification decisions are unchanged; this is not whole-book scientific re-verification.
+  coverage_note: Working-book path coverage reconciled on 2026-10-01, including six active QM appendices, the references page and the adopted Part 0 opening chapter. Coverage rechecked for the 2026-10-08 nine-section Foundations revision and appendix 2.4A relabeling. Historical human-verification decisions are unchanged; this is not whole-book scientific re-verification.
 human_verification_decision:
   decided_by: Arne Klaveness
   decided_on: 2026-07-30
@@ -82,7 +82,8 @@ sections:
     verification_note: >
       Arne Klaveness explicitly confirmed human verification for the v0.3.6
       candidate on 2026-07-28. The 2026-10-07 corrective revision received
-      bounded consistency and build checks, not a new human-verification decision.
+      bounded consistency and build checks, not a new human-verification decision. The 2026-10-08 reading-route revision
+      retains this historical scope; release preparation is not new human verification.
 
   - id: gravity-and-structured-spacetime
     title: Gravity and Structured Spacetime
@@ -145,9 +146,9 @@ sections:
       asset-path integration. Adoption does not imply human scientific
       verification. Earlier reviews apply to their named versions and scopes.
 
-  - id: derivation-2-3a-structural-uniqueness-of-the-directional-positive-split
-    title: Derivation 2.3A — Structural uniqueness of the directional shell readings
-    path: manuscript/appendices/derivations/02-foundations/03A-directional-positive-split-uniqueness.qmd
+  - id: derivation-2-4a-structural-uniqueness-of-the-directional-positive-split
+    title: Derivation 2.4A — Structural uniqueness of the directional shell readings
+    path: manuscript/appendices/derivations/02-foundations/04A-directional-positive-split-uniqueness.qmd
     contributors:
       - Arne Klaveness
       - AI-assisted

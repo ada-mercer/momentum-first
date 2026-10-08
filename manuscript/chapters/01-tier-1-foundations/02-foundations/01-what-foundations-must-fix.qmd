@@ -1,0 +1,11 @@
+## What Foundations Must Fix
+
+The Introduction made the momentum-first wager. Foundations now has to make that wager precise enough to use. A later gravity chapter can ask how momentum deforms space only if this chapter has already said what momentum content a particle carries, how that content is read along a direction, and what conservation means before any field or force law is added.
+
+The first task is therefore not to replace familiar physics with unfamiliar words. It is to build a native grammar and then show that the familiar inertial grammar is still present inside it. M1 begins with positive momentum readings. From those readings it must recover the signed momentum components and the total core momentum that standard relativity packages as four-momentum.
+
+This chapter does that in three steps. First it names the primitive momentum roles and the directional quantities involved. Then it states the core principle of Additive Directional Momentum Conservation (ADMC). Finally it shows how the opposed readings invert back to the usual inertial variables and reproduce the special-relativistic relation.
+
+Only after that formal spine is in place do space and time receive their foundational interpretation. Space is the stage that conditions which configurations and motions are possible. Momentum is the actor of physical change (as in a string and vibration analogy). Time is not introduced as a substance that drives that change; clocks count repeatable physical processes sustained by momentum and interaction. Those interpretations do not complete the later engines. They give those engines their grammar.
+
+Foundations therefore stays deliberately limited. It establishes the inertial baseline, the conservation language, the stage-and-actor distinction, and the first vocabulary for structured departures from inertial motion. Gravity, quantum mechanics, expansion and deeper internal geometry must each supply their own mechanism where this grammar is used.

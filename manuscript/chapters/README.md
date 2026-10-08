@@ -41,10 +41,15 @@ Do not list individual section files directly in `_quarto.yml` unless the book s
 ```text
 manuscript/chapters/01-tier-1-foundations/02-foundations/
   index.qmd
-  01-core-terms-and-variables.qmd
-  02-the-momentum-configuration.qmd
-  03-admc.qmd
-  04-invertible-mapping.qmd
+  01-what-foundations-must-fix.qmd
+  02-core-momentum-terms-and-directional-notation.qmd
+  03-the-momentum-configuration.qmd
+  04-admc.qmd
+  05-invertible-mapping.qmd
+  06-space-and-momentum-stage-and-actor.qmd
+  07-time.qmd
+  08-kinematic-modifiers.qmd
+  09-what-foundations-establishes.qmd
 
 manuscript/chapters/02-tier-2-engines/04-quantum-mechanics/
   index.qmd

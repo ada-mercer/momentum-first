@@ -9,8 +9,8 @@ authors:
 repository-code: "https://github.com/ada-mercer/momentum-first"
 url: "https://ada-mercer.github.io/momentum-first/"
 doi: "10.5281/zenodo.21775704"
-version: "0.4.1"
-date-released: "2026-10-07"
+version: "0.4.2"
+date-released: "2026-10-08"
 abstract: "Momentum First is a pre-1.0 theoretical manuscript exploring a momentum-centered framework for foundations, gravity, quantum mechanics, and cosmology. It develops Additive Directional Momentum Conservation, directional shell readings, gravity and quantum dynamics under stated assumptions, a stage-dressing account of cosmological expansion, and an introductory geometric picture of internal cycles in Part 0."
 keywords:
   - theoretical physics
@@ -33,8 +33,8 @@ preferred-citation:
     - family-names: Klaveness
       given-names: Arne
       orcid: "https://orcid.org/0009-0004-1536-3055"
-  version: "0.4.1"
-  date-released: "2026-10-07"
+  version: "0.4.2"
+  date-released: "2026-10-08"
   doi: "10.5281/zenodo.21729037"
   url: "https://ada-mercer.github.io/momentum-first/"
   license: CC-BY-NC-SA-4.0

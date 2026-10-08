@@ -36,7 +36,7 @@ book:
     - manuscript/chapters/04-tier-0-deep-structure/01-a-first-picture-of-m1-geometry/index.qmd
   - part: Appendices
     chapters:
-    - manuscript/appendices/derivations/02-foundations/03A-directional-positive-split-uniqueness.qmd
+    - manuscript/appendices/derivations/02-foundations/04A-directional-positive-split-uniqueness.qmd
     - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/03A-resolved-gravitational-sources.qmd
     - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/04A-sourced-spatial-deformation.qmd
     - manuscript/appendices/derivations/03-gravity-and-structured-spacetime/05A-particle-response-and-internal-cycling.qmd

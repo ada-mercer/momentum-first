@@ -1,0 +1,53 @@
+## Kinematic Modifiers
+
+Foundations has described the inertial baseline,
+
+$$
+M=\sqrt{p_f^2+p^2}.
+$$
+
+In that baseline, a particle's momentum configuration and its motion are related in the familiar inertial way. Later chapters ask what happens when the particle moves in an altered structured physical setting. The momentum content can be the same, while the stage changes what that content produces as motion.
+
+M1 calls that structural change a **kinematic modifier**:
+
+> A kinematic modifier is a physical feature of space that changes how a particle's momentum configuration yields motion.
+
+The term gives Foundations a way to speak about altered motion before any later engine has supplied its detailed law. Gravity, expansion, and possible state-space effects can all change what a given momentum configuration does, even though they need not change it in the same way.
+
+The shared question is always physical: what feature of space changes the motion a particle's momentum can produce? Once that feature is named, the engine must show how it enters the particle's motion, clock behavior, light propagation, or material equilibrium.
+
+### What a modifier changes
+
+A particle can retain its fermic and bosic momentum content while that content produces different motion. The same directed bosic momentum may then produce a different translation rate, or the same bound material system may sustain a different internal motion and equilibrium.
+
+Clocks and rulers can reveal such a change because they are moving physical systems. A clock sustains a repeatable internal cycle. A ruler sustains a bound equilibrium through the motions and interactions of its constituents. When a modifier changes the conditions for motion, those physical systems register the change through their cycles and equilibria.
+
+The defining test remains motion: what does the particle's momentum configuration physically produce under the structural condition being considered?
+
+### Gravity and expansion
+
+Gravity and expansion both give the concept a concrete role. They reach that role through different physical structures.
+
+In gravity, organized momentum changes the local stage. That structured stage changes the conditions under which particle momentum becomes local cycling and translation. The gravity engine must derive the corresponding local motion, material, and light responses from a reciprocal particle–stage construction.
+
+In homogeneous expansion, the stage state $\chi$ dresses the bosic slot of the core-momentum operator. The resulting translation-yield law is
+
+$$
+\dot x_k
+=
+\chi^2c\frac{p_k}{M_\chi}.
+$$
+
+Here the modifier's mechanism is explicit: bosic-slot stage dressing changes how directed momentum produces displacement. Gravity reaches the same broad role by changing the local stage through organized momentum. The shared term marks the common question each engine answers: how does structure change the motion produced by a momentum configuration?
+
+### Possible state-space effects
+
+Some future effects may change motion by restricting the joint configurations available to particles. Exclusion may eventually admit such a reading: the allowed many-particle state space would help determine which motions can occur.
+
+That possibility remains open. Foundations has introduced the place such an effect would occupy, but the many-particle derivation belongs to later work.
+
+### Relation to space-mediated momentum coupling
+
+Space-mediated momentum coupling and kinematic modification answer different questions. SMC asks how momentum-bearing systems become dynamically related through space. A kinematic modifier asks how physical structure changes the motion produced by a particle's momentum configuration.
+
+A coupling may create or sustain the structure that acts as a modifier. In a later engine the two ideas can therefore meet: one describes how systems are related through space, the other describes how the resulting structure changes motion.

@@ -1,0 +1,67 @@
+## What Foundations Establishes
+
+Foundations has given M1 its inertial grammar. A particle is described by fermic momentum, bosic momentum, directional shell readings, and the core relation
+
+$$
+M = \sqrt{p_f^2 + p^2}.
+$$
+
+That grammar is enough to recover the familiar inertial package, but it is organized around a different starting point: positive directional momentum readings and their conservation.
+
+### The inertial foundation
+
+The first construction assembled the primitive momentum roles into one particle configuration. Fermic momentum $p_f$ belongs to the identity-bearing internal cycle. Bosic momentum $p$ belongs to the same configuration and supplies both a spherical contribution and, when imbalanced, translational momentum. In flat space the two roles enter as perpendicular contributions to the core momentum $M$.
+
+For a chosen oriented direction $\hat{k}$, the bosic asymmetry has signed component $p_k$, and the corresponding positive shell readings are
+
+$$
+p_k^\pm=M\pm\tfrac12p_k.
+$$
+
+ADMC conserves one such positive reading per particle for every chosen orientation:
+
+$$
+\sum_i p_{k,i}^+.
+$$
+
+The opposite orientation exchanges $p_k^+$ and $p_k^-$. Taken together, the opposed readings recover both pieces of the usual inertial bookkeeping: their average gives the positive core momentum $M$, and their difference gives the signed component $p_k$. Along three independent spatial directions, these recovered quantities correspond exactly to the standard special-relativistic energy-momentum package.
+
+The inertial success of standard relativity is therefore retained. What changes is the foundation beneath the bookkeeping: M1 starts from positive directional readings and ADMC, then recovers the familiar signed variables downstream.
+
+### Space, time, and physical change
+
+Foundations also fixes the first interpretive order. Space is the stage: it supplies the relations and conditions under which physical configurations can persist and move. Momentum is the actor of change: particles, interactions, and structured stage states are ways momentum is organized and made dynamically relevant.
+
+Time enters as a measure abstracted from physical change. A material clock counts a repeatable process sustained by interactions among its constituents. M1 connects such clock processes to the fermic cycling of the participating particles, while keeping the material mechanism itself in view. In the inertial overlap regime, an ideal moving clock satisfies
+
+$$
+d\tau = dt\,\frac{p_f}{M},
+$$
+
+so $p_f/M$ plays the role of the usual inverse gamma factor. A changed stage can also alter the resting cycle comparison; that later question belongs to the engine that supplies the stage structure and the clock mechanism.
+
+This same ontology gives the true-frame language its scope. Frame descriptions remain useful ways to compare physical systems. They describe one underlying configuration of change, whose singular physical present follows from the momentum/space picture.
+
+### Departures from the inertial baseline
+
+The inertial baseline is the starting point for later engines. A structured setting can change what a momentum configuration yields as motion. Foundations names that role with the kinematic modifier concept:
+
+> A kinematic modifier is a physical feature of space that changes how a particle's momentum configuration yields motion.
+
+The concept prepares the reader for later engines while leaving each mechanism to its own chapter. In expansion, bosic-slot stage dressing gives a concrete translation-yield law,
+
+$$
+\dot x_k
+=
+\chi^2c\frac{p_k}{M_\chi}.
+$$
+
+In gravity, organized momentum changes the local stage, and the gravity engine must derive the resulting particle, material, and light behavior. Possible state-space effects may later restrict which many-particle motions are available. In each case the question is the same: what feature of space changes the motion a momentum configuration can produce?
+
+Space-mediated momentum coupling gives the interaction side of this picture. It asks how momentum-bearing systems become dynamically related through space. Kinematic modifiers give the structural-motion side: they ask how the resulting conditions change what motion, cycling, propagation, or equilibrium a momentum configuration supports.
+
+### Handoff
+
+Foundations leaves the reader with the primitive momentum quantities, the positive shell-reading conservation law, the inertial correspondence, the stage/actor interpretation, the clock and true-frame stance, and the kinematic-modifier vocabulary. These are the tools later chapters need.
+
+Gravity comes next because it is the first major case where organized momentum changes the local stage. It must show how that changed stage modifies particle motion, clocks, material systems, and light while preserving the conservation grammar established here.

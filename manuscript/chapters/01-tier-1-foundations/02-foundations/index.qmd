@@ -1,17 +1,19 @@
 # Foundations
 
-{{< include 01-core-terms-and-variables.qmd >}}
+{{< include 01-what-foundations-must-fix.qmd >}}
 
-{{< include 02-the-momentum-configuration.qmd >}}
+{{< include 02-core-momentum-terms-and-directional-notation.qmd >}}
 
-{{< include 03-admc.qmd >}}
+{{< include 03-the-momentum-configuration.qmd >}}
 
-{{< include 04-invertible-mapping.qmd >}}
+{{< include 04-admc.qmd >}}
 
-{{< include 05-space-and-momentum-stage-and-actor.qmd >}}
+{{< include 05-invertible-mapping.qmd >}}
 
-{{< include 06-time.qmd >}}
+{{< include 06-space-and-momentum-stage-and-actor.qmd >}}
 
-{{< include 07-kinematic-modifiers.qmd >}}
+{{< include 07-time.qmd >}}
 
-{{< include 08-what-foundations-establishes.qmd >}}
+{{< include 08-kinematic-modifiers.qmd >}}
+
+{{< include 09-what-foundations-establishes.qmd >}}

@@ -126,7 +126,7 @@ Current rendered structure:
 Default chapter-folder pattern:
 - top-level chapter folders are grouped by front matter or rendered tier/part;
 - each chapter folder keeps the global chapter number and chapter slug;
-- files inside a chapter use local section numbers only, e.g. `01-core-terms-and-variables.qmd`;
+- files inside a chapter use local section numbers only, e.g. `02-core-momentum-terms-and-directional-notation.qmd`;
 - each rendered chapter uses an `index.qmd` wrapper listed in `_quarto.yml`.
 
 Temporary Part 0 exception: retain its within-part folder prefixes while the

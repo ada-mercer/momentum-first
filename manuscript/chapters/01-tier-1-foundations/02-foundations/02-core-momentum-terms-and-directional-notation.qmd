@@ -1,0 +1,40 @@
+## Core Momentum Terms and Directional Notation
+
+This section fixes the symbols used throughout Foundations. It is a reference gateway: the physical configuration comes in the next section, and the conservation law follows after that.
+
+### Momentum roles
+
+| Symbol | Name | Defining relation or role |
+|:--|:--|:--|
+| $p_f$ | Fermic momentum | Momentum locked into the particle's identity-bearing internal organization. At the inertial baseline, $p_f=m_0c$. |
+| $p$ | Bosic momentum | Momentum on the bosic side of the internal cycle. It contributes to the spherical shell and, when asymmetric, gives the particle translational motion. Its two roles are developed in §2.3. |
+| $M$ | Core momentum | Nonnegative measure of a particle's total momentum content. In the inertial baseline, $M=\sqrt{p_f^2+p^2}$. |
+
+Fermic momentum belongs to the particle's identity-bearing internal organization. Bosic momentum belongs to the bosic side of the same internal cycle. Its imbalance gives the particle translational motion. Core momentum measures the whole configuration. These are momentum roles, not separate substances or detachable layers.
+
+### Direction and projection
+
+| Symbol | Name | Defining relation or role |
+|:--|:--|:--|
+| $\vec p$ | Classic momentum vector | Vector representation of the bosic asymmetry. |
+| $p$ | Bosic magnitude | $p=|\vec p|$. |
+| $\hat{k}$ | Chosen oriented unit direction | The direction relative to which a signed component is read. |
+| $p_k$ | Classic signed component along $\hat{k}$ | $p_k=\vec p\mathbin{\cdot}\hat{k}$. |
+
+The scalar $p$ remains the bosic momentum. The vector $\vec p$ and component $p_k$ describe its directional asymmetry; they do not replace $p$ as the foundational quantity.
+
+### Directional shell readings
+
+| Symbol | Name | Defining relation or role |
+|:--|:--|:--|
+| $p^\pm$ | Directional momentum readings along the net asymmetry axis | $p^\pm=M\pm\tfrac12p$. |
+| $p_k^\pm$ | Directionally opposed readings along the chosen $k$-axis | $p_k^\pm=M\pm\tfrac12p_k$. |
+| $p^\perp$ | Perpendicular reading | $p^\perp=M$ when the chosen direction is perpendicular to the net asymmetry. |
+
+Superscripts $+$ and $-$ label opposed positive readings, not arithmetic signs attached to a negative quantity. The quantities $p_f$, $p$, $M$, $p^\pm$, $p_k^\pm$ and $p^\perp$ are nonnegative scalars; $\vec p$ is a vector, and $p_k$ is its signed component along $\hat{k}$.
+
+When several particles appear, a particle label is appended as a second subscript: $M_i$, $p_{k,i}$ and $p_{k,i}^\pm$ denote the quantities belonging to particle $i$. The label is omitted when only one particle is under discussion.
+
+### Terminology note
+
+The terms **fermic** and **bosic** name momentum roles in M1. Later sections can use **fermionic** and **bosonic** for geometry, winding, chirality or state labels. No one-to-one identification between these momentum roles and a later particle classification is assumed here.

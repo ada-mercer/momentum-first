@@ -44,6 +44,21 @@ Suggested interpretation:
 
 ## Milestone notes
 
+### 0.4.2 — Foundations reading-route revision
+
+- reorganized Foundations into nine sections, adding an opening reader contract
+  and a compact table-based notation gateway;
+- clarified the momentum-shell picture, ADMC axiom, stage/actor language and
+  kinematic-modifier exposition while preserving the inertial mapping and the
+  distinction between motion-related and gravitational resting-rate changes;
+- aligned figure ownership, chapter documentation and section references, and
+  relabeled the supporting appendix 2.4A with redirects from its earlier URLs;
+- clarified the adopted appendix regularity assumption and its parity step,
+  and removed a retired appendix reference without changing the equations;
+- retained existing figure assets, engine scope, historical review boundaries,
+  and publication pipelines; no new physical closure or independent V3 review
+  is claimed.
+
 ### 0.4.1 — Foundations clock-scope corrections
 
 - distinguished motion-related slowing from gravity's change to the resting
